@@ -1,0 +1,13 @@
+https://store.bayareacircuits.com/student-special-4-layer/
+
+5 mil trace and space
+planes inset by 25 mil 
+outer layers - 0.5 oz Cu begin, may grow to 1 oz
+inner 1.0 oz Cu
+top to 2nd layer spacing is 8 mil with er = 4.2
+inner layer spacing is 40 mil with er = 4.2
+annular ring 5 mil 
+holes: 10 mil to 247 mil 
+min of 20 mil blank space to outer perimeter 
+pads on the soldermask layer are grown by 3 mils. Very fine SMT may not have mask between pins.
+Thickness is 62 mils 
