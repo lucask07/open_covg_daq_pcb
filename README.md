@@ -40,12 +40,13 @@ TBD, let's see how many GPIO we need
 
 
 ### Samtec Connectors 
-
+BTE-040-02-F-D-A
 
 ### Other connectors 
 
 
-### Count of I/O
+### I/O and Power Supplies
+[Excel tracker](documentation/signals/XEM6310.xlsx)
 
 
 ### Digikey Cart 
@@ -53,8 +54,19 @@ TBD, let's see how many GPIO we need
 
 ### Fabrication History 
 
+### Similar Work: Review of Scientific Instruments
+Folder to [literature](documentation/literature)
 
+Yu discusses the performance limitations of an FPGA-based digital servo at Review of Scientific Instruments: [Yu2017](https://doi.org/10.1063/1.5001312) also available at [Arxiv](https://arxiv.org/pdf/1708.05892)
+
+A team at NIST Boulder published "An open source digital servo for atomic, molecular, and optical physics experiments"
+[Leibrandt2015](https://doi.org/10.1063/1.4938282) also available at [Arxiv](https://arxiv.org/abs/1508.06319v2)
 
 ### Eagle PCB Design Methodology 
 
-Blocks (and layout reuse). 
+**Blocks (and layout reuse):**
+
+Note that design blocks do not link back to a source/parent. So best practice is to completely finish the design before creating copies. [Forum discussion](https://www.element14.com/community/thread/59958/l/design-block?displayFullThread=true)
+
+See this YouTube [video](https://www.youtube.com/watch?v=i-ChFk2pagA)
+

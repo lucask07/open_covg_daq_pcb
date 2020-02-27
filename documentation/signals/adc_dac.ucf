@@ -1,0 +1,178 @@
+############################################################################
+# XEM6006 - Xilinx constraints file
+#
+# Pin mappings for the XEM6006.  Use this as a template and comment out 
+# the pins that are not used in your design.  (By default, map will fail
+# if this file contains constraints for signals not in your design).
+#
+# Copyright (c) 2004-2011 Opal Kelly Incorporated
+# $Rev$ $Date$
+############################################################################
+CONFIG VCCAUX = "3.3"; //Required for Spartan-6
+
+############################################################################
+## FrontPanel Host Interface
+############################################################################
+NET "hi_in<0>"      LOC="N8"    | IOSTANDARD="LVCMOS33";
+NET "hi_in<1>"      LOC="T10"   | IOSTANDARD="LVCMOS33";
+NET "hi_in<2>"      LOC="T5"    | IOSTANDARD="LVCMOS33";
+NET "hi_in<3>"      LOC="T4"    | IOSTANDARD="LVCMOS33";
+NET "hi_in<4>"      LOC="T7"    | IOSTANDARD="LVCMOS33";
+NET "hi_in<5>"      LOC="R7"    | IOSTANDARD="LVCMOS33";
+NET "hi_in<6>"      LOC="T6"    | IOSTANDARD="LVCMOS33";
+NET "hi_in<7>"      LOC="P6"    | IOSTANDARD="LVCMOS33";
+NET "hi_out<0>"     LOC="M11"   | IOSTANDARD="LVCMOS33";
+NET "hi_out<1>"     LOC="P4"    | IOSTANDARD="LVCMOS33";
+NET "hi_inout<0>"   LOC="M7"    | IOSTANDARD="LVCMOS33";
+NET "hi_inout<1>"   LOC="P7"    | IOSTANDARD="LVCMOS33";
+NET "hi_inout<2>"   LOC="P8"    | IOSTANDARD="LVCMOS33";
+NET "hi_inout<3>"   LOC="P9"    | IOSTANDARD="LVCMOS33";
+NET "hi_inout<4>"   LOC="N9"    | IOSTANDARD="LVCMOS33";
+NET "hi_inout<5>"   LOC="P11"   | IOSTANDARD="LVCMOS33";
+NET "hi_inout<6>"   LOC="N6"    | IOSTANDARD="LVCMOS33";
+NET "hi_inout<7>"   LOC="M6"    | IOSTANDARD="LVCMOS33";
+NET "hi_inout<8>"   LOC="R5"    | IOSTANDARD="LVCMOS33";
+NET "hi_inout<9>"   LOC="L7"    | IOSTANDARD="LVCMOS33";
+NET "hi_inout<10>"  LOC="L8"    | IOSTANDARD="LVCMOS33";
+NET "hi_inout<11>"  LOC="P5"    | IOSTANDARD="LVCMOS33";
+NET "hi_inout<12>"  LOC="N5"    | IOSTANDARD="LVCMOS33";
+NET "hi_inout<13>"  LOC="P12"   | IOSTANDARD="LVCMOS33";
+NET "hi_inout<14>"  LOC="N12"   | IOSTANDARD="LVCMOS33";
+NET "hi_inout<15>"  LOC="P10"   | IOSTANDARD="LVCMOS33";
+NET "hi_aa"         LOC="B16"   | IOSTANDARD="LVCMOS18";
+
+NET "hi_in<0>" TNM_NET = "okHostClk";
+TIMESPEC "TS_okHostClk" = PERIOD "okHostClk" 20.83 ns HIGH 50%;  # 48 MHz
+NET "hi_inout[*]" TNM = "okHostINOUT_grp";
+TIMEGRP "okHostINOUT_grp" OFFSET = IN 9.83 ns VALID 9.83 ns BEFORE "hi_in<0>" RISING;
+TIMEGRP "okHostINOUT_grp" OFFSET = OUT 11.63 ns AFTER "hi_in<0>" RISING;
+NET "hi_out<0>" OFFSET = OUT 11.93 ns AFTER "hi_in<0>" RISING;
+#NET "hi_out<1>" OFFSET = OUT 11.93 ns AFTER "hi_in<0>" RISING; #Placeholder
+NET "hi_in<1>" OFFSET = IN 14.13 ns VALID 20.83 ns BEFORE "hi_in<0>" RISING;
+NET "hi_in<2>" OFFSET = IN 14.13 ns VALID 20.83 ns BEFORE "hi_in<0>" RISING;
+NET "hi_in<3>" OFFSET = IN 14.13 ns VALID 20.83 ns BEFORE "hi_in<0>" RISING;
+NET "hi_in<4>" OFFSET = IN 13.33 ns VALID 20.83 ns BEFORE "hi_in<0>" RISING;
+NET "hi_in<5>" OFFSET = IN 13.33 ns VALID 20.83 ns BEFORE "hi_in<0>" RISING;
+NET "hi_in<6>" OFFSET = IN 13.33 ns VALID 20.83 ns BEFORE "hi_in<0>" RISING;
+NET "hi_in<7>" OFFSET = IN 13.33 ns VALID 20.83 ns BEFORE "hi_in<0>" RISING;
+
+
+############################################################################
+## System Clock
+############################################################################
+NET "sys_clk48M"      LOC="T8"    | IOSTANDARD="LVCMOS33" | CLOCK_DEDICATED_ROUTE = FALSE;
+
+############################################################################
+## Peripherals
+############################################################################
+
+# LEDs #####################################################################
+NET "led<0>"           LOC="M12" | IOSTANDARD="LVCMOS33";
+NET "led<1>"           LOC="L10" | IOSTANDARD="LVCMOS33";
+NET "led<2>"           LOC="M9"  | IOSTANDARD="LVCMOS33";
+NET "led<3>"           LOC="T3"  | IOSTANDARD="LVCMOS33";
+
+# DRAM #####################################################################
+#CONFIG MCB_PERFORMANCE= STANDARD;
+#NET "memc1_infrastructure_inst/sys_clk_ibufg" TNM_NET = "SYS_CLK1";
+#TIMESPEC "TS_SYS_CLK1" = PERIOD "SYS_CLK1"  20.83  ns HIGH 50 %;
+#NET "memc?_wrapper_inst/mcb_ui_top_inst/mcb_raw_wrapper_inst/selfrefresh_mcb_mode" TIG;
+#NET "c?_pll_lock" TIG;     
+#NET "memc?_wrapper_inst/mcb_ui_top_inst/mcb_raw_wrapper_inst/gen_term_calib.mcb_soft_calibration_top_inst/mcb_soft_calibration_inst/CKE_Train" TIG; ##This path exists for DDR2 only
+
+#NET  "ddr2_a[0]"       LOC="H15" | IOSTANDARD=SSTL18_II;
+#NET  "ddr2_a[1]"       LOC="H16" | IOSTANDARD=SSTL18_II;
+#NET  "ddr2_a[2]"       LOC="F16" | IOSTANDARD=SSTL18_II;
+#NET  "ddr2_a[3]"       LOC="H13" | IOSTANDARD=SSTL18_II;
+#NET  "ddr2_a[4]"       LOC="C16" | IOSTANDARD=SSTL18_II;
+#NET  "ddr2_a[5]"       LOC="J11" | IOSTANDARD=SSTL18_II;
+#NET  "ddr2_a[6]"       LOC="J12" | IOSTANDARD=SSTL18_II;
+#NET  "ddr2_a[7]"       LOC="F15" | IOSTANDARD=SSTL18_II;
+#NET  "ddr2_a[8]"       LOC="F13" | IOSTANDARD=SSTL18_II;
+#NET  "ddr2_a[9]"       LOC="F14" | IOSTANDARD=SSTL18_II;
+#NET  "ddr2_a[10]"      LOC="C15" | IOSTANDARD=SSTL18_II;
+#NET  "ddr2_a[11]"      LOC="G11" | IOSTANDARD=SSTL18_II;
+#NET  "ddr2_a[12]"      LOC="D16" | IOSTANDARD=SSTL18_II;
+#NET  "ddr2_ba[0]"      LOC="G14" | IOSTANDARD=SSTL18_II;
+#NET  "ddr2_ba[1]"      LOC="G16" | IOSTANDARD=SSTL18_II;
+#NET  "ddr2_ba[2]"      LOC="E16" | IOSTANDARD=SSTL18_II;
+#NET  "ddr2_dq[0]"      LOC="L14" | IOSTANDARD=SSTL18_II      | IN_TERM = NONE;
+#NET  "ddr2_dq[1]"      LOC="L16" | IOSTANDARD=SSTL18_II      | IN_TERM = NONE;
+#NET  "ddr2_dq[2]"      LOC="M15" | IOSTANDARD=SSTL18_II      | IN_TERM = NONE;
+#NET  "ddr2_dq[3]"      LOC="M16" | IOSTANDARD=SSTL18_II      | IN_TERM = NONE;
+#NET  "ddr2_dq[4]"      LOC="J14" | IOSTANDARD=SSTL18_II      | IN_TERM = NONE;
+#NET  "ddr2_dq[5]"      LOC="J16" | IOSTANDARD=SSTL18_II      | IN_TERM = NONE;
+#NET  "ddr2_dq[6]"      LOC="K15" | IOSTANDARD=SSTL18_II      | IN_TERM = NONE;
+#NET  "ddr2_dq[7]"      LOC="K16" | IOSTANDARD=SSTL18_II      | IN_TERM = NONE;
+#NET  "ddr2_dq[8]"      LOC="P15" | IOSTANDARD=SSTL18_II      | IN_TERM = NONE;
+#NET  "ddr2_dq[9]"      LOC="P16" | IOSTANDARD=SSTL18_II      | IN_TERM = NONE;
+#NET  "ddr2_dq[10]"     LOC="R15" | IOSTANDARD=SSTL18_II      | IN_TERM = NONE;
+#NET  "ddr2_dq[11]"     LOC="R16" | IOSTANDARD=SSTL18_II      | IN_TERM = NONE;
+#NET  "ddr2_dq[12]"     LOC="T14" | IOSTANDARD=SSTL18_II      | IN_TERM = NONE;
+#NET  "ddr2_dq[13]"     LOC="T13" | IOSTANDARD=SSTL18_II      | IN_TERM = NONE;
+#NET  "ddr2_dq[14]"     LOC="R12" | IOSTANDARD=SSTL18_II      | IN_TERM = NONE;
+#NET  "ddr2_dq[15]"     LOC="T12" | IOSTANDARD=SSTL18_II      | IN_TERM = NONE;
+#NET  "ddr2_ck"         LOC="G12" | IOSTANDARD=DIFF_SSTL18_II;
+#NET  "ddr2_ck_n"       LOC="H11" | IOSTANDARD=DIFF_SSTL18_II;
+#NET  "ddr2_cke"        LOC="D14" | IOSTANDARD=SSTL18_II;
+#NET  "ddr2_cs_n"       LOC="F12" | IOSTANDARD=LVCMOS18;
+#NET  "ddr2_we_n"       LOC="E15" | IOSTANDARD=SSTL18_II;
+#NET  "ddr2_odt"        LOC="H14" | IOSTANDARD=SSTL18_II;
+#NET  "ddr2_cas_n"      LOC="K14" | IOSTANDARD=SSTL18_II;
+#NET  "ddr2_ras_n"      LOC="J13" | IOSTANDARD=SSTL18_II;
+#NET  "ddr2_dm"         LOC="K11" | IOSTANDARD=SSTL18_II;
+#NET  "ddr2_udm"        LOC="K12" | IOSTANDARD=SSTL18_II;
+#NET  "ddr2_dqs"        LOC="N14" | IOSTANDARD=DIFF_SSTL18_II | IN_TERM = NONE;
+#NET  "ddr2_dqs_n"      LOC="N16" | IOSTANDARD=DIFF_SSTL18_II | IN_TERM = NONE;
+#NET  "ddr2_udqs"       LOC="R14" | IOSTANDARD=DIFF_SSTL18_II | IN_TERM = NONE;
+#NET  "ddr2_udqs_n"     LOC="T15" | IOSTANDARD=DIFF_SSTL18_II | IN_TERM = NONE;
+#NET  "ddr2_rzq"        LOC="E13" | IOSTANDARD=SSTL18_II;
+#NET  "ddr2_zio"        LOC="L12" | IOSTANDARD=SSTL18_II;
+
+
+############################################################################
+## ADC eval AD7960
+############################################################################
+
+NET "d_pos_i"    LOC="D11"     | IOSTANDARD=LVDS_25 | DIFF_TERM = TRUE;       # Data In, Positive Pair JP2A-37
+NET "d_neg_i"    LOC="D12"     | IOSTANDARD=LVDS_25 | DIFF_TERM = TRUE;       # Data In, Negative Pair JP2A-39
+NET "dco_pos_i"  LOC="F2"    | IOSTANDARD=LVDS_25 | DIFF_TERM = TRUE | CLOCK_DEDICATED_ROUTE = FALSE;       # Echoed Clock In, Positive Pair JP2A-38
+NET "dco_neg_i"  LOC="F1"    | IOSTANDARD=LVDS_25 | DIFF_TERM = TRUE;       # Echoed Clock In, Negative Pair JP2A-40
+
+NET "en_o[0]"    LOC = "B14"      | IOSTANDARD=LVCMOS25; # Enable pins output JP1A-19
+NET "en_o[1]"    LOC = "A14"      | IOSTANDARD=LVCMOS25; # Enable pins output JP1A-21
+NET "en_o[2]"    LOC = "F10"      | IOSTANDARD=LVCMOS25; # Enable pins output JP1A-20
+NET "en_o[3]"    LOC = "E11"      | IOSTANDARD=LVCMOS25; # Enable pins output JP1A-22
+
+NET "cnv_pos_o"  LOC="E7"    | IOSTANDARD=LVDS_25;            # Convert Out, Positive Pair JP2B-45
+NET "cnv_neg_o"  LOC="E8"    | IOSTANDARD=LVDS_25;            # Convert Out, Negative Pair JP2B-47
+NET "clk_pos_o"  LOC="E10"    | IOSTANDARD=LVDS_25;            # Clock Out, Positive Pair   JP2B-50
+NET "clk_neg_o"  LOC="C10"    | IOSTANDARD=LVDS_25;            # Clock Out, Negative Pair   JP2B-52
+
+PIN "pll1/clkout1_buf.O" CLOCK_DEDICATED_ROUTE = FALSE;
+PIN "pll0/clkout1_buf.O" CLOCK_DEDICATED_ROUTE = FALSE;
+
+
+#NET "debug[0]"    LOC = "F16"      | IOSTANDARD=LVCMOS33; #  output JP1A-23
+#NET "debug[1]"    LOC = "D19"      | IOSTANDARD=LVCMOS33; # output JP1A-24
+#NET "debug[2]"    LOC = "F17"      | IOSTANDARD=LVCMOS33; # output JP1A-25
+#NET "debug[3]"    LOC = "D20"      | IOSTANDARD=LVCMOS33; # output JP1A-26
+#NET "debug[4]"    LOC = "J17"      | IOSTANDARD=LVCMOS33; # output JP1A-27
+#NET "debug[5]"    LOC = "F18"      | IOSTANDARD=LVCMOS33;  # output JP1A-28
+#NET "debug[6]"    LOC = "K17"      | IOSTANDARD=LVCMOS33;  # output JP1A-29
+#NET "debug[7]"    LOC = "F19"      | IOSTANDARD=LVCMOS33;  # output JP1A-30
+#
+#NET "debug[8]"    LOC = "K16"      | IOSTANDARD=LVCMOS33; #  output JP1A-31
+#NET "debug[9]"    LOC = "M16"      | IOSTANDARD=LVCMOS33; # output JP1A-32
+#NET "debug[10]"    LOC = "J16"      | IOSTANDARD=LVCMOS33; # output JP1A-33
+#NET "debug[11]"    LOC = "L15"      | IOSTANDARD=LVCMOS33; # output JP1A-34
+#NET "debug[12]"    LOC = "V21"      | IOSTANDARD=LVCMOS33; # output JP1A-37
+#NET "debug[13]"    LOC = "K20"      | IOSTANDARD=LVCMOS33;  # output JP1A-38
+
+// 26P: FPGA C3: FMC_D26 26N: C2: FMC_D27 
+// 27P: B2 FMC_C26 27N: A2 FMC_C27  
+
+NET "spi_ss"      LOC = "C3"      | IOSTANDARD=LVCMOS25;  # FMC_D26
+NET "spi_sck"     LOC = "C2"      | IOSTANDARD=LVCMOS25;  # FMC_D27
+NET "spi_mosi"    LOC = "B2"      | IOSTANDARD=LVCMOS25;  # FMC_C26
+NET "dac_ld"      LOC = "A2"      | IOSTANDARD=LVCMOS25;  # FMC_C27
