@@ -16,7 +16,9 @@ ADC configuration
 
 ### DAC 
 
+[AD5453](https://www.analog.com/media/en/technical-documentation/data-sheets/AD5450_5451_5452_5453.pdf) Multiplying R-2R ladder so the REF voltage can span a wide range (-10 V to 10 V) well beyond VDD. The input VREF could be dynamic or it could vary statically to allow for different gains of the DAC output.
 
+External connections for bipolar operation are described in Figure 45. 
 
 
 ### Level Shifters
@@ -25,6 +27,9 @@ Need two types of level-shifters:
 
 * (low-voltage to low-voltage) bi-directional (for I2C) 
 * (low-voltage to high negative voltage) unidirectional for gate drive of FET switches 
+
+**For gate drive of FET switches:** Use a BJT circuit [level shifter](Negative level shifter:
+https://electronics.stackexchange.com/questions/305295/negative-level-shifter) (to get 0 V to negative) followed by a [Schmitt-Comparator input inverter](http://www.ti.com/lit/ds/symlink/cd40106b.pdf) where the inverter is powered by 3 V and -6V.  
 
 ### GPIO Expanders 
 TBD, let's see how many GPIO we need 
@@ -50,9 +55,11 @@ BTE-040-02-F-D-A
 
 
 ### Digikey Cart 
+[Web ID: 305426708](https://www.digikey.com/MyDigiKey/Home/ResumeOrder?webId=305426708&accessId=82908) 
 
 
 ### Fabrication History 
+
 
 ### Similar Work: Review of Scientific Instruments
 Folder to [literature](documentation/literature)
@@ -60,7 +67,7 @@ Folder to [literature](documentation/literature)
 Yu discusses the performance limitations of an FPGA-based digital servo at Review of Scientific Instruments: [Yu2017](https://doi.org/10.1063/1.5001312) also available at [Arxiv](https://arxiv.org/pdf/1708.05892)
 
 A team at NIST Boulder published "An open source digital servo for atomic, molecular, and optical physics experiments"
-[Leibrandt2015](https://doi.org/10.1063/1.4938282) also available at [Arxiv](https://arxiv.org/abs/1508.06319v2)
+[Leibrandt2015](https://doi.org/10.1063/1.4938282) also available at [Arxiv](https://arxiv.org/abs/1508.06319v2) with the design on [GitHub](https://github.com/nist-ionstorage/digital-servo)
 
 ### Eagle PCB Design Methodology 
 
@@ -70,3 +77,5 @@ Note that design blocks do not link back to a source/parent. So best practice is
 
 See this YouTube [video](https://www.youtube.com/watch?v=i-ChFk2pagA)
 
+**Part Libraries** 
+Within the project is a folder parts/open_covg.lbr. Most parts here are downloaded from Ultra Librarian. 

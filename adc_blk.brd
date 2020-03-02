@@ -1310,7 +1310,7 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/346131962AD8067_a.pdf</d
 </package3d>
 </packages3d>
 </library>
-<library name="AD7960">
+<library name="open_covg">
 <packages>
 <package name="CP_32_7">
 <smd name="1" x="1.75" y="2.4524" dx="0.3" dy="0.8048" layer="1" rot="R180"/>
@@ -1875,16 +1875,6 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="R" x="2.54" y="-106.68" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="1.905" y="-108.585" size="1.27" layer="27"/>
 </element>
-<element name="ADC_BUFF1:U1" library="AD7960" package="CP_32_7" value="AD7960BCPZ-RL7" x="-3.81" y="-105.41" smashed="yes">
-<attribute name="MANUFACTURER_PART_NUMBER" value="AD7960BCPZRL7" x="-3.81" y="-105.41" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-7.0866" y="-106.045" size="1.27" layer="25" ratio="6" rot="SR0"/>
-<attribute name="VENDOR" value="Analog Devices Inc" x="-3.81" y="-105.41" size="1.778" layer="27" display="off"/>
-</element>
-<element name="ADC_BUFF1:U2" library="AD7960" package="CP_16_2" value="ADA4932-1YCPZ-R7" x="-3.81" y="-111.76" smashed="yes">
-<attribute name="MANUFACTURER_PART_NUMBER" value="ADA49321YCPZR7" x="-3.81" y="-111.76" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-7.0866" y="-112.395" size="1.27" layer="25" ratio="6" rot="SR0"/>
-<attribute name="VENDOR" value="Analog Devices Inc" x="-3.81" y="-111.76" size="1.778" layer="27" display="off"/>
-</element>
 <element name="ADC_BUFF1:R3" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="DNP" x="-5.08" y="-116.84" smashed="yes">
 <attribute name="NAME" x="-5.715" y="-116.205" size="1.27" layer="25"/>
 <attribute name="POPULARITY" value="77" x="-5.08" y="-116.84" size="1.778" layer="27" display="off"/>
@@ -1933,20 +1923,23 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="R" x="-5.08" y="-157.48" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-5.715" y="-159.385" size="1.27" layer="27"/>
 </element>
+<element name="ADC_BUFF1:U3" library="open_covg" package="CP_32_7" value="AD7960BCPZ-RL7" x="-11.43" y="-156.21" smashed="yes">
+<attribute name="MANUFACTURER_PART_NUMBER" value="AD7960BCPZRL7" x="-11.43" y="-156.21" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-14.7066" y="-156.845" size="1.27" layer="25" ratio="6" rot="SR0"/>
+<attribute name="VENDOR" value="Analog Devices Inc" x="-11.43" y="-156.21" size="1.778" layer="27" display="off"/>
+</element>
+<element name="ADC_BUFF1:U1" library="open_covg" package="CP_16_2" value="ADA4932-1YCPZ-R7" x="-11.43" y="-162.56" smashed="yes">
+<attribute name="MANUFACTURER_PART_NUMBER" value="ADA49321YCPZR7" x="-11.43" y="-162.56" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-14.7066" y="-163.195" size="1.27" layer="25" ratio="6" rot="SR0"/>
+<attribute name="VENDOR" value="Analog Devices Inc" x="-11.43" y="-162.56" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="ADC_BUFF1:GND">
-<contactref element="ADC_BUFF1:U1" pad="24"/>
-<contactref element="ADC_BUFF1:U1" pad="13"/>
 <contactref element="ADC_BUFF1:C6" pad="2"/>
 <contactref element="ADC_BUFF1:C7" pad="2"/>
 <contactref element="ADC_BUFF1:C3" pad="2"/>
-<contactref element="ADC_BUFF1:U1" pad="26"/>
-<contactref element="ADC_BUFF1:U1" pad="28"/>
-<contactref element="ADC_BUFF1:U1" pad="27"/>
 <contactref element="ADC_BUFF1:C5" pad="2"/>
-<contactref element="ADC_BUFF1:U1" pad="HTAB"/>
-<contactref element="ADC_BUFF1:U1" pad="3"/>
 <contactref element="ADC_BUFF1:C8" pad="2"/>
 <contactref element="ADC_BUFF1:C9" pad="2"/>
 <contactref element="ADC_BUFF1:C10" pad="2"/>
@@ -1957,19 +1950,26 @@ design rules under a new name.</description>
 <contactref element="ADC_BUFF1:C2" pad="2"/>
 <contactref element="ADC_BUFF1:R11" pad="2"/>
 <contactref element="ADC_BUFF1:C12" pad="2"/>
-<contactref element="ADC_BUFF1:U2" pad="17"/>
+<contactref element="ADC_BUFF1:U3" pad="24"/>
+<contactref element="ADC_BUFF1:U3" pad="HTAB"/>
+<contactref element="ADC_BUFF1:U3" pad="13"/>
+<contactref element="ADC_BUFF1:U3" pad="26"/>
+<contactref element="ADC_BUFF1:U3" pad="27"/>
+<contactref element="ADC_BUFF1:U3" pad="28"/>
+<contactref element="ADC_BUFF1:U3" pad="3"/>
+<contactref element="ADC_BUFF1:U1" pad="17"/>
+<wire x1="-9.68" y1="-158.6624" x2="-11.43" y2="-162.56" width="0" layer="19" extent="1-1"/>
+<wire x1="-8.9776" y1="-157.46" x2="-9.68" y2="-158.6624" width="0" layer="19" extent="1-1"/>
+<wire x1="-8.9776" y1="-156.96" x2="-8.9776" y2="-157.46" width="0" layer="19" extent="1-1"/>
+<wire x1="-8.9776" y1="-156.46" x2="-8.9776" y2="-156.96" width="0" layer="19" extent="1-1"/>
+<wire x1="-11.43" y1="-156.21" x2="-8.9776" y2="-156.46" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.8824" y1="-156.46" x2="-11.43" y2="-156.21" width="0" layer="19" extent="1-1"/>
+<wire x1="-10.68" y1="-153.7576" x2="-11.43" y2="-156.21" width="0" layer="19" extent="1-1"/>
+<wire x1="-4.13" y1="-146.05" x2="-10.68" y2="-153.7576" width="0" layer="19" extent="1-1"/>
 <wire x1="-4.23" y1="-139.7" x2="-4.13" y2="-146.05" width="0" layer="19" extent="1-1"/>
 <wire x1="-4.13" y1="-123.19" x2="-4.23" y2="-139.7" width="0" layer="19" extent="1-1"/>
 <wire x1="-5.93" y1="-116.84" x2="-4.13" y2="-123.19" width="0" layer="19" extent="1-1"/>
-<wire x1="-3.81" y1="-111.76" x2="-5.93" y2="-116.84" width="0" layer="19" extent="1-1"/>
-<wire x1="-2.06" y1="-107.8624" x2="-3.81" y2="-111.76" width="0" layer="19" extent="1-1"/>
-<wire x1="-1.3576" y1="-106.66" x2="-2.06" y2="-107.8624" width="0" layer="19" extent="1-1"/>
-<wire x1="-1.3576" y1="-106.16" x2="-1.3576" y2="-106.66" width="0" layer="19" extent="1-1"/>
-<wire x1="-1.3576" y1="-105.66" x2="-1.3576" y2="-106.16" width="0" layer="19" extent="1-1"/>
-<wire x1="-3.81" y1="-105.41" x2="-1.3576" y2="-105.66" width="0" layer="19" extent="1-1"/>
-<wire x1="-6.2624" y1="-105.66" x2="-3.81" y2="-105.41" width="0" layer="19" extent="1-1"/>
-<wire x1="-3.06" y1="-102.9576" x2="-3.81" y2="-105.41" width="0" layer="19" extent="1-1"/>
-<wire x1="2.54" y1="-69.88" x2="-3.06" y2="-102.9576" width="0" layer="19" extent="1-1"/>
+<wire x1="2.54" y1="-69.88" x2="-5.93" y2="-116.84" width="0" layer="19" extent="1-1"/>
 <wire x1="3.49" y1="-60.96" x2="2.54" y2="-69.88" width="0" layer="19" extent="1-1"/>
 <wire x1="3.49" y1="-54.61" x2="3.49" y2="-60.96" width="0" layer="19" extent="1-1"/>
 <wire x1="3.49" y1="-48.26" x2="3.49" y2="-54.61" width="0" layer="19" extent="1-1"/>
@@ -1981,150 +1981,123 @@ design rules under a new name.</description>
 <wire x1="3.49" y1="-3.81" x2="3.49" y2="-10.16" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADC_BUFF1:VCM">
-<contactref element="ADC_BUFF1:U2" pad="9"/>
 <contactref element="ADC_BUFF1:C5" pad="1"/>
-<contactref element="ADC_BUFF1:U1" pad="21"/>
-<wire x1="-3.56" y1="-107.8624" x2="-2.413" y2="-112.51" width="0" layer="19" extent="1-1"/>
-<wire x1="1.59" y1="-35.56" x2="-3.56" y2="-107.8624" width="0" layer="19" extent="1-1"/>
+<contactref element="ADC_BUFF1:U3" pad="21"/>
+<contactref element="ADC_BUFF1:U1" pad="9"/>
+<wire x1="-11.18" y1="-158.6624" x2="-10.033" y2="-163.31" width="0" layer="19" extent="1-1"/>
+<wire x1="1.59" y1="-35.56" x2="-11.18" y2="-158.6624" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADC_BUFF1:AMP_PWR+">
-<contactref element="ADC_BUFF1:U2" pad="7"/>
-<contactref element="ADC_BUFF1:U2" pad="6"/>
-<contactref element="ADC_BUFF1:U2" pad="5"/>
-<contactref element="ADC_BUFF1:U2" pad="8"/>
-<contactref element="ADC_BUFF1:U2" pad="12"/>
 <contactref element="ADC_BUFF1:IC1" pad="5"/>
 <contactref element="ADC_BUFF1:C1" pad="1"/>
-<wire x1="-4.06" y1="-113.157" x2="-3.56" y2="-113.157" width="0" layer="19" extent="1-1"/>
-<wire x1="-4.56" y1="-113.157" x2="-4.06" y2="-113.157" width="0" layer="19" extent="1-1"/>
-<wire x1="-3.06" y1="-113.157" x2="-3.56" y2="-113.157" width="0" layer="19" extent="1-1"/>
-<wire x1="-2.413" y1="-111.01" x2="-3.06" y2="-113.157" width="0" layer="19" extent="1-1"/>
-<wire x1="1.59" y1="-67.28" x2="-2.413" y2="-111.01" width="0" layer="19" extent="1-1"/>
+<contactref element="ADC_BUFF1:U1" pad="5"/>
+<contactref element="ADC_BUFF1:U1" pad="6"/>
+<contactref element="ADC_BUFF1:U1" pad="7"/>
+<contactref element="ADC_BUFF1:U1" pad="8"/>
+<contactref element="ADC_BUFF1:U1" pad="12"/>
+<wire x1="-11.68" y1="-163.957" x2="-12.18" y2="-163.957" width="0" layer="19" extent="1-1"/>
+<wire x1="-11.18" y1="-163.957" x2="-11.68" y2="-163.957" width="0" layer="19" extent="1-1"/>
+<wire x1="-10.68" y1="-163.957" x2="-11.18" y2="-163.957" width="0" layer="19" extent="1-1"/>
+<wire x1="-10.033" y1="-161.81" x2="-10.68" y2="-163.957" width="0" layer="19" extent="1-1"/>
+<wire x1="1.59" y1="-67.28" x2="-10.033" y2="-161.81" width="0" layer="19" extent="1-1"/>
 <wire x1="1.59" y1="-3.81" x2="1.59" y2="-67.28" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADC_BUFF1:N$11">
-<contactref element="ADC_BUFF1:U2" pad="2"/>
 <contactref element="ADC_BUFF1:R6" pad="1"/>
 <contactref element="ADC_BUFF1:R8" pad="2"/>
-<wire x1="3.39" y1="-101.6" x2="-5.207" y2="-111.51" width="0" layer="19" extent="1-1"/>
+<contactref element="ADC_BUFF1:U1" pad="2"/>
+<wire x1="3.39" y1="-101.6" x2="-12.827" y2="-162.31" width="0" layer="19" extent="1-1"/>
 <wire x1="1.69" y1="-91.44" x2="3.39" y2="-101.6" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADC_BUFF1:N$12">
-<contactref element="ADC_BUFF1:U2" pad="1"/>
 <contactref element="ADC_BUFF1:R6" pad="2"/>
-<wire x1="3.39" y1="-91.44" x2="-5.207" y2="-111.01" width="0" layer="19" extent="1-1"/>
+<contactref element="ADC_BUFF1:U1" pad="1"/>
+<wire x1="3.39" y1="-91.44" x2="-12.827" y2="-161.81" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADC_BUFF1:N$13">
 <contactref element="ADC_BUFF1:R7" pad="1"/>
-<contactref element="ADC_BUFF1:U2" pad="3"/>
 <contactref element="ADC_BUFF1:R9" pad="2"/>
-<wire x1="3.39" y1="-106.68" x2="-5.207" y2="-112.01" width="0" layer="19" extent="1-1"/>
+<contactref element="ADC_BUFF1:U1" pad="3"/>
+<wire x1="3.39" y1="-106.68" x2="-12.827" y2="-162.81" width="0" layer="19" extent="1-1"/>
 <wire x1="1.69" y1="-96.52" x2="3.39" y2="-106.68" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADC_BUFF1:N$14">
-<contactref element="ADC_BUFF1:U2" pad="4"/>
 <contactref element="ADC_BUFF1:R7" pad="2"/>
-<wire x1="3.39" y1="-96.52" x2="-5.207" y2="-112.51" width="0" layer="19" extent="1-1"/>
+<contactref element="ADC_BUFF1:U1" pad="4"/>
+<wire x1="3.39" y1="-96.52" x2="-12.827" y2="-163.31" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADC_BUFF1:CNV+">
 <contactref element="ADC_BUFF1:R10" pad="2"/>
-<contactref element="ADC_BUFF1:U1" pad="9"/>
-<wire x1="3.39" y1="-81.28" x2="-6.2624" y2="-103.66" width="0" layer="19" extent="1-1"/>
+<contactref element="ADC_BUFF1:U3" pad="9"/>
+<wire x1="3.39" y1="-81.28" x2="-13.8824" y2="-154.46" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADC_BUFF1:CNV-">
 <contactref element="ADC_BUFF1:R10" pad="1"/>
-<contactref element="ADC_BUFF1:U1" pad="8"/>
-<wire x1="1.69" y1="-81.28" x2="-5.56" y2="-102.9576" width="0" layer="19" extent="1-1"/>
+<contactref element="ADC_BUFF1:U3" pad="8"/>
+<wire x1="1.69" y1="-81.28" x2="-13.18" y2="-153.7576" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADC_BUFF1:+5V">
-<contactref element="ADC_BUFF1:U1" pad="1"/>
 <contactref element="ADC_BUFF1:C11" pad="1"/>
-<contactref element="ADC_BUFF1:U1" pad="19"/>
-<contactref element="ADC_BUFF1:U1" pad="20"/>
 <contactref element="ADC_BUFF1:C8" pad="1"/>
 <contactref element="ADC_BUFF1:C9" pad="1"/>
-<wire x1="-4.06" y1="-107.8624" x2="-4.56" y2="-107.8624" width="0" layer="19" extent="1-1"/>
-<wire x1="-2.06" y1="-102.9576" x2="-4.06" y2="-107.8624" width="0" layer="19" extent="1-1"/>
-<wire x1="1.59" y1="-60.96" x2="-2.06" y2="-102.9576" width="0" layer="19" extent="1-1"/>
+<contactref element="ADC_BUFF1:U3" pad="19"/>
+<contactref element="ADC_BUFF1:U3" pad="20"/>
+<contactref element="ADC_BUFF1:U3" pad="1"/>
+<wire x1="-11.68" y1="-158.6624" x2="-12.18" y2="-158.6624" width="0" layer="19" extent="1-1"/>
+<wire x1="-9.68" y1="-153.7576" x2="-11.68" y2="-158.6624" width="0" layer="19" extent="1-1"/>
+<wire x1="1.59" y1="-60.96" x2="-9.68" y2="-153.7576" width="0" layer="19" extent="1-1"/>
 <wire x1="1.59" y1="-54.61" x2="1.59" y2="-60.96" width="0" layer="19" extent="1-1"/>
 <wire x1="1.59" y1="-16.51" x2="1.59" y2="-54.61" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADC_BUFF1:1.8V">
-<contactref element="ADC_BUFF1:U1" pad="2"/>
 <contactref element="ADC_BUFF1:C10" pad="1"/>
-<contactref element="ADC_BUFF1:U1" pad="12"/>
-<contactref element="ADC_BUFF1:U1" pad="25"/>
 <contactref element="ADC_BUFF1:C3" pad="1"/>
-<wire x1="-2.56" y1="-102.9576" x2="-6.2624" y2="-105.16" width="0" layer="19" extent="1-1"/>
-<wire x1="-1.3576" y1="-107.16" x2="-2.56" y2="-102.9576" width="0" layer="19" extent="1-1"/>
-<wire x1="1.59" y1="-22.86" x2="-2.56" y2="-102.9576" width="0" layer="19" extent="1-1"/>
+<contactref element="ADC_BUFF1:U3" pad="2"/>
+<contactref element="ADC_BUFF1:U3" pad="12"/>
+<contactref element="ADC_BUFF1:U3" pad="25"/>
+<wire x1="-10.18" y1="-153.7576" x2="-13.8824" y2="-155.96" width="0" layer="19" extent="1-1"/>
+<wire x1="-8.9776" y1="-157.96" x2="-10.18" y2="-153.7576" width="0" layer="19" extent="1-1"/>
+<wire x1="1.59" y1="-22.86" x2="-10.18" y2="-153.7576" width="0" layer="19" extent="1-1"/>
 <wire x1="1.59" y1="-10.16" x2="1.59" y2="-22.86" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADC_BUFF1:REF">
-<contactref element="ADC_BUFF1:U1" pad="29"/>
-<contactref element="ADC_BUFF1:U1" pad="30"/>
-<contactref element="ADC_BUFF1:U1" pad="31"/>
-<contactref element="ADC_BUFF1:U1" pad="32"/>
 <contactref element="ADC_BUFF1:C7" pad="1"/>
 <contactref element="ADC_BUFF1:C6" pad="1"/>
 <contactref element="ADC_BUFF1:R1" pad="2"/>
-<wire x1="-1.3576" y1="-104.66" x2="-1.3576" y2="-105.16" width="0" layer="19" extent="1-1"/>
-<wire x1="-1.3576" y1="-104.16" x2="-1.3576" y2="-104.66" width="0" layer="19" extent="1-1"/>
-<wire x1="-1.3576" y1="-103.66" x2="-1.3576" y2="-104.16" width="0" layer="19" extent="1-1"/>
-<wire x1="3.39" y1="-76.2" x2="-1.3576" y2="-103.66" width="0" layer="19" extent="1-1"/>
+<contactref element="ADC_BUFF1:U3" pad="29"/>
+<contactref element="ADC_BUFF1:U3" pad="30"/>
+<contactref element="ADC_BUFF1:U3" pad="31"/>
+<contactref element="ADC_BUFF1:U3" pad="32"/>
+<wire x1="-8.9776" y1="-155.46" x2="-8.9776" y2="-155.96" width="0" layer="19" extent="1-1"/>
+<wire x1="-8.9776" y1="-154.96" x2="-8.9776" y2="-155.46" width="0" layer="19" extent="1-1"/>
+<wire x1="-8.9776" y1="-154.46" x2="-8.9776" y2="-154.96" width="0" layer="19" extent="1-1"/>
+<wire x1="3.39" y1="-76.2" x2="-8.9776" y2="-154.46" width="0" layer="19" extent="1-1"/>
 <wire x1="1.59" y1="-48.26" x2="3.39" y2="-76.2" width="0" layer="19" extent="1-1"/>
 <wire x1="1.59" y1="-41.91" x2="1.59" y2="-48.26" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="ADC_BUFF1:EN0">
-<contactref element="ADC_BUFF1:U1" pad="4"/>
-</signal>
-<signal name="ADC_BUFF1:EN1">
-<contactref element="ADC_BUFF1:U1" pad="5"/>
-</signal>
-<signal name="ADC_BUFF1:EN2">
-<contactref element="ADC_BUFF1:U1" pad="6"/>
-</signal>
-<signal name="ADC_BUFF1:EN3">
-<contactref element="ADC_BUFF1:U1" pad="7"/>
-</signal>
 <signal name="ADC_BUFF1:IN+">
-<contactref element="ADC_BUFF1:U1" pad="23"/>
 <contactref element="ADC_BUFF1:R13" pad="2"/>
 <contactref element="ADC_BUFF1:C4" pad="2"/>
-<wire x1="-2.56" y1="-107.8624" x2="-4.23" y2="-157.48" width="0" layer="19" extent="1-1"/>
-<wire x1="3.49" y1="-29.21" x2="-2.56" y2="-107.8624" width="0" layer="19" extent="1-1"/>
+<contactref element="ADC_BUFF1:U3" pad="23"/>
+<wire x1="-4.23" y1="-157.48" x2="-10.18" y2="-158.6624" width="0" layer="19" extent="1-1"/>
+<wire x1="3.49" y1="-29.21" x2="-4.23" y2="-157.48" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADC_BUFF1:IN-">
-<contactref element="ADC_BUFF1:U1" pad="22"/>
 <contactref element="ADC_BUFF1:R12" pad="2"/>
 <contactref element="ADC_BUFF1:C4" pad="1"/>
-<wire x1="-3.06" y1="-107.8624" x2="-4.23" y2="-152.4" width="0" layer="19" extent="1-1"/>
-<wire x1="1.59" y1="-29.21" x2="-3.06" y2="-107.8624" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="ADC_BUFF1:N$4">
-<contactref element="ADC_BUFF1:U1" pad="18"/>
+<contactref element="ADC_BUFF1:U3" pad="22"/>
+<wire x1="-4.23" y1="-152.4" x2="-10.68" y2="-158.6624" width="0" layer="19" extent="1-1"/>
+<wire x1="1.59" y1="-29.21" x2="-4.23" y2="-152.4" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADC_BUFF1:CLK-">
-<contactref element="ADC_BUFF1:U1" pad="16"/>
 <contactref element="ADC_BUFF1:R2" pad="2"/>
-<wire x1="3.39" y1="-86.36" x2="-6.2624" y2="-107.16" width="0" layer="19" extent="1-1"/>
+<contactref element="ADC_BUFF1:U3" pad="16"/>
+<wire x1="3.39" y1="-86.36" x2="-13.8824" y2="-157.96" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADC_BUFF1:CLK+">
-<contactref element="ADC_BUFF1:U1" pad="17"/>
 <contactref element="ADC_BUFF1:R2" pad="1"/>
-<wire x1="1.69" y1="-86.36" x2="-5.56" y2="-107.8624" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="ADC_BUFF1:D-">
-<contactref element="ADC_BUFF1:U1" pad="10"/>
-</signal>
-<signal name="ADC_BUFF1:D+">
-<contactref element="ADC_BUFF1:U1" pad="11"/>
-</signal>
-<signal name="ADC_BUFF1:DCO-">
-<contactref element="ADC_BUFF1:U1" pad="14"/>
-</signal>
-<signal name="ADC_BUFF1:DCO+">
-<contactref element="ADC_BUFF1:U1" pad="15"/>
+<contactref element="ADC_BUFF1:U3" pad="17"/>
+<wire x1="1.69" y1="-86.36" x2="-13.18" y2="-158.6624" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADC_BUFF1:REF_5V">
 <contactref element="ADC_BUFF1:IC1" pad="3"/>
@@ -2161,23 +2134,50 @@ design rules under a new name.</description>
 <contactref element="ADC_BUFF1:R5" pad="1"/>
 </signal>
 <signal name="ADC_BUFF1:N$6">
-<contactref element="ADC_BUFF1:U2" pad="11"/>
 <contactref element="ADC_BUFF1:R12" pad="1"/>
-<wire x1="-2.413" y1="-111.51" x2="-5.93" y2="-152.4" width="0" layer="19" extent="1-1"/>
+<contactref element="ADC_BUFF1:U1" pad="11"/>
+<wire x1="-5.93" y1="-152.4" x2="-10.033" y2="-162.31" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ADC_BUFF1:N$5">
-<contactref element="ADC_BUFF1:U2" pad="10"/>
 <contactref element="ADC_BUFF1:R13" pad="1"/>
-<wire x1="-2.413" y1="-112.01" x2="-5.93" y2="-157.48" width="0" layer="19" extent="1-1"/>
+<contactref element="ADC_BUFF1:U1" pad="10"/>
+<wire x1="-5.93" y1="-157.48" x2="-10.033" y2="-162.81" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="ADC_BUFF1:EN0">
+<contactref element="ADC_BUFF1:U3" pad="4"/>
+</signal>
+<signal name="ADC_BUFF1:EN1">
+<contactref element="ADC_BUFF1:U3" pad="5"/>
+</signal>
+<signal name="ADC_BUFF1:EN2">
+<contactref element="ADC_BUFF1:U3" pad="6"/>
+</signal>
+<signal name="ADC_BUFF1:EN3">
+<contactref element="ADC_BUFF1:U3" pad="7"/>
+</signal>
+<signal name="ADC_BUFF1:N$4">
+<contactref element="ADC_BUFF1:U3" pad="18"/>
+</signal>
+<signal name="ADC_BUFF1:D-">
+<contactref element="ADC_BUFF1:U3" pad="10"/>
+</signal>
+<signal name="ADC_BUFF1:D+">
+<contactref element="ADC_BUFF1:U3" pad="11"/>
+</signal>
+<signal name="ADC_BUFF1:DCO-">
+<contactref element="ADC_BUFF1:U3" pad="14"/>
+</signal>
+<signal name="ADC_BUFF1:DCO+">
+<contactref element="ADC_BUFF1:U3" pad="15"/>
 </signal>
 <signal name="ADC_BUFF1:AMP_PWR-">
-<contactref element="ADC_BUFF1:U2" pad="16"/>
-<contactref element="ADC_BUFF1:U2" pad="13"/>
-<contactref element="ADC_BUFF1:U2" pad="15"/>
-<contactref element="ADC_BUFF1:U2" pad="14"/>
-<wire x1="-4.06" y1="-110.363" x2="-4.56" y2="-110.363" width="0" layer="19" extent="1-1"/>
-<wire x1="-3.56" y1="-110.363" x2="-4.06" y2="-110.363" width="0" layer="19" extent="1-1"/>
-<wire x1="-3.06" y1="-110.363" x2="-3.56" y2="-110.363" width="0" layer="19" extent="1-1"/>
+<contactref element="ADC_BUFF1:U1" pad="13"/>
+<contactref element="ADC_BUFF1:U1" pad="14"/>
+<contactref element="ADC_BUFF1:U1" pad="15"/>
+<contactref element="ADC_BUFF1:U1" pad="16"/>
+<wire x1="-11.18" y1="-161.163" x2="-10.68" y2="-161.163" width="0" layer="19" extent="1-1"/>
+<wire x1="-11.68" y1="-161.163" x2="-11.18" y2="-161.163" width="0" layer="19" extent="1-1"/>
+<wire x1="-12.18" y1="-161.163" x2="-11.68" y2="-161.163" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
