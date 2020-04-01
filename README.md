@@ -1,25 +1,30 @@
-# open\_covg\_daq\_pcb
+# open\_covg\_daq\_pcb 
+### (this is the Eagle project name)
 
-Printed Circuit Board (PCB) design using Eagle 9.5.1. The first revision of the ADC and DAC board that interfaces to an Opal Kelly XEM6310.
+Printed Circuit Board (PCB) design using Eagle 9.5.1. This readme describes the first revision of the ADC and DAC board that interfaces to an Opal Kelly XEM6310.
 
 ### Part Datasheets
 [datasheets](documentation/datasheets)
-
 
 ### ADC 
 
 **High-speed ADC**
 
 ADC configuration
+[AD7960 Eval Kit](documentation/eval_kits/AD7960FMCZ_Schematic.pdf)
+Power supplies:
 
-
+* +5 V (500 mA)
+* +7 V (300 mA)
+* -2.5 V (250 mA)
+* 1.8 V
 
 ### DAC 
 
 [AD5453](https://www.analog.com/media/en/technical-documentation/data-sheets/AD5450_5451_5452_5453.pdf) Multiplying R-2R ladder so the REF voltage can span a wide range (-10 V to 10 V) well beyond VDD. The input VREF could be dynamic or it could vary statically to allow for different gains of the DAC output.
 
 External connections for bipolar operation are described in Figure 45. 
-
+AD5453 (14 bit) has a +/-2.5 LSB gain error. Resistors R1,R2 in Fig. 45 are intended to correct this gain error. This is not necessary in our design. 
 
 ### Level Shifters
 
@@ -78,4 +83,13 @@ Note that design blocks do not link back to a source/parent. So best practice is
 See this YouTube [video](https://www.youtube.com/watch?v=i-ChFk2pagA)
 
 **Part Libraries** 
+
 Within the project is a folder parts/open_covg.lbr. Most parts here are downloaded from Ultra Librarian. 
+
+The *Value* of a part can be changed so that a symbol / footprint combination can be reused. 
+
+### Block Diagram
+[draw.io](https://app.diagrams.net/#G1cag96miJY35-pZFsIFOat7tR4uEEA6qU)
+
+[Google drive draw.io](/Users/koer2434/Google Drive/UST/research/patch_clamp/board_design1/) is within this folder
+
