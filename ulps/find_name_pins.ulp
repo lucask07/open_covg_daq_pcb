@@ -1,0 +1,86 @@
+// Lucas Koerner
+// 2020/5/13
+
+// Loop through all parts and find a specific part as specified by part_id
+//  determine the orientation of each pin and write the instruction to draw a wire stub 
+//  that is named and labeled
+// output is to net_draw_label.scr (a script which can be run after the ULP)
+// Derived from 'pin_connect.ulp'
+
+
+// Find all nets and prints what part and pin each is connected to:
+schematic(SCH) {
+	SCH.sheets(SH) 
+	output("/Users/koer2434/Documents/eagle/projects/open_covg_daq_pcb/ulps/net_connections.txt", "wa"){
+		printf("Sheet: %d\n", SH.number);
+			SH.nets(N) {
+				printf("\tNet: %s\n", N.name);
+				N.segments(SEG) {
+					SEG.pinrefs(P) {
+						printf("connected to: %s, %s, %s\n",
+						P.part.name, P.instance.name, P.pin.name);
+				}
+			}
+		}
+	}
+
+	// Loop through all parts and find a specific part as specified by part_id
+	//  determine the orientation of each pin and write the instruction to draw a wire stub 
+	//  that is named and labeled
+	// output is to net_draw_label.scr (a script which can be run after the ULP)
+
+	SCH.parts(P)
+	{
+	string part_id = "R6"; // was "BRD1"
+	if(P.name != part_id) continue;
+	P.instances(I) /* for each instance of a part */
+		{
+			output("/Users/koer2434/Documents/eagle/projects/open_covg_daq_pcb/ulps/net_draw_label.scr", "wt"){
+				printf("SET SIZE 0.05\n"); // for the Labels 
+				I.gate.symbol.pins(pin) /* for each pin of a part instance */
+				{
+					if(!pin.contact) continue;
+					string pin_name = P.name + "." + pin.contact.name;
+					// string pin_name = pin.contact.name;
+					printf("# Pin name: %s\n", pin_name);
+
+					real x = u2inch(pin.x);
+					real y = u2inch(pin.y);
+					real dx, dy, tx, ty;
+					string orientation;
+					int num_right_clicks;
+					int angle = trunc(pin.angle);
+					switch(angle)
+					{
+					case 0:
+						dx = -0.1; dy = 0.0; tx = -0.05; ty = 0.035; orientation = "MR0";
+						num_right_clicks = 2;
+						break;
+					case 90:
+						dx = 0.0; dy = -0.1; tx = -0.035; ty = -0.05; orientation = "R270";
+						num_right_clicks = 3;
+						break;
+					case 180:
+						dx = 0.1; dy = 0.0; tx = 0.05; ty = -0.035; orientation = "";
+						num_right_clicks = 0;
+						break;
+					case 270:
+						dx = 0.0; dy = 0.1; tx = 0.035; ty = 0.05; orientation = "R90";
+						num_right_clicks = 1;
+						break;
+					default:
+						break;
+					}
+					printf("NET \'%s\' (%f %f) (%f %f);\n", "test_net_name", x, y, x+dx, y+dy);
+					// printf("TEXT \'%s\' %s (%f %f);\n", "test_net_name", orientation, x+dx+tx, y+dy+ty); // add text label (not used)
+					real x1 = x + dx;
+					real y1 = y + dy;
+					printf("LABEL (%f %f)",x1,y1);
+					for(int i=0; i<num_right_clicks; i++)
+						printf(" (> %f %f)",x1,y1);
+					printf(" (%f %f);\n",x1+tx,y1+ty);					
+				}
+			}
+		}
+	}
+}

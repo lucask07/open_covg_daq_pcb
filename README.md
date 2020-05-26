@@ -88,8 +88,64 @@ Within the project is a folder parts/open_covg.lbr. Most parts here are download
 
 The *Value* of a part can be changed so that a symbol / footprint combination can be reused. 
 
+**Eagle/Autodesk Libraries**
+[library.io](https://library.io/search?q=)
+
 ### Block Diagram
 [draw.io](https://app.diagrams.net/#G1cag96miJY35-pZFsIFOat7tR4uEEA6qU)
 
 [Google drive draw.io](/Users/koer2434/Google Drive/UST/research/patch_clamp/board_design1/) is within this folder
 
+### Python Tools for Eagle
+
+[Package parser] (https://github.com/derpston/pyEagleSCR)
+
+#### Need a tool to automatically rename nets 
+ULP:
+
+name "newname" (x y);
+
+And possibly create the Xilinx UCF file 
+
+
+[Swoop](http://nvsl.ucsd.edu/Swoop/) Can work with the schematic and board files. PyPI has it last updated in 2019 
+
+**What I need:**
+
+* spreadsheet from OpalKelly pins that creates UCF 
+* UCF file is parsed by Eagle 
+* And a way to indicate voltage levels? 
+
+"Totally do-able with a ULP. I imagine the process would be something like this: run MyULP.ulp Dialog opens and you enter the FPGA name from the schematic (say U1). In that same dialog you select the .qsf file of interest. ULP parses the file and matches pin names to qsf data
+Identifies pin location,direction, and creates a script that runs when the ULP ends."
+
+**Important note** the ULP just finds things, need to create a script that runs at the end that draws wires, labels nets, etc. 
+
+It draws a short named net wire out from the pin in the appropriate direction and labels it with the signal name.
+
+The script **'cmd-net-list2sch.ulp'** helps a lot to understand how to access (from the Control Panel see 'User Language Programs/examples/':
+
+- Pin.name
+
+- Pin.coord(x, y)
+
+- trace and label wires with 'NET' and 'LABEL' commands
+
+NET (-0.7 7.1) (-0.2 7.1)
+
+
+
+[SparkFun Git](https://github.com/sparkfun/SparkFun_Eagle_Settings)
+for example ULPs:
+ 
+#### Plan to export netlist and simulate
+
+#### Change Directories 
+Options -> Directories...
+
+#### Documented plan to name nets 
+
+* I have edited *segments_example.ulp* and *parts.scr* 
+
+#### Autorouter 
+Use fanout for VDD and GND to planes 

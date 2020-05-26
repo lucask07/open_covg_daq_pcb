@@ -1,0 +1,12 @@
+board(B) {
+	B.wires(W) 
+	output("/Users/koer2434/Documents/eagle/projects/open_covg_daq_pcb/ulps/test.txt", "wa"){
+	printf("Wire: (%f %f) (%f %f)\n",u2mil(W.x1), u2mil(W.y1), u2mil(W.x2), u2mil(W.y2));
+	}
+
+	B.signals(S) 
+	output("/Users/koer2434/Documents/eagle/projects/open_covg_daq_pcb/ulps/sigs.txt", "wa"){
+	printf("Signal: %s\n", S.name);
+	}
+
+}
