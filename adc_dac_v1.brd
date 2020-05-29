@@ -1471,86 +1471,86 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/346131962AD8067_a.pdf</d
 <text x="-3.2766" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
 </package>
 <package name="OPALKELLY_XEM6010">
-<smd name="JP3-39" x="49.1" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-41" x="49.9" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-37" x="48.3" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-35" x="47.5" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-33" x="46.7" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-31" x="45.9" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-29" x="45.1" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-27" x="44.3" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-25" x="43.5" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-23" x="42.7" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-21" x="41.9" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-19" x="41.1" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-17" x="40.3" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-15" x="39.5" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-13" x="38.7" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-11" x="37.9" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-9" x="37.1" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-7" x="36.3" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-5" x="35.5" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-43" x="50.7" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-45" x="51.5" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-47" x="52.3" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-49" x="53.1" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-51" x="53.9" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-53" x="54.7" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-55" x="55.5" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-57" x="56.3" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-59" x="57.1" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-61" x="57.9" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-63" x="58.7" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-65" x="59.5" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-67" x="60.3" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-69" x="61.1" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-71" x="61.9" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-73" x="62.7" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-75" x="63.5" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-3" x="34.7" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-77" x="64.3" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-1" x="33.9" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-79" x="65.1" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-40" x="49.1" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-42" x="49.9" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-38" x="48.3" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-36" x="47.5" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-34" x="46.7" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-32" x="45.9" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-30" x="45.1" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-28" x="44.3" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-26" x="43.5" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-24" x="42.7" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-22" x="41.9" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-20" x="41.1" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-18" x="40.3" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-16" x="39.5" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-14" x="38.7" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-12" x="37.9" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-10" x="37.1" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-8" x="36.3" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-6" x="35.5" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-44" x="50.7" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-46" x="51.5" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-48" x="52.3" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-50" x="53.1" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-52" x="53.9" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-54" x="54.7" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-56" x="55.5" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-58" x="56.3" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-60" x="57.1" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-62" x="57.9" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-64" x="58.7" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-66" x="59.5" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-68" x="60.3" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-70" x="61.1" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-72" x="61.9" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-74" x="62.7" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-76" x="63.5" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-4" x="34.7" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-78" x="64.3" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-2" x="33.9" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-80" x="65.1" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-39" x="49.1" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-41" x="49.9" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-37" x="48.3" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-35" x="47.5" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-33" x="46.7" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-31" x="45.9" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-29" x="45.1" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-27" x="44.3" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-25" x="43.5" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-23" x="42.7" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-21" x="41.9" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-19" x="41.1" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-17" x="40.3" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-15" x="39.5" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-13" x="38.7" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-11" x="37.9" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-9" x="37.1" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-7" x="36.3" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-5" x="35.5" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-43" x="50.7" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-45" x="51.5" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-47" x="52.3" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-49" x="53.1" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-51" x="53.9" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-53" x="54.7" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-55" x="55.5" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-57" x="56.3" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-59" x="57.1" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-61" x="57.9" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-63" x="58.7" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-65" x="59.5" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-67" x="60.3" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-69" x="61.1" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-71" x="61.9" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-73" x="62.7" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-75" x="63.5" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-3" x="34.7" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-77" x="64.3" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-1" x="33.9" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-79" x="65.1" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-40" x="49.1" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-42" x="49.9" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-38" x="48.3" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-36" x="47.5" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-34" x="46.7" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-32" x="45.9" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-30" x="45.1" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-28" x="44.3" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-26" x="43.5" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-24" x="42.7" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-22" x="41.9" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-20" x="41.1" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-18" x="40.3" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-16" x="39.5" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-14" x="38.7" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-12" x="37.9" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-10" x="37.1" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-8" x="36.3" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-6" x="35.5" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-44" x="50.7" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-46" x="51.5" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-48" x="52.3" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-50" x="53.1" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-52" x="53.9" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-54" x="54.7" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-56" x="55.5" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-58" x="56.3" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-60" x="57.1" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-62" x="57.9" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-64" x="58.7" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-66" x="59.5" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-68" x="60.3" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-70" x="61.1" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-72" x="61.9" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-74" x="62.7" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-76" x="63.5" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-4" x="34.7" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-78" x="64.3" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-2" x="33.9" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-80" x="65.1" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
 <hole x="32.261" y="47.032" drill="1.016"/>
 <hole x="66.739" y="47.032" drill="1.016"/>
 <wire x1="31.5" y1="48" x2="33.5" y2="48" width="0.2" layer="21"/>
@@ -1669,7 +1669,7 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/346131962AD8067_a.pdf</d
 <wire x1="-3.87" y1="39" x2="0" y2="39" width="0.2" layer="21"/>
 <text x="1.0155" y="50.381" size="1.27" layer="25" font="vector">&gt;NAME</text>
 <text x="30.48" y="3.81" size="1.27" layer="21" font="vector" rot="R90">JP2</text>
-<text x="30.48" y="43.942" size="1.27" layer="21" font="vector" rot="R90">JP3</text>
+<text x="30.48" y="43.942" size="1.27" layer="21" font="vector" rot="R90">JP1</text>
 </package>
 </packages>
 </library>
@@ -2414,8 +2414,8 @@ design rules under a new name.</description>
 <attribute name="SPICEPREFIX" value="R" x="-44.45" y="-161.29" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="-28.575" y="-32.385" size="1.27" layer="27"/>
 </element>
-<element name="BRD1" library="open_covg" package="OPALKELLY_XEM6010" value="OPALKELLY_XEM6310" x="43.18" y="21.59" smashed="yes">
-<attribute name="NAME" x="44.1955" y="71.971" size="1.27" layer="25" font="vector"/>
+<element name="OK1" library="open_covg" package="OPALKELLY_XEM6010" value="OPALKELLY_XEM6310" x="-35.56" y="-90.17" smashed="yes">
+<attribute name="NAME" x="-34.5445" y="-39.789" size="1.27" layer="25" font="vector"/>
 </element>
 </elements>
 <signals>
@@ -2784,30 +2784,7 @@ design rules under a new name.</description>
 <wire x1="-35.31" y1="-34.163" x2="-35.81" y2="-34.163" width="0" layer="19" extent="1-1"/>
 <wire x1="-34.81" y1="-34.163" x2="-35.31" y2="-34.163" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="+VCCO1_35">
-<contactref element="BRD1" pad="JP2-35"/>
-</signal>
-<signal name="+VCCO1_55">
-<contactref element="BRD1" pad="JP2-55"/>
-</signal>
-<signal name="DGND_13">
-<contactref element="BRD1" pad="JP2-13"/>
-</signal>
-<signal name="DGND_36">
-<contactref element="BRD1" pad="JP2-36"/>
-</signal>
-<signal name="DGND_56">
-<contactref element="BRD1" pad="JP2-56"/>
-</signal>
-<signal name="+3.3VDD_4">
-<contactref element="BRD1" pad="JP2-4"/>
-</signal>
-<signal name="+3.3VDD_6">
-<contactref element="BRD1" pad="JP2-6"/>
-</signal>
 <signal name="DGND_14">
-<contactref element="BRD1" pad="JP2-14"/>
-<contactref element="BRD1" pad="JP3-14"/>
 <wire x1="73.8408" y1="29.284825" x2="73.8408" y2="27.959175" width="0.1524" layer="1"/>
 <wire x1="73.8408" y1="27.959175" x2="74.778175" y2="27.0218" width="0.1524" layer="1"/>
 <wire x1="81.88" y1="63.504" x2="81.88" y2="37.324025" width="0.1524" layer="1"/>
@@ -2815,76 +2792,89 @@ design rules under a new name.</description>
 <wire x1="74.778175" y1="27.0218" x2="78.8379875" y2="27.0218" width="0.1524" layer="1"/>
 <wire x1="78.8379875" y1="27.0218" x2="81.88" y2="23.9797875" width="0.1524" layer="1"/>
 <wire x1="81.88" y1="23.9797875" x2="81.88" y2="23.504" width="0.1524" layer="1"/>
+<contactref element="OK1" pad="JP2-14"/>
+<contactref element="OK1" pad="JP1-14"/>
+<wire x1="3.14" y1="-48.256" x2="81.88" y2="23.504" width="0" layer="19" extent="1-1"/>
+<wire x1="3.14" y1="-88.256" x2="3.14" y2="-48.256" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="DGND_1">
+<contactref element="OK1" pad="JP2-1"/>
+</signal>
+<signal name="+VCCO1_35">
+<contactref element="OK1" pad="JP2-35"/>
+</signal>
+<signal name="+VCCO1_55">
+<contactref element="OK1" pad="JP2-55"/>
+</signal>
+<signal name="DGND_13">
+<contactref element="OK1" pad="JP2-13"/>
+</signal>
+<signal name="+3.3VDD_2">
+<contactref element="OK1" pad="JP2-2"/>
+</signal>
+<signal name="DGND_36">
+<contactref element="OK1" pad="JP2-36"/>
+</signal>
+<signal name="DGND_56">
+<contactref element="OK1" pad="JP2-56"/>
+</signal>
+<signal name="+3.3VDD_4">
+<contactref element="OK1" pad="JP2-4"/>
+</signal>
+<signal name="+3.3VDD_6">
+<contactref element="OK1" pad="JP2-6"/>
 </signal>
 <signal name="DGND_78">
-<contactref element="BRD1" pad="JP2-78"/>
-<contactref element="BRD1" pad="JP3-78"/>
-<wire x1="107.48" y1="63.504" x2="107.48" y2="23.504" width="0" layer="19" extent="1-1"/>
+<contactref element="OK1" pad="JP2-78"/>
+<contactref element="OK1" pad="JP1-78"/>
+<wire x1="28.74" y1="-48.256" x2="28.74" y2="-88.256" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DGND_80">
-<contactref element="BRD1" pad="JP2-80"/>
-<contactref element="BRD1" pad="JP3-80"/>
-<wire x1="108.28" y1="63.504" x2="108.28" y2="23.504" width="0" layer="19" extent="1-1"/>
+<contactref element="OK1" pad="JP2-80"/>
+<contactref element="OK1" pad="JP1-80"/>
+<wire x1="29.54" y1="-48.256" x2="29.54" y2="-88.256" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+VDC_1">
-<contactref element="BRD1" pad="JP3-1"/>
+<contactref element="OK1" pad="JP1-1"/>
 </signal>
 <signal name="DGND_35">
-<contactref element="BRD1" pad="JP3-35"/>
+<contactref element="OK1" pad="JP1-35"/>
 </signal>
 <signal name="DGND_55">
-<contactref element="BRD1" pad="JP3-55"/>
+<contactref element="OK1" pad="JP1-55"/>
 </signal>
 <signal name="+VDC_3">
-<contactref element="BRD1" pad="JP3-3"/>
+<contactref element="OK1" pad="JP1-3"/>
 </signal>
 <signal name="+VDC_5">
-<contactref element="BRD1" pad="JP3-5"/>
+<contactref element="OK1" pad="JP1-5"/>
 </signal>
 <signal name="+1.8VDD">
-<contactref element="BRD1" pad="JP3-7"/>
+<contactref element="OK1" pad="JP1-7"/>
 </signal>
 <signal name="+3.3VDD_9">
-<contactref element="BRD1" pad="JP3-9"/>
+<contactref element="OK1" pad="JP1-9"/>
 </signal>
 <signal name="+3.3VDD_11">
-<contactref element="BRD1" pad="JP3-11"/>
+<contactref element="OK1" pad="JP1-11"/>
 </signal>
 <signal name="+3.3VDD_13">
-<contactref element="BRD1" pad="JP3-13"/>
+<contactref element="OK1" pad="JP1-13"/>
 </signal>
 <signal name="DGND_2">
-<contactref element="BRD1" pad="JP3-2"/>
+<contactref element="OK1" pad="JP1-2"/>
 </signal>
 <signal name="+VCCO0_36">
-<contactref element="BRD1" pad="JP3-36"/>
+<contactref element="OK1" pad="JP1-36"/>
 </signal>
 <signal name="+VCCO0_56">
-<contactref element="BRD1" pad="JP3-56"/>
+<contactref element="OK1" pad="JP1-56"/>
 </signal>
 <signal name="+1.2VDD_4">
-<contactref element="BRD1" pad="JP3-4"/>
+<contactref element="OK1" pad="JP1-4"/>
 </signal>
 <signal name="+1.2VDD_6">
-<contactref element="BRD1" pad="JP3-6"/>
-</signal>
-<signal name="DGND">
-<contactref element="BRD1" pad="JP2-1"/>
-</signal>
-<signal name="N$19">
-<contactref element="BRD1" pad="JP2-5"/>
-</signal>
-<signal name="N$20">
-<contactref element="BRD1" pad="JP2-7"/>
-</signal>
-<signal name="N$21">
-<contactref element="BRD1" pad="JP2-9"/>
-</signal>
-<signal name="N$22">
-<contactref element="BRD1" pad="JP2-15"/>
-</signal>
-<signal name="TEST_NET_NAME">
-<contactref element="BRD1" pad="JP2-2"/>
+<contactref element="OK1" pad="JP1-6"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

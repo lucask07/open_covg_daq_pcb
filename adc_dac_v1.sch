@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -9388,86 +9388,86 @@ Source: AVX .. aphvc.pdf</description>
 <text x="-3.2766" y="-0.635" size="1.27" layer="25" ratio="6" rot="SR0">&gt;Name</text>
 </package>
 <package name="OPALKELLY_XEM6010">
-<smd name="JP3-39" x="49.1" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-41" x="49.9" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-37" x="48.3" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-35" x="47.5" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-33" x="46.7" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-31" x="45.9" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-29" x="45.1" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-27" x="44.3" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-25" x="43.5" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-23" x="42.7" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-21" x="41.9" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-19" x="41.1" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-17" x="40.3" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-15" x="39.5" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-13" x="38.7" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-11" x="37.9" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-9" x="37.1" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-7" x="36.3" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-5" x="35.5" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-43" x="50.7" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-45" x="51.5" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-47" x="52.3" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-49" x="53.1" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-51" x="53.9" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-53" x="54.7" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-55" x="55.5" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-57" x="56.3" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-59" x="57.1" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-61" x="57.9" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-63" x="58.7" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-65" x="59.5" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-67" x="60.3" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-69" x="61.1" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-71" x="61.9" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-73" x="62.7" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-75" x="63.5" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-3" x="34.7" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-77" x="64.3" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-1" x="33.9" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-79" x="65.1" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-40" x="49.1" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-42" x="49.9" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-38" x="48.3" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-36" x="47.5" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-34" x="46.7" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-32" x="45.9" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-30" x="45.1" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-28" x="44.3" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-26" x="43.5" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-24" x="42.7" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-22" x="41.9" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-20" x="41.1" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-18" x="40.3" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-16" x="39.5" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-14" x="38.7" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-12" x="37.9" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-10" x="37.1" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-8" x="36.3" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-6" x="35.5" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-44" x="50.7" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-46" x="51.5" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-48" x="52.3" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-50" x="53.1" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-52" x="53.9" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-54" x="54.7" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-56" x="55.5" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-58" x="56.3" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-60" x="57.1" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-62" x="57.9" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-64" x="58.7" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-66" x="59.5" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-68" x="60.3" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-70" x="61.1" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-72" x="61.9" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-74" x="62.7" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-76" x="63.5" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-4" x="34.7" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-78" x="64.3" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-2" x="33.9" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
-<smd name="JP3-80" x="65.1" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-39" x="49.1" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-41" x="49.9" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-37" x="48.3" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-35" x="47.5" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-33" x="46.7" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-31" x="45.9" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-29" x="45.1" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-27" x="44.3" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-25" x="43.5" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-23" x="42.7" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-21" x="41.9" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-19" x="41.1" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-17" x="40.3" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-15" x="39.5" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-13" x="38.7" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-11" x="37.9" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-9" x="37.1" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-7" x="36.3" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-5" x="35.5" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-43" x="50.7" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-45" x="51.5" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-47" x="52.3" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-49" x="53.1" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-51" x="53.9" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-53" x="54.7" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-55" x="55.5" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-57" x="56.3" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-59" x="57.1" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-61" x="57.9" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-63" x="58.7" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-65" x="59.5" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-67" x="60.3" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-69" x="61.1" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-71" x="61.9" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-73" x="62.7" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-75" x="63.5" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-3" x="34.7" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-77" x="64.3" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-1" x="33.9" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-79" x="65.1" y="48.086" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-40" x="49.1" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-42" x="49.9" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-38" x="48.3" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-36" x="47.5" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-34" x="46.7" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-32" x="45.9" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-30" x="45.1" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-28" x="44.3" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-26" x="43.5" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-24" x="42.7" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-22" x="41.9" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-20" x="41.1" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-18" x="40.3" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-16" x="39.5" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-14" x="38.7" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-12" x="37.9" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-10" x="37.1" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-8" x="36.3" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-6" x="35.5" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-44" x="50.7" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-46" x="51.5" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-48" x="52.3" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-50" x="53.1" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-52" x="53.9" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-54" x="54.7" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-56" x="55.5" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-58" x="56.3" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-60" x="57.1" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-62" x="57.9" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-64" x="58.7" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-66" x="59.5" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-68" x="60.3" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-70" x="61.1" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-72" x="61.9" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-74" x="62.7" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-76" x="63.5" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-4" x="34.7" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-78" x="64.3" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-2" x="33.9" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
+<smd name="JP1-80" x="65.1" y="41.914" dx="1.448" dy="0.457" layer="1" rot="R90"/>
 <hole x="32.261" y="47.032" drill="1.016"/>
 <hole x="66.739" y="47.032" drill="1.016"/>
 <wire x1="31.5" y1="48" x2="33.5" y2="48" width="0.2" layer="21"/>
@@ -9586,7 +9586,7 @@ Source: AVX .. aphvc.pdf</description>
 <wire x1="-3.87" y1="39" x2="0" y2="39" width="0.2" layer="21"/>
 <text x="1.0155" y="50.381" size="1.27" layer="25" font="vector">&gt;NAME</text>
 <text x="30.48" y="3.81" size="1.27" layer="21" font="vector" rot="R90">JP2</text>
-<text x="30.48" y="43.942" size="1.27" layer="21" font="vector" rot="R90">JP3</text>
+<text x="30.48" y="43.942" size="1.27" layer="21" font="vector" rot="R90">JP1</text>
 </package>
 </packages>
 <symbols>
@@ -10279,12 +10279,92 @@ Source: AVX .. aphvc.pdf</description>
 <gates>
 <gate name="JP2_ODD" symbol="XEM6010_JP2_ODD" x="-76.2" y="0"/>
 <gate name="JP2_EVEN" symbol="XEM6010_JP2_EVEN" x="-43.18" y="0"/>
-<gate name="JP3_ODD" symbol="XEM6010_JP3_ODD" x="-10.16" y="0"/>
-<gate name="JP3_EVEN" symbol="XEM6010_JP3_EVEN" x="22.86" y="0"/>
+<gate name="JP1_ODD" symbol="XEM6010_JP3_ODD" x="-10.16" y="0"/>
+<gate name="JP1_EVEN" symbol="XEM6010_JP3_EVEN" x="22.86" y="0"/>
 </gates>
 <devices>
 <device name="" package="OPALKELLY_XEM6010">
 <connects>
+<connect gate="JP1_EVEN" pin="+1.2VDD_4" pad="JP1-4"/>
+<connect gate="JP1_EVEN" pin="+1.2VDD_6" pad="JP1-6"/>
+<connect gate="JP1_EVEN" pin="+VCCO0_36" pad="JP1-36"/>
+<connect gate="JP1_EVEN" pin="+VCCO0_56" pad="JP1-56"/>
+<connect gate="JP1_EVEN" pin="A12-L37N_0" pad="JP1-66"/>
+<connect gate="JP1_EVEN" pin="A14-L50N_0" pad="JP1-70"/>
+<connect gate="JP1_EVEN" pin="A16-L63N_0" pad="JP1-74"/>
+<connect gate="JP1_EVEN" pin="A6-L4N_0" pad="JP1-52"/>
+<connect gate="JP1_EVEN" pin="A7-L5N_0" pad="JP1-58"/>
+<connect gate="JP1_EVEN" pin="A9-L8N_0" pad="JP1-62"/>
+<connect gate="JP1_EVEN" pin="B12-L37P_0" pad="JP1-64"/>
+<connect gate="JP1_EVEN" pin="B14-L50P_0" pad="JP1-68"/>
+<connect gate="JP1_EVEN" pin="B16-L63P_0" pad="JP1-72"/>
+<connect gate="JP1_EVEN" pin="B18-L65P_0" pad="JP1-76"/>
+<connect gate="JP1_EVEN" pin="B6-L4P_0" pad="JP1-50"/>
+<connect gate="JP1_EVEN" pin="C10-L33N_0" pad="JP1-40"/>
+<connect gate="JP1_EVEN" pin="C12-L36N_0" pad="JP1-44"/>
+<connect gate="JP1_EVEN" pin="C16-L62N_0" pad="JP1-48"/>
+<connect gate="JP1_EVEN" pin="C7-L5P_0" pad="JP1-54"/>
+<connect gate="JP1_EVEN" pin="C8-L7N_0" pad="JP1-34"/>
+<connect gate="JP1_EVEN" pin="C9-L8P_0" pad="JP1-60"/>
+<connect gate="JP1_EVEN" pin="D10-L33P_0" pad="JP1-38"/>
+<connect gate="JP1_EVEN" pin="D11-L36P_0" pad="JP1-42"/>
+<connect gate="JP1_EVEN" pin="D15-L62P_0" pad="JP1-46"/>
+<connect gate="JP1_EVEN" pin="D9-L7P_0" pad="JP1-32"/>
+<connect gate="JP1_EVEN" pin="DGND_14" pad="JP1-14"/>
+<connect gate="JP1_EVEN" pin="DGND_2" pad="JP1-2"/>
+<connect gate="JP1_EVEN" pin="DGND_78" pad="JP1-78"/>
+<connect gate="JP1_EVEN" pin="DGND_80" pad="JP1-80"/>
+<connect gate="JP1_EVEN" pin="M17-L71P_1" pad="JP1-24"/>
+<connect gate="JP1_EVEN" pin="M18-L71N_1" pad="JP1-26"/>
+<connect gate="JP1_EVEN" pin="N16-L72N_1" pad="JP1-22"/>
+<connect gate="JP1_EVEN" pin="P17-L72P_1" pad="JP1-20"/>
+<connect gate="JP1_EVEN" pin="P18-L73P_1" pad="JP1-28"/>
+<connect gate="JP1_EVEN" pin="R19-L73N_1" pad="JP1-30"/>
+<connect gate="JP1_EVEN" pin="SYS_CLK5" pad="JP1-8"/>
+<connect gate="JP1_EVEN" pin="T19-L74P_1" pad="JP1-16"/>
+<connect gate="JP1_EVEN" pin="T20-L74N_1" pad="JP1-18"/>
+<connect gate="JP1_EVEN" pin="USB_SCL" pad="JP1-10"/>
+<connect gate="JP1_EVEN" pin="USB_SDA" pad="JP1-12"/>
+<connect gate="JP1_ODD" pin="+1.8VDD" pad="JP1-7"/>
+<connect gate="JP1_ODD" pin="+3.3VDD_11" pad="JP1-11"/>
+<connect gate="JP1_ODD" pin="+3.3VDD_13" pad="JP1-13"/>
+<connect gate="JP1_ODD" pin="+3.3VDD_9" pad="JP1-9"/>
+<connect gate="JP1_ODD" pin="+VDC_1" pad="JP1-1"/>
+<connect gate="JP1_ODD" pin="+VDC_3" pad="JP1-3"/>
+<connect gate="JP1_ODD" pin="+VDC_5" pad="JP1-5"/>
+<connect gate="JP1_ODD" pin="A10-L34N_0" pad="JP1-61"/>
+<connect gate="JP1_ODD" pin="A11-L35N_0" pad="JP1-79"/>
+<connect gate="JP1_ODD" pin="A13-L38N_0" pad="JP1-65"/>
+<connect gate="JP1_ODD" pin="A15-L51N_0" pad="JP1-69"/>
+<connect gate="JP1_ODD" pin="A17-L64N_0" pad="JP1-73"/>
+<connect gate="JP1_ODD" pin="A18-L65N_0" pad="JP1-75"/>
+<connect gate="JP1_ODD" pin="A3-L1P_0" pad="JP1-49"/>
+<connect gate="JP1_ODD" pin="A4-L1N_0" pad="JP1-51"/>
+<connect gate="JP1_ODD" pin="A5-L2N_0" pad="JP1-25"/>
+<connect gate="JP1_ODD" pin="A8-L6N_0" pad="JP1-57"/>
+<connect gate="JP1_ODD" pin="B10-L34P_0" pad="JP1-59"/>
+<connect gate="JP1_ODD" pin="B8-L6P_0" pad="JP1-53"/>
+<connect gate="JP1_ODD" pin="C11-L35P_0" pad="JP1-77"/>
+<connect gate="JP1_ODD" pin="C13-L38P_0" pad="JP1-63"/>
+<connect gate="JP1_ODD" pin="C14-L49N_0" pad="JP1-29"/>
+<connect gate="JP1_ODD" pin="C15-L51P_0" pad="JP1-67"/>
+<connect gate="JP1_ODD" pin="C17-L64P_0" pad="JP1-71"/>
+<connect gate="JP1_ODD" pin="C5-L2P_0" pad="JP1-23"/>
+<connect gate="JP1_ODD" pin="C6-L3N_0" pad="JP1-47"/>
+<connect gate="JP1_ODD" pin="D14-L49P_0" pad="JP1-27"/>
+<connect gate="JP1_ODD" pin="D17-L66N_0" pad="JP1-33"/>
+<connect gate="JP1_ODD" pin="D6-L3P_0" pad="JP1-45"/>
+<connect gate="JP1_ODD" pin="D7-L32P_0" pad="JP1-37"/>
+<connect gate="JP1_ODD" pin="D8-L32N_0" pad="JP1-39"/>
+<connect gate="JP1_ODD" pin="DGND_35" pad="JP1-35"/>
+<connect gate="JP1_ODD" pin="DGND_55" pad="JP1-55"/>
+<connect gate="JP1_ODD" pin="E16-L66P_0" pad="JP1-31"/>
+<connect gate="JP1_ODD" pin="K18-L61N_1" pad="JP1-43"/>
+<connect gate="JP1_ODD" pin="L17-L61P_1" pad="JP1-41"/>
+<connect gate="JP1_ODD" pin="U19-L70P_1" pad="JP1-19"/>
+<connect gate="JP1_ODD" pin="V20-L70N_1" pad="JP1-21"/>
+<connect gate="JP1_ODD" pin="W20-L60P_1" pad="JP1-15"/>
+<connect gate="JP1_ODD" pin="W22-L60N_1" pad="JP1-17"/>
 <connect gate="JP2_EVEN" pin="+3.3VDD_2" pad="JP2-2"/>
 <connect gate="JP2_EVEN" pin="+3.3VDD_4" pad="JP2-4"/>
 <connect gate="JP2_EVEN" pin="+3.3VDD_6" pad="JP2-6"/>
@@ -10365,86 +10445,6 @@ Source: AVX .. aphvc.pdf</description>
 <connect gate="JP2_ODD" pin="T22-L50N_1" pad="JP2-43"/>
 <connect gate="JP2_ODD" pin="V21-L52P_1" pad="JP2-37"/>
 <connect gate="JP2_ODD" pin="V22-L52N_1" pad="JP2-39"/>
-<connect gate="JP3_EVEN" pin="+1.2VDD_4" pad="JP3-4"/>
-<connect gate="JP3_EVEN" pin="+1.2VDD_6" pad="JP3-6"/>
-<connect gate="JP3_EVEN" pin="+VCCO0_36" pad="JP3-36"/>
-<connect gate="JP3_EVEN" pin="+VCCO0_56" pad="JP3-56"/>
-<connect gate="JP3_EVEN" pin="A12-L37N_0" pad="JP3-66"/>
-<connect gate="JP3_EVEN" pin="A14-L50N_0" pad="JP3-70"/>
-<connect gate="JP3_EVEN" pin="A16-L63N_0" pad="JP3-74"/>
-<connect gate="JP3_EVEN" pin="A6-L4N_0" pad="JP3-52"/>
-<connect gate="JP3_EVEN" pin="A7-L5N_0" pad="JP3-58"/>
-<connect gate="JP3_EVEN" pin="A9-L8N_0" pad="JP3-62"/>
-<connect gate="JP3_EVEN" pin="B12-L37P_0" pad="JP3-64"/>
-<connect gate="JP3_EVEN" pin="B14-L50P_0" pad="JP3-68"/>
-<connect gate="JP3_EVEN" pin="B16-L63P_0" pad="JP3-72"/>
-<connect gate="JP3_EVEN" pin="B18-L65P_0" pad="JP3-76"/>
-<connect gate="JP3_EVEN" pin="B6-L4P_0" pad="JP3-50"/>
-<connect gate="JP3_EVEN" pin="C10-L33N_0" pad="JP3-40"/>
-<connect gate="JP3_EVEN" pin="C12-L36N_0" pad="JP3-44"/>
-<connect gate="JP3_EVEN" pin="C16-L62N_0" pad="JP3-48"/>
-<connect gate="JP3_EVEN" pin="C7-L5P_0" pad="JP3-54"/>
-<connect gate="JP3_EVEN" pin="C8-L7N_0" pad="JP3-34"/>
-<connect gate="JP3_EVEN" pin="C9-L8P_0" pad="JP3-60"/>
-<connect gate="JP3_EVEN" pin="D10-L33P_0" pad="JP3-38"/>
-<connect gate="JP3_EVEN" pin="D11-L36P_0" pad="JP3-42"/>
-<connect gate="JP3_EVEN" pin="D15-L62P_0" pad="JP3-46"/>
-<connect gate="JP3_EVEN" pin="D9-L7P_0" pad="JP3-32"/>
-<connect gate="JP3_EVEN" pin="DGND_14" pad="JP3-14"/>
-<connect gate="JP3_EVEN" pin="DGND_2" pad="JP3-2"/>
-<connect gate="JP3_EVEN" pin="DGND_78" pad="JP3-78"/>
-<connect gate="JP3_EVEN" pin="DGND_80" pad="JP3-80"/>
-<connect gate="JP3_EVEN" pin="M17-L71P_1" pad="JP3-24"/>
-<connect gate="JP3_EVEN" pin="M18-L71N_1" pad="JP3-26"/>
-<connect gate="JP3_EVEN" pin="N16-L72N_1" pad="JP3-22"/>
-<connect gate="JP3_EVEN" pin="P17-L72P_1" pad="JP3-20"/>
-<connect gate="JP3_EVEN" pin="P18-L73P_1" pad="JP3-28"/>
-<connect gate="JP3_EVEN" pin="R19-L73N_1" pad="JP3-30"/>
-<connect gate="JP3_EVEN" pin="SYS_CLK5" pad="JP3-8"/>
-<connect gate="JP3_EVEN" pin="T19-L74P_1" pad="JP3-16"/>
-<connect gate="JP3_EVEN" pin="T20-L74N_1" pad="JP3-18"/>
-<connect gate="JP3_EVEN" pin="USB_SCL" pad="JP3-10"/>
-<connect gate="JP3_EVEN" pin="USB_SDA" pad="JP3-12"/>
-<connect gate="JP3_ODD" pin="+1.8VDD" pad="JP3-7"/>
-<connect gate="JP3_ODD" pin="+3.3VDD_11" pad="JP3-11"/>
-<connect gate="JP3_ODD" pin="+3.3VDD_13" pad="JP3-13"/>
-<connect gate="JP3_ODD" pin="+3.3VDD_9" pad="JP3-9"/>
-<connect gate="JP3_ODD" pin="+VDC_1" pad="JP3-1"/>
-<connect gate="JP3_ODD" pin="+VDC_3" pad="JP3-3"/>
-<connect gate="JP3_ODD" pin="+VDC_5" pad="JP3-5"/>
-<connect gate="JP3_ODD" pin="A10-L34N_0" pad="JP3-61"/>
-<connect gate="JP3_ODD" pin="A11-L35N_0" pad="JP3-79"/>
-<connect gate="JP3_ODD" pin="A13-L38N_0" pad="JP3-65"/>
-<connect gate="JP3_ODD" pin="A15-L51N_0" pad="JP3-69"/>
-<connect gate="JP3_ODD" pin="A17-L64N_0" pad="JP3-73"/>
-<connect gate="JP3_ODD" pin="A18-L65N_0" pad="JP3-75"/>
-<connect gate="JP3_ODD" pin="A3-L1P_0" pad="JP3-49"/>
-<connect gate="JP3_ODD" pin="A4-L1N_0" pad="JP3-51"/>
-<connect gate="JP3_ODD" pin="A5-L2N_0" pad="JP3-25"/>
-<connect gate="JP3_ODD" pin="A8-L6N_0" pad="JP3-57"/>
-<connect gate="JP3_ODD" pin="B10-L34P_0" pad="JP3-59"/>
-<connect gate="JP3_ODD" pin="B8-L6P_0" pad="JP3-53"/>
-<connect gate="JP3_ODD" pin="C11-L35P_0" pad="JP3-77"/>
-<connect gate="JP3_ODD" pin="C13-L38P_0" pad="JP3-63"/>
-<connect gate="JP3_ODD" pin="C14-L49N_0" pad="JP3-29"/>
-<connect gate="JP3_ODD" pin="C15-L51P_0" pad="JP3-67"/>
-<connect gate="JP3_ODD" pin="C17-L64P_0" pad="JP3-71"/>
-<connect gate="JP3_ODD" pin="C5-L2P_0" pad="JP3-23"/>
-<connect gate="JP3_ODD" pin="C6-L3N_0" pad="JP3-47"/>
-<connect gate="JP3_ODD" pin="D14-L49P_0" pad="JP3-27"/>
-<connect gate="JP3_ODD" pin="D17-L66N_0" pad="JP3-33"/>
-<connect gate="JP3_ODD" pin="D6-L3P_0" pad="JP3-45"/>
-<connect gate="JP3_ODD" pin="D7-L32P_0" pad="JP3-37"/>
-<connect gate="JP3_ODD" pin="D8-L32N_0" pad="JP3-39"/>
-<connect gate="JP3_ODD" pin="DGND_35" pad="JP3-35"/>
-<connect gate="JP3_ODD" pin="DGND_55" pad="JP3-55"/>
-<connect gate="JP3_ODD" pin="E16-L66P_0" pad="JP3-31"/>
-<connect gate="JP3_ODD" pin="K18-L61N_1" pad="JP3-43"/>
-<connect gate="JP3_ODD" pin="L17-L61P_1" pad="JP3-41"/>
-<connect gate="JP3_ODD" pin="U19-L70P_1" pad="JP3-19"/>
-<connect gate="JP3_ODD" pin="V20-L70N_1" pad="JP3-21"/>
-<connect gate="JP3_ODD" pin="W20-L60P_1" pad="JP3-15"/>
-<connect gate="JP3_ODD" pin="W22-L60N_1" pad="JP3-17"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -13298,7 +13298,7 @@ VDD should match level of SPI interface</text>
 <part name="GND16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="R19" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="33"/>
 <part name="R20" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="33"/>
-<part name="BRD1" library="open_covg" deviceset="OPALKELLY_XEM6310" device=""/>
+<part name="OK1" library="open_covg" deviceset="OPALKELLY_XEM6310" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13591,17 +13591,17 @@ Eval Brd uses +7V and -2.5V</text>
 <attribute name="NAME" x="346.71" y="14.1986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="346.71" y="9.398" size="1.778" layer="96"/>
 </instance>
-<instance part="BRD1" gate="JP2_ODD" x="-27.94" y="149.86" smashed="yes">
-<attribute name="NAME" x="-22.86" y="200.914" size="1.778" layer="95" font="vector" ratio="12" rot="MR0"/>
+<instance part="OK1" gate="JP2_ODD" x="20.32" y="157.48" smashed="yes">
+<attribute name="NAME" x="25.4" y="208.534" size="1.778" layer="95" font="vector" ratio="12" rot="MR0"/>
 </instance>
-<instance part="BRD1" gate="JP2_EVEN" x="68.58" y="149.86" smashed="yes">
-<attribute name="NAME" x="73.66" y="200.914" size="1.778" layer="95" font="vector" ratio="12" rot="MR0"/>
+<instance part="OK1" gate="JP2_EVEN" x="50.8" y="157.48" smashed="yes">
+<attribute name="NAME" x="55.88" y="208.534" size="1.778" layer="95" font="vector" ratio="12" rot="MR0"/>
 </instance>
-<instance part="BRD1" gate="JP3_ODD" x="116.84" y="152.4" smashed="yes">
-<attribute name="NAME" x="121.92" y="203.454" size="1.778" layer="95" font="vector" ratio="12" rot="MR0"/>
+<instance part="OK1" gate="JP1_ODD" x="81.28" y="157.48" smashed="yes">
+<attribute name="NAME" x="86.36" y="208.534" size="1.778" layer="95" font="vector" ratio="12" rot="MR0"/>
 </instance>
-<instance part="BRD1" gate="JP3_EVEN" x="165.1" y="154.94" smashed="yes">
-<attribute name="NAME" x="170.18" y="205.994" size="1.778" layer="95" font="vector" ratio="12" rot="MR0"/>
+<instance part="OK1" gate="JP1_EVEN" x="114.3" y="157.48" smashed="yes">
+<attribute name="NAME" x="119.38" y="208.534" size="1.778" layer="95" font="vector" ratio="12" rot="MR0"/>
 </instance>
 </instances>
 <busses>
@@ -14361,48 +14361,6 @@ Eval Brd uses +7V and -2.5V</text>
 <junction x="297.18" y="2.54"/>
 <wire x1="297.18" y1="-2.54" x2="287.02" y2="-2.54" width="0.1524" layer="91"/>
 <label x="287.02" y="-2.54" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="DGND" class="0">
-<segment>
-<pinref part="BRD1" gate="JP2_ODD" pin="DGND_1"/>
-<wire x1="-17.78" y1="198.12" x2="-5.08" y2="198.12" width="0.1524" layer="91"/>
-<label x="-10.16" y="198.12" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$19" class="0">
-<segment>
-<pinref part="BRD1" gate="JP2_ODD" pin="JTAG_TCK"/>
-<wire x1="-17.78" y1="193.04" x2="-5.08" y2="193.04" width="0.1524" layer="91"/>
-<label x="-10.16" y="193.04" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="N$20" class="0">
-<segment>
-<pinref part="BRD1" gate="JP2_ODD" pin="JTAG_TMS"/>
-<wire x1="-17.78" y1="190.5" x2="-5.08" y2="190.5" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$21" class="0">
-<segment>
-<pinref part="BRD1" gate="JP2_ODD" pin="JTAG_TDI"/>
-<wire x1="-17.78" y1="187.96" x2="-5.08" y2="187.96" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$22" class="0">
-<segment>
-<pinref part="BRD1" gate="JP2_ODD" pin="G16-L9P_1"/>
-<wire x1="-17.78" y1="180.34" x2="-5.08" y2="180.34" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="TEST_NET_NAME" class="0">
-<segment>
-<pinref part="BRD1" gate="JP2_EVEN" pin="+3.3VDD_2"/>
-<wire x1="78.74" y1="198.12" x2="81.28" y2="198.12" width="0.1524" layer="91"/>
-<label x="82.55" y="199.771" size="1.27" layer="95"/>
-<label x="81.28" y="198.12" size="0.010159375" layer="95"/>
-<label x="83.82" y="198.12" size="0.010159375" layer="95"/>
-<label x="83.82" y="198.12" size="0.010159375" layer="95"/>
 </segment>
 </net>
 </nets>

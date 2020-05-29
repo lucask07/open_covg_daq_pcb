@@ -1,0 +1,1458 @@
+Sheet: 1
+	Net: +5V
+connected to: C1, C1, 1
+connected to: IC1, IC1, V+
+connected to: U1, U1, VDD1_2
+connected to: C17, C17, 1
+connected to: U1, U1, VDD1_3
+connected to: U1, U1, VDD1
+connected to: C14, C14, 1
+connected to: C15, C15, 1
+	Net: +15V
+connected to: C9, C9, 1
+connected to: IC3, IC3P, V+
+	Net: -5V
+connected to: C2, C2, 1
+connected to: IC1, IC1, V-
+	Net: -15V
+connected to: C10, C10, 1
+connected to: IC3, IC3P, V-
+	Net: 1.8V
+connected to: U1, U1, VDD2_2
+connected to: C16, C16, 1
+connected to: U1, U1, VIO
+connected to: U1, U1, VDD2
+connected to: C11, C11, 1
+	Net: 3V3
+connected to: C7, C7, 1
+connected to: U2, U2, VDD
+	Net: 3V3_REF
+connected to: IC2, IC2, +IN
+	Net: AGND
+connected to: SUPPLY11, SUPPLY11, AGND
+connected to: IC2, IC2, V-
+connected to: C6, C6, 2
+connected to: SUPPLY12, SUPPLY12, AGND
+connected to: SUPPLY13, SUPPLY13, AGND
+connected to: C7, C7, 2
+connected to: C8, C8, 2
+connected to: SUPPLY15, SUPPLY15, AGND
+connected to: C9, C9, 2
+connected to: SUPPLY17, SUPPLY17, AGND
+connected to: C10, C10, 2
+connected to: SUPPLY18, SUPPLY18, AGND
+connected to: U2, U2, GND
+connected to: SUPPLY16, SUPPLY16, AGND
+connected to: SUPPLY1, SUPPLY1, AGND
+connected to: IC1, IC1, -IN
+connected to: C1, C1, 2
+connected to: SUPPLY2, SUPPLY2, AGND
+connected to: C2, C2, 2
+connected to: SUPPLY3, SUPPLY3, AGND
+connected to: SUPPLY4, SUPPLY4, AGND
+connected to: IC3, IC3A, IN-
+	Net: AMP_PWR+
+connected to: U3, U3, VS+_4
+connected to: U3, U3, VS+_3
+connected to: U3, U3, VS+_2
+connected to: U3, U3, VS+
+connected to: U3, U3, PD
+connected to: IC4, IC4, +VS
+connected to: C18, C18, 1
+	Net: AMP_PWR-
+connected to: U3, U3, VS-
+connected to: U3, U3, VS-_2
+connected to: U3, U3, VS-_3
+connected to: U3, U3, VS-_4
+	Net: CLK+
+connected to: U1, U1, CLK+
+connected to: R13, R13, 1
+	Net: CLK-
+connected to: U1, U1, CLK-
+connected to: R13, R13, 2
+	Net: CNV+
+connected to: R12, R12, 2
+connected to: U1, U1, CNV+
+	Net: CNV-
+connected to: R12, R12, 1
+connected to: U1, U1, CNV-
+	Net: CSB
+connected to: U2, U2, SYNCB
+	Net: D+
+connected to: U1, U1, D+
+	Net: D-
+connected to: U1, U1, D-
+	Net: DCO+
+connected to: U1, U1, DCO+
+	Net: DCO-
+connected to: U1, U1, DCO-
+	Net: DGND
+connected to: BRD1, BRD1JP2_ODD, DGND_1
+	Net: DIFF_IN+
+connected to: R16, R16, 1
+	Net: DIFF_IN-
+connected to: R17, R17, 1
+	Net: EN0
+connected to: U1, U1, EN0
+	Net: EN1
+connected to: U1, U1, EN1
+	Net: EN2
+connected to: U1, U1, EN2
+	Net: EN3
+connected to: U1, U1, EN3
+	Net: GND
+connected to: U1, U1, GND_2
+connected to: GND2, GND2, GND
+connected to: C12, C12, 2
+connected to: C13, C13, 2
+connected to: GND3, GND3, GND
+connected to: C11, C11, 2
+connected to: GND4, GND4, GND
+connected to: U1, U1, REF_GND_2
+connected to: U1, U1, REF_GND
+connected to: U1, U1, REF_GND_3
+connected to: GND5, GND5, GND
+connected to: C5, C5, 2
+connected to: GND7, GND7, GND
+connected to: U1, U1, EPAD
+connected to: U1, U1, GND
+connected to: GND1, GND1, GND
+connected to: U1, U1, REFIN
+connected to: GND8, GND8, GND
+connected to: C14, C14, 2
+connected to: GND9, GND9, GND
+connected to: C15, C15, 2
+connected to: GND10, GND10, GND
+connected to: C16, C16, 2
+connected to: GND11, GND11, GND
+connected to: C17, C17, 2
+connected to: GND12, GND12, GND
+connected to: GND13, GND13, GND
+connected to: IC4, IC4, -VS
+connected to: GND14, GND14, GND
+connected to: C18, C18, 2
+connected to: R15, R15, 1
+connected to: C19, C19, 2
+connected to: GND15, GND15, GND
+connected to: R18, R18, 2
+connected to: C20, C20, 2
+connected to: GND16, GND16, GND
+connected to: U3, U3, EPAD
+connected to: GND6, GND6, GND
+	Net: IN+
+connected to: U1, U1, IN+
+connected to: R20, R20, 2
+connected to: C4, C4, 2
+	Net: IN-
+connected to: U1, U1, IN-
+connected to: R19, R19, 2
+connected to: C4, C4, 1
+	Net: N$1
+connected to: U2, U2, IOUT1
+connected to: IC1, IC1, +IN
+connected to: C3, C3, 1
+	Net: N$2
+connected to: C3, C3, 2
+connected to: U2, U2, RFB
+connected to: R4, R4, 1
+	Net: N$3
+connected to: R1, R1, 2
+connected to: R2, R2, 1
+connected to: R3, R3, 2
+connected to: IC3, IC3A, IN+
+	Net: N$4
+connected to: R4, R4, 2
+connected to: IC1, IC1, OUT
+connected to: R1, R1, 1
+	Net: N$5
+connected to: R7, R7, 1
+connected to: R2, R2, 2
+connected to: IC3, IC3A, OUT
+	Net: N$6
+connected to: R5, R5, 1
+connected to: IC2, IC2, OUT
+	Net: N$7
+connected to: U2, U2, VREF
+connected to: R3, R3, 1
+	Net: N$8
+connected to: IC2, IC2, V+
+	Net: N$9
+connected to: U1, U1, VDD2_3
+	Net: N$10
+connected to: IC4, IC4, OUT
+connected to: IC4, IC4, IN-
+connected to: R14, R14, 1
+	Net: N$11
+connected to: U3, U3, IN+
+connected to: R8, R8, 1
+connected to: R10, R10, 2
+	Net: N$12
+connected to: U3, U3, FB-
+connected to: R8, R8, 2
+	Net: N$13
+connected to: R9, R9, 1
+connected to: U3, U3, IN-
+connected to: R11, R11, 2
+	Net: N$14
+connected to: U3, U3, FB+
+connected to: R9, R9, 2
+	Net: N$15
+connected to: R10, R10, 1
+connected to: R16, R16, 2
+connected to: C20, C20, 1
+connected to: R18, R18, 1
+	Net: N$16
+connected to: R11, R11, 1
+connected to: R17, R17, 2
+connected to: R15, R15, 2
+connected to: C19, C19, 1
+	Net: N$17
+connected to: U3, U3, OUT-
+connected to: R19, R19, 1
+	Net: N$18
+connected to: U3, U3, OUT+
+connected to: R20, R20, 1
+	Net: N$19
+connected to: BRD1, BRD1JP2_ODD, JTAG_TCK
+	Net: N$20
+connected to: BRD1, BRD1JP2_ODD, JTAG_TMS
+	Net: N$21
+connected to: BRD1, BRD1JP2_ODD, JTAG_TDI
+	Net: N$22
+connected to: BRD1, BRD1JP2_ODD, G16-L9P_1
+	Net: OUT
+connected to: R7, R7, 2
+connected to: C8, C8, 1
+	Net: REF
+connected to: U1, U1, REF_2
+connected to: U1, U1, REF_3
+connected to: U1, U1, REF_4
+connected to: U1, U1, REF
+connected to: C13, C13, 1
+connected to: C12, C12, 1
+connected to: R14, R14, 2
+	Net: REF_5V
+connected to: IC4, IC4, IN+
+	Net: SCLK
+connected to: U2, U2, SCLK
+	Net: SDI
+connected to: U2, U2, SDIN
+	Net: TEST_NET_NAME
+connected to: BRD1, BRD1JP2_EVEN, +3.3VDD_2
+	Net: VCM
+connected to: U3, U3, VOCM
+connected to: C5, C5, 1
+connected to: U1, U1, VCM
+	Net: VREF_BUF
+connected to: C6, C6, 1
+connected to: R5, R5, 2
+connected to: IC2, IC2, -IN
+Sheet: 1
+	Net: +5V
+connected to: C1, C1, 1
+connected to: IC1, IC1, V+
+connected to: U1, U1, VDD1_2
+connected to: C17, C17, 1
+connected to: U1, U1, VDD1_3
+connected to: U1, U1, VDD1
+connected to: C14, C14, 1
+connected to: C15, C15, 1
+	Net: +15V
+connected to: C9, C9, 1
+connected to: IC3, IC3P, V+
+	Net: -5V
+connected to: C2, C2, 1
+connected to: IC1, IC1, V-
+	Net: -15V
+connected to: C10, C10, 1
+connected to: IC3, IC3P, V-
+	Net: 1.8V
+connected to: U1, U1, VDD2_2
+connected to: C16, C16, 1
+connected to: U1, U1, VIO
+connected to: U1, U1, VDD2
+connected to: C11, C11, 1
+	Net: 3V3
+connected to: C7, C7, 1
+connected to: U2, U2, VDD
+	Net: 3V3_REF
+connected to: IC2, IC2, +IN
+	Net: AGND
+connected to: SUPPLY11, SUPPLY11, AGND
+connected to: IC2, IC2, V-
+connected to: C6, C6, 2
+connected to: SUPPLY12, SUPPLY12, AGND
+connected to: SUPPLY13, SUPPLY13, AGND
+connected to: C7, C7, 2
+connected to: C8, C8, 2
+connected to: SUPPLY15, SUPPLY15, AGND
+connected to: C9, C9, 2
+connected to: SUPPLY17, SUPPLY17, AGND
+connected to: C10, C10, 2
+connected to: SUPPLY18, SUPPLY18, AGND
+connected to: U2, U2, GND
+connected to: SUPPLY16, SUPPLY16, AGND
+connected to: SUPPLY1, SUPPLY1, AGND
+connected to: IC1, IC1, -IN
+connected to: C1, C1, 2
+connected to: SUPPLY2, SUPPLY2, AGND
+connected to: C2, C2, 2
+connected to: SUPPLY3, SUPPLY3, AGND
+connected to: SUPPLY4, SUPPLY4, AGND
+connected to: IC3, IC3A, IN-
+	Net: AMP_PWR+
+connected to: U3, U3, VS+_4
+connected to: U3, U3, VS+_3
+connected to: U3, U3, VS+_2
+connected to: U3, U3, VS+
+connected to: U3, U3, PD
+connected to: IC4, IC4, +VS
+connected to: C18, C18, 1
+	Net: AMP_PWR-
+connected to: U3, U3, VS-
+connected to: U3, U3, VS-_2
+connected to: U3, U3, VS-_3
+connected to: U3, U3, VS-_4
+	Net: CLK+
+connected to: U1, U1, CLK+
+connected to: R13, R13, 1
+	Net: CLK-
+connected to: U1, U1, CLK-
+connected to: R13, R13, 2
+	Net: CNV+
+connected to: R12, R12, 2
+connected to: U1, U1, CNV+
+	Net: CNV-
+connected to: R12, R12, 1
+connected to: U1, U1, CNV-
+	Net: CSB
+connected to: U2, U2, SYNCB
+	Net: D+
+connected to: U1, U1, D+
+	Net: D-
+connected to: U1, U1, D-
+	Net: DCO+
+connected to: U1, U1, DCO+
+	Net: DCO-
+connected to: U1, U1, DCO-
+	Net: DGND
+connected to: OK1, OK1JP2_ODD, DGND_1
+	Net: DIFF_IN+
+connected to: R16, R16, 1
+	Net: DIFF_IN-
+connected to: R17, R17, 1
+	Net: EN0
+connected to: U1, U1, EN0
+	Net: EN1
+connected to: U1, U1, EN1
+	Net: EN2
+connected to: U1, U1, EN2
+	Net: EN3
+connected to: U1, U1, EN3
+	Net: GND
+connected to: U1, U1, GND_2
+connected to: GND2, GND2, GND
+connected to: C12, C12, 2
+connected to: C13, C13, 2
+connected to: GND3, GND3, GND
+connected to: C11, C11, 2
+connected to: GND4, GND4, GND
+connected to: U1, U1, REF_GND_2
+connected to: U1, U1, REF_GND
+connected to: U1, U1, REF_GND_3
+connected to: GND5, GND5, GND
+connected to: C5, C5, 2
+connected to: GND7, GND7, GND
+connected to: U1, U1, EPAD
+connected to: U1, U1, GND
+connected to: GND1, GND1, GND
+connected to: U1, U1, REFIN
+connected to: GND8, GND8, GND
+connected to: C14, C14, 2
+connected to: GND9, GND9, GND
+connected to: C15, C15, 2
+connected to: GND10, GND10, GND
+connected to: C16, C16, 2
+connected to: GND11, GND11, GND
+connected to: C17, C17, 2
+connected to: GND12, GND12, GND
+connected to: GND13, GND13, GND
+connected to: IC4, IC4, -VS
+connected to: GND14, GND14, GND
+connected to: C18, C18, 2
+connected to: R15, R15, 1
+connected to: C19, C19, 2
+connected to: GND15, GND15, GND
+connected to: R18, R18, 2
+connected to: C20, C20, 2
+connected to: GND16, GND16, GND
+connected to: U3, U3, EPAD
+connected to: GND6, GND6, GND
+	Net: IN+
+connected to: U1, U1, IN+
+connected to: R20, R20, 2
+connected to: C4, C4, 2
+	Net: IN-
+connected to: U1, U1, IN-
+connected to: R19, R19, 2
+connected to: C4, C4, 1
+	Net: N$1
+connected to: U2, U2, IOUT1
+connected to: IC1, IC1, +IN
+connected to: C3, C3, 1
+	Net: N$2
+connected to: C3, C3, 2
+connected to: U2, U2, RFB
+connected to: R4, R4, 1
+	Net: N$3
+connected to: R1, R1, 2
+connected to: R2, R2, 1
+connected to: R3, R3, 2
+connected to: IC3, IC3A, IN+
+	Net: N$4
+connected to: R4, R4, 2
+connected to: IC1, IC1, OUT
+connected to: R1, R1, 1
+	Net: N$5
+connected to: R7, R7, 1
+connected to: R2, R2, 2
+connected to: IC3, IC3A, OUT
+	Net: N$6
+connected to: R5, R5, 1
+connected to: IC2, IC2, OUT
+	Net: N$7
+connected to: U2, U2, VREF
+connected to: R3, R3, 1
+	Net: N$8
+connected to: IC2, IC2, V+
+	Net: N$9
+connected to: U1, U1, VDD2_3
+	Net: N$10
+connected to: IC4, IC4, OUT
+connected to: IC4, IC4, IN-
+connected to: R14, R14, 1
+	Net: N$11
+connected to: U3, U3, IN+
+connected to: R8, R8, 1
+connected to: R10, R10, 2
+	Net: N$12
+connected to: U3, U3, FB-
+connected to: R8, R8, 2
+	Net: N$13
+connected to: R9, R9, 1
+connected to: U3, U3, IN-
+connected to: R11, R11, 2
+	Net: N$14
+connected to: U3, U3, FB+
+connected to: R9, R9, 2
+	Net: N$15
+connected to: R10, R10, 1
+connected to: R16, R16, 2
+connected to: C20, C20, 1
+connected to: R18, R18, 1
+	Net: N$16
+connected to: R11, R11, 1
+connected to: R17, R17, 2
+connected to: R15, R15, 2
+connected to: C19, C19, 1
+	Net: N$17
+connected to: U3, U3, OUT-
+connected to: R19, R19, 1
+	Net: N$18
+connected to: U3, U3, OUT+
+connected to: R20, R20, 1
+	Net: N$19
+connected to: OK1, OK1JP2_ODD, JTAG_TCK
+	Net: N$20
+connected to: OK1, OK1JP2_ODD, JTAG_TMS
+	Net: N$21
+connected to: OK1, OK1JP2_ODD, JTAG_TDI
+	Net: N$22
+connected to: OK1, OK1JP2_ODD, G16-L9P_1
+	Net: OUT
+connected to: R7, R7, 2
+connected to: C8, C8, 1
+	Net: REF
+connected to: U1, U1, REF_2
+connected to: U1, U1, REF_3
+connected to: U1, U1, REF_4
+connected to: U1, U1, REF
+connected to: C13, C13, 1
+connected to: C12, C12, 1
+connected to: R14, R14, 2
+	Net: REF_5V
+connected to: IC4, IC4, IN+
+	Net: SCLK
+connected to: U2, U2, SCLK
+	Net: SDI
+connected to: U2, U2, SDIN
+	Net: TEST_NET_NAME
+connected to: OK1, OK1JP2_EVEN, +3.3VDD_2
+	Net: VCM
+connected to: U3, U3, VOCM
+connected to: C5, C5, 1
+connected to: U1, U1, VCM
+	Net: VREF_BUF
+connected to: C6, C6, 1
+connected to: R5, R5, 2
+connected to: IC2, IC2, -IN
+Sheet: 1
+	Net: +5V
+connected to: C1, C1, 1
+connected to: IC1, IC1, V+
+connected to: U1, U1, VDD1_2
+connected to: C17, C17, 1
+connected to: U1, U1, VDD1_3
+connected to: U1, U1, VDD1
+connected to: C14, C14, 1
+connected to: C15, C15, 1
+	Net: +15V
+connected to: C9, C9, 1
+connected to: IC3, IC3P, V+
+	Net: -5V
+connected to: C2, C2, 1
+connected to: IC1, IC1, V-
+	Net: -15V
+connected to: C10, C10, 1
+connected to: IC3, IC3P, V-
+	Net: 1.8V
+connected to: U1, U1, VDD2_2
+connected to: C16, C16, 1
+connected to: U1, U1, VIO
+connected to: U1, U1, VDD2
+connected to: C11, C11, 1
+	Net: 3V3
+connected to: C7, C7, 1
+connected to: U2, U2, VDD
+	Net: 3V3_REF
+connected to: IC2, IC2, +IN
+	Net: AGND
+connected to: SUPPLY11, SUPPLY11, AGND
+connected to: IC2, IC2, V-
+connected to: C6, C6, 2
+connected to: SUPPLY12, SUPPLY12, AGND
+connected to: SUPPLY13, SUPPLY13, AGND
+connected to: C7, C7, 2
+connected to: C8, C8, 2
+connected to: SUPPLY15, SUPPLY15, AGND
+connected to: C9, C9, 2
+connected to: SUPPLY17, SUPPLY17, AGND
+connected to: C10, C10, 2
+connected to: SUPPLY18, SUPPLY18, AGND
+connected to: U2, U2, GND
+connected to: SUPPLY16, SUPPLY16, AGND
+connected to: SUPPLY1, SUPPLY1, AGND
+connected to: IC1, IC1, -IN
+connected to: C1, C1, 2
+connected to: SUPPLY2, SUPPLY2, AGND
+connected to: C2, C2, 2
+connected to: SUPPLY3, SUPPLY3, AGND
+connected to: SUPPLY4, SUPPLY4, AGND
+connected to: IC3, IC3A, IN-
+	Net: AMP_PWR+
+connected to: U3, U3, VS+_4
+connected to: U3, U3, VS+_3
+connected to: U3, U3, VS+_2
+connected to: U3, U3, VS+
+connected to: U3, U3, PD
+connected to: IC4, IC4, +VS
+connected to: C18, C18, 1
+	Net: AMP_PWR-
+connected to: U3, U3, VS-
+connected to: U3, U3, VS-_2
+connected to: U3, U3, VS-_3
+connected to: U3, U3, VS-_4
+	Net: CLK+
+connected to: U1, U1, CLK+
+connected to: R13, R13, 1
+	Net: CLK-
+connected to: U1, U1, CLK-
+connected to: R13, R13, 2
+	Net: CNV+
+connected to: R12, R12, 2
+connected to: U1, U1, CNV+
+	Net: CNV-
+connected to: R12, R12, 1
+connected to: U1, U1, CNV-
+	Net: CSB
+connected to: U2, U2, SYNCB
+	Net: D+
+connected to: U1, U1, D+
+	Net: D-
+connected to: U1, U1, D-
+	Net: DCO+
+connected to: U1, U1, DCO+
+	Net: DCO-
+connected to: U1, U1, DCO-
+	Net: DGND
+connected to: OK1, OK1JP2_ODD, DGND_1
+	Net: DIFF_IN+
+connected to: R16, R16, 1
+	Net: DIFF_IN-
+connected to: R17, R17, 1
+	Net: EN0
+connected to: U1, U1, EN0
+	Net: EN1
+connected to: U1, U1, EN1
+	Net: EN2
+connected to: U1, U1, EN2
+	Net: EN3
+connected to: U1, U1, EN3
+	Net: GND
+connected to: U1, U1, GND_2
+connected to: GND2, GND2, GND
+connected to: C12, C12, 2
+connected to: C13, C13, 2
+connected to: GND3, GND3, GND
+connected to: C11, C11, 2
+connected to: GND4, GND4, GND
+connected to: U1, U1, REF_GND_2
+connected to: U1, U1, REF_GND
+connected to: U1, U1, REF_GND_3
+connected to: GND5, GND5, GND
+connected to: C5, C5, 2
+connected to: GND7, GND7, GND
+connected to: U1, U1, EPAD
+connected to: U1, U1, GND
+connected to: GND1, GND1, GND
+connected to: U1, U1, REFIN
+connected to: GND8, GND8, GND
+connected to: C14, C14, 2
+connected to: GND9, GND9, GND
+connected to: C15, C15, 2
+connected to: GND10, GND10, GND
+connected to: C16, C16, 2
+connected to: GND11, GND11, GND
+connected to: C17, C17, 2
+connected to: GND12, GND12, GND
+connected to: GND13, GND13, GND
+connected to: IC4, IC4, -VS
+connected to: GND14, GND14, GND
+connected to: C18, C18, 2
+connected to: R15, R15, 1
+connected to: C19, C19, 2
+connected to: GND15, GND15, GND
+connected to: R18, R18, 2
+connected to: C20, C20, 2
+connected to: GND16, GND16, GND
+connected to: U3, U3, EPAD
+connected to: GND6, GND6, GND
+	Net: IN+
+connected to: U1, U1, IN+
+connected to: R20, R20, 2
+connected to: C4, C4, 2
+	Net: IN-
+connected to: U1, U1, IN-
+connected to: R19, R19, 2
+connected to: C4, C4, 1
+	Net: N$1
+connected to: U2, U2, IOUT1
+connected to: IC1, IC1, +IN
+connected to: C3, C3, 1
+	Net: N$2
+connected to: C3, C3, 2
+connected to: U2, U2, RFB
+connected to: R4, R4, 1
+	Net: N$3
+connected to: R1, R1, 2
+connected to: R2, R2, 1
+connected to: R3, R3, 2
+connected to: IC3, IC3A, IN+
+	Net: N$4
+connected to: R4, R4, 2
+connected to: IC1, IC1, OUT
+connected to: R1, R1, 1
+	Net: N$5
+connected to: R7, R7, 1
+connected to: R2, R2, 2
+connected to: IC3, IC3A, OUT
+	Net: N$6
+connected to: R5, R5, 1
+connected to: IC2, IC2, OUT
+	Net: N$7
+connected to: U2, U2, VREF
+connected to: R3, R3, 1
+	Net: N$8
+connected to: IC2, IC2, V+
+	Net: N$9
+connected to: U1, U1, VDD2_3
+	Net: N$10
+connected to: IC4, IC4, OUT
+connected to: IC4, IC4, IN-
+connected to: R14, R14, 1
+	Net: N$11
+connected to: U3, U3, IN+
+connected to: R8, R8, 1
+connected to: R10, R10, 2
+	Net: N$12
+connected to: U3, U3, FB-
+connected to: R8, R8, 2
+	Net: N$13
+connected to: R9, R9, 1
+connected to: U3, U3, IN-
+connected to: R11, R11, 2
+	Net: N$14
+connected to: U3, U3, FB+
+connected to: R9, R9, 2
+	Net: N$15
+connected to: R10, R10, 1
+connected to: R16, R16, 2
+connected to: C20, C20, 1
+connected to: R18, R18, 1
+	Net: N$16
+connected to: R11, R11, 1
+connected to: R17, R17, 2
+connected to: R15, R15, 2
+connected to: C19, C19, 1
+	Net: N$17
+connected to: U3, U3, OUT-
+connected to: R19, R19, 1
+	Net: N$18
+connected to: U3, U3, OUT+
+connected to: R20, R20, 1
+	Net: N$19
+connected to: OK1, OK1JP2_ODD, JTAG_TCK
+	Net: N$20
+connected to: OK1, OK1JP2_ODD, JTAG_TMS
+	Net: N$21
+connected to: OK1, OK1JP2_ODD, JTAG_TDI
+	Net: N$22
+connected to: OK1, OK1JP2_ODD, G16-L9P_1
+	Net: OUT
+connected to: R7, R7, 2
+connected to: C8, C8, 1
+	Net: REF
+connected to: U1, U1, REF_2
+connected to: U1, U1, REF_3
+connected to: U1, U1, REF_4
+connected to: U1, U1, REF
+connected to: C13, C13, 1
+connected to: C12, C12, 1
+connected to: R14, R14, 2
+	Net: REF_5V
+connected to: IC4, IC4, IN+
+	Net: SCLK
+connected to: U2, U2, SCLK
+	Net: SDI
+connected to: U2, U2, SDIN
+	Net: TEST_NET_NAME
+connected to: OK1, OK1JP2_EVEN, +3.3VDD_2
+	Net: VCM
+connected to: U3, U3, VOCM
+connected to: C5, C5, 1
+connected to: U1, U1, VCM
+	Net: VREF_BUF
+connected to: C6, C6, 1
+connected to: R5, R5, 2
+connected to: IC2, IC2, -IN
+Sheet: 1
+	Net: +5V
+connected to: C1, C1, 1
+connected to: IC1, IC1, V+
+connected to: U1, U1, VDD1_2
+connected to: C17, C17, 1
+connected to: U1, U1, VDD1_3
+connected to: U1, U1, VDD1
+connected to: C14, C14, 1
+connected to: C15, C15, 1
+	Net: +15V
+connected to: C9, C9, 1
+connected to: IC3, IC3P, V+
+	Net: -5V
+connected to: C2, C2, 1
+connected to: IC1, IC1, V-
+	Net: -15V
+connected to: C10, C10, 1
+connected to: IC3, IC3P, V-
+	Net: 1.8V
+connected to: U1, U1, VDD2_2
+connected to: C16, C16, 1
+connected to: U1, U1, VIO
+connected to: U1, U1, VDD2
+connected to: C11, C11, 1
+	Net: 3V3
+connected to: C7, C7, 1
+connected to: U2, U2, VDD
+	Net: 3V3_REF
+connected to: IC2, IC2, +IN
+	Net: AGND
+connected to: SUPPLY11, SUPPLY11, AGND
+connected to: IC2, IC2, V-
+connected to: C6, C6, 2
+connected to: SUPPLY12, SUPPLY12, AGND
+connected to: SUPPLY13, SUPPLY13, AGND
+connected to: C7, C7, 2
+connected to: C8, C8, 2
+connected to: SUPPLY15, SUPPLY15, AGND
+connected to: C9, C9, 2
+connected to: SUPPLY17, SUPPLY17, AGND
+connected to: C10, C10, 2
+connected to: SUPPLY18, SUPPLY18, AGND
+connected to: U2, U2, GND
+connected to: SUPPLY16, SUPPLY16, AGND
+connected to: SUPPLY1, SUPPLY1, AGND
+connected to: IC1, IC1, -IN
+connected to: C1, C1, 2
+connected to: SUPPLY2, SUPPLY2, AGND
+connected to: C2, C2, 2
+connected to: SUPPLY3, SUPPLY3, AGND
+connected to: SUPPLY4, SUPPLY4, AGND
+connected to: IC3, IC3A, IN-
+	Net: AMP_PWR+
+connected to: U3, U3, VS+_4
+connected to: U3, U3, VS+_3
+connected to: U3, U3, VS+_2
+connected to: U3, U3, VS+
+connected to: U3, U3, PD
+connected to: IC4, IC4, +VS
+connected to: C18, C18, 1
+	Net: AMP_PWR-
+connected to: U3, U3, VS-
+connected to: U3, U3, VS-_2
+connected to: U3, U3, VS-_3
+connected to: U3, U3, VS-_4
+	Net: CLK+
+connected to: U1, U1, CLK+
+connected to: R13, R13, 1
+	Net: CLK-
+connected to: U1, U1, CLK-
+connected to: R13, R13, 2
+	Net: CNV+
+connected to: R12, R12, 2
+connected to: U1, U1, CNV+
+	Net: CNV-
+connected to: R12, R12, 1
+connected to: U1, U1, CNV-
+	Net: CSB
+connected to: U2, U2, SYNCB
+	Net: D+
+connected to: U1, U1, D+
+	Net: D-
+connected to: U1, U1, D-
+	Net: DCO+
+connected to: U1, U1, DCO+
+	Net: DCO-
+connected to: U1, U1, DCO-
+	Net: DIFF_IN+
+connected to: R16, R16, 1
+	Net: DIFF_IN-
+connected to: R17, R17, 1
+	Net: EN0
+connected to: U1, U1, EN0
+	Net: EN1
+connected to: U1, U1, EN1
+	Net: EN2
+connected to: U1, U1, EN2
+	Net: EN3
+connected to: U1, U1, EN3
+	Net: GND
+connected to: U1, U1, GND_2
+connected to: GND2, GND2, GND
+connected to: C12, C12, 2
+connected to: C13, C13, 2
+connected to: GND3, GND3, GND
+connected to: C11, C11, 2
+connected to: GND4, GND4, GND
+connected to: U1, U1, REF_GND_2
+connected to: U1, U1, REF_GND
+connected to: U1, U1, REF_GND_3
+connected to: GND5, GND5, GND
+connected to: C5, C5, 2
+connected to: GND7, GND7, GND
+connected to: U1, U1, EPAD
+connected to: U1, U1, GND
+connected to: GND1, GND1, GND
+connected to: U1, U1, REFIN
+connected to: GND8, GND8, GND
+connected to: C14, C14, 2
+connected to: GND9, GND9, GND
+connected to: C15, C15, 2
+connected to: GND10, GND10, GND
+connected to: C16, C16, 2
+connected to: GND11, GND11, GND
+connected to: C17, C17, 2
+connected to: GND12, GND12, GND
+connected to: GND13, GND13, GND
+connected to: IC4, IC4, -VS
+connected to: GND14, GND14, GND
+connected to: C18, C18, 2
+connected to: R15, R15, 1
+connected to: C19, C19, 2
+connected to: GND15, GND15, GND
+connected to: R18, R18, 2
+connected to: C20, C20, 2
+connected to: GND16, GND16, GND
+connected to: U3, U3, EPAD
+connected to: GND6, GND6, GND
+	Net: IN+
+connected to: U1, U1, IN+
+connected to: R20, R20, 2
+connected to: C4, C4, 2
+	Net: IN-
+connected to: U1, U1, IN-
+connected to: R19, R19, 2
+connected to: C4, C4, 1
+	Net: N$1
+connected to: U2, U2, IOUT1
+connected to: IC1, IC1, +IN
+connected to: C3, C3, 1
+	Net: N$2
+connected to: C3, C3, 2
+connected to: U2, U2, RFB
+connected to: R4, R4, 1
+	Net: N$3
+connected to: R1, R1, 2
+connected to: R2, R2, 1
+connected to: R3, R3, 2
+connected to: IC3, IC3A, IN+
+	Net: N$4
+connected to: R4, R4, 2
+connected to: IC1, IC1, OUT
+connected to: R1, R1, 1
+	Net: N$5
+connected to: R7, R7, 1
+connected to: R2, R2, 2
+connected to: IC3, IC3A, OUT
+	Net: N$6
+connected to: R5, R5, 1
+connected to: IC2, IC2, OUT
+	Net: N$7
+connected to: U2, U2, VREF
+connected to: R3, R3, 1
+	Net: N$8
+connected to: IC2, IC2, V+
+	Net: N$9
+connected to: U1, U1, VDD2_3
+	Net: N$10
+connected to: IC4, IC4, OUT
+connected to: IC4, IC4, IN-
+connected to: R14, R14, 1
+	Net: N$11
+connected to: U3, U3, IN+
+connected to: R8, R8, 1
+connected to: R10, R10, 2
+	Net: N$12
+connected to: U3, U3, FB-
+connected to: R8, R8, 2
+	Net: N$13
+connected to: R9, R9, 1
+connected to: U3, U3, IN-
+connected to: R11, R11, 2
+	Net: N$14
+connected to: U3, U3, FB+
+connected to: R9, R9, 2
+	Net: N$15
+connected to: R10, R10, 1
+connected to: R16, R16, 2
+connected to: C20, C20, 1
+connected to: R18, R18, 1
+	Net: N$16
+connected to: R11, R11, 1
+connected to: R17, R17, 2
+connected to: R15, R15, 2
+connected to: C19, C19, 1
+	Net: N$17
+connected to: U3, U3, OUT-
+connected to: R19, R19, 1
+	Net: N$18
+connected to: U3, U3, OUT+
+connected to: R20, R20, 1
+	Net: OUT
+connected to: R7, R7, 2
+connected to: C8, C8, 1
+	Net: REF
+connected to: U1, U1, REF_2
+connected to: U1, U1, REF_3
+connected to: U1, U1, REF_4
+connected to: U1, U1, REF
+connected to: C13, C13, 1
+connected to: C12, C12, 1
+connected to: R14, R14, 2
+	Net: REF_5V
+connected to: IC4, IC4, IN+
+	Net: SCLK
+connected to: U2, U2, SCLK
+	Net: SDI
+connected to: U2, U2, SDIN
+	Net: VCM
+connected to: U3, U3, VOCM
+connected to: C5, C5, 1
+connected to: U1, U1, VCM
+	Net: VREF_BUF
+connected to: C6, C6, 1
+connected to: R5, R5, 2
+connected to: IC2, IC2, -IN
+Sheet: 1
+	Net: +5V
+connected to: C1, C1, 1
+connected to: IC1, IC1, V+
+connected to: U1, U1, VDD1_2
+connected to: C17, C17, 1
+connected to: U1, U1, VDD1_3
+connected to: U1, U1, VDD1
+connected to: C14, C14, 1
+connected to: C15, C15, 1
+	Net: +15V
+connected to: C9, C9, 1
+connected to: IC3, IC3P, V+
+	Net: -5V
+connected to: C2, C2, 1
+connected to: IC1, IC1, V-
+	Net: -15V
+connected to: C10, C10, 1
+connected to: IC3, IC3P, V-
+	Net: 1.8V
+connected to: U1, U1, VDD2_2
+connected to: C16, C16, 1
+connected to: U1, U1, VIO
+connected to: U1, U1, VDD2
+connected to: C11, C11, 1
+	Net: 3V3
+connected to: C7, C7, 1
+connected to: U2, U2, VDD
+	Net: 3V3_REF
+connected to: IC2, IC2, +IN
+	Net: AGND
+connected to: SUPPLY11, SUPPLY11, AGND
+connected to: IC2, IC2, V-
+connected to: C6, C6, 2
+connected to: SUPPLY12, SUPPLY12, AGND
+connected to: SUPPLY13, SUPPLY13, AGND
+connected to: C7, C7, 2
+connected to: C8, C8, 2
+connected to: SUPPLY15, SUPPLY15, AGND
+connected to: C9, C9, 2
+connected to: SUPPLY17, SUPPLY17, AGND
+connected to: C10, C10, 2
+connected to: SUPPLY18, SUPPLY18, AGND
+connected to: U2, U2, GND
+connected to: SUPPLY16, SUPPLY16, AGND
+connected to: SUPPLY1, SUPPLY1, AGND
+connected to: IC1, IC1, -IN
+connected to: C1, C1, 2
+connected to: SUPPLY2, SUPPLY2, AGND
+connected to: C2, C2, 2
+connected to: SUPPLY3, SUPPLY3, AGND
+connected to: SUPPLY4, SUPPLY4, AGND
+connected to: IC3, IC3A, IN-
+	Net: AMP_PWR+
+connected to: U3, U3, VS+_4
+connected to: U3, U3, VS+_3
+connected to: U3, U3, VS+_2
+connected to: U3, U3, VS+
+connected to: U3, U3, PD
+connected to: IC4, IC4, +VS
+connected to: C18, C18, 1
+	Net: AMP_PWR-
+connected to: U3, U3, VS-
+connected to: U3, U3, VS-_2
+connected to: U3, U3, VS-_3
+connected to: U3, U3, VS-_4
+	Net: CLK+
+connected to: U1, U1, CLK+
+connected to: R13, R13, 1
+	Net: CLK-
+connected to: U1, U1, CLK-
+connected to: R13, R13, 2
+	Net: CNV+
+connected to: R12, R12, 2
+connected to: U1, U1, CNV+
+	Net: CNV-
+connected to: R12, R12, 1
+connected to: U1, U1, CNV-
+	Net: CSB
+connected to: U2, U2, SYNCB
+	Net: D+
+connected to: U1, U1, D+
+	Net: D-
+connected to: U1, U1, D-
+	Net: DCO+
+connected to: U1, U1, DCO+
+	Net: DCO-
+connected to: U1, U1, DCO-
+	Net: DIFF_IN+
+connected to: R16, R16, 1
+	Net: DIFF_IN-
+connected to: R17, R17, 1
+	Net: EN0
+connected to: U1, U1, EN0
+	Net: EN1
+connected to: U1, U1, EN1
+	Net: EN2
+connected to: U1, U1, EN2
+	Net: EN3
+connected to: U1, U1, EN3
+	Net: GND
+connected to: U1, U1, GND_2
+connected to: GND2, GND2, GND
+connected to: C12, C12, 2
+connected to: C13, C13, 2
+connected to: GND3, GND3, GND
+connected to: C11, C11, 2
+connected to: GND4, GND4, GND
+connected to: U1, U1, REF_GND_2
+connected to: U1, U1, REF_GND
+connected to: U1, U1, REF_GND_3
+connected to: GND5, GND5, GND
+connected to: C5, C5, 2
+connected to: GND7, GND7, GND
+connected to: U1, U1, EPAD
+connected to: U1, U1, GND
+connected to: GND1, GND1, GND
+connected to: U1, U1, REFIN
+connected to: GND8, GND8, GND
+connected to: C14, C14, 2
+connected to: GND9, GND9, GND
+connected to: C15, C15, 2
+connected to: GND10, GND10, GND
+connected to: C16, C16, 2
+connected to: GND11, GND11, GND
+connected to: C17, C17, 2
+connected to: GND12, GND12, GND
+connected to: GND13, GND13, GND
+connected to: IC4, IC4, -VS
+connected to: GND14, GND14, GND
+connected to: C18, C18, 2
+connected to: R15, R15, 1
+connected to: C19, C19, 2
+connected to: GND15, GND15, GND
+connected to: R18, R18, 2
+connected to: C20, C20, 2
+connected to: GND16, GND16, GND
+connected to: U3, U3, EPAD
+connected to: GND6, GND6, GND
+	Net: IN+
+connected to: U1, U1, IN+
+connected to: R20, R20, 2
+connected to: C4, C4, 2
+	Net: IN-
+connected to: U1, U1, IN-
+connected to: R19, R19, 2
+connected to: C4, C4, 1
+	Net: N$1
+connected to: U2, U2, IOUT1
+connected to: IC1, IC1, +IN
+connected to: C3, C3, 1
+	Net: N$2
+connected to: C3, C3, 2
+connected to: U2, U2, RFB
+connected to: R4, R4, 1
+	Net: N$3
+connected to: R1, R1, 2
+connected to: R2, R2, 1
+connected to: R3, R3, 2
+connected to: IC3, IC3A, IN+
+	Net: N$4
+connected to: R4, R4, 2
+connected to: IC1, IC1, OUT
+connected to: R1, R1, 1
+	Net: N$5
+connected to: R7, R7, 1
+connected to: R2, R2, 2
+connected to: IC3, IC3A, OUT
+	Net: N$6
+connected to: R5, R5, 1
+connected to: IC2, IC2, OUT
+	Net: N$7
+connected to: U2, U2, VREF
+connected to: R3, R3, 1
+	Net: N$8
+connected to: IC2, IC2, V+
+	Net: N$9
+connected to: U1, U1, VDD2_3
+	Net: N$10
+connected to: IC4, IC4, OUT
+connected to: IC4, IC4, IN-
+connected to: R14, R14, 1
+	Net: N$11
+connected to: U3, U3, IN+
+connected to: R8, R8, 1
+connected to: R10, R10, 2
+	Net: N$12
+connected to: U3, U3, FB-
+connected to: R8, R8, 2
+	Net: N$13
+connected to: R9, R9, 1
+connected to: U3, U3, IN-
+connected to: R11, R11, 2
+	Net: N$14
+connected to: U3, U3, FB+
+connected to: R9, R9, 2
+	Net: N$15
+connected to: R10, R10, 1
+connected to: R16, R16, 2
+connected to: C20, C20, 1
+connected to: R18, R18, 1
+	Net: N$16
+connected to: R11, R11, 1
+connected to: R17, R17, 2
+connected to: R15, R15, 2
+connected to: C19, C19, 1
+	Net: N$17
+connected to: U3, U3, OUT-
+connected to: R19, R19, 1
+	Net: N$18
+connected to: U3, U3, OUT+
+connected to: R20, R20, 1
+	Net: OUT
+connected to: R7, R7, 2
+connected to: C8, C8, 1
+	Net: REF
+connected to: U1, U1, REF_2
+connected to: U1, U1, REF_3
+connected to: U1, U1, REF_4
+connected to: U1, U1, REF
+connected to: C13, C13, 1
+connected to: C12, C12, 1
+connected to: R14, R14, 2
+	Net: REF_5V
+connected to: IC4, IC4, IN+
+	Net: SCLK
+connected to: U2, U2, SCLK
+	Net: SDI
+connected to: U2, U2, SDIN
+	Net: VCM
+connected to: U3, U3, VOCM
+connected to: C5, C5, 1
+connected to: U1, U1, VCM
+	Net: VREF_BUF
+connected to: C6, C6, 1
+connected to: R5, R5, 2
+connected to: IC2, IC2, -IN
+Sheet: 1
+	Net: +5V
+connected to: C1, C1, 1
+connected to: IC1, IC1, V+
+connected to: U1, U1, VDD1_2
+connected to: C17, C17, 1
+connected to: U1, U1, VDD1_3
+connected to: U1, U1, VDD1
+connected to: C14, C14, 1
+connected to: C15, C15, 1
+	Net: +15V
+connected to: C9, C9, 1
+connected to: IC3, IC3P, V+
+	Net: -5V
+connected to: C2, C2, 1
+connected to: IC1, IC1, V-
+	Net: -15V
+connected to: C10, C10, 1
+connected to: IC3, IC3P, V-
+	Net: 1.8V
+connected to: U1, U1, VDD2_2
+connected to: C16, C16, 1
+connected to: U1, U1, VIO
+connected to: U1, U1, VDD2
+connected to: C11, C11, 1
+	Net: 3V3
+connected to: C7, C7, 1
+connected to: U2, U2, VDD
+	Net: 3V3_REF
+connected to: IC2, IC2, +IN
+	Net: AGND
+connected to: SUPPLY11, SUPPLY11, AGND
+connected to: IC2, IC2, V-
+connected to: C6, C6, 2
+connected to: SUPPLY12, SUPPLY12, AGND
+connected to: SUPPLY13, SUPPLY13, AGND
+connected to: C7, C7, 2
+connected to: C8, C8, 2
+connected to: SUPPLY15, SUPPLY15, AGND
+connected to: C9, C9, 2
+connected to: SUPPLY17, SUPPLY17, AGND
+connected to: C10, C10, 2
+connected to: SUPPLY18, SUPPLY18, AGND
+connected to: U2, U2, GND
+connected to: SUPPLY16, SUPPLY16, AGND
+connected to: SUPPLY1, SUPPLY1, AGND
+connected to: IC1, IC1, -IN
+connected to: C1, C1, 2
+connected to: SUPPLY2, SUPPLY2, AGND
+connected to: C2, C2, 2
+connected to: SUPPLY3, SUPPLY3, AGND
+connected to: SUPPLY4, SUPPLY4, AGND
+connected to: IC3, IC3A, IN-
+	Net: AMP_PWR+
+connected to: U3, U3, VS+_4
+connected to: U3, U3, VS+_3
+connected to: U3, U3, VS+_2
+connected to: U3, U3, VS+
+connected to: U3, U3, PD
+connected to: IC4, IC4, +VS
+connected to: C18, C18, 1
+	Net: AMP_PWR-
+connected to: U3, U3, VS-
+connected to: U3, U3, VS-_2
+connected to: U3, U3, VS-_3
+connected to: U3, U3, VS-_4
+	Net: CLK+
+connected to: U1, U1, CLK+
+connected to: R13, R13, 1
+	Net: CLK-
+connected to: U1, U1, CLK-
+connected to: R13, R13, 2
+	Net: CNV+
+connected to: R12, R12, 2
+connected to: U1, U1, CNV+
+	Net: CNV-
+connected to: R12, R12, 1
+connected to: U1, U1, CNV-
+	Net: CSB
+connected to: U2, U2, SYNCB
+	Net: D+
+connected to: U1, U1, D+
+	Net: D-
+connected to: U1, U1, D-
+	Net: DCO+
+connected to: U1, U1, DCO+
+	Net: DCO-
+connected to: U1, U1, DCO-
+	Net: DIFF_IN+
+connected to: R16, R16, 1
+	Net: DIFF_IN-
+connected to: R17, R17, 1
+	Net: EN0
+connected to: U1, U1, EN0
+	Net: EN1
+connected to: U1, U1, EN1
+	Net: EN2
+connected to: U1, U1, EN2
+	Net: EN3
+connected to: U1, U1, EN3
+	Net: GND
+connected to: U1, U1, GND_2
+connected to: GND2, GND2, GND
+connected to: C12, C12, 2
+connected to: C13, C13, 2
+connected to: GND3, GND3, GND
+connected to: C11, C11, 2
+connected to: GND4, GND4, GND
+connected to: U1, U1, REF_GND_2
+connected to: U1, U1, REF_GND
+connected to: U1, U1, REF_GND_3
+connected to: GND5, GND5, GND
+connected to: C5, C5, 2
+connected to: GND7, GND7, GND
+connected to: U1, U1, EPAD
+connected to: U1, U1, GND
+connected to: GND1, GND1, GND
+connected to: U1, U1, REFIN
+connected to: GND8, GND8, GND
+connected to: C14, C14, 2
+connected to: GND9, GND9, GND
+connected to: C15, C15, 2
+connected to: GND10, GND10, GND
+connected to: C16, C16, 2
+connected to: GND11, GND11, GND
+connected to: C17, C17, 2
+connected to: GND12, GND12, GND
+connected to: GND13, GND13, GND
+connected to: IC4, IC4, -VS
+connected to: GND14, GND14, GND
+connected to: C18, C18, 2
+connected to: R15, R15, 1
+connected to: C19, C19, 2
+connected to: GND15, GND15, GND
+connected to: R18, R18, 2
+connected to: C20, C20, 2
+connected to: GND16, GND16, GND
+connected to: U3, U3, EPAD
+connected to: GND6, GND6, GND
+	Net: IN+
+connected to: U1, U1, IN+
+connected to: R20, R20, 2
+connected to: C4, C4, 2
+	Net: IN-
+connected to: U1, U1, IN-
+connected to: R19, R19, 2
+connected to: C4, C4, 1
+	Net: N$1
+connected to: U2, U2, IOUT1
+connected to: IC1, IC1, +IN
+connected to: C3, C3, 1
+	Net: N$2
+connected to: C3, C3, 2
+connected to: U2, U2, RFB
+connected to: R4, R4, 1
+	Net: N$3
+connected to: R1, R1, 2
+connected to: R2, R2, 1
+connected to: R3, R3, 2
+connected to: IC3, IC3A, IN+
+	Net: N$4
+connected to: R4, R4, 2
+connected to: IC1, IC1, OUT
+connected to: R1, R1, 1
+	Net: N$5
+connected to: R7, R7, 1
+connected to: R2, R2, 2
+connected to: IC3, IC3A, OUT
+	Net: N$6
+connected to: R5, R5, 1
+connected to: IC2, IC2, OUT
+	Net: N$7
+connected to: U2, U2, VREF
+connected to: R3, R3, 1
+	Net: N$8
+connected to: IC2, IC2, V+
+	Net: N$9
+connected to: U1, U1, VDD2_3
+	Net: N$10
+connected to: IC4, IC4, OUT
+connected to: IC4, IC4, IN-
+connected to: R14, R14, 1
+	Net: N$11
+connected to: U3, U3, IN+
+connected to: R8, R8, 1
+connected to: R10, R10, 2
+	Net: N$12
+connected to: U3, U3, FB-
+connected to: R8, R8, 2
+	Net: N$13
+connected to: R9, R9, 1
+connected to: U3, U3, IN-
+connected to: R11, R11, 2
+	Net: N$14
+connected to: U3, U3, FB+
+connected to: R9, R9, 2
+	Net: N$15
+connected to: R10, R10, 1
+connected to: R16, R16, 2
+connected to: C20, C20, 1
+connected to: R18, R18, 1
+	Net: N$16
+connected to: R11, R11, 1
+connected to: R17, R17, 2
+connected to: R15, R15, 2
+connected to: C19, C19, 1
+	Net: N$17
+connected to: U3, U3, OUT-
+connected to: R19, R19, 1
+	Net: N$18
+connected to: U3, U3, OUT+
+connected to: R20, R20, 1
+	Net: OUT
+connected to: R7, R7, 2
+connected to: C8, C8, 1
+	Net: REF
+connected to: U1, U1, REF_2
+connected to: U1, U1, REF_3
+connected to: U1, U1, REF_4
+connected to: U1, U1, REF
+connected to: C13, C13, 1
+connected to: C12, C12, 1
+connected to: R14, R14, 2
+	Net: REF_5V
+connected to: IC4, IC4, IN+
+	Net: SCLK
+connected to: U2, U2, SCLK
+	Net: SDI
+connected to: U2, U2, SDIN
+	Net: VCM
+connected to: U3, U3, VOCM
+connected to: C5, C5, 1
+connected to: U1, U1, VCM
+	Net: VREF_BUF
+connected to: C6, C6, 1
+connected to: R5, R5, 2
+connected to: IC2, IC2, -IN

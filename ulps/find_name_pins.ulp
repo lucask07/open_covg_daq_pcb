@@ -29,14 +29,15 @@ schematic(SCH) {
 	//  that is named and labeled
 	// output is to net_draw_label.scr (a script which can be run after the ULP)
 
+	output("/Users/koer2434/Documents/eagle/projects/open_covg_daq_pcb/ulps/net_draw_label.scr", "wt"){
+	printf("SET SIZE 0.05\n"); // for the Labels 
+
 	SCH.parts(P)
 	{
-	string part_id = "R6"; // was "BRD1"
+	string part_id = "OK1"; // Opal Kelly Connector
 	if(P.name != part_id) continue;
 	P.instances(I) /* for each instance of a part */
 		{
-			output("/Users/koer2434/Documents/eagle/projects/open_covg_daq_pcb/ulps/net_draw_label.scr", "wt"){
-				printf("SET SIZE 0.05\n"); // for the Labels 
 				I.gate.symbol.pins(pin) /* for each pin of a part instance */
 				{
 					if(!pin.contact) continue;

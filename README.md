@@ -116,6 +116,8 @@ And possibly create the Xilinx UCF file
 * UCF file is parsed by Eagle 
 * And a way to indicate voltage levels? 
 
+Note that the OpalKelly breakout board mates the FPGA JP1 to breakout JP2 and JP2 to breakout JP1.
+
 "Totally do-able with a ULP. I imagine the process would be something like this: run MyULP.ulp Dialog opens and you enter the FPGA name from the schematic (say U1). In that same dialog you select the .qsf file of interest. ULP parses the file and matches pin names to qsf data
 Identifies pin location,direction, and creates a script that runs when the ULP ends."
 
@@ -123,7 +125,7 @@ Identifies pin location,direction, and creates a script that runs when the ULP e
 
 It draws a short named net wire out from the pin in the appropriate direction and labels it with the signal name.
 
-The script **'cmd-net-list2sch.ulp'** helps a lot to understand how to access (from the Control Panel see 'User Language Programs/examples/':
+The script **'cmd-net-list2sch.ulp'** helps a lot to understand how to access (from the Control Panel see 'User Language Programs/examples/'):
 
 - Pin.name
 
@@ -145,7 +147,8 @@ Options -> Directories...
 
 #### Documented plan to name nets 
 
-* I have edited *segments_example.ulp* and *parts.scr* 
+* I have edited *find\_name\_pins.ulp* and creates *net\_draw\_label.scr* 
+* Edit test\_pin\_name that is within the with a Python script 
 
 #### Autorouter 
 Use fanout for VDD and GND to planes 
