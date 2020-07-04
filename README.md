@@ -72,7 +72,6 @@ Keep all I/O at 3.3 V. Note that the Opal Kelly board does not have a 2.5 V powe
 ### Digikey Cart 
 [Web ID: 305426708](https://www.digikey.com/MyDigiKey/Home/ResumeOrder?webId=305426708&accessId=82908) 
 
-
 ### Fabrication History 
 ?
 
