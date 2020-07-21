@@ -1,0 +1,14 @@
+display torig borig;   # Display the top and bottom origins
+group all;             # Group everything
+smash (C>0 0);         # Smash everything in the group
+display none tname bname tval bval; # OPTIONAL: limit changes to names and values
+
+group all;             # Group everything including smashed texts.
+
+change font vector (C>0 0); # Change the font to a vector font
+
+change size 32mil (C>0 0); # Change the font size
+
+change ratio 19 (C>0 0); # Change the width:height ratio
+
+display last;

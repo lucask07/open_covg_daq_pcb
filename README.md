@@ -1,10 +1,50 @@
 # open\_covg\_daq\_pcb 
-### (this is the Eagle project name)
+#### (this is the Eagle project name)
 
-Printed Circuit Board (PCB) design using Eagle 9.5.1. This readme describes the first revision of the ADC and DAC board that interfaces to an Opal Kelly XEM6310.
+Printed Circuit Board (PCB) design using Eagle 9.5.1. This README describes the first revision of the ADC and DAC board that interfaces to an Opal Kelly XEM6310.
 
-### Part Datasheets
-[datasheets](documentation/datasheets)
+## Current Issues, Tasks and Brainstorming
+
+#### Schematic 
+**Active:**
+
+* Need an output connector for the power supplies to go to the daughtercard. Look for the cable first? 
+* Will Need a connector for a daughtercard
+* Think of a "standard" pinout for this connector 
+* Want a 0.1" header for scope debug of digital signals (ensure all 3 banks? segregate by voltage levels)
+* Need calculations and simulations for single ended input into analog ADCs 
+* Analog Ins -- from daughtercard or SMA (need jumpers and jumpers for single-ended) 
+* Need a sketch of the daughter-card schematic to know what we are connecting to 
+* Develop scheme for naming of digital signals. Start with fast ADC #0, then fast DAC #0, then slow ADC, and slow DAC.  ADC0:CLK
+* Need a go to, reasonably cheap general purpose op-amp:
+	* OPA192:  (precision, +/-18V supply, 5 pA input bias): $2.42 (1 circuit)
+	* OPA1662:  (2 circuits)
+	* ADA4610-2: $3.92 (2 circuits)
+	* OPA727: not used $1.42 (1 circuit)
+	* OPA353: not used $2.61 (1 circuit)
+	* LM318: not used $1.19 (1 circuit)
+	* ADA4084-2: $6.52 (2 circuits)
+	* OPA2301: $2.40 (2 circuits)
+	* OPA202: buffer into the analog input of the slow ADC, ADS7952 $1.05 (1 circuit). Seems good for general purpose.
+
+**Closed:**
+
+* Setup EAGLE schematic sheets --> DONE  
+* Have the SMA for the DIFF- be DNP? yes 
+* Analyze BW of the DAC system (what is needed?) --> GBW seem more than sufficient
+* Power supplies: with 4 ADC channels and 4 DAC channels what will be the current draw? --> DONE on Excel spreadsheet 'Power Supplies' (significant margin)
+
+#### Layout 
+
+**Active:**
+
+* Check required separation between SMA connectors 
+
+**Closed:**
+
+
+## Parts
+[datasheets](documentation/datasheets) This folder is incomplete since its easier to find the spec sheets using Google/Digikey. 
 
 ### ADC 
 
@@ -12,12 +52,44 @@ Printed Circuit Board (PCB) design using Eagle 9.5.1. This readme describes the 
 
 ADC configuration
 [AD7960 Eval Kit](documentation/eval_kits/AD7960FMCZ_Schematic.pdf)
-Power supplies:
+
+#### AD7960 Enable  (EN3,EN2,EN1,EN0):
+
+* Use internal reference voltage buffer, supply 2.048 V reference. Don't need snooze mode.
+
+States we would like:
+
+* Power down - X,0,0,0
+* Internal buffer, 28 MHz BW - X,0,0,1
+* Internal buffer, 9 MHz BW -  X,1,0,1
+* Test pattern on ADC output - 0,1,0,0
+(tie EN3 = 0)
+
+**Therefore:**
+
+* EN0 - individual for each ADC from FPGA
+* EN1 - always 0 
+* EN2 - defaults low, add jumper (global) 
+* EN3 - always 0
+
+**"Slow" AD**
+[ADS7952](https://www.ti.com/lit/ds/symlink/ads7952.pdf?ts=1595021716682&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FADS7952)
+See the layout example in Fig. 69. The exposed pad should be connected to ground.
+
+### Power Supplies 
+
+[Creating a negative voltage with a DC-DC converter](https://www.maximintegrated.com/en/design/technical-documents/app-notes/3/3844.html) This is what is done in the AD7960 eval board schematic. 
+
+### Power supplies:
 
 * +5 V (500 mA)
-* +7 V (300 mA)
-* -2.5 V (250 mA)
+* +7 V (300 mA) (AMP_PWR+) 
+* -2.5 V (250 mA) (AMP_PWR-) -- switcher
+* -6.5 V (JFET gate drive for low leakage) -- linear 
+* 3.3 V 
 * 1.8 V
+* +15 V
+* -15 V
 
 ### DAC 
 
@@ -26,27 +98,32 @@ Power supplies:
 External connections for bipolar operation are described in Figure 45. 
 AD5453 (14 bit) has a +/-2.5 LSB gain error. Resistors R1,R2 in Fig. 45 are intended to correct this gain error. This is not necessary in our design. 
 
-### Level Shifters
+
+### Level Shifters 
 
 Need two types of level-shifters: 
 
 * (low-voltage to low-voltage) bi-directional (for I2C) 
+
+Bidirectional NLSX3018: Vlow down to 1.8 V, Vhigh to 4.5V, EN can be driven from either low or high supply side. 20-TSSOP with 8 channels. 
+
+
 * (low-voltage to high negative voltage) unidirectional for gate drive of FET switches 
 
-**For gate drive of FET switches:** Use a BJT circuit [level shifter](Negative level shifter:
-https://electronics.stackexchange.com/questions/305295/negative-level-shifter) (to get 0 V to negative) followed by a [Schmitt-Comparator input inverter](http://www.ti.com/lit/ds/symlink/cd40106b.pdf) where the inverter is powered by 3 V and -6V.  
+**For gate drive of FET switches:** Use a BJT circuit [Negative level shifter](https://electronics.stackexchange.com/questions/305295/negative-level-shifter) (to get 0 V to negative) followed by a [Schmitt-Comparator input inverter](http://www.ti.com/lit/ds/symlink/cd40106b.pdf) where the inverter is powered by 3 V and -6V.  
 
-### GPIO Expanders 
-TBD, let's see how many GPIO we need 
+Consider the CD40106B Schmitt Trigger. At VDD = 10 V (3.3 V and -6.7 V) 
+if the input is -6.0 V -> 0.7 V 
+if the input is 0 V -> Vin = 6.7 V
+positive trigger threshold 4.6 V (min) and 5.9 V and 7.2 V (max)
+negative trigger threhsold 2.5 V (min) and 3.9 V and 5.2 V (max) 
 
-### PCB Design Rules 
-[Design rule notes](design_rules/notes.txt)
+See Sigworth, "Design of the EPC-9, a computer-controlled patch-clamp amplifier. 1. Hardware" 
+![](readme_img1.png) 
 
+FETs for high impedance inputs
 
-### Opal Kelly 
-[XEM6310](https://opalkelly.com/products/xem6310/)
-
-[Pins page](https://pins.opalkelly.com/pin_list/XEM6310) 
+* [MMBF411_(7/8/9)](https://www.onsemi.com/pub/Collateral/PN4118-D.pdf) 
 
 
 ### Samtec Connectors 
@@ -54,6 +131,16 @@ BTE-040-02-F-D-A
 
 ### Other connectors 
 SMA connectors used on multiple sample board: BU-SMA-G (library con-coax) 
+
+
+### GPIO Expanders 
+TBD, let's see how many GPIO we need 
+
+
+## Opal Kelly 
+[XEM6310](https://opalkelly.com/products/xem6310/)
+
+[Pins page](https://pins.opalkelly.com/pin_list/XEM6310) 
 
 
 ### I/O and Power Supplies
@@ -72,20 +159,6 @@ Keep all I/O at 3.3 V. Note that the Opal Kelly board does not have a 2.5 V powe
 ### Digikey Cart 
 [Web ID: 305426708](https://www.digikey.com/MyDigiKey/Home/ResumeOrder?webId=305426708&accessId=82908) 
 
-### Fabrication History 
-?
-
-
-### Similar Work: Review of Scientific Instruments
-Folder to [literature](documentation/literature)
-
-Yu discusses the performance limitations of an FPGA-based digital servo at Review of Scientific Instruments: [Yu2017](https://doi.org/10.1063/1.5001312) also available at [Arxiv](https://arxiv.org/pdf/1708.05892)
-
-A team at NIST Boulder published "An open source digital servo for atomic, molecular, and optical physics experiments"
-[Leibrandt2015](https://doi.org/10.1063/1.4938282) also available at [Arxiv](https://arxiv.org/abs/1508.06319v2) with the design on [GitHub](https://github.com/nist-ionstorage/digital-servo)
-
-
-
 ### Block Diagram
 [draw.io](https://app.diagrams.net/#G1cag96miJY35-pZFsIFOat7tR4uEEA6qU)
 
@@ -103,7 +176,13 @@ See this YouTube [video](https://www.youtube.com/watch?v=i-ChFk2pagA)
 
 Within the project is a folder parts/open_covg.lbr. Most parts here are downloaded from Ultra Librarian. 
 
-The *Value* of a part can be changed so that a symbol / footprint combination can be reused. 
+The *Value* of a part can be changed so that a symbol / footprint combination can be reused. Useful approach for standard op-amps following a standard pinout. 
+
+**Silkscreen**
+JLPCB minimum capabilities: 32 mil height, 6 mil width
+mine are OK on height, need to fix the width. 
+Most sites say to only use 'vector font'; There is a User settings option for that, which I have enabled. 
+
 
 **Eagle/Autodesk Libraries**
 [library.io](https://library.io/search?q=)
@@ -117,10 +196,9 @@ name "newname" (x y);
 
 And possibly create the Xilinx UCF file 
 
-
 [Swoop](http://nvsl.ucsd.edu/Swoop/) Can work with the schematic and board files. PyPI has it last updated in 2019 
 
-**What I need:**
+**What I need for tracking digital signals:**
 
 * spreadsheet from OpalKelly pins that creates UCF 
 * UCF file is parsed by Eagle 
@@ -187,43 +265,18 @@ Besides that the safe spacing between pads shouldn't be connected for a short di
 * For mixed assembly, the distance between plug-in components and chip component pad is 1.5mm.
 * In the process of PLCC socket design, sufficient space for PLCC socket should be maintained in advance.
 
-## Current Notes and Brainstorming
-
-* Will Need a connector for a daughtercard
-* Think of a "standard" pinout for this connector 
-* Want a 0.1" header for scope debug of digital signals 
-* Need to do calculations and simulations for single ended input into analog ADCs 
-* Analog Ins -- from daughtercard or SMA (need jumpers and jumpers for single-ended) 
-* Have the SMA for the DIFF- be DNP? yes 
-* Need a sketch of the daughter-card schematic to know what we are connecting to 
-* Setup sheets and determine naming of digital signals 
-* Analyze BW of the DAC system (what is needed?)
-* Power supplies: with 4 ADC channels and 4 DAC channels what will be the current draw?
-* Need an output connector for the power supplies to go to the daughtercard.
-* Check required separation between SMA connectors 
+### PCB Design Rules 
+[Design rule notes](design_rules/notes.txt)
 
 
-## AD7960 Enable 
-EN3,EN2,EN1,EN0:
+### Fabrication History 
+This is v1. 
 
-* Use internal buffer; don't need snooze mode
 
-States we would like:
+### Similar Work: Review of Scientific Instruments
+Folder to [literature](documentation/literature)
 
-* Power down - X,0,0,0
-* Internal buffer, 28 MHz BW - X,0,0,1
-* Internal buffer, 9 MHz BW -  X,1,0,1
-* Test pattern on ADC output - 0,1,0,0
-(tie EN3 = 0)
+Yu discusses the performance limitations of an FPGA-based digital servo at Review of Scientific Instruments: [Yu2017](https://doi.org/10.1063/1.5001312) also available at [Arxiv](https://arxiv.org/pdf/1708.05892)
 
-EN0 - individual for each ADC from FPGA
-EN1 - always 0 
-EN2 - defaults low, add jumper (global) 
-EN3 - always 0
-
-## Level Shifters 
-Bidirectional NLSX3018: Vlow down to 1.8 V, Vhigh to 4.5V, EN can be driven from either low or high supply side. 20-TSSOP with 8 channels. 
-
-## Power Supplies 
-
-[Creating a negative voltage with a DC-DC converter](https://www.maximintegrated.com/en/design/technical-documents/app-notes/3/3844.html) This is what is done in the AD7960 eval board schematic. 
+A team at NIST Boulder published "An open source digital servo for atomic, molecular, and optical physics experiments"
+[Leibrandt2015](https://doi.org/10.1063/1.4938282) also available at [Arxiv](https://arxiv.org/abs/1508.06319v2) with the design on [GitHub](https://github.com/nist-ionstorage/digital-servo)
