@@ -15,7 +15,10 @@ Printed Circuit Board (PCB) design using Eagle 9.5.1. This README describes the 
 * Need calculations and simulations for single ended input into analog ADCs 
 * Analog Ins -- from daughtercard or SMA (need jumpers and jumpers for single-ended) 
 * Need a sketch of the daughter-card schematic to know what we are connecting to 
-* Develop scheme for naming of digital signals. Start with fast ADC #0, then fast DAC #0, then slow ADC, and slow DAC.  ADC0:CLK
+* Develop scheme for naming of digital signals. Start with fast ADC #0, then fast DAC #0, then slow ADC, and slow DAC.  
+	* A0_SCLK, etc.
+	* D0_SCLK
+	* DS_SCLK, slow DAC
 * Need a go to, reasonably cheap general purpose op-amp:
 	* OPA192:  (precision, +/-18V supply, 5 pA input bias): $2.42 (1 circuit)
 	* OPA1662:  (2 circuits)
@@ -25,7 +28,7 @@ Printed Circuit Board (PCB) design using Eagle 9.5.1. This README describes the 
 	* LM318: not used $1.19 (1 circuit)
 	* ADA4084-2: $6.52 (2 circuits)
 	* OPA2301: $2.40 (2 circuits)
-	* OPA202: buffer into the analog input of the slow ADC, ADS7952 $1.05 (1 circuit). Seems good for general purpose.
+	* OPA202: buffer into the analog input of the slow ADC, ADS7952 $1.05 (1 circuit). **Seems good for general purpose.**
 
 **Closed:**
 
@@ -38,13 +41,16 @@ Printed Circuit Board (PCB) design using Eagle 9.5.1. This README describes the 
 
 **Active:**
 
+* Rough placement of various sections (note which sections will eventually be duplicated)
+* That rough placement can lead to positioning of power planes 
+* Once power planes are drawn can start auto-routing 
 * Check required separation between SMA connectors 
 
 **Closed:**
 
 
 ## Parts
-[datasheets](documentation/datasheets) This folder is incomplete since its easier to find the spec sheets using Google/Digikey. 
+[datasheets](documentation/datasheets): This folder is incomplete since its easier to find the spec sheets using Google/Digikey. 
 
 ### ADC 
 
@@ -57,7 +63,7 @@ ADC configuration
 
 * Use internal reference voltage buffer, supply 2.048 V reference. Don't need snooze mode.
 
-States we would like:
+States needed for this application:
 
 * Power down - X,0,0,0
 * Internal buffer, 28 MHz BW - X,0,0,1
@@ -181,7 +187,7 @@ The *Value* of a part can be changed so that a symbol / footprint combination ca
 **Silkscreen**
 JLPCB minimum capabilities: 32 mil height, 6 mil width
 mine are OK on height, need to fix the width. 
-Most sites say to only use 'vector font'; There is a User settings option for that, which I have enabled. 
+Most sites say to only use 'vector font'; There is a User settings option for that, which I have enabled. In the 'ulps' folder of this folder I added a script (from the web) that sets the silkscreen height (32 mils) and width (19% ratio).
 
 
 **Eagle/Autodesk Libraries**
@@ -234,7 +240,8 @@ Options -> Directories... This allows you to add local library files to library.
 
 #### Documented plan to name nets 
 
-* I have edited *find\_name\_pins.ulp* and creates *net\_draw\_label.scr* 
+* I created a modified version of *find\_name\_pins.ulp* which creates *net\_draw\_label.scr* 
+* See the Python script [ulp\_script\_edit.py](/Users/koer2434/Documents/eagle/projects/open_covg_daq_pcb/ulps/ulp_script_edit.py) in the [ulps folder](/Users/koer2434/Documents/eagle/projects/open_covg_daq_pcb/ulps/). This Python code edits the Eagle script file to use the names 
 * Edit test\_pin\_name that is within the with a Python script 
 
 #### Duplicating / copying layouts 
@@ -245,16 +252,17 @@ Options -> Directories... This allows you to add local library files to library.
 * Copy and past the schematic components that were copied in the layout.
 
 #### Autorouter and Fanout
-Use fanout for VDD and GND to planes. Select 'fanout signal' so that the fanout does not do all the signals on the IC. 
+Use fanout for VDD and GND to planes. Select 'fanout signal' so that the fanout does not do all the signals on the IC. To ripup all signals type into the command line 'RIPUP ;'
 
-To ripup all signals type into the command line 'RIPUP ;'
+#### Netclasses 
+Found that the same net will have be in the list of nets for netclasses in the netclass selection dialog. Note that this does not mean that this net is unconnected between sheets (it is connected). 
 
 **Autoplacement:**
 
-ULP called N_group-aps_v4.ulp places a group of parts on the board as selected in the schematic. This placement is based on the positioning in the schematic so is not a complete solution but it does help reasonably segregate the parts. A scale factor of 0.3 works reasonably well, this sets the scaling of distance in the board with respect to the distances in the schematic. 
+ULP called N\_group-aps_v4.ulp places a group of parts on the board as selected in the schematic. This placement is based on the positioning in the schematic so is not a complete solution but it does help reasonably segregate the parts. A scale factor of 0.3 works reasonably well, this sets the scaling of distance in the board with respect to the distances in the schematic. 
 
 
-**Design Rules for SMT component placement**
+#### Design Rules for SMT component placement
 
 Besides that the safe spacing between pads shouldn't be connected for a short distance, the maintainability of vulnerable components should be also considered. Generally speaking, the assembly density should meet the following requirements:
 
@@ -266,14 +274,16 @@ Besides that the safe spacing between pads shouldn't be connected for a short di
 * In the process of PLCC socket design, sufficient space for PLCC socket should be maintained in advance.
 
 ### PCB Design Rules 
-[Design rule notes](design_rules/notes.txt)
+
+[Design rule notes from bay area circuit](design_rules/notes.txt)
+[Design rules from JLCPCB](https://jlcpcb.com/capabilities/Capabilities)
 
 
 ### Fabrication History 
 This is v1. 
 
 
-### Similar Work: Review of Scientific Instruments
+### Similar work in the literature: Review of Scientific Instruments
 Folder to [literature](documentation/literature)
 
 Yu discusses the performance limitations of an FPGA-based digital servo at Review of Scientific Instruments: [Yu2017](https://doi.org/10.1063/1.5001312) also available at [Arxiv](https://arxiv.org/pdf/1708.05892)

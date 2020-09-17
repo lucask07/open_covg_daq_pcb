@@ -1,13 +1,21 @@
 # Lucas J. Koerner
 # 2020/05/20
-# parse script files and rename nets based on the excel
+# parse script files and rename nets based on an excel file
 # koerner.lucas@stthomas.edu
 # University of St. Thomas
 
 '''
 Parse the script files 
 
-2020/5/29: working, eventually will replace most_recent_pin to be from a signal name
+2020/5/29: 
+status: working
+	
+ToDo: replace most_recent_pin to be from a signal name
+
+Replaces 'test_name_name' in the file net_draw_label.scr
+using the values found in an excel spreadsheet
+
+The script net_draw_label.scr is created by the ULP find_name_pins.ulp 
 
 '''
 
