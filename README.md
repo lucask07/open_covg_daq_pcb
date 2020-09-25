@@ -28,7 +28,7 @@ Printed Circuit Board (PCB) design using Eagle 9.5.1. This README describes the 
 	* LM318: not used $1.19 (1 circuit)
 	* ADA4084-2: $6.52 (2 circuits)
 	* OPA2301: $2.40 (2 circuits)
-	* OPA202: buffer into the analog input of the slow ADC, ADS7952 $1.05 (1 circuit). **Seems good for general purpose.**
+	* OPA202: buffer into the analog input of the slow ADC (ADS7952) $1.05 (1 circuit). **Seems good for general purpose.**
 
 **Closed:**
 
@@ -137,6 +137,12 @@ BTE-040-02-F-D-A
 
 ### Other connectors 
 SMA connectors used on multiple sample board: BU-SMA-G (library con-coax) 
+SMA connectors are HEX with a 8.00 mm (0.315 in) width across the flats and 9.238 mm (363.7 mils) across the corners (flats/\sqrt(3)*2)
+For margin I will separate connecters by 450 mils. 
+
+Power Supply Connectors
+[Barrel Jacks with switch](https://electronics.stackexchange.com/questions/90529/what-to-do-with-third-contact-in-dc-barrel-plug-with-only-two-input-contacts)
+Ground is pin 2, use pin 3 to detect insertion of the plug. Without the plug pins 2 and 3 are shorted. 
 
 
 ### GPIO Expanders 
@@ -252,7 +258,24 @@ Options -> Directories... This allows you to add local library files to library.
 * Copy and past the schematic components that were copied in the layout.
 
 #### Autorouter and Fanout
-Use fanout for VDD and GND to planes. Select 'fanout signal' so that the fanout does not do all the signals on the IC. To ripup all signals type into the command line 'RIPUP ;'
+Use fanout for VDD and GND to planes. Select 'fanout signal'; 'fanout device' will do all signals of the IC which will add unnecessary vias to signal traces. To ripup all signals type into the command line 'RIPUP ;'
+See this Eagle info on the [Fanout tool](https://www.autodesk.com/products/eagle/blog/whats-new-in-autodesk-eagle-9-2/)
+
+The best way to use this tool is to fanout power and grounds using the command prompt. **Example**:
+
+* fanout signal GND
+* fanout signal +5V
+* etc.
+
+The default direction of OUT seems appropriate for almost all cases. Fanout seems to respect design rules (net classes and trace width).
+
+So process should be:
+
+* position parts (check design rules for proximity)
+* draw power planes 
+* set net class design rules to match the thinnest pad
+* fanout power and ground signals 
+* autoroute other signals 
 
 #### Netclasses 
 Found that the same net will have be in the list of nets for netclasses in the netclass selection dialog. Note that this does not mean that this net is unconnected between sheets (it is connected). 
@@ -276,8 +299,26 @@ Besides that the safe spacing between pads shouldn't be connected for a short di
 ### PCB Design Rules 
 
 [Design rule notes from bay area circuit](design_rules/notes.txt)
+
 [Design rules from JLCPCB](https://jlcpcb.com/capabilities/Capabilities)
 
+
+#### Via size
+0.2 mm = 8 mil minimum drill size, with a minimum via diameter of 0.45 mm = 18 mils 
+
+20 mil vias is pretty conservative. 
+JLCPCB specifies 0.45 mm 
+
+#### Via in PAD
+If the Via is not filled it causes problems during assembly since solder wicks into the hole and not enough solder remains to solder the part. At the board house these can be plated over to prevent the solder wicking. 
+
+The key is to have a solder mask dam 
+
+I suspect it is not a problem to have an unfilled via with a central paddle since that is not a critical electrical connection anyways. The board house won't complain. 
+
+[Solder mask distance is key](https://electronics.stackexchange.com/questions/178164/what-constitutes-a-via-in-pad)
+[](https://electronics.stackexchange.com/questions/170209/anything-bad-to-place-a-via-on-a-pad?rq=1)
+[5 myths regarding via-in-pad](https://community.cadence.com/CSSharedFiles/forums/storage/27/1324522/screaming_5myths.pdf)
 
 ### Fabrication History 
 This is v1. 

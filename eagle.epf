@@ -358,5 +358,10 @@ UsedLibrary="/Users/koer2434/Documents/EAGLE/libraries/lm337.lbr"
 UsedLibrary="parts/open_covg.lbr"
 UsedLibrary="/Users/koer2434/Google Drive/UST/research/patch_clamp/board_design1/eagle_libraries/eagle-libraries-master/RHD2000_eval_board.lbr"
 
+[Win_1]
+Type="Control Panel"
+Number=0
+
 [Desktop]
-Screen="3600 1200"
+Screen="1680 1050"
+Window="Win_1"
