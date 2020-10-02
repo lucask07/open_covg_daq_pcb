@@ -9,17 +9,19 @@ Printed Circuit Board (PCB) design using Eagle 9.5.1. This README describes the 
 **Active:**
 
 * Need an output connector for the power supplies to go to the daughtercard. Look for the cable first? 
-* Will Need a connector for a daughtercard
-* Think of a "standard" pinout for this connector 
-* Want a 0.1" header for scope debug of digital signals (ensure all 3 banks? segregate by voltage levels)
+[shrouded pin connectors](https://www.digikey.com/products/en/connectors-interconnects/rectangular-connectors-headers-male-pins/314?k=connector&k=&pkeyword=connector&sv=0&pv1989=0&pv90=121326&pv91=321623&pv589=389860&pv589=405002&pv589=405010&sf=1&FV=-8%7C314&quantity=&ColumnSort=0&page=1&pageSize=25)
+
+* Will Need a connector for a daughtercard with a "standard" pinout for this connector (are there simple coaxial cables that are pluggable and cheaper than SMA?)
+* Want a 0.1" header for scope debug of digital signals (segregate by voltage levels)
 * Need calculations and simulations for single ended input into analog ADCs 
-* Analog Ins -- from daughtercard or SMA (need jumpers and jumpers for single-ended) 
+* Analog Ins -- from daughtercard or SMA (need jumpers and jumpers for single-ended) --> DONE
+* Consider current sensing using a part such as the [AD8210](https://www.analog.com/media/en/technical-documentation/data-sheets/AD8210.pdf)
 * Need a sketch of the daughter-card schematic to know what we are connecting to 
-* Develop scheme for naming of digital signals. Start with fast ADC #0, then fast DAC #0, then slow ADC, and slow DAC.  
+* Develop scheme for naming of digital signals. Start with fast ADC #0, then fast DAC #0, then slow ADC, and slow DAC. --> DONE
 	* A0_SCLK, etc.
 	* D0_SCLK
 	* DS_SCLK, slow DAC
-* Need a go to, reasonably cheap general purpose op-amp:
+* Need a go to, reasonably cheap general purpose op-amp: --> DONE
 	* OPA192:  (precision, +/-18V supply, 5 pA input bias): $2.42 (1 circuit)
 	* OPA1662:  (2 circuits)
 	* ADA4610-2: $3.92 (2 circuits)
@@ -43,11 +45,12 @@ Printed Circuit Board (PCB) design using Eagle 9.5.1. This README describes the 
 
 * Rough placement of various sections (note which sections will eventually be duplicated)
 * That rough placement can lead to positioning of power planes 
-* Once power planes are drawn can start auto-routing 
-* Check required separation between SMA connectors 
+* Once power planes are drawn can start auto-routing --> DONE
+* Check required separation between SMA connectors --> DONE (see below)
+* Copy layout of DAC channels 
+* Copy layout of ADC channels 
 
 **Closed:**
-
 
 ## Parts
 [datasheets](documentation/datasheets): This folder is incomplete since its easier to find the spec sheets using Google/Digikey. 
@@ -78,7 +81,7 @@ States needed for this application:
 * EN2 - defaults low, add jumper (global) 
 * EN3 - always 0
 
-**"Slow" AD**
+**"Slow" ADC**
 [ADS7952](https://www.ti.com/lit/ds/symlink/ads7952.pdf?ts=1595021716682&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FADS7952)
 See the layout example in Fig. 69. The exposed pad should be connected to ground.
 
@@ -104,6 +107,9 @@ See the layout example in Fig. 69. The exposed pad should be connected to ground
 External connections for bipolar operation are described in Figure 45. 
 AD5453 (14 bit) has a +/-2.5 LSB gain error. Resistors R1,R2 in Fig. 45 are intended to correct this gain error. This is not necessary in our design. 
 
+* For DAC:0 add AC couple option
+* For DAC:2 add an amplifier that can duplicate with an offset. 
+![](imgs/proposal_schematic.png) 
 
 ### Level Shifters 
 
@@ -133,7 +139,7 @@ FETs for high impedance inputs
 
 
 ### Samtec Connectors 
-BTE-040-02-F-D-A
+BTE-040-02-F-D-A   (on the Opal Kelly FPGA) 
 
 ### Other connectors 
 SMA connectors used on multiple sample board: BU-SMA-G (library con-coax) 
@@ -145,15 +151,37 @@ Power Supply Connectors
 Ground is pin 2, use pin 3 to detect insertion of the plug. Without the plug pins 2 and 3 are shorted. 
 
 
+[A board for terminating ethernet cable:](https://www.cablesandkits.com/faq/what-is-the-difference-between-utp-stp-ftp-sftp)
+
+[Definitions of S/FTP, UTP, FTP cables](https://www.cablesandkits.com/faq/what-is-the-difference-between-utp-stp-ftp-sftp)
+
+[Guide on cable shielding](https://www.mouser.com/pdfdocs/alphawire-Understanding-Shielded-Cable.pdf)
+
+[Another blog on shielding types](https://www.multicable.com/resources/reference-data/signal-interference-and-cable-shielding/)
+
+
+#### Small form factor cables appropriate for power supply distribution
+* Molex: PICOBLADE 10 CIRCUIT 100MM
+* JST Sales America Inc.	JUMPER 09SR-3S - 09SR-3S 8
+
+[Blog post comparing Molex and JST](https://blog.kylemanna.com/hardware/molex-picoblade-vs-jst-sh-connectors/)
+
+For power use the individual wire cable like the JST. Bring all power out so that it could go to the daughter-card. Some rails may not be used. 
+
+For the level shifted switch digital signals use a 2.0 mm or 1.27 mm SMT pin header. 
+
+Switch the jumper pin header for the level shifter supply selector to SMT and smaller pitch.
+
+Find ribbon cable assemblies for 1.27 / 2.0 mm pitch. 
+
+
 ### GPIO Expanders 
 TBD, let's see how many GPIO we need 
-
 
 ## Opal Kelly 
 [XEM6310](https://opalkelly.com/products/xem6310/)
 
 [Pins page](https://pins.opalkelly.com/pin_list/XEM6310) 
-
 
 ### I/O and Power Supplies
 [Excel tracker](documentation/signals/XEM6310.xlsx)
@@ -176,6 +204,14 @@ Keep all I/O at 3.3 V. Note that the Opal Kelly board does not have a 2.5 V powe
 
 [Google drive draw.io](/Users/koer2434/Google Drive/UST/research/patch_clamp/board_design1/) is within this folder
 
+#### Power Planes
+
+* Route 2: is GND
+* Route 3: 3.3V (primarily) and the pre-regulated input power
+* Route 14: +15V, -15V, AMP_PWR+, AMP_PWR-
+* Route 15: 
+
+
 ## Eagle PCB Design Notes 
 
 **Blocks (and layout reuse):**
@@ -189,6 +225,8 @@ See this YouTube [video](https://www.youtube.com/watch?v=i-ChFk2pagA)
 Within the project is a folder parts/open_covg.lbr. Most parts here are downloaded from Ultra Librarian. 
 
 The *Value* of a part can be changed so that a symbol / footprint combination can be reused. Useful approach for standard op-amps following a standard pinout. 
+
+Online libraries for [download](http://eagle.autodesk.com/eagle/libraries?button=&page=90&q%5Bs%5D=uploaded_at+asc&utf8=%E2%9C%93)
 
 **Silkscreen**
 JLPCB minimum capabilities: 32 mil height, 6 mil width
