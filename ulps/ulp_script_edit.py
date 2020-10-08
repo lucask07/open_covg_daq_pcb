@@ -43,9 +43,12 @@ with open(script_file, 'r') as f:
 	            idx = ((df.Connector == jumper) & (df.Pin == pin_num)) 
 	            print(df[idx].Description)
 	            print('Most recent pin = {}'.format(most_recent_pin))
+	            net_name = str(df[idx].NET.item())
+	            if (len(net_name) < 1) or (net_name == 'nan'):
+	            	net_name = most_recent_pin
 	        
 	        if 'NET' in l:
-	        	l_write = l.replace('test_net_name', most_recent_pin)
+	        	l_write = l.replace('test_net_name', net_name)
 	        else: 
 	        	l_write = l
 	        f2.write(l_write)

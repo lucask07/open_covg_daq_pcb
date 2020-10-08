@@ -12,6 +12,10 @@ Printed Circuit Board (PCB) design using Eagle 9.5.1. This README describes the 
 [shrouded pin connectors](https://www.digikey.com/products/en/connectors-interconnects/rectangular-connectors-headers-male-pins/314?k=connector&k=&pkeyword=connector&sv=0&pv1989=0&pv90=121326&pv91=321623&pv589=389860&pv589=405002&pv589=405010&sf=1&FV=-8%7C314&quantity=&ColumnSort=0&page=1&pageSize=25)
 
 * Will Need a connector for a daughtercard with a "standard" pinout for this connector (are there simple coaxial cables that are pluggable and cheaper than SMA?)
+	* cheapest SMA cable on Digikey is $10
+	* cheapest BNC cable on Digikey is $8 
+	
+
 * Want a 0.1" header for scope debug of digital signals (segregate by voltage levels)
 * Need calculations and simulations for single ended input into analog ADCs 
 * Analog Ins -- from daughtercard or SMA (need jumpers and jumpers for single-ended) --> DONE
@@ -47,8 +51,8 @@ Printed Circuit Board (PCB) design using Eagle 9.5.1. This README describes the 
 * That rough placement can lead to positioning of power planes 
 * Once power planes are drawn can start auto-routing --> DONE
 * Check required separation between SMA connectors --> DONE (see below)
-* Copy layout of DAC channels 
-* Copy layout of ADC channels 
+* Copy layout of DAC channels --> DONE
+* Copy layout of ADC channels --> DONE 
 
 **Closed:**
 
@@ -146,18 +150,27 @@ SMA connectors used on multiple sample board: BU-SMA-G (library con-coax)
 SMA connectors are HEX with a 8.00 mm (0.315 in) width across the flats and 9.238 mm (363.7 mils) across the corners (flats/\sqrt(3)*2)
 For margin I will separate connecters by 450 mils. 
 
-Power Supply Connectors
+[There are some multi-conductor coaxial connectors:]
+(https://www.digikey.com/en/products/filter/coaxial-connectors-rf/437?s=N4IgjCBcpgnAHLKoDGUBmBDANgZwKYA0IA9lANogAMIAusQA4AuUIAykwE4CWAdgOYgAvsQBMYAOwRoINJCx4ipCuFEhiYAGzqQ8OoxaQQASV5N8-fJ2EiQayJRQlevfCiYlrtIUA)
+
+#### Power Supply Connectors
 [Barrel Jacks with switch](https://electronics.stackexchange.com/questions/90529/what-to-do-with-third-contact-in-dc-barrel-plug-with-only-two-input-contacts)
 Ground is pin 2, use pin 3 to detect insertion of the plug. Without the plug pins 2 and 3 are shorted. 
 
 
-[A board for terminating ethernet cable:](https://www.cablesandkits.com/faq/what-is-the-difference-between-utp-stp-ftp-sftp)
+This seems very useful! [A board for terminating ethernet cable:](https://electronics.stackexchange.com/questions/255507/attaching-cat7-s-ftp-cable-to-pcb?rq=1)
 
 [Definitions of S/FTP, UTP, FTP cables](https://www.cablesandkits.com/faq/what-is-the-difference-between-utp-stp-ftp-sftp)
 
 [Guide on cable shielding](https://www.mouser.com/pdfdocs/alphawire-Understanding-Shielded-Cable.pdf)
 
 [Another blog on shielding types](https://www.multicable.com/resources/reference-data/signal-interference-and-cable-shielding/)
+
+**Shielded twisted pair multiple conductors:**
+
+* [1 ft, 8 pairs, chainflex](https://www.digikey.com/en/products/detail/chainflex/CF211-PUR-02-08-02/12353630)
+* [Twisted-pair ribbon cable](https://www.digikey.com/en/products/detail/3m/1700-10-100/9479264)
+* [SATA is interesting](https://www.molex.com/pdm_docs/sd/795763002_sd.pdf) Two differential pairs and 3 grounds. Rather light-weight and cheap. There are also what appears to be 4-1 type cables. 
 
 
 #### Small form factor cables appropriate for power supply distribution
@@ -290,10 +303,12 @@ Options -> Directories... This allows you to add local library files to library.
 
 #### Duplicating / copying layouts 
 
-* Close the schematic 
-* Copy (and paste) the portion of the layout on the board 
-* Re-open the schematic 
-* Copy and past the schematic components that were copied in the layout.
+* Close the board 
+* Copy (and paste) the portion of the schematic to replicate, rename nets that should not be connected to the original copy 
+* Re-open the board layout
+* Close the schematic  
+* Copy and past the board components that were copied in the schematic. 
+* Rename nets on the board
 
 #### Autorouter and Fanout
 Use fanout for VDD and GND to planes. Select 'fanout signal'; 'fanout device' will do all signals of the IC which will add unnecessary vias to signal traces. To ripup all signals type into the command line 'RIPUP ;'
