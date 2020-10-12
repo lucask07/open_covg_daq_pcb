@@ -17994,8 +17994,6 @@ Source: &lt;a href="https://www.onsemi.com/pub/Collateral/PN4118-D.pdf"&gt;https
 <part name="R46" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="1k"/>
 <part name="R47" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="0"/>
 <part name="R48" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="0"/>
-<part name="GND75" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="R49" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100k"/>
 <part name="R50" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="100k"/>
 <part name="GND76" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND77" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -18009,7 +18007,6 @@ Source: &lt;a href="https://www.onsemi.com/pub/Collateral/PN4118-D.pdf"&gt;https
 <part name="U18" library="open_covg" deviceset="LM337LMX/NOPB" device=""/>
 <part name="U31" library="open_covg" deviceset="HN1A01FU-YLFCT" device="" value="BC857BS-13-F"/>
 <part name="U20" library="open_covg" deviceset="CD40106BM96" device=""/>
-<part name="U4" library="open_covg" deviceset="NLSX3018DTR2G" device=""/>
 <part name="U5" library="open_covg" deviceset="NLSX3018DTR2G" device=""/>
 <part name="U19" library="open_covg" deviceset="MAX6070BAUT21+T" device=""/>
 <part name="U17" library="open_covg" deviceset="MAX5802BAUB+" device="" value="MAX5802"/>
@@ -18363,7 +18360,6 @@ Source: &lt;a href="https://www.onsemi.com/pub/Collateral/PN4118-D.pdf"&gt;https
 <part name="R135" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="33"/>
 <part name="R136" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="33"/>
 <part name="R137" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="33"/>
-<part name="R138" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="33"/>
 <part name="R139" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="33"/>
 <part name="R140" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="33"/>
 <part name="R141" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="33"/>
@@ -18376,8 +18372,6 @@ Source: &lt;a href="https://www.onsemi.com/pub/Collateral/PN4118-D.pdf"&gt;https
 <part name="R148" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="33"/>
 <part name="R149" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="33"/>
 <part name="R150" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="33"/>
-<part name="R151" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="DNP"/>
-<part name="R152" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="DNP"/>
 <part name="R153" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="4.7k"/>
 <part name="R154" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0603" package3d_urn="urn:adsk.eagle:package:23555/3" value="4.7k"/>
 </parts>
@@ -18573,18 +18567,6 @@ REF from 2V-3V</text>
 <instance part="R137" gate="G$1" x="160.02" y="96.52" smashed="yes" rot="R180">
 <attribute name="NAME" x="163.83" y="95.0214" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="163.83" y="99.822" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="R138" gate="G$1" x="81.28" y="71.12" smashed="yes" rot="R180">
-<attribute name="NAME" x="85.09" y="69.6214" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="85.09" y="74.422" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="R151" gate="G$1" x="152.4" y="40.64" smashed="yes" rot="R90">
-<attribute name="NAME" x="150.9014" y="36.83" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="155.702" y="36.83" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="R152" gate="G$1" x="144.78" y="27.94" smashed="yes" rot="R90">
-<attribute name="NAME" x="143.2814" y="24.13" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="148.082" y="24.13" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -18858,11 +18840,6 @@ REF from 2V-3V</text>
 </net>
 <net name="ADCS_SDO" class="0">
 <segment>
-<pinref part="U6" gate="A" pin="SDO"/>
-<wire x1="119.38" y1="101.6" x2="147.32" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="R134" gate="G$1" pin="2"/>
-</segment>
-<segment>
 <wire x1="157.48" y1="101.6" x2="172.72" y2="101.6" width="0.1524" layer="91"/>
 <label x="167.64" y="101.6" size="1.778" layer="95"/>
 <pinref part="R134" gate="G$1" pin="1"/>
@@ -19074,6 +19051,13 @@ REF from 2V-3V</text>
 <pinref part="R137" gate="G$1" pin="1"/>
 <wire x1="165.1" y1="96.52" x2="172.72" y2="96.52" width="0.1524" layer="91"/>
 <label x="167.64" y="96.52" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$55" class="0">
+<segment>
+<pinref part="U6" gate="A" pin="SDO"/>
+<pinref part="R134" gate="G$1" pin="2"/>
+<wire x1="119.38" y1="101.6" x2="147.32" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -20354,7 +20338,6 @@ REF from 2V-3V</text>
 </sheet>
 <sheet>
 <plain>
-<text x="223.52" y="132.08" size="1.778" layer="91">EN OK up to 5.5 V</text>
 <text x="223.52" y="193.04" size="1.778" layer="91">VSS - VDD
 to FET switches on analog board</text>
 <text x="60.96" y="200.66" size="1.778" layer="91">0 - 3.3V CMOS 
@@ -20375,13 +20358,6 @@ EN0 is the only signal that needs FPGA control per ADC channel.</text>
 <attribute name="SHEET" x="259.08" y="1.27" size="2.54" layer="94"/>
 <attribute name="DRAWING_NAME" x="190.5" y="19.05" size="2.54" layer="94"/>
 </instance>
-<instance part="GND75" gate="1" x="177.8" y="111.76" smashed="yes" rot="R270">
-<attribute name="VALUE" x="175.26" y="114.3" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="R49" gate="G$1" x="254" y="119.38" smashed="yes" rot="R270">
-<attribute name="NAME" x="255.4986" y="123.19" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="250.698" y="123.19" size="1.778" layer="96" rot="R270"/>
-</instance>
 <instance part="R50" gate="G$1" x="256.54" y="68.58" smashed="yes" rot="R270">
 <attribute name="NAME" x="258.0386" y="72.39" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="253.238" y="72.39" size="1.778" layer="96" rot="R270"/>
@@ -20395,10 +20371,6 @@ EN0 is the only signal that needs FPGA control per ADC channel.</text>
 <instance part="U20" gate="A" x="215.9" y="170.18" smashed="yes">
 <attribute name="NAME" x="211.1756" y="189.4586" size="2.0828" layer="95" ratio="6" rot="SR0"/>
 <attribute name="VALUE" x="210.5406" y="186.9186" size="2.0828" layer="96" ratio="6" rot="SR0"/>
-</instance>
-<instance part="U4" gate="A" x="241.3" y="124.46" smashed="yes" rot="MR0">
-<attribute name="NAME" x="220.6244" y="133.5786" size="2.0828" layer="95" ratio="6" rot="SMR0"/>
-<attribute name="VALUE" x="221.2594" y="131.0386" size="2.0828" layer="96" ratio="6" rot="SMR0"/>
 </instance>
 <instance part="U5" gate="A" x="241.3" y="73.66" smashed="yes" rot="MR0">
 <attribute name="NAME" x="220.6244" y="82.7786" size="2.0828" layer="95" ratio="6" rot="SMR0"/>
@@ -20571,16 +20543,6 @@ EN0 is the only signal that needs FPGA control per ADC channel.</text>
 <nets>
 <net name="1V8" class="1">
 <segment>
-<wire x1="238.76" y1="114.3" x2="251.46" y2="114.3" width="0.1524" layer="91"/>
-<label x="246.38" y="114.3" size="1.778" layer="95"/>
-<pinref part="U4" gate="A" pin="VL"/>
-</segment>
-<segment>
-<pinref part="R49" gate="G$1" pin="1"/>
-<wire x1="254" y1="124.46" x2="254" y2="132.08" width="0.1524" layer="91"/>
-<label x="254" y="127" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
 <wire x1="238.76" y1="63.5" x2="251.46" y2="63.5" width="0.1524" layer="91"/>
 <label x="246.38" y="63.5" size="1.778" layer="95"/>
 <pinref part="U5" gate="A" pin="VL"/>
@@ -20669,11 +20631,6 @@ EN0 is the only signal that needs FPGA control per ADC channel.</text>
 </segment>
 </net>
 <net name="3V3" class="1">
-<segment>
-<wire x1="193.04" y1="114.3" x2="182.88" y2="114.3" width="0.1524" layer="91"/>
-<label x="182.88" y="114.3" size="1.778" layer="95"/>
-<pinref part="U4" gate="A" pin="VCC"/>
-</segment>
 <segment>
 <wire x1="193.04" y1="63.5" x2="182.88" y2="63.5" width="0.1524" layer="91"/>
 <label x="182.88" y="63.5" size="1.778" layer="95"/>
@@ -20842,11 +20799,6 @@ EN0 is the only signal that needs FPGA control per ADC channel.</text>
 </net>
 <net name="GND" class="1">
 <segment>
-<pinref part="GND75" gate="1" pin="GND"/>
-<wire x1="180.34" y1="111.76" x2="193.04" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="U4" gate="A" pin="GND"/>
-</segment>
-<segment>
 <pinref part="GND76" gate="1" pin="GND"/>
 <wire x1="177.8" y1="60.96" x2="193.04" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="U5" gate="A" pin="GND"/>
@@ -20896,17 +20848,6 @@ EN0 is the only signal that needs FPGA control per ADC channel.</text>
 <wire x1="266.7" y1="177.8" x2="269.24" y2="177.8" width="0.1524" layer="91"/>
 <junction x="269.24" y="177.8"/>
 <pinref part="GND142" gate="1" pin="GND"/>
-</segment>
-</net>
-<net name="LS0_EN" class="0">
-<segment>
-<wire x1="238.76" y1="111.76" x2="254" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="R49" gate="G$1" pin="2"/>
-<wire x1="254" y1="114.3" x2="254" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="254" y1="111.76" x2="266.7" y2="111.76" width="0.1524" layer="91"/>
-<junction x="254" y="111.76"/>
-<label x="256.54" y="111.76" size="1.778" layer="95"/>
-<pinref part="U4" gate="A" pin="EN"/>
 </segment>
 </net>
 <net name="LS1_EN" class="0">
