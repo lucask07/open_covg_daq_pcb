@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="yes" active="yes"/>
@@ -7000,7 +7000,7 @@ Source: http://www.analog.com/static/imported-files/data_sheets/ADA4075-2.pdf</d
 <pin name="I/OVL3" x="2.54" y="-5.08" length="middle"/>
 <pin name="I/OVL4" x="2.54" y="-7.62" length="middle"/>
 <pin name="VL" x="2.54" y="-10.16" length="middle" direction="in"/>
-<pin name="EN" x="2.54" y="-12.7" length="middle" direction="out"/>
+<pin name="EN" x="2.54" y="-12.7" length="middle" direction="in"/>
 <pin name="I/OVL5" x="2.54" y="-15.24" length="middle"/>
 <pin name="I/OVL6" x="2.54" y="-17.78" length="middle"/>
 <pin name="I/OVL7" x="2.54" y="-20.32" length="middle"/>
@@ -7296,7 +7296,7 @@ Source: http://www.analog.com/static/imported-files/data_sheets/ADA4075-2.pdf</d
 <pin name="IN" x="2.54" y="-2.54" length="middle" direction="in"/>
 <pin name="EN" x="2.54" y="-7.62" length="middle"/>
 <pin name="OUTF" x="43.18" y="0" length="middle" direction="out" rot="R180"/>
-<pin name="OUTS" x="43.18" y="-2.54" length="middle" direction="out" rot="R180"/>
+<pin name="OUTS" x="43.18" y="-2.54" length="middle" rot="R180"/>
 <pin name="GND" x="43.18" y="-12.7" length="middle" direction="pwr" rot="R180"/>
 <wire x1="7.62" y1="5.08" x2="7.62" y2="-17.78" width="0.1524" layer="94"/>
 <wire x1="7.62" y1="-17.78" x2="38.1" y2="-17.78" width="0.1524" layer="94"/>
