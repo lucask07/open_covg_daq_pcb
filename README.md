@@ -244,6 +244,7 @@ Online libraries for [download](http://eagle.autodesk.com/eagle/libraries?button
 **Silkscreen**
 JLPCB minimum capabilities: 32 mil height, 6 mil width
 mine are OK on height, need to fix the width. 
+
 Most sites say to only use 'vector font'; There is a User settings option for that, which I have enabled. In the 'ulps' folder of this folder I added a script (from the web) that sets the silkscreen height (32 mils) and width (19% ratio).
 
 
