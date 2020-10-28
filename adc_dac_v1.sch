@@ -26915,7 +26915,7 @@ or X7R</text>
 <text x="60.96" y="162.56" size="1.778" layer="91">500 mA output</text>
 <text x="200.66" y="78.74" size="1.778" layer="91">For FET gate drive 
 (low leakage gate drive)</text>
-<text x="53.34" y="33.02" size="1.778" layer="91">7.5 V External Supply
+<text x="50.8" y="30.48" size="1.778" layer="91">7.5 V External Supply
 18 V External Supply</text>
 <text x="119.38" y="7.62" size="1.778" layer="91">100 V/V gain</text>
 </plain>
