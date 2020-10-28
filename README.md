@@ -56,16 +56,16 @@ See the layout example in Fig. 69. The exposed pad should be connected to ground
 * +15 V
 * -15 V
 
+[Creating a negative voltage with a DC-DC converter](https://www.maximintegrated.com/en/design/technical-documents/app-notes/3/3844.html) This is what is done in the AD7960 eval board schematic. 
+
+Derive from external 7.5 V and 18 V. 
+
 #### Power Planes on the PCB (6 layer board)
 
 * Route 2: is GND
 * Route 3: 3.3V (primarily) and the pre-regulated input power
 * Route 14: +15V, -15V, AMP_PWR+, AMP_PWR-
 * Route 15: 1V8, and 5V
-
-[Creating a negative voltage with a DC-DC converter](https://www.maximintegrated.com/en/design/technical-documents/app-notes/3/3844.html) This is what is done in the AD7960 eval board schematic. 
-
-Derive from external 7.5 V and 18 V. 
 
 ### DAC 
 
