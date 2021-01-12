@@ -27805,7 +27805,7 @@ or X7R</text>
 <wire x1="182.88" y1="114.3" x2="175.26" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="114.3" x2="175.26" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="116.84" x2="182.88" y2="116.84" width="0.1524" layer="91"/>
-<label x="170.18" y="116.84" size="1.778" layer="95"/>
+<label x="175.26" y="116.84" size="1.778" layer="95"/>
 <pinref part="U16" gate="A" pin="SHDNB"/>
 <pinref part="U16" gate="A" pin="VIN"/>
 </segment>

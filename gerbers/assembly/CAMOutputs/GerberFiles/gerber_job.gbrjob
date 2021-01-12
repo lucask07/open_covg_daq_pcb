@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2020-11-25T17:16:24Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.5.1"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 2.41,
+        "LayerNumber": 6,
+        "Name": {
+            "ProjectId": "adc_dac_v1"
+        },
+        "Owner": "Lucas Koerner <koerner.lucas@stthomas.edu>",
+        "Size": {
+            "X": 157.734,
+            "Y": 95.25
+        }
+    }
+}
