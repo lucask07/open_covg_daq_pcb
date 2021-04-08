@@ -337,15 +337,9 @@ A team at NIST Boulder published "An open source digital servo for atomic, molec
 	* D0_SCLK
 	* DS_SCLK, slow DAC
 
+## XEM7310 migration from XEM6310 
 
-## LTSpice 
-(move this to a different repository)
-### Convergence issues 
-Often occur with high loop-gain circuits see this LTWiki page for fixing convergence (i.e. the simulation gets stuck on 'stepping source'). 
+Why different breakout boards?
+OpalKelly answer: "The XEM7310 offers a few more pins than the XEM63310 so a new breakout module with these additional connections was required." 
 
-1. Set the gmin and absolute and relative tolerances
-2. Add series resistance to all power supplies (50 mOhm). 
-
-[LTwiki convergence problems](http://ltwiki.org/index.php?title=Convergence_problems%3F)
-
-Pseudo transient analysis implies that the simulator is solving for the DC operating point. At times skipping this step is OK [Speed up LTSpice simulations](https://www.analog.com/en/technical-articles/ltspice-speed-up-your-simulations.html)
+https://forums.opalkelly.com/t/migrate-from-xem6310-to-7310/1548
