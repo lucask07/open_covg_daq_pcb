@@ -1004,4 +1004,34 @@ NoConn ~ 10000 1300
 NoConn ~ 8400 1200
 Wire Wire Line
 	3000 3950 3000 4000
+$Comp
+L Analog_ADC:ADS8688 U?
+U 1 1 609DAA3D
+P 2850 7800
+F 0 "U?" H 2850 6411 50  0000 C CNN
+F 1 "ADS8688" H 2850 6320 50  0000 C CNN
+F 2 "Package_SO:TSSOP-38_4.4x9.7mm_P0.5mm" H 2850 7800 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ads8688.pdf" H 3800 9100 50  0001 C CNN
+	1    2850 7800
+	1    0    0    -1  
+$EndComp
+$Comp
+L covg-kicad:ADS8686SIPZAR IC?
+U 1 1 609E17A7
+P 9050 6500
+F 0 "IC?" H 11594 5496 50  0000 L CNN
+F 1 "ADS8686SIPZAR" H 11594 5405 50  0000 L CNN
+F 2 "QFP65P1600X1600X160-80N" H 11400 7200 50  0001 L CNN
+F 3 "https://www.ti.com/lit/gpn/ADS8686S" H 11400 7100 50  0001 L CNN
+F 4 "Analog to Digital Converters - ADC 16-channel 16-bit 1-MSPS dual simultaneous-sampling ADC with integrated analog front end (AFE)" H 11400 7000 50  0001 L CNN "Description"
+F 5 "1.6" H 11400 6900 50  0001 L CNN "Height"
+F 6 "Texas Instruments" H 11400 6800 50  0001 L CNN "Manufacturer_Name"
+F 7 "ADS8686SIPZAR" H 11400 6700 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "595-ADS8686SIPZAR" H 11400 6600 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/ADS8686SIPZAR/?qs=xZ%2FP%252Ba9zWqahOWZgBjtpsg%3D%3D" H 11400 6500 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 11400 6400 50  0001 L CNN "Arrow Part Number"
+F 11 "" H 11400 6300 50  0001 L CNN "Arrow Price/Stock"
+	1    9050 6500
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

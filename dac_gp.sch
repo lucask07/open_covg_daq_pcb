@@ -157,8 +157,8 @@ Text GLabel 5500 2700 2    70   BiDi ~ 0
 DS_SCL
 Text GLabel 5400 2800 2    70   BiDi ~ 0
 DS_CLRB
-Text Notes 6300 3200 0    59   ~ 0
-Slow DAC for offset voltages, etc.
+Text Notes 6200 3450 0    59   ~ 0
+Slow DAC for offset voltages, etc.\n This Maxim part is now hard to find. \n\nConsidering instead the TI DAC53401
 Wire Wire Line
 	6000 2500 5500 2500
 Wire Wire Line
