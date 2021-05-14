@@ -14,45 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L adc_dac_v1-eagle-import:OPA192IDBVR U7
-U 1 1 7D3E49DD
-P 2800 4200
-AR Path="/7D3E49DD" Ref="U7"  Part="1" 
-AR Path="/6095A004/7D3E49DD" Ref="U7"  Part="1" 
-F 0 "U7" H 2614 4259 39  0000 L BNN
-F 1 "OPA202" H 2589 4159 39  0000 L BNN
-F 2 "adc_dac_v1:DBV0005A_N" H 2800 4200 50  0001 C CNN
-F 3 "" H 2800 4200 50  0001 C CNN
-	1    2800 4200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #GND28
-U 1 1 CA9A6C93
-P 3900 4700
-AR Path="/CA9A6C93" Ref="#GND28"  Part="1" 
-AR Path="/6095A004/CA9A6C93" Ref="#GND028"  Part="1" 
-F 0 "#GND028" H 3900 4700 50  0001 C CNN
-F 1 "GND" H 3800 4600 59  0001 L BNN
-F 2 "" H 3900 4700 50  0001 C CNN
-F 3 "" H 3900 4700 50  0001 C CNN
-	1    3900 4700
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #GND29
-U 1 1 8A96440D
-P 3000 4900
-AR Path="/8A96440D" Ref="#GND29"  Part="1" 
-AR Path="/6095A004/8A96440D" Ref="#GND029"  Part="1" 
-F 0 "#GND029" H 3000 4900 50  0001 C CNN
-F 1 "GND" H 2900 4800 59  0001 L BNN
-F 2 "" H 3000 4900 50  0001 C CNN
-F 3 "" H 3000 4900 50  0001 C CNN
-	1    3000 4900
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C1
 U 1 1 B352BBBA
 P 10400 1800
@@ -157,55 +118,29 @@ F 3 "" H 6300 4500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_US R23
-U 1 1 02420661
-P 2600 3600
-AR Path="/02420661" Ref="R23"  Part="1" 
-AR Path="/6095A004/02420661" Ref="R23"  Part="1" 
-F 0 "R23" H 2450 3659 59  0000 L BNN
-F 1 "DNP" H 2700 3550 59  0000 L BNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 2600 3600 50  0001 C CNN
-F 3 "" H 2600 3600 50  0001 C CNN
-	1    2600 3600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_US R24
-U 1 1 1574018B
-P 3400 3800
-AR Path="/1574018B" Ref="R24"  Part="1" 
-AR Path="/6095A004/1574018B" Ref="R24"  Part="1" 
-F 0 "R24" H 3450 3950 59  0000 L BNN
-F 1 "0" H 3250 3670 59  0000 L BNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 3400 3800 50  0001 C CNN
-F 3 "" H 3400 3800 50  0001 C CNN
-	1    3400 3800
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Device:C C22
 U 1 1 9A5B21E3
-P 1800 4450
+P 250 3200
 AR Path="/9A5B21E3" Ref="C22"  Part="1" 
 AR Path="/6095A004/9A5B21E3" Ref="C22"  Part="1" 
-F 0 "C22" H 1850 4550 59  0000 L BNN
-F 1 "0.1u" H 1840 4285 59  0000 L BNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 1800 4450 50  0001 C CNN
-F 3 "" H 1800 4450 50  0001 C CNN
-	1    1800 4450
+F 0 "C22" H 300 3300 59  0000 L BNN
+F 1 "0.1u" H 290 3035 59  0000 L BNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 250 3200 50  0001 C CNN
+F 3 "" H 250 3200 50  0001 C CNN
+	1    250  3200
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #GND36
 U 1 1 8F76D0E0
-P 1800 4900
+P 250 3650
 AR Path="/8F76D0E0" Ref="#GND36"  Part="1" 
 AR Path="/6095A004/8F76D0E0" Ref="#GND036"  Part="1" 
-F 0 "#GND036" H 1800 4900 50  0001 C CNN
-F 1 "GND" H 1700 4800 59  0001 L BNN
-F 2 "" H 1800 4900 50  0001 C CNN
-F 3 "" H 1800 4900 50  0001 C CNN
-	1    1800 4900
+F 0 "#GND036" H 250 3650 50  0001 C CNN
+F 1 "GND" H 150 3550 59  0001 L BNN
+F 2 "" H 250 3650 50  0001 C CNN
+F 3 "" H 250 3650 50  0001 C CNN
+	1    250  3650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -259,19 +194,6 @@ F 2 "" H 5400 3500 50  0001 C CNN
 F 3 "" H 5400 3500 50  0001 C CNN
 	1    5400 3500
 	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #GND39
-U 1 1 FF54D42F
-P 4200 4200
-AR Path="/FF54D42F" Ref="#GND39"  Part="1" 
-AR Path="/6095A004/FF54D42F" Ref="#GND039"  Part="1" 
-F 0 "#GND039" H 4200 4200 50  0001 C CNN
-F 1 "GND" H 4100 4100 59  0001 L BNN
-F 2 "" H 4200 4200 50  0001 C CNN
-F 3 "" H 4200 4200 50  0001 C CNN
-	1    4200 4200
-	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #GND40
@@ -375,19 +297,6 @@ F 1 "REF5025AIDR" H 8989 1459 69  0000 L BNN
 F 2 "adc_dac_v1:D8" H 8300 1200 50  0001 C CNN
 F 3 "" H 8300 1200 50  0001 C CNN
 	1    8300 1200
-	1    0    0    -1  
-$EndComp
-$Comp
-L adc_dac_v1-eagle-import:ADS7952SRHBT U6
-U 1 1 829B07E3
-P 4300 4200
-AR Path="/829B07E3" Ref="U6"  Part="1" 
-AR Path="/6095A004/829B07E3" Ref="U6"  Part="1" 
-F 0 "U6" H 4914 4559 69  0000 L BNN
-F 1 "ADS7952SRHBT" H 4889 4459 69  0000 L BNN
-F 2 "adc_dac_v1:RHB32_2P7X2P7_TEX" H 4300 4200 50  0001 C CNN
-F 3 "" H 4300 4200 50  0001 C CNN
-	1    4300 4200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -589,7 +498,7 @@ Text Label 6000 4400 0    39   ~ 0
 2V5_REF
 Text Label 10300 1400 0    70   ~ 0
 2V5_REF
-Text Label 3900 5700 0    70   ~ 0
+Text Label 1050 5150 0    70   ~ 0
 GP_ADC4
 Text Label 10800 4900 0    70   ~ 0
 GP_ADC4
@@ -599,7 +508,7 @@ Text Label 8100 1400 0    39   ~ 0
 TEMP_REF
 Text GLabel 7900 4900 2    70   BiDi ~ 0
 ADCS_SDO
-Text GLabel 3900 5000 0    70   BiDi ~ 0
+Text GLabel 1500 1400 1    70   BiDi ~ 0
 DS_OUT0
 Text GLabel 11200 4600 2    70   BiDi ~ 0
 DS_OUT0
@@ -619,23 +528,23 @@ Text Label 10600 3100 0    70   ~ 0
 I_SENSE-
 Text GLabel 11200 4700 2    70   BiDi ~ 0
 DS_OUT1
-Text Label 3900 5600 0    70   ~ 0
+Text Label 1050 4950 0    70   ~ 0
 GP_ADC5
 Text Label 10800 5000 0    70   ~ 0
 GP_ADC5
-Text Label 3900 5500 0    70   ~ 0
+Text Label 1050 4650 0    70   ~ 0
 GP_ADC6
 Text Label 9100 5000 0    70   ~ 0
 GP_ADC6
-Text Label 3900 5400 0    70   ~ 0
+Text Label 1050 4450 0    70   ~ 0
 GP_ADC7
 Text Label 9100 4900 0    70   ~ 0
 GP_ADC7
-Text Label 3900 5300 0    70   ~ 0
+Text Label 3000 1550 3    70   ~ 0
 GP_ADC8
 Text Label 9100 4800 0    70   ~ 0
 GP_ADC8
-Text Label 3900 5200 0    70   ~ 0
+Text Label 2800 1950 1    70   ~ 0
 GP_ADC9
 Text Label 9100 4700 0    70   ~ 0
 GP_ADC9
@@ -674,35 +583,9 @@ Wire Wire Line
 Wire Wire Line
 	8300 3500 7900 3500
 Wire Wire Line
-	4400 4900 4400 4800
-Wire Wire Line
-	4400 4800 4400 4700
-Wire Wire Line
-	4400 4700 4400 4600
-Wire Wire Line
-	4400 4600 4400 4500
-Wire Wire Line
 	10600 3400 11300 3400
 Wire Wire Line
 	10400 3200 11300 3200
-Wire Wire Line
-	4400 4300 4000 4300
-Wire Wire Line
-	4000 4300 4000 3100
-Wire Wire Line
-	4000 3100 2300 3100
-Wire Wire Line
-	2300 3100 2300 4500
-Wire Wire Line
-	2300 4500 2600 4500
-Wire Wire Line
-	2600 4300 2600 3800
-Wire Wire Line
-	3400 4400 3700 4400
-Wire Wire Line
-	3700 4400 4400 4400
-Wire Wire Line
-	3700 3800 3700 4400
 Wire Wire Line
 	10000 1500 10400 1500
 Wire Wire Line
@@ -710,7 +593,7 @@ Wire Wire Line
 Wire Wire Line
 	10000 1400 10800 1400
 Wire Wire Line
-	4400 5700 3800 5700
+	1550 5150 950  5150
 Wire Wire Line
 	10400 4900 11200 4900
 Wire Wire Line
@@ -718,7 +601,7 @@ Wire Wire Line
 Wire Wire Line
 	8400 1400 8100 1400
 Wire Wire Line
-	4400 5000 3900 5000
+	1500 1900 1500 1400
 Wire Wire Line
 	10400 4600 11200 4600
 Wire Wire Line
@@ -746,27 +629,27 @@ Wire Wire Line
 Wire Wire Line
 	10400 4700 11200 4700
 Wire Wire Line
-	4400 5600 3800 5600
+	1550 4950 950  4950
 Wire Wire Line
 	10400 5000 11200 5000
 Wire Wire Line
-	4400 5500 3800 5500
+	1550 4650 950  4650
 Wire Wire Line
 	10100 5000 9000 5000
 Wire Wire Line
-	4400 5400 3800 5400
+	1550 4450 950  4450
 Wire Wire Line
 	10100 4900 9000 4900
 Wire Wire Line
-	4400 5300 3800 5300
+	3000 2050 3000 1450
 Wire Wire Line
 	10100 4800 9000 4800
 Wire Wire Line
-	4400 5200 3800 5200
+	2800 1450 2800 2050
 Wire Wire Line
 	10100 4700 9000 4700
 Wire Wire Line
-	4400 5100 3800 5100
+	2600 2000 2600 1400
 Wire Wire Line
 	10100 4600 9000 4600
 Wire Wire Line
@@ -785,22 +668,8 @@ Wire Wire Line
 	5800 5000 6900 5000
 Wire Wire Line
 	6900 5000 6900 5100
-Connection ~ 4400 4600
-Connection ~ 4400 4700
-Connection ~ 4400 4800
-Connection ~ 3700 4400
 Wire Wire Line
-	1800 4600 1800 4900
-Wire Wire Line
-	3000 4900 3000 4800
-Wire Wire Line
-	2600 3800 3250 3800
-Wire Wire Line
-	3550 3800 3700 3800
-Wire Wire Line
-	3900 4700 4400 4700
-Wire Wire Line
-	4200 4200 4400 4200
+	250  3350 250  3650
 Wire Wire Line
 	5800 4800 6300 4800
 Wire Wire Line
@@ -859,11 +728,6 @@ Wire Wire Line
 Wire Wire Line
 	10800 1450 10800 1400
 Wire Wire Line
-	2600 3750 2600 3800
-Connection ~ 2600 3800
-Wire Wire Line
-	2600 3450 2600 3400
-Wire Wire Line
 	4900 3200 4900 3500
 Wire Wire Line
 	5400 3200 5400 3500
@@ -894,16 +758,16 @@ $EndComp
 $Comp
 L power:+5V #PWR0110
 U 1 1 617F2FA3
-P 1800 4200
-F 0 "#PWR0110" H 1800 4050 50  0001 C CNN
-F 1 "+5V" H 1815 4373 50  0000 C CNN
-F 2 "" H 1800 4200 50  0001 C CNN
-F 3 "" H 1800 4200 50  0001 C CNN
-	1    1800 4200
+P 250 2950
+F 0 "#PWR0110" H 250 2800 50  0001 C CNN
+F 1 "+5V" H 265 3123 50  0000 C CNN
+F 2 "" H 250 2950 50  0001 C CNN
+F 3 "" H 250 2950 50  0001 C CNN
+	1    250  2950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1800 4300 1800 4200
+	250  3050 250  2950
 Wire Wire Line
 	5800 4200 6300 4200
 $Comp
@@ -940,21 +804,8 @@ F 3 "" H 7600 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 7600 1300
-Text Label 3900 5100 0    70   ~ 0
+Text Label 2600 1500 3    70   ~ 0
 GP_ADC10
-$Comp
-L power:GND #GND?
-U 1 1 61835951
-P 2600 3400
-AR Path="/61835951" Ref="#GND?"  Part="1" 
-AR Path="/6095A004/61835951" Ref="#GND0101"  Part="1" 
-F 0 "#GND0101" H 2600 3400 50  0001 C CNN
-F 1 "GND" H 2500 3300 59  0001 L BNN
-F 2 "" H 2600 3400 50  0001 C CNN
-F 3 "" H 2600 3400 50  0001 C CNN
-	1    2600 3400
-	-1   0    0    1   
-$EndComp
 $Comp
 L power:+3V3 #PWR0114
 U 1 1 61841934
@@ -988,22 +839,9 @@ F 3 "" H 6200 4700 50  0001 C CNN
 	1    6200 4700
 	0    1    1    0   
 $EndComp
-$Comp
-L power:+5V #PWR0156
-U 1 1 618B6C04
-P 3000 3950
-F 0 "#PWR0156" H 3000 3800 50  0001 C CNN
-F 1 "+5V" H 3015 4123 50  0000 C CNN
-F 2 "" H 3000 3950 50  0001 C CNN
-F 3 "" H 3000 3950 50  0001 C CNN
-	1    3000 3950
-	1    0    0    -1  
-$EndComp
 NoConn ~ 10000 1200
 NoConn ~ 10000 1300
 NoConn ~ 8400 1200
-Wire Wire Line
-	3000 3950 3000 4000
 $Comp
 L Analog_ADC:ADS8688 U?
 U 1 1 609DAA3D
@@ -1018,20 +856,22 @@ $EndComp
 $Comp
 L covg-kicad:ADS8686SIPZAR IC?
 U 1 1 609E17A7
-P 9050 6500
-F 0 "IC?" H 11594 5496 50  0000 L CNN
-F 1 "ADS8686SIPZAR" H 11594 5405 50  0000 L CNN
-F 2 "QFP65P1600X1600X160-80N" H 11400 7200 50  0001 L CNN
-F 3 "https://www.ti.com/lit/gpn/ADS8686S" H 11400 7100 50  0001 L CNN
-F 4 "Analog to Digital Converters - ADC 16-channel 16-bit 1-MSPS dual simultaneous-sampling ADC with integrated analog front end (AFE)" H 11400 7000 50  0001 L CNN "Description"
-F 5 "1.6" H 11400 6900 50  0001 L CNN "Height"
-F 6 "Texas Instruments" H 11400 6800 50  0001 L CNN "Manufacturer_Name"
-F 7 "ADS8686SIPZAR" H 11400 6700 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "595-ADS8686SIPZAR" H 11400 6600 50  0001 L CNN "Mouser Part Number"
-F 9 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/ADS8686SIPZAR/?qs=xZ%2FP%252Ba9zWqahOWZgBjtpsg%3D%3D" H 11400 6500 50  0001 L CNN "Mouser Price/Stock"
-F 10 "" H 11400 6400 50  0001 L CNN "Arrow Part Number"
-F 11 "" H 11400 6300 50  0001 L CNN "Arrow Price/Stock"
-	1    9050 6500
+P 2000 3350
+F 0 "IC?" H 4544 2346 50  0000 L CNN
+F 1 "ADS8686SIPZAR" H 4544 2255 50  0000 L CNN
+F 2 "QFP65P1600X1600X160-80N" H 4350 4050 50  0001 L CNN
+F 3 "https://www.ti.com/lit/gpn/ADS8686S" H 4350 3950 50  0001 L CNN
+F 4 "Analog to Digital Converters - ADC 16-channel 16-bit 1-MSPS dual simultaneous-sampling ADC with integrated analog front end (AFE)" H 4350 3850 50  0001 L CNN "Description"
+F 5 "1.6" H 4350 3750 50  0001 L CNN "Height"
+F 6 "Texas Instruments" H 4350 3650 50  0001 L CNN "Manufacturer_Name"
+F 7 "ADS8686SIPZAR" H 4350 3550 50  0001 L CNN "Manufacturer_Part_Number"
+F 8 "595-ADS8686SIPZAR" H 4350 3450 50  0001 L CNN "Mouser Part Number"
+F 9 "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/ADS8686SIPZAR/?qs=xZ%2FP%252Ba9zWqahOWZgBjtpsg%3D%3D" H 4350 3350 50  0001 L CNN "Mouser Price/Stock"
+F 10 "" H 4350 3250 50  0001 L CNN "Arrow Part Number"
+F 11 "" H 4350 3150 50  0001 L CNN "Arrow Price/Stock"
+	1    2000 3350
 	1    0    0    -1  
 $EndComp
+Text Notes 11400 9500 0    50   ~ 0
+The dual SPI interface has sufficient BW \nto clock the data out at the 1 MSPS \n(just need ~16 MHz clock rate)
 $EndSCHEMATC
