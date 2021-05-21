@@ -843,17 +843,6 @@ NoConn ~ 10000 1200
 NoConn ~ 10000 1300
 NoConn ~ 8400 1200
 $Comp
-L Analog_ADC:ADS8688 U?
-U 1 1 609DAA3D
-P 2850 7800
-F 0 "U?" H 2850 6411 50  0000 C CNN
-F 1 "ADS8688" H 2850 6320 50  0000 C CNN
-F 2 "Package_SO:TSSOP-38_4.4x9.7mm_P0.5mm" H 2850 7800 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/ads8688.pdf" H 3800 9100 50  0001 C CNN
-	1    2850 7800
-	1    0    0    -1  
-$EndComp
-$Comp
 L covg-kicad:ADS8686SIPZAR IC?
 U 1 1 609E17A7
 P 2000 3350

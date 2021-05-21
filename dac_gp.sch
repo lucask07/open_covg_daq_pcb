@@ -255,8 +255,8 @@ Wire Wire Line
 Wire Wire Line
 	2550 2100 2850 2100
 NoConn ~ 2000 2100
-Wire Bus Line
-	5100 1300 5100 2000
 Text Notes 1850 2600 0    50   ~ 0
 Use internal reference\n\nbring out just in case.
+Wire Bus Line
+	5100 1300 5100 2000
 $EndSCHEMATC
