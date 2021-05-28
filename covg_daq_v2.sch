@@ -14,28 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 8900 3600 500  150 
-U 6095A004
-F0 "gp_adc" 50
-F1 "gp_adc.sch" 50
-$EndSheet
-$Sheet
 S 7150 2200 500  150 
 U 6095A38A
 F0 "level_shifters" 50
 F1 "level_shifters.sch" 50
-$EndSheet
-$Sheet
-S 1400 4350 500  150 
-U 6095A697
-F0 "adc1" 50
-F1 "adc1.sch" 50
-$EndSheet
-$Sheet
-S 2450 4350 500  150 
-U 6095B316
-F0 "dac1" 50
-F1 "dac1.sch" 50
 $EndSheet
 $Sheet
 S 8900 950  500  150 
@@ -56,119 +38,131 @@ F0 "ok_fpga" 50
 F1 "ok_fpga.sch" 50
 $EndSheet
 $Comp
-L adc_dac_v1-eagle-import:FRAME_A_L #FRAME2
-U 1 1 60986F39
-P 7050 8150
-AR Path="/60986F39" Ref="#FRAME2"  Part="1" 
-AR Path="/6095A004/60986F39" Ref="#FRAME?"  Part="1" 
-F 0 "#FRAME2" H 7050 8150 50  0001 C CNN
-F 1 "FRAME_A_L" H 7050 8150 50  0001 C CNN
-F 2 "" H 7050 8150 50  0001 C CNN
-F 3 "" H 7050 8150 50  0001 C CNN
-	1    7050 8150
-	1    0    0    -1  
-$EndComp
-$Comp
-L adc_dac_v1-eagle-import:MOUNT-HOLE3.0 H1
-U 1 1 60986F3F
-P 9650 7550
-AR Path="/60986F3F" Ref="H1"  Part="1" 
-AR Path="/6095A004/60986F3F" Ref="H?"  Part="1" 
-F 0 "H1" H 9730 7573 59  0000 L BNN
-F 1 "MOUNT-HOLE3.0" H 9730 7453 59  0000 L BNN
-F 2 "adc_dac_v1:3,0" H 9650 7550 50  0001 C CNN
-F 3 "" H 9650 7550 50  0001 C CNN
-	1    9650 7550
-	1    0    0    -1  
-$EndComp
-$Comp
-L adc_dac_v1-eagle-import:MOUNT-HOLE3.0 H2
-U 1 1 60986F45
-P 10750 7550
-AR Path="/60986F45" Ref="H2"  Part="1" 
-AR Path="/6095A004/60986F45" Ref="H?"  Part="1" 
-F 0 "H2" H 10830 7573 59  0000 L BNN
-F 1 "MOUNT-HOLE3.0" H 10830 7453 59  0000 L BNN
-F 2 "adc_dac_v1:3,0" H 10750 7550 50  0001 C CNN
-F 3 "" H 10750 7550 50  0001 C CNN
-	1    10750 7550
-	1    0    0    -1  
-$EndComp
-$Comp
-L adc_dac_v1-eagle-import:MOUNT-HOLE3.0 H3
-U 1 1 60986F4B
-P 9650 7850
-AR Path="/60986F4B" Ref="H3"  Part="1" 
-AR Path="/6095A004/60986F4B" Ref="H?"  Part="1" 
-F 0 "H3" H 9730 7873 59  0000 L BNN
-F 1 "MOUNT-HOLE3.0" H 9730 7753 59  0000 L BNN
-F 2 "adc_dac_v1:3,0" H 9650 7850 50  0001 C CNN
-F 3 "" H 9650 7850 50  0001 C CNN
-	1    9650 7850
-	1    0    0    -1  
-$EndComp
-$Comp
-L adc_dac_v1-eagle-import:MOUNT-HOLE3.0 H4
-U 1 1 60986F51
-P 10750 7850
-AR Path="/60986F51" Ref="H4"  Part="1" 
-AR Path="/6095A004/60986F51" Ref="H?"  Part="1" 
-F 0 "H4" H 10830 7873 59  0000 L BNN
-F 1 "MOUNT-HOLE3.0" H 10830 7753 59  0000 L BNN
-F 2 "adc_dac_v1:3,0" H 10750 7850 50  0001 C CNN
-F 3 "" H 10750 7850 50  0001 C CNN
-	1    10750 7850
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:HDMI_A J?
 U 1 1 61D74FD2
-P 1150 6550
-F 0 "J?" H 1580 6596 50  0000 L CNN
-F 1 "HDMI_A" H 1580 6505 50  0000 L CNN
-F 2 "" H 1175 6550 50  0001 C CNN
-F 3 "https://en.wikipedia.org/wiki/HDMI" H 1175 6550 50  0001 C CNN
-	1    1150 6550
-	-1   0    0    -1  
+P 2000 5950
+F 0 "J?" H 2430 5996 50  0000 L CNN
+F 1 "HDMI_A" H 2430 5905 50  0000 L CNN
+F 2 "" H 2025 5950 50  0001 C CNN
+F 3 "https://en.wikipedia.org/wiki/HDMI" H 2025 5950 50  0001 C CNN
+	1    2000 5950
+	0    -1   1    0   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0101
 U 1 1 61D76AA5
-P 700 7850
-F 0 "#PWR?" H 700 7600 50  0001 C CNN
-F 1 "GND" H 705 7677 50  0001 C CNN
-F 2 "" H 700 7850 50  0001 C CNN
-F 3 "" H 700 7850 50  0001 C CNN
-	1    700  7850
-	1    0    0    -1  
+P 3300 6400
+F 0 "#PWR0101" H 3300 6150 50  0001 C CNN
+F 1 "GND" H 3305 6227 50  0001 C CNN
+F 2 "" H 3300 6400 50  0001 C CNN
+F 3 "" H 3300 6400 50  0001 C CNN
+	1    3300 6400
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	700  7850 850  7850
+	3300 6400 3300 6250
 Wire Wire Line
-	850  7850 850  7650
+	3300 6250 3100 6250
 Wire Wire Line
-	850  7850 950  7850
+	3300 6250 3300 6150
 Wire Wire Line
-	1350 7850 1350 7650
-Connection ~ 850  7850
+	3300 5750 3100 5750
+Connection ~ 3300 6250
 Wire Wire Line
-	1250 7650 1250 7850
-Connection ~ 1250 7850
+	3100 5850 3300 5850
+Connection ~ 3300 5850
 Wire Wire Line
-	1250 7850 1350 7850
+	3300 5850 3300 5750
 Wire Wire Line
-	1150 7850 1150 7650
-Connection ~ 1150 7850
+	3300 5950 3100 5950
+Connection ~ 3300 5950
 Wire Wire Line
-	1150 7850 1250 7850
+	3300 5950 3300 5850
 Wire Wire Line
-	1050 7650 1050 7850
-Connection ~ 1050 7850
+	3100 6050 3300 6050
+Connection ~ 3300 6050
 Wire Wire Line
-	1050 7850 1150 7850
+	3300 6050 3300 5950
 Wire Wire Line
-	950  7850 950  7650
-Connection ~ 950  7850
+	3300 6150 3100 6150
+Connection ~ 3300 6150
 Wire Wire Line
-	950  7850 1050 7850
+	3300 6150 3300 6050
+$Sheet
+S 1000 3900 1050 950 
+U 6095A697
+F0 "adc" 50
+F1 "adc.sch" 50
+F2 "CNV_P" I R 2050 3950 50 
+F3 "CNV_N" I R 2050 4050 50 
+F4 "D_N" O R 2050 4150 50 
+F5 "DCO_N" O R 2050 4250 50 
+F6 "DCO_P" O R 2050 4350 50 
+F7 "CLK_N" I R 2050 4450 50 
+F8 "CLK_P" I R 2050 4550 50 
+F9 "VCM_OUT" O L 1000 4650 50 
+F10 "IN_N" I L 1000 4200 50 
+F11 "IN_P" I L 1000 4100 50 
+F12 "A_EN0" I R 2050 4750 50 
+$EndSheet
+$Sheet
+S 2850 3900 650  350 
+U 6095B316
+F0 "dac" 50
+F1 "dac.sch" 50
+F2 "CSB" I L 2850 3950 50 
+F3 "SCLK" I L 2850 4050 50 
+F4 "SDI" I L 2850 4150 50 
+F5 "OUT" O R 3500 4000 50 
+$EndSheet
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 60B0A4A6
+P 1700 750
+F 0 "H?" H 1800 799 50  0000 L CNN
+F 1 "MountingHole_Pad" H 1800 708 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 1700 750 50  0001 C CNN
+F 3 "~" H 1700 750 50  0001 C CNN
+	1    1700 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 60B0AC43
+P 700 750
+F 0 "H?" H 800 799 50  0000 L CNN
+F 1 "MountingHole_Pad" H 800 708 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 700 750 50  0001 C CNN
+F 3 "~" H 700 750 50  0001 C CNN
+	1    700  750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 60B0ADFD
+P 700 1200
+F 0 "H?" H 800 1249 50  0000 L CNN
+F 1 "MountingHole_Pad" H 800 1158 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 700 1200 50  0001 C CNN
+F 3 "~" H 700 1200 50  0001 C CNN
+	1    700  1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 60B0B098
+P 1700 1200
+F 0 "H?" H 1800 1249 50  0000 L CNN
+F 1 "MountingHole_Pad" H 1800 1158 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 1700 1200 50  0001 C CNN
+F 3 "~" H 1700 1200 50  0001 C CNN
+	1    1700 1200
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 8900 3600 500  150 
+U 6095A004
+F0 "adc_gp" 50
+F1 "adc_gp.sch" 50
+$EndSheet
 $EndSCHEMATC
