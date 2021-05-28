@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr User 12505 8268
 encoding utf-8
-Sheet 3 8
+Sheet 3 9
 Title ""
 Date ""
 Rev ""
@@ -231,11 +231,11 @@ Wire Bus Line
 	5100 1300 5500 1300
 Text Label 5200 1300 0    50   ~ 0
 OUT[0..7]
-Text Notes 6650 650  0    50   ~ 0
+Text Notes 650  3350 0    50   ~ 0
 Howland Current Source  (needs to MUX to any DAC HDMI signal)
-Text Notes 6650 850  0    50   ~ 0
+Text Notes 650  3550 0    50   ~ 0
 Optional gain and unipolar to bipolar
-Text Notes 6650 1050 0    50   ~ 0
+Text Notes 650  3750 0    50   ~ 0
 Add connector here?
 $Comp
 L Device:R_US R?
@@ -276,22 +276,12 @@ P 5700 2100
 AR Path="/6095A38A/60B473F3" Ref="R?"  Part="1" 
 AR Path="/6095BD4C/60B473F3" Ref="R?"  Part="1" 
 F 0 "R?" H 5550 2200 59  0000 L BNN
-F 1 "0" H 5550 1900 59  0000 L BNN
+F 1 "10k" H 5550 1900 59  0000 L BNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 5700 2100 50  0001 C CNN
 F 3 "" H 5700 2100 50  0001 C CNN
+F 4 "RC0603FR-0710kL" H 5700 2100 50  0001 C CNN "Manf#"
 	1    5700 2100
 	0    -1   -1   0   
-$EndComp
-$Comp
-L Amplifier_Operational:OPA2156xD U?
-U 2 1 60B47D89
-P 6500 2950
-F 0 "U?" H 6500 3317 50  0000 C CNN
-F 1 "OPA2156xD" H 6500 3226 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6600 2950 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/opa2156.pdf" H 6750 3100 50  0001 C CNN
-	2    6500 2950
-	1    0    0    -1  
 $EndComp
 $Comp
 L Amplifier_Operational:OPA2156xD U?
@@ -315,9 +305,10 @@ P 5800 2400
 AR Path="/6095A38A/60B4B5D2" Ref="R?"  Part="1" 
 AR Path="/6095BD4C/60B4B5D2" Ref="R?"  Part="1" 
 F 0 "R?" H 5650 2500 59  0000 L BNN
-F 1 "0" H 5650 2200 59  0000 L BNN
+F 1 "30.1k" H 5650 2200 59  0000 L BNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 5800 2400 50  0001 C CNN
 F 3 "" H 5800 2400 50  0001 C CNN
+F 4 "RC0603FR-0730k1L" H 5800 2400 50  0001 C CNN "Manf#"
 	1    5800 2400
 	0    -1   -1   0   
 $EndComp
@@ -337,10 +328,10 @@ Wire Wire Line
 Wire Wire Line
 	5600 2400 5650 2400
 Wire Wire Line
-	6000 2400 6000 2100
+	6100 2400 6100 2100
 Wire Wire Line
-	6200 2100 6000 2100
-Connection ~ 6000 2100
+	6200 2100 6100 2100
+Connection ~ 6100 2100
 $Comp
 L Device:R_US R?
 U 1 1 60B4DB38
@@ -348,15 +339,16 @@ P 6450 2400
 AR Path="/6095A38A/60B4DB38" Ref="R?"  Part="1" 
 AR Path="/6095BD4C/60B4DB38" Ref="R?"  Part="1" 
 F 0 "R?" H 6300 2500 59  0000 L BNN
-F 1 "0" H 6300 2200 59  0000 L BNN
+F 1 "15k" H 6300 2200 59  0000 L BNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 6450 2400 50  0001 C CNN
 F 3 "" H 6450 2400 50  0001 C CNN
+F 4 "RC0603FR-0715kL" H 6450 2400 50  0001 C CNN "Manf#"
 	1    6450 2400
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	6300 2400 6000 2400
-Connection ~ 6000 2400
+	6300 2400 6100 2400
+Connection ~ 6100 2400
 Wire Wire Line
 	6600 2400 6900 2400
 Wire Wire Line
@@ -368,93 +360,17 @@ Wire Wire Line
 Text Label 5750 1900 0    50   ~ 0
 OUT[0]
 Wire Wire Line
-	6000 2100 5850 2100
+	6100 2100 5850 2100
 Wire Wire Line
-	5950 2400 6000 2400
-$Comp
-L Device:R_US R?
-U 1 1 60B54334
-P 5700 3050
-AR Path="/6095A38A/60B54334" Ref="R?"  Part="1" 
-AR Path="/6095BD4C/60B54334" Ref="R?"  Part="1" 
-F 0 "R?" H 5550 3150 59  0000 L BNN
-F 1 "0" H 5550 2850 59  0000 L BNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 5700 3050 50  0001 C CNN
-F 3 "" H 5700 3050 50  0001 C CNN
-	1    5700 3050
-	0    -1   -1   0   
-$EndComp
+	5950 2400 6100 2400
 Wire Wire Line
 	5500 3050 5550 3050
 Wire Wire Line
 	5500 3050 5500 3650
-$Comp
-L Device:R_US R?
-U 1 1 60B5433C
-P 5800 3350
-AR Path="/6095A38A/60B5433C" Ref="R?"  Part="1" 
-AR Path="/6095BD4C/60B5433C" Ref="R?"  Part="1" 
-F 0 "R?" H 5650 3450 59  0000 L BNN
-F 1 "0" H 5650 3150 59  0000 L BNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 5800 3350 50  0001 C CNN
-F 3 "" H 5800 3350 50  0001 C CNN
-	1    5800 3350
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #GND?
-U 1 1 60B54342
-P 5600 3500
-F 0 "#GND?" H 5600 3500 50  0001 C CNN
-F 1 "GND" H 5500 3400 59  0001 L BNN
-F 2 "" H 5600 3500 50  0001 C CNN
-F 3 "" H 5600 3500 50  0001 C CNN
-	1    5600 3500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5600 3500 5600 3350
-Wire Wire Line
-	5600 3350 5650 3350
-Wire Wire Line
-	6000 3350 6000 3050
-Wire Wire Line
-	6200 3050 6000 3050
-Connection ~ 6000 3050
-Wire Wire Line
-	6300 3350 6000 3350
-Connection ~ 6000 3350
-Wire Wire Line
-	6000 3050 5850 3050
-Wire Wire Line
-	5950 3350 6000 3350
-Wire Wire Line
-	6200 2850 5750 2850
 Wire Wire Line
 	5500 2700 5500 3050
 Connection ~ 5500 2700
 Connection ~ 5500 3050
-$Comp
-L Device:R_US R?
-U 1 1 60B56A38
-P 6450 3350
-AR Path="/6095A38A/60B56A38" Ref="R?"  Part="1" 
-AR Path="/6095BD4C/60B56A38" Ref="R?"  Part="1" 
-F 0 "R?" H 6300 3450 59  0000 L BNN
-F 1 "0" H 6300 3150 59  0000 L BNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 6450 3350 50  0001 C CNN
-F 3 "" H 6450 3350 50  0001 C CNN
-	1    6450 3350
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	6600 3350 6900 3350
-Wire Wire Line
-	6900 3350 6900 2950
-Wire Wire Line
-	6900 2950 6800 2950
-Text Label 5750 2850 0    50   ~ 0
-OUT[1]
 $Comp
 L covg-kicad:TMUX6136PWR U?
 U 1 1 60B8C0FB
@@ -468,6 +384,96 @@ F 3 "" H 9750 2100 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	2000 2700 5500 2700
+$Comp
+L Amplifier_Operational:OPA2156xD U?
+U 1 1 60BA9741
+P 6500 2950
+F 0 "U?" H 6500 3317 50  0000 C CNN
+F 1 "OPA2156xD" H 6500 3226 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6600 2950 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/opa2156.pdf" H 6750 3100 50  0001 C CNN
+	1    6500 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 60BA9748
+P 5700 3050
+AR Path="/6095A38A/60BA9748" Ref="R?"  Part="1" 
+AR Path="/6095BD4C/60BA9748" Ref="R?"  Part="1" 
+F 0 "R?" H 5550 3150 59  0000 L BNN
+F 1 "10k" H 5550 2850 59  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5700 3050 50  0001 C CNN
+F 3 "" H 5700 3050 50  0001 C CNN
+F 4 "RC0603FR-0710kL" H 5700 3050 50  0001 C CNN "Manf#"
+	1    5700 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 60BA9751
+P 5800 3350
+AR Path="/6095A38A/60BA9751" Ref="R?"  Part="1" 
+AR Path="/6095BD4C/60BA9751" Ref="R?"  Part="1" 
+F 0 "R?" H 5650 3450 59  0000 L BNN
+F 1 "30.1k" H 5650 3150 59  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5800 3350 50  0001 C CNN
+F 3 "" H 5800 3350 50  0001 C CNN
+F 4 "RC0603FR-0730k1L" H 5800 3350 50  0001 C CNN "Manf#"
+	1    5800 3350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #GND?
+U 1 1 60BA9757
+P 5600 3500
+F 0 "#GND?" H 5600 3500 50  0001 C CNN
+F 1 "GND" H 5500 3400 59  0001 L BNN
+F 2 "" H 5600 3500 50  0001 C CNN
+F 3 "" H 5600 3500 50  0001 C CNN
+	1    5600 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5600 3500 5600 3350
+Wire Wire Line
+	5600 3350 5650 3350
+Wire Wire Line
+	6100 3350 6100 3050
+Wire Wire Line
+	6200 3050 6100 3050
+Connection ~ 6100 3050
+$Comp
+L Device:R_US R?
+U 1 1 60BA9763
+P 6450 3350
+AR Path="/6095A38A/60BA9763" Ref="R?"  Part="1" 
+AR Path="/6095BD4C/60BA9763" Ref="R?"  Part="1" 
+F 0 "R?" H 6300 3450 59  0000 L BNN
+F 1 "15k" H 6300 3150 59  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6450 3350 50  0001 C CNN
+F 3 "" H 6450 3350 50  0001 C CNN
+F 4 "RC0603FR-0715kL" H 6450 3350 50  0001 C CNN "Manf#"
+	1    6450 3350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6300 3350 6100 3350
+Connection ~ 6100 3350
+Wire Wire Line
+	6600 3350 6900 3350
+Wire Wire Line
+	6900 3350 6900 2950
+Wire Wire Line
+	6900 2950 6800 2950
+Wire Wire Line
+	6200 2850 5750 2850
+Text Label 5750 2850 0    50   ~ 0
+OUT[0]
+Wire Wire Line
+	6100 3050 5850 3050
+Wire Wire Line
+	5950 3350 6100 3350
 Wire Bus Line
 	5100 1300 5100 2000
 $EndSCHEMATC
