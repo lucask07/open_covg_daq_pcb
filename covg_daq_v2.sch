@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 9
+Sheet 1 10
 Title ""
 Date ""
 Rev ""
@@ -38,10 +38,10 @@ F0 "ok_fpga" 50
 F1 "ok_fpga.sch" 50
 $EndSheet
 $Comp
-L Connector:HDMI_A J?
+L Connector:HDMI_A J3
 U 1 1 61D74FD2
 P 1250 6150
-F 0 "J?" H 1680 6196 50  0000 L CNN
+F 0 "J3" H 1680 6196 50  0000 L CNN
 F 1 "HDMI_A" H 1680 6105 50  0000 L CNN
 F 2 "" H 1275 6150 50  0001 C CNN
 F 3 "https://en.wikipedia.org/wiki/HDMI" H 1275 6150 50  0001 C CNN
@@ -116,10 +116,10 @@ F4 "SDI" I R 3400 4550 50
 F5 "OUT" O L 2750 4400 50 
 $EndSheet
 $Comp
-L Mechanical:MountingHole_Pad H?
+L Mechanical:MountingHole_Pad H3
 U 1 1 60B0A4A6
 P 1700 750
-F 0 "H?" H 1800 799 50  0000 L CNN
+F 0 "H3" H 1800 799 50  0000 L CNN
 F 1 "MountingHole_Pad" H 1800 708 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 1700 750 50  0001 C CNN
 F 3 "~" H 1700 750 50  0001 C CNN
@@ -127,10 +127,10 @@ F 3 "~" H 1700 750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H?
+L Mechanical:MountingHole_Pad H1
 U 1 1 60B0AC43
 P 700 750
-F 0 "H?" H 800 799 50  0000 L CNN
+F 0 "H1" H 800 799 50  0000 L CNN
 F 1 "MountingHole_Pad" H 800 708 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 700 750 50  0001 C CNN
 F 3 "~" H 700 750 50  0001 C CNN
@@ -138,10 +138,10 @@ F 3 "~" H 700 750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H?
+L Mechanical:MountingHole_Pad H2
 U 1 1 60B0ADFD
 P 700 1200
-F 0 "H?" H 800 1249 50  0000 L CNN
+F 0 "H2" H 800 1249 50  0000 L CNN
 F 1 "MountingHole_Pad" H 800 1158 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 700 1200 50  0001 C CNN
 F 3 "~" H 700 1200 50  0001 C CNN
@@ -149,10 +149,10 @@ F 3 "~" H 700 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H?
+L Mechanical:MountingHole_Pad H4
 U 1 1 60B0B098
 P 1700 1200
-F 0 "H?" H 1800 1249 50  0000 L CNN
+F 0 "H4" H 1800 1249 50  0000 L CNN
 F 1 "MountingHole_Pad" H 1800 1158 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad" H 1700 1200 50  0001 C CNN
 F 3 "~" H 1700 1200 50  0001 C CNN
