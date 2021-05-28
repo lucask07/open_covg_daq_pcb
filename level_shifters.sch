@@ -351,4 +351,10 @@ F 3 "" H 6500 700 50  0001 C CNN
 $EndComp
 Text Notes 3800 2650 0    64   ~ 0
 These are global (for all ADC channels)\nEN0 is the only signal that needs FPGA control per ADC channel.
+Text Notes 6850 6450 0    50   ~ 0
+Bidirectional translator
+Text Notes 5750 6350 0    50   ~ 0
+Vcc = 1.3 - 4.5 V
+Text Notes 8050 6350 0    50   ~ 0
+VL = 0.9 to VCC-0.4
 $EndSCHEMATC

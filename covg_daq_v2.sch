@@ -14,43 +14,43 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 1000 1000 500  150 
+S 8900 3600 500  150 
 U 6095A004
 F0 "gp_adc" 50
 F1 "gp_adc.sch" 50
 $EndSheet
 $Sheet
-S 5000 1000 500  150 
+S 7150 2200 500  150 
 U 6095A38A
 F0 "level_shifters" 50
 F1 "level_shifters.sch" 50
 $EndSheet
 $Sheet
-S 7000 1000 500  150 
+S 1400 4350 500  150 
 U 6095A697
 F0 "adc1" 50
 F1 "adc1.sch" 50
 $EndSheet
 $Sheet
-S 5000 3000 500  150 
+S 2450 4350 500  150 
 U 6095B316
 F0 "dac1" 50
 F1 "dac1.sch" 50
 $EndSheet
 $Sheet
-S 3000 5000 500  150 
+S 8900 950  500  150 
 U 6095BD4C
 F0 "dac_gp" 50
 F1 "dac_gp.sch" 50
 $EndSheet
 $Sheet
-S 5000 5000 500  150 
+S 8900 2300 500  150 
 U 6095BE10
 F0 "power" 50
 F1 "power.sch" 50
 $EndSheet
 $Sheet
-S 3000 1000 500  150 
+S 7200 900  500  150 
 U 6095A302
 F0 "ok_fpga" 50
 F1 "ok_fpga.sch" 50
