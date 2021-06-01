@@ -14,45 +14,45 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L adc_dac_v1-eagle-import:OPALKELLY_XEM6310 OK1
+L covg-kicad:OPALKELLY_XEM7310 OK1
 U 1 1 DA224995
 P 2500 2800
 F 0 "OK1" H 2700 4810 70  0000 R BNN
 F 1 "OPALKELLY_XEM6310" H 2500 2800 50  0001 C CNN
-F 2 "adc_dac_v1:OPALKELLY_XEM6010" H 2500 2800 50  0001 C CNN
+F 2 "covg-kicad:OPALKELLY_XEM6010" H 2500 2800 50  0001 C CNN
 F 3 "" H 2500 2800 50  0001 C CNN
 	1    2500 2800
 	1    0    0    -1  
 $EndComp
 $Comp
-L adc_dac_v1-eagle-import:OPALKELLY_XEM6310 OK1
+L covg-kicad:OPALKELLY_XEM7310 OK1
 U 2 1 DA224999
 P 5000 2800
 F 0 "OK1" H 5200 4810 70  0000 R BNN
 F 1 "OPALKELLY_XEM6310" H 5000 2800 50  0001 C CNN
-F 2 "adc_dac_v1:OPALKELLY_XEM6010" H 5000 2800 50  0001 C CNN
+F 2 "covg-kicad:OPALKELLY_XEM6010" H 5000 2800 50  0001 C CNN
 F 3 "" H 5000 2800 50  0001 C CNN
 	2    5000 2800
 	1    0    0    -1  
 $EndComp
 $Comp
-L adc_dac_v1-eagle-import:OPALKELLY_XEM6310 OK1
+L covg-kicad:OPALKELLY_XEM7310 OK1
 U 3 1 DA22499D
 P 7800 2800
 F 0 "OK1" H 8000 4810 70  0000 R BNN
 F 1 "OPALKELLY_XEM6310" H 7800 2800 50  0001 C CNN
-F 2 "adc_dac_v1:OPALKELLY_XEM6010" H 7800 2800 50  0001 C CNN
+F 2 "covg-kicad:OPALKELLY_XEM6010" H 7800 2800 50  0001 C CNN
 F 3 "" H 7800 2800 50  0001 C CNN
 	3    7800 2800
 	1    0    0    -1  
 $EndComp
 $Comp
-L adc_dac_v1-eagle-import:OPALKELLY_XEM6310 OK1
+L covg-kicad:OPALKELLY_XEM7310 OK1
 U 4 1 DA224981
 P 10500 2800
 F 0 "OK1" H 10700 4810 70  0000 R BNN
 F 1 "OPALKELLY_XEM6310" H 10500 2800 50  0001 C CNN
-F 2 "adc_dac_v1:OPALKELLY_XEM6010" H 10500 2800 50  0001 C CNN
+F 2 "covg-kicad:OPALKELLY_XEM6010" H 10500 2800 50  0001 C CNN
 F 3 "" H 10500 2800 50  0001 C CNN
 	4    10500 2800
 	1    0    0    -1  
@@ -71,90 +71,90 @@ $EndComp
 $Comp
 L Device:R_US R153
 U 1 1 19684600
-P 6300 6300
-F 0 "R153" H 6150 6359 59  0000 L BNN
-F 1 "4.7k" H 6150 6170 59  0000 L BNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 6300 6300 50  0001 C CNN
-F 3 "" H 6300 6300 50  0001 C CNN
-	1    6300 6300
+P 3050 6100
+F 0 "R153" H 2900 6159 59  0000 L BNN
+F 1 "4.7k" H 2900 5970 59  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3050 6100 50  0001 C CNN
+F 3 "" H 3050 6100 50  0001 C CNN
+	1    3050 6100
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_US R154
 U 1 1 B3900895
-P 6600 6400
-F 0 "R154" H 6450 6459 59  0000 L BNN
-F 1 "4.7k" H 6450 6270 59  0000 L BNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 6600 6400 50  0001 C CNN
-F 3 "" H 6600 6400 50  0001 C CNN
-	1    6600 6400
+P 3350 6200
+F 0 "R154" H 3200 6259 59  0000 L BNN
+F 1 "4.7k" H 3200 6070 59  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3350 6200 50  0001 C CNN
+F 3 "" H 3350 6200 50  0001 C CNN
+	1    3350 6200
 	1    0    0    -1  
 $EndComp
-Text GLabel 4000 5900 2    70   BiDi ~ 0
+Text GLabel 750  5700 2    70   BiDi ~ 0
 D0_CSB
 Text GLabel 3000 2900 2    50   BiDi ~ 0
 D0_CSB
-Text GLabel 4000 6000 2    70   BiDi ~ 0
+Text GLabel 750  5800 2    70   BiDi ~ 0
 D0_SDI
 Text GLabel 3000 3000 2    50   BiDi ~ 0
 D0_SDI
-Text GLabel 4000 6100 2    70   BiDi ~ 0
+Text GLabel 750  5900 2    70   BiDi ~ 0
 D0_SCLK
 Text GLabel 3000 3100 2    50   BiDi ~ 0
 D0_SCLK
-Text Label 4000 6200 0    70   ~ 0
+Text Label 750  6000 0    70   ~ 0
 GP_0
 Text Label 5500 3800 0    50   ~ 0
 GP_0
-Text Label 4000 6300 0    70   ~ 0
+Text Label 750  6100 0    70   ~ 0
 GP_1
 Text Label 3000 3900 0    50   ~ 0
 GP_1
-Text Label 4000 6400 0    70   ~ 0
+Text Label 750  6200 0    70   ~ 0
 GP_2
 Text Label 5500 3900 0    50   ~ 0
 GP_2
-Text Label 4000 6500 0    70   ~ 0
+Text Label 750  6300 0    70   ~ 0
 GP_3
 Text Label 3000 4000 0    50   ~ 0
 GP_3
-Text Label 4000 6600 0    70   ~ 0
+Text Label 750  6400 0    70   ~ 0
 GP_4
 Text Label 5500 4000 0    50   ~ 0
 GP_4
-Text Label 4000 6700 0    70   ~ 0
+Text Label 750  6500 0    70   ~ 0
 GP_5
 Text Label 3000 4100 0    50   ~ 0
 GP_5
-Text Label 5400 5900 0    70   ~ 0
+Text Label 2150 5700 0    70   ~ 0
 GP_6
 Text Label 5500 4100 0    50   ~ 0
 GP_6
-Text Label 5400 6000 0    70   ~ 0
+Text Label 2150 5800 0    70   ~ 0
 GP_7
 Text Label 3000 4200 0    50   ~ 0
 GP_7
-Text Label 5400 6100 0    70   ~ 0
+Text Label 2150 5900 0    70   ~ 0
 GP_8
 Text Label 5500 4200 0    50   ~ 0
 GP_8
-Text Label 5400 6200 0    70   ~ 0
+Text Label 2150 6000 0    70   ~ 0
 GP_9
 Text Label 3000 4300 0    50   ~ 0
 GP_9
-Text Label 5400 6300 0    70   ~ 0
+Text Label 2150 6100 0    70   ~ 0
 GP_10
 Text Label 5500 4300 0    50   ~ 0
 GP_10
-Text Label 5400 6400 0    70   ~ 0
+Text Label 2150 6200 0    70   ~ 0
 GP_11
 Text Label 3000 4400 0    50   ~ 0
 GP_11
-Text Label 5700 6500 0    70   ~ 0
+Text Label 2450 6300 0    70   ~ 0
 GP_SDA
 Text Label 5500 4400 0    50   ~ 0
 GP_SDA
-Text Label 5700 6600 0    70   ~ 0
+Text Label 2450 6400 0    70   ~ 0
 GP_SCL
 Text Label 3000 4500 0    50   ~ 0
 GP_SCL
@@ -421,49 +421,49 @@ A3_EN0_HV
 Text GLabel 8300 3500 2    50   BiDi ~ 0
 A3_EN0_HV
 Wire Wire Line
-	4000 5900 4600 5900
+	750  5700 1350 5700
 Wire Wire Line
 	2900 2900 3000 2900
 Wire Wire Line
-	4000 6000 4600 6000
+	750  5800 1350 5800
 Wire Wire Line
 	2900 3000 3000 3000
 Wire Wire Line
-	4600 6100 4000 6100
+	1350 5900 750  5900
 Wire Wire Line
 	2900 3100 3000 3100
 Wire Wire Line
-	4600 6200 4000 6200
+	1350 6000 750  6000
 Wire Wire Line
 	5400 3800 5500 3800
 Wire Wire Line
-	4600 6300 4000 6300
+	1350 6100 750  6100
 Wire Wire Line
 	2900 3900 3000 3900
 Wire Wire Line
-	4600 6400 4000 6400
+	1350 6200 750  6200
 Wire Wire Line
 	5400 3900 5500 3900
 Wire Wire Line
-	4600 6500 4000 6500
+	1350 6300 750  6300
 Wire Wire Line
 	2900 4000 3000 4000
 Wire Wire Line
-	4600 6600 4000 6600
+	1350 6400 750  6400
 Wire Wire Line
 	5400 4000 5500 4000
 Wire Wire Line
-	4600 6700 4000 6700
+	1350 6500 750  6500
 Wire Wire Line
 	2900 4100 3000 4100
 Wire Wire Line
-	4600 6800 4000 6800
+	1350 6600 750  6600
 Wire Wire Line
-	5100 6800 5400 6800
+	1850 6600 2150 6600
 Wire Wire Line
-	5100 6700 5400 6700
+	1850 6500 2150 6500
 Wire Wire Line
-	5400 6700 5400 6800
+	2150 6500 2150 6600
 Wire Wire Line
 	5400 4700 5500 4700
 Wire Wire Line
@@ -485,39 +485,39 @@ Wire Wire Line
 Wire Wire Line
 	2900 900  3000 900 
 Wire Wire Line
-	5100 5900 5600 5900
+	1850 5700 2350 5700
 Wire Wire Line
 	5400 4100 5500 4100
 Wire Wire Line
-	5100 6000 5600 6000
+	1850 5800 2350 5800
 Wire Wire Line
 	2900 4200 3000 4200
 Wire Wire Line
-	5100 6100 5600 6100
+	1850 5900 2350 5900
 Wire Wire Line
 	5400 4200 5500 4200
 Wire Wire Line
-	5100 6200 5600 6200
+	1850 6000 2350 6000
 Wire Wire Line
 	2900 4300 3000 4300
 Wire Wire Line
-	5100 6300 5600 6300
+	1850 6100 2350 6100
 Wire Wire Line
 	5400 4300 5500 4300
 Wire Wire Line
-	5100 6400 5600 6400
+	1850 6200 2350 6200
 Wire Wire Line
 	2900 4400 3000 4400
 Wire Wire Line
-	5100 6500 6300 6500
+	1850 6300 3050 6300
 Wire Wire Line
 	5400 4400 5500 4400
 Wire Wire Line
-	5100 6600 6600 6600
+	1850 6400 3350 6400
 Wire Wire Line
 	2900 4500 3000 4500
 Wire Wire Line
-	6300 6000 6500 6000
+	3050 5800 3250 5800
 Wire Wire Line
 	10900 1000 11000 1000
 Wire Wire Line
@@ -780,37 +780,37 @@ Wire Wire Line
 	10900 4500 11000 4500
 Wire Wire Line
 	8200 3500 8300 3500
-Connection ~ 5400 6800
+Connection ~ 2150 6600
 Wire Wire Line
-	6600 6000 6600 6250
+	3350 5800 3350 6050
 Wire Wire Line
-	6600 6550 6600 6600
+	3350 6350 3350 6400
 Wire Wire Line
-	6300 6500 6300 6450
+	3050 6300 3050 6250
 Wire Wire Line
-	6300 6000 6300 6150
+	3050 5800 3050 5950
 $Comp
 L power:GND #PWR0143
 U 1 1 60B8C06C
-P 5700 6800
-F 0 "#PWR0143" H 5700 6550 50  0001 C CNN
-F 1 "GND" H 5705 6627 50  0001 C CNN
-F 2 "" H 5700 6800 50  0001 C CNN
-F 3 "" H 5700 6800 50  0001 C CNN
-	1    5700 6800
+P 2450 6600
+F 0 "#PWR0143" H 2450 6350 50  0001 C CNN
+F 1 "GND" H 2455 6427 50  0001 C CNN
+F 2 "" H 2450 6600 50  0001 C CNN
+F 3 "" H 2450 6600 50  0001 C CNN
+	1    2450 6600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5400 6800 5700 6800
+	2150 6600 2450 6600
 $Comp
 L power:GND #PWR0144
 U 1 1 60BB36D1
-P 4000 6800
-F 0 "#PWR0144" H 4000 6550 50  0001 C CNN
-F 1 "GND" H 4005 6627 50  0001 C CNN
-F 2 "" H 4000 6800 50  0001 C CNN
-F 3 "" H 4000 6800 50  0001 C CNN
-	1    4000 6800
+P 750 6600
+F 0 "#PWR0144" H 750 6350 50  0001 C CNN
+F 1 "GND" H 755 6427 50  0001 C CNN
+F 2 "" H 750 6600 50  0001 C CNN
+F 3 "" H 750 6600 50  0001 C CNN
+	1    750  6600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -926,28 +926,44 @@ $EndComp
 $Comp
 L power:+3V3 #PWR0155
 U 1 1 60C8B447
-P 6500 5950
-F 0 "#PWR0155" H 6500 5800 50  0001 C CNN
-F 1 "+3V3" H 6515 6123 50  0000 C CNN
-F 2 "" H 6500 5950 50  0001 C CNN
-F 3 "" H 6500 5950 50  0001 C CNN
-	1    6500 5950
+P 3250 5750
+F 0 "#PWR0155" H 3250 5600 50  0001 C CNN
+F 1 "+3V3" H 3265 5923 50  0000 C CNN
+F 2 "" H 3250 5750 50  0001 C CNN
+F 3 "" H 3250 5750 50  0001 C CNN
+	1    3250 5750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6500 5950 6500 6000
-Connection ~ 6500 6000
+	3250 5750 3250 5800
+Connection ~ 3250 5800
 Wire Wire Line
-	6500 6000 6600 6000
+	3250 5800 3350 5800
 $Comp
 L Connector_Generic:Conn_02x10_Odd_Even J?
 U 1 1 629450E5
-P 4800 6300
-F 0 "J?" H 4850 6917 50  0000 C CNN
-F 1 "Conn_02x10_Odd_Even" H 4850 6826 50  0000 C CNN
-F 2 "" H 4800 6300 50  0001 C CNN
-F 3 "~" H 4800 6300 50  0001 C CNN
-	1    4800 6300
+P 1550 6100
+F 0 "J?" H 1600 6717 50  0000 C CNN
+F 1 "Conn_02x10_Odd_Even" H 1600 6626 50  0000 C CNN
+F 2 "" H 1550 6100 50  0001 C CNN
+F 3 "~" H 1550 6100 50  0001 C CNN
+	1    1550 6100
 	1    0    0    -1  
 $EndComp
+Text Notes 550  850  0    50   ~ 0
+Bank 13: 3.3V always\nMC1 64 and 66-76  MC2 64 and 66-76 \n(24 total)
+Text Notes 550  1300 0    50   ~ 0
+Bank 34: default 3.3V, \nchange by ferrite bead (FB8)\non MC1 \n(total of 48) 
+Text Notes 550  1750 0    50   ~ 0
+Bank 35: default 3.3V, \nchange by ferrite bead (FB9)\nMC2 2\n(total of 50)
+Text Notes 9350 3650 0    50   ~ 0
+IO voltage for bank 34
+Text Notes 9400 2650 0    50   ~ 0
+IO voltage for bank 34
+Text Notes 1350 3650 0    50   ~ 0
+IO voltage for bank 35
+Text Notes 1350 2650 0    50   ~ 0
+IO voltage for bank 35
+Text Notes 8600 6800 0    39   ~ 0
+VREF: needed for single-ended IO standards that use a diff. input buffer.\nWe do not need VREF. The FPGA also has an internal VREF which can be used if running at or below 400 MHz. \nMost relevant to memory interfaces. 
 $EndSCHEMATC
