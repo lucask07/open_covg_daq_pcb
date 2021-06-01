@@ -212,7 +212,7 @@ F 0 "C87" H 6000 1000 59  0000 L BNN
 F 1 "10u" H 5990 735 59  0000 L BNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5950 900 50  0001 C CNN
 F 3 "" H 5950 900 50  0001 C CNN
-F 4 "JMK107ABJ106KA-T" H 5950 900 50  0001 C CNN "Manf#"
+F 4 "JMK107ABJ106KAHT" H 5950 900 50  0001 C CNN "Manf#"
 	1    5950 900 
 	1    0    0    -1  
 $EndComp
@@ -338,7 +338,7 @@ F 0 "C88" H 6400 1000 59  0000 L BNN
 F 1 "10u" H 6390 735 59  0000 L BNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 6350 900 50  0001 C CNN
 F 3 "" H 6350 900 50  0001 C CNN
-F 4 "JMK107ABJ106KA-T" H 6350 900 50  0001 C CNN "Manf#"
+F 4 "JMK107ABJ106KAHT" H 6350 900 50  0001 C CNN "Manf#"
 	1    6350 900 
 	1    0    0    -1  
 $EndComp
@@ -352,7 +352,7 @@ F 0 "C89" H 6800 1000 59  0000 L BNN
 F 1 "10u" H 6790 735 59  0000 L BNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 6750 900 50  0001 C CNN
 F 3 "" H 6750 900 50  0001 C CNN
-F 4 "JMK107ABJ106KA-T" H 6750 900 50  0001 C CNN "Manf#"
+F 4 "JMK107ABJ106KAHT" H 6750 900 50  0001 C CNN "Manf#"
 	1    6750 900 
 	1    0    0    -1  
 $EndComp
@@ -366,12 +366,12 @@ F 0 "C90" H 7200 1000 59  0000 L BNN
 F 1 "10u" H 7190 735 59  0000 L BNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 7150 900 50  0001 C CNN
 F 3 "" H 7150 900 50  0001 C CNN
-F 4 "JMK107ABJ106KA-T" H 7150 900 50  0001 C CNN "Manf#"
+F 4 "JMK107ABJ106KAHT" H 7150 900 50  0001 C CNN "Manf#"
 	1    7150 900 
 	1    0    0    -1  
 $EndComp
-Text Notes 11000 850  0    50   ~ 0
-AVDD bypass (1x 10u, 1x 0.1u per pin)
+Text Notes 10300 750  0    50   ~ 0
+AVDD bypass (1x 10uF, 1x 0.1uF per pin)
 $Comp
 L Device:C C?
 U 1 1 60E95868
@@ -463,10 +463,10 @@ P 7900 7000
 AR Path="/60EA03DF" Ref="C?"  Part="1" 
 AR Path="/6095A004/60EA03DF" Ref="C94"  Part="1" 
 F 0 "C94" H 8000 6950 59  0000 L BNN
-F 1 "10u" H 8000 6850 59  0000 L BNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 7900 7000 50  0001 C CNN
+F 1 "0.1u" H 8000 6850 59  0000 L BNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7900 7000 50  0001 C CNN
 F 3 "" H 7900 7000 50  0001 C CNN
-F 4 "GRM21BR70J106KA73L" H 7900 7000 50  0001 C CNN "Manf#"
+F 4 "CC0603MRX7R8BB104" H 7900 7000 50  0001 C CNN "Manf#"
 	1    7900 7000
 	1    0    0    -1  
 $EndComp
@@ -551,8 +551,8 @@ U 1 1 60F1A741
 P 10200 4450
 AR Path="/60F1A741" Ref="C?"  Part="1" 
 AR Path="/6095A004/60F1A741" Ref="C100"  Part="1" 
-F 0 "C100" H 10250 4550 59  0000 L BNN
-F 1 "0.1u" H 10240 4285 59  0000 L BNN
+F 0 "C100" H 9950 4500 59  0000 L BNN
+F 1 "0.1u" H 10000 4300 59  0000 L BNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 10200 4450 50  0001 C CNN
 F 3 "" H 10200 4450 50  0001 C CNN
 F 4 "CC0603MRX7R8BB104" H 10200 4450 50  0001 C CNN "Manf#"
@@ -698,18 +698,6 @@ Wire Wire Line
 	950  8700 950  8650
 Wire Wire Line
 	950  8650 1100 8650
-$Comp
-L Connector_Generic:Conn_02x16_Top_Bottom J5
-U 1 1 61019DA2
-P 11900 2950
-F 0 "J5" H 11950 3867 50  0000 C CNN
-F 1 "Conn_02x16_Top_Bottom" H 11950 3776 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x16_P2.54mm_Horizontal" H 11900 2950 50  0001 C CNN
-F 3 "~" H 11900 2950 50  0001 C CNN
-F 4 "68021-132HLF" H 11900 2950 50  0001 C CNN "Manf#"
-	1    11900 2950
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+3.3V #PWR0198
 U 1 1 6104B6A8
@@ -1413,9 +1401,9 @@ Wire Wire Line
 	6400 5300 5700 5300
 Wire Wire Line
 	6400 5400 5700 5400
-Text Label 5800 3500 0    50   ~ 0
+Text Label 5750 3500 0    50   ~ 0
 AIN_GND[12]
-Text Label 5800 3700 0    50   ~ 0
+Text Label 5750 3700 0    50   ~ 0
 AIN_GND[13]
 Text Label 5800 4200 0    50   ~ 0
 AIN_GND[14]
@@ -2386,8 +2374,6 @@ Wire Wire Line
 Wire Wire Line
 	7900 2600 7900 2050
 Wire Wire Line
-	7900 2050 8550 2050
-Wire Wire Line
 	8900 3800 9400 3800
 $Comp
 L power:GND #GND?
@@ -2518,20 +2504,6 @@ Wire Wire Line
 	9500 2200 9700 2200
 $Comp
 L Device:R_US R?
-U 1 1 6197E1A5
-P 9550 3800
-AR Path="/6197E1A5" Ref="R?"  Part="1" 
-AR Path="/6095A004/6197E1A5" Ref="R118"  Part="1" 
-F 0 "R118" H 9400 3859 59  0000 L BNN
-F 1 "33" H 9400 3670 59  0000 L BNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 9550 3800 50  0001 C CNN
-F 3 "" H 9550 3800 50  0001 C CNN
-F 4 "RC0603FR-0733RL" H 9550 3800 50  0001 C CNN "Manf#"
-	1    9550 3800
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R_US R?
 U 1 1 6197E80C
 P 9950 3900
 AR Path="/6197E80C" Ref="R?"  Part="1" 
@@ -2548,8 +2520,6 @@ Wire Wire Line
 	8900 3900 9800 3900
 Wire Wire Line
 	10100 3900 10300 3900
-Wire Wire Line
-	9700 3800 10300 3800
 $Comp
 L power:GND #GND?
 U 1 1 619DA92C
@@ -2654,23 +2624,7 @@ Text HLabel 9700 2200 2    50   Output ~ 0
 BUSY
 Text HLabel 9050 2050 2    50   Input ~ 0
 CONVST
-$Comp
-L Device:R_US R?
-U 1 1 61D71BAA
-P 8700 2050
-AR Path="/61D71BAA" Ref="R?"  Part="1" 
-AR Path="/6095A004/61D71BAA" Ref="R116"  Part="1" 
-F 0 "R116" H 8600 2150 59  0000 L BNN
-F 1 "33" H 8550 1920 59  0000 L BNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 8700 2050 50  0001 C CNN
-F 3 "" H 8700 2050 50  0001 C CNN
-F 4 "RC0603FR-0733RL" H 8700 2050 50  0001 C CNN "Manf#"
-	1    8700 2050
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	8850 2050 9050 2050
-Text HLabel 10300 3800 2    50   Output ~ 0
+Text HLabel 10300 3650 2    50   Output ~ 0
 SDOA
 Text HLabel 10300 3900 2    50   Output ~ 0
 SDOB
@@ -2678,7 +2632,7 @@ Text HLabel 9750 2350 2    50   Input ~ 0
 CSb
 Text HLabel 9400 4000 2    50   Input ~ 0
 SDI
-Text Notes 10600 3850 0    50   ~ 0
+Text Notes 10600 3700 0    50   ~ 0
 outputs
 Text HLabel 8700 7050 2    50   Input ~ 0
 RESETb
@@ -2719,8 +2673,6 @@ Wire Wire Line
 	11700 3650 11450 3650
 Wire Wire Line
 	11700 3750 11450 3750
-Text Label 11450 2250 0    50   ~ 0
-IN[0]
 Text Label 11450 2350 0    50   ~ 0
 IN[1]
 Text Label 11450 2450 0    50   ~ 0
@@ -3086,16 +3038,67 @@ Text Notes 1550 1200 0    50   ~ 0
 AGND_IN must be within \n+/-0.3 V of GND
 Wire Wire Line
 	8900 4000 9400 4000
+Text Notes 5950 7650 0    39   ~ 0
+REFIO: most guidance is 0.1uF bypass (including EVM schematics), \nbut datasheet layout section suggests 10 uF.
+Text Notes 8750 7250 0    39   ~ 0
+Must by pulled up by FPGA to enable.\n3.3 V level.
+Wire Wire Line
+	7900 2050 9050 2050
+Text Notes 9150 2000 0    50   ~ 0
+input
+Text Notes 10000 2400 0    50   ~ 0
+input
+Text Notes 10000 2500 0    50   ~ 0
+input
+Wire Wire Line
+	9400 3650 9400 3800
+Wire Wire Line
+	9700 3650 10300 3650
+$Comp
+L Device:R_US R?
+U 1 1 6197E1A5
+P 9550 3650
+AR Path="/6197E1A5" Ref="R?"  Part="1" 
+AR Path="/6095A004/6197E1A5" Ref="R118"  Part="1" 
+F 0 "R118" H 9400 3709 59  0000 L BNN
+F 1 "33" H 9400 3520 59  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9550 3650 50  0001 C CNN
+F 3 "" H 9550 3650 50  0001 C CNN
+F 4 "RC0603FR-0733RL" H 9550 3650 50  0001 C CNN "Manf#"
+	1    9550 3650
+	0    1    1    0   
+$EndComp
+Text Notes 11400 4000 0    39   ~ 0
+Some inputs will come from other\nwires and connectors
+Text Label 11450 2250 0    50   ~ 0
+IN[0]
 Wire Bus Line
-	600  700  600  8350
+	3050 9200 600  9200
 Wire Bus Line
 	2600 1100 2600 8750
 Wire Bus Line
 	2800 700  2800 8350
 Wire Bus Line
-	3050 700  3050 8350
-Wire Bus Line
 	5050 1100 5050 8750
 Wire Bus Line
 	5250 700  5250 8350
+Wire Bus Line
+	3050 700  3050 9200
+Wire Bus Line
+	600  700  600  9200
+Text HLabel 3050 8950 0    39   Output ~ 0
+IN[0..15]
+$Comp
+L Connector_Generic:Conn_02x16_Odd_Even J?
+U 1 1 628D76E6
+P 11900 2950
+F 0 "J?" H 11950 3867 50  0000 C CNN
+F 1 "Conn_02x16_Odd_Even" H 11950 3776 50  0000 C CNN
+F 2 "" H 11900 2950 50  0001 C CNN
+F 3 "~" H 11900 2950 50  0001 C CNN
+	1    11900 2950
+	1    0    0    -1  
+$EndComp
+Text Notes 11450 1950 0    39   ~ 0
+Board edge
 $EndSCHEMATC

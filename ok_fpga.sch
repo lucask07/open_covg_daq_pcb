@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr User 12505 8743
 encoding utf-8
-Sheet 8 10
+Sheet 6 10
 Title ""
 Date ""
 Rev ""
@@ -69,17 +69,6 @@ F 3 "" H 900 7900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L adc_dac_v1-eagle-import:M-2X10-87759_M P2
-U 1 1 166FC715
-P 4800 6300
-F 0 "P2" H 4650 6830 59  0000 L BNN
-F 1 "M-2X10-87759_M" H 4650 5600 59  0000 L BNN
-F 2 "adc_dac_v1:87759-20_M" H 4800 6300 50  0001 C CNN
-F 3 "" H 4800 6300 50  0001 C CNN
-	1    4800 6300
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_US R153
 U 1 1 19684600
 P 6300 6300
@@ -101,39 +90,39 @@ F 3 "" H 6600 6400 50  0001 C CNN
 	1    6600 6400
 	1    0    0    -1  
 $EndComp
-Text GLabel 3900 5900 2    70   BiDi ~ 0
+Text GLabel 4000 5900 2    70   BiDi ~ 0
 D0_CSB
 Text GLabel 3000 2900 2    50   BiDi ~ 0
 D0_CSB
-Text GLabel 3900 6000 2    70   BiDi ~ 0
+Text GLabel 4000 6000 2    70   BiDi ~ 0
 D0_SDI
 Text GLabel 3000 3000 2    50   BiDi ~ 0
 D0_SDI
-Text GLabel 3900 6100 2    70   BiDi ~ 0
+Text GLabel 4000 6100 2    70   BiDi ~ 0
 D0_SCLK
 Text GLabel 3000 3100 2    50   BiDi ~ 0
 D0_SCLK
-Text Label 3900 6200 0    70   ~ 0
+Text Label 4000 6200 0    70   ~ 0
 GP_0
 Text Label 5500 3800 0    50   ~ 0
 GP_0
-Text Label 3900 6300 0    70   ~ 0
+Text Label 4000 6300 0    70   ~ 0
 GP_1
 Text Label 3000 3900 0    50   ~ 0
 GP_1
-Text Label 3900 6400 0    70   ~ 0
+Text Label 4000 6400 0    70   ~ 0
 GP_2
 Text Label 5500 3900 0    50   ~ 0
 GP_2
-Text Label 3900 6500 0    70   ~ 0
+Text Label 4000 6500 0    70   ~ 0
 GP_3
 Text Label 3000 4000 0    50   ~ 0
 GP_3
-Text Label 3900 6600 0    70   ~ 0
+Text Label 4000 6600 0    70   ~ 0
 GP_4
 Text Label 5500 4000 0    50   ~ 0
 GP_4
-Text Label 3900 6700 0    70   ~ 0
+Text Label 4000 6700 0    70   ~ 0
 GP_5
 Text Label 3000 4100 0    50   ~ 0
 GP_5
@@ -432,43 +421,43 @@ A3_EN0_HV
 Text GLabel 8300 3500 2    50   BiDi ~ 0
 A3_EN0_HV
 Wire Wire Line
-	3900 5900 4500 5900
+	4000 5900 4600 5900
 Wire Wire Line
 	2900 2900 3000 2900
 Wire Wire Line
-	3900 6000 4500 6000
+	4000 6000 4600 6000
 Wire Wire Line
 	2900 3000 3000 3000
 Wire Wire Line
-	4500 6100 3900 6100
+	4600 6100 4000 6100
 Wire Wire Line
 	2900 3100 3000 3100
 Wire Wire Line
-	4500 6200 3900 6200
+	4600 6200 4000 6200
 Wire Wire Line
 	5400 3800 5500 3800
 Wire Wire Line
-	4500 6300 3900 6300
+	4600 6300 4000 6300
 Wire Wire Line
 	2900 3900 3000 3900
 Wire Wire Line
-	4500 6400 3900 6400
+	4600 6400 4000 6400
 Wire Wire Line
 	5400 3900 5500 3900
 Wire Wire Line
-	4500 6500 3900 6500
+	4600 6500 4000 6500
 Wire Wire Line
 	2900 4000 3000 4000
 Wire Wire Line
-	4500 6600 3900 6600
+	4600 6600 4000 6600
 Wire Wire Line
 	5400 4000 5500 4000
 Wire Wire Line
-	4500 6700 3900 6700
+	4600 6700 4000 6700
 Wire Wire Line
 	2900 4100 3000 4100
 Wire Wire Line
-	4500 6800 3900 6800
+	4600 6800 4000 6800
 Wire Wire Line
 	5100 6800 5400 6800
 Wire Wire Line
@@ -816,12 +805,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0144
 U 1 1 60BB36D1
-P 3900 6800
-F 0 "#PWR0144" H 3900 6550 50  0001 C CNN
-F 1 "GND" H 3905 6627 50  0001 C CNN
-F 2 "" H 3900 6800 50  0001 C CNN
-F 3 "" H 3900 6800 50  0001 C CNN
-	1    3900 6800
+P 4000 6800
+F 0 "#PWR0144" H 4000 6550 50  0001 C CNN
+F 1 "GND" H 4005 6627 50  0001 C CNN
+F 2 "" H 4000 6800 50  0001 C CNN
+F 3 "" H 4000 6800 50  0001 C CNN
+	1    4000 6800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -950,4 +939,15 @@ Wire Wire Line
 Connection ~ 6500 6000
 Wire Wire Line
 	6500 6000 6600 6000
+$Comp
+L Connector_Generic:Conn_02x10_Odd_Even J?
+U 1 1 629450E5
+P 4800 6300
+F 0 "J?" H 4850 6917 50  0000 C CNN
+F 1 "Conn_02x10_Odd_Even" H 4850 6826 50  0000 C CNN
+F 2 "" H 4800 6300 50  0001 C CNN
+F 3 "~" H 4800 6300 50  0001 C CNN
+	1    4800 6300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

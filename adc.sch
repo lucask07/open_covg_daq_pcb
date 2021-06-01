@@ -277,17 +277,6 @@ F 3 "" H 2450 2850 50  0001 C CNN
 	1    2450 2850
 	1    0    0    -1  
 $EndComp
-$Comp
-L adc_dac_v1-eagle-import:PINHD-1X04_2.54-SMD JP1
-U 1 1 93E45719
-P 9100 3800
-F 0 "JP1" H 8850 4125 59  0000 L BNN
-F 1 "PINHD-1X04_2.54-SMD" H 8850 3500 59  0000 L BNN
-F 2 "adc_dac_v1:1X04SMD" H 9100 3800 50  0001 C CNN
-F 3 "" H 9100 3800 50  0001 C CNN
-	1    9100 3800
-	-1   0    0    -1  
-$EndComp
 Text Label 5050 4000 0    70   ~ 0
 VCM
 Text GLabel 2250 4000 0    47   BiDi ~ 0
@@ -299,10 +288,10 @@ A_EN3
 Text Label 6850 3400 2    70   ~ 0
 IN_P_LP
 Text Notes 650  1200 0    59   ~ 0
-Use internal buffer (x2) with 2.048V ref.  \n “External reference of 2.048 V applied to the REFIN pin\n(high impedance input). The on-chip buffer gains this by 2\nand drives the REF pin with 4.096 V” \nEN3=X, EN2=0, EN1=0, EN0=1 (28 MHz BW)\nEN3=X, EN2=1, EN1=0, EN0=1 (9 MHz BW)
+Use internal buffer (x2) with 2.048V ref.  \n “External reference of 2.048 V applied to the REFIN pin\n(high impedance input). The on-chip buffer gains this by 2\nand drives the REF pin with 4.096 V” \nEN3=X, EN2=0, EN1=0, EN0=1 (28 MHz BW)\nEN3=X, EN2=1, EN1=0, EN0=1 (9 MHz BW, use this BW only when the throughput is 2 MSPS or lower)
 Text Notes 650  1450 0    59   ~ 0
 VDD2 and VIO can come from the same supply. \nBut route and decouple separately.
-Text Notes 9000 3800 2    59   ~ 0
+Text Notes 8900 3800 2    59   ~ 0
 Alternative signal connection\nor ground the inputs
 Wire Wire Line
 	1850 3600 2050 3600
@@ -484,15 +473,14 @@ Wire Wire Line
 $Comp
 L power:+1V8 #PWR0104
 U 1 1 61635B4D
-P 3850 2500
-F 0 "#PWR0104" H 3850 2350 50  0001 C CNN
-F 1 "+1V8" H 3865 2673 50  0000 C CNN
-F 2 "" H 3850 2500 50  0001 C CNN
-F 3 "" H 3850 2500 50  0001 C CNN
-	1    3850 2500
+P 3850 2400
+F 0 "#PWR0104" H 3850 2250 50  0001 C CNN
+F 1 "+1V8" H 3865 2573 50  0000 C CNN
+F 2 "" H 3850 2400 50  0001 C CNN
+F 3 "" H 3850 2400 50  0001 C CNN
+	1    3850 2400
 	1    0    0    -1  
 $EndComp
-Connection ~ 3850 2500
 $Comp
 L power:+1V8 #PWR0105
 U 1 1 6163E761
@@ -784,4 +772,18 @@ Text HLabel 9650 3400 2    50   Input ~ 0
 IN_P
 Text HLabel 2250 3900 0    50   Input ~ 0
 A_EN0
+$Comp
+L Connector:Conn_01x04_Male J?
+U 1 1 628E78F9
+P 9000 3700
+F 0 "J?" H 9108 3981 50  0000 C CNN
+F 1 "Conn_01x04_Male" H 9108 3890 50  0000 C CNN
+F 2 "" H 9000 3700 50  0001 C CNN
+F 3 "~" H 9000 3700 50  0001 C CNN
+	1    9000 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 2400 3850 2500
+Connection ~ 3850 2500
 $EndSCHEMATC
