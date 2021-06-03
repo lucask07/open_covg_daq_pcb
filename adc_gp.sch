@@ -2622,7 +2622,7 @@ Wire Wire Line
 	8500 2450 9750 2450
 Text HLabel 9700 2200 2    50   Output ~ 0
 BUSY
-Text HLabel 9050 2050 2    50   Input ~ 0
+Text HLabel 8750 2050 2    50   Input ~ 0
 CONVST
 Text HLabel 10300 3650 2    50   Output ~ 0
 SDOA
@@ -3043,8 +3043,8 @@ REFIO: most guidance is 0.1uF bypass (including EVM schematics), \nbut datasheet
 Text Notes 8750 7250 0    39   ~ 0
 Must by pulled up by FPGA to enable.\n3.3 V level.
 Wire Wire Line
-	7900 2050 9050 2050
-Text Notes 9150 2000 0    50   ~ 0
+	7900 2050 8750 2050
+Text Notes 8800 2000 0    50   ~ 0
 input
 Text Notes 10000 2400 0    50   ~ 0
 input
@@ -3074,18 +3074,6 @@ Text Label 11450 2250 0    50   ~ 0
 IN[0]
 Wire Bus Line
 	3050 9200 600  9200
-Wire Bus Line
-	2600 1100 2600 8750
-Wire Bus Line
-	2800 700  2800 8350
-Wire Bus Line
-	5050 1100 5050 8750
-Wire Bus Line
-	5250 700  5250 8350
-Wire Bus Line
-	3050 700  3050 9200
-Wire Bus Line
-	600  700  600  9200
 Text HLabel 3050 8950 0    39   Output ~ 0
 IN[0..15]
 $Comp
@@ -3101,4 +3089,16 @@ F 3 "~" H 11900 2950 50  0001 C CNN
 $EndComp
 Text Notes 11450 1950 0    39   ~ 0
 Board edge
+Wire Bus Line
+	2600 1100 2600 8750
+Wire Bus Line
+	2800 700  2800 8350
+Wire Bus Line
+	5050 1100 5050 8750
+Wire Bus Line
+	5250 700  5250 8350
+Wire Bus Line
+	3050 700  3050 9200
+Wire Bus Line
+	600  700  600  9200
 $EndSCHEMATC

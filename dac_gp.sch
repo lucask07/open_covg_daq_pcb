@@ -162,7 +162,7 @@ Text HLabel 2000 1500 0    50   Input ~ 0
 SCLK
 Text HLabel 2000 1600 0    50   Input ~ 0
 SDI
-Text HLabel 2000 1700 0    50   Output ~ 0
+Text HLabel 1650 1700 0    50   Output ~ 0
 SDO
 Text HLabel 2000 1800 0    50   Input ~ 0
 CSB
@@ -912,7 +912,7 @@ Wire Wire Line
 Wire Wire Line
 	5500 3050 5500 5250
 Connection ~ 5500 5250
-Text HLabel 11650 2100 1    50   Input ~ 0
+Text HLabel 11650 2100 1    50   Output ~ 0
 DAC_CAL[0..3]
 Text HLabel 9150 3450 2    50   Input ~ 0
 ISEL[0..3]
@@ -1716,6 +1716,21 @@ Connection ~ 6900 2000
 Connection ~ 7500 2000
 Wire Wire Line
 	7500 2000 7500 1250
+$Comp
+L Device:R_US R?
+U 1 1 617C87E1
+P 1850 1700
+AR Path="/6095A38A/617C87E1" Ref="R?"  Part="1" 
+AR Path="/6095BD4C/617C87E1" Ref="R?"  Part="1" 
+F 0 "R?" H 1700 1800 59  0000 L BNN
+F 1 "33" H 1700 1500 59  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1850 1700 50  0001 C CNN
+F 3 "" H 1850 1700 50  0001 C CNN
+	1    1850 1700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1700 1700 1650 1700
 Wire Bus Line
 	9150 2000 9150 5250
 Wire Bus Line
