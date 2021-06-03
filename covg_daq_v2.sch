@@ -14,25 +14,25 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 7150 2200 500  150 
+S 9550 1100 500  150 
 U 6095A38A
 F0 "level_shifters" 50
 F1 "level_shifters.sch" 50
 $EndSheet
 $Sheet
-S 8900 950  500  150 
+S 9550 650  500  150 
 U 6095BD4C
 F0 "dac_gp" 50
 F1 "dac_gp.sch" 50
 $EndSheet
 $Sheet
-S 8900 2300 500  150 
+S 10300 1100 500  150 
 U 6095BE10
 F0 "power" 50
 F1 "power.sch" 50
 $EndSheet
 $Sheet
-S 7200 900  500  150 
+S 5500 2850 500  150 
 U 6095A302
 F0 "ok_fpga" 50
 F1 "ok_fpga.sch" 50
@@ -89,21 +89,22 @@ Connection ~ 1050 7450
 Wire Wire Line
 	1050 7450 1150 7450
 $Sheet
-S 2350 5350 1050 950 
+S 2350 5350 1050 1050
 U 6095A697
 F0 "adc" 50
 F1 "adc.sch" 50
 F2 "CNV_P" I R 3400 5400 50 
 F3 "CNV_N" I R 3400 5500 50 
-F4 "D_N" O R 3400 5600 50 
-F5 "DCO_N" O R 3400 5700 50 
+F4 "D_N" O R 3400 5700 50 
+F5 "DCO_N" O R 3400 5900 50 
 F6 "DCO_P" O R 3400 5800 50 
-F7 "CLK_N" I R 3400 5900 50 
+F7 "CLK_N" I R 3400 6100 50 
 F8 "CLK_P" I R 3400 6000 50 
 F9 "VCM_OUT" O L 2350 6050 50 
 F10 "IN_N" I L 2350 5650 50 
 F11 "IN_P" I L 2350 5550 50 
-F12 "A_EN0" I R 3400 6200 50 
+F12 "A_EN0" I R 3400 6300 50 
+F13 "D_P" O R 3400 5600 50 
 $EndSheet
 $Sheet
 S 2750 4300 650  350 
@@ -160,7 +161,7 @@ F 3 "~" H 1700 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Sheet
-S 8900 3600 500  150 
+S 10300 650  500  150 
 U 6095A004
 F0 "adc_gp" 50
 F1 "adc_gp.sch" 50

@@ -755,7 +755,7 @@ CNV_N
 Text HLabel 3250 5100 3    50   Output ~ 0
 D_N
 Text HLabel 3350 5100 3    50   Output ~ 0
-D_N
+D_P
 Text HLabel 3650 5300 3    50   Output ~ 0
 DCO_N
 Text HLabel 3750 5300 3    50   Output ~ 0
