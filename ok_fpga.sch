@@ -26,17 +26,6 @@ F 3 "" H 2500 2600 50  0001 C CNN
 $EndComp
 $Comp
 L covg-kicad:OPALKELLY_XEM7310 OK1
-U 2 1 DA224999
-P 5000 2600
-F 0 "OK1" H 5200 4610 70  0000 R BNN
-F 1 "OPALKELLY_XEM6310" H 5000 2600 50  0001 C CNN
-F 2 "covg-kicad:OPALKELLY_XEM6010" H 5000 2600 50  0001 C CNN
-F 3 "" H 5000 2600 50  0001 C CNN
-	2    5000 2600
-	1    0    0    -1  
-$EndComp
-$Comp
-L covg-kicad:OPALKELLY_XEM7310 OK1
 U 3 1 DA22499D
 P 7800 2600
 F 0 "OK1" H 8000 4610 70  0000 R BNN
@@ -79,41 +68,29 @@ F 3 "" H 15450 7850 50  0001 C CNN
 	1    15450 7850
 	1    0    0    -1  
 $EndComp
-Text HLabel 12850 7350 2    70   BiDi ~ 0
+Text HLabel 12850 7350 2    70   Output ~ 0
 D0_CSB
-Text HLabel 3000 2700 2    50   BiDi ~ 0
+Text HLabel 3000 2700 2    50   Output ~ 0
 D0_CSB
-Text HLabel 12850 7450 2    70   BiDi ~ 0
+Text HLabel 12850 7450 2    70   Input ~ 0
 D0_SDI
-Text HLabel 3000 2800 2    50   BiDi ~ 0
+Text HLabel 3000 2800 2    50   Input ~ 0
 D0_SDI
-Text HLabel 12850 7550 2    70   BiDi ~ 0
+Text HLabel 12850 7550 2    70   Output ~ 0
 D0_SCLK
-Text HLabel 3000 2900 2    50   BiDi ~ 0
+Text HLabel 3000 2900 2    50   Output ~ 0
 D0_SCLK
 Text Label 12850 7650 0    70   ~ 0
 GP_0
-Text Label 5500 3600 0    50   ~ 0
-GP_0
 Text Label 12850 7750 0    70   ~ 0
-GP_1
-Text Label 3000 3700 0    50   ~ 0
 GP_1
 Text Label 12850 7850 0    70   ~ 0
 GP_2
-Text Label 5500 3700 0    50   ~ 0
-GP_2
 Text Label 12850 7950 0    70   ~ 0
-GP_3
-Text Label 3000 3800 0    50   ~ 0
 GP_3
 Text Label 12850 8050 0    70   ~ 0
 GP_4
-Text Label 5500 3800 0    50   ~ 0
-GP_4
 Text Label 12850 8150 0    70   ~ 0
-GP_5
-Text Label 3000 3900 0    50   ~ 0
 GP_5
 Text Label 14250 7350 0    70   ~ 0
 GP_6
@@ -135,179 +112,107 @@ Text Label 11000 800  0    50   ~ 0
 JP1-4
 Text Label 11000 900  0    50   ~ 0
 JP1-6
-Text HLabel 8300 2600 2    50   BiDi ~ 0
+Text HLabel 8300 2600 2    50   Input ~ 0
 A1_D_N
-Text HLabel 8300 2800 2    50   BiDi ~ 0
+Text HLabel 8300 2800 2    50   Input ~ 0
 A1_DCO_N
-Text HLabel 11100 1500 2    50   BiDi ~ 0
+Text HLabel 11100 1500 2    50   Output ~ 0
 A3_CNV_N
-Text HLabel 11100 1700 2    50   BiDi ~ 0
+Text HLabel 11100 1700 2    50   Output ~ 0
 A3_D_N
-Text HLabel 11100 1900 2    50   BiDi ~ 0
+Text HLabel 11100 1900 2    50   Input ~ 0
 A3_DCO_N
-Text HLabel 8300 2500 2    50   BiDi ~ 0
+Text HLabel 8300 2500 2    50   Input ~ 0
 A1_D_P
-Text HLabel 11100 1600 2    50   BiDi ~ 0
+Text HLabel 11100 1600 2    50   Input ~ 0
 A3_D_P
-Text HLabel 11100 1800 2    50   BiDi ~ 0
+Text HLabel 11100 1800 2    50   Input ~ 0
 A3_DCO_P
-Text HLabel 8300 3800 2    50   BiDi ~ 0
+Text HLabel 8300 3800 2    50   Output ~ 0
 A2_CLK_P
-Text HLabel 8300 2700 2    50   BiDi ~ 0
+Text HLabel 8300 2700 2    50   Input ~ 0
 A1_DCO_P
-Text HLabel 11100 1400 2    50   BiDi ~ 0
+Text HLabel 11100 1400 2    50   Output ~ 0
 A3_CNV_P
-Text HLabel 8300 2300 2    50   BiDi ~ 0
+Text HLabel 8300 2300 2    50   Output ~ 0
 A1_CNV_N
-Text HLabel 8300 2200 2    50   BiDi ~ 0
+Text HLabel 8300 2200 2    50   Output ~ 0
 A1_CNV_P
-Text Label 11000 1300 0    50   ~ 0
-JP1-14
 Text HLabel 14700 7150 2    50   BiDi ~ 0
 LS0_EN
-Text Label 11000 1100 0    50   ~ 0
-JP1-10
-Text Label 8300 1000 0    50   ~ 0
-JP1-7
-Text Label 8300 1100 0    50   ~ 0
-JP1-9
-Text Label 8300 1200 0    50   ~ 0
-JP1-11
-Text Label 8300 1300 0    50   ~ 0
-JP1-13
-Text Label 8300 700  0    50   ~ 0
-JP1-1
-Text Label 8300 800  0    50   ~ 0
-JP1-3
-Text Label 8300 900  0    50   ~ 0
-JP1-5
-Text HLabel 8300 1500 2    50   BiDi ~ 0
+Text HLabel 8300 1500 2    50   Output ~ 0
 A0_CNV_N
-Text HLabel 8300 3000 2    50   BiDi ~ 0
+Text HLabel 8300 3000 2    50   Output ~ 0
 A1_CLK_N
-Text HLabel 11100 2100 2    50   BiDi ~ 0
+Text HLabel 11100 2100 2    50   Output ~ 0
 A3_CLK_N
-Text HLabel 8300 3200 2    50   BiDi ~ 0
+Text HLabel 8300 3200 2    50   Output ~ 0
 A2_CNV_N
-Text HLabel 8300 3500 2    50   BiDi ~ 0
+Text HLabel 8300 3500 2    50   Input ~ 0
 A2_D_N
-Text HLabel 8300 3700 2    50   BiDi ~ 0
+Text HLabel 8300 3700 2    50   Input ~ 0
 A2_DCO_N
-Text HLabel 8300 3900 2    50   BiDi ~ 0
+Text HLabel 8300 3900 2    50   Output ~ 0
 A2_CLK_N
-Text HLabel 8300 2900 2    50   BiDi ~ 0
+Text HLabel 8300 2900 2    50   Output ~ 0
 A1_CLK_P
-Text HLabel 8300 1400 2    50   BiDi ~ 0
+Text HLabel 8300 1400 2    50   Output ~ 0
 A0_CNV_P
-Text HLabel 11100 2000 2    50   BiDi ~ 0
+Text HLabel 11100 2000 2    50   Output ~ 0
 A3_CLK_P
-Text HLabel 8300 3100 2    50   BiDi ~ 0
+Text HLabel 8300 3100 2    50   Output ~ 0
 A2_CNV_P
-Text HLabel 8300 1700 2    50   BiDi ~ 0
+Text HLabel 8300 1700 2    50   Input ~ 0
 A0_D_N
-Text HLabel 8300 3300 2    50   BiDi ~ 0
+Text HLabel 8300 3300 2    50   Input ~ 0
 A2_D_P
-Text HLabel 8300 3600 2    50   BiDi ~ 0
+Text HLabel 8300 3600 2    50   Input ~ 0
 A2_DCO_P
-Text HLabel 8300 2000 2    50   BiDi ~ 0
+Text HLabel 8300 2000 2    50   Output ~ 0
 A0_CLK_P
-Text HLabel 8300 2100 2    50   BiDi ~ 0
+Text HLabel 8300 2100 2    50   Output ~ 0
 A0_CLK_N
-Text HLabel 8300 1600 2    50   BiDi ~ 0
+Text HLabel 8300 1600 2    50   Input ~ 0
 A0_D_P
-Text HLabel 8300 1900 2    50   BiDi ~ 0
+Text HLabel 8300 1900 2    50   Output ~ 0
 A0_DCO_N
-Text HLabel 8300 1800 2    50   BiDi ~ 0
+Text HLabel 8300 1800 2    50   Output ~ 0
 A0_DCO_P
-Text Label 5500 700  0    50   ~ 0
-JP2-2
-Text Label 5500 800  0    50   ~ 0
-JP2-4
-Text Label 5500 900  0    50   ~ 0
-JP2-6
-Text HLabel 5500 1800 2    50   BiDi ~ 0
-LS_IN4
-Text Label 5500 1900 0    50   ~ 0
-JP2-26
-Text HLabel 5500 2000 2    50   BiDi ~ 0
-DS_SDA
-Text HLabel 5500 2100 2    50   BiDi ~ 0
-DS_SCL
-Text HLabel 5500 1500 2    50   BiDi ~ 0
+Text HLabel 5500 1900 2    50   Output ~ 0
+ADCS_CONVST
+Text HLabel 5500 2100 2    50   Output ~ 0
+DS_SDO
+Text HLabel 5500 2200 2    50   Output ~ 0
+DS_SCLK
+Text HLabel 5500 1600 2    50   Input ~ 0
 ADCS_SDI
-Text HLabel 5500 1400 2    50   BiDi ~ 0
-ADCS_SDO
-Text HLabel 5500 1600 2    50   BiDi ~ 0
-ADCS_SCLK
+Text HLabel 5500 1500 2    50   Input ~ 0
+ADCS_SDOA
 Text HLabel 5500 1700 2    50   BiDi ~ 0
+ADCS_SDOB
+Text HLabel 5500 1800 2    50   Output ~ 0
 ADCS_CSB
-Text Label 5500 1000 0    50   ~ 0
-JP2-8
-Text Label 5500 2600 0    50   ~ 0
-JP2-40
-Text Label 5500 2500 0    50   ~ 0
-JP2-38
-Text Label 5500 2300 0    50   ~ 0
-JP2-34
-Text HLabel 5500 3500 2    50   BiDi ~ 0
-GPIO_3V3_1
-Text Label 5500 2200 0    50   ~ 0
-DS_CLRB
-Text Label 5500 3300 0    50   ~ 0
-JP2-54
-Text Label 5500 3100 0    50   ~ 0
-JP2-50
-Text Label 5500 3200 0    50   ~ 0
-JP2-52
-Text Label 5500 2900 0    50   ~ 0
-JP2-46
-Text Label 5500 3000 0    50   ~ 0
-JP2-48
-Text Label 5500 2700 0    50   ~ 0
-JP2-42
-Text Label 5500 2800 0    50   ~ 0
-JP2-44
-Text Label 5500 1100 0    50   ~ 0
-JP2-10
-Text Label 3000 2400 0    50   ~ 0
-JP2-35
-Text Label 3000 3400 0    50   ~ 0
-JP2-55
-Text Label 3000 1400 0    50   ~ 0
-JP2-15
-Text HLabel 3000 2300 2    50   BiDi ~ 0
+Text HLabel 3000 2300 2    50   Output ~ 0
 D2_CSB
-Text HLabel 3000 2000 2    50   BiDi ~ 0
+Text HLabel 3000 2000 2    50   Output ~ 0
 D3_CSB
-Text Label 3000 4500 0    50   ~ 0
-JP2-77
-Text Label 3000 4600 0    50   ~ 0
-JP2-79
-Text Label 3000 900  0    50   ~ 0
-JP2-5
-Text Label 3000 1100 0    50   ~ 0
-JP2-9
-Text Label 3000 1000 0    50   ~ 0
-JP2-7
-Text Label 3000 3300 0    50   ~ 0
-JP2-53
-Text HLabel 3000 3100 2    50   BiDi ~ 0
+Text HLabel 3000 3100 2    50   Input ~ 0
 D1_SDI
-Text HLabel 3000 3200 2    50   BiDi ~ 0
+Text HLabel 3000 3200 2    50   Output ~ 0
 D1_SCLK
-Text HLabel 3000 3000 2    50   BiDi ~ 0
+Text HLabel 3000 3000 2    50   Output ~ 0
 D1_CSB
-Text HLabel 3000 2500 2    50   BiDi ~ 0
+Text HLabel 3000 2500 2    50   Input ~ 0
 D2_SDI
 Text HLabel 3000 2600 2    50   BiDi ~ 0
 D2_SCLK
-Text Label 11100 3800 0    50   ~ 0
+Text Label 11000 2900 0    50   ~ 0
 A0_EN0_HV
-Text Label 11100 3900 0    50   ~ 0
+Text Label 11000 3000 0    50   ~ 0
 A1_EN0_HV
-Text Label 11100 4000 0    50   ~ 0
+Text Label 11000 3100 0    50   ~ 0
 A2_EN0_HV
-Text Label 11100 4100 0    50   ~ 0
+Text Label 11000 3200 0    50   ~ 0
 A3_EN0_HV
 Wire Wire Line
 	12850 7350 13450 7350
@@ -324,27 +229,15 @@ Wire Wire Line
 Wire Wire Line
 	13450 7650 12850 7650
 Wire Wire Line
-	5400 3600 5500 3600
-Wire Wire Line
 	13450 7750 12850 7750
-Wire Wire Line
-	2900 3700 3000 3700
 Wire Wire Line
 	13450 7850 12850 7850
 Wire Wire Line
-	5400 3700 5500 3700
-Wire Wire Line
 	13450 7950 12850 7950
-Wire Wire Line
-	2900 3800 3000 3800
 Wire Wire Line
 	13450 8050 12850 8050
 Wire Wire Line
-	5400 3800 5500 3800
-Wire Wire Line
 	13450 8150 12850 8150
-Wire Wire Line
-	2900 3900 3000 3900
 Wire Wire Line
 	13450 8250 12850 8250
 Wire Wire Line
@@ -448,8 +341,6 @@ Wire Wire Line
 Wire Wire Line
 	8200 2100 8300 2100
 Wire Wire Line
-	8050 4000 8150 4000
-Wire Wire Line
 	8200 4200 8300 4200
 Wire Wire Line
 	8200 3600 8300 3600
@@ -486,21 +377,19 @@ Wire Wire Line
 Wire Wire Line
 	5400 4300 5500 4300
 Wire Wire Line
-	5400 1800 5500 1800
-Wire Wire Line
 	5400 1900 5500 1900
-Wire Wire Line
-	5400 2000 5500 2000
 Wire Wire Line
 	5400 2100 5500 2100
 Wire Wire Line
-	5400 1500 5500 1500
-Wire Wire Line
-	5400 1400 5500 1400
+	5400 2200 5500 2200
 Wire Wire Line
 	5400 1600 5500 1600
 Wire Wire Line
+	5400 1500 5500 1500
+Wire Wire Line
 	5400 1700 5500 1700
+Wire Wire Line
+	5400 1800 5500 1800
 Wire Wire Line
 	5400 1000 5500 1000
 Wire Wire Line
@@ -508,11 +397,7 @@ Wire Wire Line
 Wire Wire Line
 	5400 2500 5500 2500
 Wire Wire Line
-	5400 2300 5500 2300
-Wire Wire Line
 	5400 3500 5500 3500
-Wire Wire Line
-	5400 2200 5500 2200
 Wire Wire Line
 	5400 3300 5500 3300
 Wire Wire Line
@@ -530,45 +415,23 @@ Wire Wire Line
 Wire Wire Line
 	5400 1100 5500 1100
 Wire Wire Line
-	2900 2400 3000 2400
-Wire Wire Line
-	2900 3400 3000 3400
-Wire Wire Line
 	2900 4400 3000 4400
-Wire Wire Line
-	2900 1800 3000 1800
-Wire Wire Line
-	2900 1900 3000 1900
 Wire Wire Line
 	2900 1400 3000 1400
 Wire Wire Line
 	2900 1500 3000 1500
 Wire Wire Line
-	2900 1700 3000 1700
-Wire Wire Line
 	2900 1600 3000 1600
-Wire Wire Line
-	2900 3600 3000 3600
 Wire Wire Line
 	2900 2300 3000 2300
 Wire Wire Line
 	2900 2000 3000 2000
 Wire Wire Line
-	2900 4500 3000 4500
-Wire Wire Line
 	2900 4600 3000 4600
-Wire Wire Line
-	2900 900  3000 900 
-Wire Wire Line
-	2900 1100 3000 1100
-Wire Wire Line
-	2900 1000 3000 1000
 Wire Wire Line
 	2900 2200 3000 2200
 Wire Wire Line
 	2900 2100 3000 2100
-Wire Wire Line
-	2900 3300 3000 3300
 Wire Wire Line
 	2900 3100 3000 3100
 Wire Wire Line
@@ -926,22 +789,11 @@ A_EN1_HV
 Text Label 600  7750 0    39   ~ 0
 A_EN3_HV
 Text Label 600  7850 0    39   ~ 0
-GPIO_3V3_0
+GPIO_2V5_0
 Text Label 3600 7850 0    47   ~ 0
 GPIO_1V8_0
 Wire Wire Line
 	4150 7450 4250 7450
-$Comp
-L power:+3V3 #PWR?
-U 1 1 60EE2E16
-P 900 7350
-F 0 "#PWR?" H 900 7200 50  0001 C CNN
-F 1 "+3V3" V 915 7478 50  0000 L CNN
-F 2 "" H 900 7350 50  0001 C CNN
-F 3 "" H 900 7350 50  0001 C CNN
-	1    900  7350
-	0    -1   -1   0   
-$EndComp
 Text Notes 2150 7500 0    39   ~ 0
 Level shifter is not for I2C 
 Text Notes 2100 7400 0    50   ~ 0
@@ -1062,24 +914,20 @@ Wire Wire Line
 Wire Wire Line
 	10900 3400 11400 3400
 Wire Wire Line
-	11100 4100 10900 4100
+	11100 3200 10900 3200
 Wire Wire Line
-	11100 4000 10900 4000
+	11100 3100 10900 3100
 Wire Wire Line
-	11100 3900 10900 3900
+	11100 3000 10900 3000
 Wire Wire Line
-	11100 3800 10900 3800
+	11100 2900 10900 2900
 Wire Wire Line
-	10900 4200 11100 4200
-Text Label 11100 4200 0    50   ~ 0
+	10900 3300 11100 3300
+Text Label 11000 3300 0    50   ~ 0
 A_EN1_HV
-Wire Wire Line
-	10900 4300 11100 4300
-Text Label 11100 4300 0    50   ~ 0
+Text Label 11000 3500 0    50   ~ 0
 A_EN2_HV
-Wire Wire Line
-	10900 4400 11100 4400
-Text Label 11100 4400 0    50   ~ 0
+Text Label 11000 3600 0    50   ~ 0
 A_EN3_HV
 Text Label 600  7650 0    39   ~ 0
 A_EN2_HV
@@ -1112,21 +960,13 @@ $EndComp
 Text Notes 600  5650 0    39   ~ 0
 These are global (for all ADC channels)\nEN0 is the only signal that needs FPGA control per ADC channel.\nDefault settings: \nEN3,EN2,EN1,EN0 \n0,0,0,FPGA (A_EN2_HV is high-Z)\n\ndriving EN2 high outputs test\npatterns on the LVDS interface
 Entry Bus Bus
-	11350 2500 11450 2600
+	11450 2500 11550 2600
 Entry Bus Bus
-	11350 2600 11450 2700
+	11450 2600 11550 2700
 Entry Bus Bus
-	11350 2700 11450 2800
+	11450 2700 11550 2800
 Entry Bus Bus
-	11350 2800 11450 2900
-Wire Wire Line
-	10900 2500 11350 2500
-Wire Wire Line
-	10900 2600 11350 2600
-Wire Wire Line
-	10900 2700 11350 2700
-Wire Wire Line
-	10900 2800 11350 2800
+	11450 2800 11550 2900
 Text Label 11000 2500 0    50   ~ 0
 ISEL[0]
 Text Label 11000 2600 0    50   ~ 0
@@ -1135,9 +975,9 @@ Text Label 11000 2700 0    50   ~ 0
 ISEL[2]
 Text Label 11000 2800 0    50   ~ 0
 ISEL[3]
-Text HLabel 11450 2600 2    50   Output ~ 0
+Text HLabel 11550 2600 2    50   Output ~ 0
 ISEL[0..3]
-Text Notes 11450 2900 0    50   ~ 0
+Text Notes 11550 2900 0    50   ~ 0
 Ok for 2.5 V \nto TMUX since \nref to Gnd
 $Comp
 L SparkFun-Connectors:QWIIC_CONNECTORJS-1MM J?
@@ -1190,33 +1030,31 @@ Wire Wire Line
 $Comp
 L Device:R_US R?
 U 1 1 61945A84
-P 11200 6200
+P 11350 6200
 AR Path="/6095A38A/61945A84" Ref="R?"  Part="1" 
 AR Path="/6095A302/61945A84" Ref="R?"  Part="1" 
-F 0 "R?" H 11000 6300 59  0000 L BNN
-F 1 "3.3k" H 11000 6050 59  0000 L BNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 11200 6200 50  0001 C CNN
-F 3 "RC0603FR-073K3L" H 11200 6200 50  0001 C CNN
-	1    11200 6200
+F 0 "R?" H 11150 6300 59  0000 L BNN
+F 1 "3.3k" H 11150 6050 59  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 11350 6200 50  0001 C CNN
+F 3 "RC0603FR-073K3L" H 11350 6200 50  0001 C CNN
+	1    11350 6200
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:+3V3 #PWR?
 U 1 1 61945A8A
-P 11200 6000
+P 11350 6000
 AR Path="/6095A38A/61945A8A" Ref="#PWR?"  Part="1" 
 AR Path="/6095A302/61945A8A" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 11200 5850 50  0001 C CNN
-F 1 "+3V3" H 11215 6173 50  0000 C CNN
-F 2 "" H 11200 6000 50  0001 C CNN
-F 3 "" H 11200 6000 50  0001 C CNN
-	1    11200 6000
+F 0 "#PWR?" H 11350 5850 50  0001 C CNN
+F 1 "+3V3" H 11365 6173 50  0000 C CNN
+F 2 "" H 11350 6000 50  0001 C CNN
+F 3 "" H 11350 6000 50  0001 C CNN
+	1    11350 6000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	11200 6000 11200 6050
-Wire Wire Line
-	11200 6350 10950 6350
+	11350 6000 11350 6050
 Wire Wire Line
 	10950 5800 10950 6350
 $Comp
@@ -1559,8 +1397,6 @@ Wire Wire Line
 Wire Wire Line
 	600  6950 1000 6950
 Wire Wire Line
-	1000 7350 900  7350
-Wire Wire Line
 	2900 3500 3400 3500
 Text Label 3050 3500 0    50   ~ 0
 GPIO_3V3_0
@@ -1735,6 +1571,151 @@ Wire Wire Line
 	3550 5700 3650 5700
 Wire Wire Line
 	3650 5500 3650 5450
+Wire Wire Line
+	2900 3900 3350 3900
+Text Label 3050 3900 0    50   ~ 0
+QW_SCL
+Wire Wire Line
+	5400 3800 5950 3800
+Text Label 5650 3800 0    50   ~ 0
+QW_SDA
+Wire Wire Line
+	10950 6350 11350 6350
+Text Label 11000 6350 0    50   ~ 0
+QW_SCL
+Text Label 11000 6550 0    50   ~ 0
+QW_SDA
+Text HLabel 5500 2000 2    50   Input ~ 0
+ADCS_BUSY
+Wire Wire Line
+	5500 2000 5400 2000
+Text HLabel 5500 1400 2    50   Output ~ 0
+ADCS_SCLK
+Text HLabel 5500 2300 2    50   Output ~ 0
+DS_CSB
+Wire Wire Line
+	5500 2300 5400 2300
+Text HLabel 5500 2500 2    50   Input ~ 0
+DS_SDI
+Text Notes 6100 1700 0    50   ~ 0
+ADS8686\n16-chan ADC
+Text Notes 6100 2250 0    50   ~ 0
+DAC80508\n8-chan
+$Comp
+L power:+2V5 #PWR?
+U 1 1 6236F939
+P 800 7350
+F 0 "#PWR?" H 800 7200 50  0001 C CNN
+F 1 "+2V5" V 815 7478 50  0000 L CNN
+F 2 "" H 800 7350 50  0001 C CNN
+F 3 "" H 800 7350 50  0001 C CNN
+	1    800  7350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	800  7350 1000 7350
+Wire Wire Line
+	10900 2500 11450 2500
+Wire Wire Line
+	10900 2600 11450 2600
+Wire Wire Line
+	10900 2700 11450 2700
+Wire Wire Line
+	10900 2800 11450 2800
+Wire Wire Line
+	10900 3500 11150 3500
+Wire Wire Line
+	10900 3600 11150 3600
+Wire Wire Line
+	10900 3700 11350 3700
+Text Label 11000 3700 0    50   ~ 0
+GPIO_2V5_0
+Wire Wire Line
+	2900 1700 3000 1700
+Wire Wire Line
+	2900 1900 3000 1900
+Wire Wire Line
+	2900 1800 3000 1800
+Text HLabel 3000 1700 2    50   Output ~ 0
+D4_CSB
+Text HLabel 3000 1900 2    50   Output ~ 0
+D4_SCLK
+Text HLabel 3000 1800 2    50   Input ~ 0
+D4_SDI
+Text HLabel 3000 1400 2    50   Output ~ 0
+D5_CSB
+Text HLabel 3000 1600 2    50   Output ~ 0
+D5_SCLK
+Text HLabel 3000 1500 2    50   Input ~ 0
+D5_SDI
+Text Notes 8450 4250 0    50   ~ 0
+7 @ 3.3V
+Text Notes 11050 4200 0    50   ~ 0
+7 @ 3.3V
+$Comp
+L power:GND #PWR?
+U 1 1 625A00C5
+P 11000 1300
+F 0 "#PWR?" H 11000 1050 50  0001 C CNN
+F 1 "GND" H 11005 1127 50  0001 C CNN
+F 2 "" H 11000 1300 50  0001 C CNN
+F 3 "" H 11000 1300 50  0001 C CNN
+	1    11000 1300
+	0    -1   -1   0   
+$EndComp
+Text Notes 11100 2250 0    50   ~ 0
+2 @ 2.5V
+Wire Wire Line
+	5500 1400 5400 1400
+$Comp
+L covg-kicad:OPALKELLY_XEM7310 OK1
+U 2 1 DA224999
+P 5000 2600
+F 0 "OK1" H 5200 4610 70  0000 R BNN
+F 1 "OPALKELLY_XEM6310" H 5000 2600 50  0001 C CNN
+F 2 "covg-kicad:OPALKELLY_XEM6010" H 5000 2600 50  0001 C CNN
+F 3 "" H 5000 2600 50  0001 C CNN
+	2    5000 2600
+	1    0    0    -1  
+$EndComp
+Text Notes 8400 300  0    50   ~ 0
+Do a check of skew matching between DCO and D \nfor high-speed ADC
+Text Notes 1350 2550 0    50   ~ 0
+3.3 V (leave open)
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 62797B03
+P 3750 4500
+F 0 "J?" H 3850 4475 50  0000 L CNN
+F 1 "Conn_Coaxial" H 3850 4384 50  0000 L CNN
+F 2 "" H 3750 4500 50  0001 C CNN
+F 3 " ~" H 3750 4500 50  0001 C CNN
+	1    3750 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 4500 3550 4500
+$Comp
+L power:GND #GND?
+U 1 1 627B4346
+P 3750 4750
+F 0 "#GND?" H 3750 4750 50  0001 C CNN
+F 1 "GND" H 3650 4650 59  0001 L BNN
+F 2 "" H 3750 4750 50  0001 C CNN
+F 3 "" H 3750 4750 50  0001 C CNN
+	1    3750 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 4750 3750 4700
 Wire Bus Line
-	11450 2600 11450 2900
+	11550 2600 11550 2900
+Text Notes 5700 2950 0    50   ~ 0
+11 @ 3.3V
+Text Notes 5700 1150 0    50   ~ 0
+3 @ 3.3 V
+Text Notes 3100 1200 0    50   ~ 0
+SYS_CLK not special other than name
+Text Notes 1350 3550 0    50   ~ 0
+3.3 V (leave open)
 $EndSCHEMATC

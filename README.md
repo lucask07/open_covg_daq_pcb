@@ -14,3 +14,6 @@ Digikey, etc.
 
 HDMI to daughtercards 
 
+
+### Artix-7 pinout
+[pinout](https://www.xilinx.com/support/packagefiles/a7packages/xc7a75tfgg484pkg.txt)
