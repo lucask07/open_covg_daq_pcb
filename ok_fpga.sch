@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr User 12505 8743
 encoding utf-8
-Sheet 6 10
+Sheet 5 18
 Title ""
 Date ""
 Rev ""
@@ -48,7 +48,7 @@ F 3 "" H 10500 2600 50  0001 C CNN
 $EndComp
 Text HLabel 3000 2700 2    50   Output ~ 0
 D0_CSB
-Text HLabel 3000 2800 2    50   Input ~ 0
+Text HLabel 3000 2800 2    50   Output ~ 0
 D0_SDI
 Text HLabel 3000 2900 2    50   Output ~ 0
 D0_SCLK
@@ -134,15 +134,15 @@ Text HLabel 3000 2300 2    50   Output ~ 0
 D2_CSB
 Text HLabel 3000 2000 2    50   Output ~ 0
 D3_CSB
-Text HLabel 3000 3100 2    50   Input ~ 0
+Text HLabel 3000 3100 2    50   Output ~ 0
 D1_SDI
 Text HLabel 3000 3200 2    50   Output ~ 0
 D1_SCLK
 Text HLabel 3000 3000 2    50   Output ~ 0
 D1_CSB
-Text HLabel 3000 2500 2    50   Input ~ 0
+Text HLabel 3000 2500 2    50   Output ~ 0
 D2_SDI
-Text HLabel 3000 2600 2    50   BiDi ~ 0
+Text HLabel 3000 2600 2    50   Output ~ 0
 D2_SCLK
 Text Label 11000 2900 0    50   ~ 0
 A0_EN0_HV
@@ -442,7 +442,7 @@ Text Notes 7850 7550 0    39   ~ 0
 VREF: needed for single-ended IO standards that use a diff. input buffer.\nWe do not need VREF. The FPGA also has an internal VREF which can be used if running at or below 400 MHz. \nMost relevant to memory interfaces. 
 Text HLabel 3000 2200 2    50   Output ~ 0
 D3_SCLK
-Text HLabel 3000 2100 2    50   Input ~ 0
+Text HLabel 3000 2100 2    50   Output ~ 0
 D3_SDI
 $Comp
 L power:GND #PWR?
@@ -690,8 +690,6 @@ Text Label 600  7050 0    39   ~ 0
 A1_EN0_HV
 Text Label 600  7150 0    39   ~ 0
 A2_EN0_HV
-Text HLabel 4300 7550 2    50   Input ~ 0
-A_EN1
 Wire Wire Line
 	3550 7950 3550 8050
 $Comp
@@ -1061,8 +1059,6 @@ Wire Wire Line
 	5400 4100 6800 4100
 Wire Wire Line
 	5400 4200 7100 4200
-Text HLabel 3550 7750 2    50   Input ~ 0
-A_EN3
 Wire Wire Line
 	2800 7450 2900 7450
 Wire Wire Line
@@ -1099,8 +1095,6 @@ F 3 "" H 2900 6950 50  0001 C CNN
 	1    2900 6950
 	-1   0    0    -1  
 $EndComp
-Text HLabel 3900 7650 2    50   Input ~ 0
-A_EN2
 $Comp
 L Interface:PCA9306 U?
 U 1 1 61E5C8D1
@@ -1312,8 +1306,6 @@ Text HLabel 5500 2300 2    50   Output ~ 0
 DS1_CSB
 Wire Wire Line
 	5500 2300 5400 2300
-Text HLabel 5500 2500 2    50   Input ~ 0
-DS1_SDI
 Text Notes 6100 1700 0    50   ~ 0
 ADS8686\n16-chan ADC
 Text Notes 6100 2250 0    50   ~ 0
@@ -1357,13 +1349,13 @@ Text HLabel 3000 1700 2    50   Output ~ 0
 D4_CSB
 Text HLabel 3000 1900 2    50   Output ~ 0
 D4_SCLK
-Text HLabel 3000 1800 2    50   Input ~ 0
+Text HLabel 3000 1800 2    50   Output ~ 0
 D4_SDI
 Text HLabel 3000 1400 2    50   Output ~ 0
 D5_CSB
 Text HLabel 3000 1600 2    50   Output ~ 0
 D5_SCLK
-Text HLabel 3000 1500 2    50   Input ~ 0
+Text HLabel 3000 1500 2    50   Output ~ 0
 D5_SDI
 $Comp
 L power:GND #PWR?
@@ -1561,37 +1553,37 @@ Entry Bus Bus
 Entry Bus Bus
 	7500 5050 7600 5150
 Text Label 7150 4750 0    50   ~ 0
-G_DAC1[0]
+G_DAC0[0]
 Text Label 7150 4850 0    50   ~ 0
-G_DAC1[1]
+G_DAC0[1]
 Text Label 7150 4950 0    50   ~ 0
-G_DAC1[2]
+G_DAC0[2]
 Text Label 7150 5050 0    50   ~ 0
-G_DAC1[3]
+G_DAC0[3]
 Text Label 7150 5150 0    50   ~ 0
-G_DAC2[0]
+G_DAC1[0]
 Text Label 7150 5250 0    50   ~ 0
-G_DAC2[1]
+G_DAC1[1]
 Text Label 7150 5350 0    50   ~ 0
-G_DAC2[2]
+G_DAC1[2]
 Text Label 7150 5450 0    50   ~ 0
-G_DAC2[3]
+G_DAC1[3]
 Text Label 7150 6350 0    50   ~ 0
-G_DAC4[3]
-Text Label 7150 6250 0    50   ~ 0
-G_DAC4[2]
-Text Label 7150 6150 0    50   ~ 0
-G_DAC4[1]
-Text Label 7150 6050 0    50   ~ 0
-G_DAC4[0]
-Text Label 7150 5950 0    50   ~ 0
 G_DAC3[3]
-Text Label 7150 5850 0    50   ~ 0
+Text Label 7150 6250 0    50   ~ 0
 G_DAC3[2]
-Text Label 7150 5750 0    50   ~ 0
+Text Label 7150 6150 0    50   ~ 0
 G_DAC3[1]
-Text Label 7150 5650 0    50   ~ 0
+Text Label 7150 6050 0    50   ~ 0
 G_DAC3[0]
+Text Label 7150 5950 0    50   ~ 0
+G_DAC2[3]
+Text Label 7150 5850 0    50   ~ 0
+G_DAC2[2]
+Text Label 7150 5750 0    50   ~ 0
+G_DAC2[1]
+Text Label 7150 5650 0    50   ~ 0
+G_DAC2[0]
 $Comp
 L Interface_Expansion:TCA9555DBR U?
 U 1 1 630499A2
@@ -1680,21 +1672,21 @@ Wire Wire Line
 Wire Wire Line
 	9900 5000 10250 5000
 Text Label 9900 4700 0    50   ~ 0
-G_DAC5[0]
+G_DAC4[0]
 Text Label 9900 4800 0    50   ~ 0
-G_DAC5[1]
+G_DAC4[1]
 Text Label 9900 4900 0    50   ~ 0
-G_DAC5[2]
+G_DAC4[2]
 Text Label 9900 5000 0    50   ~ 0
-G_DAC5[3]
+G_DAC4[3]
 Text Label 9900 5100 0    50   ~ 0
-G_DAC6[0]
+G_DAC5[0]
 Text Label 9900 5200 0    50   ~ 0
-G_DAC6[1]
+G_DAC5[1]
 Text Label 9900 5300 0    50   ~ 0
-G_DAC6[2]
+G_DAC5[2]
 Text Label 9900 5400 0    50   ~ 0
-G_DAC6[3]
+G_DAC5[3]
 Text Label 9900 5600 0    50   ~ 0
 GP_IO[0]
 $Comp
@@ -1793,17 +1785,17 @@ LS_SDA
 Text Label 2050 5600 0    50   ~ 0
 LS_SCL
 Text HLabel 7600 5000 2    50   Output ~ 0
-G_DAC1[0..3]
+G_DAC0[0..3]
 Text HLabel 7600 5400 2    50   Output ~ 0
-G_DAC2[0..3]
+G_DAC1[0..3]
 Text HLabel 7600 5850 2    50   Output ~ 0
-G_DAC3[0..3]
+G_DAC2[0..3]
 Text HLabel 7600 6300 2    50   Output ~ 0
-G_DAC4[0..3]
+G_DAC3[0..3]
 Text HLabel 10350 5350 2    50   Output ~ 0
-G_DAC6[0..3]
-Text HLabel 10350 4950 2    50   Output ~ 0
 G_DAC5[0..3]
+Text HLabel 10350 4950 2    50   Output ~ 0
+G_DAC4[0..3]
 Text HLabel 5500 2600 2    50   Output ~ 0
 DS2_SDO
 Text HLabel 5500 2700 2    50   Output ~ 0
@@ -2239,6 +2231,8 @@ NoConn ~ 5500 800
 NoConn ~ 5500 700 
 Text Notes 6100 2800 0    50   ~ 0
 DAC80508\n8-chan
+Text Notes 2450 250  0    50   ~ 0
+What is VCCBATT?
 Wire Bus Line
 	11550 2600 11550 2900
 Wire Bus Line
@@ -2255,6 +2249,12 @@ Wire Bus Line
 	10350 5200 10350 5500
 Wire Bus Line
 	10350 5700 10350 6400
-Text Notes 2450 250  0    50   ~ 0
-What is VCCBATT?
+Text HLabel 5500 2500 2    50   Input ~ 0
+DS1_SDI
+Text GLabel 4300 7550 2    50   Output ~ 0
+A_EN1
+Text GLabel 3900 7650 2    50   Output ~ 0
+A_EN2
+Text GLabel 3550 7750 2    50   Output ~ 0
+A_EN3
 $EndSCHEMATC
