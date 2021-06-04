@@ -705,7 +705,7 @@ F 3 "" H 4300 8050 50  0001 C CNN
 	1    4300 8050
 	1    0    0    -1  
 $EndComp
-Text Notes 3550 7300 0    39   ~ 0
+Text Notes 3550 7350 0    39   ~ 0
 These are global (for all ADC channels)\nEN0 is the only signal that needs \nFPGA control per ADC channel.\nDefault settings: \nEN3,EN2,EN1,EN0 \n0,0,0,FPGA (A_EN2_HV is high-Z)\n\ndriving EN2 high outputs test\npatterns on the LVDS interface
 Entry Bus Bus
 	11450 2500 11550 2600
@@ -1132,8 +1132,6 @@ Wire Wire Line
 	2900 3500 3400 3500
 Text Label 3050 3500 0    50   ~ 0
 GPIO_3V3_0
-Text Notes 2450 250  0    50   ~ 0
-What is VCCBATT?\nAdd in 2 more high-speed digital SPI
 $Comp
 L power:+3V3 #PWR?
 U 1 1 61FED4C7
@@ -2239,6 +2237,8 @@ $EndComp
 NoConn ~ 5500 900 
 NoConn ~ 5500 800 
 NoConn ~ 5500 700 
+Text Notes 6100 2800 0    50   ~ 0
+DAC80508\n8-chan
 Wire Bus Line
 	11550 2600 11550 2900
 Wire Bus Line
@@ -2255,4 +2255,6 @@ Wire Bus Line
 	10350 5200 10350 5500
 Wire Bus Line
 	10350 5700 10350 6400
+Text Notes 2450 250  0    50   ~ 0
+What is VCCBATT?
 $EndSCHEMATC
