@@ -1176,33 +1176,9 @@ Wire Wire Line
 Wire Wire Line
 	9650 2700 9650 2900
 Wire Wire Line
-	9650 2300 10500 2300
+	9650 2300 10150 2300
 Wire Wire Line
 	10500 2400 10150 2400
-$Comp
-L Device:R_US R?
-U 1 1 60BC23BA
-P 10150 2700
-F 0 "R?" H 10000 2759 59  0000 L BNN
-F 1 "100k" H 10200 2650 59  0000 L BNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 10150 2700 50  0001 C CNN
-F 3 "" H 10150 2700 50  0001 C CNN
-	1    10150 2700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #GND?
-U 1 1 60BC23C0
-P 10150 2900
-F 0 "#GND?" H 10150 2900 50  0001 C CNN
-F 1 "GND" H 10050 2800 59  0001 L BNN
-F 2 "" H 10150 2900 50  0001 C CNN
-F 3 "" H 10150 2900 50  0001 C CNN
-	1    10150 2900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10150 2900 10150 2850
 $Comp
 L Regulator_Linear:LP38693MP-2.5 U?
 U 1 1 60BDC92E
@@ -1355,10 +1331,6 @@ Wire Wire Line
 	7750 2900 8300 2900
 Text HLabel 7750 2400 0    50   Input ~ 0
 EN_1V8
-Wire Wire Line
-	10150 2400 10150 2550
-Text HLabel 10150 2400 0    50   Input ~ 0
-EN_2V5
 Wire Wire Line
 	10900 2700 10900 2850
 Wire Wire Line
@@ -1526,4 +1498,11 @@ Wire Wire Line
 	1450 2250 1550 2250
 Wire Wire Line
 	1150 2250 1100 2250
+Wire Wire Line
+	10150 2400 10150 2300
+Connection ~ 10150 2300
+Wire Wire Line
+	10150 2300 10500 2300
+Text Notes 9500 2150 0    39   ~ 0
+Don’t use EN since this is an FPGA\nbank voltage!
 $EndSCHEMATC
