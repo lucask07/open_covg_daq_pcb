@@ -59,7 +59,7 @@ P 11000 2500
 AR Path="/6095B316/3BE0C9AD" Ref="R57"  Part="1" 
 AR Path="/60BDA97E/3BE0C9AD" Ref="R71"  Part="1" 
 F 0 "R57" H 10850 2559 59  0000 L BNN
-F 1 "0" H 10850 2370 59  0000 L BNN
+F 1 "33" H 10850 2370 59  0000 L BNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 11000 2500 50  0001 C CNN
 F 3 "" H 11000 2500 50  0001 C CNN
 	1    11000 2500
@@ -280,7 +280,7 @@ P 10200 3000
 AR Path="/6095B316/21C9AC64" Ref="R56"  Part="1" 
 AR Path="/60BDA97E/21C9AC64" Ref="R70"  Part="1" 
 F 0 "R56" H 10050 3059 59  0000 L BNN
-F 1 "6k" H 10050 2870 59  0000 L BNN
+F 1 "1k" H 10050 2870 59  0000 L BNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 10200 3000 50  0001 C CNN
 F 3 "" H 10200 3000 50  0001 C CNN
 	1    10200 3000
@@ -293,7 +293,7 @@ P 9400 3350
 AR Path="/6095B316/8265D0A1" Ref="R55"  Part="1" 
 AR Path="/60BDA97E/8265D0A1" Ref="R69"  Part="1" 
 F 0 "R55" H 9150 3350 59  0000 L BNN
-F 1 "1k" H 9250 3220 59  0000 L BNN
+F 1 "2k" H 9250 3220 59  0000 L BNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 9400 3350 50  0001 C CNN
 F 3 "" H 9400 3350 50  0001 C CNN
 	1    9400 3350
@@ -467,7 +467,7 @@ VDD should match level of SPI interface\n110 ns settling time\n Designed for V
 Text Notes 550  900  0    59   ~ 0
 VREF buffer\n9 kOhm VREF input resistance\nGain to 10 V (AD5453 max is 12 V)\n22 MHz gain-bandwidth
 Text Notes 9900 2100 0    59   ~ 0
-16.7 MHz GBW\nx1.5 for +/-15V output
+x1.5 for +/-15V output
 Wire Wire Line
 	4300 2600 3800 2600
 Wire Wire Line
@@ -1025,9 +1025,9 @@ Wire Wire Line
 	2250 3550 2600 3550
 Wire Wire Line
 	2600 3550 2600 3300
-Wire Bus Line
-	650  4950 650  5850
 Connection ~ 2600 3300
 Wire Wire Line
 	2600 3300 2800 3300
+Wire Bus Line
+	650  4950 650  5850
 $EndSCHEMATC
