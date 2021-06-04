@@ -14,12 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 7500 650  500  150 
-U 6095A38A
-F0 "level_shifters" 50
-F1 "level_shifters.sch" 50
-$EndSheet
-$Sheet
 S 7500 1450 1100 650 
 U 6095BD4C
 F0 "dac_gp" 50
@@ -41,7 +35,7 @@ F0 "power" 50
 F1 "power.sch" 50
 $EndSheet
 $Sheet
-S 5500 2850 500  150 
+S 4500 2150 1250 1550
 U 6095A302
 F0 "ok_fpga" 50
 F1 "ok_fpga.sch" 50
