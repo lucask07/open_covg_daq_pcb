@@ -1241,7 +1241,7 @@ Connection ~ 1650 1000
 Wire Wire Line
 	1650 1000 2500 1000
 Connection ~ 1650 600 
-Entry Bus Bus
+Entry Wire Line
 	700  600  600  700 
 Wire Wire Line
 	700  600  1100 600 
@@ -1257,53 +1257,49 @@ Wire Wire Line
 	700  7200 1100 7200
 Wire Wire Line
 	700  8250 1100 8250
-Entry Bus Bus
+Entry Wire Line
 	700  1700 600  1800
-Entry Bus Bus
+Entry Wire Line
 	700  2850 600  2950
-Entry Bus Bus
+Entry Wire Line
 	700  3950 600  4050
 Wire Wire Line
 	700  5050 1100 5050
-Entry Bus Bus
+Entry Wire Line
 	700  5050 600  5150
-Entry Bus Bus
+Entry Wire Line
 	700  6100 600  6200
-Entry Bus Bus
+Entry Wire Line
 	700  7200 600  7300
-Entry Bus Bus
+Entry Wire Line
 	700  8250 600  8350
 Text Label 700  600  0    50   ~ 0
-IN[0]
+IN0
 Text Label 700  1700 0    50   ~ 0
-IN[1]
+IN1
 Text Label 700  2850 0    50   ~ 0
-IN[2]
+IN2
 Text Label 700  3950 0    50   ~ 0
-IN[3]
+IN3
 Text Label 700  5050 0    50   ~ 0
-IN[4]
+IN4
 Text Label 700  6100 0    50   ~ 0
-IN[5]
+IN5
 Text Label 700  7200 0    50   ~ 0
-IN[6]
+IN6
 Text Label 700  8250 0    50   ~ 0
-IN[7]
-Entry Bus Bus
-	2500 2100 2600 2200
-Entry Bus Bus
-	2500 1000 2600 1100
-Entry Bus Bus
+IN7
+Entry Wire Line
 	2500 3250 2600 3350
-Entry Bus Bus
+Entry Wire Line
 	2500 4350 2600 4450
-Entry Bus Bus
+Entry Wire Line
 	2500 5450 2600 5550
-Entry Bus Bus
+Entry Wire Line
 	2500 6500 2600 6600
-Entry Bus Bus
+Entry Wire Line
 	2500 7600 2600 7700
-Entry Bus Bus
+Entry Wire Line
 	2500 8650 2600 8750
 Text Label 2050 1000 0    50   ~ 0
 AIN_GND[0]
@@ -1337,21 +1333,17 @@ Wire Wire Line
 	1650 7200 2700 7200
 Wire Wire Line
 	1650 8250 2700 8250
-Entry Bus Bus
-	2700 600  2800 700 
-Entry Bus Bus
-	2700 1700 2800 1800
-Entry Bus Bus
+Entry Wire Line
 	2700 2850 2800 2950
-Entry Bus Bus
+Entry Wire Line
 	2700 3950 2800 4050
-Entry Bus Bus
+Entry Wire Line
 	2700 5050 2800 5150
-Entry Bus Bus
+Entry Wire Line
 	2700 6100 2800 6200
-Entry Bus Bus
+Entry Wire Line
 	2700 7200 2800 7300
-Entry Bus Bus
+Entry Wire Line
 	2700 8250 2800 8350
 Text Label 2050 600  0    50   ~ 0
 AIN[0]
@@ -2193,8 +2185,6 @@ Connection ~ 4100 1000
 Wire Wire Line
 	4100 1000 4950 1000
 Connection ~ 4100 600 
-Entry Bus Bus
-	3150 600  3050 700 
 Wire Wire Line
 	3150 600  3550 600 
 Wire Wire Line
@@ -2209,53 +2199,43 @@ Wire Wire Line
 	3150 7200 3550 7200
 Wire Wire Line
 	3150 8250 3550 8250
-Entry Bus Bus
-	3150 1700 3050 1800
-Entry Bus Bus
+Entry Wire Line
 	3150 2850 3050 2950
-Entry Bus Bus
+Entry Wire Line
 	3150 3950 3050 4050
 Wire Wire Line
 	3150 5050 3550 5050
-Entry Bus Bus
+Entry Wire Line
 	3150 5050 3050 5150
-Entry Bus Bus
+Entry Wire Line
 	3150 6100 3050 6200
-Entry Bus Bus
+Entry Wire Line
 	3150 7200 3050 7300
-Entry Bus Bus
+Entry Wire Line
 	3150 8250 3050 8350
-Text Label 3150 600  0    50   ~ 0
-IN[8]
-Text Label 3150 1700 0    50   ~ 0
-IN[9]
+Text Label 3200 600  0    50   ~ 0
+IN8
+Text Label 3200 1700 0    50   ~ 0
+IN9
 Text Label 3150 2850 0    50   ~ 0
-IN[10]
+IN10
 Text Label 3150 3950 0    50   ~ 0
-IN[11]
+IN11
 Text Label 3150 5050 0    50   ~ 0
-IN[12]
+IN12
 Text Label 3150 6100 0    50   ~ 0
-IN[13]
-Text Label 3150 7200 0    50   ~ 0
-IN[14]
-Text Label 3150 8250 0    50   ~ 0
-IN[15]
-Entry Bus Bus
-	4950 2100 5050 2200
-Entry Bus Bus
-	4950 1000 5050 1100
-Entry Bus Bus
-	4950 3250 5050 3350
-Entry Bus Bus
-	4950 4350 5050 4450
-Entry Bus Bus
+IN13
+Text Label 3200 7200 0    50   ~ 0
+IN14
+Text Label 3200 8250 0    50   ~ 0
+IN15
+Entry Wire Line
 	4950 5450 5050 5550
-Entry Bus Bus
+Entry Wire Line
 	4950 6500 5050 6600
-Entry Bus Bus
+Entry Wire Line
 	4950 7600 5050 7700
-Entry Bus Bus
+Entry Wire Line
 	4950 8650 5050 8750
 Text Label 4500 1000 0    50   ~ 0
 AIN_GND[8]
@@ -2289,21 +2269,11 @@ Wire Wire Line
 	4100 7200 5150 7200
 Wire Wire Line
 	4100 8250 5150 8250
-Entry Bus Bus
-	5150 600  5250 700 
-Entry Bus Bus
-	5150 1700 5250 1800
-Entry Bus Bus
-	5150 2850 5250 2950
-Entry Bus Bus
-	5150 3950 5250 4050
-Entry Bus Bus
-	5150 5050 5250 5150
-Entry Bus Bus
+Entry Wire Line
 	5150 6100 5250 6200
-Entry Bus Bus
+Entry Wire Line
 	5150 7200 5250 7300
-Entry Bus Bus
+Entry Wire Line
 	5150 8250 5250 8350
 Text Label 4500 600  0    50   ~ 0
 AIN[8]
@@ -2641,159 +2611,6 @@ Wire Wire Line
 Wire Wire Line
 	8200 7050 8200 6500
 Connection ~ 8200 7050
-Wire Wire Line
-	11450 2250 11700 2250
-Wire Wire Line
-	11450 2350 11700 2350
-Wire Wire Line
-	11700 2450 11450 2450
-Wire Wire Line
-	11450 2550 11700 2550
-Wire Wire Line
-	11700 2650 11450 2650
-Wire Wire Line
-	11700 2750 11450 2750
-Wire Wire Line
-	11700 2850 11450 2850
-Wire Wire Line
-	11700 2950 11450 2950
-Wire Wire Line
-	11700 3050 11450 3050
-Wire Wire Line
-	11700 3150 11450 3150
-Wire Wire Line
-	11700 3250 11450 3250
-Wire Wire Line
-	11700 3350 11450 3350
-Wire Wire Line
-	11700 3450 11450 3450
-Wire Wire Line
-	11700 3550 11450 3550
-Wire Wire Line
-	11700 3650 11450 3650
-Wire Wire Line
-	11700 3750 11450 3750
-Text Label 11450 2350 0    50   ~ 0
-IN[1]
-Text Label 11450 2450 0    50   ~ 0
-IN[2]
-Text Label 11450 2550 0    50   ~ 0
-IN[3]
-Text Label 11450 2650 0    50   ~ 0
-IN[4]
-Text Label 11450 2750 0    50   ~ 0
-IN[5]
-Text Label 11450 2850 0    50   ~ 0
-IN[6]
-Text Label 11450 2950 0    50   ~ 0
-IN[7]
-Text Label 11450 3050 0    50   ~ 0
-IN[8]
-Text Label 11450 3150 0    50   ~ 0
-IN[9]
-Text Label 11450 3250 0    50   ~ 0
-IN[10]
-Text Label 11450 3350 0    50   ~ 0
-IN[11]
-Text Label 11450 3450 0    50   ~ 0
-IN[12]
-Text Label 11450 3550 0    50   ~ 0
-IN[13]
-Text Label 11450 3650 0    50   ~ 0
-IN[14]
-Text Label 11450 3750 0    50   ~ 0
-IN[15]
-Wire Wire Line
-	12200 2250 12250 2250
-Wire Wire Line
-	12250 2250 12250 2350
-Wire Wire Line
-	12250 3750 12200 3750
-Wire Wire Line
-	12200 3650 12250 3650
-Connection ~ 12250 3650
-Wire Wire Line
-	12250 3650 12250 3750
-Wire Wire Line
-	12250 3550 12200 3550
-Connection ~ 12250 3550
-Wire Wire Line
-	12250 3550 12250 3650
-Wire Wire Line
-	12200 3450 12250 3450
-Connection ~ 12250 3450
-Wire Wire Line
-	12250 3450 12250 3550
-Wire Wire Line
-	12250 3350 12200 3350
-Connection ~ 12250 3350
-Wire Wire Line
-	12250 3350 12250 3450
-Wire Wire Line
-	12200 3250 12250 3250
-Connection ~ 12250 3250
-Wire Wire Line
-	12250 3250 12250 3350
-Wire Wire Line
-	12250 3150 12200 3150
-Connection ~ 12250 3150
-Wire Wire Line
-	12250 3150 12250 3250
-Wire Wire Line
-	12200 3050 12250 3050
-Connection ~ 12250 3050
-Wire Wire Line
-	12250 3050 12250 3150
-Wire Wire Line
-	12250 2950 12200 2950
-Connection ~ 12250 2950
-Wire Wire Line
-	12250 2950 12250 3050
-Wire Wire Line
-	12200 2850 12250 2850
-Connection ~ 12250 2850
-Wire Wire Line
-	12250 2850 12250 2950
-Wire Wire Line
-	12250 2750 12200 2750
-Connection ~ 12250 2750
-Wire Wire Line
-	12250 2750 12250 2850
-Wire Wire Line
-	12200 2650 12250 2650
-Connection ~ 12250 2650
-Wire Wire Line
-	12250 2650 12250 2750
-Wire Wire Line
-	12200 2550 12250 2550
-Connection ~ 12250 2550
-Wire Wire Line
-	12250 2550 12250 2650
-Wire Wire Line
-	12200 2450 12250 2450
-Connection ~ 12250 2450
-Wire Wire Line
-	12250 2450 12250 2550
-Wire Wire Line
-	12200 2350 12250 2350
-Connection ~ 12250 2350
-Wire Wire Line
-	12250 2350 12250 2450
-Wire Wire Line
-	12250 2950 12350 2950
-$Comp
-L power:GND #GND?
-U 1 1 6250FF01
-P 12350 2950
-AR Path="/6250FF01" Ref="#GND?"  Part="1" 
-AR Path="/6095A004/6250FF01" Ref="#GND0210"  Part="1" 
-F 0 "#GND0210" H 12350 2950 50  0001 C CNN
-F 1 "GND" H 12250 2850 59  0001 L BNN
-F 2 "" H 12350 2950 50  0001 C CNN
-F 3 "" H 12350 2950 50  0001 C CNN
-	1    12350 2950
-	0    -1   -1   0   
-$EndComp
 $Comp
 L Device:R_US R?
 U 1 1 6265E9A5
@@ -3068,27 +2885,42 @@ F 4 "RC0603FR-0733RL" H 9550 3650 50  0001 C CNN "Manf#"
 	1    9550 3650
 	0    1    1    0   
 $EndComp
-Text Notes 11400 4000 0    39   ~ 0
-Some inputs will come from other\nwires and connectors
-Text Label 11450 2250 0    50   ~ 0
-IN[0]
 Wire Bus Line
 	3050 9200 600  9200
-Text HLabel 3050 8950 0    39   Output ~ 0
+Text HLabel 3050 9000 0    39   Output ~ 0
 IN[0..15]
-$Comp
-L Connector_Generic:Conn_02x16_Odd_Even J?
-U 1 1 628D76E6
-P 11900 2950
-F 0 "J?" H 11950 3867 50  0000 C CNN
-F 1 "Conn_02x16_Odd_Even" H 11950 3776 50  0000 C CNN
-F 2 "" H 11900 2950 50  0001 C CNN
-F 3 "~" H 11900 2950 50  0001 C CNN
-	1    11900 2950
-	1    0    0    -1  
-$EndComp
-Text Notes 11450 1950 0    39   ~ 0
-Board edge
+Text Label 2550 9200 2    50   ~ 0
+IN[0..15]
+Entry Wire Line
+	2500 2100 2600 2200
+Entry Wire Line
+	2500 1000 2600 1100
+Entry Wire Line
+	2700 600  2800 700 
+Entry Wire Line
+	2700 1700 2800 1800
+Entry Wire Line
+	3150 1700 3050 1800
+Entry Wire Line
+	3150 600  3050 700 
+Entry Wire Line
+	5150 600  5250 700 
+Entry Wire Line
+	4950 1000 5050 1100
+Entry Wire Line
+	5150 1700 5250 1800
+Entry Wire Line
+	4950 2100 5050 2200
+Entry Wire Line
+	5150 2850 5250 2950
+Entry Wire Line
+	4950 3250 5050 3350
+Entry Wire Line
+	4950 4350 5050 4450
+Entry Wire Line
+	5150 5050 5250 5150
+Entry Wire Line
+	5150 3950 5250 4050
 Wire Bus Line
 	2600 1100 2600 8750
 Wire Bus Line
