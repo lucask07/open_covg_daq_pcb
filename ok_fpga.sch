@@ -58,7 +58,7 @@ Text HLabel 8300 2800 2    50   Input ~ 0
 A1_DCO_N
 Text HLabel 11100 1500 2    50   Output ~ 0
 A3_CNV_N
-Text HLabel 11100 1700 2    50   Output ~ 0
+Text HLabel 11100 1700 2    50   Input ~ 0
 A3_D_N
 Text HLabel 11100 1900 2    50   Input ~ 0
 A3_DCO_N
@@ -116,20 +116,20 @@ Text HLabel 8300 1900 2    50   Output ~ 0
 A0_DCO_N
 Text HLabel 8300 1800 2    50   Output ~ 0
 A0_DCO_P
-Text HLabel 5500 1900 2    50   Output ~ 0
-ADCS_CONVST
-Text HLabel 5500 2100 2    50   Output ~ 0
+Text HLabel 6350 1900 2    50   Output ~ 0
+ADS_CONVST
+Text HLabel 5500 2100 2    50   Input ~ 0
 DS1_SDO
 Text HLabel 5500 2200 2    50   Output ~ 0
 DS1_SCLK
-Text HLabel 5500 1600 2    50   Input ~ 0
-ADCS_SDI
+Text HLabel 6300 1600 2    50   Output ~ 0
+ADS_SDI
 Text HLabel 5500 1500 2    50   Input ~ 0
-ADCS_SDOA
-Text HLabel 5500 1700 2    50   BiDi ~ 0
-ADCS_SDOB
-Text HLabel 5500 1800 2    50   Output ~ 0
-ADCS_CSB
+ADS_SDOA
+Text HLabel 5500 1700 2    50   Input ~ 0
+ADS_SDOB
+Text HLabel 6800 1800 2    50   Output ~ 0
+ADS_CSB
 Text HLabel 3000 2300 2    50   Output ~ 0
 D2_CSB
 Text HLabel 3000 2000 2    50   Output ~ 0
@@ -184,8 +184,6 @@ Wire Wire Line
 	8200 2500 8300 2500
 Wire Wire Line
 	8200 2700 8300 2700
-Wire Wire Line
-	10900 2300 11000 2300
 Wire Wire Line
 	8200 2300 8300 2300
 Wire Wire Line
@@ -247,23 +245,13 @@ Wire Wire Line
 Wire Wire Line
 	5400 900  5500 900 
 Wire Wire Line
-	5400 4400 5500 4400
-Wire Wire Line
-	5400 4300 5500 4300
-Wire Wire Line
-	5400 1900 5500 1900
-Wire Wire Line
 	5400 2100 5500 2100
 Wire Wire Line
 	5400 2200 5500 2200
 Wire Wire Line
-	5400 1600 5500 1600
-Wire Wire Line
 	5400 1500 5500 1500
 Wire Wire Line
 	5400 1700 5500 1700
-Wire Wire Line
-	5400 1800 5500 1800
 Wire Wire Line
 	5400 1000 5500 1000
 Wire Wire Line
@@ -312,8 +300,6 @@ Wire Wire Line
 	2900 2500 3000 2500
 Wire Wire Line
 	2900 2600 3000 2600
-Wire Wire Line
-	10900 2200 11000 2200
 $Comp
 L power:GND #PWR0145
 U 1 1 60C00302
@@ -458,29 +444,27 @@ $EndComp
 $Comp
 L Device:R_US R?
 U 1 1 60BA8C6F
-P 11550 3400
-F 0 "R?" H 11400 3459 59  0000 L BNN
-F 1 "0" H 11400 3270 59  0000 L BNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 11550 3400 50  0001 C CNN
-F 3 "" H 11550 3400 50  0001 C CNN
-	1    11550 3400
+P 11150 3400
+F 0 "R?" H 11000 3459 59  0000 L BNN
+F 1 "0" H 11050 3250 59  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 11150 3400 50  0001 C CNN
+F 3 "" H 11150 3400 50  0001 C CNN
+	1    11150 3400
 	0    1    1    0   
 $EndComp
 $Comp
 L power:+2V5 #PWR?
 U 1 1 60BAA35F
-P 11800 3300
-F 0 "#PWR?" H 11800 3150 50  0001 C CNN
-F 1 "+2V5" H 11815 3473 50  0000 C CNN
-F 2 "" H 11800 3300 50  0001 C CNN
-F 3 "" H 11800 3300 50  0001 C CNN
-	1    11800 3300
-	1    0    0    -1  
+P 11350 3400
+F 0 "#PWR?" H 11350 3250 50  0001 C CNN
+F 1 "+2V5" V 11300 3450 50  0000 C CNN
+F 2 "" H 11350 3400 50  0001 C CNN
+F 3 "" H 11350 3400 50  0001 C CNN
+	1    11350 3400
+	0    1    1    0   
 $EndComp
 Wire Wire Line
-	11800 3300 11800 3400
-Wire Wire Line
-	11800 3400 11700 3400
+	11350 3400 11300 3400
 Wire Wire Line
 	8300 3800 8200 3800
 Wire Wire Line
@@ -594,10 +578,6 @@ Text Label 600  7550 0    39   ~ 0
 A_EN1_HV
 Text Label 600  7750 0    39   ~ 0
 A_EN3_HV
-Text Label 600  7850 0    39   ~ 0
-GPIO_2V5_0
-Text Label 2850 7850 0    47   ~ 0
-GPIO_1V8_0
 Wire Wire Line
 	3200 7450 3250 7450
 Text Notes 1550 7500 0    39   ~ 0
@@ -641,33 +621,29 @@ A3_EN0
 $Comp
 L Device:R_US R?
 U 1 1 611AF4C0
-P 11600 2400
-F 0 "R?" H 11450 2459 59  0000 L BNN
-F 1 "0" H 11450 2270 59  0000 L BNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 11600 2400 50  0001 C CNN
-F 3 "" H 11600 2400 50  0001 C CNN
-	1    11600 2400
+P 11150 2400
+F 0 "R?" V 11150 2500 59  0000 L BNN
+F 1 "0" H 11050 2200 59  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 11150 2400 50  0001 C CNN
+F 3 "" H 11150 2400 50  0001 C CNN
+	1    11150 2400
 	0    1    1    0   
 $EndComp
 $Comp
 L power:+2V5 #PWR?
 U 1 1 611AF4C6
-P 11850 2300
-F 0 "#PWR?" H 11850 2150 50  0001 C CNN
-F 1 "+2V5" H 11865 2473 50  0000 C CNN
-F 2 "" H 11850 2300 50  0001 C CNN
-F 3 "" H 11850 2300 50  0001 C CNN
-	1    11850 2300
-	1    0    0    -1  
+P 11350 2400
+F 0 "#PWR?" H 11350 2250 50  0001 C CNN
+F 1 "+2V5" H 11365 2573 50  0000 C CNN
+F 2 "" H 11350 2400 50  0001 C CNN
+F 3 "" H 11350 2400 50  0001 C CNN
+	1    11350 2400
+	0    1    1    0   
 $EndComp
 Wire Wire Line
-	11850 2300 11850 2400
+	10900 2400 11000 2400
 Wire Wire Line
-	11850 2400 11750 2400
-Wire Wire Line
-	10900 2400 11450 2400
-Wire Wire Line
-	10900 3400 11400 3400
+	10900 3400 11000 3400
 Wire Wire Line
 	11100 3200 10900 3200
 Wire Wire Line
@@ -714,15 +690,15 @@ Entry Bus Bus
 Entry Bus Bus
 	11450 2800 11550 2900
 Text Label 11000 2500 0    50   ~ 0
-ISEL[0]
+ISEL1[0]
 Text Label 11000 2600 0    50   ~ 0
-ISEL[1]
+ISEL1[1]
 Text Label 11000 2700 0    50   ~ 0
-ISEL[2]
+ISEL1[2]
 Text Label 11000 2800 0    50   ~ 0
-ISEL[3]
-Text HLabel 11550 2600 2    50   Output ~ 0
-ISEL[0..3]
+ISEL1[3]
+Text HLabel 11550 2900 3    50   Output ~ 0
+ISEL1[0..3]
 Text Notes 11550 2900 0    50   ~ 0
 Ok for 2.5 V \nto TMUX since \nref to Gnd
 $Comp
@@ -835,163 +811,43 @@ Wire Wire Line
 	10950 6850 11800 6850
 Wire Wire Line
 	11800 6850 11800 6650
-Text Label 3000 4000 0    50   ~ 0
-DC_SCL[0]
-Text Label 3000 4100 0    50   ~ 0
-DC_SCL[1]
-Text Label 3000 4200 0    50   ~ 0
-DC_SCL[2]
-Text Label 3000 4300 0    50   ~ 0
-DC_SCL[3]
-Text Label 5600 3900 0    50   ~ 0
-DC_SDA[0]
-Text Label 5600 4000 0    50   ~ 0
-DC_SDA[1]
-Text Label 5600 4100 0    50   ~ 0
-DC_SDA[2]
-Text Label 5600 4200 0    50   ~ 0
-DC_SDA[3]
-$Comp
-L power:+3V3 #PWR?
-U 1 1 61AE4B25
-P 3750 3750
-F 0 "#PWR?" H 3750 3600 50  0001 C CNN
-F 1 "+3V3" H 3765 3923 50  0000 C CNN
-F 2 "" H 3750 3750 50  0001 C CNN
-F 3 "" H 3750 3750 50  0001 C CNN
-	1    3750 3750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3750 3750 3750 3800
-$Comp
-L Device:R_Small_US R?
-U 1 1 61B379C5
-P 4000 4000
-F 0 "R?" H 3850 4050 39  0000 L BNN
-F 1 "3.3k" H 3800 3950 39  0000 L BNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4000 4000 50  0001 C CNN
-F 3 "" H 4000 4000 50  0001 C CNN
-	1    4000 4000
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:+3V3 #PWR?
-U 1 1 61B379CB
-P 4000 3850
-F 0 "#PWR?" H 4000 3700 50  0001 C CNN
-F 1 "+3V3" H 4015 4023 50  0000 C CNN
-F 2 "" H 4000 3850 50  0001 C CNN
-F 3 "" H 4000 3850 50  0001 C CNN
-	1    4000 3850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4000 3850 4000 3900
-Wire Wire Line
-	2900 4100 4000 4100
-$Comp
-L power:+3V3 #PWR?
-U 1 1 61B70850
-P 4250 3950
-F 0 "#PWR?" H 4250 3800 50  0001 C CNN
-F 1 "+3V3" H 4265 4123 50  0000 C CNN
-F 2 "" H 4250 3950 50  0001 C CNN
-F 3 "" H 4250 3950 50  0001 C CNN
-	1    4250 3950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4250 3950 4250 4000
-$Comp
-L power:+3V3 #PWR?
-U 1 1 61B7085E
-P 4500 4050
-F 0 "#PWR?" H 4500 3900 50  0001 C CNN
-F 1 "+3V3" H 4515 4223 50  0000 C CNN
-F 2 "" H 4500 4050 50  0001 C CNN
-F 3 "" H 4500 4050 50  0001 C CNN
-	1    4500 4050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4500 4050 4500 4100
-$Comp
-L Device:R_Small_US R?
-U 1 1 61C10862
-P 3750 3900
-F 0 "R?" H 3600 3950 39  0000 L BNN
-F 1 "3.3k" H 3550 3850 39  0000 L BNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 3750 3900 50  0001 C CNN
-F 3 "" H 3750 3900 50  0001 C CNN
-	1    3750 3900
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_Small_US R?
-U 1 1 61C10B7C
-P 4250 4100
-F 0 "R?" H 4100 4150 39  0000 L BNN
-F 1 "3.3k" H 4050 4050 39  0000 L BNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4250 4100 50  0001 C CNN
-F 3 "" H 4250 4100 50  0001 C CNN
-	1    4250 4100
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_Small_US R?
-U 1 1 61C10EF8
-P 4500 4200
-F 0 "R?" H 4350 4250 39  0000 L BNN
-F 1 "3.3k" H 4300 4150 39  0000 L BNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4500 4200 50  0001 C CNN
-F 3 "" H 4500 4200 50  0001 C CNN
-	1    4500 4200
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	2900 4000 3750 4000
-Wire Wire Line
-	2900 4200 4250 4200
-Wire Wire Line
-	2900 4300 4500 4300
 $Comp
 L power:+3V3 #PWR?
 U 1 1 61C65808
-P 6300 3650
-F 0 "#PWR?" H 6300 3500 50  0001 C CNN
-F 1 "+3V3" H 6315 3823 50  0000 C CNN
-F 2 "" H 6300 3650 50  0001 C CNN
-F 3 "" H 6300 3650 50  0001 C CNN
-	1    6300 3650
+P 6050 3650
+F 0 "#PWR?" H 6050 3500 50  0001 C CNN
+F 1 "+3V3" H 6065 3823 50  0000 C CNN
+F 2 "" H 6050 3650 50  0001 C CNN
+F 3 "" H 6050 3650 50  0001 C CNN
+	1    6050 3650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6300 3650 6300 3700
+	6050 3650 6050 3700
 $Comp
 L Device:R_Small_US R?
 U 1 1 61C6580F
-P 6550 3900
-F 0 "R?" H 6400 3950 39  0000 L BNN
-F 1 "3.3k" H 6350 3850 39  0000 L BNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 6550 3900 50  0001 C CNN
-F 3 "" H 6550 3900 50  0001 C CNN
-	1    6550 3900
+P 6450 3900
+F 0 "R?" H 6300 3950 39  0000 L BNN
+F 1 "3.3k" H 6250 3850 39  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6450 3900 50  0001 C CNN
+F 3 "" H 6450 3900 50  0001 C CNN
+	1    6450 3900
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:+3V3 #PWR?
 U 1 1 61C65815
-P 6550 3750
-F 0 "#PWR?" H 6550 3600 50  0001 C CNN
-F 1 "+3V3" H 6565 3923 50  0000 C CNN
-F 2 "" H 6550 3750 50  0001 C CNN
-F 3 "" H 6550 3750 50  0001 C CNN
-	1    6550 3750
+P 6450 3750
+F 0 "#PWR?" H 6450 3600 50  0001 C CNN
+F 1 "+3V3" H 6465 3923 50  0000 C CNN
+F 2 "" H 6450 3750 50  0001 C CNN
+F 3 "" H 6450 3750 50  0001 C CNN
+	1    6450 3750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6550 3750 6550 3800
+	6450 3750 6450 3800
 $Comp
 L power:+3V3 #PWR?
 U 1 1 61C6581D
@@ -1008,25 +864,25 @@ Wire Wire Line
 $Comp
 L power:+3V3 #PWR?
 U 1 1 61C65824
-P 7100 3950
-F 0 "#PWR?" H 7100 3800 50  0001 C CNN
-F 1 "+3V3" H 7115 4123 50  0000 C CNN
-F 2 "" H 7100 3950 50  0001 C CNN
-F 3 "" H 7100 3950 50  0001 C CNN
-	1    7100 3950
+P 7200 3950
+F 0 "#PWR?" H 7200 3800 50  0001 C CNN
+F 1 "+3V3" H 7215 4123 50  0000 C CNN
+F 2 "" H 7200 3950 50  0001 C CNN
+F 3 "" H 7200 3950 50  0001 C CNN
+	1    7200 3950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7100 3950 7100 4000
+	7200 3950 7200 4000
 $Comp
 L Device:R_Small_US R?
 U 1 1 61C6582B
-P 6300 3800
-F 0 "R?" H 6150 3850 39  0000 L BNN
-F 1 "3.3k" H 6100 3750 39  0000 L BNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 6300 3800 50  0001 C CNN
-F 3 "" H 6300 3800 50  0001 C CNN
-	1    6300 3800
+P 6050 3800
+F 0 "R?" H 5900 3850 39  0000 L BNN
+F 1 "3.3k" H 5850 3750 39  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6050 3800 50  0001 C CNN
+F 3 "" H 6050 3800 50  0001 C CNN
+	1    6050 3800
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -1043,22 +899,22 @@ $EndComp
 $Comp
 L Device:R_Small_US R?
 U 1 1 61C65837
-P 7100 4100
-F 0 "R?" H 6950 4150 39  0000 L BNN
-F 1 "3.3k" H 6900 4050 39  0000 L BNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 7100 4100 50  0001 C CNN
-F 3 "" H 7100 4100 50  0001 C CNN
-	1    7100 4100
+P 7200 4100
+F 0 "R?" H 7050 4150 39  0000 L BNN
+F 1 "3.3k" H 7000 4050 39  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7200 4100 50  0001 C CNN
+F 3 "" H 7200 4100 50  0001 C CNN
+	1    7200 4100
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	5400 3900 6300 3900
+	5400 3900 6050 3900
 Wire Wire Line
-	5400 4000 6550 4000
+	5400 4000 6450 4000
 Wire Wire Line
 	5400 4100 6800 4100
 Wire Wire Line
-	5400 4200 7100 4200
+	5400 4200 7200 4200
 Wire Wire Line
 	2800 7450 2900 7450
 Wire Wire Line
@@ -1081,7 +937,7 @@ F 3 "" H 1000 7450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2800 7850 3350 7850
+	2800 7850 3000 7850
 Wire Wire Line
 	2800 6950 3400 6950
 $Comp
@@ -1113,8 +969,6 @@ Wire Wire Line
 Wire Wire Line
 	1000 7750 600  7750
 Wire Wire Line
-	600  7850 1000 7850
-Wire Wire Line
 	1000 7250 600  7250
 Wire Wire Line
 	600  7150 1000 7150
@@ -1125,7 +979,7 @@ Wire Wire Line
 Wire Wire Line
 	2900 3500 3400 3500
 Text Label 3050 3500 0    50   ~ 0
-GPIO_3V3_0
+UP[7]
 $Comp
 L power:+3V3 #PWR?
 U 1 1 61FED4C7
@@ -1283,12 +1137,12 @@ Wire Wire Line
 Wire Wire Line
 	2150 5300 2150 5250
 Wire Wire Line
-	2900 3900 3350 3900
-Text Label 3050 3900 0    50   ~ 0
+	2900 3900 3250 3900
+Text Label 3000 3900 0    50   ~ 0
 QW_SCL
 Wire Wire Line
-	5400 3800 5950 3800
-Text Label 5650 3800 0    50   ~ 0
+	5400 3800 5800 3800
+Text Label 5500 3800 0    50   ~ 0
 QW_SDA
 Wire Wire Line
 	11050 6650 11450 6650
@@ -1297,16 +1151,16 @@ QW_SCL
 Text Label 11100 6850 0    50   ~ 0
 QW_SDA
 Text HLabel 5500 2000 2    50   Input ~ 0
-ADCS_BUSY
+ADS_BUSY
 Wire Wire Line
 	5500 2000 5400 2000
-Text HLabel 5500 1400 2    50   Output ~ 0
-ADCS_SCLK
+Text HLabel 6300 1400 2    50   Output ~ 0
+ADS_SCLK
 Text HLabel 5500 2300 2    50   Output ~ 0
 DS1_CSB
 Wire Wire Line
 	5500 2300 5400 2300
-Text Notes 6100 1700 0    50   ~ 0
+Text Notes 6350 1350 0    50   ~ 0
 ADS8686\n16-chan ADC
 Text Notes 6100 2250 0    50   ~ 0
 DAC80508\n8-chan
@@ -1333,12 +1187,6 @@ Wire Wire Line
 	10900 2800 11450 2800
 Wire Wire Line
 	10900 3500 11150 3500
-Wire Wire Line
-	10900 3600 11150 3600
-Wire Wire Line
-	10900 3700 11350 3700
-Text Label 11000 3700 0    50   ~ 0
-GPIO_2V5_0
 Wire Wire Line
 	2900 1700 3000 1700
 Wire Wire Line
@@ -1368,10 +1216,6 @@ F 3 "" H 11000 1300 50  0001 C CNN
 	1    11000 1300
 	0    -1   -1   0   
 $EndComp
-Text Notes 11100 2250 0    50   ~ 0
-2 @ 2.5V
-Wire Wire Line
-	5500 1400 5400 1400
 $Comp
 L covg-kicad:OPALKELLY_XEM7310 OK1
 U 2 1 DA224999
@@ -1413,7 +1257,7 @@ F 3 "" H 3750 4750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3750 4750 3750 4700
-Text Notes 3100 1200 0    50   ~ 0
+Text Notes 3300 1200 0    50   ~ 0
 SYS_CLK not special \nother than name
 Text Notes 3550 3350 0    50   ~ 0
 3.3 V (leave open)
@@ -1773,12 +1617,12 @@ F 3 "" H 1550 5050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2900 3800 3350 3800
+	2900 3800 3250 3800
 Text Label 3000 3800 0    50   ~ 0
 LS_SCL
 Wire Wire Line
-	5400 3700 5950 3700
-Text Label 5600 3700 0    50   ~ 0
+	5400 3700 5800 3700
+Text Label 5500 3700 0    50   ~ 0
 LS_SDA
 Text Label 2100 5700 0    50   ~ 0
 LS_SDA
@@ -1796,13 +1640,13 @@ Text HLabel 10350 5350 2    50   Output ~ 0
 G_DAC5[0..3]
 Text HLabel 10350 4950 2    50   Output ~ 0
 G_DAC4[0..3]
-Text HLabel 5500 2600 2    50   Output ~ 0
+Text HLabel 5500 2600 2    50   Input ~ 0
 DS2_SDO
 Text HLabel 5500 2700 2    50   Output ~ 0
 DS2_SCLK
 Text HLabel 5500 2800 2    50   Output ~ 0
 DS2_CSB
-Text HLabel 5500 2900 2    50   Input ~ 0
+Text HLabel 5500 2900 2    50   Output ~ 0
 DS2_SDI
 Wire Wire Line
 	2800 7650 3900 7650
@@ -2021,8 +1865,6 @@ Text Label 4300 5850 0    50   ~ 0
 DNO[6]
 Text Label 4300 5950 0    50   ~ 0
 DNO[7]
-Text Label 4300 6050 0    50   ~ 0
-DNO[8]
 Wire Wire Line
 	5350 5350 5600 5350
 Wire Wire Line
@@ -2066,8 +1908,6 @@ Text Label 5400 5850 0    50   ~ 0
 DN[6]
 Text Label 5400 5950 0    50   ~ 0
 DN[7]
-Text Label 5400 6050 0    50   ~ 0
-DN[8]
 Wire Wire Line
 	8200 4000 8450 4000
 Wire Wire Line
@@ -2096,10 +1936,6 @@ Text Label 8250 4500 0    50   ~ 0
 DN[6]
 Text Label 8250 4600 0    50   ~ 0
 DN[7]
-Text Label 11050 3800 0    50   ~ 0
-DN[8]
-Wire Wire Line
-	10900 3800 11250 3800
 Text Label 11050 3900 0    50   ~ 0
 UP[1]
 Text Label 11050 4000 0    50   ~ 0
@@ -2126,12 +1962,8 @@ Wire Wire Line
 	10900 4400 11300 4400
 Text Label 5500 1100 0    50   ~ 0
 UP[7]
-Text Label 5500 1200 0    50   ~ 0
-UP[8]
 Wire Wire Line
 	5400 1100 5750 1100
-Wire Wire Line
-	5400 1200 5750 1200
 Text HLabel 5500 3000 2    50   Output ~ 0
 EN_5V
 Text HLabel 5500 3100 2    50   Output ~ 0
@@ -2157,7 +1989,7 @@ GPIO[2]
 Text Label 3050 3600 0    50   ~ 0
 GPIO[3]
 Text Label 3050 3700 0    50   ~ 0
-GPIO[4]
+UP[8]
 Wire Wire Line
 	2900 3700 3350 3700
 Wire Wire Line
@@ -2233,6 +2065,285 @@ Text Notes 6100 2800 0    50   ~ 0
 DAC80508\n8-chan
 Text Notes 2450 250  0    50   ~ 0
 What is VCCBATT?
+Text HLabel 5500 2500 2    50   Output ~ 0
+DS1_SDI
+Text GLabel 4300 7550 2    50   Output ~ 0
+A_EN1
+Text GLabel 3900 7650 2    50   Output ~ 0
+A_EN2
+Text GLabel 3550 7750 2    50   Output ~ 0
+A_EN3
+Text Label 3000 1200 0    50   ~ 0
+UP[8]
+Text HLabel 5500 1200 2    50   Output ~ 0
+ADS_RESETb
+Wire Wire Line
+	5500 1200 5400 1200
+$Comp
+L Device:R_Small_US R?
+U 1 1 60CCB2C7
+P 6200 1600
+F 0 "R?" V 6300 1650 59  0000 L BNN
+F 1 "33" V 6150 1450 59  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6200 1600 50  0001 C CNN
+F 3 "" H 6200 1600 50  0001 C CNN
+	1    6200 1600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5400 1600 6100 1600
+$Comp
+L Device:R_Small_US R?
+U 1 1 60CF501E
+P 6200 1400
+F 0 "R?" V 6300 1350 59  0000 L BNN
+F 1 "33" V 6150 1250 59  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6200 1400 50  0001 C CNN
+F 3 "" H 6200 1400 50  0001 C CNN
+	1    6200 1400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5400 1400 6100 1400
+$Comp
+L Device:R_Small_US R?
+U 1 1 60D1DA3A
+P 6650 1800
+F 0 "R?" V 6750 1850 59  0000 L BNN
+F 1 "33" V 6750 1650 59  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6650 1800 50  0001 C CNN
+F 3 "" H 6650 1800 50  0001 C CNN
+	1    6650 1800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6750 1800 6800 1800
+Wire Wire Line
+	5400 1800 6550 1800
+$Comp
+L Device:R_Small_US R?
+U 1 1 60D961AA
+P 6200 1900
+F 0 "R?" V 6150 1900 59  0000 L BNN
+F 1 "33" V 6150 1700 59  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6200 1900 50  0001 C CNN
+F 3 "" H 6200 1900 50  0001 C CNN
+	1    6200 1900
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6350 1900 6300 1900
+Wire Wire Line
+	5400 1900 6100 1900
+Text HLabel 5950 3900 1    50   BiDi ~ 0
+DC0_SDA
+Text HLabel 6350 4000 1    50   BiDi ~ 0
+DC1_SDA
+Text HLabel 6700 4100 1    50   BiDi ~ 0
+DC2_SDA
+Text HLabel 7100 4200 1    50   BiDi ~ 0
+DC3_SDA
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60FD67CA
+P 3550 3750
+F 0 "#PWR?" H 3550 3600 50  0001 C CNN
+F 1 "+3V3" H 3565 3923 50  0000 C CNN
+F 2 "" H 3550 3750 50  0001 C CNN
+F 3 "" H 3550 3750 50  0001 C CNN
+	1    3550 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 3750 3550 3800
+$Comp
+L Device:R_Small_US R?
+U 1 1 60FD67D1
+P 3900 4000
+F 0 "R?" H 3750 4050 39  0000 L BNN
+F 1 "3.3k" H 3700 3950 39  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3900 4000 50  0001 C CNN
+F 3 "" H 3900 4000 50  0001 C CNN
+	1    3900 4000
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60FD67D7
+P 3900 3850
+F 0 "#PWR?" H 3900 3700 50  0001 C CNN
+F 1 "+3V3" H 3915 4023 50  0000 C CNN
+F 2 "" H 3900 3850 50  0001 C CNN
+F 3 "" H 3900 3850 50  0001 C CNN
+	1    3900 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 3850 3900 3900
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60FD67DE
+P 4250 3950
+F 0 "#PWR?" H 4250 3800 50  0001 C CNN
+F 1 "+3V3" H 4265 4123 50  0000 C CNN
+F 2 "" H 4250 3950 50  0001 C CNN
+F 3 "" H 4250 3950 50  0001 C CNN
+	1    4250 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 3950 4250 4000
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60FD67E5
+P 4600 4050
+F 0 "#PWR?" H 4600 3900 50  0001 C CNN
+F 1 "+3V3" H 4615 4223 50  0000 C CNN
+F 2 "" H 4600 4050 50  0001 C CNN
+F 3 "" H 4600 4050 50  0001 C CNN
+	1    4600 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 4050 4600 4100
+$Comp
+L Device:R_Small_US R?
+U 1 1 60FD67EC
+P 3550 3900
+F 0 "R?" H 3400 3950 39  0000 L BNN
+F 1 "3.3k" H 3350 3850 39  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3550 3900 50  0001 C CNN
+F 3 "" H 3550 3900 50  0001 C CNN
+	1    3550 3900
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 60FD67F2
+P 4250 4100
+F 0 "R?" H 4100 4150 39  0000 L BNN
+F 1 "3.3k" H 4050 4050 39  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4250 4100 50  0001 C CNN
+F 3 "" H 4250 4100 50  0001 C CNN
+	1    4250 4100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 60FD67F8
+P 4600 4200
+F 0 "R?" H 4450 4250 39  0000 L BNN
+F 1 "3.3k" H 4400 4150 39  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4600 4200 50  0001 C CNN
+F 3 "" H 4600 4200 50  0001 C CNN
+	1    4600 4200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2900 4000 3550 4000
+Wire Wire Line
+	2900 4100 3900 4100
+Wire Wire Line
+	2900 4200 4250 4200
+Text HLabel 3450 4000 1    50   BiDi ~ 0
+DC0_SCL
+Text HLabel 3800 4100 1    50   BiDi ~ 0
+DC1_SCL
+Text HLabel 4150 4200 1    50   BiDi ~ 0
+DC2_SCL
+Text HLabel 4500 4300 1    50   BiDi ~ 0
+DC3_SCL
+Wire Wire Line
+	2900 4300 4600 4300
+Text Label 4300 6050 0    50   ~ 0
+DNO[8]
+$Comp
+L power:GND #GND?
+U 1 1 61668DC0
+P 5600 6050
+F 0 "#GND?" H 5600 6050 50  0001 C CNN
+F 1 "GND" H 5500 5950 59  0001 L BNN
+F 2 "" H 5600 6050 50  0001 C CNN
+F 3 "" H 5600 6050 50  0001 C CNN
+	1    5600 6050
+	0    -1   -1   0   
+$EndComp
+Text Label 11050 2200 0    50   ~ 0
+ISEL2[0]
+Text Label 11050 2300 0    50   ~ 0
+ISEL2[1]
+Wire Wire Line
+	10900 3600 11150 3600
+Text Label 11000 3700 0    50   ~ 0
+ISEL2[2]
+Text Label 11000 3800 0    50   ~ 0
+ISEL2[3]
+Wire Wire Line
+	11300 2400 11350 2400
+Wire Wire Line
+	10900 2300 11650 2300
+Wire Wire Line
+	10900 2200 11650 2200
+Entry Bus Bus
+	11650 2200 11750 2300
+Entry Bus Bus
+	11650 2300 11750 2400
+Wire Wire Line
+	10900 3700 11650 3700
+Wire Wire Line
+	10900 3800 11650 3800
+Entry Bus Bus
+	11650 3700 11750 3800
+Entry Bus Bus
+	11650 3800 11750 3900
+Text HLabel 11750 3900 3    50   Output ~ 0
+ISEL2[0..3]
+Wire Wire Line
+	5400 4300 5800 4300
+Wire Wire Line
+	5400 4400 5800 4400
+Text HLabel 5800 4300 2    50   Output ~ 0
+EN_IPUMP1
+Text HLabel 5800 4400 2    50   Output ~ 0
+EN_IPUMP2
+Wire Wire Line
+	10900 1000 11400 1000
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 60DAC10F
+P 11600 1000
+F 0 "J?" H 11700 975 50  0000 L CNN
+F 1 "Conn_Coaxial" H 11700 884 50  0000 L CNN
+F 2 "" H 11600 1000 50  0001 C CNN
+F 3 " ~" H 11600 1000 50  0001 C CNN
+	1    11600 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 60DAD274
+P 11600 1200
+F 0 "#PWR?" H 11600 950 50  0001 C CNN
+F 1 "GND" H 11605 1027 50  0001 C CNN
+F 2 "" H 11600 1200 50  0001 C CNN
+F 3 "" H 11600 1200 50  0001 C CNN
+	1    11600 1200
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3000 7850
+$Comp
+L power:GND #GND?
+U 1 1 60E25DCB
+P 750 7850
+F 0 "#GND?" H 750 7850 50  0001 C CNN
+F 1 "GND" H 650 7750 59  0001 L BNN
+F 2 "" H 750 7850 50  0001 C CNN
+F 3 "" H 750 7850 50  0001 C CNN
+	1    750  7850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	750  7850 1000 7850
 Wire Bus Line
 	11550 2600 11550 2900
 Wire Bus Line
@@ -2248,13 +2359,7 @@ Wire Bus Line
 Wire Bus Line
 	10350 5200 10350 5500
 Wire Bus Line
+	11750 2300 11750 3900
+Wire Bus Line
 	10350 5700 10350 6400
-Text HLabel 5500 2500 2    50   Input ~ 0
-DS1_SDI
-Text GLabel 4300 7550 2    50   Output ~ 0
-A_EN1
-Text GLabel 3900 7650 2    50   Output ~ 0
-A_EN2
-Text GLabel 3550 7750 2    50   Output ~ 0
-A_EN3
 $EndSCHEMATC
