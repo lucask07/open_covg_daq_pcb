@@ -1380,8 +1380,6 @@ Text Notes 10600 2400 0    50   ~ 0
 need connector
 Text Notes 10550 3400 0    50   ~ 0
 need connector
-Text Notes 4900 7550 0    50   ~ 0
-ERC will resolve with a connector
 $Comp
 L Device:Ferrite_Bead FB?
 U 1 1 6153A542
