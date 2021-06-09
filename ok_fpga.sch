@@ -173,12 +173,12 @@ $EndComp
 $Comp
 L power:+2V5 #PWR0178
 U 1 1 60BAA35F
-P 11350 3400
-F 0 "#PWR0178" H 11350 3250 50  0001 C CNN
-F 1 "+2V5" V 11300 3450 50  0000 C CNN
-F 2 "" H 11350 3400 50  0001 C CNN
-F 3 "" H 11350 3400 50  0001 C CNN
-	1    11350 3400
+P 11500 3400
+F 0 "#PWR0178" H 11500 3250 50  0001 C CNN
+F 1 "+2V5" V 11450 3450 50  0000 C CNN
+F 2 "" H 11500 3400 50  0001 C CNN
+F 3 "" H 11500 3400 50  0001 C CNN
+	1    11500 3400
 	0    1    1    0   
 $EndComp
 $Comp
@@ -281,12 +281,12 @@ $EndComp
 $Comp
 L power:+2V5 #PWR0204
 U 1 1 611AF4C6
-P 11350 2400
-F 0 "#PWR0204" H 11350 2250 50  0001 C CNN
-F 1 "+2V5" H 11365 2573 50  0000 C CNN
-F 2 "" H 11350 2400 50  0001 C CNN
-F 3 "" H 11350 2400 50  0001 C CNN
-	1    11350 2400
+P 11400 2400
+F 0 "#PWR0204" H 11400 2250 50  0001 C CNN
+F 1 "+2V5" H 11415 2573 50  0000 C CNN
+F 2 "" H 11400 2400 50  0001 C CNN
+F 3 "" H 11400 2400 50  0001 C CNN
+	1    11400 2400
 	0    1    1    0   
 $EndComp
 $Comp
@@ -592,8 +592,9 @@ U 1 1 62797B03
 P 3750 4500
 F 0 "J12" H 3850 4475 50  0000 L CNN
 F 1 "Conn_Coaxial" H 3850 4384 50  0000 L CNN
-F 2 "" H 3750 4500 50  0001 C CNN
+F 2 "covg-kicad:BU-SMA-G" H 3750 4500 50  0001 C CNN
 F 3 " ~" H 3750 4500 50  0001 C CNN
+F 4 "WM26450" H 3750 4500 50  0001 C CNN "Manf#"
 	1    3750 4500
 	1    0    0    -1  
 $EndComp
@@ -611,25 +612,25 @@ $EndComp
 $Comp
 L Interface_Expansion:TCA9555DBR U24
 U 1 1 62AE4241
-P 6450 5550
-F 0 "U24" H 6650 6600 50  0000 C CNN
-F 1 "TCA9555" H 6700 6500 50  0000 C CNN
-F 2 "Package_SO:SSOP-24_5.3x8.2mm_P0.65mm" H 7500 4550 50  0001 C CNN
-F 3 "" H 5950 6450 50  0001 C CNN
-F 4 "TCA9555DBR" H 6650 6700 50  0001 C CNN "Manf#"
-F 5 "TCA9555DBT" H 6450 5550 50  0001 C CNN "Alternate"
-	1    6450 5550
+P 6450 5800
+F 0 "U24" H 6650 6850 50  0000 C CNN
+F 1 "TCA9555" H 6700 6750 50  0000 C CNN
+F 2 "Package_SO:SSOP-24_5.3x8.2mm_P0.65mm" H 7500 4800 50  0001 C CNN
+F 3 "" H 5950 6700 50  0001 C CNN
+F 4 "TCA9555DBR" H 6650 6950 50  0001 C CNN "Manf#"
+F 5 "TCA9555DBT" H 6450 5800 50  0001 C CNN "Alternate"
+	1    6450 5800
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3V3 #PWR0220
 U 1 1 62B538C1
-P 6450 4350
-F 0 "#PWR0220" H 6450 4200 50  0001 C CNN
-F 1 "+3V3" V 6465 4478 50  0000 L CNN
-F 2 "" H 6450 4350 50  0001 C CNN
-F 3 "" H 6450 4350 50  0001 C CNN
-	1    6450 4350
+P 6450 4600
+F 0 "#PWR0220" H 6450 4450 50  0001 C CNN
+F 1 "+3V3" V 6465 4728 50  0000 L CNN
+F 2 "" H 6450 4600 50  0001 C CNN
+F 3 "" H 6450 4600 50  0001 C CNN
+	1    6450 4600
 	0    1    1    0   
 $EndComp
 $Comp
@@ -646,69 +647,69 @@ $EndComp
 $Comp
 L power:GND #GND0151
 U 1 1 62BF4A0F
-P 5600 6400
-F 0 "#GND0151" H 5600 6400 50  0001 C CNN
-F 1 "GND" H 5500 6300 59  0001 L BNN
-F 2 "" H 5600 6400 50  0001 C CNN
-F 3 "" H 5600 6400 50  0001 C CNN
-	1    5600 6400
+P 5600 6650
+F 0 "#GND0151" H 5600 6650 50  0001 C CNN
+F 1 "GND" H 5500 6550 59  0001 L BNN
+F 2 "" H 5600 6650 50  0001 C CNN
+F 3 "" H 5600 6650 50  0001 C CNN
+	1    5600 6650
 	1    0    0    -1  
 $EndComp
 $Comp
 L Interface_Expansion:TCA9555DBR U25
 U 1 1 630499A2
-P 9200 5500
-F 0 "U25" H 9400 6550 50  0000 C CNN
-F 1 "TCA9555" H 9450 6450 50  0000 C CNN
-F 2 "Package_SO:SSOP-24_5.3x8.2mm_P0.65mm" H 10250 4500 50  0001 C CNN
-F 3 "" H 8700 6400 50  0001 C CNN
-F 4 "TCA9555DBR" H 9400 6650 50  0001 C CNN "Manf#"
-F 5 "TCA9555DBT" H 9200 5500 50  0001 C CNN "Alternate"
-	1    9200 5500
+P 9200 5900
+F 0 "U25" H 9400 6950 50  0000 C CNN
+F 1 "TCA9555" H 9450 6850 50  0000 C CNN
+F 2 "Package_SO:SSOP-24_5.3x8.2mm_P0.65mm" H 10250 4900 50  0001 C CNN
+F 3 "" H 8700 6800 50  0001 C CNN
+F 4 "TCA9555DBR" H 9400 7050 50  0001 C CNN "Manf#"
+F 5 "TCA9555DBT" H 9200 5900 50  0001 C CNN "Alternate"
+	1    9200 5900
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3V3 #PWR0221
 U 1 1 630499AD
-P 9200 4350
-F 0 "#PWR0221" H 9200 4200 50  0001 C CNN
-F 1 "+3V3" V 9215 4478 50  0000 L CNN
-F 2 "" H 9200 4350 50  0001 C CNN
-F 3 "" H 9200 4350 50  0001 C CNN
-	1    9200 4350
+P 9200 4750
+F 0 "#PWR0221" H 9200 4600 50  0001 C CNN
+F 1 "+3V3" V 9215 4878 50  0000 L CNN
+F 2 "" H 9200 4750 50  0001 C CNN
+F 3 "" H 9200 4750 50  0001 C CNN
+	1    9200 4750
 	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #GND0152
 U 1 1 630499BA
-P 8350 6350
-F 0 "#GND0152" H 8350 6350 50  0001 C CNN
-F 1 "GND" H 8250 6250 59  0001 L BNN
-F 2 "" H 8350 6350 50  0001 C CNN
-F 3 "" H 8350 6350 50  0001 C CNN
-	1    8350 6350
+P 8350 6750
+F 0 "#GND0152" H 8350 6750 50  0001 C CNN
+F 1 "GND" H 8250 6650 59  0001 L BNN
+F 2 "" H 8350 6750 50  0001 C CNN
+F 3 "" H 8350 6750 50  0001 C CNN
+	1    8350 6750
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3V3 #PWR0222
 U 1 1 630907D5
-P 8350 6100
-F 0 "#PWR0222" H 8350 5950 50  0001 C CNN
-F 1 "+3V3" V 8365 6228 50  0000 L CNN
-F 2 "" H 8350 6100 50  0001 C CNN
-F 3 "" H 8350 6100 50  0001 C CNN
-	1    8350 6100
+P 8350 6500
+F 0 "#PWR0222" H 8350 6350 50  0001 C CNN
+F 1 "+3V3" V 8365 6628 50  0000 L CNN
+F 2 "" H 8350 6500 50  0001 C CNN
+F 3 "" H 8350 6500 50  0001 C CNN
+	1    8350 6500
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #GND0153
 U 1 1 6309157B
-P 9200 6700
-F 0 "#GND0153" H 9200 6700 50  0001 C CNN
-F 1 "GND" H 9100 6600 59  0001 L BNN
-F 2 "" H 9200 6700 50  0001 C CNN
-F 3 "" H 9200 6700 50  0001 C CNN
-	1    9200 6700
+P 9200 7050
+F 0 "#GND0153" H 9200 7050 50  0001 C CNN
+F 1 "GND" H 9100 6950 59  0001 L BNN
+F 2 "" H 9200 7050 50  0001 C CNN
+F 3 "" H 9200 7050 50  0001 C CNN
+	1    9200 7050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -773,7 +774,7 @@ L power:+1V8 #PWR0227
 U 1 1 6128240C
 P 4850 4900
 F 0 "#PWR0227" H 4850 4750 50  0001 C CNN
-F 1 "+1V8" H 4865 5073 50  0000 C CNN
+F 1 "+1V8" H 4700 5000 50  0000 C CNN
 F 2 "" H 4850 4900 50  0001 C CNN
 F 3 "" H 4850 4900 50  0001 C CNN
 	1    4850 4900
@@ -938,10 +939,11 @@ $Comp
 L Connector:Conn_Coaxial J14
 U 1 1 60DAC10F
 P 11600 1000
-F 0 "J14" H 11700 975 50  0000 L CNN
-F 1 "Conn_Coaxial" H 11700 884 50  0000 L CNN
-F 2 "" H 11600 1000 50  0001 C CNN
+F 0 "J14" V 11800 900 50  0000 L CNN
+F 1 "Conn_Coaxial" V 11700 884 50  0000 L CNN
+F 2 "covg-kicad:BU-SMA-G" H 11600 1000 50  0001 C CNN
 F 3 " ~" H 11600 1000 50  0001 C CNN
+F 4 "WM26450" V 11600 1000 50  0001 C CNN "Manf#"
 	1    11600 1000
 	1    0    0    -1  
 $EndComp
@@ -1023,7 +1025,7 @@ F 3 "" H 1500 2800 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x05_Counter_Clockwise J23
+L Connector_Generic:Conn_02x05_Odd_Even J23
 U 1 1 6134D983
 P 6400 7550
 F 0 "J23" H 6450 7967 50  0000 C CNN
@@ -1058,12 +1060,12 @@ $EndComp
 $Comp
 L power:+5V #PWR0226
 U 1 1 615FD112
-P 3600 4850
-F 0 "#PWR0226" H 3600 4700 50  0001 C CNN
-F 1 "+5V" H 3615 5023 50  0000 C CNN
-F 2 "" H 3600 4850 50  0001 C CNN
-F 3 "" H 3600 4850 50  0001 C CNN
-	1    3600 4850
+P 3600 4900
+F 0 "#PWR0226" H 3600 4750 50  0001 C CNN
+F 1 "+5V" H 3615 5073 50  0000 C CNN
+F 2 "" H 3600 4900 50  0001 C CNN
+F 3 "" H 3600 4900 50  0001 C CNN
+	1    3600 4900
 	1    0    0    -1  
 $EndComp
 Text HLabel 3000 2700 2    50   Output ~ 0
@@ -1072,69 +1074,69 @@ Text HLabel 3000 2800 2    50   Output ~ 0
 D0_SDI
 Text HLabel 3000 2900 2    50   Output ~ 0
 D0_SCLK
-Text HLabel 8300 2600 2    50   Input ~ 0
+Text HLabel 11100 3200 2    50   Input ~ 0
 A1_D_N
-Text HLabel 8300 2800 2    50   Input ~ 0
+Text HLabel 11100 2600 2    50   Input ~ 0
 A1_DCO_N
-Text HLabel 11100 1500 2    50   Output ~ 0
+Text HLabel 11100 1700 2    50   Output ~ 0
 A3_CNV_N
-Text HLabel 11100 1700 2    50   Input ~ 0
-A3_D_N
 Text HLabel 11100 1900 2    50   Input ~ 0
+A3_D_N
+Text HLabel 11100 2300 2    50   Input ~ 0
 A3_DCO_N
-Text HLabel 8300 2500 2    50   Input ~ 0
+Text HLabel 11100 3100 2    50   Input ~ 0
 A1_D_P
-Text HLabel 11100 1600 2    50   Input ~ 0
-A3_D_P
 Text HLabel 11100 1800 2    50   Input ~ 0
+A3_D_P
+Text HLabel 11100 2200 2    50   Input ~ 0
 A3_DCO_P
 Text HLabel 8300 3800 2    50   Output ~ 0
 A2_CLK_P
-Text HLabel 8300 2700 2    50   Input ~ 0
+Text HLabel 11100 2500 2    50   Input ~ 0
 A1_DCO_P
-Text HLabel 11100 1400 2    50   Output ~ 0
+Text HLabel 11100 1600 2    50   Output ~ 0
 A3_CNV_P
-Text HLabel 8300 2300 2    50   Output ~ 0
+Text HLabel 11100 3000 2    50   Output ~ 0
 A1_CNV_N
-Text HLabel 8300 2200 2    50   Output ~ 0
+Text HLabel 11100 2900 2    50   Output ~ 0
 A1_CNV_P
 Text HLabel 8300 1500 2    50   Output ~ 0
 A0_CNV_N
-Text HLabel 8300 3000 2    50   Output ~ 0
+Text HLabel 11100 2800 2    50   Output ~ 0
 A1_CLK_N
 Text HLabel 11100 2100 2    50   Output ~ 0
 A3_CLK_N
-Text HLabel 8300 3200 2    50   Output ~ 0
+Text HLabel 8300 3500 2    50   Output ~ 0
 A2_CNV_N
-Text HLabel 8300 3500 2    50   Input ~ 0
-A2_D_N
 Text HLabel 8300 3700 2    50   Input ~ 0
+A2_D_N
+Text HLabel 8250 4600 2    50   Input ~ 0
 A2_DCO_N
 Text HLabel 8300 3900 2    50   Output ~ 0
 A2_CLK_N
-Text HLabel 8300 2900 2    50   Output ~ 0
+Text HLabel 11100 2700 2    50   Output ~ 0
 A1_CLK_P
 Text HLabel 8300 1400 2    50   Output ~ 0
 A0_CNV_P
 Text HLabel 11100 2000 2    50   Output ~ 0
 A3_CLK_P
-Text HLabel 8300 3100 2    50   Output ~ 0
+Text HLabel 8300 3300 2    50   Output ~ 0
 A2_CNV_P
-Text HLabel 8300 1700 2    50   Input ~ 0
+Text HLabel 8300 1900 2    50   Input ~ 0
 A0_D_N
-Text HLabel 8300 3300 2    50   Input ~ 0
-A2_D_P
 Text HLabel 8300 3600 2    50   Input ~ 0
+A2_D_P
+Text HLabel 8250 4500 2    50   Input ~ 0
 A2_DCO_P
-Text HLabel 8300 2000 2    50   Output ~ 0
+Text HLabel 8300 1600 2    50   Output ~ 0
 A0_CLK_P
-Text HLabel 8300 2100 2    50   Output ~ 0
+Text HLabel 8300 1700 2    50   Output ~ 0
 A0_CLK_N
-Text HLabel 8300 1600 2    50   Input ~ 0
+Text HLabel 8300 1800 2    50   Input ~ 0
 A0_D_P
-Text HLabel 8300 1900 2    50   Output ~ 0
+Text HLabel 8300 2100 2    50   Input ~ 0
 A0_DCO_N
-Text HLabel 8300 1800 2    50   Output ~ 0
+Text HLabel 8300 2000 2    50   Input ~ 0
 A0_DCO_P
 Text HLabel 6350 1900 2    50   Output ~ 0
 ADS_CONVST
@@ -1164,13 +1166,13 @@ Text HLabel 3000 2500 2    50   Output ~ 0
 D2_SDI
 Text HLabel 3000 2600 2    50   Output ~ 0
 D2_SCLK
-Text Label 11000 2900 0    50   ~ 0
+Text Label 8400 2700 0    50   ~ 0
 A0_EN0_HV
-Text Label 11000 3000 0    50   ~ 0
+Text Label 8400 2800 0    50   ~ 0
 A1_EN0_HV
-Text Label 11000 3100 0    50   ~ 0
+Text Label 8400 2900 0    50   ~ 0
 A2_EN0_HV
-Text Label 11000 3200 0    50   ~ 0
+Text Label 8400 3000 0    50   ~ 0
 A3_EN0_HV
 Text Notes 550  750  0    50   ~ 0
 Bank 13: 3.3V always\nMC1 64 and 66-76  MC2 64 and 66-76 \n(24 total)
@@ -1180,7 +1182,7 @@ Text Notes 550  1550 0    50   ~ 0
 Bank 35: default 3.3V, \nchange by ferrite bead (FB9)\nMC2 2\n(total of 50)
 Text Notes 9350 3450 0    50   ~ 0
 IO voltage for bank 34
-Text Notes 9400 2450 0    50   ~ 0
+Text Notes 10250 2350 3    50   ~ 0
 IO voltage for bank 34
 Text Notes 3550 3250 0    50   ~ 0
 IO voltage for bank 35
@@ -1230,19 +1232,19 @@ Text Label 600  7150 0    39   ~ 0
 A2_EN0_HV
 Text Notes 3550 7350 0    39   ~ 0
 These are global (for all ADC channels)\nEN0 is the only signal that needs \nFPGA control per ADC channel.\nDefault settings: \nEN3,EN2,EN1,EN0 \n0,0,0,FPGA (A_EN2_HV is high-Z)\n\ndriving EN2 high outputs test\npatterns on the LVDS interface
-Text Label 11000 2500 0    50   ~ 0
+Text Label 8550 2200 0    50   ~ 0
 I1SEL0
-Text Label 11000 2600 0    50   ~ 0
+Text Label 8550 2300 0    50   ~ 0
 I1SEL1
-Text Label 11000 2700 0    50   ~ 0
+Text Label 8500 2500 0    50   ~ 0
 I1SEL2
-Text Label 11000 2800 0    50   ~ 0
+Text Label 8500 2600 0    50   ~ 0
 I1SEL3
-Text HLabel 11550 2900 3    50   Output ~ 0
+Text HLabel 9100 2700 3    50   Output ~ 0
 I1SEL[0..3]
-Text Notes 11550 2900 0    50   ~ 0
+Text Notes 9100 2600 0    50   ~ 0
 Ok for 2.5 V \nto TMUX since \nref to Gnd
-Text Notes 10850 5700 0    39   ~ 0
+Text Notes 11150 5700 0    39   ~ 0
 SparkFun qwiic connector\nSM04B-SRSS-TB\n3.3 V VCC
 Text Label 3050 3500 0    50   ~ 0
 UP7
@@ -1276,85 +1278,83 @@ Text HLabel 3000 1600 2    50   Output ~ 0
 D5_SCLK
 Text HLabel 3000 1500 2    50   Output ~ 0
 D5_SDI
-Text Notes 8400 300  0    50   ~ 0
-Do a check of skew matching between DCO and D \nfor high-speed ADC
 Text Notes 3400 2450 0    50   ~ 0
 3.3 V (leave open)
 Text Notes 3300 1200 0    50   ~ 0
 SYS_CLK not special \nother than name
 Text Notes 3550 3350 0    50   ~ 0
 3.3 V (leave open)
-Text Label 5450 4750 0    50   ~ 0
+Text Label 5450 5000 0    50   ~ 0
 QW_SDA
-Text Label 5450 4850 0    50   ~ 0
+Text Label 5450 5100 0    50   ~ 0
 QW_SCL
-Text Label 7150 4750 0    50   ~ 0
+Text Label 7150 5000 0    50   ~ 0
 G0_DAC0
-Text Label 7150 4850 0    50   ~ 0
+Text Label 7150 5100 0    50   ~ 0
 G0_DAC1
-Text Label 7150 4950 0    50   ~ 0
+Text Label 7150 5200 0    50   ~ 0
 G0_DAC2
-Text Label 7150 5050 0    50   ~ 0
+Text Label 7150 5300 0    50   ~ 0
 G0_DAC3
-Text Label 7150 5150 0    50   ~ 0
+Text Label 7150 5400 0    50   ~ 0
 G1_DAC0
-Text Label 7150 5250 0    50   ~ 0
+Text Label 7150 5500 0    50   ~ 0
 G1_DAC1
-Text Label 7150 5350 0    50   ~ 0
+Text Label 7150 5600 0    50   ~ 0
 G1_DAC2
-Text Label 7150 5450 0    50   ~ 0
+Text Label 7150 5700 0    50   ~ 0
 G1_DAC3
-Text Label 7150 6350 0    50   ~ 0
+Text Label 7150 6600 0    50   ~ 0
 G3_DAC3
-Text Label 7150 6250 0    50   ~ 0
+Text Label 7150 6500 0    50   ~ 0
 G3_DAC2
-Text Label 7150 6150 0    50   ~ 0
+Text Label 7150 6400 0    50   ~ 0
 G3_DAC1
-Text Label 7150 6050 0    50   ~ 0
+Text Label 7150 6300 0    50   ~ 0
 G3_DAC0
-Text Label 7150 5950 0    50   ~ 0
+Text Label 7150 6200 0    50   ~ 0
 G2_DAC3
-Text Label 7150 5850 0    50   ~ 0
+Text Label 7150 6100 0    50   ~ 0
 G2_DAC2
-Text Label 7150 5750 0    50   ~ 0
+Text Label 7150 6000 0    50   ~ 0
 G2_DAC1
-Text Label 7150 5650 0    50   ~ 0
+Text Label 7150 5900 0    50   ~ 0
 G2_DAC0
-Text Label 8200 4700 0    50   ~ 0
+Text Label 8200 5100 0    50   ~ 0
 QW_SDA
-Text Label 8200 4800 0    50   ~ 0
+Text Label 8200 5200 0    50   ~ 0
 QW_SCL
-Text Label 9900 4700 0    50   ~ 0
-G4_DAC0
-Text Label 9900 4800 0    50   ~ 0
-G4_DAC1
-Text Label 9900 4900 0    50   ~ 0
-G4_DAC2
-Text Label 9900 5000 0    50   ~ 0
-G4_DAC3
 Text Label 9900 5100 0    50   ~ 0
-G5_DAC0
+G4_DAC0
 Text Label 9900 5200 0    50   ~ 0
-G5_DAC1
+G4_DAC1
 Text Label 9900 5300 0    50   ~ 0
-G5_DAC2
+G4_DAC2
 Text Label 9900 5400 0    50   ~ 0
-G5_DAC3
+G4_DAC3
+Text Label 9900 5500 0    50   ~ 0
+G5_DAC0
 Text Label 9900 5600 0    50   ~ 0
-GP_IO0
+G5_DAC1
 Text Label 9900 5700 0    50   ~ 0
-GP_IO1
+G5_DAC2
 Text Label 9900 5800 0    50   ~ 0
-GP_IO2
-Text Label 9900 5900 0    50   ~ 0
-GP_IO3
+G5_DAC3
 Text Label 9900 6000 0    50   ~ 0
-GP_IO4
+GP_IO0
 Text Label 9900 6100 0    50   ~ 0
-GP_IO5
+GP_IO1
 Text Label 9900 6200 0    50   ~ 0
-GP_IO6
+GP_IO2
 Text Label 9900 6300 0    50   ~ 0
+GP_IO3
+Text Label 9900 6400 0    50   ~ 0
+GP_IO4
+Text Label 9900 6500 0    50   ~ 0
+GP_IO5
+Text Label 9900 6600 0    50   ~ 0
+GP_IO6
+Text Label 9900 6700 0    50   ~ 0
 GP_IO7
 Text Label 3000 3800 0    50   ~ 0
 LS_SCL
@@ -1364,17 +1364,17 @@ Text Label 2100 5700 0    50   ~ 0
 LS_SDA
 Text Label 2050 5600 0    50   ~ 0
 LS_SCL
-Text HLabel 7600 5000 2    50   Output ~ 0
+Text HLabel 7600 5250 2    50   Output ~ 0
 G0_DAC[0..3]
-Text HLabel 7600 5400 2    50   Output ~ 0
+Text HLabel 7600 5650 2    50   Output ~ 0
 G1_DAC[0..3]
-Text HLabel 7600 5850 2    50   Output ~ 0
+Text HLabel 7600 6100 2    50   Output ~ 0
 G2_DAC[0..3]
-Text HLabel 7600 6300 2    50   Output ~ 0
+Text HLabel 7600 6550 2    50   Output ~ 0
 G3_DAC[0..3]
-Text HLabel 10350 5350 2    50   Output ~ 0
+Text HLabel 10350 5600 2    50   Output ~ 0
 G5_DAC[0..3]
-Text HLabel 10350 4800 2    50   Output ~ 0
+Text HLabel 10350 5200 2    50   Output ~ 0
 G4_DAC[0..3]
 Text HLabel 5500 2600 2    50   Input ~ 0
 DS2_SDO
@@ -1456,19 +1456,19 @@ Text Label 5400 5850 0    50   ~ 0
 DN6
 Text Label 5400 5950 0    50   ~ 0
 DN7
-Text Label 8250 4000 0    50   ~ 0
+Text Label 8350 3100 0    50   ~ 0
 DN1
-Text Label 8250 4100 0    50   ~ 0
+Text Label 8350 3200 0    50   ~ 0
 DN2
-Text Label 8250 4200 0    50   ~ 0
+Text Label 8350 4000 0    50   ~ 0
 DN3
-Text Label 8250 4300 0    50   ~ 0
+Text Label 8350 4100 0    50   ~ 0
 DN4
-Text Label 8250 4400 0    50   ~ 0
+Text Label 8350 4200 0    50   ~ 0
 DN5
-Text Label 8250 4500 0    50   ~ 0
+Text Label 8350 4300 0    50   ~ 0
 DN6
-Text Label 8250 4600 0    50   ~ 0
+Text Label 8350 4400 0    50   ~ 0
 DN7
 Text Label 11050 3900 0    50   ~ 0
 UP1
@@ -1538,9 +1538,9 @@ Text HLabel 4500 4300 1    50   BiDi ~ 0
 DC3_SCL
 Text Label 4300 6050 0    50   ~ 0
 DNO8
-Text Label 11050 2200 0    50   ~ 0
+Text Label 11250 1400 0    50   ~ 0
 I2SEL0
-Text Label 11050 2300 0    50   ~ 0
+Text Label 11250 1500 0    50   ~ 0
 I2SEL1
 Text Label 11000 3700 0    50   ~ 0
 I2SEL2
@@ -1552,17 +1552,17 @@ Text HLabel 5800 4300 2    50   Output ~ 0
 EN_IPUMP1
 Text HLabel 5800 4400 2    50   Output ~ 0
 EN_IPUMP2
-Text Label 10350 5100 0    50   ~ 0
-G4_DAC[0..3]
 Text Label 10350 5500 0    50   ~ 0
+G4_DAC[0..3]
+Text Label 10350 5900 3    50   ~ 0
 G5_DAC[0..3]
-Text Label 7600 5150 0    50   ~ 0
+Text Label 7600 5400 0    50   ~ 0
 G0_DAC[0..3]
-Text Label 7600 5550 0    50   ~ 0
+Text Label 7600 5800 0    50   ~ 0
 G1_DAC[0..3]
-Text Label 7600 6050 0    50   ~ 0
+Text Label 7600 6300 0    50   ~ 0
 G2_DAC[0..3]
-Text Label 7600 6450 0    50   ~ 0
+Text Label 7600 6700 0    50   ~ 0
 G3_DAC[0..3]
 Text Label 650  2400 0    50   ~ 0
 UPO1
@@ -1647,16 +1647,6 @@ Wire Wire Line
 Wire Wire Line
 	2900 700  3000 700 
 Wire Wire Line
-	8200 2600 8300 2600
-Wire Wire Line
-	8200 2500 8300 2500
-Wire Wire Line
-	8200 2700 8300 2700
-Wire Wire Line
-	8200 2300 8300 2300
-Wire Wire Line
-	8200 2200 8300 2200
-Wire Wire Line
 	10900 1300 11000 1300
 Wire Wire Line
 	10900 1100 11000 1100
@@ -1685,15 +1675,7 @@ Wire Wire Line
 Wire Wire Line
 	8200 3600 8300 3600
 Wire Wire Line
-	8200 3100 8300 3100
-Wire Wire Line
-	8200 3200 8300 3200
-Wire Wire Line
 	8200 2000 8300 2000
-Wire Wire Line
-	8200 3000 8300 3000
-Wire Wire Line
-	8200 2900 8300 2900
 Wire Wire Line
 	8200 3500 8300 3500
 Wire Wire Line
@@ -1769,11 +1751,7 @@ Wire Wire Line
 Wire Wire Line
 	2900 2600 3000 2600
 Wire Wire Line
-	11350 3400 11300 3400
-Wire Wire Line
 	8300 3800 8200 3800
-Wire Wire Line
-	8300 2800 8200 2800
 Wire Wire Line
 	8200 2400 8300 2400
 Wire Wire Line
@@ -1781,17 +1759,11 @@ Wire Wire Line
 Wire Wire Line
 	8200 3400 8350 3400
 Wire Wire Line
-	10900 1500 11100 1500
-Wire Wire Line
 	10900 1700 11100 1700
-Wire Wire Line
-	10900 1900 11100 1900
 Wire Wire Line
 	10900 1600 11100 1600
 Wire Wire Line
 	10900 1800 11100 1800
-Wire Wire Line
-	10900 1400 11100 1400
 Wire Wire Line
 	10900 2000 11100 2000
 Wire Wire Line
@@ -1802,14 +1774,6 @@ Wire Wire Line
 	10900 2400 11000 2400
 Wire Wire Line
 	10900 3400 11000 3400
-Wire Wire Line
-	11100 3200 10900 3200
-Wire Wire Line
-	11100 3100 10900 3100
-Wire Wire Line
-	11100 3000 10900 3000
-Wire Wire Line
-	11100 2900 10900 2900
 Wire Wire Line
 	10900 3300 11100 3300
 Wire Wire Line
@@ -1907,13 +1871,9 @@ Wire Wire Line
 Wire Wire Line
 	800  7350 1000 7350
 Wire Wire Line
-	10900 2500 11450 2500
+	8200 2500 9000 2500
 Wire Wire Line
-	10900 2600 11450 2600
-Wire Wire Line
-	10900 2700 11450 2700
-Wire Wire Line
-	10900 2800 11450 2800
+	8200 2600 9000 2600
 Wire Wire Line
 	10900 3500 11150 3500
 Wire Wire Line
@@ -1927,89 +1887,81 @@ Wire Wire Line
 Wire Wire Line
 	3750 4750 3750 4700
 Wire Wire Line
-	5750 4750 5450 4750
+	5750 5000 5450 5000
 Wire Wire Line
-	5750 4850 5450 4850
+	5750 5100 5450 5100
 Wire Wire Line
-	6450 4350 6450 4450
+	6450 4600 6450 4700
 Wire Wire Line
 	6450 6700 6450 6650
 Wire Wire Line
-	5750 6150 5600 6150
+	5750 6400 5600 6400
 Wire Wire Line
-	5600 6150 5600 6250
+	5600 6400 5600 6500
 Wire Wire Line
-	5600 6350 5750 6350
+	5600 6600 5750 6600
 Wire Wire Line
-	5750 6250 5600 6250
+	5750 6500 5600 6500
 Wire Wire Line
-	5600 6250 5600 6350
+	5600 6500 5600 6600
 Wire Wire Line
-	5600 6400 5600 6350
+	5600 6650 5600 6600
 Wire Wire Line
-	7150 5150 7500 5150
+	7150 5400 7500 5400
 Wire Wire Line
-	7150 5250 7500 5250
+	7150 5500 7500 5500
 Wire Wire Line
-	7150 5350 7500 5350
+	7150 5600 7500 5600
 Wire Wire Line
-	7150 5450 7500 5450
+	7150 5700 7500 5700
 Wire Wire Line
-	7150 5650 7500 5650
+	7150 5900 7500 5900
 Wire Wire Line
-	7150 5750 7500 5750
+	7150 6000 7500 6000
 Wire Wire Line
-	7150 5850 7500 5850
+	7150 6100 7500 6100
 Wire Wire Line
-	7150 5950 7500 5950
+	7150 6200 7500 6200
 Wire Wire Line
-	7150 6050 7500 6050
+	7150 6300 7500 6300
 Wire Wire Line
-	7150 6150 7500 6150
+	7150 6400 7500 6400
 Wire Wire Line
-	7150 6250 7500 6250
+	7150 6500 7500 6500
 Wire Wire Line
-	7150 6350 7500 6350
+	7150 6600 7500 6600
 Wire Wire Line
-	7150 4750 7500 4750
+	7150 5000 7500 5000
 Wire Wire Line
-	7150 4850 7500 4850
+	7150 5100 7500 5100
 Wire Wire Line
-	7150 4950 7500 4950
+	7150 5200 7500 5200
 Wire Wire Line
-	7150 5050 7500 5050
+	7150 5300 7500 5300
 Wire Wire Line
-	8500 4700 8200 4700
+	8500 5100 8200 5100
 Wire Wire Line
-	8500 4800 8200 4800
+	8500 5200 8200 5200
 Wire Wire Line
-	9200 4350 9200 4400
+	9200 4750 9200 4800
 Wire Wire Line
-	8500 6100 8350 6100
+	8500 6500 8350 6500
 Wire Wire Line
-	8350 6300 8500 6300
+	8350 6700 8500 6700
 Wire Wire Line
-	8500 6200 8350 6200
+	8500 6600 8350 6600
 Wire Wire Line
-	8350 6200 8350 6300
+	8350 6600 8350 6700
 Wire Wire Line
-	8350 6350 8350 6300
+	8350 6750 8350 6700
 Wire Wire Line
-	9900 5100 10250 5100
-Wire Wire Line
-	9900 5200 10250 5200
-Wire Wire Line
-	9900 5300 10250 5300
-Wire Wire Line
-	9900 5400 10250 5400
+	9900 5500 10250 5500
 Wire Wire Line
 	9900 5600 10250 5600
 Wire Wire Line
 	9900 5700 10250 5700
 Wire Wire Line
 	9900 5800 10250 5800
-Wire Wire Line
-	9900 5900 10250 5900
 Wire Wire Line
 	9900 6000 10250 6000
 Wire Wire Line
@@ -2019,13 +1971,21 @@ Wire Wire Line
 Wire Wire Line
 	9900 6300 10250 6300
 Wire Wire Line
-	9900 4700 10250 4700
+	9900 6400 10250 6400
 Wire Wire Line
-	9900 4800 10250 4800
+	9900 6500 10250 6500
 Wire Wire Line
-	9900 4900 10250 4900
+	9900 6600 10250 6600
 Wire Wire Line
-	9900 5000 10250 5000
+	9900 6700 10250 6700
+Wire Wire Line
+	9900 5100 10250 5100
+Wire Wire Line
+	9900 5200 10250 5200
+Wire Wire Line
+	9900 5300 10250 5300
+Wire Wire Line
+	9900 5400 10250 5400
 Wire Wire Line
 	1550 5050 1550 5100
 Wire Wire Line
@@ -2129,20 +2089,6 @@ Wire Wire Line
 Wire Wire Line
 	4950 6450 4950 6350
 Wire Wire Line
-	8200 4000 8450 4000
-Wire Wire Line
-	8200 4100 8450 4100
-Wire Wire Line
-	8200 4200 8450 4200
-Wire Wire Line
-	8200 4300 8450 4300
-Wire Wire Line
-	8200 4400 8450 4400
-Wire Wire Line
-	8200 4500 8450 4500
-Wire Wire Line
-	8200 4600 8450 4600
-Wire Wire Line
 	10900 3900 11300 3900
 Wire Wire Line
 	10900 4000 11300 4000
@@ -2210,12 +2156,6 @@ Wire Wire Line
 	2900 4300 4600 4300
 Wire Wire Line
 	10900 3600 11150 3600
-Wire Wire Line
-	11300 2400 11350 2400
-Wire Wire Line
-	10900 2300 11650 2300
-Wire Wire Line
-	10900 2200 11650 2200
 Wire Wire Line
 	10900 3700 11650 3700
 Wire Wire Line
@@ -2289,8 +2229,6 @@ Wire Wire Line
 Wire Wire Line
 	5850 7750 6200 7750
 Wire Wire Line
-	9200 6600 9200 6700
-Wire Wire Line
 	950  3300 650  3300
 Wire Wire Line
 	950  3400 650  3400
@@ -2298,80 +2236,78 @@ Wire Wire Line
 	1450 3300 1800 3300
 Wire Wire Line
 	1450 3400 1800 3400
-Wire Wire Line
-	3600 4850 3600 4950
 Entry Wire Line
-	11450 2500 11550 2600
+	9000 2200 9100 2300
 Entry Wire Line
-	11450 2600 11550 2700
+	9000 2300 9100 2400
 Entry Wire Line
-	11450 2700 11550 2800
+	9000 2500 9100 2600
 Entry Wire Line
-	11450 2800 11550 2900
+	9000 2600 9100 2700
 Entry Wire Line
-	7500 5150 7600 5250
+	7500 5400 7600 5500
 Entry Wire Line
-	7500 5250 7600 5350
+	7500 5500 7600 5600
 Entry Wire Line
-	7500 5350 7600 5450
+	7500 5600 7600 5700
 Entry Wire Line
-	7500 5450 7600 5550
+	7500 5700 7600 5800
 Entry Wire Line
-	7500 5650 7600 5750
+	7500 5900 7600 6000
 Entry Wire Line
-	7500 5750 7600 5850
+	7500 6000 7600 6100
 Entry Wire Line
-	7500 5850 7600 5950
+	7500 6100 7600 6200
 Entry Wire Line
-	7500 5950 7600 6050
+	7500 6200 7600 6300
 Entry Wire Line
-	7500 6050 7600 6150
+	7500 6300 7600 6400
 Entry Wire Line
-	7500 6150 7600 6250
+	7500 6400 7600 6500
 Entry Wire Line
-	7500 6250 7600 6350
+	7500 6500 7600 6600
 Entry Wire Line
-	7500 6350 7600 6450
+	7500 6600 7600 6700
 Entry Wire Line
-	7500 4750 7600 4850
+	7500 5000 7600 5100
 Entry Wire Line
-	7500 4850 7600 4950
+	7500 5100 7600 5200
 Entry Wire Line
-	7500 4950 7600 5050
+	7500 5200 7600 5300
 Entry Wire Line
-	7500 5050 7600 5150
-Entry Wire Line
-	10250 4700 10350 4800
-Entry Wire Line
-	10250 4800 10350 4900
-Entry Wire Line
-	10250 4900 10350 5000
-Entry Wire Line
-	10250 5000 10350 5100
+	7500 5300 7600 5400
 Entry Wire Line
 	10250 5100 10350 5200
 Entry Wire Line
-	10250 5300 10350 5400
-Entry Wire Line
 	10250 5200 10350 5300
+Entry Wire Line
+	10250 5300 10350 5400
 Entry Wire Line
 	10250 5400 10350 5500
 Entry Wire Line
-	11650 2200 11750 2300
+	10250 5500 10350 5600
 Entry Wire Line
-	11650 2300 11750 2400
+	10250 5700 10350 5800
+Entry Wire Line
+	10250 5600 10350 5700
+Entry Wire Line
+	10250 5800 10350 5900
+Entry Wire Line
+	11650 1400 11750 1500
+Entry Wire Line
+	11650 1500 11750 1600
 Entry Wire Line
 	11650 3700 11750 3800
 Entry Wire Line
 	11650 3800 11750 3900
-Connection ~ 5600 6250
-Connection ~ 5600 6350
-Connection ~ 8350 6300
+Connection ~ 5600 6500
+Connection ~ 5600 6600
+Connection ~ 8350 6700
 Connection ~ 3400 4900
 Connection ~ 4850 4950
 Connection ~ 8300 1200
-NoConn ~ 5750 4950
-NoConn ~ 8500 4900
+NoConn ~ 5750 5200
+NoConn ~ 8500 5300
 NoConn ~ 2900 3400
 NoConn ~ 2900 2400
 NoConn ~ 10900 800 
@@ -2384,10 +2320,10 @@ NoConn ~ 5500 800
 NoConn ~ 5500 700 
 NoConn ~ 3000 7850
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R45
 U 1 1 60D03DB8
 P 900 5500
-F 0 "R?" H 750 5550 39  0000 L BNN
+F 0 "R45" H 750 5550 39  0000 L BNN
 F 1 "3.3k" H 700 5450 39  0000 L BNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 900 5500 50  0001 C CNN
 F 3 "" H 900 5500 50  0001 C CNN
@@ -2398,10 +2334,10 @@ F 6 "1%" H 750 5650 50  0001 C CNN "Tolerance"
 	1    0    0    1   
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R47
 U 1 1 60D041C8
 P 2350 5500
-F 0 "R?" H 2200 5550 39  0000 L BNN
+F 0 "R47" H 2200 5550 39  0000 L BNN
 F 1 "3.3k" H 2150 5450 39  0000 L BNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 2350 5500 50  0001 C CNN
 F 3 "" H 2350 5500 50  0001 C CNN
@@ -2412,10 +2348,10 @@ F 6 "1%" H 2200 5650 50  0001 C CNN "Tolerance"
 	1    0    0    1   
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R48
 U 1 1 60D04617
 P 2550 5600
-F 0 "R?" H 2400 5650 39  0000 L BNN
+F 0 "R48" H 2400 5650 39  0000 L BNN
 F 1 "3.3k" H 2350 5550 39  0000 L BNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 2550 5600 50  0001 C CNN
 F 3 "" H 2550 5600 50  0001 C CNN
@@ -2426,10 +2362,10 @@ F 6 "1%" H 2400 5750 50  0001 C CNN "Tolerance"
 	1    0    0    1   
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R53
 U 1 1 60D04A1D
 P 3900 7750
-F 0 "R?" H 3700 7850 59  0000 L BNN
+F 0 "R53" H 3700 7850 59  0000 L BNN
 F 1 "100k" H 3600 7700 59  0000 L BNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 3900 7750 50  0001 C CNN
 F 3 "" H 3900 7750 50  0001 C CNN
@@ -2440,10 +2376,10 @@ F 6 "1%" H 3700 7950 50  0001 C CNN "Tolerance"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R55
 U 1 1 60D04F7C
 P 4300 7650
-F 0 "R?" H 4100 7750 59  0000 L BNN
+F 0 "R55" H 4100 7750 59  0000 L BNN
 F 1 "100k" H 4000 7600 59  0000 L BNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 4300 7650 50  0001 C CNN
 F 3 "" H 4300 7650 50  0001 C CNN
@@ -2454,10 +2390,10 @@ F 6 "1%" H 4100 7850 50  0001 C CNN "Tolerance"
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R70
 U 1 1 60D063BB
 P 11450 6500
-F 0 "R?" H 11300 6550 39  0000 L BNN
+F 0 "R70" H 11300 6550 39  0000 L BNN
 F 1 "3.3k" H 11250 6450 39  0000 L BNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 11450 6500 50  0001 C CNN
 F 3 "" H 11450 6500 50  0001 C CNN
@@ -2468,10 +2404,10 @@ F 6 "1%" H 11300 6650 50  0001 C CNN "Tolerance"
 	1    0    0    1   
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R71
 U 1 1 60D067BE
 P 11800 6500
-F 0 "R?" H 11650 6550 39  0000 L BNN
+F 0 "R71" H 11650 6550 39  0000 L BNN
 F 1 "3.3k" H 11600 6450 39  0000 L BNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 11800 6500 50  0001 C CNN
 F 3 "" H 11800 6500 50  0001 C CNN
@@ -2490,10 +2426,10 @@ Wire Wire Line
 Wire Wire Line
 	11800 6600 11800 6850
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R59
 U 1 1 60DD9B69
 P 6200 1600
-F 0 "R?" V 6300 1550 59  0000 L BNN
+F 0 "R59" V 6300 1550 59  0000 L BNN
 F 1 "33" V 6150 1450 59  0000 L BNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 6200 1600 50  0001 C CNN
 F 3 "" H 6200 1600 50  0001 C CNN
@@ -2504,10 +2440,10 @@ F 6 "1%" H 6300 1650 50  0001 C CNN "Tolerance"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R60
 U 1 1 60DD9E4E
 P 6200 1900
-F 0 "R?" V 6300 1950 59  0000 L BNN
+F 0 "R60" V 6300 1950 59  0000 L BNN
 F 1 "33" V 6300 1750 59  0000 L BNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 6200 1900 50  0001 C CNN
 F 3 "" H 6200 1900 50  0001 C CNN
@@ -2518,10 +2454,10 @@ F 6 "1%" H 6300 2050 50  0001 C CNN "Tolerance"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_US R?
+L Device:R_US R66
 U 1 1 60DDA349
 P 8600 1000
-F 0 "R?" H 8450 1059 59  0000 L BNN
+F 0 "R66" H 8450 1059 59  0000 L BNN
 F 1 "DNI" H 8450 870 59  0000 L BNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 8600 1000 50  0001 C CNN
 F 3 "" H 8600 1000 50  0001 C CNN
@@ -2532,10 +2468,10 @@ F 6 "" H 8450 1159 50  0001 C CNN "Tolerance"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R?
+L Device:R_US R69
 U 1 1 60DDA8E4
 P 11150 3400
-F 0 "R?" V 11150 3500 59  0000 L BNN
+F 0 "R69" V 11150 3500 59  0000 L BNN
 F 1 "0" H 11050 3200 59  0000 L BNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 11150 3400 50  0001 C CNN
 F 3 "" H 11150 3400 50  0001 C CNN
@@ -2546,10 +2482,10 @@ F 6 "1%" H 11150 3600 50  0001 C CNN "Tolerance"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R57
 U 1 1 60DDAE59
 P 6050 3800
-F 0 "R?" H 6050 3800 39  0000 L BNN
+F 0 "R57" H 6050 3800 39  0000 L BNN
 F 1 "3.3k" H 6050 3700 39  0000 L BNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 6050 3800 50  0001 C CNN
 F 3 "" H 6050 3800 50  0001 C CNN
@@ -2560,10 +2496,10 @@ F 6 "1%" H 5900 3950 50  0001 C CNN "Tolerance"
 	1    0    0    1   
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R61
 U 1 1 60DDBA90
 P 6450 3900
-F 0 "R?" H 6350 3950 39  0000 L BNN
+F 0 "R61" H 6350 3950 39  0000 L BNN
 F 1 "3.3k" H 6350 3800 39  0000 L BNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 6450 3900 50  0001 C CNN
 F 3 "" H 6450 3900 50  0001 C CNN
@@ -2574,10 +2510,10 @@ F 6 "1%" H 6300 4050 50  0001 C CNN "Tolerance"
 	1    0    0    1   
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R63
 U 1 1 60DDBDF1
 P 6800 4000
-F 0 "R?" H 6650 4050 39  0000 L BNN
+F 0 "R63" H 6650 4050 39  0000 L BNN
 F 1 "3.3k" H 6600 3950 39  0000 L BNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 6800 4000 50  0001 C CNN
 F 3 "" H 6800 4000 50  0001 C CNN
@@ -2588,10 +2524,10 @@ F 6 "1%" H 6650 4150 50  0001 C CNN "Tolerance"
 	1    0    0    1   
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R64
 U 1 1 60DDC16C
 P 7200 4100
-F 0 "R?" H 7050 4150 39  0000 L BNN
+F 0 "R64" H 7050 4150 39  0000 L BNN
 F 1 "3.3k" H 7000 4050 39  0000 L BNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 7200 4100 50  0001 C CNN
 F 3 "" H 7200 4100 50  0001 C CNN
@@ -2602,10 +2538,10 @@ F 6 "1%" H 7050 4250 50  0001 C CNN "Tolerance"
 	1    0    0    1   
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R54
 U 1 1 60DDC9FF
 P 4250 4100
-F 0 "R?" H 4250 4100 39  0000 L BNN
+F 0 "R54" H 4250 4100 39  0000 L BNN
 F 1 "3.3k" H 4250 4000 39  0000 L BNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 4250 4100 50  0001 C CNN
 F 3 "" H 4250 4100 50  0001 C CNN
@@ -2616,10 +2552,10 @@ F 6 "1%" H 4100 4250 50  0001 C CNN "Tolerance"
 	1    0    0    1   
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R52
 U 1 1 60DDD4FC
 P 3900 4000
-F 0 "R?" H 3900 4000 39  0000 L BNN
+F 0 "R52" H 3900 4000 39  0000 L BNN
 F 1 "3.3k" H 3900 3900 39  0000 L BNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 3900 4000 50  0001 C CNN
 F 3 "" H 3900 4000 50  0001 C CNN
@@ -2630,10 +2566,10 @@ F 6 "1%" H 3750 4150 50  0001 C CNN "Tolerance"
 	1    0    0    1   
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L Device:R_Small_US R56
 U 1 1 60DDD963
 P 4600 4200
-F 0 "R?" H 4600 4200 39  0000 L BNN
+F 0 "R56" H 4600 4200 39  0000 L BNN
 F 1 "3.3k" H 4600 4100 39  0000 L BNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 4600 4200 50  0001 C CNN
 F 3 "" H 4600 4200 50  0001 C CNN
@@ -2643,20 +2579,92 @@ F 6 "1%" H 4450 4350 50  0001 C CNN "Tolerance"
 	1    4600 4200
 	1    0    0    1   
 $EndComp
+Text Notes 8800 2050 0    35   ~ 0
+14 is a clock in
+Text Notes 10300 2250 1    35   ~ 0
+13 is a clock in
+Wire Wire Line
+	11100 2200 10900 2200
+Wire Wire Line
+	10900 2300 11100 2300
+Wire Wire Line
+	10900 1900 11100 1900
+Wire Wire Line
+	10900 1500 11650 1500
+Wire Wire Line
+	10900 1400 11650 1400
+Text Notes 10050 2550 1    35   ~ 0
+11 is a clock in
+Text Notes 9150 4600 2    35   ~ 0
+12 is a clock in
+Wire Wire Line
+	8250 4500 8200 4500
+Wire Wire Line
+	8250 4600 8200 4600
+Wire Wire Line
+	9200 7050 9200 7000
+Wire Wire Line
+	8200 4000 8550 4000
+Wire Wire Line
+	8200 4100 8550 4100
+Wire Wire Line
+	8200 4200 8550 4200
+Wire Wire Line
+	8200 4300 8550 4300
+Wire Wire Line
+	8200 4400 8550 4400
+Wire Wire Line
+	11300 2400 11400 2400
+Wire Wire Line
+	10900 2700 11100 2700
+Wire Wire Line
+	10900 2800 11100 2800
+Wire Wire Line
+	11100 2600 10900 2600
+Wire Wire Line
+	11100 2500 10900 2500
+Wire Wire Line
+	10900 3000 11100 3000
+Wire Wire Line
+	10900 2900 11100 2900
+Wire Wire Line
+	11100 3100 10900 3100
+Wire Wire Line
+	11100 3200 10900 3200
+Wire Wire Line
+	8200 3100 8550 3100
+Wire Wire Line
+	8200 3200 8550 3200
+Wire Wire Line
+	8200 2700 8500 2700
+Wire Wire Line
+	8200 3000 8500 3000
+Wire Wire Line
+	8200 2900 8500 2900
+Wire Wire Line
+	8200 2800 8500 2800
+Wire Wire Line
+	8200 2300 9000 2300
+Wire Wire Line
+	9000 2200 8200 2200
+Wire Wire Line
+	11300 3400 11500 3400
+Wire Wire Line
+	3600 4900 3600 4950
 Wire Bus Line
-	11550 2600 11550 2900
+	7600 5500 7600 5800
 Wire Bus Line
-	7600 5250 7600 5550
+	7600 6000 7600 6300
 Wire Bus Line
-	7600 5750 7600 6050
+	7600 6400 7600 6700
 Wire Bus Line
-	7600 6150 7600 6450
-Wire Bus Line
-	7600 4850 7600 5150
-Wire Bus Line
-	10350 4800 10350 5100
+	7600 5100 7600 5400
 Wire Bus Line
 	10350 5200 10350 5500
 Wire Bus Line
-	11750 2300 11750 3900
+	10350 5600 10350 5900
+Wire Bus Line
+	11750 1500 11750 3900
+Wire Bus Line
+	9100 2250 9100 2700
 $EndSCHEMATC
