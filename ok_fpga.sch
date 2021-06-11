@@ -19,7 +19,7 @@ U 1 1 DA224995
 P 2500 2600
 F 0 "OK1" H 2700 4610 70  0000 R BNN
 F 1 "OPALKELLY_XEM6310" H 2500 2600 50  0001 C CNN
-F 2 "covg-kicad:OPALKELLY_XEM6010" H 2500 2600 50  0001 C CNN
+F 2 "covg-kicad:OPALKELLY_XEM7310" H 2500 2600 50  0001 C CNN
 F 3 "" H 2500 2600 50  0001 C CNN
 F 4 "BTE-040-02-F-D-A" H 2700 4710 50  0001 C CNN "Manf#"
 	1    2500 2600
@@ -31,7 +31,7 @@ U 3 1 DA22499D
 P 7800 2600
 F 0 "OK1" H 8000 4610 70  0000 R BNN
 F 1 "OPALKELLY_XEM6310" H 7800 2600 50  0001 C CNN
-F 2 "covg-kicad:OPALKELLY_XEM6010" H 7800 2600 50  0001 C CNN
+F 2 "covg-kicad:OPALKELLY_XEM7310" H 7800 2600 50  0001 C CNN
 F 3 "" H 7800 2600 50  0001 C CNN
 F 4 "BTE-040-02-F-D-A" H 8000 4710 50  0001 C CNN "Manf#"
 	3    7800 2600
@@ -43,7 +43,7 @@ U 4 1 DA224981
 P 10500 2600
 F 0 "OK1" H 10700 4610 70  0000 R BNN
 F 1 "OPALKELLY_XEM6310" H 10500 2600 50  0001 C CNN
-F 2 "covg-kicad:OPALKELLY_XEM6010" H 10500 2600 50  0001 C CNN
+F 2 "covg-kicad:OPALKELLY_XEM7310" H 10500 2600 50  0001 C CNN
 F 3 "" H 10500 2600 50  0001 C CNN
 F 4 "BTE-040-02-F-D-A" H 10700 4710 50  0001 C CNN "Manf#"
 	4    10500 2600
@@ -580,7 +580,7 @@ U 2 1 DA224999
 P 5000 2600
 F 0 "OK1" H 5200 4610 70  0000 R BNN
 F 1 "OPALKELLY_XEM6310" H 5000 2600 50  0001 C CNN
-F 2 "covg-kicad:OPALKELLY_XEM6010" H 5000 2600 50  0001 C CNN
+F 2 "covg-kicad:OPALKELLY_XEM7310" H 5000 2600 50  0001 C CNN
 F 3 "" H 5000 2600 50  0001 C CNN
 F 4 "BTE-040-02-F-D-A" H 5200 4710 50  0001 C CNN "Manf#"
 	2    5000 2600
@@ -636,12 +636,12 @@ $EndComp
 $Comp
 L power:GND #GND0150
 U 1 1 62BA3427
-P 6450 6700
-F 0 "#GND0150" H 6450 6700 50  0001 C CNN
-F 1 "GND" H 6350 6600 59  0001 L BNN
-F 2 "" H 6450 6700 50  0001 C CNN
-F 3 "" H 6450 6700 50  0001 C CNN
-	1    6450 6700
+P 6450 6950
+F 0 "#GND0150" H 6450 6950 50  0001 C CNN
+F 1 "GND" H 6350 6850 59  0001 L BNN
+F 2 "" H 6450 6950 50  0001 C CNN
+F 3 "" H 6450 6950 50  0001 C CNN
+	1    6450 6950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1184,7 +1184,7 @@ Text Notes 9350 3450 0    50   ~ 0
 IO voltage for bank 34
 Text Notes 10250 2350 3    50   ~ 0
 IO voltage for bank 34
-Text Notes 3550 3250 0    50   ~ 0
+Text Notes 3550 3000 0    50   ~ 0
 IO voltage for bank 35
 Text Notes 3400 2350 0    50   ~ 0
 IO voltage for bank 35
@@ -1246,7 +1246,7 @@ Text Notes 9100 2600 0    50   ~ 0
 Ok for 2.5 V \nto TMUX since \nref to Gnd
 Text Notes 11150 5700 0    39   ~ 0
 SparkFun qwiic connector\nSM04B-SRSS-TB\n3.3 V VCC
-Text Label 3050 3500 0    50   ~ 0
+Text Label 3000 3500 0    50   ~ 0
 UP7
 Text Label 3000 3900 0    50   ~ 0
 QW_SCL
@@ -1282,7 +1282,7 @@ Text Notes 3400 2450 0    50   ~ 0
 3.3 V (leave open)
 Text Notes 3300 1200 0    50   ~ 0
 SYS_CLK not special \nother than name
-Text Notes 3550 3350 0    50   ~ 0
+Text Notes 3550 3100 0    50   ~ 0
 3.3 V (leave open)
 Text Label 5450 5000 0    50   ~ 0
 QW_SDA
@@ -1833,7 +1833,7 @@ Wire Wire Line
 Wire Wire Line
 	600  6950 1000 6950
 Wire Wire Line
-	2900 3500 3400 3500
+	2900 3500 3150 3500
 Wire Wire Line
 	1750 5100 1750 5050
 Wire Wire Line
@@ -1892,8 +1892,6 @@ Wire Wire Line
 	5750 5100 5450 5100
 Wire Wire Line
 	6450 4600 6450 4700
-Wire Wire Line
-	6450 6700 6450 6650
 Wire Wire Line
 	5750 6400 5600 6400
 Wire Wire Line
@@ -2651,6 +2649,85 @@ Wire Wire Line
 	11300 3400 11500 3400
 Wire Wire Line
 	3600 4900 3600 4950
+Wire Wire Line
+	6450 6950 6450 6900
+Text HLabel 3350 4400 2    50   Output ~ 0
+GPIO0
+Text HLabel 3350 4600 2    50   Output ~ 0
+GPIO1
+Text HLabel 3350 3300 2    50   Output ~ 0
+GPIO2
+Text HLabel 3350 3600 1    39   Output ~ 0
+GPIO3
+$Comp
+L covg-kicad:24AA025UID U?
+U 1 1 60CE7EFE
+P 1250 4100
+F 0 "U?" H 1350 4450 50  0000 C CNN
+F 1 "24AA025UID" H 1500 4350 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 1250 4100 50  0001 C CNN
+F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/20005202A.pdf" H 1250 4100 50  0001 C CNN
+	1    1250 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60CE899F
+P 1250 3700
+F 0 "#PWR?" H 1250 3550 50  0001 C CNN
+F 1 "+3V3" H 1265 3828 50  0000 L CNN
+F 2 "" H 1250 3700 50  0001 C CNN
+F 3 "" H 1250 3700 50  0001 C CNN
+	1    1250 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 3700 1250 3800
+$Comp
+L power:GND #GND?
+U 1 1 60D1BC8F
+P 1250 4450
+F 0 "#GND?" H 1250 4450 50  0001 C CNN
+F 1 "GND" H 1150 4350 59  0001 L BNN
+F 2 "" H 1250 4450 50  0001 C CNN
+F 3 "" H 1250 4450 50  0001 C CNN
+	1    1250 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 4450 1250 4400
+Text Label 2050 4100 2    50   ~ 0
+QW_SCL
+Text Label 2050 4000 2    50   ~ 0
+QW_SDA
+Wire Wire Line
+	2050 4100 1650 4100
+Wire Wire Line
+	1650 4000 2050 4000
+Wire Wire Line
+	850  3950 750  3950
+Wire Wire Line
+	750  3950 750  4050
+Wire Wire Line
+	750  4150 850  4150
+Wire Wire Line
+	850  4050 750  4050
+Connection ~ 750  4050
+Wire Wire Line
+	750  4050 750  4150
+$Comp
+L power:GND #GND?
+U 1 1 60E1D852
+P 750 4200
+F 0 "#GND?" H 750 4200 50  0001 C CNN
+F 1 "GND" H 650 4100 59  0001 L BNN
+F 2 "" H 750 4200 50  0001 C CNN
+F 3 "" H 750 4200 50  0001 C CNN
+	1    750  4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	750  4200 750  4150
 Wire Bus Line
 	7600 5500 7600 5800
 Wire Bus Line
@@ -2667,4 +2744,5 @@ Wire Bus Line
 	11750 1500 11750 3900
 Wire Bus Line
 	9100 2250 9100 2700
+Connection ~ 750  4150
 $EndSCHEMATC
