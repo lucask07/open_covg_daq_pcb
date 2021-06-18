@@ -396,7 +396,7 @@ Text Notes 3200 4150 0    50   ~ 0
 Text HLabel 8500 4050 2    50   Input ~ 0
 EN_I
 Text Notes 8250 4250 0    50   ~ 0
-high-Z will enable
+high-Z or low will enable
 Wire Wire Line
 	5100 4000 5100 4050
 Wire Wire Line

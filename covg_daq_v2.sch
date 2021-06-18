@@ -316,7 +316,7 @@ U 1 1 61D74FD2
 P 1050 5650
 F 0 "J3" H 1480 5696 50  0000 L CNN
 F 1 "HDMI_A" V 1500 5350 50  0000 L CNN
-F 2 "covg-kicad:HDMI_A" H 1075 5650 50  0001 C CNN
+F 2 "covg-kicad:CONN_10029449-111RLF_HDMI_A" H 1075 5650 50  0001 C CNN
 F 3 "https://en.wikipedia.org/wiki/HDMI" H 1075 5650 50  0001 C CNN
 	1    1050 5650
 	-1   0    0    -1  
@@ -324,12 +324,12 @@ $EndComp
 $Comp
 L power:GND #PWR0101
 U 1 1 61D76AA5
-P 600 6950
-F 0 "#PWR0101" H 600 6700 50  0001 C CNN
-F 1 "GND" H 605 6777 50  0001 C CNN
-F 2 "" H 600 6950 50  0001 C CNN
-F 3 "" H 600 6950 50  0001 C CNN
-	1    600  6950
+P 1250 7050
+F 0 "#PWR0101" H 1250 6800 50  0001 C CNN
+F 1 "GND" H 1255 6877 50  0001 C CNN
+F 2 "" H 1250 7050 50  0001 C CNN
+F 3 "" H 1250 7050 50  0001 C CNN
+	1    1250 7050
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -415,7 +415,7 @@ U 1 1 60BE6CC0
 P 1050 2750
 F 0 "J1" H 1480 2796 50  0000 L CNN
 F 1 "HDMI_A" V 1500 2450 50  0000 L CNN
-F 2 "covg-kicad:HDMI_A" H 1075 2750 50  0001 C CNN
+F 2 "covg-kicad:CONN_10029449-111RLF_HDMI_A" H 1075 2750 50  0001 C CNN
 F 3 "https://en.wikipedia.org/wiki/HDMI" H 1075 2750 50  0001 C CNN
 	1    1050 2750
 	-1   0    0    -1  
@@ -423,12 +423,12 @@ $EndComp
 $Comp
 L power:GND #PWR0126
 U 1 1 60BE6CC6
-P 600 4050
-F 0 "#PWR0126" H 600 3800 50  0001 C CNN
-F 1 "GND" H 605 3877 50  0001 C CNN
-F 2 "" H 600 4050 50  0001 C CNN
-F 3 "" H 600 4050 50  0001 C CNN
-	1    600  4050
+P 1250 4150
+F 0 "#PWR0126" H 1250 3900 50  0001 C CNN
+F 1 "GND" H 1255 3977 50  0001 C CNN
+F 2 "" H 1250 4150 50  0001 C CNN
+F 3 "" H 1250 4150 50  0001 C CNN
+	1    1250 4150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -465,25 +465,14 @@ F 3 "" H 1600 2850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:HDMI_A J9
-U 1 1 60BF7732
-P 6000 2750
-F 0 "J9" H 6430 2796 50  0000 L CNN
-F 1 "HDMI_A" V 6450 2450 50  0000 L CNN
-F 2 "covg-kicad:HDMI_A" H 6025 2750 50  0001 C CNN
-F 3 "https://en.wikipedia.org/wiki/HDMI" H 6025 2750 50  0001 C CNN
-	1    6000 2750
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0137
 U 1 1 60BF7738
-P 6450 4000
-F 0 "#PWR0137" H 6450 3750 50  0001 C CNN
-F 1 "GND" H 6455 3827 50  0001 C CNN
-F 2 "" H 6450 4000 50  0001 C CNN
-F 3 "" H 6450 4000 50  0001 C CNN
-	1    6450 4000
+P 5800 4000
+F 0 "#PWR0137" H 5800 3750 50  0001 C CNN
+F 1 "GND" H 5805 3827 50  0001 C CNN
+F 2 "" H 5800 4000 50  0001 C CNN
+F 3 "" H 5800 4000 50  0001 C CNN
+	1    5800 4000
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -525,7 +514,7 @@ U 1 1 60C1F3F1
 P 6000 5650
 F 0 "J10" H 6430 5696 50  0000 L CNN
 F 1 "HDMI_A" V 6450 5350 50  0000 L CNN
-F 2 "covg-kicad:HDMI_A" H 6025 5650 50  0001 C CNN
+F 2 "covg-kicad:CONN_10029449-111RLF_HDMI_A" H 6025 5650 50  0001 C CNN
 F 3 "https://en.wikipedia.org/wiki/HDMI" H 6025 5650 50  0001 C CNN
 	1    6000 5650
 	1    0    0    -1  
@@ -533,12 +522,12 @@ $EndComp
 $Comp
 L power:GND #PWR0144
 U 1 1 60C1F3F7
-P 6450 6950
-F 0 "#PWR0144" H 6450 6700 50  0001 C CNN
-F 1 "GND" H 6455 6777 50  0001 C CNN
-F 2 "" H 6450 6950 50  0001 C CNN
-F 3 "" H 6450 6950 50  0001 C CNN
-	1    6450 6950
+P 5800 7050
+F 0 "#PWR0144" H 5800 6800 50  0001 C CNN
+F 1 "GND" H 5805 6877 50  0001 C CNN
+F 2 "" H 5800 7050 50  0001 C CNN
+F 3 "" H 5800 7050 50  0001 C CNN
+	1    5800 7050
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -737,13 +726,13 @@ DAC2_CAL[0..3]
 Text Label 8100 1650 0    50   ~ 0
 I2SEL[0..3]
 Text Label 8150 1150 0    50   ~ 0
-DS1_SCLK
+DS2_SCLK
 Text Label 8150 1250 0    50   ~ 0
-DS1_SDI
+DS2_SDI
 Text Label 8150 1350 0    50   ~ 0
-DS1_SDO
+DS2_SDO
 Text Label 8150 1450 0    50   ~ 0
-DS1_CSB
+DS2_CSB
 Text Label 2550 7500 0    50   ~ 0
 EN_IPUMP2
 Text Label 4100 6600 0    50   ~ 0
@@ -752,8 +741,6 @@ Text Label 8050 2800 0    50   ~ 0
 EN_IPUMP1
 Text Label 8050 1750 0    50   ~ 0
 EN_IPUMP2
-Text Notes 10500 1400 0    50   ~ 0
-need connector
 Text Notes 8900 1550 0    50   ~ 0
 BP is bipolar out
 Text Notes 8900 2600 0    50   ~ 0
@@ -788,10 +775,6 @@ Text Label 5000 4500 1    50   ~ 0
 GP_ADC_IN10
 Text Label 5100 4500 1    50   ~ 0
 DAC1_BP_OUT6
-Text Notes 10600 2400 0    50   ~ 0
-need connector
-Text Notes 10550 3400 0    50   ~ 0
-need connector
 Text Label 6750 5650 1    50   ~ 0
 GP_ADC_IN[0..15]
 Text Label 6850 4700 0    50   ~ 0
@@ -903,12 +886,6 @@ DAC2_CAL2
 Text Label 9800 5800 0    50   ~ 0
 DAC2_CAL3
 Wire Wire Line
-	600  6950 750  6950
-Wire Wire Line
-	750  6950 750  6750
-Wire Wire Line
-	750  6950 850  6950
-Wire Wire Line
 	1250 6950 1250 6750
 Wire Wire Line
 	1150 6750 1150 6950
@@ -953,11 +930,7 @@ Wire Wire Line
 Wire Wire Line
 	1450 5350 1900 5350
 Wire Wire Line
-	600  4050 750  4050
-Wire Wire Line
 	750  4050 750  3850
-Wire Wire Line
-	750  4050 850  4050
 Wire Wire Line
 	1250 4050 1250 3850
 Wire Wire Line
@@ -997,30 +970,6 @@ Wire Wire Line
 Wire Wire Line
 	1450 2450 1900 2450
 Wire Wire Line
-	6450 4000 6300 4000
-Wire Wire Line
-	6300 4000 6300 3850
-Wire Wire Line
-	6300 4000 6200 4000
-Wire Wire Line
-	5800 4000 5800 3850
-Wire Wire Line
-	5900 3800 5900 3850
-Wire Wire Line
-	5900 4000 5800 4000
-Wire Wire Line
-	6000 4000 6000 3850
-Wire Wire Line
-	6000 4000 5900 4000
-Wire Wire Line
-	6100 3800 6100 3850
-Wire Wire Line
-	6100 4000 6000 4000
-Wire Wire Line
-	6200 4000 6200 3850
-Wire Wire Line
-	6200 4000 6100 4000
-Wire Wire Line
 	5600 2150 5000 2150
 Wire Wire Line
 	5000 2250 5600 2250
@@ -1046,12 +995,6 @@ Wire Wire Line
 	5450 2850 5600 2850
 Wire Wire Line
 	5600 2450 5150 2450
-Wire Wire Line
-	6450 6950 6300 6950
-Wire Wire Line
-	6300 6950 6300 6750
-Wire Wire Line
-	6300 6950 6200 6950
 Wire Wire Line
 	5800 6950 5800 6750
 Wire Wire Line
@@ -1160,18 +1103,6 @@ Wire Wire Line
 	9600 3250 10100 3250
 Wire Wire Line
 	10100 3350 9600 3350
-Wire Wire Line
-	5800 3850 5800 3800
-Wire Wire Line
-	5900 3850 5900 4000
-Wire Wire Line
-	6000 3850 6000 3800
-Wire Wire Line
-	6100 3850 6100 4000
-Wire Wire Line
-	6200 3850 6200 3800
-Wire Wire Line
-	6300 3850 6300 3800
 Wire Wire Line
 	4050 2900 4200 2900
 Wire Wire Line
@@ -1880,32 +1811,15 @@ Entry Wire Line
 	9800 6100 9700 6200
 Entry Wire Line
 	9800 6200 9700 6300
-Connection ~ 750  6950
 Connection ~ 1150 6950
 Connection ~ 1050 6950
 Connection ~ 950  6950
-Connection ~ 850  6950
-Connection ~ 750  4050
 Connection ~ 1150 4050
 Connection ~ 1050 4050
 Connection ~ 950  4050
-Connection ~ 850  4050
-Connection ~ 6300 4000
-Connection ~ 5900 4000
-Connection ~ 6000 4000
-Connection ~ 6100 4000
-Connection ~ 6200 4000
-Connection ~ 6300 6950
 Connection ~ 5900 6950
 Connection ~ 6000 6950
 Connection ~ 6100 6950
-Connection ~ 6200 6950
-Connection ~ 5800 3850
-Connection ~ 5900 3850
-Connection ~ 6000 3850
-Connection ~ 6100 3850
-Connection ~ 6200 3850
-Connection ~ 6300 3850
 Connection ~ 5200 6250
 Connection ~ 5100 6250
 Connection ~ 1850 6250
@@ -1961,7 +1875,6 @@ Connection ~ 11050 6000
 Connection ~ 11050 6100
 NoConn ~ 8400 750 
 NoConn ~ 9350 750 
-NoConn ~ 10350 750 
 $Comp
 L Connector_Generic:Conn_02x17_Counter_Clockwise J16
 U 1 1 61C544CE
@@ -2120,6 +2033,175 @@ Text Label 5200 4050 3    50   ~ 0
 GPIO2
 Text Label 5200 6950 3    50   ~ 0
 GPIO3
+$Comp
+L Device:Ferrite_Bead FB?
+U 1 1 60E9A3F1
+P 10550 1000
+AR Path="/6095BE10/60E9A3F1" Ref="FB?"  Part="1" 
+AR Path="/60E9A3F1" Ref="FB3"  Part="1" 
+F 0 "FB3" V 10276 1000 50  0000 C CNN
+F 1 "Ferrite_Bead" V 10367 1000 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" V 10480 1000 50  0001 C CNN
+F 3 "~" H 10550 1000 50  0001 C CNN
+F 4 "BLM31PG500SN1L" V 10550 1000 50  0001 C CNN "Manf#"
+	1    10550 1000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	10350 750  10350 850 
+Wire Wire Line
+	10350 850  10550 850 
+$Comp
+L power:GND #PWR0345
+U 1 1 60F01C3C
+P 10550 1150
+F 0 "#PWR0345" H 10550 900 50  0001 C CNN
+F 1 "GND" H 10555 977 50  0001 C CNN
+F 2 "" H 10550 1150 50  0001 C CNN
+F 3 "" H 10550 1150 50  0001 C CNN
+	1    10550 1150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 4150 1250 4050
+Connection ~ 1250 4050
+$Comp
+L Device:Ferrite_Bead FB?
+U 1 1 6273EEF4
+P 750 4200
+AR Path="/6095BE10/6273EEF4" Ref="FB?"  Part="1" 
+AR Path="/6273EEF4" Ref="FB4"  Part="1" 
+F 0 "FB4" V 800 4000 50  0000 C CNN
+F 1 "Ferrite_Bead" V 900 4200 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" V 680 4200 50  0001 C CNN
+F 3 "~" H 750 4200 50  0001 C CNN
+F 4 "BLM31PG500SN1L" V 750 4200 50  0001 C CNN "Manf#"
+	1    750  4200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0234
+U 1 1 6273FB97
+P 750 4350
+F 0 "#PWR0234" H 750 4100 50  0001 C CNN
+F 1 "GND" H 755 4177 50  0001 C CNN
+F 2 "" H 750 4350 50  0001 C CNN
+F 3 "" H 750 4350 50  0001 C CNN
+	1    750  4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 7050 1250 6950
+Connection ~ 1250 6950
+Wire Wire Line
+	750  6950 750  6750
+$Comp
+L Device:Ferrite_Bead FB?
+U 1 1 627A762F
+P 750 7100
+AR Path="/6095BE10/627A762F" Ref="FB?"  Part="1" 
+AR Path="/627A762F" Ref="FB5"  Part="1" 
+F 0 "FB5" V 800 6900 50  0000 C CNN
+F 1 "Ferrite_Bead" V 900 7100 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" V 680 7100 50  0001 C CNN
+F 3 "~" H 750 7100 50  0001 C CNN
+F 4 "BLM31PG500SN1L" V 750 7100 50  0001 C CNN "Manf#"
+	1    750  7100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0353
+U 1 1 627A7635
+P 750 7250
+F 0 "#PWR0353" H 750 7000 50  0001 C CNN
+F 1 "GND" H 755 7077 50  0001 C CNN
+F 2 "" H 750 7250 50  0001 C CNN
+F 3 "" H 750 7250 50  0001 C CNN
+	1    750  7250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 7050 5800 6950
+Connection ~ 5800 6950
+Wire Wire Line
+	6300 6950 6300 6750
+$Comp
+L Device:Ferrite_Bead FB?
+U 1 1 62841DA4
+P 6300 7100
+AR Path="/6095BE10/62841DA4" Ref="FB?"  Part="1" 
+AR Path="/62841DA4" Ref="FB7"  Part="1" 
+F 0 "FB7" V 6200 6900 50  0000 C CNN
+F 1 "Ferrite_Bead" V 6100 7050 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" V 6230 7100 50  0001 C CNN
+F 3 "~" H 6300 7100 50  0001 C CNN
+F 4 "BLM31PG500SN1L" V 6300 7100 50  0001 C CNN "Manf#"
+	1    6300 7100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0354
+U 1 1 62841DAA
+P 6300 7250
+F 0 "#PWR0354" H 6300 7000 50  0001 C CNN
+F 1 "GND" H 6305 7077 50  0001 C CNN
+F 2 "" H 6300 7250 50  0001 C CNN
+F 3 "" H 6300 7250 50  0001 C CNN
+	1    6300 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:HDMI_A J9
+U 1 1 60BF7732
+P 6000 2750
+F 0 "J9" H 6430 2796 50  0000 L CNN
+F 1 "HDMI_A" V 6450 2450 50  0000 L CNN
+F 2 "covg-kicad:CONN_10029449-111RLF_HDMI_A" H 6025 2750 50  0001 C CNN
+F 3 "https://en.wikipedia.org/wiki/HDMI" H 6025 2750 50  0001 C CNN
+	1    6000 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5800 4000 5800 3850
+Wire Wire Line
+	5800 3850 5900 3850
+Connection ~ 5800 3850
+Wire Wire Line
+	5900 3850 6000 3850
+Wire Wire Line
+	6000 3850 6100 3850
+Connection ~ 5900 3850
+Connection ~ 6000 3850
+Wire Wire Line
+	6100 3850 6200 3850
+Connection ~ 6100 3850
+Wire Wire Line
+	6300 4050 6300 3850
+$Comp
+L Device:Ferrite_Bead FB?
+U 1 1 62964FF2
+P 6300 4200
+AR Path="/6095BE10/62964FF2" Ref="FB?"  Part="1" 
+AR Path="/62964FF2" Ref="FB6"  Part="1" 
+F 0 "FB6" V 6200 4000 50  0000 C CNN
+F 1 "Ferrite_Bead" V 6100 4150 50  0000 C CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" V 6230 4200 50  0001 C CNN
+F 3 "~" H 6300 4200 50  0001 C CNN
+F 4 "BLM31PG500SN1L" V 6300 4200 50  0001 C CNN "Manf#"
+	1    6300 4200
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0355
+U 1 1 62964FF8
+P 6300 4350
+F 0 "#PWR0355" H 6300 4100 50  0001 C CNN
+F 1 "GND" H 6305 4177 50  0001 C CNN
+F 2 "" H 6300 4350 50  0001 C CNN
+F 3 "" H 6300 4350 50  0001 C CNN
+	1    6300 4350
+	1    0    0    -1  
+$EndComp
 Wire Bus Line
 	8200 5600 8200 5900
 Wire Bus Line

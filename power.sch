@@ -287,18 +287,6 @@ F 4 "MAX6070BAUT21+T" H 7514 5759 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L adc_dac_v1-eagle-import:PJ-002B J2
-U 1 1 F1780596
-P 900 2350
-F 0 "J2" H 599 2550 59  0000 L BNN
-F 1 "PJ-002B" H 599 2149 59  0000 L BNN
-F 2 "adc_dac_v1:CUI_PJ-002B" H 900 2350 50  0001 C CNN
-F 3 "" H 900 2350 50  0001 C CNN
-F 4 "PJ-002B" H 599 2650 50  0001 C CNN "Manf#"
-	1    900  2350
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #GND081
 U 1 1 EDF8D432
 P 1200 2550
@@ -797,10 +785,11 @@ L Regulator_Linear:LP38693MP-5.0 U14
 U 1 1 614D3F9B
 P 3250 2400
 F 0 "U14" H 3250 2742 50  0000 C CNN
-F 1 "LP38693MP-5.0" H 3250 2651 50  0000 C CNN
+F 1 "LP38692MP-5.0" H 3250 2651 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-223-5" H 3250 2400 50  0001 C CNN
 F 3 "https://www.ti.com/lit/ds/symlink/lp38693.pdf" H 3250 2400 50  0001 C CNN
-F 4 "LP38693MP-5.0/NOPB" H 3250 2400 50  0001 C CNN "Manf#"
+F 4 "LP38692MPX-5.0/NOPB" H 3250 2400 50  0001 C CNN "Manf#"
+F 5 "LP38693 is 500 mA version. LP38692 is 1 A version. Footprints are the same." H 3250 2400 50  0001 C CNN "Notes"
 	1    3250 2400
 	1    0    0    -1  
 $EndComp
@@ -1062,7 +1051,7 @@ L Device:Ferrite_Bead FB1
 U 1 1 62AC939A
 P 1300 2250
 F 0 "FB1" V 1026 2250 50  0000 C CNN
-F 1 "Ferrite_Bead" V 1117 2250 50  0000 C CNN
+F 1 "Ferrite_Bead" V 1100 2400 50  0000 C CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric" V 1230 2250 50  0001 C CNN
 F 3 "~" H 1300 2250 50  0001 C CNN
 F 4 "BLM31PG500SN1L" V 1300 2250 50  0001 C CNN "Manf#"
@@ -1232,7 +1221,7 @@ Text Label 8200 4150 0    47   ~ 0
 Text GLabel 8650 5300 1    47   BiDi ~ 0
 2V048_REF
 Text Notes 3500 2100 0    59   ~ 0
-500 mA output
+1 A output
 Text Label 3000 3350 0    50   ~ 0
 6V_IN
 Text Label 2000 4750 0    50   ~ 0
@@ -1872,6 +1861,18 @@ F 4 "CL10B105MO8NNWC" H 11540 2675 50  0001 C CNN "Manf#"
 F 5 "20%" H 11540 2675 50  0001 C CNN "Tolerance"
 F 6 "16V" H 11540 2675 50  0001 C CNN "voltage"
 	1    11500 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Barrel_Jack_Switch J2
+U 1 1 60DCC1A2
+P 800 2350
+F 0 "J2" H 857 2667 50  0000 C CNN
+F 1 "Barrel_Jack_Switch" H 857 2576 50  0000 C CNN
+F 2 "covg-kicad:CUI_PJ-002B" H 850 2310 50  0001 C CNN
+F 3 "~" H 850 2310 50  0001 C CNN
+F 4 "PJ-002B" H 800 2350 50  0001 C CNN "Manf#"
+	1    800  2350
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

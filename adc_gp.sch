@@ -121,7 +121,7 @@ U 1 1 609E17A7
 P 6400 3500
 F 0 "IC3" H 7650 2700 50  0000 L CNN
 F 1 "ADS8686SIPZAR" H 7450 2600 50  0000 L CNN
-F 2 "covg-kicad:QFP65P1600X1600X160-80N" H 8750 4200 50  0001 L CNN
+F 2 "Package_QFP:LQFP-80_14x14mm_P0.65mm" H 8750 4200 50  0001 L CNN
 F 3 "https://www.ti.com/lit/gpn/ADS8686S" H 8750 4100 50  0001 L CNN
 F 4 "Analog to Digital Converters - ADC 16-channel 16-bit 1-MSPS dual simultaneous-sampling ADC with integrated analog front end (AFE)" H 8750 4000 50  0001 L CNN "Description"
 F 5 "1.6" H 8750 3900 50  0001 L CNN "Height"
