@@ -1,7 +1,14 @@
-06-20 08:21:33 place_footprints.action_place_footprints 414:Plugin executed on: 'darwin'
-06-20 08:21:33 place_footprints.action_place_footprints 415:Plugin executed with python version: '2.7.16 (default, Dec 23 2020, 16:11:24) \n[GCC 4.2.1 Compatible Apple LLVM 10.0.1 (clang-1001.0.46.4)]'
-06-20 08:21:33 place_footprints.action_place_footprints 416:KiCad build version: (5.1.9-0-10_14)
-06-20 08:21:33 place_footprints.action_place_footprints 417:Place footprints plugin version: 54 started
-06-20 08:21:35 place_footprints.place_footprints 213:getting project hierarchy from schematics
-06-20 08:21:35 place_footprints.place_footprints 228:getting a list of all footprints on board
-06-20 08:21:39 place_footprints.action_place_footprints 654:Modules to place: ['J11']
+06-21 07:13:36 place_footprints.action_place_footprints 414:Plugin executed on: 'darwin'
+06-21 07:13:36 place_footprints.action_place_footprints 415:Plugin executed with python version: '2.7.16 (default, Dec 23 2020, 16:11:24) \n[GCC 4.2.1 Compatible Apple LLVM 10.0.1 (clang-1001.0.46.4)]'
+06-21 07:13:36 place_footprints.action_place_footprints 416:KiCad build version: (5.1.9-0-10_14)
+06-21 07:13:36 place_footprints.action_place_footprints 417:Place footprints plugin version: 54 started
+06-21 07:13:37 place_footprints.place_footprints 213:getting project hierarchy from schematics
+06-21 07:13:37 place_footprints.place_footprints 228:getting a list of all footprints on board
+06-21 07:13:37 place_footprints.action_place_footprints 472:Reference designator is: TP
+06-21 07:13:37 place_footprints.action_place_footprints 473:Rerefence number is: 1
+06-21 07:13:37 place_footprints.action_place_footprints 504:Sorted and filtered list:
+[u'TP1', u'TP2', u'TP3', u'TP4', u'TP5', u'TP6', u'TP7']
+06-21 07:13:48 place_footprints.action_place_footprints 535:Modules to place:
+[u'TP1', u'TP2', u'TP3', u'TP4', u'TP5', u'TP6', u'TP7']
+06-21 07:13:48 place_footprints.place_footprints 406:Starting placing with matrix layout
+06-21 07:13:48 place_footprints.action_place_footprints 602:Placing complete
