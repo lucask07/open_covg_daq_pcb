@@ -3,6 +3,10 @@
 KiCad schematic and layout for a general purpose data acquisition board to support real-time feedback with latencies of < 2 us. 
 The schematic is available [here](docs/covg_daq_v2.pdf).
 
+![Alt text](docs/covg_daq_v2_3d_render_hdmi.png)
+![Alt text](docs/covg_daq_v2_3d_render_otherside.png)
+
+
 ## Four channels to daughtercards 
 
 This data acquition board is designed to connect to the OpalKelly XEM7310 FPGA module. The board has four connections to support daughtercards. Each daughtercard connection has one 16-bit 5 MSPS ADC, one (or two) 1 us settling time 14-bit DAC, power, I2C, and extra ADC/DAC connections.
@@ -31,8 +35,8 @@ An HDMI-A cable is used for input and output signals that connects the bath clam
 
 ![Alt text](docs/hdmi.png)
 
-| Pin | HDMI name    | Generic Daughtercard     | Notes                                                                     |
-|-----|--------------|--------------|------------|---------------------------------------------------------------------------|
+| Pin | HDMI name    | Generic Daughtercard     | Notes     |
+|-----|--------------|--------------------------|----------------------------|
 | 1   | Data2+       | fastDAC1     | ~1 us settling time                                                                          |
 | 2   | Data2 shield | gnd          |                                                                            |
 | 3   | Data2-       | Analog/GPIO1 |   DAC8050, 16 bit, 5us settle, 5 V supply                                                                         |
@@ -56,14 +60,14 @@ An HDMI-A cable is used for input and output signals that connects the bath clam
 
 ### Impedance control of LVDS lines 
 
-stack-up, trace width 
+TBC stack-up, trace width 
 
 ### Power Planes on the PCB (6 layer board)
 
 * Route 2: GND
-* Route 3: 3.3V (primarily) and the pre-regulated input power
+* Route 3: 5V
 * Route 14: +15V, -15V
-* Route 15: 1V8, and 5V
+* Route 15: 1V8 and 3.3V 
 
 ## Power
 6 Volts in at a maximum of 5 A through the barrel connector. 
