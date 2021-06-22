@@ -1,16 +1,17 @@
-06-22 07:39:56 replicate_layout.action_replicate_layout 311:Plugin executed on: 'darwin'
-06-22 07:39:56 replicate_layout.action_replicate_layout 312:Plugin executed with python version: '2.7.16 (default, Dec 23 2020, 16:11:24) \n[GCC 4.2.1 Compatible Apple LLVM 10.0.1 (clang-1001.0.46.4)]'
-06-22 07:39:56 replicate_layout.action_replicate_layout 313:KiCad build version: (5.1.9-0-10_14)
-06-22 07:39:56 replicate_layout.action_replicate_layout 314:Replicate layout plugin version: 73 started
-06-22 07:39:56 replicate_layout.action_replicate_layout 327:All top level windows titles are:
+06-22 11:53:45 replicate_layout.action_replicate_layout 311:Plugin executed on: 'darwin'
+06-22 11:53:45 replicate_layout.action_replicate_layout 312:Plugin executed with python version: '2.7.16 (default, Dec 23 2020, 16:11:24) \n[GCC 4.2.1 Compatible Apple LLVM 10.0.1 (clang-1001.0.46.4)]'
+06-22 11:53:45 replicate_layout.action_replicate_layout 313:KiCad build version: (5.1.9-0-10_14)
+06-22 11:53:45 replicate_layout.action_replicate_layout 314:Replicate layout plugin version: 73 started
+06-22 11:53:45 replicate_layout.action_replicate_layout 327:All top level windows titles are:
 kicad (5.1.9-0-10_14) /users/koer2434/google drive/ust/research/covg/pcb_design/kicad/covg_daq_v2/covg_daq_v2.pro
 
-eeschema — dual_bipolar_amp.sch [/dac_gp1/dual_biploar2/] — /users/koer2434/google drive/ust/research/covg/pcb_design/kicad/covg_daq_v2
+eeschema — dac_gp.sch [/dac_gp2/] — /users/koer2434/google drive/ust/research/covg/pcb_design/kicad/covg_daq_v2
 
 pcbnew — /users/koer2434/google drive/ust/research/covg/pcb_design/kicad/covg_daq_v2/covg_daq_v2.kicad_pcb
 
 
-06-22 07:39:56 replicate_layout.action_replicate_layout 328:All top level windows objects are:
+drc control
+06-22 11:53:45 replicate_layout.action_replicate_layout 328:All top level windows objects are:
  <wx._windows.Frame; proxy of <Swig Object of type 'wxFrame *' at 0x7f8bc605ec00> >
 <wx._windows.MiniFrame; proxy of <Swig Object of type 'wxMiniFrame *' at 0x7f8bc5e28670> >
 <wx._windows.Frame; proxy of <Swig Object of type 'wxFrame *' at 0x7f8bc9815c00> >
@@ -18,121 +19,87 @@ pcbnew — /users/koer2434/google drive/ust/research/covg/pcb_design/kicad/covg_
 <wx._windows.Frame; proxy of <Swig Object of type 'wxFrame *' at 0x7f8bc6c25000> >
 <wx._windows.MiniFrame; proxy of <Swig Object of type 'wxMiniFrame *' at 0x7f8bcce2aef0> >
 <wx._windows.MiniFrame; proxy of <Swig Object of type 'wxMiniFrame *' at 0x7f8bcc91e220> >
-06-22 07:39:56 replicate_layout.action_replicate_layout 351:Preparing replicator with R1 as a reference
-06-22 07:39:56 replicate_layout.replicatelayout 215:getting project hierarchy from schematics
-06-22 07:39:56 replicate_layout.replicatelayout 217:Project hierarchy looks like:
+<wx._windows.Dialog; proxy of <Swig Object of type 'wxDialog *' at 0x7f8bd3287600> >
+06-22 11:53:45 replicate_layout.action_replicate_layout 351:Preparing replicator with C170 as a reference
+06-22 11:53:45 replicate_layout.replicatelayout 215:getting project hierarchy from schematics
+06-22 11:53:45 replicate_layout.replicatelayout 217:Project hierarchy looks like:
 {u'60C521D9': [u'dac4', u'/Users/koer2434/Google Drive/UST/research/covg/pcb_design/kicad/covg_daq_v2/dac.sch'], u'60E9FAAA': [u'dual_biploar2', u'/Users/koer2434/Google Drive/UST/research/covg/pcb_design/kicad/covg_daq_v2/dual_bipolar_amp.sch'], u'6095A302': [u'ok_fpga', u'/Users/koer2434/Google Drive/UST/research/covg/pcb_design/kicad/covg_daq_v2/ok_fpga.sch'], u'6095BD4C': [u'dac_gp1', u'/Users/koer2434/Google Drive/UST/research/covg/pcb_design/kicad/covg_daq_v2/dac_gp.sch'], u'60C55145': [u'dac5', u'/Users/koer2434/Google Drive/UST/research/covg/pcb_design/kicad/covg_daq_v2/dac.sch'], u'60DB74B6': [u'dual_bipolar1', u'/Users/koer2434/Google Drive/UST/research/covg/pcb_design/kicad/covg_daq_v2/dual_bipolar_amp.sch'], u'60EB6FD5': [u'dual_bipolar3', u'/Users/koer2434/Google Drive/UST/research/covg/pcb_design/kicad/covg_daq_v2/dual_bipolar_amp.sch'], u'60C4C08D': [u'dac2', u'/Users/koer2434/Google Drive/UST/research/covg/pcb_design/kicad/covg_daq_v2/dac.sch'], u'6095A004': [u'adc_gp', u'/Users/koer2434/Google Drive/UST/research/covg/pcb_design/kicad/covg_daq_v2/adc_gp.sch'], u'60F0C6CC': [u'dual_biploar0', u'/Users/koer2434/Google Drive/UST/research/covg/pcb_design/kicad/covg_daq_v2/dual_bipolar_amp.sch'], u'60BE6CF4': [u'dac1', u'/Users/koer2434/Google Drive/UST/research/covg/pcb_design/kicad/covg_daq_v2/dac.sch'], u'61B02572': [u'dac_gp2', u'/Users/koer2434/Google Drive/UST/research/covg/pcb_design/kicad/covg_daq_v2/dac_gp.sch'], u'60BE6CE5': [u'adc0', u'/Users/koer2434/Google Drive/UST/research/covg/pcb_design/kicad/covg_daq_v2/adc.sch'], u'6095BE10': [u'power', u'/Users/koer2434/Google Drive/UST/research/covg/pcb_design/kicad/covg_daq_v2/power.sch'], u'60BE01FC': [u'howland_ipump', u'/Users/koer2434/Google Drive/UST/research/covg/pcb_design/kicad/covg_daq_v2/howland_ipump.sch'], u'60C48ED8': [u'dac0', u'/Users/koer2434/Google Drive/UST/research/covg/pcb_design/kicad/covg_daq_v2/dac.sch'], u'60C4EF27': [u'dac3', u'/Users/koer2434/Google Drive/UST/research/covg/pcb_design/kicad/covg_daq_v2/dac.sch'], u'60BF7757': [u'adc2', u'/Users/koer2434/Google Drive/UST/research/covg/pcb_design/kicad/covg_daq_v2/adc.sch'], u'60C1F416': [u'adc3', u'/Users/koer2434/Google Drive/UST/research/covg/pcb_design/kicad/covg_daq_v2/adc.sch'], u'6095A697': [u'adc1', u'/Users/koer2434/Google Drive/UST/research/covg/pcb_design/kicad/covg_daq_v2/adc.sch']}
-06-22 07:39:56 replicate_layout.replicatelayout 225:getting a list of all footprints on board
-06-22 07:39:56 replicate_layout.action_replicate_layout 378:source anchor footprint is u'R1'
-Located on:[u'dac_gp1', u'dual_biploar2']
-With filenames:[u'dac_gp.sch', u'dual_bipolar_amp.sch']
-With sheet_id:[u'dac_gp1', u'dual_biploar2']
-06-22 07:39:56 replicate_layout.action_replicate_layout 382:Corresponding footprints are 
-[(u'R254', [u'dac_gp2', u'dual_bipolar3']), (u'R111', [u'dac_gp2', u'dual_biploar2']), (u'R90', [u'dac_gp2', u'dual_bipolar1']), (u'R84', [u'dac_gp2', u'dual_biploar0']), (u'R17', [u'dac_gp1', u'dual_bipolar1']), (u'R15', [u'dac_gp1', u'dual_biploar0']), (u'R3', [u'dac_gp1', u'dual_bipolar3']), (u'R1', [u'dac_gp1', u'dual_biploar2'])]
-06-22 07:39:56 replicate_layout.action_replicate_layout 395:Showing dialog
-06-22 07:39:56 replicate_layout.action_replicate_layout 399:Pcbnew position: wx.Point(0, 0)
-06-22 07:39:56 replicate_layout.action_replicate_layout 405:Display 0: wx.Rect(0, 0, 1920, 1200)
-06-22 07:39:56 replicate_layout.action_replicate_layout 405:Display 1: wx.Rect(1920, 0, 1680, 1050)
-06-22 07:39:56 replicate_layout.action_replicate_layout 409:Toolbar position: wx.Point(1719, 72)
-06-22 07:39:56 replicate_layout.action_replicate_layout 416:Dialog position: wx.Point(1406, 72)
-06-22 07:40:01 replicate_layout.replicatelayout 249:construcing a list of sheets suitable for replication on level:u'dual_biploar2', file:u'dual_bipolar_amp.sch'
-06-22 07:40:01 replicate_layout.replicatelayout 256:Source sheet path up to the level:[u'dac_gp1', u'dual_biploar2']
-06-22 07:40:01 replicate_layout.replicatelayout 260:Footprints on the sheets:
-[u'R254', u'R111', u'R90', u'R84', u'R17', u'R15', u'R3', u'R1']
-06-22 07:40:01 replicate_layout.replicatelayout 263:Footprints raw sheet ids:
-[u'/61B02572/60EB6FD5/60F31C94', u'/61B02572/60E9FAAA/60F31C94', u'/61B02572/60DB74B6/60F31C94', u'/61B02572/60F0C6CC/60F31C94', u'/6095BD4C/60DB74B6/60F31C94', u'/6095BD4C/60F0C6CC/60F31C94', u'/6095BD4C/60EB6FD5/60F31C94', u'/6095BD4C/60E9FAAA/60F31C94']
-06-22 07:40:01 replicate_layout.replicatelayout 279:All sheets to replicate:
-[[u'dac_gp2', u'dual_bipolar3'], [u'dac_gp2', u'dual_biploar2'], [u'dac_gp2', u'dual_bipolar1'], [u'dac_gp2', u'dual_biploar0'], [u'dac_gp1', u'dual_bipolar1'], [u'dac_gp1', u'dual_biploar0'], [u'dac_gp1', u'dual_bipolar3'], [u'dac_gp1', u'dual_biploar2']]
-06-22 07:40:01 replicate_layout.replicatelayout 284:All sheets to replicate sorted:
-[[u'dac_gp1', u'dual_biploar0'], [u'dac_gp1', u'dual_biploar2'], [u'dac_gp1', u'dual_bipolar1'], [u'dac_gp1', u'dual_bipolar3'], [u'dac_gp2', u'dual_biploar0'], [u'dac_gp2', u'dual_biploar2'], [u'dac_gp2', u'dual_bipolar1'], [u'dac_gp2', u'dual_bipolar3']]
-06-22 07:40:01 replicate_layout.replicatelayout 290:All sheets to replicate sorted and without source sheet:
-[[u'dac_gp1', u'dual_biploar0'], [u'dac_gp1', u'dual_bipolar1'], [u'dac_gp1', u'dual_bipolar3'], [u'dac_gp2', u'dual_biploar0'], [u'dac_gp2', u'dual_biploar2'], [u'dac_gp2', u'dual_bipolar1'], [u'dac_gp2', u'dual_bipolar3']]
-06-22 07:40:03 replicate_layout.replicatelayout 249:construcing a list of sheets suitable for replication on level:u'dual_biploar2', file:u'dual_bipolar_amp.sch'
-06-22 07:40:03 replicate_layout.replicatelayout 256:Source sheet path up to the level:[u'dac_gp1', u'dual_biploar2']
-06-22 07:40:03 replicate_layout.replicatelayout 260:Footprints on the sheets:
-[u'R254', u'R111', u'R90', u'R84', u'R17', u'R15', u'R3', u'R1']
-06-22 07:40:03 replicate_layout.replicatelayout 263:Footprints raw sheet ids:
-[u'/61B02572/60EB6FD5/60F31C94', u'/61B02572/60E9FAAA/60F31C94', u'/61B02572/60DB74B6/60F31C94', u'/61B02572/60F0C6CC/60F31C94', u'/6095BD4C/60DB74B6/60F31C94', u'/6095BD4C/60F0C6CC/60F31C94', u'/6095BD4C/60EB6FD5/60F31C94', u'/6095BD4C/60E9FAAA/60F31C94']
-06-22 07:40:03 replicate_layout.replicatelayout 279:All sheets to replicate:
-[[u'dac_gp2', u'dual_bipolar3'], [u'dac_gp2', u'dual_biploar2'], [u'dac_gp2', u'dual_bipolar1'], [u'dac_gp2', u'dual_biploar0'], [u'dac_gp1', u'dual_bipolar1'], [u'dac_gp1', u'dual_biploar0'], [u'dac_gp1', u'dual_bipolar3'], [u'dac_gp1', u'dual_biploar2']]
-06-22 07:40:03 replicate_layout.replicatelayout 284:All sheets to replicate sorted:
-[[u'dac_gp1', u'dual_biploar0'], [u'dac_gp1', u'dual_biploar2'], [u'dac_gp1', u'dual_bipolar1'], [u'dac_gp1', u'dual_bipolar3'], [u'dac_gp2', u'dual_biploar0'], [u'dac_gp2', u'dual_biploar2'], [u'dac_gp2', u'dual_bipolar1'], [u'dac_gp2', u'dual_bipolar3']]
-06-22 07:40:03 replicate_layout.replicatelayout 290:All sheets to replicate sorted and without source sheet:
-[[u'dac_gp1', u'dual_biploar0'], [u'dac_gp1', u'dual_bipolar1'], [u'dac_gp1', u'dual_bipolar3'], [u'dac_gp2', u'dual_biploar0'], [u'dac_gp2', u'dual_biploar2'], [u'dac_gp2', u'dual_bipolar1'], [u'dac_gp2', u'dual_bipolar3']]
-06-22 07:40:03 replicate_layout.action_replicate_layout 185:Replicating layout
-06-22 07:40:03 replicate_layout.replicatelayout 994:Starting replication of sheets: [[u'dac_gp1', u'dual_biploar0'], [u'dac_gp1', u'dual_bipolar1'], [u'dac_gp1', u'dual_bipolar3'], [u'dac_gp2', u'dual_biploar0'], [u'dac_gp2', u'dual_biploar2'], [u'dac_gp2', u'dual_bipolar1'], [u'dac_gp2', u'dual_bipolar3']]
-on level: [u'dac_gp1', u'dual_biploar2']
+06-22 11:53:45 replicate_layout.replicatelayout 225:getting a list of all footprints on board
+06-22 11:53:45 replicate_layout.action_replicate_layout 378:source anchor footprint is u'C170'
+Located on:[u'dac_gp2']
+With filenames:[u'dac_gp.sch']
+With sheet_id:[u'dac_gp2']
+06-22 11:53:45 replicate_layout.action_replicate_layout 382:Corresponding footprints are 
+[(u'C170', [u'dac_gp2']), (u'C3', [u'dac_gp1'])]
+06-22 11:53:45 replicate_layout.action_replicate_layout 395:Showing dialog
+06-22 11:53:45 replicate_layout.replicatelayout 249:construcing a list of sheets suitable for replication on level:u'dac_gp2', file:u'dac_gp.sch'
+06-22 11:53:45 replicate_layout.replicatelayout 256:Source sheet path up to the level:[u'dac_gp2']
+06-22 11:53:45 replicate_layout.replicatelayout 260:Footprints on the sheets:
+[u'C170', u'C3']
+06-22 11:53:45 replicate_layout.replicatelayout 263:Footprints raw sheet ids:
+[u'/61B02572/46ACB443', u'/6095BD4C/46ACB443']
+06-22 11:53:45 replicate_layout.replicatelayout 279:All sheets to replicate:
+[[u'dac_gp2'], [u'dac_gp1']]
+06-22 11:53:45 replicate_layout.replicatelayout 284:All sheets to replicate sorted:
+[[u'dac_gp1'], [u'dac_gp2']]
+06-22 11:53:45 replicate_layout.replicatelayout 290:All sheets to replicate sorted and without source sheet:
+[[u'dac_gp1']]
+06-22 11:53:48 replicate_layout.action_replicate_layout 399:Pcbnew position: wx.Point(0, 0)
+06-22 11:53:48 replicate_layout.action_replicate_layout 405:Display 0: wx.Rect(0, 0, 1920, 1080)
+06-22 11:53:48 replicate_layout.action_replicate_layout 405:Display 1: wx.Rect(-1680, 0, 1680, 1050)
+06-22 11:53:48 replicate_layout.action_replicate_layout 409:Toolbar position: wx.Point(1719, 72)
+06-22 11:53:48 replicate_layout.action_replicate_layout 416:Dialog position: wx.Point(1406, 72)
+06-22 11:53:52 replicate_layout.replicatelayout 249:construcing a list of sheets suitable for replication on level:u'dac_gp2', file:u'dac_gp.sch'
+06-22 11:53:52 replicate_layout.replicatelayout 256:Source sheet path up to the level:[u'dac_gp2']
+06-22 11:53:52 replicate_layout.replicatelayout 260:Footprints on the sheets:
+[u'C170', u'C3']
+06-22 11:53:52 replicate_layout.replicatelayout 263:Footprints raw sheet ids:
+[u'/61B02572/46ACB443', u'/6095BD4C/46ACB443']
+06-22 11:53:52 replicate_layout.replicatelayout 279:All sheets to replicate:
+[[u'dac_gp2'], [u'dac_gp1']]
+06-22 11:53:52 replicate_layout.replicatelayout 284:All sheets to replicate sorted:
+[[u'dac_gp1'], [u'dac_gp2']]
+06-22 11:53:52 replicate_layout.replicatelayout 290:All sheets to replicate sorted and without source sheet:
+[[u'dac_gp1']]
+06-22 11:53:52 replicate_layout.action_replicate_layout 185:Replicating layout
+06-22 11:53:52 replicate_layout.replicatelayout 994:Starting replication of sheets: [[u'dac_gp1']]
+on level: [u'dac_gp2']
 with tracks=True, zone=True, text=True, containing=True, remove=False, locked=False
-06-22 07:40:03 root 267:updating GUI message: 'Preparing for replication'
-06-22 07:40:03 root 272:updating GUI with: 0
-06-22 07:40:03 replicate_layout.replicatelayout 556:Getting the list of source footprints
-06-22 07:40:03 root 272:updating GUI with: 0
-06-22 07:40:03 replicate_layout.replicatelayout 560:Getting the list of all the remaining footprints
-06-22 07:40:03 replicate_layout.replicatelayout 564:Getting nets local to source footprints
-06-22 07:40:03 replicate_layout.replicatelayout 568:Getting source bounding box
-06-22 07:40:03 root 272:updating GUI with: 37
-06-22 07:40:03 replicate_layout.replicatelayout 572:Getting source tracks
-06-22 07:40:03 replicate_layout.replicatelayout 576:Getting source zones
-06-22 07:40:03 replicate_layout.replicatelayout 580:Getting source text items
-06-22 07:40:03 replicate_layout.replicatelayout 584:Getting source text items
-06-22 07:40:03 root 267:updating GUI message: 'Replicating footprints'
-06-22 07:40:03 replicate_layout.replicatelayout 590:Replicating footprints
-06-22 07:40:03 root 272:updating GUI with: 0
-06-22 07:40:03 replicate_layout.replicatelayout 596:Replicating footprints on sheet [u'dac_gp1', u'dual_biploar0']
-06-22 07:40:03 replicate_layout.replicatelayout 596:Replicating footprints on sheet [u'dac_gp1', u'dual_bipolar1']
-06-22 07:40:03 root 272:updating GUI with: 17
-06-22 07:40:03 replicate_layout.replicatelayout 596:Replicating footprints on sheet [u'dac_gp1', u'dual_bipolar3']
-06-22 07:40:03 root 272:updating GUI with: 34
-06-22 07:40:03 replicate_layout.replicatelayout 596:Replicating footprints on sheet [u'dac_gp2', u'dual_biploar0']
-06-22 07:40:03 root 272:updating GUI with: 50
-06-22 07:40:03 replicate_layout.replicatelayout 596:Replicating footprints on sheet [u'dac_gp2', u'dual_biploar2']
-06-22 07:40:03 root 272:updating GUI with: 66
-06-22 07:40:03 replicate_layout.replicatelayout 596:Replicating footprints on sheet [u'dac_gp2', u'dual_bipolar1']
-06-22 07:40:03 root 272:updating GUI with: 82
-06-22 07:40:03 replicate_layout.replicatelayout 596:Replicating footprints on sheet [u'dac_gp2', u'dual_bipolar3']
-06-22 07:40:03 root 272:updating GUI with: 98
-06-22 07:40:03 root 267:updating GUI message: 'Replicating tracks'
-06-22 07:40:03 replicate_layout.replicatelayout 720:Replicating tracks
-06-22 07:40:03 replicate_layout.replicatelayout 726:Replicating tracks on sheet [u'dac_gp1', u'dual_biploar0']
-06-22 07:40:03 root 272:updating GUI with: 14
-06-22 07:40:03 replicate_layout.replicatelayout 726:Replicating tracks on sheet [u'dac_gp1', u'dual_bipolar1']
-06-22 07:40:03 replicate_layout.replicatelayout 726:Replicating tracks on sheet [u'dac_gp1', u'dual_bipolar3']
-06-22 07:40:03 root 272:updating GUI with: 42
-06-22 07:40:03 replicate_layout.replicatelayout 726:Replicating tracks on sheet [u'dac_gp2', u'dual_biploar0']
-06-22 07:40:03 replicate_layout.replicatelayout 726:Replicating tracks on sheet [u'dac_gp2', u'dual_biploar2']
-06-22 07:40:03 root 272:updating GUI with: 71
-06-22 07:40:03 replicate_layout.replicatelayout 726:Replicating tracks on sheet [u'dac_gp2', u'dual_bipolar1']
-06-22 07:40:03 replicate_layout.replicatelayout 726:Replicating tracks on sheet [u'dac_gp2', u'dual_bipolar3']
-06-22 07:40:03 root 267:updating GUI message: 'Replicating zones'
-06-22 07:40:03 root 272:updating GUI with: 0
-06-22 07:40:03 replicate_layout.replicatelayout 771:Replicating zones
-06-22 07:40:03 replicate_layout.replicatelayout 778:Replicating zones on sheet [u'dac_gp1', u'dual_biploar0']
-06-22 07:40:03 replicate_layout.replicatelayout 778:Replicating zones on sheet [u'dac_gp1', u'dual_bipolar1']
-06-22 07:40:03 root 272:updating GUI with: 28
-06-22 07:40:03 replicate_layout.replicatelayout 778:Replicating zones on sheet [u'dac_gp1', u'dual_bipolar3']
-06-22 07:40:03 replicate_layout.replicatelayout 778:Replicating zones on sheet [u'dac_gp2', u'dual_biploar0']
-06-22 07:40:03 replicate_layout.replicatelayout 778:Replicating zones on sheet [u'dac_gp2', u'dual_biploar2']
-06-22 07:40:03 root 272:updating GUI with: 71
-06-22 07:40:03 replicate_layout.replicatelayout 778:Replicating zones on sheet [u'dac_gp2', u'dual_bipolar1']
-06-22 07:40:03 replicate_layout.replicatelayout 778:Replicating zones on sheet [u'dac_gp2', u'dual_bipolar3']
-06-22 07:40:03 root 267:updating GUI message: 'Replicating text'
-06-22 07:40:03 root 272:updating GUI with: 0
-06-22 07:40:03 replicate_layout.replicatelayout 837:Replicating text
-06-22 07:40:03 replicate_layout.replicatelayout 844:Replicating text on sheet [u'dac_gp1', u'dual_biploar0']
-06-22 07:40:03 replicate_layout.replicatelayout 844:Replicating text on sheet [u'dac_gp1', u'dual_bipolar1']
-06-22 07:40:03 replicate_layout.replicatelayout 844:Replicating text on sheet [u'dac_gp1', u'dual_bipolar3']
-06-22 07:40:03 replicate_layout.replicatelayout 844:Replicating text on sheet [u'dac_gp2', u'dual_biploar0']
-06-22 07:40:03 replicate_layout.replicatelayout 844:Replicating text on sheet [u'dac_gp2', u'dual_biploar2']
-06-22 07:40:03 replicate_layout.replicatelayout 844:Replicating text on sheet [u'dac_gp2', u'dual_bipolar1']
-06-22 07:40:03 replicate_layout.replicatelayout 844:Replicating text on sheet [u'dac_gp2', u'dual_bipolar3']
-06-22 07:40:03 root 267:updating GUI message: 'Replicating drawings'
-06-22 07:40:03 replicate_layout.replicatelayout 868:Replicating drawings
-06-22 07:40:03 root 272:updating GUI with: 0
-06-22 07:40:03 replicate_layout.replicatelayout 874:Replicating drawings on sheet [u'dac_gp1', u'dual_biploar0']
-06-22 07:40:03 replicate_layout.replicatelayout 874:Replicating drawings on sheet [u'dac_gp1', u'dual_bipolar1']
-06-22 07:40:03 replicate_layout.replicatelayout 874:Replicating drawings on sheet [u'dac_gp1', u'dual_bipolar3']
-06-22 07:40:03 replicate_layout.replicatelayout 874:Replicating drawings on sheet [u'dac_gp2', u'dual_biploar0']
-06-22 07:40:03 replicate_layout.replicatelayout 874:Replicating drawings on sheet [u'dac_gp2', u'dual_biploar2']
-06-22 07:40:03 replicate_layout.replicatelayout 874:Replicating drawings on sheet [u'dac_gp2', u'dual_bipolar1']
-06-22 07:40:03 replicate_layout.replicatelayout 874:Replicating drawings on sheet [u'dac_gp2', u'dual_bipolar3']
-06-22 07:40:03 replicate_layout.action_replicate_layout 207:Replication complete
+06-22 11:53:52 root 267:updating GUI message: 'Preparing for replication'
+06-22 11:53:52 replicate_layout.replicatelayout 556:Getting the list of source footprints
+06-22 11:53:52 root 272:updating GUI with: 0
+06-22 11:53:52 replicate_layout.replicatelayout 560:Getting the list of all the remaining footprints
+06-22 11:53:52 replicate_layout.replicatelayout 564:Getting nets local to source footprints
+06-22 11:53:52 replicate_layout.replicatelayout 568:Getting source bounding box
+06-22 11:53:52 root 272:updating GUI with: 37
+06-22 11:53:52 replicate_layout.replicatelayout 572:Getting source tracks
+06-22 11:53:52 replicate_layout.replicatelayout 576:Getting source zones
+06-22 11:53:52 replicate_layout.replicatelayout 580:Getting source text items
+06-22 11:53:52 replicate_layout.replicatelayout 584:Getting source text items
+06-22 11:53:52 root 267:updating GUI message: 'Replicating footprints'
+06-22 11:53:52 replicate_layout.replicatelayout 590:Replicating footprints
+06-22 11:53:52 root 272:updating GUI with: 0
+06-22 11:53:52 replicate_layout.replicatelayout 596:Replicating footprints on sheet [u'dac_gp1']
+06-22 11:53:52 root 272:updating GUI with: 14
+06-22 11:53:52 root 272:updating GUI with: 28
+06-22 11:53:52 root 272:updating GUI with: 44
+06-22 11:53:52 root 272:updating GUI with: 60
+06-22 11:53:52 root 272:updating GUI with: 73
+06-22 11:53:52 root 272:updating GUI with: 89
+06-22 11:53:52 root 267:updating GUI message: 'Replicating tracks'
+06-22 11:53:52 replicate_layout.replicatelayout 720:Replicating tracks
+06-22 11:53:52 root 272:updating GUI with: 0
+06-22 11:53:52 replicate_layout.replicatelayout 726:Replicating tracks on sheet [u'dac_gp1']
+06-22 11:53:52 root 267:updating GUI message: 'Replicating zones'
+06-22 11:53:52 root 272:updating GUI with: 0
+06-22 11:53:53 replicate_layout.replicatelayout 771:Replicating zones
+06-22 11:53:53 replicate_layout.replicatelayout 778:Replicating zones on sheet [u'dac_gp1']
+06-22 11:53:53 root 267:updating GUI message: 'Replicating text'
+06-22 11:53:53 root 272:updating GUI with: 0
+06-22 11:53:53 replicate_layout.replicatelayout 837:Replicating text
+06-22 11:53:53 root 272:updating GUI with: 0
+06-22 11:53:53 replicate_layout.replicatelayout 844:Replicating text on sheet [u'dac_gp1']
+06-22 11:53:53 root 267:updating GUI message: 'Replicating drawings'
+06-22 11:53:53 replicate_layout.replicatelayout 868:Replicating drawings
+06-22 11:53:53 replicate_layout.replicatelayout 874:Replicating drawings on sheet [u'dac_gp1']
+06-22 11:53:53 replicate_layout.action_replicate_layout 207:Replication complete

@@ -388,12 +388,12 @@ $EndComp
 $Comp
 L power:+1V8 #PWR075
 U 1 1 61303020
-P 11350 4250
-F 0 "#PWR075" H 11350 4100 50  0001 C CNN
-F 1 "+1V8" V 11365 4378 50  0000 L CNN
-F 2 "" H 11350 4250 50  0001 C CNN
-F 3 "" H 11350 4250 50  0001 C CNN
-	1    11350 4250
+P 11350 4950
+F 0 "#PWR075" H 11350 4800 50  0001 C CNN
+F 1 "+1V8" V 11365 5078 50  0000 L CNN
+F 2 "" H 11350 4950 50  0001 C CNN
+F 3 "" H 11350 4950 50  0001 C CNN
+	1    11350 4950
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -887,12 +887,12 @@ $EndComp
 $Comp
 L power:+2V5 #PWR076
 U 1 1 60C2A239
-P 11450 4450
-F 0 "#PWR076" H 11450 4300 50  0001 C CNN
-F 1 "+2V5" V 11465 4578 50  0000 L CNN
-F 2 "" H 11450 4450 50  0001 C CNN
-F 3 "" H 11450 4450 50  0001 C CNN
-	1    11450 4450
+P 11450 5150
+F 0 "#PWR076" H 11450 5000 50  0001 C CNN
+F 1 "+2V5" V 11465 5278 50  0000 L CNN
+F 2 "" H 11450 5150 50  0001 C CNN
+F 3 "" H 11450 5150 50  0001 C CNN
+	1    11450 5150
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -1009,17 +1009,6 @@ F 2 "" H 2200 6200 50  0001 C CNN
 F 3 "" H 2200 6200 50  0001 C CNN
 	1    2200 6200
 	-1   0    0    -1  
-$EndComp
-$Comp
-L power:GND #GND057
-U 1 1 62AC7523
-P 11500 4150
-F 0 "#GND057" H 11500 4150 50  0001 C CNN
-F 1 "GND" H 11400 4050 59  0001 L BNN
-F 2 "" H 11500 4150 50  0001 C CNN
-F 3 "" H 11500 4150 50  0001 C CNN
-	1    11500 4150
-	0    1    1    0   
 $EndComp
 $Comp
 L Device:Ferrite_Bead FB7
@@ -1212,11 +1201,11 @@ Text Notes 9650 4200 0    50   ~ 0
 0.5 A output max\n\n1.1 V dropout
 Text Notes 7300 3850 0    50   ~ 0
 0.4 A output max\n\n1.0 V dropout
-Text Label 11200 4950 0    50   ~ 0
+Text Label 11200 4250 0    50   ~ 0
 -16V5
-Text Label 11250 5050 0    50   ~ 0
+Text Label 11250 4350 0    50   ~ 0
 16V5
-Text Label 11250 5150 0    50   ~ 0
+Text Label 11250 4450 0    50   ~ 0
 6V_IN
 Text Notes 11100 5500 0    50   ~ 0
 Allows for observation \nor override of supplies
@@ -1240,13 +1229,13 @@ Text HLabel 10450 6600 0    50   Input ~ 0
 EN_n15V
 Text HLabel 10450 6500 0    50   Input ~ 0
 EN_15V
-Text GLabel 11000 4350 0    47   BiDi ~ 0
+Text GLabel 11000 5050 0    47   BiDi ~ 0
 2V048_REF
 Text Label 1500 2250 0    47   ~ 0
 6V_IN
 Text Notes 9900 2050 0    39   ~ 0
 Don’t use EN since this is an FPGA\nbank voltage!
-Text Label 11000 5250 0    50   ~ 0
+Text Label 11100 4150 0    50   ~ 0
 EN_PWR
 Text Label 12150 6200 0    50   ~ 0
 EN_PWR
@@ -1285,11 +1274,11 @@ Wire Wire Line
 Wire Wire Line
 	1200 2450 1100 2450
 Wire Wire Line
-	11200 5050 11500 5050
+	11200 4350 11500 4350
 Wire Wire Line
-	11200 4950 11500 4950
+	11200 4250 11500 4250
 Wire Wire Line
-	11000 4350 11500 4350
+	11000 5050 11500 5050
 Wire Wire Line
 	7000 5400 7000 5550
 Wire Wire Line
@@ -1301,7 +1290,7 @@ Wire Wire Line
 Wire Wire Line
 	11500 4550 11100 4550
 Wire Wire Line
-	11500 4450 11450 4450
+	11500 5150 11450 5150
 Wire Wire Line
 	2000 2400 2000 2300
 Wire Wire Line
@@ -1479,7 +1468,7 @@ Wire Wire Line
 Wire Wire Line
 	6050 4650 6050 4600
 Wire Wire Line
-	11200 5150 11500 5150
+	11200 4450 11500 4450
 Wire Wire Line
 	10000 2400 10000 2300
 Wire Wire Line
@@ -1553,7 +1542,7 @@ Wire Wire Line
 Wire Wire Line
 	3600 4850 3750 4850
 Wire Wire Line
-	11350 4250 11500 4250
+	11350 4950 11500 4950
 Wire Wire Line
 	1450 2250 1550 2250
 Wire Wire Line
@@ -1562,8 +1551,6 @@ Wire Wire Line
 	10150 2400 10150 2300
 Wire Wire Line
 	10150 2300 10500 2300
-Wire Wire Line
-	11000 5250 11500 5250
 Wire Wire Line
 	12150 6200 12000 6200
 Wire Wire Line
@@ -1882,4 +1869,19 @@ F 5 "1%" H 4200 4509 50  0001 C CNN "Tolerance"
 	1    4350 4350
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:GND #GND?
+U 1 1 60FF305F
+P 11450 5250
+F 0 "#GND?" H 11450 5250 50  0001 C CNN
+F 1 "GND" H 11350 5150 59  0001 L BNN
+F 2 "" H 11450 5250 50  0001 C CNN
+F 3 "" H 11450 5250 50  0001 C CNN
+	1    11450 5250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11450 5250 11500 5250
+Wire Wire Line
+	11100 4150 11500 4150
 $EndSCHEMATC
