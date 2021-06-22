@@ -533,26 +533,26 @@ $EndComp
 $Comp
 L Device:R_US R36
 U 1 1 60F53569
-P 1800 4700
-F 0 "R36" H 1650 4759 59  0000 L BNN
-F 1 "15k" H 1500 4650 59  0000 L BNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1800 4700 50  0001 C CNN
-F 3 "" H 1800 4700 50  0001 C CNN
-F 4 "RC0603FR-0715kL" H 1650 4859 50  0001 C CNN "Manf#"
-F 5 "0.1W" H 1650 4859 50  0001 C CNN "Power"
-F 6 "1%" H 1650 4859 50  0001 C CNN "Tolerance"
-	1    1800 4700
+P 1600 5000
+F 0 "R36" H 1450 5059 59  0000 L BNN
+F 1 "15k" H 1300 4950 59  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1600 5000 50  0001 C CNN
+F 3 "" H 1600 5000 50  0001 C CNN
+F 4 "RC0603FR-0715kL" H 1450 5159 50  0001 C CNN "Manf#"
+F 5 "0.1W" H 1450 5159 50  0001 C CNN "Power"
+F 6 "1%" H 1450 5159 50  0001 C CNN "Tolerance"
+	1    1600 5000
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #GND026
 U 1 1 60F758E0
-P 1800 4900
-F 0 "#GND026" H 1800 4900 50  0001 C CNN
-F 1 "GND" H 1700 4800 59  0001 L BNN
-F 2 "" H 1800 4900 50  0001 C CNN
-F 3 "" H 1800 4900 50  0001 C CNN
-	1    1800 4900
+P 1600 5200
+F 0 "#GND026" H 1600 5200 50  0001 C CNN
+F 1 "GND" H 1500 5100 59  0001 L BNN
+F 2 "" H 1600 5200 50  0001 C CNN
+F 3 "" H 1600 5200 50  0001 C CNN
+	1    1600 5200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1189,7 +1189,7 @@ Text Notes 3500 2100 0    59   ~ 0
 1 A output
 Text Label 3000 3350 0    50   ~ 0
 6V_IN
-Text Label 2000 4750 0    50   ~ 0
+Text Label 2000 4650 0    50   ~ 0
 VREF_SW
 Text Label 4350 5100 0    50   ~ 0
 VREF_SW
@@ -1358,17 +1358,9 @@ Wire Wire Line
 Wire Wire Line
 	2400 4100 2600 4100
 Wire Wire Line
-	2400 4750 2000 4750
-Wire Wire Line
-	2000 4750 2000 4950
-Wire Wire Line
 	2000 4950 2400 4950
 Wire Wire Line
-	2250 4550 2250 4650
-Wire Wire Line
-	2250 4650 2400 4650
-Wire Wire Line
-	1800 4900 1800 4850
+	1600 5200 1600 5150
 Wire Wire Line
 	1800 4550 1800 4400
 Wire Wire Line
@@ -1425,8 +1417,6 @@ Wire Wire Line
 	4600 4200 4600 4100
 Wire Wire Line
 	2000 4450 2000 4550
-Wire Wire Line
-	2000 4550 2250 4550
 Wire Wire Line
 	2000 4150 2000 4100
 Wire Wire Line
@@ -1645,7 +1635,6 @@ Connection ~ 7250 4150
 Connection ~ 6850 5550
 Connection ~ 6700 2300
 Connection ~ 8850 2300
-Connection ~ 1800 4550
 Connection ~ 3000 4100
 Connection ~ 2600 4100
 Connection ~ 2000 4950
@@ -1653,7 +1642,6 @@ Connection ~ 1800 4100
 Connection ~ 3400 4100
 Connection ~ 4350 4650
 Connection ~ 4600 4100
-Connection ~ 2000 4550
 Connection ~ 2000 4100
 Connection ~ 3750 4850
 Connection ~ 9550 4150
@@ -1884,4 +1872,18 @@ Wire Wire Line
 	11400 4650 11500 4650
 Wire Wire Line
 	11250 4550 11500 4550
+Wire Wire Line
+	1800 4550 1600 4550
+Wire Wire Line
+	1600 4550 1600 4750
+Connection ~ 1800 4550
+Wire Wire Line
+	2000 4650 2000 4950
+Wire Wire Line
+	2000 4650 2400 4650
+Wire Wire Line
+	2400 4750 1600 4750
+Wire Wire Line
+	1600 4850 1600 4750
+Connection ~ 1600 4750
 $EndSCHEMATC
