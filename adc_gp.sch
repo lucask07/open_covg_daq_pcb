@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr User 13023 9707
 encoding utf-8
-Sheet 7 18
+Sheet 7 26
 Title ""
 Date ""
 Rev ""
@@ -1149,19 +1149,6 @@ F 6 "1%" H 3550 6259 50  0001 C CNN "Tolerance"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #GND?
-U 1 1 6152B64A
-P 3400 6900
-AR Path="/6152B64A" Ref="#GND?"  Part="1" 
-AR Path="/6095A004/6152B64A" Ref="#GND0102"  Part="1" 
-F 0 "#GND0102" H 3400 6900 50  0001 C CNN
-F 1 "GND" H 3300 6800 59  0001 L BNN
-F 2 "" H 3400 6900 50  0001 C CNN
-F 3 "" H 3400 6900 50  0001 C CNN
-	1    3400 6900
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C?
 U 1 1 6152B665
 P 4100 5250
@@ -1192,19 +1179,6 @@ F 5 "0.1W" H 3550 5209 50  0001 C CNN "Power"
 F 6 "1%" H 3550 5209 50  0001 C CNN "Tolerance"
 	1    3700 5050
 	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #GND?
-U 1 1 6152B676
-P 3400 5850
-AR Path="/6152B676" Ref="#GND?"  Part="1" 
-AR Path="/6095A004/6152B676" Ref="#GND0101"  Part="1" 
-F 0 "#GND0101" H 3400 5850 50  0001 C CNN
-F 1 "GND" H 3300 5750 59  0001 L BNN
-F 2 "" H 3400 5850 50  0001 C CNN
-F 3 "" H 3400 5850 50  0001 C CNN
-	1    3400 5850
-	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C?
@@ -1239,19 +1213,6 @@ F 6 "1%" H 3550 4109 50  0001 C CNN "Tolerance"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #GND?
-U 1 1 6152B6A2
-P 3400 4750
-AR Path="/6152B6A2" Ref="#GND?"  Part="1" 
-AR Path="/6095A004/6152B6A2" Ref="#GND0100"  Part="1" 
-F 0 "#GND0100" H 3400 4750 50  0001 C CNN
-F 1 "GND" H 3300 4650 59  0001 L BNN
-F 2 "" H 3400 4750 50  0001 C CNN
-F 3 "" H 3400 4750 50  0001 C CNN
-	1    3400 4750
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C?
 U 1 1 6152B6BD
 P 4100 3050
@@ -1282,19 +1243,6 @@ F 5 "0.1W" H 3550 3009 50  0001 C CNN "Power"
 F 6 "1%" H 3550 3009 50  0001 C CNN "Tolerance"
 	1    3700 2850
 	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #GND?
-U 1 1 6152B6CE
-P 3400 3650
-AR Path="/6152B6CE" Ref="#GND?"  Part="1" 
-AR Path="/6095A004/6152B6CE" Ref="#GND099"  Part="1" 
-F 0 "#GND099" H 3400 3650 50  0001 C CNN
-F 1 "GND" H 3300 3550 59  0001 L BNN
-F 2 "" H 3400 3650 50  0001 C CNN
-F 3 "" H 3400 3650 50  0001 C CNN
-	1    3400 3650
-	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C?
@@ -2391,8 +2339,6 @@ Wire Wire Line
 Wire Wire Line
 	4100 6100 3850 6100
 Wire Wire Line
-	3400 6900 3400 6850
-Wire Wire Line
 	3400 6550 3400 6500
 Wire Wire Line
 	3400 6500 3550 6500
@@ -2406,8 +2352,6 @@ Wire Wire Line
 	4100 5100 4100 5050
 Wire Wire Line
 	4100 5050 3850 5050
-Wire Wire Line
-	3400 5850 3400 5800
 Wire Wire Line
 	3400 5500 3400 5450
 Wire Wire Line
@@ -2423,8 +2367,6 @@ Wire Wire Line
 Wire Wire Line
 	4100 3950 3850 3950
 Wire Wire Line
-	3400 4750 3400 4700
-Wire Wire Line
 	3400 4400 3400 4350
 Wire Wire Line
 	3400 4350 3550 4350
@@ -2438,8 +2380,6 @@ Wire Wire Line
 	4100 2900 4100 2850
 Wire Wire Line
 	4100 2850 3850 2850
-Wire Wire Line
-	3400 3650 3400 3600
 Wire Wire Line
 	3400 3300 3400 3250
 Wire Wire Line
