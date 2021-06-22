@@ -974,69 +974,49 @@ D0_SDI
 Text HLabel 3000 2900 2    50   Output ~ 0
 D0_SCLK
 Text HLabel 11100 3200 2    50   Input ~ 0
-A1_D_N
-Text HLabel 11100 2600 2    50   Input ~ 0
-A1_DCO_N
-Text HLabel 11100 1700 2    50   Output ~ 0
-A3_CNV_N
-Text HLabel 11100 1900 2    50   Input ~ 0
-A3_D_N
-Text HLabel 11100 2300 2    50   Input ~ 0
-A3_DCO_N
-Text HLabel 11100 3100 2    50   Input ~ 0
-A1_D_P
-Text HLabel 11100 1800 2    50   Input ~ 0
-A3_D_P
-Text HLabel 11100 2200 2    50   Input ~ 0
-A3_DCO_P
-Text HLabel 8300 3800 2    50   Output ~ 0
-A2_CLK_P
-Text HLabel 11100 2500 2    50   Input ~ 0
-A1_DCO_P
-Text HLabel 11100 1600 2    50   Output ~ 0
-A3_CNV_P
-Text HLabel 11100 3000 2    50   Output ~ 0
-A1_CNV_N
-Text HLabel 11100 2900 2    50   Output ~ 0
-A1_CNV_P
-Text HLabel 8300 1500 2    50   Output ~ 0
-A0_CNV_N
-Text HLabel 11100 2800 2    50   Output ~ 0
-A1_CLK_N
-Text HLabel 11100 2100 2    50   Output ~ 0
-A3_CLK_N
-Text HLabel 8300 3500 2    50   Output ~ 0
-A2_CNV_N
-Text HLabel 8300 3700 2    50   Input ~ 0
-A2_D_N
-Text HLabel 8250 4600 2    50   Input ~ 0
-A2_DCO_N
-Text HLabel 8300 3900 2    50   Output ~ 0
-A2_CLK_N
-Text HLabel 11100 2700 2    50   Output ~ 0
-A1_CLK_P
-Text HLabel 8300 1400 2    50   Output ~ 0
-A0_CNV_P
-Text HLabel 11100 2000 2    50   Output ~ 0
-A3_CLK_P
-Text HLabel 8300 3300 2    50   Output ~ 0
-A2_CNV_P
-Text HLabel 8300 1900 2    50   Input ~ 0
 A0_D_N
-Text HLabel 8300 3600 2    50   Input ~ 0
-A2_D_P
-Text HLabel 8250 4500 2    50   Input ~ 0
-A2_DCO_P
-Text HLabel 8300 1600 2    50   Output ~ 0
-A0_CLK_P
-Text HLabel 8300 1700 2    50   Output ~ 0
-A0_CLK_N
-Text HLabel 8300 1800 2    50   Input ~ 0
-A0_D_P
-Text HLabel 8300 2100 2    50   Input ~ 0
+Text HLabel 11100 2600 2    50   Input ~ 0
 A0_DCO_N
-Text HLabel 8300 2000 2    50   Input ~ 0
+Text HLabel 11100 2100 2    50   Output ~ 0
+A2_CNV_N
+Text HLabel 11100 1900 2    50   Input ~ 0
+A2_D_N
+Text HLabel 11100 2300 2    50   Input ~ 0
+A2_DCO_N
+Text HLabel 11100 3100 2    50   Input ~ 0
+A0_D_P
+Text HLabel 11100 1800 2    50   Input ~ 0
+A2_D_P
+Text HLabel 11100 2200 2    50   Input ~ 0
+A2_DCO_P
+Text HLabel 8300 3800 2    50   Output ~ 0
+A1_CLK_P
+Text HLabel 11100 2500 2    50   Input ~ 0
 A0_DCO_P
+Text HLabel 11100 2000 2    50   Output ~ 0
+A2_CNV_P
+Text HLabel 11100 3000 2    50   Output ~ 0
+A0_CNV_N
+Text HLabel 11100 2900 2    50   Output ~ 0
+A0_CNV_P
+Text HLabel 11100 2800 2    50   Output ~ 0
+A0_CLK_N
+Text HLabel 11100 1700 2    50   Output ~ 0
+A2_CLK_N
+Text HLabel 8300 3500 2    50   Output ~ 0
+A1_CNV_N
+Text HLabel 8300 3700 2    50   Input ~ 0
+A1_D_N
+Text HLabel 8300 3900 2    50   Output ~ 0
+A1_CLK_N
+Text HLabel 11100 2700 2    50   Output ~ 0
+A0_CLK_P
+Text HLabel 11100 1600 2    50   Output ~ 0
+A2_CLK_P
+Text HLabel 8300 3300 2    50   Output ~ 0
+A1_CNV_P
+Text HLabel 8300 3600 2    50   Input ~ 0
+A1_D_P
 Text HLabel 6350 1900 2    50   Output ~ 0
 ADS_CONVST
 Text HLabel 5500 2100 2    50   Input ~ 0
@@ -2516,33 +2496,33 @@ $EndComp
 Wire Wire Line
 	1450 2850 1650 2850
 Text Label 11000 1400 0    50   ~ 0
-GP_LVDS_0P
+GP_LVDS_3P
 Text Label 11000 1500 0    50   ~ 0
-GP_LVDS_0N
+GP_LVDS_3N
 Wire Wire Line
 	8200 2300 8950 2300
 Wire Wire Line
 	8200 2200 8950 2200
 Text Label 8400 2200 0    50   ~ 0
-GP_LVDS_1P
+GP_LVDS_2P
 Text Label 8400 2300 0    50   ~ 0
-GP_LVDS_1N
+GP_LVDS_2N
 Wire Wire Line
 	8200 2600 8950 2600
 Wire Wire Line
 	8200 2500 8950 2500
 Text Label 8400 2500 0    50   ~ 0
-GP_LVDS_2P
+GP_LVDS_1P
 Text Label 8400 2600 0    50   ~ 0
-GP_LVDS_2N
+GP_LVDS_1N
 Wire Wire Line
 	8200 2800 8950 2800
 Wire Wire Line
 	8200 2700 8950 2700
 Text Label 8400 2700 0    50   ~ 0
-GP_LVDS_3P
+GP_LVDS_0P
 Text Label 8400 2800 0    50   ~ 0
-GP_LVDS_3N
+GP_LVDS_0N
 Wire Wire Line
 	10900 3700 11200 3700
 NoConn ~ 11200 3700
@@ -2719,21 +2699,21 @@ XADC_VN
 Text HLabel 11300 1200 2    50   Input ~ 0
 XADC_VP
 Text HLabel 8950 2200 2    50   BiDi ~ 0
-GP_LVDS_1P
-Text HLabel 8950 2300 2    50   BiDi ~ 0
-GP_LVDS_1N
-Text HLabel 8950 2500 2    50   BiDi ~ 0
 GP_LVDS_2P
-Text HLabel 8950 2600 2    50   BiDi ~ 0
+Text HLabel 8950 2300 2    50   BiDi ~ 0
 GP_LVDS_2N
+Text HLabel 8950 2500 2    50   BiDi ~ 0
+GP_LVDS_1P
+Text HLabel 8950 2600 2    50   BiDi ~ 0
+GP_LVDS_1N
 Text HLabel 8950 2700 2    50   BiDi ~ 0
-GP_LVDS_3P
-Text HLabel 8950 2800 2    50   BiDi ~ 0
-GP_LVDS_3N
-Text HLabel 11500 1400 2    50   BiDi ~ 0
 GP_LVDS_0P
-Text HLabel 11500 1500 2    50   BiDi ~ 0
+Text HLabel 8950 2800 2    50   BiDi ~ 0
 GP_LVDS_0N
+Text HLabel 11500 1400 2    50   BiDi ~ 0
+GP_LVDS_3P
+Text HLabel 11500 1500 2    50   BiDi ~ 0
+GP_LVDS_3N
 $Comp
 L Device:R_Small_US R288
 U 1 1 60E4C9C5
@@ -2877,6 +2857,26 @@ Text Label 650  1850 0    50   ~ 0
 1V8_SCL
 Text Label 1500 1850 0    50   ~ 0
 1V8_SDA
+Text HLabel 8300 2100 2    50   Input ~ 0
+A3_DCO_N
+Text HLabel 8300 2000 2    50   Input ~ 0
+A3_DCO_P
+Text HLabel 8300 1500 2    50   Input ~ 0
+A3_D_N
+Text HLabel 8300 1400 2    50   Input ~ 0
+A3_D_P
+Text HLabel 8300 1700 2    50   Output ~ 0
+A3_CLK_N
+Text HLabel 8300 1600 2    50   Output ~ 0
+A3_CLK_P
+Text HLabel 8300 1900 2    50   Output ~ 0
+A3_CNV_N
+Text HLabel 8300 1800 2    50   Output ~ 0
+A3_CNV_P
+Text HLabel 8250 4600 2    50   Input ~ 0
+A1_DCO_N
+Text HLabel 8250 4500 2    50   Input ~ 0
+A1_DCO_P
 Wire Bus Line
 	7600 5500 7600 5800
 Wire Bus Line
