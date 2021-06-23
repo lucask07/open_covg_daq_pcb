@@ -973,7 +973,7 @@ Text HLabel 3000 2800 2    50   Output ~ 0
 D0_SDI
 Text HLabel 3000 2900 2    50   Output ~ 0
 D0_SCLK
-Text HLabel 11100 3200 2    50   Input ~ 0
+Text HLabel 11100 3000 2    50   Input ~ 0
 A0_D_N
 Text HLabel 11100 2600 2    50   Input ~ 0
 A0_DCO_N
@@ -983,7 +983,7 @@ Text HLabel 11100 1900 2    50   Input ~ 0
 A2_D_N
 Text HLabel 11100 2300 2    50   Input ~ 0
 A2_DCO_N
-Text HLabel 11100 3100 2    50   Input ~ 0
+Text HLabel 11100 2900 2    50   Input ~ 0
 A0_D_P
 Text HLabel 11100 1800 2    50   Input ~ 0
 A2_D_P
@@ -995,11 +995,11 @@ Text HLabel 11100 2500 2    50   Input ~ 0
 A0_DCO_P
 Text HLabel 11100 2000 2    50   Output ~ 0
 A2_CNV_P
-Text HLabel 11100 3000 2    50   Output ~ 0
-A0_CNV_N
-Text HLabel 11100 2900 2    50   Output ~ 0
-A0_CNV_P
 Text HLabel 11100 2800 2    50   Output ~ 0
+A0_CNV_N
+Text HLabel 11100 2700 2    50   Output ~ 0
+A0_CNV_P
+Text HLabel 11100 3200 2    50   Output ~ 0
 A0_CLK_N
 Text HLabel 11100 1700 2    50   Output ~ 0
 A2_CLK_N
@@ -1009,7 +1009,7 @@ Text HLabel 8300 3700 2    50   Input ~ 0
 A1_D_N
 Text HLabel 8300 3900 2    50   Output ~ 0
 A1_CLK_N
-Text HLabel 11100 2700 2    50   Output ~ 0
+Text HLabel 11100 3100 2    50   Output ~ 0
 A0_CLK_P
 Text HLabel 11100 1600 2    50   Output ~ 0
 A2_CLK_P

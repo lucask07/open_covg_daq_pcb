@@ -127,11 +127,11 @@ F81 "ADS_RESETb" O L 3000 6650 50
 F82 "ADS_SCLK" O L 3000 6250 50 
 F83 "DC0_SDA" B L 3000 3150 50 
 F84 "DC1_SDA" B L 3000 6050 50 
-F85 "DC2_SDA" B R 4050 3050 50 
+F85 "DC2_SDA" B R 4050 3150 50 
 F86 "DC3_SDA" B R 4050 6050 50 
 F87 "DC0_SCL" B L 3000 3050 50 
 F88 "DC1_SCL" B L 3000 5950 50 
-F89 "DC2_SCL" B R 4050 3150 50 
+F89 "DC2_SCL" B R 4050 3050 50 
 F90 "DC3_SCL" B R 4050 5950 50 
 F91 "I1SEL[0..3]" O R 4050 6700 50 
 F92 "I2SEL[0..3]" O L 3000 7600 50 
@@ -572,18 +572,6 @@ F 2 "" H 5450 5750 50  0001 C CNN
 F 3 "" H 5450 5750 50  0001 C CNN
 	1    5450 5750
 	0    -1   1    0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x03_Odd_Even J6
-U 1 1 61090105
-P 5100 6500
-F 0 "J6" V 5104 6680 50  0000 L CNN
-F 1 "Conn_02x03_Odd_Even" H 5195 6680 31  0000 L CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_2x03_P2.00mm_Vertical_SMD" H 5100 6500 50  0001 C CNN
-F 3 "~" H 5100 6500 50  0001 C CNN
-F 4 "10129383-906002ALF" V 5100 6500 50  0001 C CNN "Manf#"
-	1    5100 6500
-	0    1    1    0   
 $EndComp
 $Comp
 L Device:Ferrite_Bead FB?
@@ -1273,23 +1261,11 @@ Wire Wire Line
 Wire Wire Line
 	5550 6350 5550 6850
 Wire Wire Line
-	5000 6300 5000 6250
-Wire Wire Line
 	5000 6250 5100 6250
-Wire Wire Line
-	5200 6300 5200 6250
 Wire Wire Line
 	5200 6250 5100 6250
 Wire Wire Line
-	5100 6300 5100 6250
-Wire Wire Line
 	5200 6250 5600 6250
-Wire Wire Line
-	5200 6800 5200 6950
-Wire Wire Line
-	5000 6800 5000 7400
-Wire Wire Line
-	5100 6800 5100 7400
 Wire Bus Line
 	9600 2350 9950 2350
 Wire Bus Line
@@ -1321,37 +1297,17 @@ Wire Wire Line
 Wire Wire Line
 	2200 3700 2250 3700
 Wire Wire Line
-	2050 6300 2050 6250
-Wire Wire Line
 	2050 6250 1950 6250
-Wire Wire Line
-	1850 6300 1850 6250
 Wire Wire Line
 	1850 6250 1950 6250
 Wire Wire Line
-	1950 6300 1950 6250
-Wire Wire Line
 	1850 6250 1450 6250
-Wire Wire Line
-	2050 6800 2050 7400
-Wire Wire Line
-	1950 6800 1950 7400
-Wire Wire Line
-	2050 3400 2050 3350
 Wire Wire Line
 	2050 3350 1950 3350
 Wire Wire Line
-	1850 3400 1850 3350
-Wire Wire Line
 	1850 3350 1950 3350
 Wire Wire Line
-	1950 3400 1950 3350
-Wire Wire Line
 	1850 3350 1450 3350
-Wire Wire Line
-	2050 3900 2050 4500
-Wire Wire Line
-	1850 3900 1850 4000
 Wire Wire Line
 	1950 5250 1950 4700
 Wire Wire Line
@@ -1367,25 +1323,11 @@ Wire Wire Line
 Wire Wire Line
 	1650 4600 1650 4850
 Wire Wire Line
-	1950 4500 1950 3900
-Wire Wire Line
-	5000 3400 5000 3350
-Wire Wire Line
 	5000 3350 5100 3350
-Wire Wire Line
-	5200 3400 5200 3350
 Wire Wire Line
 	5200 3350 5100 3350
 Wire Wire Line
-	5100 3400 5100 3350
-Wire Wire Line
 	5200 3350 5600 3350
-Wire Wire Line
-	5200 3900 5200 4050
-Wire Wire Line
-	5000 3900 5000 4500
-Wire Wire Line
-	5100 3900 5100 4500
 Wire Wire Line
 	7400 1150 7400 1250
 Wire Wire Line
@@ -1665,42 +1607,6 @@ F 4 "SBH21-NBPN-D17-RA-BK" H 9900 5500 50  0001 C CNN "Manf#"
 	1    9900 5500
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_02x03_Odd_Even J5
-U 1 1 61E7558E
-P 5100 3600
-F 0 "J5" V 5104 3780 50  0000 L CNN
-F 1 "Conn_02x03_Odd_Even" H 5195 3780 31  0000 L CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_2x03_P2.00mm_Vertical_SMD" H 5100 3600 50  0001 C CNN
-F 3 "~" H 5100 3600 50  0001 C CNN
-F 4 "10129383-906002ALF" V 5100 3600 50  0001 C CNN "Manf#"
-	1    5100 3600
-	0    1    1    0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x03_Odd_Even J4
-U 1 1 61E77454
-P 1950 6500
-F 0 "J4" V 1954 6680 50  0000 L CNN
-F 1 "Conn_02x03_Odd_Even" H 2000 6750 31  0000 L CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_2x03_P2.00mm_Vertical_SMD" H 1950 6500 50  0001 C CNN
-F 3 "~" H 1950 6500 50  0001 C CNN
-F 4 "10129383-906002ALF" V 1950 6500 50  0001 C CNN "Manf#"
-	1    1950 6500
-	0    -1   1    0   
-$EndComp
-$Comp
-L Connector_Generic:Conn_02x03_Odd_Even J3
-U 1 1 61E78915
-P 1950 3600
-F 0 "J3" V 1954 3780 50  0000 L CNN
-F 1 "Conn_02x03_Odd_Even" H 1900 3900 31  0000 L CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_2x03_P2.00mm_Vertical_SMD" H 1950 3600 50  0001 C CNN
-F 3 "~" H 1950 3600 50  0001 C CNN
-F 4 "10129383-906002ALF" V 1950 3600 50  0001 C CNN "Manf#"
-	1    1950 3600
-	0    -1   1    0   
-$EndComp
 Wire Wire Line
 	3000 3250 2500 3250
 Text Label 2550 3250 0    50   ~ 0
@@ -1721,8 +1627,6 @@ Text Label 1850 4000 3    50   ~ 0
 GPIO0
 Text Label 1850 7250 1    50   ~ 0
 GPIO1
-Wire Wire Line
-	1850 6800 1850 7250
 Text Label 5200 4050 3    50   ~ 0
 GPIO2
 Text Label 5200 6950 3    50   ~ 0
@@ -2080,6 +1984,258 @@ F 4 "SBH21-NBPN-D07-RA-BK" H 7650 6000 50  0001 C CNN "Manf#"
 	1    7650 6000
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 60E8454C
+P 5000 3650
+AR Path="/6095A38A/60E8454C" Ref="R?"  Part="1" 
+AR Path="/6095BD4C/60E8454C" Ref="R?"  Part="1" 
+AR Path="/61B02572/60E8454C" Ref="R?"  Part="1" 
+AR Path="/60E8454C" Ref="R268"  Part="1" 
+F 0 "R268" V 5000 3700 43  0000 L BNN
+F 1 "0" H 5050 3500 43  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5000 3650 50  0001 C CNN
+F 3 "" H 5000 3650 50  0001 C CNN
+F 4 "RC0603FR-070RL" H 4850 3850 50  0001 C CNN "Manf#"
+F 5 "0.1W" H 4850 3850 50  0001 C CNN "Power"
+	1    5000 3650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 60EF4390
+P 5100 3650
+AR Path="/6095A38A/60EF4390" Ref="R?"  Part="1" 
+AR Path="/6095BD4C/60EF4390" Ref="R?"  Part="1" 
+AR Path="/61B02572/60EF4390" Ref="R?"  Part="1" 
+AR Path="/60EF4390" Ref="R270"  Part="1" 
+F 0 "R270" V 5100 3700 43  0000 L BNN
+F 1 "DNI" V 5150 3450 43  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5100 3650 50  0001 C CNN
+F 3 "" H 5100 3650 50  0001 C CNN
+F 4 "" H 4950 3850 50  0001 C CNN "Manf#"
+F 5 "0.1W" H 4950 3850 50  0001 C CNN "Power"
+	1    5100 3650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 60EF4765
+P 5200 3650
+AR Path="/6095A38A/60EF4765" Ref="R?"  Part="1" 
+AR Path="/6095BD4C/60EF4765" Ref="R?"  Part="1" 
+AR Path="/61B02572/60EF4765" Ref="R?"  Part="1" 
+AR Path="/60EF4765" Ref="R272"  Part="1" 
+F 0 "R272" V 5200 3700 43  0000 L BNN
+F 1 "DNI" V 5150 3450 43  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5200 3650 50  0001 C CNN
+F 3 "" H 5200 3650 50  0001 C CNN
+F 4 "" H 5050 3850 50  0001 C CNN "Manf#"
+F 5 "0.1W" H 5050 3850 50  0001 C CNN "Power"
+	1    5200 3650
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 3750 5100 4500
+Wire Wire Line
+	5000 3750 5000 4500
+Wire Wire Line
+	5000 3350 5000 3550
+Wire Wire Line
+	5100 3350 5100 3550
+Wire Wire Line
+	5200 3350 5200 3550
+Wire Wire Line
+	5200 3750 5200 4050
+$Comp
+L Device:R_Small_US R?
+U 1 1 60FD958D
+P 5000 6600
+AR Path="/6095A38A/60FD958D" Ref="R?"  Part="1" 
+AR Path="/6095BD4C/60FD958D" Ref="R?"  Part="1" 
+AR Path="/61B02572/60FD958D" Ref="R?"  Part="1" 
+AR Path="/60FD958D" Ref="R269"  Part="1" 
+F 0 "R269" V 5000 6650 43  0000 L BNN
+F 1 "0" H 5050 6450 43  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5000 6600 50  0001 C CNN
+F 3 "" H 5000 6600 50  0001 C CNN
+F 4 "RC0603FR-070RL" H 4850 6800 50  0001 C CNN "Manf#"
+F 5 "0.1W" H 4850 6800 50  0001 C CNN "Power"
+	1    5000 6600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 60FD9595
+P 5100 6600
+AR Path="/6095A38A/60FD9595" Ref="R?"  Part="1" 
+AR Path="/6095BD4C/60FD9595" Ref="R?"  Part="1" 
+AR Path="/61B02572/60FD9595" Ref="R?"  Part="1" 
+AR Path="/60FD9595" Ref="R271"  Part="1" 
+F 0 "R271" V 5100 6650 43  0000 L BNN
+F 1 "DNI" V 5150 6400 43  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5100 6600 50  0001 C CNN
+F 3 "" H 5100 6600 50  0001 C CNN
+F 4 "" H 4950 6800 50  0001 C CNN "Manf#"
+F 5 "0.1W" H 4950 6800 50  0001 C CNN "Power"
+	1    5100 6600
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 60FD959D
+P 5200 6600
+AR Path="/6095A38A/60FD959D" Ref="R?"  Part="1" 
+AR Path="/6095BD4C/60FD959D" Ref="R?"  Part="1" 
+AR Path="/61B02572/60FD959D" Ref="R?"  Part="1" 
+AR Path="/60FD959D" Ref="R273"  Part="1" 
+F 0 "R273" V 5150 6650 43  0000 L BNN
+F 1 "DNI" V 5150 6400 43  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5200 6600 50  0001 C CNN
+F 3 "" H 5200 6600 50  0001 C CNN
+F 4 "" H 5050 6800 50  0001 C CNN "Manf#"
+F 5 "0.1W" H 5050 6800 50  0001 C CNN "Power"
+	1    5200 6600
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 6250 5000 6500
+Wire Wire Line
+	5200 6250 5200 6500
+Wire Wire Line
+	5100 6250 5100 6500
+Wire Wire Line
+	5200 6700 5200 7000
+Wire Wire Line
+	5000 6700 5000 7450
+Wire Wire Line
+	5100 6700 5100 7450
+$Comp
+L Device:R_Small_US R?
+U 1 1 61001F9C
+P 2050 6600
+AR Path="/6095A38A/61001F9C" Ref="R?"  Part="1" 
+AR Path="/6095BD4C/61001F9C" Ref="R?"  Part="1" 
+AR Path="/61B02572/61001F9C" Ref="R?"  Part="1" 
+AR Path="/61001F9C" Ref="R267"  Part="1" 
+F 0 "R267" V 2050 6700 43  0000 L BNN
+F 1 "0" H 2100 6450 43  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2050 6600 50  0001 C CNN
+F 3 "" H 2050 6600 50  0001 C CNN
+F 4 "RC0603FR-070RL" H 1900 6800 50  0001 C CNN "Manf#"
+F 5 "0.1W" H 1900 6800 50  0001 C CNN "Power"
+	1    2050 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 61001FA4
+P 1950 6600
+AR Path="/6095A38A/61001FA4" Ref="R?"  Part="1" 
+AR Path="/6095BD4C/61001FA4" Ref="R?"  Part="1" 
+AR Path="/61B02572/61001FA4" Ref="R?"  Part="1" 
+AR Path="/61001FA4" Ref="R265"  Part="1" 
+F 0 "R265" V 1950 6700 43  0000 L BNN
+F 1 "DNI" V 2000 6400 43  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1950 6600 50  0001 C CNN
+F 3 "" H 1950 6600 50  0001 C CNN
+F 4 "" H 1800 6800 50  0001 C CNN "Manf#"
+F 5 "0.1W" H 1800 6800 50  0001 C CNN "Power"
+	1    1950 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 61001FAC
+P 1850 6600
+AR Path="/6095A38A/61001FAC" Ref="R?"  Part="1" 
+AR Path="/6095BD4C/61001FAC" Ref="R?"  Part="1" 
+AR Path="/61B02572/61001FAC" Ref="R?"  Part="1" 
+AR Path="/61001FAC" Ref="R263"  Part="1" 
+F 0 "R263" V 1850 6700 43  0000 L BNN
+F 1 "DNI" V 1800 6400 43  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1850 6600 50  0001 C CNN
+F 3 "" H 1850 6600 50  0001 C CNN
+F 4 "" H 1700 6800 50  0001 C CNN "Manf#"
+F 5 "0.1W" H 1700 6800 50  0001 C CNN "Power"
+	1    1850 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 6250 2050 6500
+Wire Wire Line
+	1850 6250 1850 6500
+Wire Wire Line
+	1950 6250 1950 6500
+Wire Wire Line
+	2050 6700 2050 7450
+Wire Wire Line
+	1950 6700 1950 7450
+Wire Wire Line
+	1850 6700 1850 7250
+$Comp
+L Device:R_Small_US R?
+U 1 1 6102A45E
+P 2050 3700
+AR Path="/6095A38A/6102A45E" Ref="R?"  Part="1" 
+AR Path="/6095BD4C/6102A45E" Ref="R?"  Part="1" 
+AR Path="/61B02572/6102A45E" Ref="R?"  Part="1" 
+AR Path="/6102A45E" Ref="R266"  Part="1" 
+F 0 "R266" V 2050 3750 43  0000 L BNN
+F 1 "0" H 2100 3550 43  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2050 3700 50  0001 C CNN
+F 3 "" H 2050 3700 50  0001 C CNN
+F 4 "RC0603FR-070RL" H 1900 3900 50  0001 C CNN "Manf#"
+F 5 "0.1W" H 1900 3900 50  0001 C CNN "Power"
+	1    2050 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 6102A466
+P 1950 3700
+AR Path="/6095A38A/6102A466" Ref="R?"  Part="1" 
+AR Path="/6095BD4C/6102A466" Ref="R?"  Part="1" 
+AR Path="/61B02572/6102A466" Ref="R?"  Part="1" 
+AR Path="/6102A466" Ref="R264"  Part="1" 
+F 0 "R264" V 1950 3750 43  0000 L BNN
+F 1 "DNI" V 2000 3500 43  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1950 3700 50  0001 C CNN
+F 3 "" H 1950 3700 50  0001 C CNN
+F 4 "" H 1800 3900 50  0001 C CNN "Manf#"
+F 5 "0.1W" H 1800 3900 50  0001 C CNN "Power"
+	1    1950 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 6102A46E
+P 1850 3700
+AR Path="/6095A38A/6102A46E" Ref="R?"  Part="1" 
+AR Path="/6095BD4C/6102A46E" Ref="R?"  Part="1" 
+AR Path="/61B02572/6102A46E" Ref="R?"  Part="1" 
+AR Path="/6102A46E" Ref="R262"  Part="1" 
+F 0 "R262" V 1850 3750 43  0000 L BNN
+F 1 "DNI" V 1800 3500 43  0000 L BNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1850 3700 50  0001 C CNN
+F 3 "" H 1850 3700 50  0001 C CNN
+F 4 "" H 1700 3900 50  0001 C CNN "Manf#"
+F 5 "0.1W" H 1700 3900 50  0001 C CNN "Power"
+	1    1850 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 3350 2050 3600
+Wire Wire Line
+	1850 3350 1850 3600
+Wire Wire Line
+	1950 3350 1950 3600
+Wire Wire Line
+	2050 3800 2050 4550
+Wire Wire Line
+	1850 3800 1850 4100
+Wire Wire Line
+	1950 3800 1950 4550
 Wire Bus Line
 	9000 5600 9000 5900
 Wire Bus Line

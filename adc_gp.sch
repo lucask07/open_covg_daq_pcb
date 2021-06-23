@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr User 13023 9707
 encoding utf-8
-Sheet 7 26
+Sheet 11 26
 Title ""
 Date ""
 Rev ""
@@ -566,12 +566,12 @@ $EndComp
 $Comp
 L power:+5V #PWR0143
 U 1 1 60F8A03B
-P 7500 2200
-F 0 "#PWR0143" H 7500 2050 50  0001 C CNN
-F 1 "+5V" H 7515 2373 50  0000 C CNN
-F 2 "" H 7500 2200 50  0001 C CNN
-F 3 "" H 7500 2200 50  0001 C CNN
-	1    7500 2200
+P 7600 2200
+F 0 "#PWR0143" H 7600 2050 50  0001 C CNN
+F 1 "+5V" H 7615 2373 50  0000 C CNN
+F 2 "" H 7600 2200 50  0001 C CNN
+F 3 "" H 7600 2200 50  0001 C CNN
+	1    7600 2200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1040,17 +1040,6 @@ F 2 "" H 8150 1550 50  0001 C CNN
 F 3 "" H 8150 1550 50  0001 C CNN
 	1    8150 1550
 	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+3.3V #PWR0144
-U 1 1 614CCEA4
-P 7600 2400
-F 0 "#PWR0144" H 7600 2250 50  0001 C CNN
-F 1 "+3.3V" H 7615 2573 50  0000 C CNN
-F 2 "" H 7600 2400 50  0001 C CNN
-F 3 "" H 7600 2400 50  0001 C CNN
-	1    7600 2400
-	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C?
@@ -2059,8 +2048,6 @@ Wire Wire Line
 Wire Wire Line
 	6050 4000 6400 4000
 Wire Wire Line
-	7500 2200 7500 2600
-Wire Wire Line
 	1400 8650 1650 8650
 Wire Wire Line
 	1650 8650 1650 8600
@@ -2302,8 +2289,6 @@ Wire Wire Line
 	9900 4750 10200 4750
 Wire Wire Line
 	7400 1950 7400 2600
-Wire Wire Line
-	7600 2400 7600 2600
 Wire Wire Line
 	3850 8650 4100 8650
 Wire Wire Line
@@ -2808,6 +2793,23 @@ F 3 "" H 3400 8700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	950  4350 950  4400
+Wire Wire Line
+	7600 2200 7600 2600
+$Comp
+L power:GND #GND?
+U 1 1 610F8B76
+P 7500 2450
+AR Path="/610F8B76" Ref="#GND?"  Part="1" 
+AR Path="/6095A004/610F8B76" Ref="#GND?"  Part="1" 
+F 0 "#GND?" H 7500 2450 50  0001 C CNN
+F 1 "GND" H 7400 2350 59  0001 L BNN
+F 2 "" H 7500 2450 50  0001 C CNN
+F 3 "" H 7500 2450 50  0001 C CNN
+	1    7500 2450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7500 2450 7500 2600
 Wire Bus Line
 	2600 1100 2600 8750
 Wire Bus Line
