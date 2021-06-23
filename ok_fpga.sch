@@ -977,7 +977,7 @@ Text HLabel 11100 3000 2    50   Input ~ 0
 A0_D_N
 Text HLabel 11100 2600 2    50   Input ~ 0
 A0_DCO_N
-Text HLabel 11100 2100 2    50   Output ~ 0
+Text HLabel 11100 1700 2    50   Output ~ 0
 A2_CNV_N
 Text HLabel 11100 1900 2    50   Input ~ 0
 A2_D_N
@@ -993,7 +993,7 @@ Text HLabel 8300 3800 2    50   Output ~ 0
 A1_CLK_P
 Text HLabel 11100 2500 2    50   Input ~ 0
 A0_DCO_P
-Text HLabel 11100 2000 2    50   Output ~ 0
+Text HLabel 11100 1600 2    50   Output ~ 0
 A2_CNV_P
 Text HLabel 11100 2800 2    50   Output ~ 0
 A0_CNV_N
@@ -1001,7 +1001,7 @@ Text HLabel 11100 2700 2    50   Output ~ 0
 A0_CNV_P
 Text HLabel 11100 3200 2    50   Output ~ 0
 A0_CLK_N
-Text HLabel 11100 1700 2    50   Output ~ 0
+Text HLabel 11100 2100 2    50   Output ~ 0
 A2_CLK_N
 Text HLabel 8300 3500 2    50   Output ~ 0
 A1_CNV_N
@@ -1011,7 +1011,7 @@ Text HLabel 8300 3900 2    50   Output ~ 0
 A1_CLK_N
 Text HLabel 11100 3100 2    50   Output ~ 0
 A0_CLK_P
-Text HLabel 11100 1600 2    50   Output ~ 0
+Text HLabel 11100 2000 2    50   Output ~ 0
 A2_CLK_P
 Text HLabel 8300 3300 2    50   Output ~ 0
 A1_CNV_P
@@ -2861,17 +2861,17 @@ Text HLabel 8300 2100 2    50   Input ~ 0
 A3_DCO_N
 Text HLabel 8300 2000 2    50   Input ~ 0
 A3_DCO_P
-Text HLabel 8300 1500 2    50   Input ~ 0
+Text HLabel 8300 1700 2    50   Input ~ 0
 A3_D_N
-Text HLabel 8300 1400 2    50   Input ~ 0
+Text HLabel 8300 1600 2    50   Input ~ 0
 A3_D_P
-Text HLabel 8300 1700 2    50   Output ~ 0
-A3_CLK_N
-Text HLabel 8300 1600 2    50   Output ~ 0
-A3_CLK_P
 Text HLabel 8300 1900 2    50   Output ~ 0
-A3_CNV_N
+A3_CLK_N
 Text HLabel 8300 1800 2    50   Output ~ 0
+A3_CLK_P
+Text HLabel 8300 1500 2    50   Output ~ 0
+A3_CNV_N
+Text HLabel 8300 1400 2    50   Output ~ 0
 A3_CNV_P
 Text HLabel 8250 4600 2    50   Input ~ 0
 A1_DCO_N
