@@ -321,7 +321,7 @@ F9 "BP_OUT[4..7]" O R 9600 1400 50
 F10 "EN_IPUMP" I L 8500 1750 50 
 $EndSheet
 $Comp
-L Connector:HDMI_A J2
+L covg_daq_v2-rescue:HDMI_A-Connector J2
 U 1 1 61D74FD2
 P 1050 5650
 F 0 "J2" H 1480 5696 50  0000 L CNN
@@ -332,7 +332,7 @@ F 3 "https://en.wikipedia.org/wiki/HDMI" H 1075 5650 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR06
+L covg_daq_v2-rescue:GND-power #PWR06
 U 1 1 61D76AA5
 P 1250 7050
 F 0 "#PWR06" H 1250 6800 50  0001 C CNN
@@ -343,7 +343,7 @@ F 3 "" H 1250 7050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H2
+L covg_daq_v2-rescue:MountingHole_Pad-Mechanical H2
 U 1 1 60B0A4A6
 P 8400 650
 F 0 "H2" H 8500 699 50  0000 L CNN
@@ -354,7 +354,7 @@ F 3 "~" H 8400 650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H1
+L covg_daq_v2-rescue:MountingHole_Pad-Mechanical H1
 U 1 1 60B0AC43
 P 7400 650
 F 0 "H1" H 7500 699 50  0000 L CNN
@@ -365,7 +365,7 @@ F 3 "~" H 7400 650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H3
+L covg_daq_v2-rescue:MountingHole_Pad-Mechanical H3
 U 1 1 60B0ADFD
 P 9350 650
 F 0 "H3" H 9450 699 50  0000 L CNN
@@ -376,7 +376,7 @@ F 3 "~" H 9350 650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole_Pad H4
+L covg_daq_v2-rescue:MountingHole_Pad-Mechanical H4
 U 1 1 60B0B098
 P 10350 650
 F 0 "H4" H 10450 699 50  0000 L CNN
@@ -387,7 +387,7 @@ F 3 "~" H 10350 650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR04
+L covg_daq_v2-rescue:+5V-power #PWR04
 U 1 1 628A3CF1
 P 1050 4450
 F 0 "#PWR04" H 1050 4300 50  0001 C CNN
@@ -398,7 +398,7 @@ F 3 "" H 1050 4450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+15V #PWR09
+L covg_daq_v2-rescue:+15V-power #PWR09
 U 1 1 619DB399
 P 1600 5450
 F 0 "#PWR09" H 1600 5300 50  0001 C CNN
@@ -409,7 +409,7 @@ F 3 "" H 1600 5450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:-15V #PWR010
+L covg_daq_v2-rescue:-15V-power #PWR010
 U 1 1 619DC10E
 P 1600 5750
 F 0 "#PWR010" H 1600 5850 50  0001 C CNN
@@ -420,7 +420,7 @@ F 3 "" H 1600 5750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Connector:HDMI_A J1
+L covg_daq_v2-rescue:HDMI_A-Connector J1
 U 1 1 60BE6CC0
 P 1050 2750
 F 0 "J1" H 1480 2796 50  0000 L CNN
@@ -431,7 +431,7 @@ F 3 "https://en.wikipedia.org/wiki/HDMI" H 1075 2750 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR05
+L covg_daq_v2-rescue:GND-power #PWR05
 U 1 1 60BE6CC6
 P 1250 4150
 F 0 "#PWR05" H 1250 3900 50  0001 C CNN
@@ -442,7 +442,7 @@ F 3 "" H 1250 4150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR03
+L covg_daq_v2-rescue:+5V-power #PWR03
 U 1 1 60BE6D00
 P 1050 1550
 F 0 "#PWR03" H 1050 1400 50  0001 C CNN
@@ -453,7 +453,7 @@ F 3 "" H 1050 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+15V #PWR07
+L covg_daq_v2-rescue:+15V-power #PWR07
 U 1 1 60BE6D0A
 P 1600 2550
 F 0 "#PWR07" H 1600 2400 50  0001 C CNN
@@ -464,7 +464,7 @@ F 3 "" H 1600 2550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:-15V #PWR08
+L covg_daq_v2-rescue:-15V-power #PWR08
 U 1 1 60BE6D11
 P 1600 2850
 F 0 "#PWR08" H 1600 2950 50  0001 C CNN
@@ -475,7 +475,7 @@ F 3 "" H 1600 2850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR015
+L covg_daq_v2-rescue:GND-power #PWR015
 U 1 1 60BF7738
 P 5800 4000
 F 0 "#PWR015" H 5800 3750 50  0001 C CNN
@@ -486,7 +486,7 @@ F 3 "" H 5800 4000 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR017
+L covg_daq_v2-rescue:+5V-power #PWR017
 U 1 1 60BF7772
 P 6000 1550
 F 0 "#PWR017" H 6000 1400 50  0001 C CNN
@@ -497,7 +497,7 @@ F 3 "" H 6000 1550 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:+15V #PWR011
+L covg_daq_v2-rescue:+15V-power #PWR011
 U 1 1 60BF777C
 P 5450 2550
 F 0 "#PWR011" H 5450 2400 50  0001 C CNN
@@ -508,7 +508,7 @@ F 3 "" H 5450 2550 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L power:-15V #PWR012
+L covg_daq_v2-rescue:-15V-power #PWR012
 U 1 1 60BF7783
 P 5450 2850
 F 0 "#PWR012" H 5450 2950 50  0001 C CNN
@@ -519,7 +519,7 @@ F 3 "" H 5450 2850 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L Connector:HDMI_A J8
+L covg_daq_v2-rescue:HDMI_A-Connector J8
 U 1 1 60C1F3F1
 P 6000 5650
 F 0 "J8" H 6430 5696 50  0000 L CNN
@@ -530,7 +530,7 @@ F 3 "https://en.wikipedia.org/wiki/HDMI" H 6025 5650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR016
+L covg_daq_v2-rescue:GND-power #PWR016
 U 1 1 60C1F3F7
 P 5800 7050
 F 0 "#PWR016" H 5800 6800 50  0001 C CNN
@@ -541,7 +541,7 @@ F 3 "" H 5800 7050 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR018
+L covg_daq_v2-rescue:+5V-power #PWR018
 U 1 1 60C1F431
 P 6000 4450
 F 0 "#PWR018" H 6000 4300 50  0001 C CNN
@@ -552,7 +552,7 @@ F 3 "" H 6000 4450 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:+15V #PWR013
+L covg_daq_v2-rescue:+15V-power #PWR013
 U 1 1 60C1F43B
 P 5450 5450
 F 0 "#PWR013" H 5450 5300 50  0001 C CNN
@@ -563,7 +563,7 @@ F 3 "" H 5450 5450 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L power:-15V #PWR014
+L covg_daq_v2-rescue:-15V-power #PWR014
 U 1 1 60C1F442
 P 5450 5750
 F 0 "#PWR014" H 5450 5850 50  0001 C CNN
@@ -574,7 +574,7 @@ F 3 "" H 5450 5750 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L Device:Ferrite_Bead FB?
+L covg_daq_v2-rescue:Ferrite_Bead-Device FB?
 U 1 1 6153A542
 P 7400 1000
 AR Path="/6095BE10/6153A542" Ref="FB?"  Part="1" 
@@ -588,7 +588,7 @@ F 4 "BLM31PG500SN1L" V 7400 1000 50  0001 C CNN "Manf#"
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR021
+L covg_daq_v2-rescue:GND-power #PWR021
 U 1 1 61D8991C
 P 7400 1250
 F 0 "#PWR021" H 7400 1000 50  0001 C CNN
@@ -1556,7 +1556,7 @@ Connection ~ 5100 3350
 NoConn ~ 8400 750 
 NoConn ~ 9350 750 
 $Comp
-L Connector_Generic:Conn_02x10_Odd_Even J9
+L covg_daq_v2-rescue:Conn_02x10_Odd_Even-Connector_Generic J9
 U 1 1 61C544CE
 P 7650 4850
 F 0 "J9" H 7700 5500 50  0000 C CNN
@@ -1568,7 +1568,7 @@ F 4 "SBH21-NBPN-D10-RA-BK" H 7650 4850 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR030
+L covg_daq_v2-rescue:GND-power #PWR030
 U 1 1 61C58F48
 P 9600 6350
 F 0 "#PWR030" H 9600 6100 50  0001 C CNN
@@ -1583,7 +1583,7 @@ Wire Wire Line
 Wire Wire Line
 	9600 6300 9700 6300
 $Comp
-L power:GND #PWR031
+L covg_daq_v2-rescue:GND-power #PWR031
 U 1 1 61DDB491
 P 10300 6350
 F 0 "#PWR031" H 10300 6100 50  0001 C CNN
@@ -1596,7 +1596,7 @@ $EndComp
 Wire Wire Line
 	10300 6350 10300 6300
 $Comp
-L Connector_Generic:Conn_02x17_Counter_Clockwise J11
+L covg_daq_v2-rescue:Conn_02x17_Counter_Clockwise-Connector_Generic J11
 U 1 1 61E7164D
 P 9900 5500
 F 0 "J11" H 9950 6517 50  0000 C CNN
@@ -1632,7 +1632,7 @@ GPIO2
 Text Label 5200 6950 3    50   ~ 0
 GPIO3
 $Comp
-L Device:Ferrite_Bead FB?
+L covg_daq_v2-rescue:Ferrite_Bead-Device FB?
 U 1 1 60E9A3F1
 P 10550 1000
 AR Path="/6095BE10/60E9A3F1" Ref="FB?"  Part="1" 
@@ -1650,7 +1650,7 @@ Wire Wire Line
 Wire Wire Line
 	10350 850  10550 850 
 $Comp
-L power:GND #PWR032
+L covg_daq_v2-rescue:GND-power #PWR032
 U 1 1 60F01C3C
 P 10550 1150
 F 0 "#PWR032" H 10550 900 50  0001 C CNN
@@ -1664,7 +1664,7 @@ Wire Wire Line
 	1250 4150 1250 4050
 Connection ~ 1250 4050
 $Comp
-L Device:Ferrite_Bead FB?
+L covg_daq_v2-rescue:Ferrite_Bead-Device FB?
 U 1 1 6273EEF4
 P 750 4200
 AR Path="/6095BE10/6273EEF4" Ref="FB?"  Part="1" 
@@ -1678,7 +1678,7 @@ F 4 "BLM31PG500SN1L" V 750 4200 50  0001 C CNN "Manf#"
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR01
+L covg_daq_v2-rescue:GND-power #PWR01
 U 1 1 6273FB97
 P 750 4350
 F 0 "#PWR01" H 750 4100 50  0001 C CNN
@@ -1694,7 +1694,7 @@ Connection ~ 1250 6950
 Wire Wire Line
 	750  6950 750  6750
 $Comp
-L Device:Ferrite_Bead FB?
+L covg_daq_v2-rescue:Ferrite_Bead-Device FB?
 U 1 1 627A762F
 P 750 7100
 AR Path="/6095BE10/627A762F" Ref="FB?"  Part="1" 
@@ -1708,7 +1708,7 @@ F 4 "BLM31PG500SN1L" V 750 7100 50  0001 C CNN "Manf#"
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR02
+L covg_daq_v2-rescue:GND-power #PWR02
 U 1 1 627A7635
 P 750 7250
 F 0 "#PWR02" H 750 7000 50  0001 C CNN
@@ -1724,7 +1724,7 @@ Connection ~ 5800 6950
 Wire Wire Line
 	6300 6950 6300 6750
 $Comp
-L Device:Ferrite_Bead FB?
+L covg_daq_v2-rescue:Ferrite_Bead-Device FB?
 U 1 1 62841DA4
 P 6300 7100
 AR Path="/6095BE10/62841DA4" Ref="FB?"  Part="1" 
@@ -1738,7 +1738,7 @@ F 4 "BLM31PG500SN1L" V 6300 7100 50  0001 C CNN "Manf#"
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR020
+L covg_daq_v2-rescue:GND-power #PWR020
 U 1 1 62841DAA
 P 6300 7250
 F 0 "#PWR020" H 6300 7000 50  0001 C CNN
@@ -1749,7 +1749,7 @@ F 3 "" H 6300 7250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:HDMI_A J7
+L covg_daq_v2-rescue:HDMI_A-Connector J7
 U 1 1 60BF7732
 P 6000 2750
 F 0 "J7" H 6430 2796 50  0000 L CNN
@@ -1776,7 +1776,7 @@ Connection ~ 6100 3850
 Wire Wire Line
 	6300 4050 6300 3850
 $Comp
-L Device:Ferrite_Bead FB?
+L covg_daq_v2-rescue:Ferrite_Bead-Device FB?
 U 1 1 62964FF2
 P 6300 4200
 AR Path="/6095BE10/62964FF2" Ref="FB?"  Part="1" 
@@ -1790,7 +1790,7 @@ F 4 "BLM31PG500SN1L" V 6300 4200 50  0001 C CNN "Manf#"
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR019
+L covg_daq_v2-rescue:GND-power #PWR019
 U 1 1 62964FF8
 P 6300 4350
 F 0 "#PWR019" H 6300 4100 50  0001 C CNN
@@ -1885,7 +1885,7 @@ Wire Wire Line
 Text Label 7950 6300 0    50   ~ 0
 GP_LVDS_3N
 $Comp
-L power:GND #PWR025
+L covg_daq_v2-rescue:GND-power #PWR025
 U 1 1 619D6010
 P 7450 6200
 F 0 "#PWR025" H 7450 5950 50  0001 C CNN
@@ -1896,7 +1896,7 @@ F 3 "" H 7450 6200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR024
+L covg_daq_v2-rescue:GND-power #PWR024
 U 1 1 619D6599
 P 7450 6000
 F 0 "#PWR024" H 7450 5750 50  0001 C CNN
@@ -1907,7 +1907,7 @@ F 3 "" H 7450 6000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR023
+L covg_daq_v2-rescue:GND-power #PWR023
 U 1 1 619D684B
 P 7450 5800
 F 0 "#PWR023" H 7450 5550 50  0001 C CNN
@@ -1918,7 +1918,7 @@ F 3 "" H 7450 5800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR022
+L covg_daq_v2-rescue:GND-power #PWR022
 U 1 1 619D6ABE
 P 7450 5350
 F 0 "#PWR022" H 7450 5100 50  0001 C CNN
@@ -1929,7 +1929,7 @@ F 3 "" H 7450 5350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR026
+L covg_daq_v2-rescue:GND-power #PWR026
 U 1 1 619D6DF7
 P 7950 5350
 F 0 "#PWR026" H 7950 5100 50  0001 C CNN
@@ -1940,7 +1940,7 @@ F 3 "" H 7950 5350 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR027
+L covg_daq_v2-rescue:GND-power #PWR027
 U 1 1 619D75A1
 P 7950 5800
 F 0 "#PWR027" H 7950 5550 50  0001 C CNN
@@ -1951,7 +1951,7 @@ F 3 "" H 7950 5800 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR028
+L covg_daq_v2-rescue:GND-power #PWR028
 U 1 1 619D78E1
 P 7950 6000
 F 0 "#PWR028" H 7950 5750 50  0001 C CNN
@@ -1962,7 +1962,7 @@ F 3 "" H 7950 6000 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR029
+L covg_daq_v2-rescue:GND-power #PWR029
 U 1 1 619D7C15
 P 7950 6200
 F 0 "#PWR029" H 7950 5950 50  0001 C CNN
@@ -1973,7 +1973,7 @@ F 3 "" H 7950 6200 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x07_Odd_Even J10
+L covg_daq_v2-rescue:Conn_02x07_Odd_Even-Connector_Generic J10
 U 1 1 61A0623C
 P 7650 6000
 F 0 "J10" H 7700 6550 50  0000 C CNN
@@ -1985,7 +1985,7 @@ F 4 "SBH21-NBPN-D07-RA-BK" H 7650 6000 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L covg_daq_v2-rescue:R_Small_US-Device R?
 U 1 1 60E8454C
 P 5000 3650
 AR Path="/6095A38A/60E8454C" Ref="R?"  Part="1" 
@@ -2002,7 +2002,7 @@ F 5 "0.1W" H 4850 3850 50  0001 C CNN "Power"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L covg_daq_v2-rescue:R_Small_US-Device R?
 U 1 1 60EF4390
 P 5100 3650
 AR Path="/6095A38A/60EF4390" Ref="R?"  Part="1" 
@@ -2019,7 +2019,7 @@ F 5 "0.1W" H 4950 3850 50  0001 C CNN "Power"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L covg_daq_v2-rescue:R_Small_US-Device R?
 U 1 1 60EF4765
 P 5200 3650
 AR Path="/6095A38A/60EF4765" Ref="R?"  Part="1" 
@@ -2048,7 +2048,7 @@ Wire Wire Line
 Wire Wire Line
 	5200 3750 5200 4050
 $Comp
-L Device:R_Small_US R?
+L covg_daq_v2-rescue:R_Small_US-Device R?
 U 1 1 60FD958D
 P 5000 6600
 AR Path="/6095A38A/60FD958D" Ref="R?"  Part="1" 
@@ -2065,7 +2065,7 @@ F 5 "0.1W" H 4850 6800 50  0001 C CNN "Power"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L covg_daq_v2-rescue:R_Small_US-Device R?
 U 1 1 60FD9595
 P 5100 6600
 AR Path="/6095A38A/60FD9595" Ref="R?"  Part="1" 
@@ -2082,7 +2082,7 @@ F 5 "0.1W" H 4950 6800 50  0001 C CNN "Power"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L covg_daq_v2-rescue:R_Small_US-Device R?
 U 1 1 60FD959D
 P 5200 6600
 AR Path="/6095A38A/60FD959D" Ref="R?"  Part="1" 
@@ -2111,7 +2111,7 @@ Wire Wire Line
 Wire Wire Line
 	5100 6700 5100 7450
 $Comp
-L Device:R_Small_US R?
+L covg_daq_v2-rescue:R_Small_US-Device R?
 U 1 1 61001F9C
 P 2050 6600
 AR Path="/6095A38A/61001F9C" Ref="R?"  Part="1" 
@@ -2128,7 +2128,7 @@ F 5 "0.1W" H 1900 6800 50  0001 C CNN "Power"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L covg_daq_v2-rescue:R_Small_US-Device R?
 U 1 1 61001FA4
 P 1950 6600
 AR Path="/6095A38A/61001FA4" Ref="R?"  Part="1" 
@@ -2145,7 +2145,7 @@ F 5 "0.1W" H 1800 6800 50  0001 C CNN "Power"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L covg_daq_v2-rescue:R_Small_US-Device R?
 U 1 1 61001FAC
 P 1850 6600
 AR Path="/6095A38A/61001FAC" Ref="R?"  Part="1" 
@@ -2174,7 +2174,7 @@ Wire Wire Line
 Wire Wire Line
 	1850 6700 1850 7250
 $Comp
-L Device:R_Small_US R?
+L covg_daq_v2-rescue:R_Small_US-Device R?
 U 1 1 6102A45E
 P 2050 3700
 AR Path="/6095A38A/6102A45E" Ref="R?"  Part="1" 
@@ -2191,7 +2191,7 @@ F 5 "0.1W" H 1900 3900 50  0001 C CNN "Power"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L covg_daq_v2-rescue:R_Small_US-Device R?
 U 1 1 6102A466
 P 1950 3700
 AR Path="/6095A38A/6102A466" Ref="R?"  Part="1" 
@@ -2208,7 +2208,7 @@ F 5 "0.1W" H 1800 3900 50  0001 C CNN "Power"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R?
+L covg_daq_v2-rescue:R_Small_US-Device R?
 U 1 1 6102A46E
 P 1850 3700
 AR Path="/6095A38A/6102A46E" Ref="R?"  Part="1" 

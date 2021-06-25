@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# covg_daq_v2-rescue_+15V-power
+# +15V-power
 #
-DEF covg_daq_v2-rescue_+15V-power #PWR 0 0 Y Y 1 F P
+DEF +15V-power #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "covg_daq_v2-rescue_+15V-power" 0 140 50 H V C CNN
+F1 "+15V-power" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -16,11 +16,11 @@ X +15V 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_+1V8-power
+# +1V8-power
 #
-DEF covg_daq_v2-rescue_+1V8-power #PWR 0 0 Y Y 1 F P
+DEF +1V8-power #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "covg_daq_v2-rescue_+1V8-power" 0 140 50 H V C CNN
+F1 "+1V8-power" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -31,11 +31,11 @@ X +1V8 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_+2V5-power
+# +2V5-power
 #
-DEF covg_daq_v2-rescue_+2V5-power #PWR 0 0 Y Y 1 F P
+DEF +2V5-power #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "covg_daq_v2-rescue_+2V5-power" 0 140 50 H V C CNN
+F1 "+2V5-power" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -46,11 +46,11 @@ X +2V5 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_+3.3V-power
+# +3.3V-power
 #
-DEF covg_daq_v2-rescue_+3.3V-power #PWR 0 0 Y Y 1 F P
+DEF +3.3V-power #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "covg_daq_v2-rescue_+3.3V-power" 0 140 50 H V C CNN
+F1 "+3.3V-power" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -61,11 +61,11 @@ X +3V3 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_+3V3-power
+# +3V3-power
 #
-DEF covg_daq_v2-rescue_+3V3-power #PWR 0 0 Y Y 1 F P
+DEF +3V3-power #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "covg_daq_v2-rescue_+3V3-power" 0 140 50 H V C CNN
+F1 "+3V3-power" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -76,11 +76,11 @@ X +3V3 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_+5V-power
+# +5V-power
 #
-DEF covg_daq_v2-rescue_+5V-power #PWR 0 0 Y Y 1 F P
+DEF +5V-power #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "covg_daq_v2-rescue_+5V-power" 0 140 50 H V C CNN
+F1 "+5V-power" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -91,11 +91,11 @@ X +5V 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_-15V-power
+# -15V-power
 #
-DEF covg_daq_v2-rescue_-15V-power #PWR 0 0 Y Y 1 F P
+DEF -15V-power #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 100 50 H I C CNN
-F1 "covg_daq_v2-rescue_-15V-power" 0 150 50 H V C CNN
+F1 "-15V-power" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -104,11 +104,11 @@ X -15V 1 0 0 0 U 50 50 0 0 W N
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_24AA025UID-covg-kicad
+# 24AA025UID-covg-kicad
 #
-DEF covg_daq_v2-rescue_24AA025UID-covg-kicad U 0 20 Y Y 1 F N
+DEF 24AA025UID-covg-kicad U 0 20 Y Y 1 F N
 F0 "U" -300 250 50 H V C CNN
-F1 "covg_daq_v2-rescue_24AA025UID-covg-kicad" 100 -250 50 H V L CNN
+F1 "24AA025UID-covg-kicad" 100 -250 50 H V L CNN
 F2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -127,11 +127,11 @@ X VCC 8 0 300 100 D 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_AD5453-covg-kicad
+# AD5453-covg-kicad
 #
-DEF covg_daq_v2-rescue_AD5453-covg-kicad U 0 40 Y Y 1 F N
+DEF AD5453-covg-kicad U 0 40 Y Y 1 F N
 F0 "U" 314 459 69 H V L BNN
-F1 "covg_daq_v2-rescue_AD5453-covg-kicad" 289 359 69 H V L BNN
+F1 "AD5453-covg-kicad" 289 359 69 H V L BNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -150,11 +150,11 @@ X RFB 8 700 0 200 L 50 50 1 0 P
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_AD7960BCPZ-RL7-covg-kicad
+# AD7960BCPZ-RL7-covg-kicad
 #
-DEF covg_daq_v2-rescue_AD7960BCPZ-RL7-covg-kicad U 0 40 Y Y 1 F N
+DEF AD7960BCPZ-RL7-covg-kicad U 0 40 Y Y 1 F N
 F0 "U" 714 1059 69 H V L BNN
-F1 "covg_daq_v2-rescue_AD7960BCPZ-RL7-covg-kicad" 689 859 69 H V L BNN
+F1 "AD7960BCPZ-RL7-covg-kicad" 689 859 69 H V L BNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -198,11 +198,11 @@ X CNV+ 9 -400 -900 200 U 50 50 1 0 I
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_ADS8686SIPZAR-covg-kicad
+# ADS8686SIPZAR-covg-kicad
 #
-DEF covg_daq_v2-rescue_ADS8686SIPZAR-covg-kicad IC 0 30 Y Y 1 F N
+DEF ADS8686SIPZAR-covg-kicad IC 0 30 Y Y 1 F N
 F0 "IC" 2350 900 50 H V L CNN
-F1 "covg_daq_v2-rescue_ADS8686SIPZAR-covg-kicad" 2350 800 50 H V L CNN
+F1 "ADS8686SIPZAR-covg-kicad" 2350 800 50 H V L CNN
 F2 "QFP65P1600X1600X160-80N" 2350 700 50 H I L CNN
 F3 "https://www.ti.com/lit/gpn/ADS8686S" 2350 600 50 H I L CNN
 F4 "Analog to Digital Converters - ADC 16-channel 16-bit 1-MSPS dual simultaneous-sampling ADC with integrated analog front end (AFE)" 2350 500 50 H I L CNN "Description"
@@ -296,11 +296,11 @@ X AIN_7B 9 0 -800 200 R 50 50 0 0 P
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_BC856-Transistor_BJT
+# BC856-Transistor_BJT
 #
-DEF covg_daq_v2-rescue_BC856-Transistor_BJT Q 0 0 Y N 1 F N
+DEF BC856-Transistor_BJT Q 0 0 Y N 1 F N
 F0 "Q" 200 75 50 H V L CNN
-F1 "covg_daq_v2-rescue_BC856-Transistor_BJT" 200 0 50 H V L CNN
+F1 "BC856-Transistor_BJT" 200 0 50 H V L CNN
 F2 "Package_TO_SOT_SMD:SOT-23" 200 -75 50 H I L CIN
 F3 "" 0 0 50 H I L CNN
 $FPLIST
@@ -318,11 +318,11 @@ X C 3 100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_Barrel_Jack_Switch-Connector
+# Barrel_Jack_Switch-Connector
 #
-DEF covg_daq_v2-rescue_Barrel_Jack_Switch-Connector J 0 20 Y N 1 F N
+DEF Barrel_Jack_Switch-Connector J 0 20 Y N 1 F N
 F0 "J" 0 210 50 H V C CNN
-F1 "covg_daq_v2-rescue_Barrel_Jack_Switch-Connector" 0 -200 50 H V C CNN
+F1 "Barrel_Jack_Switch-Connector" 0 -200 50 H V C CNN
 F2 "" 50 -40 50 H I C CNN
 F3 "" 50 -40 50 H I C CNN
 $FPLIST
@@ -343,11 +343,11 @@ X ~ 3 300 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_C-Device
+# C-Device
 #
-DEF covg_daq_v2-rescue_C-Device C 0 10 N Y 1 F N
+DEF C-Device C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "covg_daq_v2-rescue_C-Device" 25 -100 50 H V L CNN
+F1 "C-Device" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -361,11 +361,11 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_Conn_02x05_Odd_Even-Connector_Generic
+# Conn_02x05_Odd_Even-Connector_Generic
 #
-DEF covg_daq_v2-rescue_Conn_02x05_Odd_Even-Connector_Generic J 0 40 Y N 1 F N
+DEF Conn_02x05_Odd_Even-Connector_Generic J 0 40 Y N 1 F N
 F0 "J" 50 300 50 H V C CNN
-F1 "covg_daq_v2-rescue_Conn_02x05_Odd_Even-Connector_Generic" 50 -300 50 H V C CNN
+F1 "Conn_02x05_Odd_Even-Connector_Generic" 50 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -396,11 +396,11 @@ X Pin_9 9 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_Conn_02x07_Odd_Even-Connector_Generic
+# Conn_02x07_Odd_Even-Connector_Generic
 #
-DEF covg_daq_v2-rescue_Conn_02x07_Odd_Even-Connector_Generic J 0 40 Y N 1 F N
+DEF Conn_02x07_Odd_Even-Connector_Generic J 0 40 Y N 1 F N
 F0 "J" 50 400 50 H V C CNN
-F1 "covg_daq_v2-rescue_Conn_02x07_Odd_Even-Connector_Generic" 50 -400 50 H V C CNN
+F1 "Conn_02x07_Odd_Even-Connector_Generic" 50 -400 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -439,11 +439,11 @@ X Pin_9 9 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_Conn_02x10_Odd_Even-Connector_Generic
+# Conn_02x10_Odd_Even-Connector_Generic
 #
-DEF covg_daq_v2-rescue_Conn_02x10_Odd_Even-Connector_Generic J 0 40 Y N 1 F N
+DEF Conn_02x10_Odd_Even-Connector_Generic J 0 40 Y N 1 F N
 F0 "J" 50 500 50 H V C CNN
-F1 "covg_daq_v2-rescue_Conn_02x10_Odd_Even-Connector_Generic" 50 -600 50 H V C CNN
+F1 "Conn_02x10_Odd_Even-Connector_Generic" 50 -600 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -494,11 +494,11 @@ X Pin_9 9 -200 0 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_Conn_02x12_Counter_Clockwise-Connector_Generic
+# Conn_02x12_Counter_Clockwise-Connector_Generic
 #
-DEF covg_daq_v2-rescue_Conn_02x12_Counter_Clockwise-Connector_Generic J 0 40 Y N 1 F N
+DEF Conn_02x12_Counter_Clockwise-Connector_Generic J 0 40 Y N 1 F N
 F0 "J" 50 600 50 H V C CNN
-F1 "covg_daq_v2-rescue_Conn_02x12_Counter_Clockwise-Connector_Generic" 50 -700 50 H V C CNN
+F1 "Conn_02x12_Counter_Clockwise-Connector_Generic" 50 -700 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -557,11 +557,11 @@ X Pin_9 9 -200 -300 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_Conn_02x17_Counter_Clockwise-Connector_Generic
+# Conn_02x17_Counter_Clockwise-Connector_Generic
 #
-DEF covg_daq_v2-rescue_Conn_02x17_Counter_Clockwise-Connector_Generic J 0 40 Y N 1 F N
+DEF Conn_02x17_Counter_Clockwise-Connector_Generic J 0 40 Y N 1 F N
 F0 "J" 50 900 50 H V C CNN
-F1 "covg_daq_v2-rescue_Conn_02x17_Counter_Clockwise-Connector_Generic" 50 -900 50 H V C CNN
+F1 "Conn_02x17_Counter_Clockwise-Connector_Generic" 50 -900 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -640,11 +640,11 @@ X Pin_9 9 -200 0 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_Conn_Coaxial-Connector
+# Conn_Coaxial-Connector
 #
-DEF covg_daq_v2-rescue_Conn_Coaxial-Connector J 0 40 Y N 1 F N
+DEF Conn_Coaxial-Connector J 0 40 Y N 1 F N
 F0 "J" 10 120 50 H V C CNN
-F1 "covg_daq_v2-rescue_Conn_Coaxial-Connector" 115 0 50 V V C CNN
+F1 "Conn_Coaxial-Connector" 115 0 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -665,11 +665,11 @@ X Ext 2 0 -200 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_DAC80508ZRTER-covg-kicad
+# DAC80508ZRTER-covg-kicad
 #
-DEF covg_daq_v2-rescue_DAC80508ZRTER-covg-kicad U 0 10 Y Y 1 L N
+DEF DAC80508ZRTER-covg-kicad U 0 10 Y Y 1 L N
 F0 "U" 0 100 60 H V C CNN
-F1 "covg_daq_v2-rescue_DAC80508ZRTER-covg-kicad" 0 0 60 H V C CNN
+F1 "DAC80508ZRTER-covg-kicad" 0 0 60 H V C CNN
 F2 "RTE0016D" 0 -60 60 H I C CNN
 F3 "" 0 0 60 H V C CNN
 $FPLIST
@@ -701,11 +701,11 @@ X OUT5 9 900 0 200 L 59 59 1 1 O
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_D_Schottky-Device
+# D_Schottky-Device
 #
-DEF covg_daq_v2-rescue_D_Schottky-Device D 0 40 N N 1 F N
+DEF D_Schottky-Device D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "covg_daq_v2-rescue_D_Schottky-Device" 0 -100 50 H V C CNN
+F1 "D_Schottky-Device" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -723,11 +723,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_FRAME_A_L-adc_dac_v1-eagle-import
+# FRAME_A_L-adc_dac_v1-eagle-import
 #
-DEF covg_daq_v2-rescue_FRAME_A_L-adc_dac_v1-eagle-import #FRAME 0 40 Y Y 2 L N
+DEF FRAME_A_L-adc_dac_v1-eagle-import #FRAME 0 40 Y Y 2 L N
 F0 "#FRAME" 0 0 50 H I C CNN
-F1 "covg_daq_v2-rescue_FRAME_A_L-adc_dac_v1-eagle-import" 0 0 50 H I C CNN
+F1 "FRAME_A_L-adc_dac_v1-eagle-import" 0 0 50 H I C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -761,11 +761,11 @@ P 2 2 0 0 4000 1400 4000 900 N
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_Ferrite_Bead-Device
+# Ferrite_Bead-Device
 #
-DEF covg_daq_v2-rescue_Ferrite_Bead-Device FB 0 0 N Y 1 F N
+DEF Ferrite_Bead-Device FB 0 0 N Y 1 F N
 F0 "FB" -150 25 50 V V C CNN
-F1 "covg_daq_v2-rescue_Ferrite_Bead-Device" 150 0 50 V V C CNN
+F1 "Ferrite_Bead-Device" 150 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -782,11 +782,11 @@ X ~ 2 0 -150 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_GND-power
+# GND-power
 #
-DEF covg_daq_v2-rescue_GND-power #PWR 0 0 Y Y 1 F P
+DEF GND-power #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "covg_daq_v2-rescue_GND-power" 0 -150 50 H V C CNN
+F1 "GND-power" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -795,11 +795,11 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_HDMI_A-Connector
+# HDMI_A-Connector
 #
-DEF covg_daq_v2-rescue_HDMI_A-Connector J 0 20 Y Y 1 F N
+DEF HDMI_A-Connector J 0 20 Y Y 1 F N
 F0 "J" -250 1050 50 H V C CNN
-F1 "covg_daq_v2-rescue_HDMI_A-Connector" 400 1050 50 H V C CNN
+F1 "HDMI_A-Connector" 400 1050 50 H V C CNN
 F2 "" 25 0 50 H I C CNN
 F3 "" 25 0 50 H I C CNN
 $FPLIST
@@ -836,11 +836,11 @@ X SH SH 300 -1100 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_L-Device
+# L-Device
 #
-DEF covg_daq_v2-rescue_L-Device L 0 40 N N 1 F N
+DEF L-Device L 0 40 N N 1 F N
 F0 "L" -50 0 50 V V C CNN
-F1 "covg_daq_v2-rescue_L-Device" 75 0 50 V V C CNN
+F1 "L-Device" 75 0 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -859,11 +859,11 @@ X 2 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_LM2937xMP-Regulator_Linear
+# LM2937xMP-Regulator_Linear
 #
-DEF covg_daq_v2-rescue_LM2937xMP-Regulator_Linear U 0 10 Y Y 1 F N
+DEF LM2937xMP-Regulator_Linear U 0 10 Y Y 1 F N
 F0 "U" -150 125 50 H V C CNN
-F1 "covg_daq_v2-rescue_LM2937xMP-Regulator_Linear" 0 125 50 H V L CNN
+F1 "LM2937xMP-Regulator_Linear" 0 125 50 H V L CNN
 F2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" 0 225 50 H I C CIN
 F3 "" 0 -50 50 H I C CNN
 $FPLIST
@@ -877,11 +877,11 @@ X VO 3 300 0 100 L 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_LP38693MP-1.8-Regulator_Linear
+# LP38693MP-1.8-Regulator_Linear
 #
-DEF covg_daq_v2-rescue_LP38693MP-1.8-Regulator_Linear U 0 10 Y Y 1 F N
+DEF LP38693MP-1.8-Regulator_Linear U 0 10 Y Y 1 F N
 F0 "U" -250 225 50 H V C CNN
-F1 "covg_daq_v2-rescue_LP38693MP-1.8-Regulator_Linear" 0 225 50 H V L CNN
+F1 "LP38693MP-1.8-Regulator_Linear" 0 225 50 H V L CNN
 F2 "Package_TO_SOT_SMD:SOT-223-5" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -897,11 +897,11 @@ X GND 5 0 -300 100 U 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_LP38693MP-2.5-Regulator_Linear
+# LP38693MP-2.5-Regulator_Linear
 #
-DEF covg_daq_v2-rescue_LP38693MP-2.5-Regulator_Linear U 0 10 Y Y 1 F N
+DEF LP38693MP-2.5-Regulator_Linear U 0 10 Y Y 1 F N
 F0 "U" -250 225 50 H V C CNN
-F1 "covg_daq_v2-rescue_LP38693MP-2.5-Regulator_Linear" 0 225 50 H V L CNN
+F1 "LP38693MP-2.5-Regulator_Linear" 0 225 50 H V L CNN
 F2 "Package_TO_SOT_SMD:SOT-223-5" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -917,11 +917,11 @@ X GND 5 0 -300 100 U 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_LP38693MP-3.3-Regulator_Linear
+# LP38693MP-3.3-Regulator_Linear
 #
-DEF covg_daq_v2-rescue_LP38693MP-3.3-Regulator_Linear U 0 10 Y Y 1 F N
+DEF LP38693MP-3.3-Regulator_Linear U 0 10 Y Y 1 F N
 F0 "U" -250 225 50 H V C CNN
-F1 "covg_daq_v2-rescue_LP38693MP-3.3-Regulator_Linear" 0 225 50 H V L CNN
+F1 "LP38693MP-3.3-Regulator_Linear" 0 225 50 H V L CNN
 F2 "Package_TO_SOT_SMD:SOT-223-5" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -937,11 +937,11 @@ X GND 5 0 -300 100 U 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_LP38693MP-5.0-Regulator_Linear
+# LP38693MP-5.0-Regulator_Linear
 #
-DEF covg_daq_v2-rescue_LP38693MP-5.0-Regulator_Linear U 0 10 Y Y 1 F N
+DEF LP38693MP-5.0-Regulator_Linear U 0 10 Y Y 1 F N
 F0 "U" -250 225 50 H V C CNN
-F1 "covg_daq_v2-rescue_LP38693MP-5.0-Regulator_Linear" 0 225 50 H V L CNN
+F1 "LP38693MP-5.0-Regulator_Linear" 0 225 50 H V L CNN
 F2 "Package_TO_SOT_SMD:SOT-223-5" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -957,11 +957,11 @@ X GND 5 0 -300 100 U 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_LT3471-Regulator_Switching
+# LT3471-Regulator_Switching
 #
-DEF covg_daq_v2-rescue_LT3471-Regulator_Switching U 0 20 Y Y 1 F N
+DEF LT3471-Regulator_Switching U 0 20 Y Y 1 F N
 F0 "U" -500 450 50 H V R CNN
-F1 "covg_daq_v2-rescue_LT3471-Regulator_Switching" 450 450 50 H V L CNN
+F1 "LT3471-Regulator_Switching" 450 450 50 H V L CNN
 F2 "Package_DFN_QFN:DFN-10-1EP_3x3mm_P0.5mm_EP1.65x2.38mm" 0 -400 50 H I C CNN
 F3 "" 0 -50 50 H I C CNN
 $FPLIST
@@ -983,11 +983,11 @@ X ~SHDN~/SS1 9 -600 -100 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_MAX6070BAUT21+T-covg-kicad
+# MAX6070BAUT21+T-covg-kicad
 #
-DEF covg_daq_v2-rescue_MAX6070BAUT21+T-covg-kicad U 0 40 Y Y 1 L N
+DEF MAX6070BAUT21+T-covg-kicad U 0 40 Y Y 1 L N
 F0 "U" 600 250 69 H V L BNN
-F1 "covg_daq_v2-rescue_MAX6070BAUT21+T-covg-kicad" 600 150 69 H V L BNN
+F1 "MAX6070BAUT21+T-covg-kicad" 600 150 69 H V L BNN
 F2 "" 250 0 50 H I C CNN
 F3 "" 250 0 50 H I C CNN
 DRAW
@@ -1004,11 +1004,11 @@ X OUTF 6 1700 0 200 L 50 50 1 0 O
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_MC79M15_TO252-Regulator_Linear
+# MC79M15_TO252-Regulator_Linear
 #
-DEF covg_daq_v2-rescue_MC79M15_TO252-Regulator_Linear U 0 10 Y Y 1 F N
+DEF MC79M15_TO252-Regulator_Linear U 0 10 Y Y 1 F N
 F0 "U" -150 -125 50 H V C CNN
-F1 "covg_daq_v2-rescue_MC79M15_TO252-Regulator_Linear" 0 -125 50 H V L CNN
+F1 "MC79M15_TO252-Regulator_Linear" 0 -125 50 H V L CNN
 F2 "Package_TO_SOT_SMD:TO-252-2" 0 -200 50 H I C CIN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -1022,11 +1022,11 @@ X VO 3 300 0 100 L 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_MountingHole_Pad-Mechanical
+# MountingHole_Pad-Mechanical
 #
-DEF covg_daq_v2-rescue_MountingHole_Pad-Mechanical H 0 40 N N 1 F N
+DEF MountingHole_Pad-Mechanical H 0 40 N N 1 F N
 F0 "H" 0 250 50 H V C CNN
-F1 "covg_daq_v2-rescue_MountingHole_Pad-Mechanical" 0 175 50 H V C CNN
+F1 "MountingHole_Pad-Mechanical" 0 175 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -1038,11 +1038,11 @@ X 1 1 0 -100 100 U 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_NLSX3018DTR2G-covg-kicad
+# NLSX3018DTR2G-covg-kicad
 #
-DEF covg_daq_v2-rescue_NLSX3018DTR2G-covg-kicad U 0 40 Y Y 1 L N
+DEF NLSX3018DTR2G-covg-kicad U 0 40 Y Y 1 L N
 F0 "U" 814 359 69 H V L BNN
-F1 "covg_daq_v2-rescue_NLSX3018DTR2G-covg-kicad" 789 259 69 H V L BNN
+F1 "NLSX3018DTR2G-covg-kicad" 789 259 69 H V L BNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -1073,11 +1073,11 @@ X I/OVL7 9 100 -800 200 R 50 50 1 0 B
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_OPA1662-covg-kicad
+# OPA1662-covg-kicad
 #
-DEF covg_daq_v2-rescue_OPA1662-covg-kicad IC 0 40 Y Y 3 L N
+DEF OPA1662-covg-kicad IC 0 40 Y Y 3 L N
 F0 "IC" 50 150 59 H V L BNN
-F1 "covg_daq_v2-rescue_OPA1662-covg-kicad" 50 -200 59 H V L BNN
+F1 "OPA1662-covg-kicad" 50 -200 59 H V L BNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -1104,11 +1104,11 @@ X V+ 8 0 300 200 D 50 0 3 0 W
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_OPA2156xD-Amplifier_Operational
+# OPA2156xD-Amplifier_Operational
 #
-DEF covg_daq_v2-rescue_OPA2156xD-Amplifier_Operational U 0 5 Y Y 3 L N
+DEF OPA2156xD-Amplifier_Operational U 0 5 Y Y 3 L N
 F0 "U" 100 250 50 H V L CNN
-F1 "covg_daq_v2-rescue_OPA2156xD-Amplifier_Operational" 100 150 50 H V L CNN
+F1 "OPA2156xD-Amplifier_Operational" 100 150 50 H V L CNN
 F2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" 100 0 50 H I C CNN
 F3 "" 250 150 50 H I C CNN
 $FPLIST
@@ -1128,11 +1128,11 @@ X V+ 8 0 300 150 D 50 50 3 1 W
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_OPA325-covg-kicad
+# OPA325-covg-kicad
 #
-DEF covg_daq_v2-rescue_OPA325-covg-kicad U 0 5 Y Y 1 F N
+DEF OPA325-covg-kicad U 0 5 Y Y 1 F N
 F0 "U" -50 250 50 H V L CNN
-F1 "covg_daq_v2-rescue_OPA325-covg-kicad" -50 150 50 H V L CNN
+F1 "OPA325-covg-kicad" -50 150 50 H V L CNN
 F2 "Package_TO_SOT_SMD:SOT-23-5" -100 -200 50 H I L CNN
 F3 "" 0 200 50 H I C CNN
 $FPLIST
@@ -1148,11 +1148,11 @@ X - 4 -300 -100 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_OPA991S-covg-kicad
+# OPA991S-covg-kicad
 #
-DEF covg_daq_v2-rescue_OPA991S-covg-kicad U 0 5 Y Y 1 F N
+DEF OPA991S-covg-kicad U 0 5 Y Y 1 F N
 F0 "U" 150 150 50 H V L CNN
-F1 "covg_daq_v2-rescue_OPA991S-covg-kicad" 150 -150 50 H V L CNN
+F1 "OPA991S-covg-kicad" 150 -150 50 H V L CNN
 F2 "Package_TO_SOT_SMD:SOT-23-6" 150 -250 50 H I L CNN
 F3 "" 150 150 50 H I C CNN
 $FPLIST
@@ -1169,11 +1169,11 @@ X V+ 6 -100 300 150 D 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_OPALKELLY_XEM7310-covg-kicad
+# OPALKELLY_XEM7310-covg-kicad
 #
-DEF covg_daq_v2-rescue_OPALKELLY_XEM7310-covg-kicad BRD 0 40 Y Y 4 L N
+DEF OPALKELLY_XEM7310-covg-kicad BRD 0 40 Y Y 4 L N
 F0 "BRD" 200 2010 70 H V R BNN
-F1 "covg_daq_v2-rescue_OPALKELLY_XEM7310-covg-kicad" 0 0 50 H I C CNN
+F1 "OPALKELLY_XEM7310-covg-kicad" 0 0 50 H I C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -1352,11 +1352,11 @@ X DGND MC1-80 400 -2000 200 L 50 50 4 0 W
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_PCA9306-Interface
+# PCA9306-Interface
 #
-DEF covg_daq_v2-rescue_PCA9306-Interface U 0 40 Y Y 1 F N
+DEF PCA9306-Interface U 0 40 Y Y 1 F N
 F0 "U" -300 450 50 H V L CNN
-F1 "covg_daq_v2-rescue_PCA9306-Interface" 200 450 50 H V L CNN
+F1 "PCA9306-Interface" 200 450 50 H V L CNN
 F2 "" -400 350 50 H I C CNN
 F3 "" -300 450 50 H I C CNN
 $FPLIST
@@ -1377,11 +1377,11 @@ X EN 8 400 100 100 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_PWR_FLAG-power
+# PWR_FLAG-power
 #
-DEF covg_daq_v2-rescue_PWR_FLAG-power #FLG 0 0 N N 1 F P
+DEF PWR_FLAG-power #FLG 0 0 N N 1 F P
 F0 "#FLG" 0 75 50 H I C CNN
-F1 "covg_daq_v2-rescue_PWR_FLAG-power" 0 150 50 H V C CNN
+F1 "PWR_FLAG-power" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -1390,11 +1390,11 @@ X pwr 1 0 0 0 U 50 50 0 0 w
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_QWIIC_CONNECTORJS-1MM-SparkFun-Connectors
+# QWIIC_CONNECTORJS-1MM-SparkFun-Connectors
 #
-DEF covg_daq_v2-rescue_QWIIC_CONNECTORJS-1MM-SparkFun-Connectors J 0 40 N Y 1 L N
+DEF QWIIC_CONNECTORJS-1MM-SparkFun-Connectors J 0 40 N Y 1 L N
 F0 "J" -200 400 45 H V L BNN
-F1 "covg_daq_v2-rescue_QWIIC_CONNECTORJS-1MM-SparkFun-Connectors" -200 -150 45 H V L BNN
+F1 "QWIIC_CONNECTORJS-1MM-SparkFun-Connectors" -200 -150 45 H V L BNN
 F2 "1X04_1MM_RA" 0 500 20 H I C CNN
 F3 "" 0 0 50 H I C CNN
 F4 "CONN-13694" 0 550 60 H V C CNN
@@ -1411,11 +1411,11 @@ X SCL 4 100 300 100 L 40 40 1 1 P
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_R_Small_US-Device
+# R_Small_US-Device
 #
-DEF covg_daq_v2-rescue_R_Small_US-Device R 0 10 N N 1 F N
+DEF R_Small_US-Device R 0 10 N N 1 F N
 F0 "R" 30 20 50 H V L CNN
-F1 "covg_daq_v2-rescue_R_Small_US-Device" 30 -40 50 H V L CNN
+F1 "R_Small_US-Device" 30 -40 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -1429,11 +1429,11 @@ X ~ 2 0 -100 40 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_R_US-Device
+# R_US-Device
 #
-DEF covg_daq_v2-rescue_R_US-Device R 0 0 N Y 1 F N
+DEF R_US-Device R 0 0 N Y 1 F N
 F0 "R" 100 0 50 V V C CNN
-F1 "covg_daq_v2-rescue_R_US-Device" -100 0 50 V V C CNN
+F1 "R_US-Device" -100 0 50 V V C CNN
 F2 "" 40 -10 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -1450,11 +1450,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_Screw_Terminal_01x12-Connector
+# Screw_Terminal_01x12-Connector
 #
-DEF covg_daq_v2-rescue_Screw_Terminal_01x12-Connector J 0 40 Y N 1 F N
+DEF Screw_Terminal_01x12-Connector J 0 40 Y N 1 F N
 F0 "J" 0 600 50 H V C CNN
-F1 "covg_daq_v2-rescue_Screw_Terminal_01x12-Connector" 0 -700 50 H V C CNN
+F1 "Screw_Terminal_01x12-Connector" 0 -700 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -1513,11 +1513,11 @@ X Pin_9 9 -200 -300 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_TCA9555DBR-Interface_Expansion
+# TCA9555DBR-Interface_Expansion
 #
-DEF covg_daq_v2-rescue_TCA9555DBR-Interface_Expansion U 0 20 Y Y 1 F N
+DEF TCA9555DBR-Interface_Expansion U 0 20 Y Y 1 F N
 F0 "U" -450 950 50 H V C CNN
-F1 "covg_daq_v2-rescue_TCA9555DBR-Interface_Expansion" 0 0 50 H V C CNN
+F1 "TCA9555DBR-Interface_Expansion" 0 0 50 H V C CNN
 F2 "Package_SO:SSOP-24_5.3x8.2mm_P0.65mm" 1050 -1000 50 H I C CNN
 F3 "" -500 900 50 H I C CNN
 $FPLIST
@@ -1552,11 +1552,11 @@ X P05 9 700 300 200 L 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_TMUX6111PWR-covg-kicad
+# TMUX6111PWR-covg-kicad
 #
-DEF covg_daq_v2-rescue_TMUX6111PWR-covg-kicad U 0 10 Y Y 1 F N
+DEF TMUX6111PWR-covg-kicad U 0 10 Y Y 1 F N
 F0 "U" 200 850 60 H V C CNN
-F1 "covg_daq_v2-rescue_TMUX6111PWR-covg-kicad" 250 750 60 H V C CNN
+F1 "TMUX6111PWR-covg-kicad" 250 750 60 H V C CNN
 F2 "digikey-footprints:TSSOP-14_W4.4mm" 350 -60 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 $FPLIST
@@ -1596,11 +1596,11 @@ X SEL3 9 -550 -200 200 R 59 59 1 1 I
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_TMUX6136PWR-covg-kicad
+# TMUX6136PWR-covg-kicad
 #
-DEF covg_daq_v2-rescue_TMUX6136PWR-covg-kicad U 0 10 Y Y 1 L N
+DEF TMUX6136PWR-covg-kicad U 0 10 Y Y 1 L N
 F0 "U" 700 300 60 H V C CNN
-F1 "covg_daq_v2-rescue_TMUX6136PWR-covg-kicad" 650 200 60 H V C CNN
+F1 "TMUX6136PWR-covg-kicad" 650 200 60 H V C CNN
 F2 "PW16_TEX" 650 100 60 H I C CNN
 F3 "" 0 0 60 H V C CNN
 $FPLIST
@@ -1632,11 +1632,11 @@ X SEL2 9 0 -100 300 R 59 59 1 1 I
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_TXS0108EPW-Logic_LevelTranslator
+# TXS0108EPW-Logic_LevelTranslator
 #
-DEF covg_daq_v2-rescue_TXS0108EPW-Logic_LevelTranslator U 0 20 Y Y 1 F N
+DEF TXS0108EPW-Logic_LevelTranslator U 0 20 Y Y 1 F N
 F0 "U" -250 650 50 H V C CNN
-F1 "covg_daq_v2-rescue_TXS0108EPW-Logic_LevelTranslator" 150 650 50 H V L CNN
+F1 "TXS0108EPW-Logic_LevelTranslator" 150 650 50 H V L CNN
 F2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" 0 -750 50 H I C CNN
 F3 "" 0 -100 50 H I C CNN
 $FPLIST
@@ -1667,11 +1667,11 @@ X A8 9 -400 -400 100 R 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
-# covg_daq_v2-rescue_TestPoint-Connector
+# TestPoint-Connector
 #
-DEF covg_daq_v2-rescue_TestPoint-Connector TP 0 30 N N 1 F N
+DEF TestPoint-Connector TP 0 30 N N 1 F N
 F0 "TP" 0 270 50 H V C CNN
-F1 "covg_daq_v2-rescue_TestPoint-Connector" 0 200 50 H V C CNN
+F1 "TestPoint-Connector" 0 200 50 H V C CNN
 F2 "" 200 0 50 H I C CNN
 F3 "" 200 0 50 H I C CNN
 $FPLIST
