@@ -23,7 +23,7 @@ F3 "CMD" I L 7850 1250 50
 F4 "EN_I" I L 7850 1400 50 
 $EndSheet
 $Comp
-L adc_dac_v1-eagle-import:FRAME_A_L #FRAME1
+L covg_daq_v2-rescue:FRAME_A_L-adc_dac_v1-eagle-import #FRAME1
 U 1 1 519C2D15
 P 900 6900
 AR Path="/6095BD4C/519C2D15" Ref="#FRAME1"  Part="1" 
@@ -36,7 +36,7 @@ F 3 "" H 900 6900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #GND012
+L covg_daq_v2-rescue:GND-power #GND012
 U 1 1 E9B71633
 P 4300 2250
 AR Path="/6095BD4C/E9B71633" Ref="#GND012"  Part="1" 
@@ -49,7 +49,7 @@ F 3 "" H 4300 2250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C1
+L covg_daq_v2-rescue:C-Device C1
 U 1 1 A7A1DCDA
 P 650 1250
 AR Path="/6095BD4C/A7A1DCDA" Ref="C1"  Part="1" 
@@ -66,7 +66,7 @@ F 7 "25" H 690 1375 50  0001 C CNN "voltage"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C3
+L covg_daq_v2-rescue:C-Device C3
 U 1 1 46ACB443
 P 1050 1200
 AR Path="/6095BD4C/46ACB443" Ref="C3"  Part="1" 
@@ -83,7 +83,7 @@ F 7 "25" H 1090 1325 50  0001 C CNN "voltage"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #GND01
+L covg_daq_v2-rescue:GND-power #GND01
 U 1 1 FC55E54D
 P 650 1550
 AR Path="/6095BD4C/FC55E54D" Ref="#GND01"  Part="1" 
@@ -96,7 +96,7 @@ F 3 "" H 650 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #GND03
+L covg_daq_v2-rescue:GND-power #GND03
 U 1 1 10B103BF
 P 1050 1550
 AR Path="/6095BD4C/10B103BF" Ref="#GND03"  Part="1" 
@@ -109,7 +109,7 @@ F 3 "" H 1050 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR037
+L covg_daq_v2-rescue:+5V-power #PWR037
 U 1 1 61889133
 P 1050 900
 AR Path="/6095BD4C/61889133" Ref="#PWR037"  Part="1" 
@@ -122,7 +122,7 @@ F 3 "" H 1050 900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR033
+L covg_daq_v2-rescue:+3V3-power #PWR033
 U 1 1 6188B164
 P 650 900
 AR Path="/6095BD4C/6188B164" Ref="#PWR033"  Part="1" 
@@ -135,7 +135,7 @@ F 3 "" H 650 900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg-kicad:DAC80508ZRTER U5
+L covg_daq_v2-rescue:DAC80508ZRTER-covg-kicad U5
 U 1 1 60A11E5A
 P 3100 1600
 AR Path="/6095BD4C/60A11E5A" Ref="U5"  Part="1" 
@@ -150,7 +150,7 @@ F 5 "DAC80508ZCRTET" H 3100 2588 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR039
+L covg_daq_v2-rescue:+3V3-power #PWR039
 U 1 1 60A13242
 P 1800 1300
 AR Path="/6095BD4C/60A13242" Ref="#PWR039"  Part="1" 
@@ -163,7 +163,7 @@ F 3 "" H 1800 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR042
+L covg_daq_v2-rescue:+5V-power #PWR042
 U 1 1 60A13FF9
 P 2050 1100
 AR Path="/6095BD4C/60A13FF9" Ref="#PWR042"  Part="1" 
@@ -176,7 +176,7 @@ F 3 "" H 2050 1100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #GND011
+L covg_daq_v2-rescue:GND-power #GND011
 U 1 1 60A174FD
 P 4000 2000
 AR Path="/6095BD4C/60A174FD" Ref="#GND011"  Part="1" 
@@ -189,7 +189,7 @@ F 3 "" H 4000 2000 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:R_US R?
+L covg_daq_v2-rescue:R_US-Device R?
 U 1 1 60A29EE1
 P 1750 2000
 AR Path="/6095A38A/60A29EE1" Ref="R?"  Part="1" 
@@ -205,7 +205,7 @@ F 5 "0.1W" H 1600 2200 50  0001 C CNN "Power"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L covg-kicad:TMUX6136PWR U10
+L covg_daq_v2-rescue:TMUX6136PWR-covg-kicad U10
 U 1 1 60B8C0FB
 P 9450 2100
 AR Path="/6095BD4C/60B8C0FB" Ref="U10"  Part="1" 
@@ -219,7 +219,7 @@ F 4 "TMUX6136PWR" H 10125 2487 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+15V #PWR053
+L covg_daq_v2-rescue:+15V-power #PWR053
 U 1 1 60BE8CAA
 P 9500 2850
 AR Path="/6095BD4C/60BE8CAA" Ref="#PWR053"  Part="1" 
@@ -232,7 +232,7 @@ F 3 "" H 9500 2850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:-15V #PWR054
+L covg_daq_v2-rescue:-15V-power #PWR054
 U 1 1 60BEA680
 P 9500 3050
 AR Path="/6095BD4C/60BEA680" Ref="#PWR054"  Part="1" 
@@ -245,7 +245,7 @@ F 3 "" H 9500 3050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #GND021
+L covg_daq_v2-rescue:GND-power #GND021
 U 1 1 60BEBA41
 P 9500 2950
 AR Path="/6095BD4C/60BEBA41" Ref="#GND021"  Part="1" 
@@ -258,7 +258,7 @@ F 3 "" H 9500 2950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L covg-kicad:TMUX6136PWR U11
+L covg_daq_v2-rescue:TMUX6136PWR-covg-kicad U11
 U 1 1 60C5A3EA
 P 9750 5250
 AR Path="/6095BD4C/60C5A3EA" Ref="U11"  Part="1" 
@@ -272,7 +272,7 @@ F 4 "TMUX6136PWR" H 10425 5637 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+15V #PWR055
+L covg_daq_v2-rescue:+15V-power #PWR055
 U 1 1 60C5A432
 P 9650 6000
 AR Path="/6095BD4C/60C5A432" Ref="#PWR055"  Part="1" 
@@ -285,7 +285,7 @@ F 3 "" H 9650 6000 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:-15V #PWR056
+L covg_daq_v2-rescue:-15V-power #PWR056
 U 1 1 60C5A439
 P 9650 6200
 AR Path="/6095BD4C/60C5A439" Ref="#PWR056"  Part="1" 
@@ -298,7 +298,7 @@ F 3 "" H 9650 6200 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #GND022
+L covg_daq_v2-rescue:GND-power #GND022
 U 1 1 60C5A440
 P 9700 6100
 AR Path="/6095BD4C/60C5A440" Ref="#GND022"  Part="1" 
@@ -311,7 +311,7 @@ F 3 "" H 9700 6100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_US R?
+L covg_daq_v2-rescue:R_US-Device R?
 U 1 1 617C87E1
 P 1850 1700
 AR Path="/6095A38A/617C87E1" Ref="R?"  Part="1" 
