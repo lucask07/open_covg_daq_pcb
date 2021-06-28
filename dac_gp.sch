@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr User 12505 8268
 encoding utf-8
-Sheet 2 26
+Sheet 21 26
 Title ""
 Date ""
 Rev ""
@@ -23,12 +23,12 @@ F3 "CMD" I L 7850 1250 50
 F4 "EN_I" I L 7850 1400 50 
 $EndSheet
 $Comp
-L covg_daq_v2-rescue:FRAME_A_L-adc_dac_v1-eagle-import #FRAME1
+L adc_dac_v1-eagle-import:FRAME_A_L #FRAME1
 U 1 1 519C2D15
 P 900 6900
 AR Path="/6095BD4C/519C2D15" Ref="#FRAME1"  Part="1" 
 AR Path="/61B02572/519C2D15" Ref="#FRAME2"  Part="1" 
-F 0 "#FRAME1" H 900 6900 50  0001 C CNN
+F 0 "#FRAME2" H 900 6900 50  0001 C CNN
 F 1 "FRAME_A_L" H 900 6900 50  0001 C CNN
 F 2 "" H 900 6900 50  0001 C CNN
 F 3 "" H 900 6900 50  0001 C CNN
@@ -36,7 +36,7 @@ F 3 "" H 900 6900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #GND012
+L power:GND #GND012
 U 1 1 E9B71633
 P 4300 2250
 AR Path="/6095BD4C/E9B71633" Ref="#GND012"  Part="1" 
@@ -49,12 +49,12 @@ F 3 "" H 4300 2250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:C-Device C1
+L Device:C C1
 U 1 1 A7A1DCDA
 P 650 1250
 AR Path="/6095BD4C/A7A1DCDA" Ref="C1"  Part="1" 
 AR Path="/61B02572/A7A1DCDA" Ref="C168"  Part="1" 
-F 0 "C1" H 690 1275 59  0000 L BNN
+F 0 "C168" H 690 1275 59  0000 L BNN
 F 1 "0.1u" H 690 1085 59  0000 L BNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 650 1250 50  0001 C CNN
 F 3 "" H 650 1250 50  0001 C CNN
@@ -66,12 +66,12 @@ F 7 "25" H 690 1375 50  0001 C CNN "voltage"
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:C-Device C3
+L Device:C C3
 U 1 1 46ACB443
 P 1050 1200
 AR Path="/6095BD4C/46ACB443" Ref="C3"  Part="1" 
 AR Path="/61B02572/46ACB443" Ref="C170"  Part="1" 
-F 0 "C3" H 1090 1225 59  0000 L BNN
+F 0 "C170" H 1090 1225 59  0000 L BNN
 F 1 "0.1u" H 1090 1035 59  0000 L BNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 1050 1200 50  0001 C CNN
 F 3 "" H 1050 1200 50  0001 C CNN
@@ -83,7 +83,7 @@ F 7 "25" H 1090 1325 50  0001 C CNN "voltage"
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #GND01
+L power:GND #GND01
 U 1 1 FC55E54D
 P 650 1550
 AR Path="/6095BD4C/FC55E54D" Ref="#GND01"  Part="1" 
@@ -96,7 +96,7 @@ F 3 "" H 650 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #GND03
+L power:GND #GND03
 U 1 1 10B103BF
 P 1050 1550
 AR Path="/6095BD4C/10B103BF" Ref="#GND03"  Part="1" 
@@ -109,7 +109,7 @@ F 3 "" H 1050 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:+5V-power #PWR037
+L power:+5V #PWR037
 U 1 1 61889133
 P 1050 900
 AR Path="/6095BD4C/61889133" Ref="#PWR037"  Part="1" 
@@ -122,7 +122,7 @@ F 3 "" H 1050 900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:+3V3-power #PWR033
+L power:+3V3 #PWR033
 U 1 1 6188B164
 P 650 900
 AR Path="/6095BD4C/6188B164" Ref="#PWR033"  Part="1" 
@@ -135,12 +135,12 @@ F 3 "" H 650 900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:DAC80508ZRTER-covg-kicad U5
+L covg-kicad:DAC80508ZRTER U5
 U 1 1 60A11E5A
 P 3100 1600
 AR Path="/6095BD4C/60A11E5A" Ref="U5"  Part="1" 
 AR Path="/61B02572/60A11E5A" Ref="U58"  Part="1" 
-F 0 "U5" H 3100 2488 60  0000 C CNN
+F 0 "U58" H 3100 2488 60  0000 C CNN
 F 1 "DAC80508ZRTER" H 3100 2382 60  0000 C CNN
 F 2 "Package_DFN_QFN:WQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm" H 3100 1540 60  0001 C CNN
 F 3 "" H 3100 1600 60  0000 C CNN
@@ -150,7 +150,7 @@ F 5 "DAC80508ZCRTET" H 3100 2588 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:+3V3-power #PWR039
+L power:+3V3 #PWR039
 U 1 1 60A13242
 P 1800 1300
 AR Path="/6095BD4C/60A13242" Ref="#PWR039"  Part="1" 
@@ -163,7 +163,7 @@ F 3 "" H 1800 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:+5V-power #PWR042
+L power:+5V #PWR042
 U 1 1 60A13FF9
 P 2050 1100
 AR Path="/6095BD4C/60A13FF9" Ref="#PWR042"  Part="1" 
@@ -176,7 +176,7 @@ F 3 "" H 2050 1100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #GND011
+L power:GND #GND011
 U 1 1 60A174FD
 P 4000 2000
 AR Path="/6095BD4C/60A174FD" Ref="#GND011"  Part="1" 
@@ -189,13 +189,13 @@ F 3 "" H 4000 2000 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_US-Device R?
+L Device:R_US R?
 U 1 1 60A29EE1
 P 1750 2000
 AR Path="/6095A38A/60A29EE1" Ref="R?"  Part="1" 
 AR Path="/6095BD4C/60A29EE1" Ref="R9"  Part="1" 
 AR Path="/61B02572/60A29EE1" Ref="R260"  Part="1" 
-F 0 "R9" H 1600 2100 59  0000 L BNN
+F 0 "R260" H 1600 2100 59  0000 L BNN
 F 1 "0" H 1600 1800 59  0000 L BNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 1750 2000 50  0001 C CNN
 F 3 "" H 1750 2000 50  0001 C CNN
@@ -205,12 +205,12 @@ F 5 "0.1W" H 1600 2200 50  0001 C CNN "Power"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:TMUX6136PWR-covg-kicad U10
+L covg-kicad:TMUX6136PWR U10
 U 1 1 60B8C0FB
 P 9450 2100
 AR Path="/6095BD4C/60B8C0FB" Ref="U10"  Part="1" 
 AR Path="/61B02572/60B8C0FB" Ref="U63"  Part="1" 
-F 0 "U10" H 10125 2387 60  0000 C CNN
+F 0 "U63" H 10125 2387 60  0000 C CNN
 F 1 "TMUX6136PWR" H 10125 2281 60  0000 C CNN
 F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 10100 2200 60  0001 C CNN
 F 3 "" H 9450 2100 60  0000 C CNN
@@ -219,7 +219,7 @@ F 4 "TMUX6136PWR" H 10125 2487 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:+15V-power #PWR053
+L power:+15V #PWR053
 U 1 1 60BE8CAA
 P 9500 2850
 AR Path="/6095BD4C/60BE8CAA" Ref="#PWR053"  Part="1" 
@@ -232,7 +232,7 @@ F 3 "" H 9500 2850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:-15V-power #PWR054
+L power:-15V #PWR054
 U 1 1 60BEA680
 P 9500 3050
 AR Path="/6095BD4C/60BEA680" Ref="#PWR054"  Part="1" 
@@ -245,7 +245,7 @@ F 3 "" H 9500 3050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #GND021
+L power:GND #GND021
 U 1 1 60BEBA41
 P 9500 2950
 AR Path="/6095BD4C/60BEBA41" Ref="#GND021"  Part="1" 
@@ -258,12 +258,12 @@ F 3 "" H 9500 2950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:TMUX6136PWR-covg-kicad U11
+L covg-kicad:TMUX6136PWR U11
 U 1 1 60C5A3EA
 P 9750 5250
 AR Path="/6095BD4C/60C5A3EA" Ref="U11"  Part="1" 
 AR Path="/61B02572/60C5A3EA" Ref="U64"  Part="1" 
-F 0 "U11" H 10425 5537 60  0000 C CNN
+F 0 "U64" H 10425 5537 60  0000 C CNN
 F 1 "TMUX6136PWR" H 10425 5431 60  0000 C CNN
 F 2 "Package_SO:TSSOP-16_4.4x5mm_P0.65mm" H 10400 5350 60  0001 C CNN
 F 3 "" H 9750 5250 60  0000 C CNN
@@ -272,7 +272,7 @@ F 4 "TMUX6136PWR" H 10425 5637 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:+15V-power #PWR055
+L power:+15V #PWR055
 U 1 1 60C5A432
 P 9650 6000
 AR Path="/6095BD4C/60C5A432" Ref="#PWR055"  Part="1" 
@@ -285,7 +285,7 @@ F 3 "" H 9650 6000 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:-15V-power #PWR056
+L power:-15V #PWR056
 U 1 1 60C5A439
 P 9650 6200
 AR Path="/6095BD4C/60C5A439" Ref="#PWR056"  Part="1" 
@@ -298,7 +298,7 @@ F 3 "" H 9650 6200 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #GND022
+L power:GND #GND022
 U 1 1 60C5A440
 P 9700 6100
 AR Path="/6095BD4C/60C5A440" Ref="#GND022"  Part="1" 
@@ -311,13 +311,13 @@ F 3 "" H 9700 6100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_US-Device R?
+L Device:R_US R?
 U 1 1 617C87E1
 P 1850 1700
 AR Path="/6095A38A/617C87E1" Ref="R?"  Part="1" 
 AR Path="/6095BD4C/617C87E1" Ref="R10"  Part="1" 
 AR Path="/61B02572/617C87E1" Ref="R261"  Part="1" 
-F 0 "R10" H 1700 1800 59  0000 L BNN
+F 0 "R261" H 1700 1800 59  0000 L BNN
 F 1 "33" H 1900 1800 59  0000 L BNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 1850 1700 50  0001 C CNN
 F 3 "" H 1850 1700 50  0001 C CNN
@@ -679,194 +679,6 @@ Wire Wire Line
 	2750 6000 3250 6000
 Wire Wire Line
 	2750 6400 3250 6400
-$Comp
-L Device:C C181
-U 1 1 60DD4315
-P 9900 1250
-AR Path="/6095BD4C/60DD4315" Ref="C181"  Part="1" 
-AR Path="/61B02572/60DD4315" Ref="C185"  Part="1" 
-F 0 "C181" H 9940 1275 59  0000 L BNN
-F 1 "0.1u" H 9940 1085 59  0000 L BNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 9900 1250 50  0001 C CNN
-F 3 "" H 9900 1250 50  0001 C CNN
-F 4 "CC0603MRX7R8BB104" H 9900 1250 50  0001 C CNN "Manf#"
-F 5 "Yageo" H 9940 1375 50  0001 C CNN "Manufacturer_Name"
-F 6 "20%" H 9940 1375 50  0001 C CNN "Tolerance"
-F 7 "25" H 9940 1375 50  0001 C CNN "voltage"
-	1    9900 1250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #GND0282
-U 1 1 60DD431B
-P 9900 1550
-AR Path="/6095BD4C/60DD431B" Ref="#GND0282"  Part="1" 
-AR Path="/61B02572/60DD431B" Ref="#GND0286"  Part="1" 
-F 0 "#GND0286" H 9900 1550 50  0001 C CNN
-F 1 "GND" H 9800 1450 59  0001 L BNN
-F 2 "" H 9900 1550 50  0001 C CNN
-F 3 "" H 9900 1550 50  0001 C CNN
-	1    9900 1550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9900 900  9900 1100
-Wire Wire Line
-	9900 1550 9900 1400
-$Comp
-L Device:C C183
-U 1 1 60DD7A0A
-P 10300 1250
-AR Path="/6095BD4C/60DD7A0A" Ref="C183"  Part="1" 
-AR Path="/61B02572/60DD7A0A" Ref="C187"  Part="1" 
-F 0 "C183" H 10340 1275 59  0000 L BNN
-F 1 "0.1u" H 10340 1085 59  0000 L BNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 10300 1250 50  0001 C CNN
-F 3 "" H 10300 1250 50  0001 C CNN
-F 4 "CC0603MRX7R8BB104" H 10300 1250 50  0001 C CNN "Manf#"
-F 5 "Yageo" H 10340 1375 50  0001 C CNN "Manufacturer_Name"
-F 6 "20%" H 10340 1375 50  0001 C CNN "Tolerance"
-F 7 "25" H 10340 1375 50  0001 C CNN "voltage"
-	1    10300 1250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #GND0283
-U 1 1 60DD7A10
-P 10300 1550
-AR Path="/6095BD4C/60DD7A10" Ref="#GND0283"  Part="1" 
-AR Path="/61B02572/60DD7A10" Ref="#GND0287"  Part="1" 
-F 0 "#GND0287" H 10300 1550 50  0001 C CNN
-F 1 "GND" H 10200 1450 59  0001 L BNN
-F 2 "" H 10300 1550 50  0001 C CNN
-F 3 "" H 10300 1550 50  0001 C CNN
-	1    10300 1550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10300 900  10300 1100
-Wire Wire Line
-	10300 1550 10300 1400
-$Comp
-L power:+15V #PWR0144
-U 1 1 60DDA244
-P 9900 900
-AR Path="/6095BD4C/60DDA244" Ref="#PWR0144"  Part="1" 
-AR Path="/61B02572/60DDA244" Ref="#PWR0277"  Part="1" 
-F 0 "#PWR0277" H 9900 750 50  0001 C CNN
-F 1 "+15V" V 9915 1028 50  0000 L CNN
-F 2 "" H 9900 900 50  0001 C CNN
-F 3 "" H 9900 900 50  0001 C CNN
-	1    9900 900 
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:-15V #PWR0274
-U 1 1 60DDA7B9
-P 10300 900
-AR Path="/6095BD4C/60DDA7B9" Ref="#PWR0274"  Part="1" 
-AR Path="/61B02572/60DDA7B9" Ref="#PWR0278"  Part="1" 
-F 0 "#PWR0278" H 10300 1000 50  0001 C CNN
-F 1 "-15V" V 10315 1028 50  0000 L CNN
-F 2 "" H 10300 900 50  0001 C CNN
-F 3 "" H 10300 900 50  0001 C CNN
-	1    10300 900 
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C182
-U 1 1 60DDD75B
-P 9950 4450
-AR Path="/6095BD4C/60DDD75B" Ref="C182"  Part="1" 
-AR Path="/61B02572/60DDD75B" Ref="C186"  Part="1" 
-F 0 "C182" H 9990 4475 59  0000 L BNN
-F 1 "0.1u" H 9990 4285 59  0000 L BNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 9950 4450 50  0001 C CNN
-F 3 "" H 9950 4450 50  0001 C CNN
-F 4 "CC0603MRX7R8BB104" H 9950 4450 50  0001 C CNN "Manf#"
-F 5 "Yageo" H 9990 4575 50  0001 C CNN "Manufacturer_Name"
-F 6 "20%" H 9990 4575 50  0001 C CNN "Tolerance"
-F 7 "25" H 9990 4575 50  0001 C CNN "voltage"
-	1    9950 4450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #GND0284
-U 1 1 60DDD761
-P 9950 4750
-AR Path="/6095BD4C/60DDD761" Ref="#GND0284"  Part="1" 
-AR Path="/61B02572/60DDD761" Ref="#GND0288"  Part="1" 
-F 0 "#GND0288" H 9950 4750 50  0001 C CNN
-F 1 "GND" H 9850 4650 59  0001 L BNN
-F 2 "" H 9950 4750 50  0001 C CNN
-F 3 "" H 9950 4750 50  0001 C CNN
-	1    9950 4750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9950 4100 9950 4300
-Wire Wire Line
-	9950 4750 9950 4600
-$Comp
-L Device:C C184
-U 1 1 60DDD76D
-P 10350 4450
-AR Path="/6095BD4C/60DDD76D" Ref="C184"  Part="1" 
-AR Path="/61B02572/60DDD76D" Ref="C188"  Part="1" 
-F 0 "C184" H 10390 4475 59  0000 L BNN
-F 1 "0.1u" H 10390 4285 59  0000 L BNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 10350 4450 50  0001 C CNN
-F 3 "" H 10350 4450 50  0001 C CNN
-F 4 "CC0603MRX7R8BB104" H 10350 4450 50  0001 C CNN "Manf#"
-F 5 "Yageo" H 10390 4575 50  0001 C CNN "Manufacturer_Name"
-F 6 "20%" H 10390 4575 50  0001 C CNN "Tolerance"
-F 7 "25" H 10390 4575 50  0001 C CNN "voltage"
-	1    10350 4450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #GND0285
-U 1 1 60DDD773
-P 10350 4750
-AR Path="/6095BD4C/60DDD773" Ref="#GND0285"  Part="1" 
-AR Path="/61B02572/60DDD773" Ref="#GND0289"  Part="1" 
-F 0 "#GND0289" H 10350 4750 50  0001 C CNN
-F 1 "GND" H 10250 4650 59  0001 L BNN
-F 2 "" H 10350 4750 50  0001 C CNN
-F 3 "" H 10350 4750 50  0001 C CNN
-	1    10350 4750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10350 4100 10350 4300
-Wire Wire Line
-	10350 4750 10350 4600
-$Comp
-L power:+15V #PWR0275
-U 1 1 60DDD77B
-P 9950 4100
-AR Path="/6095BD4C/60DDD77B" Ref="#PWR0275"  Part="1" 
-AR Path="/61B02572/60DDD77B" Ref="#PWR0279"  Part="1" 
-F 0 "#PWR0279" H 9950 3950 50  0001 C CNN
-F 1 "+15V" V 9965 4228 50  0000 L CNN
-F 2 "" H 9950 4100 50  0001 C CNN
-F 3 "" H 9950 4100 50  0001 C CNN
-	1    9950 4100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:-15V #PWR0276
-U 1 1 60DDD781
-P 10350 4100
-AR Path="/6095BD4C/60DDD781" Ref="#PWR0276"  Part="1" 
-AR Path="/61B02572/60DDD781" Ref="#PWR0280"  Part="1" 
-F 0 "#PWR0280" H 10350 4200 50  0001 C CNN
-F 1 "-15V" V 10365 4228 50  0000 L CNN
-F 2 "" H 10350 4100 50  0001 C CNN
-F 3 "" H 10350 4100 50  0001 C CNN
-	1    10350 4100
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6500 5650 9750 5650
 Wire Wire Line

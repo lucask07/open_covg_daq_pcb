@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L covg_daq_v2-rescue:C-Device C?
+L Device:C C?
 U 1 1 8315D5C6
 P 3500 2700
 AR Path="/6095B316/8315D5C6" Ref="C?"  Part="1" 
@@ -38,7 +38,7 @@ F 3 "" H 3500 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:C-Device C?
+L Device:C C?
 U 1 1 48630D30
 P 4500 1650
 AR Path="/6095B316/48630D30" Ref="C?"  Part="1" 
@@ -66,7 +66,7 @@ F 7 "25" H 4540 1775 50  0001 C CNN "voltage"
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_US-Device R?
+L Device:R_US R?
 U 1 1 852A3BAD
 P 3100 2400
 AR Path="/6095B316/852A3BAD" Ref="R?"  Part="1" 
@@ -93,7 +93,7 @@ F 6 "1%" H 2950 2559 50  0001 C CNN "Tolerance"
 	0    1    1    0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_US-Device R?
+L Device:R_US R?
 U 1 1 3BE0C9AD
 P 11000 2500
 AR Path="/6095B316/3BE0C9AD" Ref="R?"  Part="1" 
@@ -120,7 +120,7 @@ F 6 "1%" H 10850 2659 50  0001 C CNN "Tolerance"
 	0    1    1    0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:C-Device C?
+L Device:C C?
 U 1 1 BEFD5FC2
 P 11400 2700
 AR Path="/6095B316/BEFD5FC2" Ref="C?"  Part="1" 
@@ -144,7 +144,7 @@ F 3 "" H 11400 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:C-Device C?
+L Device:C C?
 U 1 1 6DBFFF54
 P 9000 3100
 AR Path="/6095B316/6DBFFF54" Ref="C?"  Part="1" 
@@ -172,7 +172,7 @@ F 7 "25" H 9040 3225 50  0001 C CNN "voltage"
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:C-Device C?
+L Device:C C?
 U 1 1 D3983B33
 P 7850 3150
 AR Path="/6095B316/D3983B33" Ref="C?"  Part="1" 
@@ -200,7 +200,7 @@ F 7 "25" H 7890 3275 50  0001 C CNN "voltage"
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_US-Device R?
+L Device:R_US R?
 U 1 1 0B6559E8
 P 8100 2500
 AR Path="/6095B316/0B6559E8" Ref="R?"  Part="1" 
@@ -227,7 +227,7 @@ F 6 "1%" H 7950 2659 50  0001 C CNN "Tolerance"
 	0    1    1    0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_US-Device R?
+L Device:R_US R?
 U 1 1 836E7444
 P 8800 1100
 AR Path="/6095B316/836E7444" Ref="R?"  Part="1" 
@@ -254,7 +254,7 @@ F 6 "1%" H 8650 1259 50  0001 C CNN "Tolerance"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_US-Device R?
+L Device:R_US R?
 U 1 1 26491DF4
 P 7700 1100
 AR Path="/6095B316/26491DF4" Ref="R?"  Part="1" 
@@ -281,7 +281,7 @@ F 6 "1%" H 7550 1259 50  0001 C CNN "Tolerance"
 	0    1    1    0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_US-Device R?
+L Device:R_US R?
 U 1 1 60D0D517
 P 6900 1500
 AR Path="/6095B316/60D0D517" Ref="R?"  Part="1" 
@@ -307,7 +307,7 @@ F 5 "0.1W" H 6750 1659 50  0001 C CNN "Power"
 	0    1    1    0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:C-Device C?
+L Device:C C?
 U 1 1 66563AFE
 P 6400 2200
 AR Path="/6095B316/66563AFE" Ref="C?"  Part="1" 
@@ -334,7 +334,7 @@ F 6 "50V" H 6440 2325 50  0001 C CNN "voltage"
 	-1   0    0    1   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #GND?
+L power:GND #GND?
 U 1 1 8D801CC1
 P 4500 1900
 AR Path="/6095B316/8D801CC1" Ref="#GND?"  Part="1" 
@@ -358,7 +358,7 @@ F 3 "" H 4500 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #GND?
+L power:GND #GND?
 U 1 1 BFE1AC94
 P 5000 3300
 AR Path="/6095B316/BFE1AC94" Ref="#GND?"  Part="1" 
@@ -382,7 +382,7 @@ F 3 "" H 5000 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #GND?
+L power:GND #GND?
 U 1 1 FBBD076C
 P 11400 3100
 AR Path="/6095B316/FBBD076C" Ref="#GND?"  Part="1" 
@@ -406,7 +406,7 @@ F 3 "" H 11400 3100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #GND?
+L power:GND #GND?
 U 1 1 E73C58C9
 P 9000 3400
 AR Path="/6095B316/E73C58C9" Ref="#GND?"  Part="1" 
@@ -430,7 +430,7 @@ F 3 "" H 9000 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #GND?
+L power:GND #GND?
 U 1 1 F8CFB2B4
 P 6800 2250
 AR Path="/6095B316/F8CFB2B4" Ref="#GND?"  Part="1" 
@@ -454,7 +454,7 @@ F 3 "" H 6800 2250 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #GND?
+L power:GND #GND?
 U 1 1 A5262D8C
 P 3500 3100
 AR Path="/6095B316/A5262D8C" Ref="#GND?"  Part="1" 
@@ -478,7 +478,7 @@ F 3 "" H 3500 3100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_US-Device R?
+L Device:R_US R?
 U 1 1 21C9AC64
 P 10200 3000
 AR Path="/6095B316/21C9AC64" Ref="R?"  Part="1" 
@@ -505,7 +505,7 @@ F 6 "1%" H 10050 3159 50  0001 C CNN "Tolerance"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_US-Device R?
+L Device:R_US R?
 U 1 1 8265D0A1
 P 9400 3350
 AR Path="/6095B316/8265D0A1" Ref="R?"  Part="1" 
@@ -532,7 +532,7 @@ F 6 "1%" H 9150 3450 50  0001 C CNN "Tolerance"
 	-1   0    0    1   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #GND?
+L power:GND #GND?
 U 1 1 9DCBE17A
 P 9400 3600
 AR Path="/6095B316/9DCBE17A" Ref="#GND?"  Part="1" 
@@ -556,7 +556,7 @@ F 3 "" H 9400 3600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:C-Device C?
+L Device:C C?
 U 1 1 03454344
 P 2500 2850
 AR Path="/6095B316/03454344" Ref="C?"  Part="1" 
@@ -584,7 +584,7 @@ F 7 "25" H 2540 2975 50  0001 C CNN "voltage"
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #GND?
+L power:GND #GND?
 U 1 1 D1FA1B5E
 P 2500 3100
 AR Path="/6095B316/D1FA1B5E" Ref="#GND?"  Part="1" 
@@ -608,7 +608,7 @@ F 3 "" H 2500 3100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:C-Device C?
+L Device:C C?
 U 1 1 2711B78B
 P 2500 1850
 AR Path="/6095B316/2711B78B" Ref="C?"  Part="1" 
@@ -636,7 +636,7 @@ F 7 "25" H 2540 1975 50  0001 C CNN "voltage"
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #GND?
+L power:GND #GND?
 U 1 1 1888C5A8
 P 2500 2050
 AR Path="/6095B316/1888C5A8" Ref="#GND?"  Part="1" 
@@ -660,7 +660,7 @@ F 3 "" H 2500 2050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:OPA1662-covg-kicad IC?
+L covg-kicad:OPA1662 IC?
 U 2 1 70C115BD
 P 7100 2500
 AR Path="/6095B316/70C115BD" Ref="IC?"  Part="2" 
@@ -685,7 +685,7 @@ F 4 "OPA1662AIDGKR" H 7250 2750 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:OPA1662-covg-kicad IC?
+L covg-kicad:OPA1662 IC?
 U 3 1 70C115B9
 P 2000 2400
 AR Path="/6095B316/70C115B9" Ref="IC?"  Part="3" 
@@ -710,7 +710,7 @@ F 4 "OPA1662AIDGKR" H 2050 2750 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:AD5453-covg-kicad U?
+L covg-kicad:AD5453 U?
 U 1 1 86275339
 P 5000 2500
 AR Path="/6095B316/86275339" Ref="U?"  Part="1" 
@@ -735,7 +735,7 @@ F 4 "AD5453YUJZ-REEL7" H 5214 3059 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_US-Device R?
+L Device:R_US R?
 U 1 1 3D3C745C
 P 6000 3300
 AR Path="/6095B316/3D3C745C" Ref="R?"  Part="1" 
@@ -762,7 +762,7 @@ F 6 "1%" H 5850 3459 50  0001 C CNN "Tolerance"
 	0    1    1    0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_US-Device R?
+L Device:R_US R?
 U 1 1 0B8B2396
 P 6000 3700
 AR Path="/6095B316/0B8B2396" Ref="R?"  Part="1" 
@@ -789,7 +789,7 @@ F 6 "1%" H 5850 3859 50  0001 C CNN "Tolerance"
 	0    1    1    0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_US-Device R?
+L Device:R_US R?
 U 1 1 5AC44507
 P 6000 4100
 AR Path="/6095B316/5AC44507" Ref="R?"  Part="1" 
@@ -816,7 +816,7 @@ F 6 "1%" H 5850 4259 50  0001 C CNN "Tolerance"
 	0    1    1    0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:+15V-power #PWR?
+L power:+15V #PWR?
 U 1 1 609B5A67
 P 2000 1700
 AR Path="/6095B316/609B5A67" Ref="#PWR?"  Part="1" 
@@ -840,7 +840,7 @@ F 3 "" H 2000 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:+15V-power #PWR?
+L power:+15V #PWR?
 U 1 1 609BEA6E
 P 8350 2850
 AR Path="/6095B316/609BEA6E" Ref="#PWR?"  Part="1" 
@@ -864,7 +864,7 @@ F 3 "" H 8350 2850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:-15V-power #PWR?
+L power:-15V #PWR?
 U 1 1 609D2883
 P 8350 3600
 AR Path="/6095B316/609D2883" Ref="#PWR?"  Part="1" 
@@ -888,7 +888,7 @@ F 3 "" H 8350 3600 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #PWR?
+L power:GND #PWR?
 U 1 1 609D7DDF
 P 7850 2900
 AR Path="/6095B316/609D7DDF" Ref="#PWR?"  Part="1" 
@@ -912,7 +912,7 @@ F 3 "" H 7850 2900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:-15V-power #PWR?
+L power:-15V #PWR?
 U 1 1 609E2029
 P 2000 2700
 AR Path="/6095B316/609E2029" Ref="#PWR?"  Part="1" 
@@ -936,7 +936,7 @@ F 3 "" H 2000 2700 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:+3V3-power #PWR?
+L power:+3V3 #PWR?
 U 1 1 60A3F431
 P 5000 1400
 AR Path="/6095B316/60A3F431" Ref="#PWR?"  Part="1" 
@@ -960,7 +960,7 @@ F 3 "" H 5000 1400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:OPA1662-covg-kicad IC?
+L covg-kicad:OPA1662 IC?
 U 1 1 70C115B1
 P 1900 2400
 AR Path="/6095B316/70C115B1" Ref="IC?"  Part="1" 
@@ -985,7 +985,7 @@ F 4 "OPA1662AIDGKR" H 2050 2650 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:OPA2156xD-Amplifier_Operational U?
+L Amplifier_Operational:OPA2156xD U?
 U 1 1 62966907
 P 8800 2400
 AR Path="/6095B316/62966907" Ref="U?"  Part="1" 
@@ -1001,7 +1001,6 @@ AR Path="/60C4C08D/62966907" Ref="U44"  Part="1"
 AR Path="/60C4EF27/62966907" Ref="U47"  Part="1" 
 AR Path="/60C521D9/62966907" Ref="U50"  Part="1" 
 AR Path="/60C55145/62966907" Ref="U53"  Part="1" 
-AR Path="/62966907" Ref="U53"  Part="1" 
 F 0 "U53" H 8800 2767 50  0000 C CNN
 F 1 "OPA2156xD" H 8800 2676 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8900 2400 50  0001 C CNN
@@ -1011,7 +1010,7 @@ F 4 "OPA2156IDR" H 8800 2867 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:OPA2156xD-Amplifier_Operational U?
+L Amplifier_Operational:OPA2156xD U?
 U 2 1 62967CD8
 P 10200 2500
 AR Path="/6095B316/62967CD8" Ref="U?"  Part="2" 
@@ -1027,7 +1026,6 @@ AR Path="/60C4C08D/62967CD8" Ref="U44"  Part="2"
 AR Path="/60C4EF27/62967CD8" Ref="U47"  Part="2" 
 AR Path="/60C521D9/62967CD8" Ref="U50"  Part="2" 
 AR Path="/60C55145/62967CD8" Ref="U53"  Part="2" 
-AR Path="/62967CD8" Ref="U53"  Part="2" 
 F 0 "U53" H 10200 2867 50  0000 C CNN
 F 1 "OPA2156xD" H 10200 2776 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 10300 2500 50  0001 C CNN
@@ -1037,7 +1035,7 @@ F 4 "OPA2156IDR" H 10200 2967 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:OPA2156xD-Amplifier_Operational U?
+L Amplifier_Operational:OPA2156xD U?
 U 3 1 62969504
 P 8350 3200
 AR Path="/6095B316/62969504" Ref="U?"  Part="3" 
@@ -1053,7 +1051,6 @@ AR Path="/60C4C08D/62969504" Ref="U44"  Part="3"
 AR Path="/60C4EF27/62969504" Ref="U47"  Part="3" 
 AR Path="/60C521D9/62969504" Ref="U50"  Part="3" 
 AR Path="/60C55145/62969504" Ref="U53"  Part="3" 
-AR Path="/62969504" Ref="U53"  Part="3" 
 F 0 "U53" H 8408 3246 50  0000 L CNN
 F 1 "OPA2156xD" H 8408 3155 50  0000 L CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8450 3200 50  0001 C CNN
@@ -1063,7 +1060,7 @@ F 4 "OPA2156IDR" H 8408 3346 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:TMUX6111PWR-covg-kicad U?
+L covg-kicad:TMUX6111PWR U?
 U 1 1 6296D530
 P 1900 5250
 AR Path="/6095B316/6296D530" Ref="U?"  Part="1" 
@@ -1088,7 +1085,7 @@ F 4 "TMUX6111PWR" H 2075 6438 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:+15V-power #PWR?
+L power:+15V #PWR?
 U 1 1 6296F902
 P 900 4550
 AR Path="/6095B316/6296F902" Ref="#PWR?"  Part="1" 
@@ -1112,7 +1109,7 @@ F 3 "" H 900 4550 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:-15V-power #PWR?
+L power:-15V #PWR?
 U 1 1 6296FF31
 P 3400 5850
 AR Path="/6095B316/6296FF31" Ref="#PWR?"  Part="1" 
@@ -1136,7 +1133,7 @@ F 3 "" H 3400 5850 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #GND?
+L power:GND #GND?
 U 1 1 629705C2
 P 2900 6050
 AR Path="/6095B316/629705C2" Ref="#GND?"  Part="1" 
@@ -1160,7 +1157,7 @@ F 3 "" H 2900 6050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_US-Device R?
+L Device:R_US R?
 U 1 1 6299F30C
 P 3100 4750
 AR Path="/6095B316/6299F30C" Ref="R?"  Part="1" 
@@ -1187,7 +1184,7 @@ F 6 "1%" H 2950 4909 50  0001 C CNN "Tolerance"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #GND?
+L power:GND #GND?
 U 1 1 629EBF50
 P 1450 2300
 AR Path="/6095B316/629EBF50" Ref="#GND?"  Part="1" 
@@ -1211,7 +1208,7 @@ F 3 "" H 1450 2300 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_US-Device R?
+L Device:R_US R?
 U 1 1 629EF655
 P 1150 2500
 AR Path="/6095B316/629EF655" Ref="R?"  Part="1" 
@@ -1238,7 +1235,7 @@ F 6 "1%" H 1000 2659 50  0001 C CNN "Tolerance"
 	0    1    1    0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_US-Device R?
+L Device:R_US R?
 U 1 1 62A0DB04
 P 3100 5050
 AR Path="/6095B316/62A0DB04" Ref="R?"  Part="1" 
@@ -1265,7 +1262,7 @@ F 6 "1%" H 2950 5209 50  0001 C CNN "Tolerance"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_US-Device R?
+L Device:R_US R?
 U 1 1 62A1E13E
 P 3100 5650
 AR Path="/6095B316/62A1E13E" Ref="R?"  Part="1" 
@@ -1292,7 +1289,7 @@ F 6 "1%" H 2950 5809 50  0001 C CNN "Tolerance"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:C-Device C?
+L Device:C C?
 U 1 1 62A2C593
 P 2100 3550
 AR Path="/6095B316/62A2C593" Ref="C?"  Part="1" 
@@ -1316,7 +1313,7 @@ F 3 "" H 2100 3550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #GND?
+L power:GND #GND?
 U 1 1 A1A53D2B
 P 8450 2050
 AR Path="/6095B316/A1A53D2B" Ref="#GND?"  Part="1" 
@@ -1651,7 +1648,7 @@ NoConn ~ 1350 6050
 Text Notes 3600 2300 0    50   ~ 0
 Abs. Max of 12 V from GND 
 $Comp
-L covg_daq_v2-rescue:R_US-Device R?
+L Device:R_US R?
 U 1 1 60DAA2A1
 P 2100 3300
 AR Path="/6095B316/60DAA2A1" Ref="R?"  Part="1" 
@@ -1680,7 +1677,7 @@ $EndComp
 Wire Wire Line
 	3400 5050 3400 5350
 $Comp
-L covg_daq_v2-rescue:R_US-Device R?
+L Device:R_US R?
 U 1 1 60DAB63F
 P 3100 5350
 AR Path="/6095B316/60DAB63F" Ref="R?"  Part="1" 

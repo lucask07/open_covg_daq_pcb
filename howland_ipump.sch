@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 26
+Sheet 22 26
 Title ""
 Date ""
 Rev ""
@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L covg_daq_v2-rescue:-15V-power #PWR?
+L power:-15V #PWR?
 U 1 1 60D781E3
 P 5100 4050
 AR Path="/6032F251/60D781E3" Ref="#PWR?"  Part="1" 
@@ -30,7 +30,7 @@ F 3 "" H 5100 4050 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:+15V-power #PWR?
+L power:+15V #PWR?
 U 1 1 60D781E9
 P 5100 3400
 AR Path="/6032F251/60D781E9" Ref="#PWR?"  Part="1" 
@@ -46,7 +46,7 @@ F 3 "" H 5100 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:C-Device C?
+L Device:C C?
 U 1 1 60D781F4
 P 5850 4500
 AR Path="/6032F251/60D781F4" Ref="C?"  Part="1" 
@@ -65,7 +65,7 @@ F 6 "50V" H 5598 4600 50  0001 C CNN "voltage"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #PWR?
+L power:GND #PWR?
 U 1 1 60D78215
 P 3650 3900
 AR Path="/6032F251/60D78215" Ref="#PWR?"  Part="1" 
@@ -81,7 +81,7 @@ F 3 "" H 3650 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:OPA991S-covg-kicad U?
+L covg-kicad:OPA991S U?
 U 1 1 60D7821F
 P 5200 3700
 AR Path="/6032F251/60D7821F" Ref="U?"  Part="1" 
@@ -98,7 +98,7 @@ F 4 "OPA991SIDBVR" H 5544 3846 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_US-Device R?
+L Device:R_US R?
 U 1 1 60D78240
 P 5850 4950
 AR Path="/6032F251/60D78240" Ref="R?"  Part="1" 
@@ -116,7 +116,7 @@ F 5 "0.1" H 5850 4950 50  0001 C CNN "Tolerance"
 	0    1    1    0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:C-Device C?
+L Device:C C?
 U 1 1 60D7824A
 P 6750 3650
 AR Path="/6032F251/60D7824A" Ref="C?"  Part="1" 
@@ -137,7 +137,7 @@ F 7 "25" H 6498 3750 50  0001 C CNN "voltage"
 	-1   0    0    1   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #PWR?
+L power:GND #PWR?
 U 1 1 60D78250
 P 6750 3900
 AR Path="/6032F251/60D78250" Ref="#PWR?"  Part="1" 
@@ -154,7 +154,7 @@ F 3 "" H 6750 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:+15V-power #PWR?
+L power:+15V #PWR?
 U 1 1 60D78256
 P 7150 3400
 AR Path="/6032F251/60D78256" Ref="#PWR?"  Part="1" 
@@ -171,7 +171,7 @@ F 3 "" H 7150 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #PWR?
+L power:GND #PWR?
 U 1 1 60D7825C
 P 7150 3900
 AR Path="/6032F251/60D7825C" Ref="#PWR?"  Part="1" 
@@ -188,7 +188,7 @@ F 3 "" H 7150 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:C-Device C?
+L Device:C C?
 U 1 1 60D78264
 P 7150 3650
 AR Path="/6032F251/60D78264" Ref="C?"  Part="1" 
@@ -209,7 +209,7 @@ F 7 "25" H 6898 3750 50  0001 C CNN "voltage"
 	-1   0    0    1   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:-15V-power #PWR?
+L power:-15V #PWR?
 U 1 1 60D7826A
 P 6750 3400
 AR Path="/6032F251/60D7826A" Ref="#PWR?"  Part="1" 
@@ -226,7 +226,7 @@ F 3 "" H 6750 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_US-Device R?
+L Device:R_US R?
 U 1 1 60D83006
 P 4300 3800
 AR Path="/6032F251/60D83006" Ref="R?"  Part="1" 
@@ -244,7 +244,7 @@ F 5 "0.1W" H 4247 3968 50  0001 C CNN "Power"
 	0    1    1    0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_US-Device R?
+L Device:R_US R?
 U 1 1 60D8879F
 P 4300 3600
 AR Path="/6032F251/60D8879F" Ref="R?"  Part="1" 
@@ -262,7 +262,7 @@ F 5 "0.1W" H 4247 3768 50  0001 C CNN "Power"
 	0    1    1    0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_US-Device R?
+L Device:R_US R?
 U 1 1 60B385AE
 P 3800 3800
 AR Path="/6032F251/60B385AE" Ref="R?"  Part="1" 
@@ -280,7 +280,7 @@ F 5 "0.1" H 3800 3800 50  0001 C CNN "Tolerance"
 	0    1    1    0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_US-Device R?
+L Device:R_US R?
 U 1 1 60B38EA4
 P 3750 3600
 AR Path="/6032F251/60B38EA4" Ref="R?"  Part="1" 
@@ -298,7 +298,7 @@ F 5 "0.1" H 3750 3600 50  0001 C CNN "Tolerance"
 	0    1    1    0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_US-Device R?
+L Device:R_US R?
 U 1 1 60B3940D
 P 5400 3000
 AR Path="/6032F251/60B3940D" Ref="R?"  Part="1" 
@@ -316,7 +316,7 @@ F 5 "0.1" H 5400 3000 50  0001 C CNN "Tolerance"
 	0    1    1    0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:BC856-Transistor_BJT Q1
+L Transistor_BJT:BC856 Q1
 U 1 1 60BEDC00
 P 7750 4050
 AR Path="/6095BD4C/60BE01FC/60BEDC00" Ref="Q1"  Part="1" 
@@ -330,7 +330,7 @@ F 4 "BC856B-7-F" H 7941 4104 50  0001 C CNN "Manf#"
 	-1   0    0    1   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_US-Device R?
+L Device:R_US R?
 U 1 1 60BF0E09
 P 8200 4050
 AR Path="/6032F251/60BF0E09" Ref="R?"  Part="1" 
@@ -349,7 +349,7 @@ F 6 "1%" H 8200 4050 50  0001 C CNN "Tolerance"
 	0    -1   1    0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:+3V3-power #PWR064
+L power:+3V3 #PWR064
 U 1 1 60BF2F91
 P 7650 3250
 AR Path="/6095BD4C/60BE01FC/60BF2F91" Ref="#PWR064"  Part="1" 
@@ -362,7 +362,7 @@ F 3 "" H 7650 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_US-Device R?
+L Device:R_US R?
 U 1 1 60C16A39
 P 7950 3750
 AR Path="/6032F251/60C16A39" Ref="R?"  Part="1" 

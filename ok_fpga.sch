@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L covg_daq_v2-rescue:OPALKELLY_XEM7310-covg-kicad OK1
+L covg-kicad:OPALKELLY_XEM7310 OK1
 U 3 1 DA22499D
 P 7800 2600
 F 0 "OK1" H 8000 4610 70  0000 R BNN
@@ -26,7 +26,7 @@ F 4 "BTE-040-02-F-D-A" H 8000 4710 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:OPALKELLY_XEM7310-covg-kicad OK1
+L covg-kicad:OPALKELLY_XEM7310 OK1
 U 4 1 DA224981
 P 10500 2600
 F 0 "OK1" H 10700 4610 70  0000 R BNN
@@ -38,7 +38,7 @@ F 4 "BTE-040-02-F-D-A" H 10700 4710 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #PWR0107
+L power:GND #PWR0107
 U 1 1 60C00302
 P 5500 4600
 F 0 "#PWR0107" H 5500 4350 50  0001 C CNN
@@ -49,7 +49,7 @@ F 3 "" H 5500 4600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #PWR0106
+L power:GND #PWR0106
 U 1 1 60C00B33
 P 5500 4500
 F 0 "#PWR0106" H 5500 4250 50  0001 C CNN
@@ -60,7 +60,7 @@ F 3 "" H 5500 4500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #PWR0105
+L power:GND #PWR0105
 U 1 1 60C00C99
 P 5500 3400
 F 0 "#PWR0105" H 5500 3150 50  0001 C CNN
@@ -71,7 +71,7 @@ F 3 "" H 5500 3400 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #PWR0104
+L power:GND #PWR0104
 U 1 1 60C00FCB
 P 5500 2400
 F 0 "#PWR0104" H 5500 2150 50  0001 C CNN
@@ -82,7 +82,7 @@ F 3 "" H 5500 2400 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #PWR0103
+L power:GND #PWR0103
 U 1 1 60C1471F
 P 5500 1300
 F 0 "#PWR0103" H 5500 1050 50  0001 C CNN
@@ -93,7 +93,7 @@ F 3 "" H 5500 1300 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #PWR092
+L power:GND #PWR092
 U 1 1 60C2819F
 P 3000 700
 F 0 "#PWR092" H 3000 450 50  0001 C CNN
@@ -104,7 +104,7 @@ F 3 "" H 3000 700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #PWR093
+L power:GND #PWR093
 U 1 1 60C3B69F
 P 3000 1300
 F 0 "#PWR093" H 3000 1050 50  0001 C CNN
@@ -115,7 +115,7 @@ F 3 "" H 3000 1300 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #PWR0121
+L power:GND #PWR0121
 U 1 1 60C4ECB1
 P 11000 700
 F 0 "#PWR0121" H 11000 450 50  0001 C CNN
@@ -126,7 +126,7 @@ F 3 "" H 11000 700 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #PWR0123
+L power:GND #PWR0123
 U 1 1 60C766C7
 P 11000 4500
 F 0 "#PWR0123" H 11000 4250 50  0001 C CNN
@@ -137,7 +137,7 @@ F 3 "" H 11000 4500 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #PWR0124
+L power:GND #PWR0124
 U 1 1 60C76A62
 P 11000 4600
 F 0 "#PWR0124" H 11000 4350 50  0001 C CNN
@@ -148,7 +148,7 @@ F 3 "" H 11000 4600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #PWR0114
+L power:GND #PWR0114
 U 1 1 60B95416
 P 8300 2400
 F 0 "#PWR0114" H 8300 2150 50  0001 C CNN
@@ -159,7 +159,7 @@ F 3 "" H 8300 2400 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:+2V5-power #PWR0126
+L power:+2V5 #PWR0126
 U 1 1 60BAA35F
 P 11500 3400
 F 0 "#PWR0126" H 11500 3250 50  0001 C CNN
@@ -170,7 +170,7 @@ F 3 "" H 11500 3400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #PWR0115
+L power:GND #PWR0115
 U 1 1 60E47FA9
 P 8350 3400
 F 0 "#PWR0115" H 8350 3150 50  0001 C CNN
@@ -181,7 +181,7 @@ F 3 "" H 8350 3400 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_US-Device R56
+L Device:R_US R56
 U 1 1 60EE2D9A
 P 3050 7450
 F 0 "R56" V 3100 7600 59  0000 L BNN
@@ -195,7 +195,7 @@ F 6 "1%" H 3100 7700 50  0001 C CNN "Tolerance"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #GND067
+L power:GND #GND067
 U 1 1 60EE2DB8
 P 3900 8050
 F 0 "#GND067" H 3900 8050 50  0001 C CNN
@@ -206,7 +206,7 @@ F 3 "" H 3900 8050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #GND065
+L power:GND #GND065
 U 1 1 60EE2DCA
 P 3550 8050
 F 0 "#GND065" H 3550 8050 50  0001 C CNN
@@ -217,7 +217,7 @@ F 3 "" H 3550 8050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_Small_US-Device R58
+L Device:R_Small_US R58
 U 1 1 60EE2DD6
 P 3550 7850
 F 0 "R58" H 3350 7950 59  0000 L BNN
@@ -231,7 +231,7 @@ F 6 "1%" H 3350 8050 50  0001 C CNN "Tolerance"
 	-1   0    0    1   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:+1V8-power #PWR091
+L power:+1V8 #PWR091
 U 1 1 60EE2E33
 P 2950 7350
 F 0 "#PWR091" H 2950 7200 50  0001 C CNN
@@ -242,7 +242,7 @@ F 3 "" H 2950 7350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:+1V8-power #PWR094
+L power:+1V8 #PWR094
 U 1 1 60EE2E39
 P 3250 7450
 F 0 "#PWR094" H 3250 7300 50  0001 C CNN
@@ -253,7 +253,7 @@ F 3 "" H 3250 7450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_US-Device R75
+L Device:R_US R75
 U 1 1 611AF4C0
 P 11150 2400
 F 0 "R75" V 11150 2500 59  0000 L BNN
@@ -267,7 +267,7 @@ F 6 "1%" H 11150 2600 50  0001 C CNN "Tolerance"
 	0    1    1    0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:+2V5-power #PWR0125
+L power:+2V5 #PWR0125
 U 1 1 611AF4C6
 P 11400 2400
 F 0 "#PWR0125" H 11400 2250 50  0001 C CNN
@@ -278,7 +278,7 @@ F 3 "" H 11400 2400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #GND068
+L power:GND #GND068
 U 1 1 60EE2DDC
 P 4300 8050
 F 0 "#GND068" H 4300 8050 50  0001 C CNN
@@ -289,7 +289,7 @@ F 3 "" H 4300 8050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:QWIIC_CONNECTORJS-1MM-SparkFun-Connectors J?
+L SparkFun-Connectors:QWIIC_CONNECTORJS-1MM J?
 U 1 1 61945A6C
 P 10850 6000
 AR Path="/6095A38A/61945A6C" Ref="J?"  Part="1" 
@@ -304,7 +304,7 @@ F 5 "PRT-14417" H 10713 6478 50  0001 C CNN "Manf#"
 	0    1    1    0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #GND?
+L power:GND #GND?
 U 1 1 61945A73
 P 10850 6150
 AR Path="/6095A38A/61945A73" Ref="#GND?"  Part="1" 
@@ -317,7 +317,7 @@ F 3 "" H 10850 6150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:+3V3-power #PWR?
+L power:+3V3 #PWR?
 U 1 1 61945A7A
 P 10950 6150
 AR Path="/6095A38A/61945A7A" Ref="#PWR?"  Part="1" 
@@ -330,7 +330,7 @@ F 3 "" H 10950 6150 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:+3V3-power #PWR?
+L power:+3V3 #PWR?
 U 1 1 61945A8A
 P 11550 6300
 AR Path="/6095A38A/61945A8A" Ref="#PWR?"  Part="1" 
@@ -343,7 +343,7 @@ F 3 "" H 11550 6300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:+3V3-power #PWR?
+L power:+3V3 #PWR?
 U 1 1 61945A9B
 P 11900 6300
 AR Path="/6095A38A/61945A9B" Ref="#PWR?"  Part="1" 
@@ -356,7 +356,7 @@ F 3 "" H 11900 6300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:+3V3-power #PWR0108
+L power:+3V3 #PWR0108
 U 1 1 61C65808
 P 6050 3650
 F 0 "#PWR0108" H 6050 3500 50  0001 C CNN
@@ -367,7 +367,7 @@ F 3 "" H 6050 3650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:+3V3-power #PWR0110
+L power:+3V3 #PWR0110
 U 1 1 61C65815
 P 6450 3750
 F 0 "#PWR0110" H 6450 3600 50  0001 C CNN
@@ -378,7 +378,7 @@ F 3 "" H 6450 3750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:+3V3-power #PWR0112
+L power:+3V3 #PWR0112
 U 1 1 61C6581D
 P 6800 3850
 F 0 "#PWR0112" H 6800 3700 50  0001 C CNN
@@ -389,7 +389,7 @@ F 3 "" H 6800 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:+3V3-power #PWR0113
+L power:+3V3 #PWR0113
 U 1 1 61C65824
 P 7200 3950
 F 0 "#PWR0113" H 7200 3800 50  0001 C CNN
@@ -400,7 +400,7 @@ F 3 "" H 7200 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #GND060
+L power:GND #GND060
 U 1 1 60EE2DA0
 P 1000 7450
 F 0 "#GND060" H 1000 7450 50  0001 C CNN
@@ -411,7 +411,7 @@ F 3 "" H 1000 7450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:NLSX3018DTR2G-covg-kicad U23
+L covg-kicad:NLSX3018DTR2G U23
 U 1 1 60EE2DA6
 P 2900 6950
 F 0 "U23" H 3714 7309 69  0000 L BNN
@@ -423,7 +423,7 @@ F 4 "NLSX3018DTR2G" H 3714 7409 50  0001 C CNN "Manf#"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:PCA9306-Interface U22
+L Interface:PCA9306 U22
 U 1 1 61E5C8D1
 P 1600 5900
 F 0 "U22" H 1750 5450 50  0000 C CNN
@@ -436,7 +436,7 @@ F 5 "PCA9306DTR2G" H 1750 5550 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:+3V3-power #PWR087
+L power:+3V3 #PWR087
 U 1 1 61FED4C7
 P 1700 5350
 F 0 "#PWR087" H 1700 5200 50  0001 C CNN
@@ -447,7 +447,7 @@ F 3 "" H 1700 5350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:+3V3-power #PWR089
+L power:+3V3 #PWR089
 U 1 1 6205CC79
 P 2300 5650
 F 0 "#PWR089" H 2300 5500 50  0001 C CNN
@@ -458,7 +458,7 @@ F 3 "" H 2300 5650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:+3V3-power #PWR090
+L power:+3V3 #PWR090
 U 1 1 6205CC80
 P 2500 5750
 F 0 "#PWR090" H 2500 5600 50  0001 C CNN
@@ -469,7 +469,7 @@ F 3 "" H 2500 5750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_Small_US-Device R51
+L Device:R_Small_US R51
 U 1 1 6210A196
 P 700 5900
 F 0 "R51" H 550 5900 39  0000 L BNN
@@ -483,7 +483,7 @@ F 6 "1%" H 550 6050 50  0001 C CNN "Tolerance"
 	1    0    0    1   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:+1V8-power #PWR082
+L power:+1V8 #PWR082
 U 1 1 6215E1A8
 P 850 5650
 F 0 "#PWR082" H 850 5500 50  0001 C CNN
@@ -494,7 +494,7 @@ F 3 "" H 850 5650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:+1V8-power #PWR078
+L power:+1V8 #PWR078
 U 1 1 6215E3FA
 P 700 5650
 F 0 "#PWR078" H 700 5500 50  0001 C CNN
@@ -505,7 +505,7 @@ F 3 "" H 700 5650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #GND062
+L power:GND #GND062
 U 1 1 6217ADF8
 P 1600 6450
 F 0 "#GND062" H 1600 6450 50  0001 C CNN
@@ -516,7 +516,7 @@ F 3 "" H 1600 6450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_Small_US-Device R53
+L Device:R_Small_US R53
 U 1 1 621B3B8D
 P 2100 5700
 F 0 "R53" H 2150 5650 39  0000 L BNN
@@ -530,7 +530,7 @@ F 6 "1%" H 2150 5700 50  0001 C CNN "Tolerance"
 	-1   0    0    1   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:+3V3-power #PWR088
+L power:+3V3 #PWR088
 U 1 1 621B410B
 P 2100 5550
 F 0 "#PWR088" H 2100 5400 50  0001 C CNN
@@ -541,7 +541,7 @@ F 3 "" H 2100 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:+2V5-power #PWR079
+L power:+2V5 #PWR079
 U 1 1 6236F939
 P 800 7350
 F 0 "#PWR079" H 800 7200 50  0001 C CNN
@@ -552,7 +552,7 @@ F 3 "" H 800 7350 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #PWR0122
+L power:GND #PWR0122
 U 1 1 625A00C5
 P 11000 1300
 F 0 "#PWR0122" H 11000 1050 50  0001 C CNN
@@ -563,7 +563,7 @@ F 3 "" H 11000 1300 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:OPALKELLY_XEM7310-covg-kicad OK1
+L covg-kicad:OPALKELLY_XEM7310 OK1
 U 2 1 DA224999
 P 5000 2600
 F 0 "OK1" H 5200 4610 70  0000 R BNN
@@ -575,7 +575,7 @@ F 4 "BTE-040-02-F-D-A" H 5200 4710 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:Conn_Coaxial-Connector J17
+L Connector:Conn_Coaxial J17
 U 1 1 62797B03
 P 4250 4500
 F 0 "J17" H 4350 4475 50  0000 L CNN
@@ -587,7 +587,7 @@ F 4 "WM26450" H 4250 4500 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #GND066
+L power:GND #GND066
 U 1 1 627B4346
 P 4250 4750
 F 0 "#GND066" H 4250 4750 50  0001 C CNN
@@ -598,7 +598,7 @@ F 3 "" H 4250 4750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:TCA9555DBR-Interface_Expansion U26
+L Interface_Expansion:TCA9555DBR U26
 U 1 1 62AE4241
 P 6450 5800
 F 0 "U26" H 6650 6850 50  0000 C CNN
@@ -611,7 +611,7 @@ F 5 "TCA9555DBT" H 6450 5800 50  0001 C CNN "Alternate"
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:+3V3-power #PWR0111
+L power:+3V3 #PWR0111
 U 1 1 62B538C1
 P 6450 4600
 F 0 "#PWR0111" H 6450 4450 50  0001 C CNN
@@ -622,7 +622,7 @@ F 3 "" H 6450 4600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #GND071
+L power:GND #GND071
 U 1 1 62BA3427
 P 6450 6950
 F 0 "#GND071" H 6450 6950 50  0001 C CNN
@@ -633,7 +633,7 @@ F 3 "" H 6450 6950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #GND070
+L power:GND #GND070
 U 1 1 62BF4A0F
 P 5600 6650
 F 0 "#GND070" H 5600 6650 50  0001 C CNN
@@ -644,7 +644,7 @@ F 3 "" H 5600 6650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:TCA9555DBR-Interface_Expansion U27
+L Interface_Expansion:TCA9555DBR U27
 U 1 1 630499A2
 P 9200 5900
 F 0 "U27" H 9400 6950 50  0000 C CNN
@@ -657,7 +657,7 @@ F 5 "TCA9555DBT" H 9200 5900 50  0001 C CNN "Alternate"
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:+3V3-power #PWR0119
+L power:+3V3 #PWR0119
 U 1 1 630499AD
 P 9200 4750
 F 0 "#PWR0119" H 9200 4600 50  0001 C CNN
@@ -668,7 +668,7 @@ F 3 "" H 9200 4750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #GND072
+L power:GND #GND072
 U 1 1 630499BA
 P 8350 6750
 F 0 "#GND072" H 8350 6750 50  0001 C CNN
@@ -679,7 +679,7 @@ F 3 "" H 8350 6750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:+3V3-power #PWR0116
+L power:+3V3 #PWR0116
 U 1 1 630907D5
 P 8350 6500
 F 0 "#PWR0116" H 8350 6350 50  0001 C CNN
@@ -690,7 +690,7 @@ F 3 "" H 8350 6500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #GND073
+L power:GND #GND073
 U 1 1 6309157B
 P 9200 7050
 F 0 "#GND073" H 9200 7050 50  0001 C CNN
@@ -701,7 +701,7 @@ F 3 "" H 9200 7050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:+1V8-power #PWR085
+L power:+1V8 #PWR085
 U 1 1 61FECF4F
 P 1500 5350
 F 0 "#PWR085" H 1500 5200 50  0001 C CNN
@@ -712,7 +712,7 @@ F 3 "" H 1500 5350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:TXS0108EPW-Logic_LevelTranslator U24
+L Logic_LevelTranslator:TXS0108EPW U24
 U 1 1 6111EED6
 P 3500 5650
 F 0 "U24" H 3600 4950 50  0000 C CNN
@@ -724,7 +724,7 @@ F 4 "TXS0108EPWR" H 3600 5050 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:TXS0108EPW-Logic_LevelTranslator U25
+L Logic_LevelTranslator:TXS0108EPW U25
 U 1 1 611210B5
 P 4950 5650
 F 0 "U25" H 5100 4950 50  0000 C CNN
@@ -736,7 +736,7 @@ F 4 "TXS0108EPWR" H 5100 5050 50  0001 C CNN "Manf#"
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:+3V3-power #PWR095
+L power:+3V3 #PWR095
 U 1 1 611D5268
 P 3400 4900
 F 0 "#PWR095" H 3400 4750 50  0001 C CNN
@@ -747,7 +747,7 @@ F 3 "" H 3400 4900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:+3V3-power #PWR0102
+L power:+3V3 #PWR0102
 U 1 1 611F7B32
 P 5050 4900
 F 0 "#PWR0102" H 5050 4750 50  0001 C CNN
@@ -758,7 +758,7 @@ F 3 "" H 5050 4900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:+1V8-power #PWR0101
+L power:+1V8 #PWR0101
 U 1 1 6128240C
 P 4850 4900
 F 0 "#PWR0101" H 4850 4750 50  0001 C CNN
@@ -769,7 +769,7 @@ F 3 "" H 4850 4900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #GND064
+L power:GND #GND064
 U 1 1 616FD150
 P 3500 6450
 F 0 "#GND064" H 3500 6450 50  0001 C CNN
@@ -780,7 +780,7 @@ F 3 "" H 3500 6450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #GND069
+L power:GND #GND069
 U 1 1 61A9B07F
 P 4950 6450
 F 0 "#GND069" H 4950 6450 50  0001 C CNN
@@ -791,7 +791,7 @@ F 3 "" H 4950 6450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_US-Device R74
+L Device:R_US R74
 U 1 1 622A80DE
 P 8800 1200
 F 0 "R74" H 8650 1259 59  0000 L BNN
@@ -805,7 +805,7 @@ F 6 "" H 8650 1359 50  0001 C CNN "Tolerance"
 	0    1    1    0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:+3V3-power #PWR0118
+L power:+3V3 #PWR0118
 U 1 1 6236E13E
 P 9100 1200
 F 0 "#PWR0118" H 9100 1050 50  0001 C CNN
@@ -816,7 +816,7 @@ F 3 "" H 9100 1200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:+1V8-power #PWR0117
+L power:+1V8 #PWR0117
 U 1 1 6236F8E9
 P 8950 1000
 F 0 "#PWR0117" H 8950 850 50  0001 C CNN
@@ -827,7 +827,7 @@ F 3 "" H 8950 1000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_Small_US-Device R66
+L Device:R_Small_US R66
 U 1 1 60CF501E
 P 6200 1400
 F 0 "R66" V 6300 1350 59  0000 L BNN
@@ -841,7 +841,7 @@ F 6 "1%" H 6300 1450 50  0001 C CNN "Tolerance"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_Small_US-Device R70
+L Device:R_Small_US R70
 U 1 1 60D1DA3A
 P 6650 1800
 F 0 "R70" V 6750 1850 59  0000 L BNN
@@ -855,7 +855,7 @@ F 6 "1%" H 6750 1950 50  0001 C CNN "Tolerance"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:+3V3-power #PWR096
+L power:+3V3 #PWR096
 U 1 1 60FD67CA
 P 3550 3750
 F 0 "#PWR096" H 3550 3600 50  0001 C CNN
@@ -866,7 +866,7 @@ F 3 "" H 3550 3750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:+3V3-power #PWR098
+L power:+3V3 #PWR098
 U 1 1 60FD67D7
 P 3900 3850
 F 0 "#PWR098" H 3900 3700 50  0001 C CNN
@@ -877,7 +877,7 @@ F 3 "" H 3900 3850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:+3V3-power #PWR099
+L power:+3V3 #PWR099
 U 1 1 60FD67DE
 P 4250 3950
 F 0 "#PWR099" H 4250 3800 50  0001 C CNN
@@ -888,7 +888,7 @@ F 3 "" H 4250 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:+3V3-power #PWR0100
+L power:+3V3 #PWR0100
 U 1 1 60FD67E5
 P 4600 4050
 F 0 "#PWR0100" H 4600 3900 50  0001 C CNN
@@ -899,7 +899,7 @@ F 3 "" H 4600 4050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_Small_US-Device R57
+L Device:R_Small_US R57
 U 1 1 60FD67EC
 P 3550 3900
 F 0 "R57" H 3400 3950 39  0000 L BNN
@@ -913,7 +913,7 @@ F 6 "1%" H 3400 4050 50  0001 C CNN "Tolerance"
 	-1   0    0    1   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #GND059
+L power:GND #GND059
 U 1 1 60E25DCB
 P 750 7850
 F 0 "#GND059" H 750 7850 50  0001 C CNN
@@ -924,7 +924,7 @@ F 3 "" H 750 7850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:Conn_02x12_Counter_Clockwise-Connector_Generic J15
+L Connector_Generic:Conn_02x12_Counter_Clockwise J15
 U 1 1 60E5007E
 P 1150 2350
 F 0 "J15" H 1200 3100 50  0000 C CNN
@@ -935,7 +935,7 @@ F 3 "~" H 1150 2350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #PWR084
+L power:GND #PWR084
 U 1 1 612866BE
 P 1500 1950
 F 0 "#PWR084" H 1500 1700 50  0001 C CNN
@@ -946,7 +946,7 @@ F 3 "" H 1500 1950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #PWR081
+L power:GND #PWR081
 U 1 1 612B5BE8
 P 900 1950
 F 0 "#PWR081" H 900 1700 50  0001 C CNN
@@ -957,7 +957,7 @@ F 3 "" H 900 1950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:+5V-power #PWR097
+L power:+5V #PWR097
 U 1 1 615FD112
 P 3600 4900
 F 0 "#PWR097" H 3600 4750 50  0001 C CNN
@@ -1982,7 +1982,7 @@ NoConn ~ 8300 800
 NoConn ~ 8300 900 
 NoConn ~ 3000 7850
 $Comp
-L covg_daq_v2-rescue:R_Small_US-Device R52
+L Device:R_Small_US R52
 U 1 1 60D03DB8
 P 850 5800
 F 0 "R52" H 900 5750 39  0000 L BNN
@@ -1996,7 +1996,7 @@ F 6 "1%" H 700 5950 50  0001 C CNN "Tolerance"
 	1    0    0    1   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_Small_US-Device R54
+L Device:R_Small_US R54
 U 1 1 60D041C8
 P 2300 5800
 F 0 "R54" H 2300 5700 39  0000 L BNN
@@ -2010,7 +2010,7 @@ F 6 "1%" H 2150 5950 50  0001 C CNN "Tolerance"
 	1    0    0    1   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_Small_US-Device R55
+L Device:R_Small_US R55
 U 1 1 60D04617
 P 2500 5900
 F 0 "R55" H 2550 5900 39  0000 L BNN
@@ -2024,7 +2024,7 @@ F 6 "1%" H 2350 6050 50  0001 C CNN "Tolerance"
 	1    0    0    1   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_Small_US-Device R60
+L Device:R_Small_US R60
 U 1 1 60D04A1D
 P 3900 7750
 F 0 "R60" H 3700 7850 59  0000 L BNN
@@ -2038,7 +2038,7 @@ F 6 "1%" H 3700 7950 50  0001 C CNN "Tolerance"
 	-1   0    0    1   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_Small_US-Device R62
+L Device:R_Small_US R62
 U 1 1 60D04F7C
 P 4300 7650
 F 0 "R62" H 4100 7750 59  0000 L BNN
@@ -2052,7 +2052,7 @@ F 6 "1%" H 4100 7850 50  0001 C CNN "Tolerance"
 	-1   0    0    1   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_Small_US-Device R77
+L Device:R_Small_US R77
 U 1 1 60D063BB
 P 11550 6500
 F 0 "R77" H 11400 6550 39  0000 L BNN
@@ -2066,7 +2066,7 @@ F 6 "1%" H 11400 6650 50  0001 C CNN "Tolerance"
 	1    0    0    1   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_Small_US-Device R78
+L Device:R_Small_US R78
 U 1 1 60D067BE
 P 11900 6500
 F 0 "R78" H 11750 6550 39  0000 L BNN
@@ -2088,7 +2088,7 @@ Wire Wire Line
 Wire Wire Line
 	11900 6600 11900 6850
 $Comp
-L covg_daq_v2-rescue:R_Small_US-Device R67
+L Device:R_Small_US R67
 U 1 1 60DD9B69
 P 6200 1600
 F 0 "R67" V 6300 1550 59  0000 L BNN
@@ -2102,7 +2102,7 @@ F 6 "1%" H 6300 1650 50  0001 C CNN "Tolerance"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_Small_US-Device R68
+L Device:R_Small_US R68
 U 1 1 60DD9E4E
 P 6200 1900
 F 0 "R68" V 6300 1950 59  0000 L BNN
@@ -2116,7 +2116,7 @@ F 6 "1%" H 6300 2050 50  0001 C CNN "Tolerance"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_US-Device R73
+L Device:R_US R73
 U 1 1 60DDA349
 P 8600 1000
 F 0 "R73" H 8450 1059 59  0000 L BNN
@@ -2130,7 +2130,7 @@ F 6 "" H 8450 1159 50  0001 C CNN "Tolerance"
 	0    1    1    0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_US-Device R76
+L Device:R_US R76
 U 1 1 60DDA8E4
 P 11150 3400
 F 0 "R76" V 11150 3500 59  0000 L BNN
@@ -2144,7 +2144,7 @@ F 6 "1%" H 11150 3600 50  0001 C CNN "Tolerance"
 	0    1    1    0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_Small_US-Device R65
+L Device:R_Small_US R65
 U 1 1 60DDAE59
 P 6050 3800
 F 0 "R65" H 6050 3800 39  0000 L BNN
@@ -2158,7 +2158,7 @@ F 6 "1%" H 5900 3950 50  0001 C CNN "Tolerance"
 	1    0    0    1   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_Small_US-Device R69
+L Device:R_Small_US R69
 U 1 1 60DDBA90
 P 6450 3900
 F 0 "R69" H 6350 3950 39  0000 L BNN
@@ -2172,7 +2172,7 @@ F 6 "1%" H 6300 4050 50  0001 C CNN "Tolerance"
 	1    0    0    1   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_Small_US-Device R71
+L Device:R_Small_US R71
 U 1 1 60DDBDF1
 P 6800 4000
 F 0 "R71" H 6650 4050 39  0000 L BNN
@@ -2186,7 +2186,7 @@ F 6 "1%" H 6650 4150 50  0001 C CNN "Tolerance"
 	1    0    0    1   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_Small_US-Device R72
+L Device:R_Small_US R72
 U 1 1 60DDC16C
 P 7200 4100
 F 0 "R72" H 7050 4150 39  0000 L BNN
@@ -2200,7 +2200,7 @@ F 6 "1%" H 7050 4250 50  0001 C CNN "Tolerance"
 	1    0    0    1   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_Small_US-Device R61
+L Device:R_Small_US R61
 U 1 1 60DDC9FF
 P 4250 4100
 F 0 "R61" H 4250 4100 39  0000 L BNN
@@ -2214,7 +2214,7 @@ F 6 "1%" H 4100 4250 50  0001 C CNN "Tolerance"
 	1    0    0    1   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_Small_US-Device R59
+L Device:R_Small_US R59
 U 1 1 60DDD4FC
 P 3900 4000
 F 0 "R59" H 3900 4000 39  0000 L BNN
@@ -2228,7 +2228,7 @@ F 6 "1%" H 3750 4150 50  0001 C CNN "Tolerance"
 	1    0    0    1   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_Small_US-Device R63
+L Device:R_Small_US R63
 U 1 1 60DDD963
 P 4600 4200
 F 0 "R63" H 4600 4200 39  0000 L BNN
@@ -2316,7 +2316,7 @@ GPIO2
 Text HLabel 3350 3600 1    39   Output ~ 0
 GPIO3
 $Comp
-L covg_daq_v2-rescue:24AA025UID-covg-kicad U21
+L covg-kicad:24AA025UID U21
 U 1 1 60CE7EFE
 P 1200 3900
 F 0 "U21" H 1300 4250 50  0000 C CNN
@@ -2327,7 +2327,7 @@ F 3 "https://ww1.microchip.com/downloads/en/DeviceDoc/20005202A.pdf" H 1200 3900
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:+3V3-power #PWR083
+L power:+3V3 #PWR083
 U 1 1 60CE899F
 P 1200 3500
 F 0 "#PWR083" H 1200 3350 50  0001 C CNN
@@ -2340,7 +2340,7 @@ $EndComp
 Wire Wire Line
 	1200 3500 1200 3600
 $Comp
-L covg_daq_v2-rescue:GND-power #GND061
+L power:GND #GND061
 U 1 1 60D1BC8F
 P 1200 4250
 F 0 "#GND061" H 1200 4250 50  0001 C CNN
@@ -2372,7 +2372,7 @@ Connection ~ 700  3850
 Wire Wire Line
 	700  3850 700  3950
 $Comp
-L covg_daq_v2-rescue:GND-power #GND058
+L power:GND #GND058
 U 1 1 60E1D852
 P 700 4000
 F 0 "#GND058" H 700 4000 50  0001 C CNN
@@ -2470,7 +2470,7 @@ Wire Wire Line
 Wire Wire Line
 	1450 2550 1800 2550
 $Comp
-L covg_daq_v2-rescue:+5V-power #PWR080
+L power:+5V #PWR080
 U 1 1 61D89F77
 P 850 2850
 F 0 "#PWR080" H 850 2700 50  0001 C CNN
@@ -2483,7 +2483,7 @@ $EndComp
 Wire Wire Line
 	850  2850 950  2850
 $Comp
-L covg_daq_v2-rescue:+1V8-power #PWR086
+L power:+1V8 #PWR086
 U 1 1 61DBB876
 P 1650 2850
 F 0 "#PWR086" H 1650 2700 50  0001 C CNN
@@ -2530,7 +2530,7 @@ Wire Wire Line
 	10900 3800 11200 3800
 NoConn ~ 11200 3800
 $Comp
-L covg_daq_v2-rescue:TestPoint-Connector TP1
+L Connector:TestPoint TP1
 U 1 1 6238D6B0
 P 3250 900
 F 0 "TP1" H 3308 1018 50  0000 L CNN
@@ -2541,7 +2541,7 @@ F 3 "~" H 3450 900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:TestPoint-Connector TP2
+L Connector:TestPoint TP2
 U 1 1 6238E453
 P 3700 1000
 F 0 "TP2" H 3758 1118 50  0000 L CNN
@@ -2552,7 +2552,7 @@ F 3 "~" H 3900 1000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:TestPoint-Connector TP3
+L Connector:TestPoint TP3
 U 1 1 6238E8A9
 P 4150 1100
 F 0 "TP3" H 4208 1218 50  0000 L CNN
@@ -2573,7 +2573,7 @@ Wire Wire Line
 Wire Wire Line
 	2900 1200 4600 1200
 $Comp
-L covg_daq_v2-rescue:TestPoint-Connector TP4
+L Connector:TestPoint TP4
 U 1 1 624C8E5D
 P 4600 950
 F 0 "TP4" V 4795 1022 50  0000 C CNN
@@ -2586,7 +2586,7 @@ $EndComp
 Wire Wire Line
 	5400 1000 5800 1000
 $Comp
-L covg_daq_v2-rescue:TestPoint-Connector TP5
+L Connector:TestPoint TP5
 U 1 1 624FD48A
 P 5800 1000
 F 0 "TP5" H 5858 1118 50  0000 L CNN
@@ -2604,7 +2604,7 @@ NoConn ~ 5400 3600
 Wire Wire Line
 	5400 1100 6350 1100
 $Comp
-L covg_daq_v2-rescue:TestPoint-Connector TP6
+L Connector:TestPoint TP6
 U 1 1 6263C3C8
 P 6350 1100
 F 0 "TP6" H 6408 1218 50  0000 L CNN
@@ -2615,7 +2615,7 @@ F 3 "~" H 6550 1100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_US-Device R64
+L Device:R_US R64
 U 1 1 6263C7FF
 P 5850 700
 F 0 "R64" H 5700 759 59  0000 L BNN
@@ -2629,7 +2629,7 @@ F 6 "" H 5700 859 50  0001 C CNN "Tolerance"
 	0    1    1    0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:+3V3-power #PWR0109
+L power:+3V3 #PWR0109
 U 1 1 6263D161
 P 6100 700
 F 0 "#PWR0109" H 6100 550 50  0001 C CNN
@@ -2656,7 +2656,7 @@ Wire Wire Line
 Wire Wire Line
 	3000 4600 2900 4600
 $Comp
-L covg_daq_v2-rescue:Conn_Coaxial-Connector J16
+L Connector:Conn_Coaxial J16
 U 1 1 629CC314
 P 1650 4800
 F 0 "J16" H 1750 4750 50  0000 L CNN
@@ -2668,7 +2668,7 @@ F 4 "WM26450" V 1650 4800 50  0001 C CNN "Manf#"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:TestPoint-Connector TP7
+L Connector:TestPoint TP7
 U 1 1 62A37AFA
 P 11450 1000
 F 0 "TP7" H 11508 1118 50  0000 L CNN
@@ -2681,7 +2681,7 @@ $EndComp
 Wire Wire Line
 	10900 1000 11450 1000
 $Comp
-L covg_daq_v2-rescue:OPALKELLY_XEM7310-covg-kicad OK1
+L covg-kicad:OPALKELLY_XEM7310 OK1
 U 1 1 DA224995
 P 2500 2600
 F 0 "OK1" H 2700 4610 70  0000 R BNN
@@ -2694,6 +2694,10 @@ F 4 "BTE-040-02-F-D-A" H 2700 4710 50  0001 C CNN "Manf#"
 $EndComp
 Text Notes 5950 350  0    50   ~ 0
 FPGA power: standard “canon-style” 2.1mm / 5.5mm jack.  The outer ring is connected to DGND.  The center pin is connected to +VDC.
+Text HLabel 11300 1100 2    50   Input ~ 0
+XADC_VN
+Text HLabel 11300 1200 2    50   Input ~ 0
+XADC_VP
 Text HLabel 8950 2200 2    50   BiDi ~ 0
 GP_LVDS_2P
 Text HLabel 8950 2300 2    50   BiDi ~ 0
@@ -2711,7 +2715,7 @@ GP_LVDS_3P
 Text HLabel 11500 1500 2    50   BiDi ~ 0
 GP_LVDS_3N
 $Comp
-L covg_daq_v2-rescue:R_Small_US-Device R288
+L Device:R_Small_US R288
 U 1 1 60E4C9C5
 P 3700 4500
 F 0 "R288" H 3700 4500 39  0000 L BNN
@@ -2725,7 +2729,7 @@ F 6 "1%" H 3550 4650 50  0001 C CNN "Tolerance"
 	0    -1   1    0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_Small_US-Device R289
+L Device:R_Small_US R289
 U 1 1 60E4D6C0
 P 4050 4600
 F 0 "R289" H 4050 4600 39  0000 L BNN
@@ -2739,7 +2743,7 @@ F 6 "1%" H 3900 4750 50  0001 C CNN "Tolerance"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #GND0266
+L power:GND #GND0266
 U 1 1 60E4DEC0
 P 4050 4750
 F 0 "#GND0266" H 4050 4750 50  0001 C CNN
@@ -2757,7 +2761,7 @@ Wire Wire Line
 	3800 4500 4050 4500
 Connection ~ 4050 4500
 $Comp
-L covg_daq_v2-rescue:R_Small_US-Device R287
+L Device:R_Small_US R287
 U 1 1 60FD8365
 P 2100 4800
 F 0 "R287" H 2100 4800 39  0000 L BNN
@@ -2771,7 +2775,7 @@ F 6 "1%" H 1950 4950 50  0001 C CNN "Tolerance"
 	0    -1   1    0   
 $EndComp
 $Comp
-L covg_daq_v2-rescue:R_Small_US-Device R286
+L Device:R_Small_US R286
 U 1 1 60FD9076
 P 1900 4900
 F 0 "R286" H 1900 4900 39  0000 L BNN
@@ -2785,7 +2789,7 @@ F 6 "1%" H 1750 5050 50  0001 C CNN "Tolerance"
 	-1   0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #GND0267
+L power:GND #GND0267
 U 1 1 61038734
 P 1650 5050
 F 0 "#GND0267" H 1650 5050 50  0001 C CNN
@@ -2796,7 +2800,7 @@ F 3 "" H 1650 5050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L covg_daq_v2-rescue:GND-power #GND0268
+L power:GND #GND0268
 U 1 1 61038C68
 P 1900 5050
 F 0 "#GND0268" H 1900 5050 50  0001 C CNN
@@ -2820,7 +2824,7 @@ Connection ~ 1900 4800
 Wire Wire Line
 	2200 4800 3000 4800
 $Comp
-L covg_daq_v2-rescue:+3V3-power #PWR0260
+L power:+3V3 #PWR0260
 U 1 1 612959F6
 P 1600 2950
 F 0 "#PWR0260" H 1600 2800 50  0001 C CNN
@@ -2833,7 +2837,7 @@ $EndComp
 Wire Wire Line
 	1600 2950 1450 2950
 $Comp
-L covg_daq_v2-rescue:GND-power #PWR0261
+L power:GND #PWR0261
 U 1 1 612C774D
 P 850 2950
 F 0 "#PWR0261" H 850 2700 50  0001 C CNN
@@ -2873,8 +2877,6 @@ Text HLabel 8250 4600 2    50   Input ~ 0
 A1_DCO_N
 Text HLabel 8250 4500 2    50   Input ~ 0
 A1_DCO_P
-NoConn ~ 11300 1100
-NoConn ~ 11300 1200
 Wire Bus Line
 	7600 5500 7600 5800
 Wire Bus Line
