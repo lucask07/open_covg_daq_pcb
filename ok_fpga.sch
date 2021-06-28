@@ -2694,10 +2694,6 @@ F 4 "BTE-040-02-F-D-A" H 2700 4710 50  0001 C CNN "Manf#"
 $EndComp
 Text Notes 5950 350  0    50   ~ 0
 FPGA power: standard “canon-style” 2.1mm / 5.5mm jack.  The outer ring is connected to DGND.  The center pin is connected to +VDC.
-Text HLabel 11300 1100 2    50   Input ~ 0
-XADC_VN
-Text HLabel 11300 1200 2    50   Input ~ 0
-XADC_VP
 Text HLabel 8950 2200 2    50   BiDi ~ 0
 GP_LVDS_2P
 Text HLabel 8950 2300 2    50   BiDi ~ 0
@@ -2877,6 +2873,8 @@ Text HLabel 8250 4600 2    50   Input ~ 0
 A1_DCO_N
 Text HLabel 8250 4500 2    50   Input ~ 0
 A1_DCO_P
+NoConn ~ 11300 1100
+NoConn ~ 11300 1200
 Wire Bus Line
 	7600 5500 7600 5800
 Wire Bus Line
