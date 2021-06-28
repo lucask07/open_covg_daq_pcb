@@ -924,11 +924,11 @@ F 3 "" H 750 7850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x12_Counter_Clockwise J15
+L Connector_Generic:Conn_02x12_Odd_Even J15
 U 1 1 60E5007E
 P 1150 2350
 F 0 "J15" H 1200 3100 50  0000 C CNN
-F 1 "Conn_02x12_Counter_Clockwise" H 1200 3000 50  0000 C CNN
+F 1 "Conn_02x12_Odd_Even" H 1200 3000 50  0000 C CNN
 F 2 "Connector_PinHeader_2.00mm:PinHeader_2x12_P2.00mm_Horizontal" H 1150 2350 50  0001 C CNN
 F 3 "~" H 1150 2350 50  0001 C CNN
 	1    1150 2350
@@ -973,19 +973,19 @@ Text HLabel 3000 2800 2    50   Output ~ 0
 D0_SDI
 Text HLabel 3000 2900 2    50   Output ~ 0
 D0_SCLK
-Text HLabel 11100 3000 2    50   Input ~ 0
+Text HLabel 8400 3000 2    50   Input ~ 0
 A0_D_N
 Text HLabel 11100 2600 2    50   Input ~ 0
 A0_DCO_N
-Text HLabel 11100 1700 2    50   Output ~ 0
+Text HLabel 11100 2100 2    50   Output ~ 0
 A2_CNV_N
-Text HLabel 11100 1900 2    50   Input ~ 0
+Text HLabel 8400 2300 2    50   Input ~ 0
 A2_D_N
 Text HLabel 11100 2300 2    50   Input ~ 0
 A2_DCO_N
-Text HLabel 11100 2900 2    50   Input ~ 0
+Text HLabel 8400 2900 2    50   Input ~ 0
 A0_D_P
-Text HLabel 11100 1800 2    50   Input ~ 0
+Text HLabel 8400 2200 2    50   Input ~ 0
 A2_D_P
 Text HLabel 11100 2200 2    50   Input ~ 0
 A2_DCO_P
@@ -993,15 +993,15 @@ Text HLabel 8300 3800 2    50   Output ~ 0
 A1_CLK_P
 Text HLabel 11100 2500 2    50   Input ~ 0
 A0_DCO_P
-Text HLabel 11100 1600 2    50   Output ~ 0
+Text HLabel 11100 2000 2    50   Output ~ 0
 A2_CNV_P
-Text HLabel 11100 2800 2    50   Output ~ 0
+Text HLabel 8400 2800 2    50   Output ~ 0
 A0_CNV_N
-Text HLabel 11100 2700 2    50   Output ~ 0
+Text HLabel 8400 2700 2    50   Output ~ 0
 A0_CNV_P
-Text HLabel 11100 3200 2    50   Output ~ 0
+Text HLabel 8400 3200 2    50   Output ~ 0
 A0_CLK_N
-Text HLabel 11100 2100 2    50   Output ~ 0
+Text HLabel 8400 2600 2    50   Output ~ 0
 A2_CLK_N
 Text HLabel 8300 3500 2    50   Output ~ 0
 A1_CNV_N
@@ -1009,9 +1009,9 @@ Text HLabel 8300 3700 2    50   Input ~ 0
 A1_D_N
 Text HLabel 8300 3900 2    50   Output ~ 0
 A1_CLK_N
-Text HLabel 11100 3100 2    50   Output ~ 0
+Text HLabel 8400 3100 2    50   Output ~ 0
 A0_CLK_P
-Text HLabel 11100 2000 2    50   Output ~ 0
+Text HLabel 8400 2500 2    50   Output ~ 0
 A2_CLK_P
 Text HLabel 8300 3300 2    50   Output ~ 0
 A1_CNV_P
@@ -1045,13 +1045,13 @@ Text HLabel 3000 2500 2    50   Output ~ 0
 D2_SDI
 Text HLabel 3000 2600 2    50   Output ~ 0
 D2_SCLK
-Text Label 8400 2900 0    50   ~ 0
+Text Label 11100 2900 0    50   ~ 0
 A0_EN0_HV
-Text Label 8400 3000 0    50   ~ 0
+Text Label 11100 3000 0    50   ~ 0
 A1_EN0_HV
-Text Label 8400 3100 0    50   ~ 0
+Text Label 11100 3100 0    50   ~ 0
 A2_EN0_HV
-Text Label 8400 3200 0    50   ~ 0
+Text Label 11100 3200 0    50   ~ 0
 A3_EN0_HV
 Text Notes 550  750  0    50   ~ 0
 Bank 13: 3.3V always\nMC1 64 and 66-76  MC2 64 and 66-76 \n(24 total)
@@ -1152,57 +1152,11 @@ QW_SDA
 Text Label 5450 5100 0    50   ~ 0
 QW_SCL
 Text Label 7150 5000 0    50   ~ 0
-G0_DAC0
-Text Label 7150 5100 0    50   ~ 0
-G0_DAC1
-Text Label 7150 5200 0    50   ~ 0
-G0_DAC2
-Text Label 7150 5300 0    50   ~ 0
-G0_DAC3
-Text Label 7150 5400 0    50   ~ 0
-G1_DAC0
-Text Label 7150 5500 0    50   ~ 0
-G1_DAC1
-Text Label 7150 5600 0    50   ~ 0
-G1_DAC2
-Text Label 7150 5700 0    50   ~ 0
-G1_DAC3
-Text Label 7150 6600 0    50   ~ 0
-G3_DAC3
-Text Label 7150 6500 0    50   ~ 0
-G3_DAC2
-Text Label 7150 6400 0    50   ~ 0
-G3_DAC1
-Text Label 7150 6300 0    50   ~ 0
-G3_DAC0
-Text Label 7150 6200 0    50   ~ 0
-G2_DAC3
-Text Label 7150 6100 0    50   ~ 0
-G2_DAC2
-Text Label 7150 6000 0    50   ~ 0
-G2_DAC1
-Text Label 7150 5900 0    50   ~ 0
-G2_DAC0
+DAC0_G0
 Text Label 8200 5100 0    50   ~ 0
 QW_SDA
 Text Label 8200 5200 0    50   ~ 0
 QW_SCL
-Text Label 9900 5100 0    50   ~ 0
-G4_DAC0
-Text Label 9900 5200 0    50   ~ 0
-G4_DAC1
-Text Label 9900 5300 0    50   ~ 0
-G4_DAC2
-Text Label 9900 5400 0    50   ~ 0
-G4_DAC3
-Text Label 9900 5500 0    50   ~ 0
-G5_DAC0
-Text Label 9900 5600 0    50   ~ 0
-G5_DAC1
-Text Label 9900 5700 0    50   ~ 0
-G5_DAC2
-Text Label 9900 5800 0    50   ~ 0
-G5_DAC3
 Text Label 3000 3800 0    50   ~ 0
 LS_SCL
 Text Label 5500 3700 0    50   ~ 0
@@ -1212,17 +1166,7 @@ LS_SDA
 Text Label 2000 5900 0    50   ~ 0
 LS_SCL
 Text HLabel 7600 5250 2    50   Output ~ 0
-G0_DAC[0..3]
-Text HLabel 7600 5650 2    50   Output ~ 0
-G1_DAC[0..3]
-Text HLabel 7600 6100 2    50   Output ~ 0
-G2_DAC[0..3]
-Text HLabel 7600 6550 2    50   Output ~ 0
-G3_DAC[0..3]
-Text HLabel 10350 5600 2    50   Output ~ 0
-G5_DAC[0..3]
-Text HLabel 10350 5200 2    50   Output ~ 0
-G4_DAC[0..3]
+DAC0_G[0..3]
 Text HLabel 5500 2600 2    50   Input ~ 0
 DS2_SDO
 Text HLabel 5500 2700 2    50   Output ~ 0
@@ -1268,15 +1212,15 @@ UPO4
 Text Label 3900 5850 0    50   ~ 0
 UPO5
 Text Label 4300 5350 0    50   ~ 0
-DNO0
+DNO5
 Text Label 4300 5450 0    50   ~ 0
-DNO1
-Text Label 4300 5550 0    50   ~ 0
-DNO2
-Text Label 4300 5650 0    50   ~ 0
-DNO3
-Text Label 4300 5750 0    50   ~ 0
 DNO4
+Text Label 4300 5550 0    50   ~ 0
+DNO3
+Text Label 4300 5650 0    50   ~ 0
+DNO2
+Text Label 4300 5750 0    50   ~ 0
+DNO1
 Text Label 5400 5350 0    50   ~ 0
 DN0
 Text Label 5400 5450 0    50   ~ 0
@@ -1288,15 +1232,15 @@ DN3
 Text Label 5400 5750 0    50   ~ 0
 DN4
 Text Label 8350 4000 0    50   ~ 0
-DN0
+DN4
 Text Label 8350 4100 0    50   ~ 0
-DN1
+DN3
 Text Label 8350 4200 0    50   ~ 0
 DN2
 Text Label 8350 4300 0    50   ~ 0
-DN3
+DN1
 Text Label 8350 4400 0    50   ~ 0
-DN4
+DN0
 Text Label 11050 3900 0    50   ~ 0
 UP0
 Text Label 11050 4000 0    50   ~ 0
@@ -1359,18 +1303,8 @@ Text HLabel 5800 4300 2    50   Output ~ 0
 EN_IPUMP1
 Text HLabel 5800 4400 2    50   Output ~ 0
 EN_IPUMP2
-Text Label 10350 5500 0    50   ~ 0
-G4_DAC[0..3]
-Text Label 10350 5900 0    39   ~ 0
-G5_DAC[0..3]
 Text Label 7600 5400 0    50   ~ 0
-G0_DAC[0..3]
-Text Label 7600 5800 0    50   ~ 0
-G1_DAC[0..3]
-Text Label 7600 6300 0    50   ~ 0
-G2_DAC[0..3]
-Text Label 7600 6700 0    50   ~ 0
-G3_DAC[0..3]
+DAC0_G[0..3]
 Text Label 650  2050 0    50   ~ 0
 UPO0
 Text Label 650  2150 0    50   ~ 0
@@ -1534,15 +1468,15 @@ Wire Wire Line
 Wire Wire Line
 	8200 3400 8350 3400
 Wire Wire Line
-	10900 1700 11100 1700
-Wire Wire Line
-	10900 1600 11100 1600
-Wire Wire Line
-	10900 1800 11100 1800
+	10900 2100 11100 2100
 Wire Wire Line
 	10900 2000 11100 2000
 Wire Wire Line
-	10900 2100 11100 2100
+	8200 2200 8400 2200
+Wire Wire Line
+	8200 2500 8400 2500
+Wire Wire Line
+	8200 2600 8400 2600
 Wire Wire Line
 	3200 7450 3250 7450
 Wire Wire Line
@@ -1672,30 +1606,6 @@ Wire Wire Line
 Wire Wire Line
 	5600 6650 5600 6600
 Wire Wire Line
-	7150 5400 7500 5400
-Wire Wire Line
-	7150 5500 7500 5500
-Wire Wire Line
-	7150 5600 7500 5600
-Wire Wire Line
-	7150 5700 7500 5700
-Wire Wire Line
-	7150 5900 7500 5900
-Wire Wire Line
-	7150 6000 7500 6000
-Wire Wire Line
-	7150 6100 7500 6100
-Wire Wire Line
-	7150 6200 7500 6200
-Wire Wire Line
-	7150 6300 7500 6300
-Wire Wire Line
-	7150 6400 7500 6400
-Wire Wire Line
-	7150 6500 7500 6500
-Wire Wire Line
-	7150 6600 7500 6600
-Wire Wire Line
 	7150 5000 7500 5000
 Wire Wire Line
 	7150 5100 7500 5100
@@ -1719,22 +1629,6 @@ Wire Wire Line
 	8350 6600 8350 6700
 Wire Wire Line
 	8350 6750 8350 6700
-Wire Wire Line
-	9900 5500 10250 5500
-Wire Wire Line
-	9900 5600 10250 5600
-Wire Wire Line
-	9900 5700 10250 5700
-Wire Wire Line
-	9900 5800 10250 5800
-Wire Wire Line
-	9900 5100 10250 5100
-Wire Wire Line
-	9900 5200 10250 5200
-Wire Wire Line
-	9900 5300 10250 5300
-Wire Wire Line
-	9900 5400 10250 5400
 Wire Wire Line
 	1500 5350 1500 5400
 Wire Wire Line
@@ -1918,30 +1812,6 @@ Wire Wire Line
 Wire Wire Line
 	1450 2750 1800 2750
 Entry Wire Line
-	7500 5400 7600 5500
-Entry Wire Line
-	7500 5500 7600 5600
-Entry Wire Line
-	7500 5600 7600 5700
-Entry Wire Line
-	7500 5700 7600 5800
-Entry Wire Line
-	7500 5900 7600 6000
-Entry Wire Line
-	7500 6000 7600 6100
-Entry Wire Line
-	7500 6100 7600 6200
-Entry Wire Line
-	7500 6200 7600 6300
-Entry Wire Line
-	7500 6300 7600 6400
-Entry Wire Line
-	7500 6400 7600 6500
-Entry Wire Line
-	7500 6500 7600 6600
-Entry Wire Line
-	7500 6600 7600 6700
-Entry Wire Line
 	7500 5000 7600 5100
 Entry Wire Line
 	7500 5100 7600 5200
@@ -1949,22 +1819,6 @@ Entry Wire Line
 	7500 5200 7600 5300
 Entry Wire Line
 	7500 5300 7600 5400
-Entry Wire Line
-	10250 5100 10350 5200
-Entry Wire Line
-	10250 5200 10350 5300
-Entry Wire Line
-	10250 5300 10350 5400
-Entry Wire Line
-	10250 5400 10350 5500
-Entry Wire Line
-	10250 5500 10350 5600
-Entry Wire Line
-	10250 5700 10350 5800
-Entry Wire Line
-	10250 5600 10350 5700
-Entry Wire Line
-	10250 5800 10350 5900
 Connection ~ 5600 6500
 Connection ~ 5600 6600
 Connection ~ 8350 6700
@@ -2250,7 +2104,7 @@ Wire Wire Line
 Wire Wire Line
 	10900 2300 11100 2300
 Wire Wire Line
-	10900 1900 11100 1900
+	8200 2300 8400 2300
 Wire Wire Line
 	10900 1500 11500 1500
 Wire Wire Line
@@ -2278,29 +2132,29 @@ Wire Wire Line
 Wire Wire Line
 	11300 2400 11400 2400
 Wire Wire Line
-	10900 2700 11100 2700
+	8200 2700 8400 2700
 Wire Wire Line
-	10900 2800 11100 2800
+	8200 2800 8400 2800
 Wire Wire Line
 	11100 2600 10900 2600
 Wire Wire Line
 	11100 2500 10900 2500
 Wire Wire Line
-	10900 3000 11100 3000
+	8200 3000 8400 3000
 Wire Wire Line
-	10900 2900 11100 2900
+	8200 2900 8400 2900
 Wire Wire Line
-	11100 3100 10900 3100
+	8400 3100 8200 3100
 Wire Wire Line
-	11100 3200 10900 3200
+	8400 3200 8200 3200
 Wire Wire Line
-	8200 2900 8500 2900
+	10900 2900 11200 2900
 Wire Wire Line
-	8200 3200 8500 3200
+	10900 3200 11200 3200
 Wire Wire Line
-	8200 3100 8500 3100
+	10900 3100 11200 3100
 Wire Wire Line
-	8200 3000 8500 3000
+	10900 3000 11200 3000
 Wire Wire Line
 	11300 3400 11500 3400
 Wire Wire Line
@@ -2391,14 +2245,6 @@ Text Notes 6200 5900 0    50   ~ 0
 DAC gain \ncontrol
 Wire Wire Line
 	5350 5750 5600 5750
-Text Label 11300 1200 2    50   ~ 0
-XADC_VP
-Wire Wire Line
-	10900 1200 11300 1200
-Text Label 11000 1100 0    50   ~ 0
-XADC_VN
-Wire Wire Line
-	10900 1100 11300 1100
 NoConn ~ 5350 5950
 NoConn ~ 4550 5950
 NoConn ~ 4550 6050
@@ -2462,7 +2308,7 @@ DN5
 Text Label 5400 5850 0    50   ~ 0
 DN5
 Text Label 4300 5850 0    50   ~ 0
-DNO5
+DNO0
 Wire Wire Line
 	650  2450 950  2450
 Wire Wire Line
@@ -2500,28 +2346,26 @@ GP_LVDS_3P
 Text Label 11000 1500 0    50   ~ 0
 GP_LVDS_3N
 Wire Wire Line
-	8200 2300 8950 2300
+	10900 1700 11500 1700
 Wire Wire Line
-	8200 2200 8950 2200
-Text Label 8400 2200 0    50   ~ 0
+	10900 1600 11500 1600
+Text Label 11000 1600 0    50   ~ 0
 GP_LVDS_2P
-Text Label 8400 2300 0    50   ~ 0
+Text Label 11000 1700 0    50   ~ 0
 GP_LVDS_2N
 Wire Wire Line
-	8200 2600 8950 2600
+	10900 1900 11500 1900
 Wire Wire Line
-	8200 2500 8950 2500
-Text Label 8400 2500 0    50   ~ 0
+	10900 1800 11500 1800
+Text Label 11000 1800 0    50   ~ 0
 GP_LVDS_1P
-Text Label 8400 2600 0    50   ~ 0
+Text Label 11000 1900 0    50   ~ 0
 GP_LVDS_1N
 Wire Wire Line
-	8200 2800 8950 2800
+	10900 2800 11500 2800
 Wire Wire Line
-	8200 2700 8950 2700
-Text Label 8400 2700 0    50   ~ 0
-GP_LVDS_0P
-Text Label 8400 2800 0    50   ~ 0
+	10900 2700 11500 2700
+Text Label 11000 2800 0    50   ~ 0
 GP_LVDS_0N
 Wire Wire Line
 	10900 3700 11200 3700
@@ -2694,17 +2538,17 @@ F 4 "BTE-040-02-F-D-A" H 2700 4710 50  0001 C CNN "Manf#"
 $EndComp
 Text Notes 5950 350  0    50   ~ 0
 FPGA power: standard “canon-style” 2.1mm / 5.5mm jack.  The outer ring is connected to DGND.  The center pin is connected to +VDC.
-Text HLabel 8950 2200 2    50   BiDi ~ 0
+Text HLabel 11500 1600 2    50   BiDi ~ 0
 GP_LVDS_2P
-Text HLabel 8950 2300 2    50   BiDi ~ 0
+Text HLabel 11500 1700 2    50   BiDi ~ 0
 GP_LVDS_2N
-Text HLabel 8950 2500 2    50   BiDi ~ 0
+Text HLabel 11500 1800 2    50   BiDi ~ 0
 GP_LVDS_1P
-Text HLabel 8950 2600 2    50   BiDi ~ 0
+Text HLabel 11500 1900 2    50   BiDi ~ 0
 GP_LVDS_1N
-Text HLabel 8950 2700 2    50   BiDi ~ 0
+Text HLabel 11500 2700 2    50   BiDi ~ 0
 GP_LVDS_0P
-Text HLabel 8950 2800 2    50   BiDi ~ 0
+Text HLabel 11500 2800 2    50   BiDi ~ 0
 GP_LVDS_0N
 Text HLabel 11500 1400 2    50   BiDi ~ 0
 GP_LVDS_3P
@@ -2873,8 +2717,468 @@ Text HLabel 8250 4600 2    50   Input ~ 0
 A1_DCO_N
 Text HLabel 8250 4500 2    50   Input ~ 0
 A1_DCO_P
-NoConn ~ 11300 1100
-NoConn ~ 11300 1200
+Text Label 7150 5100 0    50   ~ 0
+DAC0_G1
+Text Label 7150 5200 0    50   ~ 0
+DAC0_G2
+Text Label 7150 5300 0    50   ~ 0
+DAC0_G3
+Text Label 7150 5400 0    50   ~ 0
+DAC1_G0
+Text HLabel 7600 5650 2    50   Output ~ 0
+DAC1_G[0..3]
+Text Label 7600 5800 0    50   ~ 0
+DAC1_G[0..3]
+Wire Wire Line
+	7150 5400 7500 5400
+Wire Wire Line
+	7150 5500 7500 5500
+Wire Wire Line
+	7150 5600 7500 5600
+Wire Wire Line
+	7150 5700 7500 5700
+Entry Wire Line
+	7500 5400 7600 5500
+Entry Wire Line
+	7500 5500 7600 5600
+Entry Wire Line
+	7500 5600 7600 5700
+Entry Wire Line
+	7500 5700 7600 5800
+Text Label 7150 5500 0    50   ~ 0
+DAC1_G1
+Text Label 7150 5600 0    50   ~ 0
+DAC1_G2
+Text Label 7150 5700 0    50   ~ 0
+DAC1_G3
+Text Label 7150 5900 0    50   ~ 0
+DAC2_G0
+Text HLabel 7600 6150 2    50   Output ~ 0
+DAC2_G[0..3]
+Text Label 7600 6300 0    50   ~ 0
+DAC2_G[0..3]
+Wire Wire Line
+	7150 5900 7500 5900
+Wire Wire Line
+	7150 6000 7500 6000
+Wire Wire Line
+	7150 6100 7500 6100
+Wire Wire Line
+	7150 6200 7500 6200
+Entry Wire Line
+	7500 5900 7600 6000
+Entry Wire Line
+	7500 6000 7600 6100
+Entry Wire Line
+	7500 6100 7600 6200
+Entry Wire Line
+	7500 6200 7600 6300
+Text Label 7150 6000 0    50   ~ 0
+DAC2_G1
+Text Label 7150 6100 0    50   ~ 0
+DAC2_G2
+Text Label 7150 6200 0    50   ~ 0
+DAC2_G3
+Text Label 7150 6300 0    50   ~ 0
+DAC3_G0
+Text HLabel 7600 6550 2    50   Output ~ 0
+DAC3_G[0..3]
+Text Label 7600 6700 0    50   ~ 0
+DAC3_G[0..3]
+Wire Wire Line
+	7150 6300 7500 6300
+Wire Wire Line
+	7150 6400 7500 6400
+Wire Wire Line
+	7150 6500 7500 6500
+Wire Wire Line
+	7150 6600 7500 6600
+Entry Wire Line
+	7500 6300 7600 6400
+Entry Wire Line
+	7500 6400 7600 6500
+Entry Wire Line
+	7500 6500 7600 6600
+Entry Wire Line
+	7500 6600 7600 6700
+Text Label 7150 6400 0    50   ~ 0
+DAC3_G1
+Text Label 7150 6500 0    50   ~ 0
+DAC3_G2
+Text Label 7150 6600 0    50   ~ 0
+DAC3_G3
+Text Label 9900 5500 0    50   ~ 0
+DAC4_G0
+Text HLabel 10350 5750 2    50   Output ~ 0
+DAC4_G[0..3]
+Text Label 10350 5900 0    50   ~ 0
+DAC4_G[0..3]
+Wire Wire Line
+	9900 5500 10250 5500
+Wire Wire Line
+	9900 5600 10250 5600
+Wire Wire Line
+	9900 5700 10250 5700
+Wire Wire Line
+	9900 5800 10250 5800
+Entry Wire Line
+	10250 5500 10350 5600
+Entry Wire Line
+	10250 5600 10350 5700
+Entry Wire Line
+	10250 5700 10350 5800
+Entry Wire Line
+	10250 5800 10350 5900
+Text Label 9900 5600 0    50   ~ 0
+DAC4_G1
+Text Label 9900 5700 0    50   ~ 0
+DAC4_G2
+Text Label 9900 5800 0    50   ~ 0
+DAC4_G3
+Text Label 9900 5100 0    50   ~ 0
+DAC5_G0
+Text HLabel 10350 5350 2    50   Output ~ 0
+DAC5_G[0..3]
+Text Label 10350 5500 0    50   ~ 0
+DAC5_G[0..3]
+Wire Wire Line
+	9900 5100 10250 5100
+Wire Wire Line
+	9900 5200 10250 5200
+Wire Wire Line
+	9900 5300 10250 5300
+Wire Wire Line
+	9900 5400 10250 5400
+Entry Wire Line
+	10250 5100 10350 5200
+Entry Wire Line
+	10250 5200 10350 5300
+Entry Wire Line
+	10250 5300 10350 5400
+Entry Wire Line
+	10250 5400 10350 5500
+Text Label 9900 5200 0    50   ~ 0
+DAC5_G1
+Text Label 9900 5300 0    50   ~ 0
+DAC5_G2
+Text Label 9900 5400 0    50   ~ 0
+DAC5_G3
+$Comp
+L Device:C C?
+U 1 1 6134F9E4
+P 6900 7500
+AR Path="/6095A697/6134F9E4" Ref="C?"  Part="1" 
+AR Path="/60BE6CE5/6134F9E4" Ref="C?"  Part="1" 
+AR Path="/60BF7757/6134F9E4" Ref="C?"  Part="1" 
+AR Path="/60C1F416/6134F9E4" Ref="C?"  Part="1" 
+AR Path="/6095A302/6134F9E4" Ref="C193"  Part="1" 
+F 0 "C193" H 6940 7525 59  0000 L BNN
+F 1 "0.1u" H 6940 7335 59  0000 L BNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6900 7500 50  0001 C CNN
+F 3 "" H 6900 7500 50  0001 C CNN
+F 4 "CL10B104KA8NFNC" H 6940 7625 50  0001 C CNN "Manf#"
+F 5 "Samsung" H 6940 7625 50  0001 C CNN "Manufacturer_Name"
+F 6 "10%" H 6940 7625 50  0001 C CNN "Tolerance"
+F 7 "25" H 6940 7625 50  0001 C CNN "voltage"
+	1    6900 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #GND?
+U 1 1 6134F9EA
+P 6900 7850
+AR Path="/6095A697/6134F9EA" Ref="#GND?"  Part="1" 
+AR Path="/60BE6CE5/6134F9EA" Ref="#GND?"  Part="1" 
+AR Path="/60BF7757/6134F9EA" Ref="#GND?"  Part="1" 
+AR Path="/60C1F416/6134F9EA" Ref="#GND?"  Part="1" 
+AR Path="/6095A302/6134F9EA" Ref="#GND07"  Part="1" 
+F 0 "#GND07" H 6900 7850 50  0001 C CNN
+F 1 "GND" H 6800 7750 59  0000 L BNN
+F 2 "" H 6900 7850 50  0001 C CNN
+F 3 "" H 6900 7850 50  0001 C CNN
+	1    6900 7850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 7350 6900 7250
+Wire Wire Line
+	6900 7650 6900 7850
+$Comp
+L Device:C C?
+U 1 1 6138247E
+P 7300 7500
+AR Path="/6095A697/6138247E" Ref="C?"  Part="1" 
+AR Path="/60BE6CE5/6138247E" Ref="C?"  Part="1" 
+AR Path="/60BF7757/6138247E" Ref="C?"  Part="1" 
+AR Path="/60C1F416/6138247E" Ref="C?"  Part="1" 
+AR Path="/6095A302/6138247E" Ref="C194"  Part="1" 
+F 0 "C194" H 7340 7525 59  0000 L BNN
+F 1 "0.1u" H 7340 7335 59  0000 L BNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7300 7500 50  0001 C CNN
+F 3 "" H 7300 7500 50  0001 C CNN
+F 4 "CL10B104KA8NFNC" H 7340 7625 50  0001 C CNN "Manf#"
+F 5 "Samsung" H 7340 7625 50  0001 C CNN "Manufacturer_Name"
+F 6 "10%" H 7340 7625 50  0001 C CNN "Tolerance"
+F 7 "25" H 7340 7625 50  0001 C CNN "voltage"
+	1    7300 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #GND?
+U 1 1 61382484
+P 7300 7850
+AR Path="/6095A697/61382484" Ref="#GND?"  Part="1" 
+AR Path="/60BE6CE5/61382484" Ref="#GND?"  Part="1" 
+AR Path="/60BF7757/61382484" Ref="#GND?"  Part="1" 
+AR Path="/60C1F416/61382484" Ref="#GND?"  Part="1" 
+AR Path="/6095A302/61382484" Ref="#GND08"  Part="1" 
+F 0 "#GND08" H 7300 7850 50  0001 C CNN
+F 1 "GND" H 7200 7750 59  0000 L BNN
+F 2 "" H 7300 7850 50  0001 C CNN
+F 3 "" H 7300 7850 50  0001 C CNN
+	1    7300 7850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 7350 7300 7250
+Wire Wire Line
+	7300 7650 7300 7850
+$Comp
+L Device:C C?
+U 1 1 613B6D67
+P 5750 7500
+AR Path="/6095A697/613B6D67" Ref="C?"  Part="1" 
+AR Path="/60BE6CE5/613B6D67" Ref="C?"  Part="1" 
+AR Path="/60BF7757/613B6D67" Ref="C?"  Part="1" 
+AR Path="/60C1F416/613B6D67" Ref="C?"  Part="1" 
+AR Path="/6095A302/613B6D67" Ref="C191"  Part="1" 
+F 0 "C191" H 5790 7525 59  0000 L BNN
+F 1 "0.1u" H 5790 7335 59  0000 L BNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5750 7500 50  0001 C CNN
+F 3 "" H 5750 7500 50  0001 C CNN
+F 4 "CL10B104KA8NFNC" H 5790 7625 50  0001 C CNN "Manf#"
+F 5 "Samsung" H 5790 7625 50  0001 C CNN "Manufacturer_Name"
+F 6 "10%" H 5790 7625 50  0001 C CNN "Tolerance"
+F 7 "25" H 5790 7625 50  0001 C CNN "voltage"
+	1    5750 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #GND?
+U 1 1 613B6D6D
+P 5750 7850
+AR Path="/6095A697/613B6D6D" Ref="#GND?"  Part="1" 
+AR Path="/60BE6CE5/613B6D6D" Ref="#GND?"  Part="1" 
+AR Path="/60BF7757/613B6D6D" Ref="#GND?"  Part="1" 
+AR Path="/60C1F416/613B6D6D" Ref="#GND?"  Part="1" 
+AR Path="/6095A302/613B6D6D" Ref="#GND05"  Part="1" 
+F 0 "#GND05" H 5750 7850 50  0001 C CNN
+F 1 "GND" H 5650 7750 59  0000 L BNN
+F 2 "" H 5750 7850 50  0001 C CNN
+F 3 "" H 5750 7850 50  0001 C CNN
+	1    5750 7850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 7650 5750 7850
+$Comp
+L Device:C C?
+U 1 1 613B6D79
+P 6150 7500
+AR Path="/6095A697/613B6D79" Ref="C?"  Part="1" 
+AR Path="/60BE6CE5/613B6D79" Ref="C?"  Part="1" 
+AR Path="/60BF7757/613B6D79" Ref="C?"  Part="1" 
+AR Path="/60C1F416/613B6D79" Ref="C?"  Part="1" 
+AR Path="/6095A302/613B6D79" Ref="C192"  Part="1" 
+F 0 "C192" H 6190 7525 59  0000 L BNN
+F 1 "0.1u" H 6190 7335 59  0000 L BNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6150 7500 50  0001 C CNN
+F 3 "" H 6150 7500 50  0001 C CNN
+F 4 "CL10B104KA8NFNC" H 6190 7625 50  0001 C CNN "Manf#"
+F 5 "Samsung" H 6190 7625 50  0001 C CNN "Manufacturer_Name"
+F 6 "10%" H 6190 7625 50  0001 C CNN "Tolerance"
+F 7 "25" H 6190 7625 50  0001 C CNN "voltage"
+	1    6150 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #GND?
+U 1 1 613B6D7F
+P 6150 7850
+AR Path="/6095A697/613B6D7F" Ref="#GND?"  Part="1" 
+AR Path="/60BE6CE5/613B6D7F" Ref="#GND?"  Part="1" 
+AR Path="/60BF7757/613B6D7F" Ref="#GND?"  Part="1" 
+AR Path="/60C1F416/613B6D7F" Ref="#GND?"  Part="1" 
+AR Path="/6095A302/613B6D7F" Ref="#GND06"  Part="1" 
+F 0 "#GND06" H 6150 7850 50  0001 C CNN
+F 1 "GND" H 6050 7750 59  0000 L BNN
+F 2 "" H 6150 7850 50  0001 C CNN
+F 3 "" H 6150 7850 50  0001 C CNN
+	1    6150 7850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6150 7350 6150 7250
+Wire Wire Line
+	6150 7650 6150 7850
+$Comp
+L power:+3V3 #PWR041
+U 1 1 613E8474
+P 7300 7250
+F 0 "#PWR041" H 7300 7100 50  0001 C CNN
+F 1 "+3V3" V 7315 7378 50  0000 L CNN
+F 2 "" H 7300 7250 50  0001 C CNN
+F 3 "" H 7300 7250 50  0001 C CNN
+	1    7300 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR040
+U 1 1 613E9055
+P 6900 7250
+F 0 "#PWR040" H 6900 7100 50  0001 C CNN
+F 1 "+3V3" V 6915 7378 50  0000 L CNN
+F 2 "" H 6900 7250 50  0001 C CNN
+F 3 "" H 6900 7250 50  0001 C CNN
+	1    6900 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR038
+U 1 1 613E955A
+P 6150 7250
+F 0 "#PWR038" H 6150 7100 50  0001 C CNN
+F 1 "+3V3" V 6165 7378 50  0000 L CNN
+F 2 "" H 6150 7250 50  0001 C CNN
+F 3 "" H 6150 7250 50  0001 C CNN
+	1    6150 7250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR036
+U 1 1 613E99FA
+P 5750 7200
+F 0 "#PWR036" H 5750 7050 50  0001 C CNN
+F 1 "+3V3" V 5765 7328 50  0000 L CNN
+F 2 "" H 5750 7200 50  0001 C CNN
+F 3 "" H 5750 7200 50  0001 C CNN
+	1    5750 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 7200 5750 7350
+$Comp
+L Device:C C?
+U 1 1 61425A6A
+P 5000 7500
+AR Path="/6095A697/61425A6A" Ref="C?"  Part="1" 
+AR Path="/60BE6CE5/61425A6A" Ref="C?"  Part="1" 
+AR Path="/60BF7757/61425A6A" Ref="C?"  Part="1" 
+AR Path="/60C1F416/61425A6A" Ref="C?"  Part="1" 
+AR Path="/6095A302/61425A6A" Ref="C189"  Part="1" 
+F 0 "C189" H 5040 7525 59  0000 L BNN
+F 1 "0.1u" H 5040 7335 59  0000 L BNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5000 7500 50  0001 C CNN
+F 3 "" H 5000 7500 50  0001 C CNN
+F 4 "CL10B104KA8NFNC" H 5040 7625 50  0001 C CNN "Manf#"
+F 5 "Samsung" H 5040 7625 50  0001 C CNN "Manufacturer_Name"
+F 6 "10%" H 5040 7625 50  0001 C CNN "Tolerance"
+F 7 "25" H 5040 7625 50  0001 C CNN "voltage"
+	1    5000 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #GND?
+U 1 1 61425A70
+P 5000 7850
+AR Path="/6095A697/61425A70" Ref="#GND?"  Part="1" 
+AR Path="/60BE6CE5/61425A70" Ref="#GND?"  Part="1" 
+AR Path="/60BF7757/61425A70" Ref="#GND?"  Part="1" 
+AR Path="/60C1F416/61425A70" Ref="#GND?"  Part="1" 
+AR Path="/6095A302/61425A70" Ref="#GND02"  Part="1" 
+F 0 "#GND02" H 5000 7850 50  0001 C CNN
+F 1 "GND" H 4900 7750 59  0000 L BNN
+F 2 "" H 5000 7850 50  0001 C CNN
+F 3 "" H 5000 7850 50  0001 C CNN
+	1    5000 7850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 7650 5000 7850
+$Comp
+L Device:C C?
+U 1 1 61425A7B
+P 5350 7500
+AR Path="/6095A697/61425A7B" Ref="C?"  Part="1" 
+AR Path="/60BE6CE5/61425A7B" Ref="C?"  Part="1" 
+AR Path="/60BF7757/61425A7B" Ref="C?"  Part="1" 
+AR Path="/60C1F416/61425A7B" Ref="C?"  Part="1" 
+AR Path="/6095A302/61425A7B" Ref="C190"  Part="1" 
+F 0 "C190" H 5390 7525 59  0000 L BNN
+F 1 "0.1u" H 5390 7335 59  0000 L BNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5350 7500 50  0001 C CNN
+F 3 "" H 5350 7500 50  0001 C CNN
+F 4 "CL10B104KA8NFNC" H 5390 7625 50  0001 C CNN "Manf#"
+F 5 "Samsung" H 5390 7625 50  0001 C CNN "Manufacturer_Name"
+F 6 "10%" H 5390 7625 50  0001 C CNN "Tolerance"
+F 7 "25" H 5390 7625 50  0001 C CNN "voltage"
+	1    5350 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #GND?
+U 1 1 61425A81
+P 5350 7850
+AR Path="/6095A697/61425A81" Ref="#GND?"  Part="1" 
+AR Path="/60BE6CE5/61425A81" Ref="#GND?"  Part="1" 
+AR Path="/60BF7757/61425A81" Ref="#GND?"  Part="1" 
+AR Path="/60C1F416/61425A81" Ref="#GND?"  Part="1" 
+AR Path="/6095A302/61425A81" Ref="#GND04"  Part="1" 
+F 0 "#GND04" H 5350 7850 50  0001 C CNN
+F 1 "GND" H 5250 7750 59  0000 L BNN
+F 2 "" H 5350 7850 50  0001 C CNN
+F 3 "" H 5350 7850 50  0001 C CNN
+	1    5350 7850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 7650 5350 7850
+Wire Wire Line
+	5000 7200 5000 7350
+$Comp
+L power:+5V #PWR034
+U 1 1 614576C3
+P 5000 7200
+F 0 "#PWR034" H 5000 7050 50  0001 C CNN
+F 1 "+5V" H 5015 7373 50  0000 C CNN
+F 2 "" H 5000 7200 50  0001 C CNN
+F 3 "" H 5000 7200 50  0001 C CNN
+	1    5000 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+1V8 #PWR035
+U 1 1 61457E93
+P 5350 7200
+F 0 "#PWR035" H 5350 7050 50  0001 C CNN
+F 1 "+1V8" H 5200 7300 50  0000 C CNN
+F 2 "" H 5350 7200 50  0001 C CNN
+F 3 "" H 5350 7200 50  0001 C CNN
+	1    5350 7200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 7200 5350 7350
+Text Label 11000 2700 0    50   ~ 0
+GP_LVDS_0P
+NoConn ~ 10900 1100
+NoConn ~ 10900 1200
+Wire Bus Line
+	7600 5100 7600 5400
+Wire Bus Line
+	10350 6100 10350 6400
+Wire Bus Line
+	10350 6500 10350 6800
 Wire Bus Line
 	7600 5500 7600 5800
 Wire Bus Line
@@ -2882,13 +3186,7 @@ Wire Bus Line
 Wire Bus Line
 	7600 6400 7600 6700
 Wire Bus Line
-	7600 5100 7600 5400
-Wire Bus Line
-	10350 5200 10350 5500
-Wire Bus Line
 	10350 5600 10350 5900
 Wire Bus Line
-	10350 6100 10350 6400
-Wire Bus Line
-	10350 6500 10350 6800
+	10350 5200 10350 5500
 $EndSCHEMATC
