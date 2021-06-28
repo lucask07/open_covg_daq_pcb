@@ -1,4 +1,4 @@
-update=Monday, 28 June 2021 at 09:52:45
+update=Monday, 28 June 2021 at 14:29:01
 version=1
 last_client=kicad
 [general]
@@ -32,21 +32,21 @@ AllowMicroVias=0
 AllowBlindVias=0
 RequireCourtyardDefinitions=1
 ProhibitOverlappingCourtyards=1
-MinTrackWidth=0.09999999999999999
-MinViaDiameter=0.5
-MinViaDrill=0.2
+MinTrackWidth=0.127
+MinViaDiameter=0.6
+MinViaDrill=0.3
 MinMicroViaDiameter=0.2
 MinMicroViaDrill=0.09999999999999999
 MinHoleToHole=0.2
 TrackWidth1=0.127
-TrackWidth2=0.2
+TrackWidth2=0.127
 TrackWidth3=0.4
 TrackWidth4=0.6
 TrackWidth5=1
 ViaDiameter1=0.6
 ViaDrill1=0.3
-ViaDiameter2=0.5
-ViaDrill2=0.2
+ViaDiameter2=0.6
+ViaDrill2=0.3
 ViaDiameter3=0.9
 ViaDrill3=0.4
 dPairWidth1=0.1524
@@ -97,7 +97,7 @@ Type=2
 Enabled=1
 [pcbnew/Layer.In4.Cu]
 Name=Route15
-Type=2
+Type=1
 Enabled=1
 [pcbnew/Layer.In5.Cu]
 Name=In5.Cu
