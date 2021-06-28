@@ -3173,6 +3173,7 @@ Text Label 11000 2700 0    50   ~ 0
 GP_LVDS_0P
 NoConn ~ 10900 1100
 NoConn ~ 10900 1200
+NoConn ~ 13250 850 
 Wire Bus Line
 	7600 5100 7600 5400
 Wire Bus Line
