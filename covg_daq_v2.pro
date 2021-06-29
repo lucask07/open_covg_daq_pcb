@@ -1,4 +1,4 @@
-update=Tuesday, 29 June 2021 at 08:42:18
+update=Tuesday, 29 June 2021 at 10:55:49
 version=1
 last_client=kicad
 [general]
@@ -32,7 +32,7 @@ AllowMicroVias=0
 AllowBlindVias=0
 RequireCourtyardDefinitions=1
 ProhibitOverlappingCourtyards=1
-MinTrackWidth=0.127
+MinTrackWidth=0
 MinViaDiameter=0.6
 MinViaDrill=0.3
 MinMicroViaDiameter=0.2
@@ -258,6 +258,17 @@ dPairWidth=0.1524
 dPairGap=0.254
 dPairViaGap=0.25
 [pcbnew/Netclasses/1]
+Name=InPower
+Clearance=0.254
+TrackWidth=0.889
+ViaDiameter=0.762
+ViaDrill=0.381
+uViaDiameter=0.6858
+uViaDrill=0.3302
+dPairWidth=0.1524
+dPairGap=0.254
+dPairViaGap=0.25
+[pcbnew/Netclasses/2]
 Name=Power
 Clearance=0.1524
 TrackWidth=0.254
@@ -268,7 +279,18 @@ uViaDrill=0.3302
 dPairWidth=0.1524
 dPairGap=0.254
 dPairViaGap=0.25
-[pcbnew/Netclasses/2]
+[pcbnew/Netclasses/3]
+Name=SwitcherPower
+Clearance=0.127
+TrackWidth=0.508
+ViaDiameter=0.6
+ViaDrill=0.3
+uViaDiameter=0.6858
+uViaDrill=0.3302
+dPairWidth=0.1524
+dPairGap=0.254
+dPairViaGap=0.25
+[pcbnew/Netclasses/4]
 Name=cap_sensitive
 Clearance=0.3048
 TrackWidth=0.1524
