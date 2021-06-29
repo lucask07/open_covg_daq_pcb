@@ -1,4 +1,4 @@
-update=Tuesday, 29 June 2021 at 10:55:49
+update=Tuesday, 29 June 2021 at 11:18:06
 version=1
 last_client=kicad
 [general]
@@ -270,7 +270,7 @@ dPairGap=0.254
 dPairViaGap=0.25
 [pcbnew/Netclasses/2]
 Name=Power
-Clearance=0.1524
+Clearance=0.127
 TrackWidth=0.254
 ViaDiameter=0.6
 ViaDrill=0.3
