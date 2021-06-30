@@ -2104,12 +2104,6 @@ F 3 "" H 9700 5100 50  0001 C CNN
 	1    9700 5100
 	0    1    1    0   
 $EndComp
-Wire Bus Line
-	10900 5700 10900 6100
-Wire Bus Line
-	9000 5250 9000 5600
-Wire Bus Line
-	9000 4700 9000 5100
 $Comp
 L power:GND #PWR0275
 U 1 1 6105EB25
@@ -2132,4 +2126,10 @@ F 3 "" H 7950 4650 50  0001 C CNN
 	1    7950 4650
 	0    -1   -1   0   
 $EndComp
+Wire Bus Line
+	10900 5700 10900 6100
+Wire Bus Line
+	9000 5250 9000 5600
+Wire Bus Line
+	9000 4700 9000 5100
 $EndSCHEMATC

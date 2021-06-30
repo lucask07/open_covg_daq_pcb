@@ -289,7 +289,7 @@ F 3 "" H 4300 8050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SparkFun-Connectors:QWIIC_CONNECTORJS-1MM J?
+L covg-kicad:QWIIC_CONNECTORJS-1MM J?
 U 1 1 61945A6C
 P 10850 6000
 AR Path="/6095A38A/61945A6C" Ref="J?"  Part="1" 

@@ -1,3 +1,3 @@
 (fp_lib_table
-  (lib (name adc_dac_v1)(type KiCad)(uri "$(KIPRJMOD)/covg_daq_v2.pretty")(options "")(descr ""))
+  (lib (name covg-kicad)(type KiCad)(uri ${MYLIBRARY}/covg-kicad-lib/covg-kicad.pretty)(options "")(descr ""))
 )
