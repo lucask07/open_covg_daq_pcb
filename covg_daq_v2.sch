@@ -713,7 +713,7 @@ DAC2_CAL2
 Text Label 4750 4750 2    50   ~ 0
 DAC2_CAL3
 Text Label 5000 7400 1    50   ~ 0
-GP_ADC_IN11
+GP_ADC_IN13
 Text Label 9700 2350 0    50   ~ 0
 DAC1_OUT[0..7]
 Text Label 9700 2450 0    50   ~ 0
@@ -723,21 +723,21 @@ DAC2_OUT[0..7]
 Text Label 9700 1400 0    50   ~ 0
 DAC2_BP_OUT[4..7]
 Text Label 5100 7400 1    50   ~ 0
-DAC1_BP_OUT7
+DAC2_BP_OUT6
 Text Label 5550 3450 3    50   ~ 0
 GP_ADC_IN3
 Text Label 2050 7400 1    50   ~ 0
-GP_ADC_IN9
+GP_ADC_IN12
 Text Label 1950 7400 1    50   ~ 0
 DAC1_BP_OUT5
 Text Label 2050 4500 1    50   ~ 0
-GP_ADC_IN8
+GP_ADC_IN5
 Text Label 1950 4500 1    50   ~ 0
 DAC1_BP_OUT4
 Text Label 5000 4500 1    50   ~ 0
-GP_ADC_IN10
+GP_ADC_IN6
 Text Label 5100 4500 1    50   ~ 0
-DAC1_BP_OUT6
+DAC2_BP_OUT5
 Text Label 6850 4750 0    50   ~ 0
 GP_ADC_IN5
 Text Label 6850 4850 0    50   ~ 0

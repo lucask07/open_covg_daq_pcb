@@ -11,57 +11,61 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 75)
+    (start_pass_no 1352)
     (layer_rule Top
       (active on)
       (preferred_direction horizontal)
-      (preferred_direction_trace_costs 1.8)
-      (against_preferred_direction_trace_costs 3.5)
+      (preferred_direction_trace_costs 2.2)
+      (against_preferred_direction_trace_costs 3.9)
     )
     (layer_rule Route2
-      (active off)
-      (preferred_direction horizontal)
-      (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 2.7)
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 10.0)
+      (against_preferred_direction_trace_costs 20.0)
     )
     (layer_rule Route3
       (active on)
-      (preferred_direction vertical)
-      (preferred_direction_trace_costs 12.0)
-      (against_preferred_direction_trace_costs 24.0)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 18.0)
+      (against_preferred_direction_trace_costs 36.0)
     )
     (layer_rule Route14
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 18.0)
+      (against_preferred_direction_trace_costs 36.0)
+    )
+    (layer_rule Route15
       (active on)
       (preferred_direction horizontal)
       (preferred_direction_trace_costs 12.0)
       (against_preferred_direction_trace_costs 24.0)
-    )
-    (layer_rule Route15
-      (active off)
-      (preferred_direction horizontal)
-      (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 2.7)
     )
     (layer_rule Bottom
       (active on)
       (preferred_direction vertical)
-      (preferred_direction_trace_costs 1.8)
-      (against_preferred_direction_trace_costs 2.4)
+      (preferred_direction_trace_costs 2.2)
+      (against_preferred_direction_trace_costs 2.8)
     )
   )
   (rule
     (width 127.0)
     (clear 127.2)
     (clear 63.5 (type smd_to_turn_gap))
-    (clear 152.6 (type default_Power))
+    (clear 254.2 (type default_InPower))
     (clear 305.0 (type default_"cap_sensitive"))
     (clear 31.8 (type smd_smd))
-    (clear 152.6 (type smd_Power))
+    (clear 254.2 (type smd_InPower))
     (clear 305.0 (type smd_"cap_sensitive"))
-    (clear 152.6 (type "kicad_default"_Power))
+    (clear 254.2 (type "kicad_default"_InPower))
     (clear 305.0 (type "kicad_default"_"cap_sensitive"))
-    (clear 152.6 (type Power_Power))
+    (clear 254.2 (type InPower_InPower))
+    (clear 254.2 (type InPower_Power))
+    (clear 254.2 (type InPower_SwitcherPower))
+    (clear 305.0 (type InPower_"cap_sensitive"))
     (clear 305.0 (type Power_"cap_sensitive"))
+    (clear 305.0 (type SwitcherPower_"cap_sensitive"))
     (clear 305.0 (type "cap_sensitive"_"cap_sensitive"))
   )
   (padstack "Via[0-5]_600:300_um"
@@ -85,45 +89,24 @@
     )
     (attach off)
   )
-  (padstack "Via[0-5]_889:381_um"
+  (padstack "Via[0-5]_762:381_um"
     (shape
-      (circle Top 889.0 0.0 0.0)
+      (circle Top 762.0 0.0 0.0)
     )
     (shape
-      (circle Route2 889.0 0.0 0.0)
+      (circle Route2 762.0 0.0 0.0)
     )
     (shape
-      (circle Route3 889.0 0.0 0.0)
+      (circle Route3 762.0 0.0 0.0)
     )
     (shape
-      (circle Route14 889.0 0.0 0.0)
+      (circle Route14 762.0 0.0 0.0)
     )
     (shape
-      (circle Route15 889.0 0.0 0.0)
+      (circle Route15 762.0 0.0 0.0)
     )
     (shape
-      (circle Bottom 889.0 0.0 0.0)
-    )
-    (attach off)
-  )
-  (padstack "Via[0-5]_700:300_um"
-    (shape
-      (circle Top 700.0 0.0 0.0)
-    )
-    (shape
-      (circle Route2 700.0 0.0 0.0)
-    )
-    (shape
-      (circle Route3 700.0 0.0 0.0)
-    )
-    (shape
-      (circle Route14 700.0 0.0 0.0)
-    )
-    (shape
-      (circle Route15 700.0 0.0 0.0)
-    )
-    (shape
-      (circle Bottom 700.0 0.0 0.0)
+      (circle Bottom 762.0 0.0 0.0)
     )
     (attach off)
   )
@@ -131,37 +114,37 @@
     "Via[0-5]_600:300_um" "Via[0-5]_600:300_um" default
   )
   (via 
-    "Via[0-5]_889:381_um" "Via[0-5]_889:381_um" default
-  )
-  (via 
-    "Via[0-5]_700:300_um" "Via[0-5]_700:300_um" default
+    "Via[0-5]_762:381_um" "Via[0-5]_762:381_um" default
   )
   (via 
     "Via[0-5]_600:300_um-kicad_default" "Via[0-5]_600:300_um" "kicad_default"
   )
   (via 
-    "Via[0-5]_889:381_um-kicad_default" "Via[0-5]_889:381_um" "kicad_default"
+    "Via[0-5]_762:381_um-kicad_default" "Via[0-5]_762:381_um" "kicad_default"
   )
   (via 
-    "Via[0-5]_700:300_um-kicad_default" "Via[0-5]_700:300_um" "kicad_default"
+    "Via[0-5]_600:300_um-InPower" "Via[0-5]_600:300_um" InPower
+  )
+  (via 
+    "Via[0-5]_762:381_um-InPower" "Via[0-5]_762:381_um" InPower
   )
   (via 
     "Via[0-5]_600:300_um-Power" "Via[0-5]_600:300_um" Power
   )
   (via 
-    "Via[0-5]_889:381_um-Power" "Via[0-5]_889:381_um" Power
+    "Via[0-5]_762:381_um-Power" "Via[0-5]_762:381_um" Power
   )
   (via 
-    "Via[0-5]_700:300_um-Power" "Via[0-5]_700:300_um" Power
+    "Via[0-5]_600:300_um-SwitcherPower" "Via[0-5]_600:300_um" SwitcherPower
+  )
+  (via 
+    "Via[0-5]_762:381_um-SwitcherPower" "Via[0-5]_762:381_um" SwitcherPower
   )
   (via 
     "Via[0-5]_600:300_um-cap_sensitive" "Via[0-5]_600:300_um" "cap_sensitive"
   )
   (via 
-    "Via[0-5]_889:381_um-cap_sensitive" "Via[0-5]_889:381_um" "cap_sensitive"
-  )
-  (via 
-    "Via[0-5]_700:300_um-cap_sensitive" "Via[0-5]_700:300_um" "cap_sensitive"
+    "Via[0-5]_762:381_um-cap_sensitive" "Via[0-5]_762:381_um" "cap_sensitive"
   )
   (via_rule
     default "Via[0-5]_600:300_um"
@@ -170,7 +153,13 @@
     "kicad_default" "Via[0-5]_600:300_um-kicad_default"
   )
   (via_rule
+    InPower "Via[0-5]_762:381_um-InPower"
+  )
+  (via_rule
     Power "Via[0-5]_600:300_um-Power"
+  )
+  (via_rule
+    SwitcherPower "Via[0-5]_600:300_um-SwitcherPower"
   )
   (via_rule
     "cap_sensitive" "Via[0-5]_600:300_um-cap_sensitive"
@@ -182,86 +171,97 @@
       (width 127.0)
     )
     (circuit 
-      (use_layer Top Route3 Route14 Bottom)
+      (use_layer Top Route2 Route3 Route14 Route15 Bottom)
     )
   )
   (class "kicad_default"
-    "/power/6V_IN" "2V048_REF" "A_EN1" "A_EN2" "A_EN3" /power/16V5 "/power/VREF_SW" "Net-(C11-Pad2)"
-    "/power/-16V5" /adc1/VCM "/adc1/IN_N_LP" "/adc1/IN_P_LP" /adc0/VCM "/adc0/IN_N_LP" "/adc0/IN_P_LP" /adc2/VCM
-    "/adc2/IN_N_LP" "/adc2/IN_P_LP" "/adc_gp/AIN_GND[0]" "/adc_gp/AIN[0]" "/adc_gp/AIN_GND[1]" "/adc_gp/AIN[1]" "/adc_gp/AIN_GND[2]" "/adc_gp/AIN[2]"
-    "/adc_gp/AIN_GND[3]" "/adc_gp/AIN[3]" "/adc_gp/AIN_GND[4]" "/adc_gp/AIN[4]" "/adc_gp/AIN_GND[5]" "/adc_gp/AIN[5]" "/adc_gp/AIN_GND[6]" "/adc_gp/AIN[6]"
-    "/adc_gp/AIN_GND[7]" "/adc_gp/AIN[7]" "/adc_gp/AIN_GND[8]" "/adc_gp/AIN[8]" "/adc_gp/AIN_GND[9]" "/adc_gp/AIN[9]" "/adc_gp/AIN_GND[10]" "/adc_gp/AIN[10]"
-    "/adc_gp/AIN_GND[11]" "/adc_gp/AIN[11]" "/adc_gp/AIN_GND[12]" "/adc_gp/AIN[12]" "/adc_gp/AIN_GND[13]" "/adc_gp/AIN[13]" "/adc_gp/AIN_GND[14]" "/adc_gp/AIN[14]"
-    "/adc_gp/AIN_GND[15]" "/adc_gp/AIN[15]" "Net-(C106-Pad1)" /adc3/VCM "/adc3/IN_N_LP" "/adc3/IN_P_LP" "Net-(C114-Pad2)" "Net-(C114-Pad1)"
-    "/dac1/VREF_BUF" "Net-(C119-Pad2)" /dac1/IOUT /dac1/OUT "Net-(C123-Pad2)" "Net-(C123-Pad1)" "/dac0/VREF_BUF" "Net-(C128-Pad2)"
-    /dac0/IOUT /dac0/OUT "Net-(C132-Pad2)" "Net-(C132-Pad1)" "/dac2/VREF_BUF" "Net-(C137-Pad2)" /dac2/IOUT /dac2/OUT
-    "Net-(C141-Pad2)" "Net-(C141-Pad1)" "/dac3/VREF_BUF" "Net-(C146-Pad2)" /dac3/IOUT /dac3/OUT "Net-(C150-Pad2)" "Net-(C150-Pad1)"
-    "/dac4/VREF_BUF" "Net-(C155-Pad2)" /dac4/IOUT /dac4/OUT "Net-(C159-Pad2)" "Net-(C159-Pad1)" "/dac5/VREF_BUF" "Net-(C164-Pad2)"
-    /dac5/IOUT /dac5/OUT "Net-(C178-Pad2)" "Net-(C178-Pad1)" "Net-(FB1-Pad2)" "Net-(FB2-Pad2)" "Net-(FB3-Pad2)" "Net-(FB4-Pad2)"
-    "Net-(FB5-Pad2)" "Net-(FB6-Pad2)" "Net-(FB7-Pad2)" "Net-(H2-Pad1)" "Net-(H3-Pad1)" "Net-(IC2-Pad7)" "/ADS_RESETb" "/ADS_SDI"
-    "/ADS_SCLK" "/ADS_CSB" "/ADS_CONVST" "Net-(IC4-Pad7)" "Net-(IC5-Pad7)" "Net-(IC6-Pad7)" "Net-(IC7-Pad7)" "/GP_ADC_IN1"
-    "/ok_fpga/DC0_SDA" "/ok_fpga/DC0_SCL" "Net-(J1-Pad14)" "/adc0/VCM_OUT" "/DAC1_CAL0" "/adc0/IN_P" "/adc0/IN_N" "/GP_ADC_IN0"
-    "/GP_ADC_IN3" "/ok_fpga/DC1_SDA" "/ok_fpga/DC1_SCL" "/adc1/VCM_OUT" "/DAC1_CAL1" "/adc1/IN_P" "/adc1/IN_N" "/GP_ADC_IN2"
-    "/power/EN_PWR" "/GP_ADC_IN8" "/DAC1_BP_OUT4" /GPIO0 "/GP_ADC_IN9" "/DAC1_BP_OUT5" /GPIO1 "/GP_ADC_IN10"
-    "/DAC1_BP_OUT6" /GPIO2 "/GP_ADC_IN11" "/DAC1_BP_OUT7" /GPIO3 "/GP_ADC_IN5" "/ok_fpga/DC2_SCL" "/ok_fpga/DC2_SDA"
-    "/adc2/VCM_OUT" "/DAC2_CAL2" "/DAC1_CAL2" "/adc2/IN_P" "/adc2/IN_N" "/GP_ADC_IN4" "/GP_ADC_IN7" "/ok_fpga/DC3_SDA"
-    "/ok_fpga/DC3_SCL" "/adc3/VCM_OUT" "/DAC2_CAL3" "/DAC1_CAL3" "/adc3/IN_P" "/adc3/IN_N" "/GP_ADC_IN6" "/power/EN_n15Vx"
-    "/power/EN_15Vx" "/power/EN_1V8x" "/power/EN_3V3x" "/power/EN_5Vx" "/ok_fpga/QW_SCL" "/ok_fpga/QW_SDA" "/GP_ADC_IN12" "/GP_ADC_IN13"
-    "/GP_ADC_IN14" "/GP_ADC_IN15" "/DAC1_OUT4" "/DAC1_OUT5" "/DAC1_OUT6" "/DAC1_OUT7" "/DAC2_OUT0" "/DAC2_OUT1"
-    "/DAC2_OUT4" "/DAC2_OUT5" "/DAC2_OUT6" "/DAC2_OUT7" "/DAC2_CAL0" "/DAC2_CAL1" "/DAC2_BP_OUT4" "/DAC2_BP_OUT5"
-    "/DAC2_BP_OUT6" "/DAC2_BP_OUT7" "/ok_fpga/DNO0" "/ok_fpga/DNO1" "/ok_fpga/DNO2" "/ok_fpga/DNO3" "/ok_fpga/DNO4" "/ok_fpga/DNO5"
-    "/ok_fpga/UPO5" "/ok_fpga/UPO4" "/ok_fpga/UPO3" "/ok_fpga/UPO2" "/ok_fpga/UPO1" "/ok_fpga/UPO0" "Net-(Q1-Pad3)" "Net-(Q1-Pad1)"
-    "Net-(Q2-Pad3)" "Net-(Q2-Pad1)" "Net-(R1-Pad2)" "Net-(R12-Pad1)" "Net-(R13-Pad1)" "Net-(R14-Pad1)" "/dac_gp1/howland_ipump/I_OUT" "/DS1_SDO"
-    "/EN_IPUMP1" "/ok_fpga/A1_CNV_N" "/ok_fpga/A1_CNV_P" "/ok_fpga/A1_CLK_P" "/ok_fpga/A1_CLK_N" "/ok_fpga/EN_3V3" "/ok_fpga/EN_15V" "/ok_fpga/EN_5V"
-    "/ok_fpga/EN_1V8" "/ok_fpga/EN_n15V" "/ok_fpga/1V8_SDA" "/ok_fpga/1V8_SCL" "/ok_fpga/LS_SCL" "/ok_fpga/LS_SDA" "Net-(OK1-PadMC2-16)" "Net-(OK1-PadMC2-20)"
-    "Net-(OK1-PadMC2-26)" "Net-(OK1-PadMC2-24)" "Net-(OK1-PadMC1-7)" "Net-(OK1-PadMC1-11)" "Net-(OK1-PadMC1-36)" "Net-(OK1-PadMC1-56)" "/ok_fpga/A0_CNV_N" "/ok_fpga/A0_CNV_P"
-    "/ADS_BUSY" "/ADS_SDOA" "/ADS_SDOB" "/ok_fpga/A0_CLK_P" "/ok_fpga/A0_CLK_N" "Net-(R139-Pad1)" "/ok_fpga/A2_CNV_N" "/ok_fpga/A2_CNV_P"
-    "/ok_fpga/A2_CLK_P" "/ok_fpga/A2_CLK_N" "Net-(R144-Pad1)" "/ok_fpga/A3_CNV_N" "/ok_fpga/A3_CLK_P" "/ok_fpga/A3_CNV_P" "/ok_fpga/A3_CLK_N" "Net-(R149-Pad1)"
-    "Net-(R153-Pad1)" "Net-(R154-Pad1)" "Net-(R155-Pad1)" "Net-(R156-Pad1)" /dac1/CSB "/dac1/CSB_T" "/ok_fpga/D1_SCLK" "/dac1/SCLK_T"
-    "/ok_fpga/D1_SDI" "/dac1/SDI_T" "Net-(R161-Pad1)" "Net-(R163-Pad2)" "Net-(R164-Pad2)" "Net-(R165-Pad2)" "Net-(R170-Pad1)" "Net-(R171-Pad1)"
-    "Net-(R172-Pad1)" "Net-(R173-Pad1)" /dac0/CSB "/dac0/CSB_T" "/ok_fpga/D0_SCLK" "/dac0/SCLK_T" "/ok_fpga/D0_SDI" "/dac0/SDI_T"
-    "Net-(R178-Pad1)" "Net-(R180-Pad2)" "Net-(R181-Pad2)" "Net-(R182-Pad2)" "Net-(R187-Pad1)" "Net-(R188-Pad1)" "Net-(R189-Pad1)" "Net-(R190-Pad1)"
-    /dac2/CSB "/dac2/CSB_T" "/ok_fpga/D2_SCLK" "/dac2/SCLK_T" "/ok_fpga/D2_SDI" "/dac2/SDI_T" "Net-(R195-Pad1)" "Net-(R197-Pad2)"
-    "Net-(R198-Pad2)" "Net-(R199-Pad2)" "Net-(R204-Pad1)" "Net-(R205-Pad1)" "Net-(R206-Pad1)" "Net-(R207-Pad1)" /dac3/CSB "/dac3/CSB_T"
-    "/ok_fpga/D3_SCLK" "/dac3/SCLK_T" "/ok_fpga/D3_SDI" "/dac3/SDI_T" "Net-(R212-Pad1)" "Net-(R214-Pad2)" "Net-(R215-Pad2)" "Net-(R216-Pad2)"
-    "Net-(R221-Pad1)" "Net-(R222-Pad1)" "Net-(R223-Pad1)" "Net-(R224-Pad1)" /dac4/CSB "/dac4/CSB_T" "/ok_fpga/D4_SCLK" "/dac4/SCLK_T"
-    "/ok_fpga/D4_SDI" "/dac4/SDI_T" "Net-(R229-Pad1)" "Net-(R231-Pad2)" "Net-(R232-Pad2)" "Net-(R233-Pad2)" "Net-(R238-Pad1)" "Net-(R239-Pad1)"
-    "Net-(R240-Pad1)" "Net-(R241-Pad1)" /dac5/CSB "/dac5/CSB_T" "/ok_fpga/D5_SCLK" "/dac5/SCLK_T" "/ok_fpga/D5_SDI" "/dac5/SDI_T"
-    "Net-(R246-Pad1)" "Net-(R248-Pad2)" "Net-(R249-Pad2)" "Net-(R250-Pad2)" "Net-(R254-Pad2)" "Net-(R255-Pad2)" "Net-(R260-Pad2)" "Net-(R261-Pad2)"
-    "/DS2_SDO" "Net-(R278-Pad1)" "Net-(R279-Pad1)" "/dac_gp2/howland_ipump/I_OUT" "/EN_IPUMP2" "Net-(OK1-PadMC2-2)" "Net-(OK1-PadMC2-5)" "Net-(OK1-PadMC2-7)"
-    "Net-(OK1-PadMC2-9)" "Net-(OK1-PadMC2-11)" "Net-(OK1-PadMC2-8)" "Net-(OK1-PadMC2-10)" "Net-(OK1-PadMC1-8)" "/DS1_SDI" "/DS1_SCLK" "/DS1_CSB"
-    "/ok_fpga/I1SEL1" "/ok_fpga/I1SEL0" "/ok_fpga/I1SEL3" "/ok_fpga/I1SEL2" "Net-(U14-Pad2)" "/ok_fpga/A0_EN0_HV" "/ok_fpga/A1_EN0_HV" "/ok_fpga/A2_EN0_HV"
-    "/ok_fpga/A3_EN0_HV" "/ok_fpga/A_EN1_HV" "/ok_fpga/A_EN2_HV" "/ok_fpga/A_EN3_HV" "/ok_fpga/A3_EN0" "/ok_fpga/A2_EN0" "/ok_fpga/A1_EN0" "/ok_fpga/A0_EN0"
-    "/ok_fpga/UP5" "/ok_fpga/UP4" "/ok_fpga/UP3" "/ok_fpga/UP2" "/ok_fpga/UP1" "/ok_fpga/UP0" "/ok_fpga/DN0" "/ok_fpga/DN1"
-    "/ok_fpga/DN2" "/ok_fpga/DN3" "/ok_fpga/DN4" "/ok_fpga/DN5" "/ok_fpga/A1_DCO_P" "/ok_fpga/A1_DCO_N" "/ok_fpga/A1_D_P" "/ok_fpga/A1_D_N"
-    "/ok_fpga/I2SEL3" "/ok_fpga/I2SEL2" "/ok_fpga/I2SEL1" "/ok_fpga/I2SEL0" "/ok_fpga/A0_DCO_P" "/ok_fpga/A0_DCO_N" "/ok_fpga/A0_D_P" "/ok_fpga/A0_D_N"
-    "/ok_fpga/A2_DCO_P" "/ok_fpga/A2_DCO_N" "/ok_fpga/A2_D_P" "/ok_fpga/A2_D_N" "/ok_fpga/A3_DCO_P" "/ok_fpga/A3_DCO_N" "/ok_fpga/A3_D_P" "/ok_fpga/A3_D_N"
-    "/DS2_SDI" "/DS2_SCLK" "/DS2_CSB" "Net-(U63-Pad16)" "Net-(U63-Pad15)" "Net-(U63-Pad14)" "Net-(U63-Pad8)" "Net-(U63-Pad7)"
-    "/GP_LVDS_0P" "/GP_LVDS_0N" "/GP_LVDS_1P" "/GP_LVDS_1N" "/GP_LVDS_2P" "/GP_LVDS_2N" "/GP_LVDS_3P" "/GP_LVDS_3N"
-    "Net-(C11-Pad1)" "Net-(C16-Pad2)" "Net-(C18-Pad1)" "Net-(C20-Pad2)" "Net-(C20-Pad1)" "Net-(C22-Pad1)" "Net-(C23-Pad2)" "Net-(C27-Pad1)"
-    "Net-(C41-Pad1)" "Net-(C70-Pad1)" "Net-(C71-Pad1)" "Net-(C73-Pad1)" "Net-(C79-Pad1)" "Net-(C84-Pad1)" "Net-(C95-Pad1)" "Net-(D1-Pad2)"
-    "Net-(IC1-Pad67)" "Net-(IC1-Pad57)" "Net-(IC1-Pad56)" "Net-(IC3-Pad7)" "Net-(J2-Pad14)" "Net-(J12-Pad3)" "Net-(J16-Pad1)" "Net-(J17-Pad1)"
-    "Net-(R9-Pad2)" "Net-(R10-Pad2)" "Net-(R15-Pad2)" "Net-(R16-Pad2)" "Net-(R17-Pad2)" "Net-(R18-Pad2)" "Net-(R27-Pad1)" "Net-(R28-Pad1)"
-    "Net-(R53-Pad1)" "Net-(R56-Pad1)" "Net-(R83-Pad1)" "Net-(U10-Pad16)" "Net-(U10-Pad15)" "Net-(U10-Pad14)" "Net-(U10-Pad8)" "Net-(U10-Pad7)"
-    "Net-(U11-Pad16)" "Net-(U11-Pad15)" "Net-(U11-Pad14)" "Net-(U11-Pad8)" "Net-(U11-Pad7)" "Net-(U15-Pad2)" "Net-(U18-Pad2)" "Net-(U20-Pad2)"
-    "Net-(U21-Pad7)" "Net-(U23-Pad10)" "Net-(U24-Pad13)" "Net-(U24-Pad12)" "Net-(U24-Pad9)" "Net-(U24-Pad8)" "Net-(U25-Pad13)" "Net-(U25-Pad12)"
-    "Net-(U25-Pad9)" "Net-(U25-Pad8)" "Net-(U26-Pad1)" "Net-(U27-Pad1)" "Net-(U36-Pad12)" "Net-(U39-Pad12)" "Net-(U42-Pad12)" "Net-(U45-Pad12)"
-    "Net-(U48-Pad12)" "Net-(U51-Pad12)" "Net-(U64-Pad16)" "Net-(U64-Pad15)" "Net-(U64-Pad14)" "Net-(U64-Pad8)" "Net-(U64-Pad7)" "Net-(OK1-PadMC2-79)"
-    "Net-(OK1-PadMC2-77)" "Net-(OK1-PadMC1-5)" "Net-(OK1-PadMC1-3)" "Net-(OK1-PadMC1-1)" "Net-(OK1-PadMC1-6)" "Net-(OK1-PadMC1-62)" "Net-(OK1-PadMC1-64)" "Net-(OK1-PadMC1-4)"
-    "Net-(OK1-PadMC2-35)" "Net-(OK1-PadMC2-55)" "Net-(OK1-PadMC2-3)" "Net-(OK1-PadMC2-60)" "/dac_gp1/REF" "/dac_gp1/BP_OUT0" "/dac_gp1/BP_OUT1" "/dac_gp1/BP_OUT2"
-    "/dac_gp1/BP_OUT3" "Net-(R84-Pad2)" "/dac_gp2/REF" "Net-(R85-Pad2)" "/dac_gp2/BP_OUT0" "/dac_gp2/BP_OUT1" "Net-(R107-Pad2)" "Net-(R108-Pad2)"
-    "/dac_gp2/BP_OUT2" "/dac_gp2/BP_OUT3" "Net-(R111-Pad2)" "Net-(R112-Pad2)" "Net-(J7-Pad14)" "Net-(J8-Pad14)" "/dac_gp1/OUT1" "/dac_gp1/OUT0"
-    "/dac_gp1/OUT3" "/dac_gp1/OUT2" "/dac_gp2/OUT3" "/dac_gp2/OUT2" "/ok_fpga/DAC3_G3" "/ok_fpga/DAC3_G2" "/ok_fpga/DAC3_G1" "/ok_fpga/DAC3_G0"
-    "/ok_fpga/DAC2_G3" "/ok_fpga/DAC2_G2" "/ok_fpga/DAC2_G1" "/ok_fpga/DAC2_G0" "/ok_fpga/DAC1_G3" "/ok_fpga/DAC1_G2" "/ok_fpga/DAC1_G1" "/ok_fpga/DAC1_G0"
-    "/ok_fpga/DAC0_G3" "/ok_fpga/DAC0_G2" "/ok_fpga/DAC0_G1" "/ok_fpga/DAC0_G0" "/ok_fpga/DAC5_G3" "/ok_fpga/DAC5_G2" "/ok_fpga/DAC5_G1" "/ok_fpga/DAC5_G0"
-    "/ok_fpga/DAC4_G3" "/ok_fpga/DAC4_G2" "/ok_fpga/DAC4_G1" "/ok_fpga/DAC4_G0" "Net-(OK1-PadMC1-12)" "Net-(OK1-PadMC1-10)"
+    "/power/6V_IN" "2V048_REF" "A_EN1" "A_EN2" "A_EN3" "/power/VREF_SW" "Net-(C11-Pad2)" /adc1/VCM
+    "/adc1/IN_N_LP" "/adc1/IN_P_LP" /adc0/VCM "/adc0/IN_N_LP" "/adc0/IN_P_LP" /adc2/VCM "/adc2/IN_N_LP" "/adc2/IN_P_LP"
+    "/adc_gp/AIN_GND[0]" "/adc_gp/AIN[0]" "/adc_gp/AIN_GND[1]" "/adc_gp/AIN[1]" "/adc_gp/AIN_GND[2]" "/adc_gp/AIN[2]" "/adc_gp/AIN_GND[3]" "/adc_gp/AIN[3]"
+    "/adc_gp/AIN_GND[4]" "/adc_gp/AIN[4]" "/adc_gp/AIN_GND[5]" "/adc_gp/AIN[5]" "/adc_gp/AIN_GND[6]" "/adc_gp/AIN[6]" "/adc_gp/AIN_GND[7]" "/adc_gp/AIN[7]"
+    "/adc_gp/AIN_GND[8]" "/adc_gp/AIN[8]" "/adc_gp/AIN_GND[9]" "/adc_gp/AIN[9]" "/adc_gp/AIN_GND[10]" "/adc_gp/AIN[10]" "/adc_gp/AIN_GND[11]" "/adc_gp/AIN[11]"
+    "/adc_gp/AIN_GND[12]" "/adc_gp/AIN[12]" "/adc_gp/AIN_GND[13]" "/adc_gp/AIN[13]" "/adc_gp/AIN_GND[14]" "/adc_gp/AIN[14]" "/adc_gp/AIN_GND[15]" "/adc_gp/AIN[15]"
+    "Net-(C106-Pad1)" /adc3/VCM "/adc3/IN_N_LP" "/adc3/IN_P_LP" "Net-(C114-Pad2)" "Net-(C114-Pad1)" "/dac1/VREF_BUF" "Net-(C119-Pad2)"
+    /dac1/IOUT /dac1/OUT "Net-(C123-Pad2)" "Net-(C123-Pad1)" "/dac0/VREF_BUF" "Net-(C128-Pad2)" /dac0/IOUT /dac0/OUT
+    "Net-(C132-Pad2)" "Net-(C132-Pad1)" "/dac2/VREF_BUF" "Net-(C137-Pad2)" /dac2/IOUT /dac2/OUT "Net-(C141-Pad2)" "Net-(C141-Pad1)"
+    "/dac3/VREF_BUF" "Net-(C146-Pad2)" /dac3/IOUT /dac3/OUT "Net-(C150-Pad2)" "Net-(C150-Pad1)" "/dac4/VREF_BUF" "Net-(C155-Pad2)"
+    /dac4/IOUT /dac4/OUT "Net-(C159-Pad2)" "Net-(C159-Pad1)" "/dac5/VREF_BUF" "Net-(C164-Pad2)" /dac5/IOUT /dac5/OUT
+    "Net-(C178-Pad2)" "Net-(C178-Pad1)" "Net-(FB1-Pad2)" "Net-(FB2-Pad2)" "Net-(FB3-Pad2)" "Net-(FB4-Pad2)" "Net-(FB5-Pad2)" "Net-(FB6-Pad2)"
+    "Net-(H2-Pad1)" "Net-(H3-Pad1)" "Net-(IC2-Pad7)" "/ADS_RESETb" "/ADS_SDI" "/ADS_SCLK" "/ADS_CSB" "/ADS_CONVST"
+    "Net-(IC4-Pad7)" "Net-(IC5-Pad7)" "Net-(IC6-Pad7)" "Net-(IC7-Pad7)" "/GP_ADC_IN1" "/ok_fpga/DC0_SDA" "/ok_fpga/DC0_SCL" "Net-(J1-Pad14)"
+    "/adc0/VCM_OUT" "/DAC1_CAL0" "/adc0/IN_P" "/adc0/IN_N" "/GP_ADC_IN0" "/GP_ADC_IN3" "/ok_fpga/DC1_SDA" "/ok_fpga/DC1_SCL"
+    "/adc1/VCM_OUT" "/DAC1_CAL1" "/adc1/IN_P" "/adc1/IN_N" "/GP_ADC_IN2" "/power/EN_PWR" "/GP_ADC_IN8" "/DAC1_BP_OUT4"
+    /GPIO0 "/GP_ADC_IN9" "/DAC1_BP_OUT5" /GPIO1 "/GP_ADC_IN10" "/DAC1_BP_OUT6" /GPIO2 "/GP_ADC_IN11"
+    "/DAC1_BP_OUT7" /GPIO3 "/GP_ADC_IN5" "/ok_fpga/DC2_SCL" "/ok_fpga/DC2_SDA" "/adc2/VCM_OUT" "/DAC2_CAL2" "/DAC1_CAL2"
+    "/adc2/IN_P" "/adc2/IN_N" "/GP_ADC_IN4" "/GP_ADC_IN7" "/ok_fpga/DC3_SDA" "/ok_fpga/DC3_SCL" "/adc3/VCM_OUT" "/DAC2_CAL3"
+    "/DAC1_CAL3" "/adc3/IN_P" "/adc3/IN_N" "/GP_ADC_IN6" "/power/EN_n15Vx" "/power/EN_15Vx" "/power/EN_1V8x" "/power/EN_3V3x"
+    "/power/EN_5Vx" "/ok_fpga/QW_SCL" "/ok_fpga/QW_SDA" "/GP_ADC_IN12" "/GP_ADC_IN13" "/GP_ADC_IN14" "/GP_ADC_IN15" "/DAC1_OUT4"
+    "/DAC1_OUT5" "/DAC1_OUT6" "/DAC1_OUT7" "/DAC2_OUT0" "/DAC2_OUT1" "/DAC2_OUT4" "/DAC2_OUT5" "/DAC2_OUT6"
+    "/DAC2_OUT7" "/DAC2_CAL0" "/DAC2_CAL1" "/DAC2_BP_OUT4" "/DAC2_BP_OUT5" "/DAC2_BP_OUT6" "/DAC2_BP_OUT7" "/ok_fpga/DNO0"
+    "/ok_fpga/DNO1" "/ok_fpga/DNO2" "/ok_fpga/DNO3" "/ok_fpga/DNO4" "/ok_fpga/DNO5" "/ok_fpga/UPO5" "/ok_fpga/UPO4" "/ok_fpga/UPO3"
+    "/ok_fpga/UPO2" "/ok_fpga/UPO1" "/ok_fpga/UPO0" "Net-(Q1-Pad3)" "Net-(Q1-Pad1)" "Net-(Q2-Pad3)" "Net-(Q2-Pad1)" "Net-(R1-Pad2)"
+    "Net-(R12-Pad1)" "Net-(R13-Pad1)" "Net-(R14-Pad1)" "/dac_gp1/howland_ipump/I_OUT" "/DS1_SDO" "/EN_IPUMP1" "/ok_fpga/A1_CNV_N" "/ok_fpga/A1_CNV_P"
+    "/ok_fpga/A1_CLK_P" "/ok_fpga/A1_CLK_N" "/ok_fpga/EN_3V3" "/ok_fpga/EN_15V" "/ok_fpga/EN_5V" "/ok_fpga/EN_1V8" "/ok_fpga/EN_n15V" "/ok_fpga/1V8_SDA"
+    "/ok_fpga/1V8_SCL" "/ok_fpga/LS_SCL" "/ok_fpga/LS_SDA" "Net-(OK1-PadMC2-16)" "Net-(OK1-PadMC2-20)" "Net-(OK1-PadMC2-26)" "Net-(OK1-PadMC2-24)" "Net-(OK1-PadMC1-7)"
+    "Net-(OK1-PadMC1-11)" "Net-(OK1-PadMC1-36)" "Net-(OK1-PadMC1-56)" "/ok_fpga/A0_CNV_N" "/ok_fpga/A0_CNV_P" "/ADS_BUSY" "/ADS_SDOA" "/ADS_SDOB"
+    "/ok_fpga/A0_CLK_P" "/ok_fpga/A0_CLK_N" "Net-(R139-Pad1)" "/ok_fpga/A2_CNV_N" "/ok_fpga/A2_CNV_P" "/ok_fpga/A2_CLK_P" "/ok_fpga/A2_CLK_N" "Net-(R144-Pad1)"
+    "/ok_fpga/A3_CNV_N" "/ok_fpga/A3_CLK_P" "/ok_fpga/A3_CNV_P" "/ok_fpga/A3_CLK_N" "Net-(R149-Pad1)" "Net-(R153-Pad1)" "Net-(R154-Pad1)" "Net-(R155-Pad1)"
+    "Net-(R156-Pad1)" /dac1/CSB "/dac1/CSB_T" "/ok_fpga/D1_SCLK" "/dac1/SCLK_T" "/ok_fpga/D1_SDI" "/dac1/SDI_T" "Net-(R161-Pad1)"
+    "Net-(R163-Pad2)" "Net-(R164-Pad2)" "Net-(R165-Pad2)" "Net-(R170-Pad1)" "Net-(R171-Pad1)" "Net-(R172-Pad1)" "Net-(R173-Pad1)" /dac0/CSB
+    "/dac0/CSB_T" "/ok_fpga/D0_SCLK" "/dac0/SCLK_T" "/ok_fpga/D0_SDI" "/dac0/SDI_T" "Net-(R178-Pad1)" "Net-(R180-Pad2)" "Net-(R181-Pad2)"
+    "Net-(R182-Pad2)" "Net-(R187-Pad1)" "Net-(R188-Pad1)" "Net-(R189-Pad1)" "Net-(R190-Pad1)" /dac2/CSB "/dac2/CSB_T" "/ok_fpga/D2_SCLK"
+    "/dac2/SCLK_T" "/ok_fpga/D2_SDI" "/dac2/SDI_T" "Net-(R195-Pad1)" "Net-(R197-Pad2)" "Net-(R198-Pad2)" "Net-(R199-Pad2)" "Net-(R204-Pad1)"
+    "Net-(R205-Pad1)" "Net-(R206-Pad1)" "Net-(R207-Pad1)" /dac3/CSB "/dac3/CSB_T" "/ok_fpga/D3_SCLK" "/dac3/SCLK_T" "/ok_fpga/D3_SDI"
+    "/dac3/SDI_T" "Net-(R212-Pad1)" "Net-(R214-Pad2)" "Net-(R215-Pad2)" "Net-(R216-Pad2)" "Net-(R221-Pad1)" "Net-(R222-Pad1)" "Net-(R223-Pad1)"
+    "Net-(R224-Pad1)" /dac4/CSB "/dac4/CSB_T" "/ok_fpga/D4_SCLK" "/dac4/SCLK_T" "/ok_fpga/D4_SDI" "/dac4/SDI_T" "Net-(R229-Pad1)"
+    "Net-(R231-Pad2)" "Net-(R232-Pad2)" "Net-(R233-Pad2)" "Net-(R238-Pad1)" "Net-(R239-Pad1)" "Net-(R240-Pad1)" "Net-(R241-Pad1)" /dac5/CSB
+    "/dac5/CSB_T" "/ok_fpga/D5_SCLK" "/dac5/SCLK_T" "/ok_fpga/D5_SDI" "/dac5/SDI_T" "Net-(R246-Pad1)" "Net-(R248-Pad2)" "Net-(R249-Pad2)"
+    "Net-(R250-Pad2)" "Net-(R254-Pad2)" "Net-(R255-Pad2)" "Net-(R260-Pad2)" "Net-(R261-Pad2)" "/DS2_SDO" "Net-(R278-Pad1)" "Net-(R279-Pad1)"
+    "/dac_gp2/howland_ipump/I_OUT" "/EN_IPUMP2" "Net-(OK1-PadMC2-2)" "Net-(OK1-PadMC2-5)" "Net-(OK1-PadMC2-7)" "Net-(OK1-PadMC2-9)" "Net-(OK1-PadMC2-11)" "Net-(OK1-PadMC2-8)"
+    "Net-(OK1-PadMC2-10)" "Net-(OK1-PadMC1-8)" "/DS1_SDI" "/DS1_SCLK" "/DS1_CSB" "/ok_fpga/I1SEL1" "/ok_fpga/I1SEL0" "/ok_fpga/I1SEL3"
+    "/ok_fpga/I1SEL2" "Net-(U14-Pad2)" "/ok_fpga/A0_EN0_HV" "/ok_fpga/A1_EN0_HV" "/ok_fpga/A2_EN0_HV" "/ok_fpga/A3_EN0_HV" "/ok_fpga/A_EN1_HV" "/ok_fpga/A_EN2_HV"
+    "/ok_fpga/A_EN3_HV" "/ok_fpga/A3_EN0" "/ok_fpga/A2_EN0" "/ok_fpga/A1_EN0" "/ok_fpga/A0_EN0" "/ok_fpga/UP5" "/ok_fpga/UP4" "/ok_fpga/UP3"
+    "/ok_fpga/UP2" "/ok_fpga/UP1" "/ok_fpga/UP0" "/ok_fpga/DN0" "/ok_fpga/DN1" "/ok_fpga/DN2" "/ok_fpga/DN3" "/ok_fpga/DN4"
+    "/ok_fpga/DN5" "/ok_fpga/A1_DCO_P" "/ok_fpga/A1_DCO_N" "/ok_fpga/A1_D_P" "/ok_fpga/A1_D_N" "/ok_fpga/I2SEL3" "/ok_fpga/I2SEL2" "/ok_fpga/I2SEL1"
+    "/ok_fpga/I2SEL0" "/ok_fpga/A0_DCO_P" "/ok_fpga/A0_DCO_N" "/ok_fpga/A0_D_P" "/ok_fpga/A0_D_N" "/ok_fpga/A2_DCO_P" "/ok_fpga/A2_DCO_N" "/ok_fpga/A2_D_P"
+    "/ok_fpga/A2_D_N" "/ok_fpga/A3_DCO_P" "/ok_fpga/A3_DCO_N" "/ok_fpga/A3_D_P" "/ok_fpga/A3_D_N" "/DS2_SDI" "/DS2_SCLK" "/DS2_CSB"
+    "Net-(U63-Pad16)" "Net-(U63-Pad15)" "Net-(U63-Pad14)" "Net-(U63-Pad8)" "Net-(U63-Pad7)" "/GP_LVDS_0P" "/GP_LVDS_0N" "/GP_LVDS_1P"
+    "/GP_LVDS_1N" "/GP_LVDS_2P" "/GP_LVDS_2N" "/GP_LVDS_3P" "/GP_LVDS_3N" "Net-(C11-Pad1)" "Net-(C16-Pad2)" "Net-(C18-Pad1)"
+    "Net-(C20-Pad2)" "Net-(C20-Pad1)" "Net-(C22-Pad1)" "Net-(C23-Pad2)" "Net-(C27-Pad1)" "Net-(C41-Pad1)" "Net-(C70-Pad1)" "Net-(C71-Pad1)"
+    "Net-(C73-Pad1)" "Net-(C79-Pad1)" "Net-(C84-Pad1)" "Net-(C95-Pad1)" "Net-(D1-Pad2)" "Net-(IC1-Pad67)" "Net-(IC1-Pad57)" "Net-(IC1-Pad56)"
+    "Net-(IC3-Pad7)" "Net-(J2-Pad14)" "Net-(J12-Pad3)" "Net-(J16-Pad1)" "Net-(J17-Pad1)" "Net-(R9-Pad2)" "Net-(R10-Pad2)" "Net-(R15-Pad2)"
+    "Net-(R16-Pad2)" "Net-(R17-Pad2)" "Net-(R18-Pad2)" "Net-(R27-Pad1)" "Net-(R28-Pad1)" "Net-(R53-Pad1)" "Net-(R56-Pad1)" "Net-(R83-Pad1)"
+    "Net-(U10-Pad16)" "Net-(U10-Pad15)" "Net-(U10-Pad14)" "Net-(U10-Pad8)" "Net-(U10-Pad7)" "Net-(U11-Pad16)" "Net-(U11-Pad15)" "Net-(U11-Pad14)"
+    "Net-(U11-Pad8)" "Net-(U11-Pad7)" "Net-(U15-Pad2)" "Net-(U18-Pad2)" "Net-(U20-Pad2)" "Net-(U21-Pad7)" "Net-(U23-Pad10)" "Net-(U24-Pad13)"
+    "Net-(U24-Pad12)" "Net-(U24-Pad9)" "Net-(U24-Pad8)" "Net-(U25-Pad13)" "Net-(U25-Pad12)" "Net-(U25-Pad9)" "Net-(U25-Pad8)" "Net-(U26-Pad1)"
+    "Net-(U27-Pad1)" "Net-(U36-Pad12)" "Net-(U39-Pad12)" "Net-(U42-Pad12)" "Net-(U45-Pad12)" "Net-(U48-Pad12)" "Net-(U51-Pad12)" "Net-(U64-Pad16)"
+    "Net-(U64-Pad15)" "Net-(U64-Pad14)" "Net-(U64-Pad8)" "Net-(U64-Pad7)" "Net-(OK1-PadMC2-79)" "Net-(OK1-PadMC2-77)" "Net-(OK1-PadMC1-5)" "Net-(OK1-PadMC1-3)"
+    "Net-(OK1-PadMC1-1)" "Net-(OK1-PadMC1-6)" "Net-(OK1-PadMC1-62)" "Net-(OK1-PadMC1-64)" "Net-(OK1-PadMC1-4)" "Net-(OK1-PadMC2-35)" "Net-(OK1-PadMC2-55)" "Net-(OK1-PadMC2-3)"
+    "Net-(OK1-PadMC2-60)" "/dac_gp1/REF" "/dac_gp1/BP_OUT0" "/dac_gp1/BP_OUT1" "/dac_gp1/BP_OUT2" "/dac_gp1/BP_OUT3" "Net-(R84-Pad2)" "/dac_gp2/REF"
+    "Net-(R85-Pad2)" "/dac_gp2/BP_OUT0" "/dac_gp2/BP_OUT1" "Net-(R107-Pad2)" "Net-(R108-Pad2)" "/dac_gp2/BP_OUT2" "/dac_gp2/BP_OUT3" "Net-(R111-Pad2)"
+    "Net-(R112-Pad2)" "Net-(J7-Pad14)" "Net-(J8-Pad14)" "/dac_gp1/OUT1" "/dac_gp1/OUT0" "/dac_gp1/OUT3" "/dac_gp1/OUT2" "/dac_gp2/OUT3"
+    "/dac_gp2/OUT2" "/ok_fpga/DAC3_G3" "/ok_fpga/DAC3_G2" "/ok_fpga/DAC3_G1" "/ok_fpga/DAC3_G0" "/ok_fpga/DAC2_G3" "/ok_fpga/DAC2_G2" "/ok_fpga/DAC2_G1"
+    "/ok_fpga/DAC2_G0" "/ok_fpga/DAC1_G3" "/ok_fpga/DAC1_G2" "/ok_fpga/DAC1_G1" "/ok_fpga/DAC1_G0" "/ok_fpga/DAC0_G3" "/ok_fpga/DAC0_G2" "/ok_fpga/DAC0_G1"
+    "/ok_fpga/DAC0_G0" "/ok_fpga/DAC5_G3" "/ok_fpga/DAC5_G2" "/ok_fpga/DAC5_G1" "/ok_fpga/DAC5_G0" "/ok_fpga/DAC4_G3" "/ok_fpga/DAC4_G2" "/ok_fpga/DAC4_G1"
+    "/ok_fpga/DAC4_G0" "Net-(OK1-PadMC1-12)" "Net-(OK1-PadMC1-10)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
       (width 127.0)
     )
     (circuit 
-      (use_layer Top Route3 Route14 Bottom)
+      (use_layer Top Route2 Route3 Route14 Route15 Bottom)
+    )
+  )
+  (class InPower
+    "Net-(FB7-Pad2)"
+    (clearance_class InPower)
+    (via_rule InPower)
+    (rule
+      (width 889.0)
+    )
+    (circuit 
+      (use_layer Top Route2 Route3 Route14 Route15 Bottom)
     )
   )
   (class Power
@@ -272,7 +272,18 @@
       (width 254.0)
     )
     (circuit 
-      (use_layer Top Route3 Route14 Bottom)
+      (use_layer Top Route2 Route3 Route14 Route15 Bottom)
+    )
+  )
+  (class SwitcherPower
+    /power/16V5 "/power/-16V5"
+    (clearance_class SwitcherPower)
+    (via_rule SwitcherPower)
+    (rule
+      (width 508.0)
+    )
+    (circuit 
+      (use_layer Top Route2 Route3 Route14 Route15 Bottom)
     )
   )
   (class "cap_sensitive"
@@ -282,7 +293,7 @@
       (width 152.4)
     )
     (circuit 
-      (use_layer Top Route3 Route14 Bottom)
+      (use_layer Top Route2 Route3 Route14 Route15 Bottom)
     )
   )
 )
