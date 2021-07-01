@@ -1,4 +1,4 @@
-update=Wednesday, 30 June 2021 at 22:17:49
+update=Thursday, 01 July 2021 at 12:26:16
 version=1
 last_client=kicad
 [general]
@@ -261,7 +261,7 @@ dPairViaGap=0.25
 [pcbnew/Netclasses/1]
 Name=InPower
 Clearance=0.254
-TrackWidth=0.889
+TrackWidth=0.508
 ViaDiameter=0.762
 ViaDrill=0.381
 uViaDiameter=0.6858
