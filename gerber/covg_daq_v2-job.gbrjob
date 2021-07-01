@@ -1,0 +1,193 @@
+{
+  "Header":
+  {
+    "GenerationSoftware":
+    {
+      "Vendor":      "KiCad",
+      "Application": "Pcbnew",
+      "Version":     "(5.1.9-0-10_14)"
+    },
+    "CreationDate":  "2021-06-30T17:42:44-05:00"
+  },
+  "GeneralSpecs":
+  {
+    "ProjectId":
+    {
+      "Name": "covg_daq_v2",
+      "GUID": "636f7667-5f64-4617-915f-76322e6b6963",
+      "Revision": "rev?"
+    },
+    "Size":
+    {
+      "X": 157.850,
+      "Y": 95.250
+    },
+    "LayerNumber": 6,
+    "BoardThickness":  1.600
+  },
+  "DesignRules":
+  [
+    {
+      "Layers": "Outer",
+      "PadToPad":  0.127,
+      "PadToTrack":  0.127,
+      "TrackToTrack":  0.127,
+      "MinLineWidth":  0.127,
+      "TrackToRegion":  0.508,
+      "RegionToRegion":  0.508
+    },
+    {
+      "Layers": "Inner",
+      "PadToPad":  0.127,
+      "PadToTrack":  0.127,
+      "TrackToTrack":  0.127,
+      "MinLineWidth":  0.127,
+      "TrackToRegion":  0.254,
+      "RegionToRegion":  0.254
+    }
+  ],
+  "FilesAttributes":
+  [
+    {
+      "Path":  "covg_daq_v2-Top.gtl",
+      "FileFunction":  "Copper,L1,Top",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "covg_daq_v2-Route2.g2",
+      "FileFunction":  "Copper,L2,Inr",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "covg_daq_v2-Route3.g3",
+      "FileFunction":  "Copper,L3,Inr",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "covg_daq_v2-Route14.g4",
+      "FileFunction":  "Copper,L4,Inr",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "covg_daq_v2-Route15.g5",
+      "FileFunction":  "Copper,L5,Inr",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "covg_daq_v2-Bottom.gbl",
+      "FileFunction":  "Copper,L6,Bot",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "covg_daq_v2-F_Paste.gtp",
+      "FileFunction":  "SolderPaste,Top",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "covg_daq_v2-B_Paste.gbp",
+      "FileFunction":  "SolderPaste,Bot",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "covg_daq_v2-F_SilkS.gto",
+      "FileFunction":  "Legend,Top",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "covg_daq_v2-B_SilkS.gbo",
+      "FileFunction":  "Legend,Bot",
+      "FilePolarity":  "Positive"
+    },
+    {
+      "Path":  "covg_daq_v2-F_Mask.gts",
+      "FileFunction":  "SolderMask,Top",
+      "FilePolarity":  "Negative"
+    },
+    {
+      "Path":  "covg_daq_v2-B_Mask.gbs",
+      "FileFunction":  "SolderMask,Bot",
+      "FilePolarity":  "Negative"
+    },
+    {
+      "Path":  "covg_daq_v2-Edge_Cuts.gm1",
+      "FileFunction":  "Profile",
+      "FilePolarity":  "Positive"
+    }
+  ],
+  "MaterialStackup":
+  [
+    {
+      "Type":  "Legend",
+      "Notes":  "Layer F.SilkS"
+    },
+    {
+      "Type":  "SolderPaste",
+      "Notes":  "Layer F.Paste"
+    },
+    {
+      "Type":  "SolderMask",
+      "Notes":  "Layer F.Mask"
+    },
+    {
+      "Type":  "Copper",
+      "Notes":  "Layer Top"
+    },
+    {
+      "Type":  "Dielectric",
+      "Material":  "FR4",
+      "Notes":  "Layers L1/L2"
+    },
+    {
+      "Type":  "Copper",
+      "Notes":  "Layer Route2"
+    },
+    {
+      "Type":  "Dielectric",
+      "Material":  "FR4",
+      "Notes":  "Layers L2/L3"
+    },
+    {
+      "Type":  "Copper",
+      "Notes":  "Layer Route3"
+    },
+    {
+      "Type":  "Dielectric",
+      "Material":  "FR4",
+      "Notes":  "Layers L3/L4"
+    },
+    {
+      "Type":  "Copper",
+      "Notes":  "Layer Route14"
+    },
+    {
+      "Type":  "Dielectric",
+      "Material":  "FR4",
+      "Notes":  "Layers L4/L5"
+    },
+    {
+      "Type":  "Copper",
+      "Notes":  "Layer Route15"
+    },
+    {
+      "Type":  "Dielectric",
+      "Material":  "FR4",
+      "Notes":  "Layers L5/L6"
+    },
+    {
+      "Type":  "Copper",
+      "Notes":  "Layer Bottom"
+    },
+    {
+      "Type":  "SolderMask",
+      "Notes":  "Layer B.Mask"
+    },
+    {
+      "Type":  "SolderPaste",
+      "Notes":  "Layer B.Paste"
+    },
+    {
+      "Type":  "Legend",
+      "Notes":  "Layer B.SilkS"
+    }
+  ]
+}
