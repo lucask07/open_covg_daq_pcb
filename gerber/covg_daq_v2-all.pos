@@ -1,4 +1,4 @@
-### Module positions - created on Thursday, July 01, 2021 at 03:16:09 PM ###
+### Module positions - created on Thursday, July 01, 2021 at 04:12:13 PM ###
 ### Printed by Pcbnew version kicad (5.1.9-0-10_14)
 ## Unit = mm, Angle = deg.
 ## Side : All
@@ -392,7 +392,8 @@ J7        HDMI_A               CONN_10029449-111RLF_HDMI_A             108.5000 
 J8        HDMI_A               CONN_10029449-111RLF_HDMI_A             138.5000     3.8600    0.0000  top
 J13       Conn_02x05_Odd_Even  PinHeader_2x05_P2.00mm_Vertical_SMD      12.4523    81.8642  180.0000  top
 J18       QWIIC_CONNECTOR-1MM  1X04_1MM_RA                             108.6100    89.8144  180.0000  top
-OK1       OPALKELLY_XEM6310    OPALKELLY_XEM7310                       158.1850    78.1812  180.0000  top
+MC1       Connector_SMD        BTE-040-02-F-D-A                       108.6849    33.1811  180.0000  top
+MC2       Connector_SMD        BTE-040-02-F-D-A                       108.6849    73.1911  180.0000  top
 R1        10k                  R_0603_1608Metric                        91.0966    56.8414   90.0000  top
 R2        10k                  R_0603_1608Metric                       102.1202    56.8160   90.0000  top
 R3        10k                  R_0603_1608Metric                        91.0844    49.8856   90.0000  top
