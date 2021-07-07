@@ -1,0 +1,43 @@
+06-30 22:25:23 length_stats.action_length_stats 304:Plugin executed on: 'darwin'
+06-30 22:25:23 length_stats.action_length_stats 305:Plugin executed with python version: '2.7.16 (default, Dec 23 2020, 16:11:24) \n[GCC 4.2.1 Compatible Apple LLVM 10.0.1 (clang-1001.0.46.4)]'
+06-30 22:25:23 length_stats.action_length_stats 306:KiCad build version: (5.1.9-0-10_14)
+06-30 22:25:23 length_stats.action_length_stats 307:Length stats plugin version: 30 started
+06-30 22:25:24 length_stats.action_length_stats 207:Sorting list
+06-30 22:25:24 length_stats.action_length_stats 95:Length stats gui initialized
+06-30 22:25:24 length_stats.action_length_stats 96:Nets for stats are;
+[u'/ok_fpga/DN2', u'/ok_fpga/DN1', u'/ok_fpga/DN0', u'/ok_fpga/DC1_SDA', u'/ok_fpga/A1_EN0', u'/ok_fpga/A1_D_P', u'/ok_fpga/A1_D_N', u'/ok_fpga/A1_DCO_P', u'/ok_fpga/A1_CNV_P', u'/ok_fpga/A1_CNV_N', u'/ok_fpga/A1_CLK_P', u'/ok_fpga/A1_CLK_N', u'/ok_fpga/A0_EN0', u'/ok_fpga/A0_D_P', u'/ok_fpga/A0_D_N', u'/ok_fpga/A0_DCO_P', u'/ok_fpga/A0_DCO_N', u'/ok_fpga/A0_CNV_P', u'/ok_fpga/A0_CNV_N', u'/ok_fpga/A0_CLK_P', u'/ok_fpga/A0_CLK_N', u'/dac4/OUT', u'/dac1/OUT', u'/GP_ADC_IN9', u'/GP_ADC_IN6', u'/GP_ADC_IN13', u'/GPIO0', u'/DAC1_CAL0', u'/DAC1_BP_OUT5']
+06-30 22:25:37 length_stats.action_length_stats 187:Removing highlights for nets:
+[u'/ok_fpga/DN2', u'/ok_fpga/DN1', u'/ok_fpga/DN0', u'/ok_fpga/DC1_SDA', u'/ok_fpga/A1_EN0', u'/ok_fpga/A1_D_P', u'/ok_fpga/A1_D_N', u'/ok_fpga/A1_DCO_P', u'/ok_fpga/A1_CNV_P', u'/ok_fpga/A1_CNV_N', u'/ok_fpga/A1_CLK_P', u'/ok_fpga/A1_CLK_N', u'/ok_fpga/A0_EN0', u'/ok_fpga/A0_D_P', u'/ok_fpga/A0_D_N', u'/ok_fpga/A0_DCO_P', u'/ok_fpga/A0_DCO_N', u'/ok_fpga/A0_CNV_P', u'/ok_fpga/A0_CNV_N', u'/ok_fpga/A0_CLK_P', u'/ok_fpga/A0_CLK_N', u'/dac4/OUT', u'/dac1/OUT', u'/GP_ADC_IN9', u'/GP_ADC_IN6', u'/GP_ADC_IN13', u'/GPIO0', u'/DAC1_CAL0', u'/DAC1_BP_OUT5']
+06-30 22:25:38 length_stats.action_length_stats 198:Adding highlights for nets:
+[u'/ok_fpga/A0_CLK_N']
+06-30 22:25:40 length_stats.action_length_stats 187:Removing highlights for nets:
+[u'/ok_fpga/DN2', u'/ok_fpga/DN1', u'/ok_fpga/DN0', u'/ok_fpga/DC1_SDA', u'/ok_fpga/A1_EN0', u'/ok_fpga/A1_D_P', u'/ok_fpga/A1_D_N', u'/ok_fpga/A1_DCO_P', u'/ok_fpga/A1_CNV_P', u'/ok_fpga/A1_CNV_N', u'/ok_fpga/A1_CLK_P', u'/ok_fpga/A1_CLK_N', u'/ok_fpga/A0_EN0', u'/ok_fpga/A0_D_P', u'/ok_fpga/A0_D_N', u'/ok_fpga/A0_DCO_P', u'/ok_fpga/A0_DCO_N', u'/ok_fpga/A0_CNV_P', u'/ok_fpga/A0_CNV_N', u'/ok_fpga/A0_CLK_P', u'/ok_fpga/A0_CLK_N', u'/dac4/OUT', u'/dac1/OUT', u'/GP_ADC_IN9', u'/GP_ADC_IN6', u'/GP_ADC_IN13', u'/GPIO0', u'/DAC1_CAL0', u'/DAC1_BP_OUT5']
+06-30 22:25:41 length_stats.action_length_stats 198:Adding highlights for nets:
+[]
+06-30 22:25:43 length_stats.action_length_stats 187:Removing highlights for nets:
+[u'/ok_fpga/DN2', u'/ok_fpga/DN1', u'/ok_fpga/DN0', u'/ok_fpga/DC1_SDA', u'/ok_fpga/A1_EN0', u'/ok_fpga/A1_D_P', u'/ok_fpga/A1_D_N', u'/ok_fpga/A1_DCO_P', u'/ok_fpga/A1_CNV_P', u'/ok_fpga/A1_CNV_N', u'/ok_fpga/A1_CLK_P', u'/ok_fpga/A1_CLK_N', u'/ok_fpga/A0_EN0', u'/ok_fpga/A0_D_P', u'/ok_fpga/A0_D_N', u'/ok_fpga/A0_DCO_P', u'/ok_fpga/A0_DCO_N', u'/ok_fpga/A0_CNV_P', u'/ok_fpga/A0_CNV_N', u'/ok_fpga/A0_CLK_P', u'/ok_fpga/A0_CLK_N', u'/dac4/OUT', u'/dac1/OUT', u'/GP_ADC_IN9', u'/GP_ADC_IN6', u'/GP_ADC_IN13', u'/GPIO0', u'/DAC1_CAL0', u'/DAC1_BP_OUT5']
+06-30 22:25:44 length_stats.action_length_stats 198:Adding highlights for nets:
+[u'/ok_fpga/A0_DCO_N']
+06-30 22:25:45 length_stats.action_length_stats 108:Refreshing manually
+06-30 22:25:45 length_stats.action_length_stats 132:Refreshing net lengths
+06-30 22:25:46 length_stats.action_length_stats 187:Removing highlights for nets:
+[u'/ok_fpga/DN2', u'/ok_fpga/DN1', u'/ok_fpga/DN0', u'/ok_fpga/DC1_SDA', u'/ok_fpga/A1_EN0', u'/ok_fpga/A1_D_P', u'/ok_fpga/A1_D_N', u'/ok_fpga/A1_DCO_P', u'/ok_fpga/A1_CNV_P', u'/ok_fpga/A1_CNV_N', u'/ok_fpga/A1_CLK_P', u'/ok_fpga/A1_CLK_N', u'/ok_fpga/A0_EN0', u'/ok_fpga/A0_D_P', u'/ok_fpga/A0_D_N', u'/ok_fpga/A0_DCO_P', u'/ok_fpga/A0_DCO_N', u'/ok_fpga/A0_CNV_P', u'/ok_fpga/A0_CNV_N', u'/ok_fpga/A0_CLK_P', u'/ok_fpga/A0_CLK_N', u'/dac4/OUT', u'/dac1/OUT', u'/GP_ADC_IN9', u'/GP_ADC_IN6', u'/GP_ADC_IN13', u'/GPIO0', u'/DAC1_CAL0', u'/DAC1_BP_OUT5']
+06-30 22:25:47 length_stats.action_length_stats 198:Adding highlights for nets:
+[]
+06-30 22:25:48 length_stats.action_length_stats 187:Removing highlights for nets:
+[u'/ok_fpga/DN2', u'/ok_fpga/DN1', u'/ok_fpga/DN0', u'/ok_fpga/DC1_SDA', u'/ok_fpga/A1_EN0', u'/ok_fpga/A1_D_P', u'/ok_fpga/A1_D_N', u'/ok_fpga/A1_DCO_P', u'/ok_fpga/A1_CNV_P', u'/ok_fpga/A1_CNV_N', u'/ok_fpga/A1_CLK_P', u'/ok_fpga/A1_CLK_N', u'/ok_fpga/A0_EN0', u'/ok_fpga/A0_D_P', u'/ok_fpga/A0_D_N', u'/ok_fpga/A0_DCO_P', u'/ok_fpga/A0_DCO_N', u'/ok_fpga/A0_CNV_P', u'/ok_fpga/A0_CNV_N', u'/ok_fpga/A0_CLK_P', u'/ok_fpga/A0_CLK_N', u'/dac4/OUT', u'/dac1/OUT', u'/GP_ADC_IN9', u'/GP_ADC_IN6', u'/GP_ADC_IN13', u'/GPIO0', u'/DAC1_CAL0', u'/DAC1_BP_OUT5']
+06-30 22:25:50 length_stats.action_length_stats 198:Adding highlights for nets:
+[u'/ok_fpga/A0_CNV_P']
+06-30 22:26:00 length_stats.action_length_stats 187:Removing highlights for nets:
+[u'/ok_fpga/DN2', u'/ok_fpga/DN1', u'/ok_fpga/DN0', u'/ok_fpga/DC1_SDA', u'/ok_fpga/A1_EN0', u'/ok_fpga/A1_D_P', u'/ok_fpga/A1_D_N', u'/ok_fpga/A1_DCO_P', u'/ok_fpga/A1_CNV_P', u'/ok_fpga/A1_CNV_N', u'/ok_fpga/A1_CLK_P', u'/ok_fpga/A1_CLK_N', u'/ok_fpga/A0_EN0', u'/ok_fpga/A0_D_P', u'/ok_fpga/A0_D_N', u'/ok_fpga/A0_DCO_P', u'/ok_fpga/A0_DCO_N', u'/ok_fpga/A0_CNV_P', u'/ok_fpga/A0_CNV_N', u'/ok_fpga/A0_CLK_P', u'/ok_fpga/A0_CLK_N', u'/dac4/OUT', u'/dac1/OUT', u'/GP_ADC_IN9', u'/GP_ADC_IN6', u'/GP_ADC_IN13', u'/GPIO0', u'/DAC1_CAL0', u'/DAC1_BP_OUT5']
+06-30 22:26:01 length_stats.action_length_stats 198:Adding highlights for nets:
+[]
+06-30 22:26:03 length_stats.action_length_stats 187:Removing highlights for nets:
+[u'/ok_fpga/DN2', u'/ok_fpga/DN1', u'/ok_fpga/DN0', u'/ok_fpga/DC1_SDA', u'/ok_fpga/A1_EN0', u'/ok_fpga/A1_D_P', u'/ok_fpga/A1_D_N', u'/ok_fpga/A1_DCO_P', u'/ok_fpga/A1_CNV_P', u'/ok_fpga/A1_CNV_N', u'/ok_fpga/A1_CLK_P', u'/ok_fpga/A1_CLK_N', u'/ok_fpga/A0_EN0', u'/ok_fpga/A0_D_P', u'/ok_fpga/A0_D_N', u'/ok_fpga/A0_DCO_P', u'/ok_fpga/A0_DCO_N', u'/ok_fpga/A0_CNV_P', u'/ok_fpga/A0_CNV_N', u'/ok_fpga/A0_CLK_P', u'/ok_fpga/A0_CLK_N', u'/dac4/OUT', u'/dac1/OUT', u'/GP_ADC_IN9', u'/GP_ADC_IN6', u'/GP_ADC_IN13', u'/GPIO0', u'/DAC1_CAL0', u'/DAC1_BP_OUT5']
+06-30 22:26:04 length_stats.action_length_stats 198:Adding highlights for nets:
+[u'/ok_fpga/A1_DCO_P']
+06-30 22:26:06 length_stats.action_length_stats 187:Removing highlights for nets:
+[u'/ok_fpga/DN2', u'/ok_fpga/DN1', u'/ok_fpga/DN0', u'/ok_fpga/DC1_SDA', u'/ok_fpga/A1_EN0', u'/ok_fpga/A1_D_P', u'/ok_fpga/A1_D_N', u'/ok_fpga/A1_DCO_P', u'/ok_fpga/A1_CNV_P', u'/ok_fpga/A1_CNV_N', u'/ok_fpga/A1_CLK_P', u'/ok_fpga/A1_CLK_N', u'/ok_fpga/A0_EN0', u'/ok_fpga/A0_D_P', u'/ok_fpga/A0_D_N', u'/ok_fpga/A0_DCO_P', u'/ok_fpga/A0_DCO_N', u'/ok_fpga/A0_CNV_P', u'/ok_fpga/A0_CNV_N', u'/ok_fpga/A0_CLK_P', u'/ok_fpga/A0_CLK_N', u'/dac4/OUT', u'/dac1/OUT', u'/GP_ADC_IN9', u'/GP_ADC_IN6', u'/GP_ADC_IN13', u'/GPIO0', u'/DAC1_CAL0', u'/DAC1_BP_OUT5']
+06-30 22:26:07 length_stats.action_length_stats 198:Adding highlights for nets:
+[]
+07-01 05:58:17 length_stats.action_length_stats 159:Deleting nets
