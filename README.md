@@ -171,7 +171,7 @@ Why do the barrel jacks have 3-pins and what to do with the 3rd pin? [3-pin DC j
 
 
 ## Funding 
-This project is funded by NIH R15 award R15NS116907 to Lucas J. Koerner (09/2021 - 09/2023) at the University of St. Thomas, St. Paul MN
+Research reported in this publication was supported by the National Institute Of Neurological Disorders And Stroke of the National Institutes of Health under Award Number R15NS116907. The content is solely the responsibility of the authors and does not necessarily represent the official views of the National Institutes of Health.
 
 ## Copyright and Licence 
 
