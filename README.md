@@ -14,7 +14,7 @@ The **schematic is [here](docs/covg_daq_v2.pdf)** and a 3d rendering of the boar
 ### Analog-to-Digital Converters (ADCs) and Digital-to-Analog Converters (DACs)
 - **High-speed ADCs [AD7961 ADC @ 5 MSPS](https://www.analog.com/media/en/technical-documentation/data-sheets/AD7961.pdf) (x4)**: 16-bit differential input ADC with LVDS data interface to the FPGA, one cycle latency. Input must be differential with a common-mode voltage that matches the common-mode output of the part (~2.5 V).
 - **General purpose ADC [ADS8686](https://www.ti.com/lit/gpn/ads8686s) (x1)**: 16 channels, maximum of 1 MSPS, SPI interface. The analog input range is programmable to +/-2.5 V, +/-5V, +/-10V. 8 channels are available on the pin-header J9; the other 8 channels are routed to the HDMI daughtercard connectors. 
-- **High-speed DACs [AD5453 DAC](https://www.analog.com/media/en/technical-documentation/data-sheets/AD5450_5451_5452_5453.pdf) (x6):** 14-bit, multiplying R-2R ladder with 100 ns settling time. These fast DAC outputs connect to the HDMI daughtercards and have programmable gain with full-scale ranges of +/- 15V, +/- 5V, +/- 2 V, +/- 500 mV, +/- 200 mV.
+- **High-speed DACs [AD5453 DAC](https://www.analog.com/media/en/technical-documentation/data-sheets/AD5450_5451_5452_5453.pdf) (x6):** 14-bit, multiplying R-2R ladder with 100 ns settling time. These fast DAC outputs connect to the HDMI daughtercard connecters and have programmable gain with full-scale bipoloar ranges of +/- 15V, +/- 5V, +/- 2 V, +/- 500 mV, +/- 200 mV.
 - **General purpose DAC [DAC80508](https://www.ti.com/lit/ds/symlink/dac80508.pdf?ts=1624161469392&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FDAC80508) (x2):** 8-channel, 16-bit, voltage output with 5 us settling time. The unipolar DAC outputs are converted to +/-7.5 V bipolar outputs before connecting to the HDMI daughtercard connectors. 
 Pin header J11 has x8 bipolar outputs, x10 0-5V unipolar direct DAC output signals, and x2 "calibration" outputs which can be programmed to be the output of a current source (Howland) driven by the DAC.  
 
@@ -37,10 +37,10 @@ At SMA connectors J16 and J17:
 
 At QWIIC connector, J18:
 
-- The [Sparkfun QWIIC connector](https://www.sparkfun.com/qwiic) has 4 pins. 3.3 V power, I2C (SDA and SCL), and Gnd. 
+- The [Sparkfun QWIIC connector](https://www.sparkfun.com/qwiic) has 4 pins. 3.3 V power, I2C (SDA and SCL), and Gnd. This is a standardized interface to I2C-based sensor boards.  
 
 ### Power
-Input voltage of 6 to 7 V is supplied at barrel connector J12 ([PJ-002BH](https://www.digikey.com/en/products/detail/cui-devices/PJ-002BH/408447)) with a maximum rating of 5 A. 
+An input voltage of 6 to 7V is supplied at barrel connector J12 ([PJ-002BH](https://www.digikey.com/en/products/detail/cui-devices/PJ-002BH/408447)) with a maximum rating of 5 A. 
 
 The power system is as follows: 
 
@@ -52,7 +52,7 @@ The power system is as follows:
 - Regulator to 1.8 V (linear)
 - Voltage reference for 2.048 V. 
 
-The power block has a screw terminal block connector that allows for monitoring or override of the on-board regulated voltages.  
+All power nets are connected to a screw terminal block connector to allow for monitoring or override of the on-board regulated voltages.  
 
 #### FPGA capabilities 
 The [XEM7310](https://opalkelly.com/products/xem7310/) OpalKelly FPGA module has a Artix7 FPGA (XC7A5T-1) with a USB 3.0 interface to a host computer (transfer rates up to 30 MiB/s). The module has 1-GiByte of DDR3 to enable burst data captures or burst data transfers. 
@@ -97,7 +97,7 @@ The generic HDMI-A cable pinout is defined as follows with 15 (non-shield) pins 
 | 15  | SCL          | SCL          |  I2C clock. Pull-up resistor on DAQ board, 3.3 V levels.                                                        |
 | 16  | SDA          | SDA          |  I2C data. Pull-up resistor on DAQ board, 3.3 V levels.                                                            |
 | 17  | Gnd          | Gnd          |                                                                            |
-| 18  | 5V           | 5V           |  Power from linear regulator (200 mA max per channel with all 4 channels connected)                                                                       |
+| 18  | 5V           | 5V           |  Power from linear regulator (target 200 mA max per channel with all 4 channels connected)                                                                       |
 | 19  | HPD          | Analog/GPIO3 | to ADS8686 1 MSPS. Chip inputs includes a programmable PGA for full-scale range up to +/-10V         
 
 
@@ -115,7 +115,7 @@ To begin in July and August of 2021.
 
 ### KiCAD Setup and Required Libraries 
 
-Symbols and footprints custom to this design (and the COVG project in general) are housed in the [covg-kicad-lib repository](https://github.com/lucask07/covg-kicad-lib). In your KiCAD *Symbol Library Management* and *Footrpint Library Management* this library should be a project specific library. 
+Symbols and footprints custom to this design (and the COVG project in general) are housed in the [covg-kicad-lib repository](https://github.com/lucask07/covg-kicad-lib). This library should be a project specific library in your KiCAD *Symbol Library Management* and *Footrpint Library Management*.  
 
 When at all possible footprints are used from the KiCAD libraries. 
 
@@ -153,7 +153,10 @@ MC1       Connector_SMD        BTE-040-02-F-D-A                       108.6849  
 
 The [bill of materials files are here](bom/). 
 
-Note that the "chip shortage of 2021" has made component sourcing complicated and we hope this bottle-neck eases in the near future. 
+Note that the "chip shortage of 2020/2021" has made component sourcing complicated and we hope this bottle-neck eases in the near future. 
+
+### Assembly Guidance
+TBC
 
 #### Other board design notes 
 
