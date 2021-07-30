@@ -1,6 +1,5 @@
 # Script to create an FPGA constraints file from the covg-kicad.lib and ok_fpga.sch files
 
-from os import error
 import pandas as pd
 from operator import attrgetter
 
@@ -27,8 +26,8 @@ EMPTY = Name(name='', x='', y='', io='')
 # Data to convert connector pins (Ex. MC1-8) to FPGA pins (Ex. AB11)
 
 # File locations
-pin_file_location = 'C:/Users/stro4149/Desktop/open_covg_daq_pcb/covg-kicad.lib'
-name_file_location = 'C:/Users/stro4149/Desktop/open_covg_daq_pcb/ok_fpga.sch'
+pin_file_location = 'covg-kicad.lib'
+name_file_location = 'ok_fpga.sch'
 
 #----- Go through covg-kicad.lib to collect pins
 print(f'Collecting pins from: {pin_file_location}')
