@@ -1,14 +1,17 @@
 # Script to create an FPGA constraints file from the covg-kicad.lib and ok_fpga.sch files
 
+from os import error
 import pandas as pd
 from operator import attrgetter
 
 # Pins -> covg-kicad.lib
 class Pin():
-    def __init__(self, name, x, y):
+    def __init__(self, name, x, y, fpga_pin='', io_standard=''):
         self.name = name
         self.x = x
         self.y = y
+        self.fpga_pin = fpga_pin
+        self.io_standard = io_standard
 
 # Names -> ok_fpga.sch
 class Name():
@@ -21,6 +24,7 @@ class Name():
 
 EMPTY = Name(name='', x='', y='', io='')
 
+# Data to convert connector pins (Ex. MC1-8) to FPGA pins (Ex. AB11)
 
 # File locations
 pin_file_location = 'C:/Users/stro4149/Desktop/open_covg_daq_pcb/covg-kicad.lib'
@@ -128,6 +132,7 @@ for line_number in range(line_number, len(name_lines)):
 
 #----- Write the lists to spreadsheet and text file
 # TODO: make this spreadsheet and constraints file
+print('Matching pins to names...')
 
 # Sort both lists
 pin_list.sort(key=attrgetter('y'), reverse=True)    # Descending
@@ -176,23 +181,147 @@ while name_number < len(name_list):
 for i in range(len(pin_list) - len(name_list)):
     name_list.append(EMPTY)
 
-# DEBUG
-for i in range(len(pin_list)):
-    print((pin_list[i].name + ', ' + str(pin_list[i].x) + ', ' + str(pin_list[i].y)).ljust(
-        20) + name_list[i].name + ', ' + str(name_list[i].x) + ', ' + str(name_list[i].y))
+# DEBUG print the lists matched together
+# for i in range(len(pin_list)):
+#     print((pin_list[i].name + ', ' + str(pin_list[i].x) + ', ' + str(pin_list[i].y)).ljust(
+#         20) + name_list[i].name + ', ' + str(name_list[i].x) + ', ' + str(name_list[i].y))
 
-# Write to spreadsheet
-print('Creating spreadsheet...')
-data_dict = {'Pin': [pin.name for pin in pin_list], 'Name': [name.name for name in name_list], 'Input/Output': [name.io for name in name_list]}
+#----- Create FPGA pins list from pin_list
+print('Matching FPGA pins to connector pins...')
+# Uses information from table on https://pins.opalkelly.com/pin_list/XEM7310
+xem7310_pins = pd.read_csv('XEM7310.csv')
+for pin in pin_list:
+    connector, connector_pin = pin.name.split('-') # Ex. 'MC2', '12' = 'MC2-12'
+    row = xem7310_pins.loc[(xem7310_pins['Connector'] == connector) & (xem7310_pins['Pin'] == int(connector_pin))]
+    pin.fpga_pin = row['FPGA Pin'].item()
+    pin.io_standard = row['XDC IOStandard'].item()
+
+# Currently sorted by MC2-ODDS, MC2-EVENS, MC1-ODDS, MC1-EVEN matching the schematic reading left to right
+#----- Now we sort by name to group the like names together so we can make similar wires into vectors
+print('Creating vectors...')
+
+data_dict = {'Pin': [pin.name for pin in pin_list], 'Name': [name.name for name in name_list], 'FPGA Pin': [pin.fpga_pin for pin in pin_list], 'IO': [name.io for name in name_list], 'IOStandard': [pin.io_standard for pin in pin_list]}
 data_frame = pd.DataFrame(data=data_dict)
-print(data_frame)
+
+# Function to take in a Series and return a Series with no numbers in the values
+def no_number_key(series):
+    for i in range(len(series)):
+        data = series.iat[i]
+        new_data = data
+        for j in range(10):
+            new_data = new_data.replace(str(j), '')
+        series.iat[i] = new_data
+    return series
+
+data_frame = data_frame.sort_values(by='Name', key=lambda s: no_number_key(s))
+print(data_frame.to_markdown())
+# Go through every row checking it against the row after to see if they match when the numbers are removed
+error_names = {}
+for row_number in range(len(data_frame)):
+    current_name = data_frame.iloc[row_number]['Name']
+
+    if current_name == '': # Skip empty string names
+        continue
+
+    # Because we only go 2 rows at a time, we could be checking ds_clk[1] against ds2_clk, so remove all brackets now
+    # that way when we remove numbers we end up with just ds_clk
+    # current_name = current_name.replace('[', '').replace(']', '')
+    current_name = current_name.split('[')[0] # Everything before the brackets
+    current_no_number = current_name
+
+    # Check for multiple numbers in the name
+    original_length = len(current_name)
+    len_name = current_name
+    for i in range(10):
+        len_name = len_name.replace(str(i), '')
+    if original_length - len(len_name) > 0:
+        # Removed more than 1 number, error
+        # error_names[row_number] = current_name
+
+        # Search for similar names removing each number individually
+        matched = False
+        for char in current_name:
+            char_position = current_name.index(char)
+            if char.isdigit():
+            # if char == '0':
+                # Found a number, check the rest of the names to see if they are similar
+                # for i in range(row_number + 1, len(data_frame) - 1):
+                for i in (list(range(row_number + 1, len(data_frame))) + list(range(row_number))):
+                    compare_name = data_frame.iloc[i]['Name'] # Loop through all remaining names
+
+                    # Make sure char_position is not out of range for the name we are searching
+                    if char_position > len(compare_name) - 1:
+                        continue
+
+                    compare_index = compare_name[char_position] # The index for this name if it gets turned into a vector
+                    if current_name[:char_position] + current_name[char_position + 1:] == (compare_name[:char_position] + compare_name[char_position + 1:]):
+                        # All the same except for that character
+                        matched = True
+                        # Already removed duplicates earlier so these are not the same character so we assume it is an index
+                        # Change the name we found into a vector
+                        data_frame.iloc[i].at['Name'] = f'{compare_name[:char_position] + compare_name[char_position + 1:]}[{compare_index}]'
+            if matched:
+                # Found a match earlier, change current name to a vector and stop looking for numbers to replace
+                data_frame.iloc[row_number].at['Name'] = f'{current_name[:char_position] + current_name[char_position + 1:]}[{char}]'
+                break
+        continue
+
+    # Remove and record number from each name
+    # for i in range(10): # 0-9
+    #     current_no_number = current_name.replace(str(i), '')
+
+    #     if current_no_number == current_name: # The number was not in the name, try the next one
+    #         continue
+
+    #     next_name = data_frame.iloc[row_number + 1]['Name'].replace('[', '').replace(']', '') # Remove brackets, leave number
+    #     for j in range(10):
+    #         next_no_number = next_name.replace(str(j), '')
+    #         if next_no_number == next_name:
+    #             # Not the right number, keep looking
+    #             continue
+    #         else:
+    #             # Found the right number, move on
+    #             break
+
+    #     if current_no_number == next_no_number:
+    #         # Match, format as vector
+    #         data_frame.iloc[row_number].at['Name'] = f'{current_no_number}[{i}]' # Ex. ds1_clk -> ds_clk[1]
+    #         data_frame.iloc[row_number + 1].at['Name'] = f'{next_no_number}[{j}]'
+    #     else:
+    #         # No match, but that was the number in the name so move to the next name
+    #         break
+
+#----- Allow user to fix error names
+print(f'Error names: {len(error_names)}')
+if len(error_names) > 0:
+    for key in error_names:
+        print(f'    {error_names[key]}')
+    fix = input('Would you like to fix the error names? (y/n): ').lower()
+    if fix == 'y':
+        # User fix
+        for key in error_names:
+            new_name = input(f'{error_names[key]} --> ').lower()
+            if new_name == '':
+                # If the user enters nothing, keep the current name
+                continue
+            data_frame.iloc[key].at['Name'] = new_name
+
+#----- Write to spreadsheet
+print('Creating spreadsheet...')
+# Return to original sort -> MC2-ODDS, MC2-EVENS, MC1-ODDS, MC1-EVEN matching the schematic reading left to right
+data_frame = data_frame.sort_index()
 data_frame.to_excel('pins.xlsx')
 
-# Write to text file
+#----- Write to text file
 print('Creating text file...')
+# Convert to lowercase
 txt_str = ''
-for i in range(len(pin_list)):
-    txt_str += pin_list[i].name.ljust(20) + name_list[i].name + '\n'
+for i in range(len(data_frame)):
+    pin         = str(data_frame.iloc[i].at['Pin'])
+    fpga_pin    = str(data_frame.iloc[i].at['FPGA Pin'])
+    name        = str(data_frame.iloc[i].at['Name'])
+    io_standard = str(data_frame.iloc[i].at['IOStandard'])
+    txt_str += pin + ', ' + fpga_pin + ', ' + name + ', ' + io_standard + '\n'
 
 txt_file = open('pins.txt', 'w')
 txt_file.write(txt_str)
