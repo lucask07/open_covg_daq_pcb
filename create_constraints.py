@@ -129,8 +129,7 @@ for line_number in range(line_number, len(name_lines)):
     name_list.append(name)
     line_number += 2
 
-#----- Write the lists to spreadsheet and text file
-# TODO: make this spreadsheet and constraints file
+#----- Write the lists to spreadsheet and constraints file
 print('Matching pins to names...')
 
 # Sort both lists
@@ -213,7 +212,9 @@ def no_number_key(series):
     return series
 
 data_frame = data_frame.sort_values(by='Name', key=lambda s: no_number_key(s))
-print(data_frame.to_markdown())
+
+# print(data_frame.to_markdown()) # For debugging
+
 # Go through every row checking it against the row after to see if they match when the numbers are removed
 error_names = {}
 for row_number in range(len(data_frame)):
@@ -311,19 +312,208 @@ print('Creating spreadsheet...')
 data_frame = data_frame.sort_index()
 data_frame.to_excel('pins.xlsx')
 
-#----- Write to text file
-print('Creating text file...')
-# Convert to lowercase
-txt_str = ''
-for i in range(len(data_frame)):
-    pin         = str(data_frame.iloc[i].at['Pin'])
-    fpga_pin    = str(data_frame.iloc[i].at['FPGA Pin'])
-    name        = str(data_frame.iloc[i].at['Name'])
-    io_standard = str(data_frame.iloc[i].at['IOStandard'])
-    txt_str += pin + ', ' + fpga_pin + ', ' + name + ', ' + io_standard + '\n'
+#----- Write to constraints file
+print('Creating constraints file...')
+beginning_str = '''# XEM7310 - Xilinx constraints file
+#
+# Pin mappings for the XEM7310.  Use this as a template and comment out
+# the pins that are not used in your design.  (By default, map will fail
+# if this file contains constraints for signals not in your design).
+#
+# Copyright (c) 2004-2016 Opal Kelly Incorporated
+############################################################################
 
-txt_file = open('pins.txt', 'w')
-txt_file.write(txt_str)
-txt_file.close()
+set_property CFGBVS GND[current_design]
+set_property CONFIG_VOLTAGE 1.8 [current_design]
+set_property BITSTREAM.GENERAL.COMPRESS True [current_design]
+
+############################################################################
+## FrontPanel Host Interface
+############################################################################
+set_property PACKAGE_PIN Y19[get_ports {okHU[0]}]
+set_property PACKAGE_PIN R18[get_ports {okHU[1]}]
+set_property PACKAGE_PIN R16[get_ports {okHU[2]}]
+set_property SLEW FAST[get_ports {okHU[*]}]
+set_property IOSTANDARD LVCMOS18[get_ports {okHU[*]}]
+
+set_property PACKAGE_PIN W19[get_ports {okUH[0]}]
+set_property PACKAGE_PIN V18[get_ports {okUH[1]}]
+set_property PACKAGE_PIN U17[get_ports {okUH[2]}]
+set_property PACKAGE_PIN W17[get_ports {okUH[3]}]
+set_property PACKAGE_PIN T19[get_ports {okUH[4]}]
+set_property IOSTANDARD LVCMOS18[get_ports {okUH[*]}]
+
+set_property PACKAGE_PIN AB22[get_ports {okUHU[0]}]
+set_property PACKAGE_PIN AB21[get_ports {okUHU[1]}]
+set_property PACKAGE_PIN Y22[get_ports {okUHU[2]}]
+set_property PACKAGE_PIN AA21[get_ports {okUHU[3]}]
+set_property PACKAGE_PIN AA20[get_ports {okUHU[4]}]
+set_property PACKAGE_PIN W22[get_ports {okUHU[5]}]
+set_property PACKAGE_PIN W21[get_ports {okUHU[6]}]
+set_property PACKAGE_PIN T20[get_ports {okUHU[7]}]
+set_property PACKAGE_PIN R19[get_ports {okUHU[8]}]
+set_property PACKAGE_PIN P19[get_ports {okUHU[9]}]
+set_property PACKAGE_PIN U21[get_ports {okUHU[10]}]
+set_property PACKAGE_PIN T21[get_ports {okUHU[11]}]
+set_property PACKAGE_PIN R21[get_ports {okUHU[12]}]
+set_property PACKAGE_PIN P21[get_ports {okUHU[13]}]
+set_property PACKAGE_PIN R22[get_ports {okUHU[14]}]
+set_property PACKAGE_PIN P22[get_ports {okUHU[15]}]
+set_property PACKAGE_PIN R14[get_ports {okUHU[16]}]
+set_property PACKAGE_PIN W20[get_ports {okUHU[17]}]
+set_property PACKAGE_PIN Y21[get_ports {okUHU[18]}]
+set_property PACKAGE_PIN P17[get_ports {okUHU[19]}]
+set_property PACKAGE_PIN U20[get_ports {okUHU[20]}]
+set_property PACKAGE_PIN N17[get_ports {okUHU[21]}]
+set_property PACKAGE_PIN N14[get_ports {okUHU[22]}]
+set_property PACKAGE_PIN V20[get_ports {okUHU[23]}]
+set_property PACKAGE_PIN P16[get_ports {okUHU[24]}]
+set_property PACKAGE_PIN T18[get_ports {okUHU[25]}]
+set_property PACKAGE_PIN V19[get_ports {okUHU[26]}]
+set_property PACKAGE_PIN AB20[get_ports {okUHU[27]}]
+set_property PACKAGE_PIN P15[get_ports {okUHU[28]}]
+set_property PACKAGE_PIN V22[get_ports {okUHU[29]}]
+set_property PACKAGE_PIN U18[get_ports {okUHU[30]}]
+set_property PACKAGE_PIN AB18[get_ports {okUHU[31]}]
+set_property SLEW FAST[get_ports {okUHU[*]}]
+set_property IOSTANDARD LVCMOS18[get_ports {okUHU[*]}]
+
+set_property PACKAGE_PIN N13[get_ports {okAA}]
+set_property IOSTANDARD LVCMOS18[get_ports {okAA}]
+
+
+create_clock - name okUH0 - period 9.920 [get_ports {okUH[0]}]
+
+set_input_delay - add_delay - max - clock[get_clocks {okUH0}]  8.000 [get_ports {okUH[*]}]
+set_input_delay - add_delay - min - clock[get_clocks {okUH0}] 10.000 [get_ports {okUH[*]}]
+set_multicycle_path - setup - from [get_ports {okUH[*]}] 2
+
+set_input_delay - add_delay - max - clock[get_clocks {okUH0}]  8.000 [get_ports {okUHU[*]}]
+set_input_delay - add_delay - min - clock[get_clocks {okUH0}]  2.000 [get_ports {okUHU[*]}]
+set_multicycle_path - setup - from [get_ports {okUHU[*]}] 2
+
+set_output_delay - add_delay - max - clock[get_clocks {okUH0}]  2.000 [get_ports {okHU[*]}]
+set_output_delay - add_delay - min - clock[get_clocks {okUH0}] - 0.500 [get_ports {okHU[*]}]
+
+set_output_delay - add_delay - max - clock[get_clocks {okUH0}]  2.000 [get_ports {okUHU[*]}]
+set_output_delay - add_delay - min - clock[get_clocks {okUH0}] - 0.500 [get_ports {okUHU[*]}]
+
+
+############################################################################
+## System Clock
+############################################################################
+set_property IOSTANDARD LVDS_25[get_ports {sys_clkp}]
+set_property PACKAGE_PIN W11[get_ports {sys_clkp}]
+
+set_property IOSTANDARD LVDS_25[get_ports {sys_clkn}]
+set_property PACKAGE_PIN W12[get_ports {sys_clkn}]
+
+set_property DIFF_TERM FALSE[get_ports {sys_clkp}]
+
+create_clock - name sys_clk - period 5 [get_ports sys_clkp]
+set_clock_groups - asynchronous - group[get_clocks {sys_clk}] - group[get_clocks {mmcm0_clk0 okUH0}]
+
+############################################################################
+## User Reset
+############################################################################
+set_property PACKAGE_PIN Y18[get_ports {pushreset}]
+set_property IOSTANDARD LVCMOS18[get_ports {pushreset}]
+set_property SLEW FAST[get_ports {pushreset}]
+
+'''
+
+# Add each pin
+constraints_str = beginning_str
+
+# Function that converts a Series of pins like MC2-12 to a Series of floats like 2.12
+def pin_to_float(pin_series):
+    pin_float_list = []
+    for pin in pin_series:
+        pieces = pin.split('-')
+        pin_float = int(pieces[0][2]) + int(pieces[1]) / 100
+        pin_float_list.append(pin_float)
+    return pd.Series(pin_float_list)
+
+data_frame_ordered = data_frame.sort_values('Pin', key=pin_to_float)
+
+for i in range(len(data_frame_ordered)):
+    pin         = str(data_frame_ordered.iloc[i].at['Pin'])
+    fpga_pin    = str(data_frame_ordered.iloc[i].at['FPGA Pin'])
+    name        = str(data_frame_ordered.iloc[i].at['Name']).lower()
+    io_standard = str(data_frame_ordered.iloc[i].at['IOStandard'])
+    
+    if name == 'nan':
+        name = ''
+    if io_standard == 'nan':
+        io_standard = ''
+    
+    constraints_str += '## ' + pin + '\n'
+    
+    # Determine if line should be commented
+    if name == '':
+        # Pin unassigned, comment the line
+        constraints_str += '#set_property PACKAGE_PIN ' + fpga_pin + ' [get_ports {}]\n'
+        constraints_str += '#set_property IOSTANDARD ' + io_standard + ' [get_ports {}]\n'
+    else:
+        # Pin assigned, do not comment the line
+        constraints_str += 'set_property PACKAGE_PIN ' + fpga_pin + ' [get_ports {' + name + '}]\n'
+        constraints_str += 'set_property IOSTANDARD ' + io_standard + ' [get_ports {' + name + '}]\n'
+
+constraints_file = open('xem7310_generated_constraintes.xdc', 'w')
+constraints_file.write(constraints_str)
+constraints_file.close()
+
+#----- Print a list of the named wires and vectors used
+print('Generating a list of wires and vectors...')
+
+wires_and_vectors = set()
+prefixes = {}
+
+for row_number in range(len(data_frame)):
+    name = data_frame.iloc[row_number].at['Name'].lower()
+    if name == '':
+        # Unassigned pin, no name, skip
+        continue
+
+    if '[' in name:
+        # A vector
+        name_parts = name.split('[')
+        vector_name = name_parts[0]
+        vector_num = int(name_parts[1].split(']')[0])
+        prefix = prefixes.get(vector_name)
+
+        if prefix == None:
+            # No previous range to compare against
+            min_val = vector_num
+            max_val = vector_num
+        else:
+            # Must compare against previous range
+            min_val = min(vector_num, min_val)
+            max_val = max(vector_num, max_val)
+            
+        prefixes[vector_name] = (max_val, min_val)
+        wires_and_vectors.add(vector_name)
+
+    else:
+        # A wire
+        wires_and_vectors.add(name)
+
+print('Inputs/Outputs'.center(30, '='))
+
+sorted_wires_and_vectors = list(wires_and_vectors)
+sorted_wires_and_vectors.sort()
+
+for name in sorted_wires_and_vectors:
+    prefix = prefixes.get(name)
+    if prefix == None:
+        # Wire
+        prefix_str = ''
+    else:
+        # Vector
+        prefix_str = '[' + str(prefix[0]) + ':' + str(prefix[1]) + '] '
+    print(prefix_str.ljust(7) + name)
+
+print(''.center(30, '='))
+    
 
 print('Done')
