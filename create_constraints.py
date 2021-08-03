@@ -194,12 +194,15 @@ for pin in pin_list:
     pin.fpga_pin = row['FPGA Pin'].item()
     pin.io_standard = row['XDC IOStandard'].item()
 
+
+#----- Set up DataFrame object
+data_dict = {'Pin': [pin.name for pin in pin_list], 'Name': [name.name for name in name_list], 'FPGA Pin': [pin.fpga_pin for pin in pin_list], 'IO': [name.io for name in name_list], 'IOStandard': [pin.io_standard for pin in pin_list]}
+data_frame = pd.DataFrame(data=data_dict)
+
+
 # Currently sorted by MC2-ODDS, MC2-EVENS, MC1-ODDS, MC1-EVEN matching the schematic reading left to right
 #----- Now we sort by name to group the like names together so we can make similar wires into vectors
 print('Creating vectors...')
-
-data_dict = {'Pin': [pin.name for pin in pin_list], 'Name': [name.name for name in name_list], 'FPGA Pin': [pin.fpga_pin for pin in pin_list], 'IO': [name.io for name in name_list], 'IOStandard': [pin.io_standard for pin in pin_list]}
-data_frame = pd.DataFrame(data=data_dict)
 
 # Function to take in a Series and return a Series with no numbers in the values
 def no_number_key(series):
@@ -290,6 +293,17 @@ for row_number in range(len(data_frame)):
     #     else:
     #         # No match, but that was the number in the name so move to the next name
     #         break
+
+# Change IOSTANDARD for LVDS signals
+for row_number in range(len(data_frame)):
+    row = data_frame.iloc[row_number]
+    name = row.at['Name'].lower()
+    last_letters = name.split('[')[0][-2:]
+    print(name, last_letters)
+    if (last_letters == '_p') or (last_letters == '_n'):
+        # This is an LVDS signal
+        print('    LVDS')
+        row.at['IOStandard'] = 'LVDS_25'
 
 #----- Allow user to fix error names
 print(f'Error names: {len(error_names)}')
@@ -441,7 +455,7 @@ for i in range(len(data_frame_ordered)):
     fpga_pin    = str(data_frame_ordered.iloc[i].at['FPGA Pin'])
     name        = str(data_frame_ordered.iloc[i].at['Name']).lower()
     io_standard = str(data_frame_ordered.iloc[i].at['IOStandard'])
-    
+
     if name == 'nan':
         name = ''
     if io_standard == 'nan':
