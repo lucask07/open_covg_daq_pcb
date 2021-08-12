@@ -2,7 +2,7 @@
 
 ## Project Description
 
-This repository houses the KiCad schematic, layout, and BOM for a general-purpose data acquisition board (DAQ) that enables real-time feedback with latencies of < 2 us by direct interfaces of ADCs and DACs to the [XEM7310](https://opalkelly.com/products/xem7310/) OpalKelly FPGA module. This DAQ board is designed for a digital feedback implementation of a clamp amplifier for the cut-open vaseline gap (COVG) electrophysiology method but may also find a use for other scientific studies requiring low latency control. 
+This repository houses the KiCad schematic, layout, and BOM for a general-purpose data acquisition board (DAQ) that enables real-time feedback with latencies of < 2 us by direct interfaces of ADCs and DACs to the [XEM7310](https://opalkelly.com/products/xem7310/) OpalKelly FPGA module. This DAQ board is designed for a digital feedback implementation of a clamp amplifier for the cut-open vaseline gap (COVG) electrophysiology method and may also find a use for other scientific studies requiring low latency control. 
 
 The **schematic is [here](docs/covg_daq_v2.pdf)** and a 3d rendering of the board is shown below: <p align="center">
 <img src="docs/covg_daq_v2_3d_render_hdmi.png" width="600">
@@ -83,12 +83,12 @@ The generic HDMI-A cable pinout is defined as follows with 15 (non-shield) pins 
 | 1   | Data2+       | fastDAC1     | ~ 1 us settling time. Programmable full-scale range.                                                                          |
 | 2   | Data2 shield | gnd          |                                                                            |
 | 3   | Data2-       | Analog/GPIO1 |  DAC8050, 16 bit, 5us settle, 5 V supply                                                                         |
-| 4   | Data1+       | fastADC+     |  to AD7960/AD7961. Differential low-pass filter on DAQ board. Common mode voltage must match 2.5 V.                                                                          |
+| 4   | Data1+       | fastADC+     |  Analog output to AD7960/AD7961. Differential low-pass filter on DAQ board. Common mode voltage must match 2.5 V.                                                                          |
 | 5   | Data1 shield | gnd          |                                                                           |
-| 6   | Data1-       | fastADC-     |  to AD7960/AD7961. Differential low-pass filter on DAQ board. Common mode voltage must match 2.5 V.                                                                          |
+| 6   | Data1-       | fastADC-     |  Analog output to AD7960/AD7961. Differential low-pass filter on DAQ board. Common mode voltage must match 2.5 V.                                                                          |
 | 7   | Data0+       | fastDAC2     |  ~1 us settling time. Programmable full-scale range.                                                                          |
 | 8   | Data0 shield | gnd          |                                                                           |
-| 9   | Data0-       | Analog/GPIO2 |  to ADS8686 1 MSPS. Chip inputs includes a programmable PGA for full-scale range up to +/-10V                                                           |
+| 9   | Data0-       | Analog/GPIO2 |  Analog output to ADS8686 1 MSPS. Chip inputs includes a programmable PGA for full-scale range up to +/-10V                                                           |
 | 10  | Clock+       | 15V          |  linear regulator, 75 mA max per channel                                                                         |
 | 11  | Clock shield | gnd          |                                                                            |
 | 12  | Clock-       | VCM          | reference voltage from the AD796x buffered on the DAQ board, nominal 2.5 V                                                                          |
@@ -98,7 +98,7 @@ The generic HDMI-A cable pinout is defined as follows with 15 (non-shield) pins 
 | 16  | SDA          | SDA          |  I2C data. Pull-up resistor on DAQ board, 3.3 V levels.                                                            |
 | 17  | Gnd          | Gnd          |                                                                            |
 | 18  | 5V           | 5V           |  Power from linear regulator (target 200 mA max per channel with all 4 channels connected)                                                                       |
-| 19  | HPD          | Analog/GPIO3 | to ADS8686 1 MSPS. Chip inputs includes a programmable PGA for full-scale range up to +/-10V         
+| 19  | HPD          | Analog/GPIO3 | Analog output to ADS8686 1 MSPS. Chip inputs includes a programmable PGA for full-scale range up to +/-10V         
 
 
 ### Example Daughtercard Pinout 
