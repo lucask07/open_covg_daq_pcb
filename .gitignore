@@ -28,3 +28,5 @@ fp-info-cache
 .DS_Store
 ~$*
 
+pins.xlsx
+pins.txt
