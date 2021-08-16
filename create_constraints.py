@@ -1,8 +1,14 @@
-# Script to create an FPGA constraints file from the covg-kicad.lib and ok_fpga.sch files
-# Usage:
-# While in the directory containing create_constraints.py, enter
-# py -m create_constraints -l -f -d
-# The -l, -f, -d are options for including uncommented LEDs, Flash, and DRAM constraints
+"""Script to create an FPGA constraints file from the covg-kicad.lib and ok_fpga.sch files
+
+This script has optionalcommand line argument flags.
+    -l : include uncommented LEDs constraints
+    -f : include uncommented Flash constraints
+    -d : include uncommented DRAM constraints
+
+August 2021
+
+Abe Stroschein, ajstroschein@stthomas.edu
+"""
 
 import pandas as pd
 from operator import attrgetter
