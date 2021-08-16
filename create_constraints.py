@@ -1,4 +1,8 @@
 # Script to create an FPGA constraints file from the covg-kicad.lib and ok_fpga.sch files
+# Usage:
+# While in the directory containing create_constraints.py, enter
+# py -m create_constraints -l -f -d
+# The -l, -f, -d are options for including uncommented LEDs, Flash, and DRAM constraints
 
 import pandas as pd
 from operator import attrgetter
@@ -824,6 +828,19 @@ def get_inouts(data_frame):
 
     
 if __name__ == '__main__':
+    # Take flag arguments from the command line
+    import argparse
+    parser = argparse.ArgumentParser()
+
+    # -leds to include leds uncommented
+    # -flash to include flash uncommented
+    # -dram to include dram uncommented
+    parser.add_argument('-l', '--leds', help='Include LEDs uncommented', action='store_true')
+    parser.add_argument('-f', '--flash', help='Include flash uncommented', action='store_true')
+    parser.add_argument('-d', '--dram', help='Include DRAM uncommented', action='store_true')
+
+    args = parser.parse_args()
+    
     # File locations
     pin_file_location = 'covg-kicad.lib'
     name_file_location = 'ok_fpga.sch'
@@ -866,7 +883,7 @@ if __name__ == '__main__':
     data_frame = shift_index(data_frame)
 
     # Write the constraints file
-    create_constraints(data_frame, leds=True, flash=True, dram=True)
+    create_constraints(data_frame, leds=args.leds, flash=args.flash, dram=args.dram)
 
     # Get all wires and vectors used
     inouts = get_inouts(data_frame)
