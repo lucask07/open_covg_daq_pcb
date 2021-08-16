@@ -277,6 +277,64 @@ def group_vectors(data_frame):
                 
     return data_frame
 
+# Function to shift the index of all vectors to begin at 0. Can take a list of (max_index, min_index, name) for wires and vectors like the one output by get_inouts(data_frame)
+# Ex. [3:1] -> [2:0]
+
+
+def shift_index(data_frame):
+    shifts = {}
+
+    # Sort by name to group vectors together in order of index
+    sorted_data_frame = data_frame.sort_values(by='Name')
+
+    # Collect the names of the vectors that must be shifted
+    row = 0
+    while row < len(sorted_data_frame):
+        name = sorted_data_frame.iloc[row].at['Name']
+        name_parts = name.split('[')
+
+        if len(name_parts) < 2:
+            # Not a vector, skip
+            row += 1
+            continue
+
+        if name_parts[1] == '0]':
+            # Vector index already begins at 0, skip
+            row += 1
+            while sorted_data_frame.iloc[row].at['Name'].split('[')[0] == name_parts[0]:
+                # Next name is a part of the current vector, skip this too
+                row += 1
+                if row >= len(sorted_data_frame):
+                    # We are at the final row
+                    break
+            continue
+
+        # Didn't go into either of the if's above so the current name is a vector that does not start at 0
+        index_shift = int(name_parts[1].split(']')[0])
+        shifts[name_parts[0]] = index_shift
+
+        # Skip other parts of the vector
+        while sorted_data_frame.iloc[row].at['Name'].split('[')[0] == name_parts[0]:
+            # Next name is a part of the current vector, skip
+            row += 1
+            if row >= len(sorted_data_frame):
+                # We are at the final row
+                break
+
+    # Go through the regular data_frame and replace all occurences of this name with indices shifted
+    for row in range(len(data_frame)):
+        name = data_frame.iloc[row].at['Name']
+        name_parts = name.split('[')
+
+        if name_parts[0] in shifts.keys():
+            # Vector needs to be shifted
+            index_shift = shifts[name_parts[0]]
+            new_index = str(int(name_parts[1].split(']')[0]) - index_shift)
+            new_name = name_parts[0] + '[' + new_index + ']'
+            data_frame.iloc[row].at['Name'] = new_name
+
+    return data_frame
+
 # Function to create a constraints file from a DataFrame with columns Pin, FPGA Pin, Name, IOStandard
 def create_constraints(data_frame):
     print('Creating constraints file...')
@@ -455,8 +513,8 @@ def get_inouts(data_frame):
                 max_val = vector_num
             else:
                 # Must compare against previous range
-                min_val = min(vector_num, min_val)
-                max_val = max(vector_num, max_val)
+                min_val = min(vector_num, prefix[1])
+                max_val = max(vector_num, prefix[0])
                 
             prefixes[vector_name] = (max_val, min_val)
             wires_and_vectors.add(vector_name)
@@ -481,8 +539,9 @@ def get_inouts(data_frame):
         print(prefix_str.ljust(7) + name)
 
     print(''.center(30, '='))
-
+    
     return sorted_wires_and_vectors
+
     
 if __name__ == '__main__':
     # File locations
@@ -521,6 +580,9 @@ if __name__ == '__main__':
     # Return to original sort -> MC2-ODDS, MC2-EVENS, MC1-ODDS, MC1-EVEN matching the schematic reading left to right
     data_frame = data_frame.sort_index()
     data_frame.to_excel('pins.xlsx')
+
+    # Shift all vector indices to 0
+    data_frame = shift_index(data_frame)
 
     # Write the constraints file
     create_constraints(data_frame)
