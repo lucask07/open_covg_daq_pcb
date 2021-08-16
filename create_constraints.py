@@ -60,7 +60,7 @@ def collect_pins(pin_file_location):
 
     return pin_list
 
-# Function to create a list of Pins from a .sch file
+# Function to create a list of Names from a .sch file
 def collect_names(name_file_location):
     print(f'Collecting names from: {name_file_location}')
     name_file = open(name_file_location, 'r', encoding='utf-8')
@@ -336,7 +336,7 @@ def shift_index(data_frame):
     return data_frame
 
 # Function to create a constraints file from a DataFrame with columns Pin, FPGA Pin, Name, IOStandard
-def create_constraints(data_frame):
+def create_constraints(data_frame, leds=False, flash=False, dram=False):
     print('Creating constraints file...')
     beginning_str = '''# XEM7310 - Xilinx constraints file
 #
@@ -446,6 +446,270 @@ set_property SLEW FAST[get_ports {pushreset}]
 
 '''
 
+    leds_str = '''# LEDs #####################################################################
+set_property PACKAGE_PIN A13 [get_ports {led[0]}]
+set_property PACKAGE_PIN B13 [get_ports {led[1]}]
+set_property PACKAGE_PIN A14 [get_ports {led[2]}]
+set_property PACKAGE_PIN A15 [get_ports {led[3]}]
+set_property PACKAGE_PIN B15 [get_ports {led[4]}]
+set_property PACKAGE_PIN A16 [get_ports {led[5]}]
+set_property PACKAGE_PIN B16 [get_ports {led[6]}]
+set_property PACKAGE_PIN B17 [get_ports {led[7]}]
+set_property IOSTANDARD LVCMOS15 [get_ports {led[*]}]'''
+
+    leds_str_commented = '''# LEDs #####################################################################
+# set_property PACKAGE_PIN A13 [get_ports {led[0]}]
+# set_property PACKAGE_PIN B13 [get_ports {led[1]}]
+# set_property PACKAGE_PIN A14 [get_ports {led[2]}]
+# set_property PACKAGE_PIN A15 [get_ports {led[3]}]
+# set_property PACKAGE_PIN B15 [get_ports {led[4]}]
+# set_property PACKAGE_PIN A16 [get_ports {led[5]}]
+# set_property PACKAGE_PIN B16 [get_ports {led[6]}]
+# set_property PACKAGE_PIN B17 [get_ports {led[7]}]
+# set_property IOSTANDARD LVCMOS15 [get_ports {led[*]}]'''
+
+    flash_str = '''# Flash ####################################################################
+set_property PACKAGE_PIN AA9 [get_ports {spi_dq0}]
+set_property PACKAGE_PIN V10 [get_ports {spi_c}]
+set_property PACKAGE_PIN W10 [get_ports {spi_s}]
+set_property PACKAGE_PIN AB10 [get_ports {spi_dq1}]
+set_property PACKAGE_PIN AA10 [get_ports {spi_w_dq2}]
+set_property PACKAGE_PIN AA11 [get_ports {spi_hold_dq3}]
+set_property IOSTANDARD LVCMOS33 [get_ports {spi_dq0}]
+set_property IOSTANDARD LVCMOS33 [get_ports {spi_c}]
+set_property IOSTANDARD LVCMOS33 [get_ports {spi_s}]
+set_property IOSTANDARD LVCMOS33 [get_ports {spi_dq1}]
+set_property IOSTANDARD LVCMOS33 [get_ports {spi_w_dq2}]
+set_property IOSTANDARD LVCMOS33 [get_ports {spi_hold_dq3}]'''
+    
+    flash_str_commented = '''# Flash ####################################################################
+# set_property PACKAGE_PIN AA9 [get_ports {spi_dq0}]
+# set_property PACKAGE_PIN V10 [get_ports {spi_c}]
+# set_property PACKAGE_PIN W10 [get_ports {spi_s}]
+# set_property PACKAGE_PIN AB10 [get_ports {spi_dq1}]
+# set_property PACKAGE_PIN AA10 [get_ports {spi_w_dq2}]
+# set_property PACKAGE_PIN AA11 [get_ports {spi_hold_dq3}]
+# set_property IOSTANDARD LVCMOS33 [get_ports {spi_dq0}]
+# set_property IOSTANDARD LVCMOS33 [get_ports {spi_c}]
+# set_property IOSTANDARD LVCMOS33 [get_ports {spi_s}]
+# set_property IOSTANDARD LVCMOS33 [get_ports {spi_dq1}]
+# set_property IOSTANDARD LVCMOS33 [get_ports {spi_w_dq2}]
+# set_property IOSTANDARD LVCMOS33 [get_ports {spi_hold_dq3}]'''
+
+    dram_str = '''# DRAM #####################################################################
+set_property PACKAGE_PIN N18 [get_ports {ddr3_dq[0]}]
+set_property PACKAGE_PIN L20 [get_ports {ddr3_dq[1]}]
+set_property PACKAGE_PIN N20 [get_ports {ddr3_dq[2]}]
+set_property PACKAGE_PIN K18 [get_ports {ddr3_dq[3]}]
+set_property PACKAGE_PIN M18 [get_ports {ddr3_dq[4]}]
+set_property PACKAGE_PIN K19 [get_ports {ddr3_dq[5]}]
+set_property PACKAGE_PIN N19 [get_ports {ddr3_dq[6]}]
+set_property PACKAGE_PIN L18 [get_ports {ddr3_dq[7]}]
+set_property PACKAGE_PIN L16 [get_ports {ddr3_dq[8]}]
+set_property PACKAGE_PIN L14 [get_ports {ddr3_dq[9]}]
+set_property PACKAGE_PIN K14 [get_ports {ddr3_dq[10]}]
+set_property PACKAGE_PIN M15 [get_ports {ddr3_dq[11]}]
+set_property PACKAGE_PIN K16 [get_ports {ddr3_dq[12]}]
+set_property PACKAGE_PIN M13 [get_ports {ddr3_dq[13]}]
+set_property PACKAGE_PIN K13 [get_ports {ddr3_dq[14]}]
+set_property PACKAGE_PIN L13 [get_ports {ddr3_dq[15]}]
+set_property PACKAGE_PIN D22 [get_ports {ddr3_dq[16]}]
+set_property PACKAGE_PIN C20 [get_ports {ddr3_dq[17]}]
+set_property PACKAGE_PIN E21 [get_ports {ddr3_dq[18]}]
+set_property PACKAGE_PIN D21 [get_ports {ddr3_dq[19]}]
+set_property PACKAGE_PIN G21 [get_ports {ddr3_dq[20]}]
+set_property PACKAGE_PIN C22 [get_ports {ddr3_dq[21]}]
+set_property PACKAGE_PIN E22 [get_ports {ddr3_dq[22]}]
+set_property PACKAGE_PIN B22 [get_ports {ddr3_dq[23]}]
+set_property PACKAGE_PIN A20 [get_ports {ddr3_dq[24]}]
+set_property PACKAGE_PIN D19 [get_ports {ddr3_dq[25]}]
+set_property PACKAGE_PIN A19 [get_ports {ddr3_dq[26]}]
+set_property PACKAGE_PIN F19 [get_ports {ddr3_dq[27]}]
+set_property PACKAGE_PIN C18 [get_ports {ddr3_dq[28]}]
+set_property PACKAGE_PIN E19 [get_ports {ddr3_dq[29]}]
+set_property PACKAGE_PIN A18 [get_ports {ddr3_dq[30]}]
+set_property PACKAGE_PIN C19 [get_ports {ddr3_dq[31]}]
+set_property SLEW FAST [get_ports {ddr3_dq[*]}]
+set_property IOSTANDARD SSTL15 [get_ports {ddr3_dq[*]}]
+
+set_property PACKAGE_PIN J21 [get_ports {ddr3_addr[0]}]
+set_property PACKAGE_PIN J22 [get_ports {ddr3_addr[1]}]
+set_property PACKAGE_PIN K21 [get_ports {ddr3_addr[2]}]
+set_property PACKAGE_PIN H22 [get_ports {ddr3_addr[3]}]
+set_property PACKAGE_PIN G13 [get_ports {ddr3_addr[4]}]
+set_property PACKAGE_PIN G17 [get_ports {ddr3_addr[5]}]
+set_property PACKAGE_PIN H15 [get_ports {ddr3_addr[6]}]
+set_property PACKAGE_PIN G16 [get_ports {ddr3_addr[7]}]
+set_property PACKAGE_PIN G20 [get_ports {ddr3_addr[8]}]
+set_property PACKAGE_PIN M21 [get_ports {ddr3_addr[9]}]
+set_property PACKAGE_PIN J15 [get_ports {ddr3_addr[10]}]
+set_property PACKAGE_PIN G15 [get_ports {ddr3_addr[11]}]
+set_property PACKAGE_PIN H13 [get_ports {ddr3_addr[12]}]
+set_property PACKAGE_PIN K22 [get_ports {ddr3_addr[13]}]
+set_property PACKAGE_PIN L21 [get_ports {ddr3_addr[14]}]
+set_property SLEW FAST [get_ports {ddr3_addr[*]}]
+set_property IOSTANDARD SSTL15 [get_ports {ddr3_addr[*]}]
+
+set_property PACKAGE_PIN H18 [get_ports {ddr3_ba[0]}]
+set_property PACKAGE_PIN J19 [get_ports {ddr3_ba[1]}]
+set_property PACKAGE_PIN H19 [get_ports {ddr3_ba[2]}]
+set_property SLEW FAST [get_ports {ddr3_ba[*]}]
+set_property IOSTANDARD SSTL15 [get_ports {ddr3_ba[*]}]
+
+set_property PACKAGE_PIN J16 [get_ports {ddr3_ras_n}]
+set_property SLEW FAST [get_ports {ddr3_ras_n}]
+set_property IOSTANDARD SSTL15 [get_ports {ddr3_ras_n}]
+
+set_property PACKAGE_PIN H17 [get_ports {ddr3_cas_n}]
+set_property SLEW FAST [get_ports {ddr3_cas_n}]
+set_property IOSTANDARD SSTL15 [get_ports {ddr3_cas_n}]
+
+set_property PACKAGE_PIN J20 [get_ports {ddr3_we_n}]
+set_property SLEW FAST [get_ports {ddr3_we_n}]
+set_property IOSTANDARD SSTL15 [get_ports {ddr3_we_n}]
+
+set_property PACKAGE_PIN F21 [get_ports {ddr3_reset_n}]
+set_property SLEW FAST [get_ports {ddr3_reset_n}]
+set_property IOSTANDARD LVCMOS15 [get_ports {ddr3_reset_n}]
+
+set_property PACKAGE_PIN G18 [get_ports {ddr3_cke[0]}]
+set_property SLEW FAST [get_ports {ddr3_cke[*]}]
+set_property IOSTANDARD SSTL15 [get_ports {ddr3_cke[*]}]
+
+set_property PACKAGE_PIN H20 [get_ports {ddr3_odt[0]}]
+set_property SLEW FAST [get_ports {ddr3_odt[*]}]
+set_property IOSTANDARD SSTL15 [get_ports {ddr3_odt[*]}]
+
+set_property PACKAGE_PIN L19 [get_ports {ddr3_dm[0]}]
+set_property PACKAGE_PIN L15 [get_ports {ddr3_dm[1]}]
+set_property PACKAGE_PIN D20 [get_ports {ddr3_dm[2]}]
+set_property PACKAGE_PIN B20 [get_ports {ddr3_dm[3]}]
+set_property SLEW FAST [get_ports {ddr3_dm[*]}]
+set_property IOSTANDARD SSTL15 [get_ports {ddr3_dm[*]}]
+
+set_property PACKAGE_PIN N22 [get_ports {ddr3_dqs_p[0]}]
+set_property PACKAGE_PIN M22 [get_ports {ddr3_dqs_n[0]}]
+set_property PACKAGE_PIN K17 [get_ports {ddr3_dqs_p[1]}]
+set_property PACKAGE_PIN J17 [get_ports {ddr3_dqs_n[1]}]
+set_property PACKAGE_PIN B21 [get_ports {ddr3_dqs_p[2]}]
+set_property PACKAGE_PIN A21 [get_ports {ddr3_dqs_n[2]}]
+set_property PACKAGE_PIN F18 [get_ports {ddr3_dqs_p[3]}]
+set_property PACKAGE_PIN E18 [get_ports {ddr3_dqs_n[3]}]
+set_property SLEW FAST [get_ports {ddr3_dqs*}]
+set_property IOSTANDARD DIFF_SSTL15 [get_ports {ddr3_dqs*}]
+
+set_property PACKAGE_PIN J14 [get_ports {ddr3_ck_p[0]}]
+set_property PACKAGE_PIN H14 [get_ports {ddr3_ck_n[0]}]
+set_property SLEW FAST [get_ports {ddr3_ck*}]
+set_property IOSTANDARD DIFF_SSTL15 [get_ports {ddr3_ck_*}]'''
+    
+    dram_str_commented = '''# DRAM #####################################################################
+#set_property PACKAGE_PIN N18 [get_ports {ddr3_dq[0]}]
+#set_property PACKAGE_PIN L20 [get_ports {ddr3_dq[1]}]
+#set_property PACKAGE_PIN N20 [get_ports {ddr3_dq[2]}]
+#set_property PACKAGE_PIN K18 [get_ports {ddr3_dq[3]}]
+#set_property PACKAGE_PIN M18 [get_ports {ddr3_dq[4]}]
+#set_property PACKAGE_PIN K19 [get_ports {ddr3_dq[5]}]
+#set_property PACKAGE_PIN N19 [get_ports {ddr3_dq[6]}]
+#set_property PACKAGE_PIN L18 [get_ports {ddr3_dq[7]}]
+#set_property PACKAGE_PIN L16 [get_ports {ddr3_dq[8]}]
+#set_property PACKAGE_PIN L14 [get_ports {ddr3_dq[9]}]
+#set_property PACKAGE_PIN K14 [get_ports {ddr3_dq[10]}]
+#set_property PACKAGE_PIN M15 [get_ports {ddr3_dq[11]}]
+#set_property PACKAGE_PIN K16 [get_ports {ddr3_dq[12]}]
+#set_property PACKAGE_PIN M13 [get_ports {ddr3_dq[13]}]
+#set_property PACKAGE_PIN K13 [get_ports {ddr3_dq[14]}]
+#set_property PACKAGE_PIN L13 [get_ports {ddr3_dq[15]}]
+#set_property PACKAGE_PIN D22 [get_ports {ddr3_dq[16]}]
+#set_property PACKAGE_PIN C20 [get_ports {ddr3_dq[17]}]
+#set_property PACKAGE_PIN E21 [get_ports {ddr3_dq[18]}]
+#set_property PACKAGE_PIN D21 [get_ports {ddr3_dq[19]}]
+#set_property PACKAGE_PIN G21 [get_ports {ddr3_dq[20]}]
+#set_property PACKAGE_PIN C22 [get_ports {ddr3_dq[21]}]
+#set_property PACKAGE_PIN E22 [get_ports {ddr3_dq[22]}]
+#set_property PACKAGE_PIN B22 [get_ports {ddr3_dq[23]}]
+#set_property PACKAGE_PIN A20 [get_ports {ddr3_dq[24]}]
+#set_property PACKAGE_PIN D19 [get_ports {ddr3_dq[25]}]
+#set_property PACKAGE_PIN A19 [get_ports {ddr3_dq[26]}]
+#set_property PACKAGE_PIN F19 [get_ports {ddr3_dq[27]}]
+#set_property PACKAGE_PIN C18 [get_ports {ddr3_dq[28]}]
+#set_property PACKAGE_PIN E19 [get_ports {ddr3_dq[29]}]
+#set_property PACKAGE_PIN A18 [get_ports {ddr3_dq[30]}]
+#set_property PACKAGE_PIN C19 [get_ports {ddr3_dq[31]}]
+#set_property SLEW FAST [get_ports {ddr3_dq[*]}]
+#set_property IOSTANDARD SSTL15 [get_ports {ddr3_dq[*]}]
+
+#set_property PACKAGE_PIN J21 [get_ports {ddr3_addr[0]}]
+#set_property PACKAGE_PIN J22 [get_ports {ddr3_addr[1]}]
+#set_property PACKAGE_PIN K21 [get_ports {ddr3_addr[2]}]
+#set_property PACKAGE_PIN H22 [get_ports {ddr3_addr[3]}]
+#set_property PACKAGE_PIN G13 [get_ports {ddr3_addr[4]}]
+#set_property PACKAGE_PIN G17 [get_ports {ddr3_addr[5]}]
+#set_property PACKAGE_PIN H15 [get_ports {ddr3_addr[6]}]
+#set_property PACKAGE_PIN G16 [get_ports {ddr3_addr[7]}]
+#set_property PACKAGE_PIN G20 [get_ports {ddr3_addr[8]}]
+#set_property PACKAGE_PIN M21 [get_ports {ddr3_addr[9]}]
+#set_property PACKAGE_PIN J15 [get_ports {ddr3_addr[10]}]
+#set_property PACKAGE_PIN G15 [get_ports {ddr3_addr[11]}]
+#set_property PACKAGE_PIN H13 [get_ports {ddr3_addr[12]}]
+#set_property PACKAGE_PIN K22 [get_ports {ddr3_addr[13]}]
+#set_property PACKAGE_PIN L21 [get_ports {ddr3_addr[14]}]
+#set_property SLEW FAST [get_ports {ddr3_addr[*]}]
+#set_property IOSTANDARD SSTL15 [get_ports {ddr3_addr[*]}]
+
+#set_property PACKAGE_PIN H18 [get_ports {ddr3_ba[0]}]
+#set_property PACKAGE_PIN J19 [get_ports {ddr3_ba[1]}]
+#set_property PACKAGE_PIN H19 [get_ports {ddr3_ba[2]}]
+#set_property SLEW FAST [get_ports {ddr3_ba[*]}]
+#set_property IOSTANDARD SSTL15 [get_ports {ddr3_ba[*]}]
+
+#set_property PACKAGE_PIN J16 [get_ports {ddr3_ras_n}]
+#set_property SLEW FAST [get_ports {ddr3_ras_n}]
+#set_property IOSTANDARD SSTL15 [get_ports {ddr3_ras_n}]
+
+#set_property PACKAGE_PIN H17 [get_ports {ddr3_cas_n}]
+#set_property SLEW FAST [get_ports {ddr3_cas_n}]
+#set_property IOSTANDARD SSTL15 [get_ports {ddr3_cas_n}]
+
+#set_property PACKAGE_PIN J20 [get_ports {ddr3_we_n}]
+#set_property SLEW FAST [get_ports {ddr3_we_n}]
+#set_property IOSTANDARD SSTL15 [get_ports {ddr3_we_n}]
+
+#set_property PACKAGE_PIN F21 [get_ports {ddr3_reset_n}]
+#set_property SLEW FAST [get_ports {ddr3_reset_n}]
+#set_property IOSTANDARD LVCMOS15 [get_ports {ddr3_reset_n}]
+
+#set_property PACKAGE_PIN G18 [get_ports {ddr3_cke[0]}]
+#set_property SLEW FAST [get_ports {ddr3_cke[*]}]
+#set_property IOSTANDARD SSTL15 [get_ports {ddr3_cke[*]}]
+
+#set_property PACKAGE_PIN H20 [get_ports {ddr3_odt[0]}]
+#set_property SLEW FAST [get_ports {ddr3_odt[*]}]
+#set_property IOSTANDARD SSTL15 [get_ports {ddr3_odt[*]}]
+
+#set_property PACKAGE_PIN L19 [get_ports {ddr3_dm[0]}]
+#set_property PACKAGE_PIN L15 [get_ports {ddr3_dm[1]}]
+#set_property PACKAGE_PIN D20 [get_ports {ddr3_dm[2]}]
+#set_property PACKAGE_PIN B20 [get_ports {ddr3_dm[3]}]
+#set_property SLEW FAST [get_ports {ddr3_dm[*]}]
+#set_property IOSTANDARD SSTL15 [get_ports {ddr3_dm[*]}]
+
+#set_property PACKAGE_PIN N22 [get_ports {ddr3_dqs_p[0]}]
+#set_property PACKAGE_PIN M22 [get_ports {ddr3_dqs_n[0]}]
+#set_property PACKAGE_PIN K17 [get_ports {ddr3_dqs_p[1]}]
+#set_property PACKAGE_PIN J17 [get_ports {ddr3_dqs_n[1]}]
+#set_property PACKAGE_PIN B21 [get_ports {ddr3_dqs_p[2]}]
+#set_property PACKAGE_PIN A21 [get_ports {ddr3_dqs_n[2]}]
+#set_property PACKAGE_PIN F18 [get_ports {ddr3_dqs_p[3]}]
+#set_property PACKAGE_PIN E18 [get_ports {ddr3_dqs_n[3]}]
+#set_property SLEW FAST [get_ports {ddr3_dqs*}]
+#set_property IOSTANDARD DIFF_SSTL15 [get_ports {ddr3_dqs*}]
+
+#set_property PACKAGE_PIN J14 [get_ports {ddr3_ck_p[0]}]
+#set_property PACKAGE_PIN H14 [get_ports {ddr3_ck_n[0]}]
+#set_property SLEW FAST [get_ports {ddr3_ck*}]
+#set_property IOSTANDARD DIFF_SSTL15 [get_ports {ddr3_ck_*}]'''
+
     # Add each pin
     constraints_str = beginning_str
 
@@ -482,6 +746,22 @@ set_property SLEW FAST[get_ports {pushreset}]
             # Pin assigned, do not comment the line
             constraints_str += 'set_property PACKAGE_PIN ' + fpga_pin + ' [get_ports {' + name + '}]\n'
             constraints_str += 'set_property IOSTANDARD ' + io_standard + ' [get_ports {' + name + '}]\n'
+
+    # Add in commented or uncommented leds, flash, and dram constraints based on function inputs
+    if leds:
+        constraints_str += '\n' + leds_str + '\n'
+    else:
+        constraints_str += '\n' + leds_str_commented + '\n'
+    
+    if flash:
+        constraints_str += '\n' + flash_str + '\n'
+    else:
+        constraints_str += '\n' + flash_str_commented + '\n'
+    
+    if dram:
+        constraints_str += '\n' + dram_str + '\n'
+    else:
+        constraints_str += '\n' + dram_str_commented + '\n'
 
     constraints_file = open('xem7310_generated_constraintes.xdc', 'w')
     constraints_file.write(constraints_str)
@@ -551,6 +831,7 @@ if __name__ == '__main__':
     # Create lists
     pin_list = collect_pins(pin_file_location)
     name_list = collect_names(name_file_location)
+    total_names = len(name_list)
 
     # Match together
     pin_list, name_list = match_pins_to_names(pin_list, name_list)
@@ -585,9 +866,10 @@ if __name__ == '__main__':
     data_frame = shift_index(data_frame)
 
     # Write the constraints file
-    create_constraints(data_frame)
+    create_constraints(data_frame, leds=True, flash=True, dram=True)
 
     # Get all wires and vectors used
     inouts = get_inouts(data_frame)
+    print(f'Number of names found in {name_file_location}: {total_names}')
 
     print('Done')
