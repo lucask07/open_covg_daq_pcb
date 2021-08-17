@@ -1,6 +1,6 @@
 """Script to create an FPGA constraints file from the covg-kicad.lib and ok_fpga.sch files
 
-This script has optionalcommand line argument flags.
+This script has optional command line argument flags.
     -l : include uncommented LEDs constraints
     -f : include uncommented Flash constraints
     -d : include uncommented DRAM constraints
