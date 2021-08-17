@@ -297,8 +297,6 @@ def group_vectors(data_frame):
 
 # Function to shift the index of all vectors to begin at 0. Can take a list of (max_index, min_index, name) for wires and vectors like the one output by get_inouts(data_frame)
 # Ex. [3:1] -> [2:0]
-
-
 def shift_index(data_frame):
     shifts = {}
 
@@ -350,6 +348,17 @@ def shift_index(data_frame):
             new_index = str(int(name_parts[1].split(']')[0]) - index_shift)
             new_name = name_parts[0] + '[' + new_index + ']'
             data_frame.iloc[row].at['Name'] = new_name
+
+    return data_frame
+
+# Function to make the IOSTANDARD for a pin LVDS_25 if it ends in '_p' or '_n' indicating it is one of a LVDS pair.
+def insert_LVDS_25(data_frame):
+    for row in range(len(data_frame)):
+        name = data_frame.iloc[row].at['Name'].lower()
+        last_letters = name.split('[')[0][-2:]
+        print(name, last_letters)
+        if last_letters == '_p' or last_letters == '_n':
+            data_frame.iloc[row].at['IOStandard'] = 'LVDS_25'
 
     return data_frame
 
@@ -878,14 +887,17 @@ if __name__ == '__main__':
     # Group like names into vectors
     data_frame = group_vectors(data_frame)
 
+    # Shift all vector indices to 0
+    data_frame = shift_index(data_frame)
+
+    # Change the IOSTANDARD of any LVDS pins (indicated by _p or _n ending) to LVDS_25
+    data_frame = insert_LVDS_25(data_frame)
+
     # Write to spreadsheet
     print('Creating spreadsheet...')
     # Return to original sort -> MC2-ODDS, MC2-EVENS, MC1-ODDS, MC1-EVEN matching the schematic reading left to right
     data_frame = data_frame.sort_index()
     data_frame.to_excel('pins.xlsx')
-
-    # Shift all vector indices to 0
-    data_frame = shift_index(data_frame)
 
     # Write the constraints file
     create_constraints(data_frame, leds=args.leds, flash=args.flash, dram=args.dram)
