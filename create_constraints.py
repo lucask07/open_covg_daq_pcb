@@ -198,9 +198,17 @@ def match_FPGA_pins(pin_list):
     xem7310_pins = pd.read_csv('XEM7310.csv')
     for pin in pin_list:
         connector, connector_pin = pin.name.split('-') # Ex. 'MC2', '12' = 'MC2-12'
-        row = xem7310_pins.loc[(xem7310_pins['Connector'] == connector) & (xem7310_pins['Pin'] == int(connector_pin))]
-        pin.fpga_pin = row['FPGA Pin'].item()
-        pin.io_standard = row['XDC IOStandard'].item()
+        row = xem7310_pins.loc[(xem7310_pins['Connector'] == connector) & (xem7310_pins['Pin'] == int(connector_pin))].iloc[0] # Need the .iloc[0] to get a Series rather than a DataFrame
+        pin.fpga_pin = row.at['FPGA Pin']
+        
+        # Change the IOSTANDARD for LVDS signals in Bank 34 to LVCMOS25,
+        # leave the rest as they are in the OK spreadsheet.
+        if row.at['I/O Bank'] == 34:
+            # LVDS signal, use LVCMOS25
+            pin.io_standard = 'LVCMOS25'
+        else:
+            # Not LVDS signal, use what is in the OK spreadhseet
+            pin.io_standard = row.at['XDC IOStandard']
 
     return pin_list
 
@@ -357,102 +365,102 @@ def create_constraints(data_frame, leds=False, flash=False, dram=False):
 # Copyright (c) 2004-2016 Opal Kelly Incorporated
 ############################################################################
 
-set_property CFGBVS GND[current_design]
+set_property CFGBVS GND [current_design]
 set_property CONFIG_VOLTAGE 1.8 [current_design]
 set_property BITSTREAM.GENERAL.COMPRESS True [current_design]
 
 ############################################################################
 ## FrontPanel Host Interface
 ############################################################################
-set_property PACKAGE_PIN Y19[get_ports {okHU[0]}]
-set_property PACKAGE_PIN R18[get_ports {okHU[1]}]
-set_property PACKAGE_PIN R16[get_ports {okHU[2]}]
-set_property SLEW FAST[get_ports {okHU[*]}]
-set_property IOSTANDARD LVCMOS18[get_ports {okHU[*]}]
+set_property PACKAGE_PIN Y19 [get_ports {okHU[0]}]
+set_property PACKAGE_PIN R18 [get_ports {okHU[1]}]
+set_property PACKAGE_PIN R16 [get_ports {okHU[2]}]
+set_property SLEW FAST [get_ports {okHU[*]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {okHU[*]}]
 
-set_property PACKAGE_PIN W19[get_ports {okUH[0]}]
-set_property PACKAGE_PIN V18[get_ports {okUH[1]}]
-set_property PACKAGE_PIN U17[get_ports {okUH[2]}]
-set_property PACKAGE_PIN W17[get_ports {okUH[3]}]
-set_property PACKAGE_PIN T19[get_ports {okUH[4]}]
-set_property IOSTANDARD LVCMOS18[get_ports {okUH[*]}]
+set_property PACKAGE_PIN W19 [get_ports {okUH[0]}]
+set_property PACKAGE_PIN V18 [get_ports {okUH[1]}]
+set_property PACKAGE_PIN U17 [get_ports {okUH[2]}]
+set_property PACKAGE_PIN W17 [get_ports {okUH[3]}]
+set_property PACKAGE_PIN T19 [get_ports {okUH[4]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {okUH[*]}]
 
-set_property PACKAGE_PIN AB22[get_ports {okUHU[0]}]
-set_property PACKAGE_PIN AB21[get_ports {okUHU[1]}]
-set_property PACKAGE_PIN Y22[get_ports {okUHU[2]}]
-set_property PACKAGE_PIN AA21[get_ports {okUHU[3]}]
-set_property PACKAGE_PIN AA20[get_ports {okUHU[4]}]
-set_property PACKAGE_PIN W22[get_ports {okUHU[5]}]
-set_property PACKAGE_PIN W21[get_ports {okUHU[6]}]
-set_property PACKAGE_PIN T20[get_ports {okUHU[7]}]
-set_property PACKAGE_PIN R19[get_ports {okUHU[8]}]
-set_property PACKAGE_PIN P19[get_ports {okUHU[9]}]
-set_property PACKAGE_PIN U21[get_ports {okUHU[10]}]
-set_property PACKAGE_PIN T21[get_ports {okUHU[11]}]
-set_property PACKAGE_PIN R21[get_ports {okUHU[12]}]
-set_property PACKAGE_PIN P21[get_ports {okUHU[13]}]
-set_property PACKAGE_PIN R22[get_ports {okUHU[14]}]
-set_property PACKAGE_PIN P22[get_ports {okUHU[15]}]
-set_property PACKAGE_PIN R14[get_ports {okUHU[16]}]
-set_property PACKAGE_PIN W20[get_ports {okUHU[17]}]
-set_property PACKAGE_PIN Y21[get_ports {okUHU[18]}]
-set_property PACKAGE_PIN P17[get_ports {okUHU[19]}]
-set_property PACKAGE_PIN U20[get_ports {okUHU[20]}]
-set_property PACKAGE_PIN N17[get_ports {okUHU[21]}]
-set_property PACKAGE_PIN N14[get_ports {okUHU[22]}]
-set_property PACKAGE_PIN V20[get_ports {okUHU[23]}]
-set_property PACKAGE_PIN P16[get_ports {okUHU[24]}]
-set_property PACKAGE_PIN T18[get_ports {okUHU[25]}]
-set_property PACKAGE_PIN V19[get_ports {okUHU[26]}]
-set_property PACKAGE_PIN AB20[get_ports {okUHU[27]}]
-set_property PACKAGE_PIN P15[get_ports {okUHU[28]}]
-set_property PACKAGE_PIN V22[get_ports {okUHU[29]}]
-set_property PACKAGE_PIN U18[get_ports {okUHU[30]}]
-set_property PACKAGE_PIN AB18[get_ports {okUHU[31]}]
-set_property SLEW FAST[get_ports {okUHU[*]}]
-set_property IOSTANDARD LVCMOS18[get_ports {okUHU[*]}]
+set_property PACKAGE_PIN AB22 [get_ports {okUHU[0]}]
+set_property PACKAGE_PIN AB21 [get_ports {okUHU[1]}]
+set_property PACKAGE_PIN Y22 [get_ports {okUHU[2]}]
+set_property PACKAGE_PIN AA21 [get_ports {okUHU[3]}]
+set_property PACKAGE_PIN AA20 [get_ports {okUHU[4]}]
+set_property PACKAGE_PIN W22 [get_ports {okUHU[5]}]
+set_property PACKAGE_PIN W21 [get_ports {okUHU[6]}]
+set_property PACKAGE_PIN T20 [get_ports {okUHU[7]}]
+set_property PACKAGE_PIN R19 [get_ports {okUHU[8]}]
+set_property PACKAGE_PIN P19 [get_ports {okUHU[9]}]
+set_property PACKAGE_PIN U21 [get_ports {okUHU[10]}]
+set_property PACKAGE_PIN T21 [get_ports {okUHU[11]}]
+set_property PACKAGE_PIN R21 [get_ports {okUHU[12]}]
+set_property PACKAGE_PIN P21 [get_ports {okUHU[13]}]
+set_property PACKAGE_PIN R22 [get_ports {okUHU[14]}]
+set_property PACKAGE_PIN P22 [get_ports {okUHU[15]}]
+set_property PACKAGE_PIN R14 [get_ports {okUHU[16]}]
+set_property PACKAGE_PIN W20 [get_ports {okUHU[17]}]
+set_property PACKAGE_PIN Y21 [get_ports {okUHU[18]}]
+set_property PACKAGE_PIN P17 [get_ports {okUHU[19]}]
+set_property PACKAGE_PIN U20 [get_ports {okUHU[20]}]
+set_property PACKAGE_PIN N17 [get_ports {okUHU[21]}]
+set_property PACKAGE_PIN N14 [get_ports {okUHU[22]}]
+set_property PACKAGE_PIN V20 [get_ports {okUHU[23]}]
+set_property PACKAGE_PIN P16 [get_ports {okUHU[24]}]
+set_property PACKAGE_PIN T18 [get_ports {okUHU[25]}]
+set_property PACKAGE_PIN V19 [get_ports {okUHU[26]}]
+set_property PACKAGE_PIN AB20 [get_ports {okUHU[27]}]
+set_property PACKAGE_PIN P15 [get_ports {okUHU[28]}]
+set_property PACKAGE_PIN V22 [get_ports {okUHU[29]}]
+set_property PACKAGE_PIN U18 [get_ports {okUHU[30]}]
+set_property PACKAGE_PIN AB18 [get_ports {okUHU[31]}]
+set_property SLEW FAST [get_ports {okUHU[*]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {okUHU[*]}]
 
-set_property PACKAGE_PIN N13[get_ports {okAA}]
-set_property IOSTANDARD LVCMOS18[get_ports {okAA}]
+set_property PACKAGE_PIN N13 [get_ports {okAA}]
+set_property IOSTANDARD LVCMOS18 [get_ports {okAA}]
 
 
 create_clock - name okUH0 - period 9.920 [get_ports {okUH[0]}]
 
-set_input_delay - add_delay - max - clock[get_clocks {okUH0}]  8.000 [get_ports {okUH[*]}]
-set_input_delay - add_delay - min - clock[get_clocks {okUH0}] 10.000 [get_ports {okUH[*]}]
+set_input_delay - add_delay - max - clock [get_clocks {okUH0}]  8.000 [get_ports {okUH[*]}]
+set_input_delay - add_delay - min - clock [get_clocks {okUH0}] 10.000 [get_ports {okUH[*]}]
 set_multicycle_path - setup - from [get_ports {okUH[*]}] 2
 
-set_input_delay - add_delay - max - clock[get_clocks {okUH0}]  8.000 [get_ports {okUHU[*]}]
-set_input_delay - add_delay - min - clock[get_clocks {okUH0}]  2.000 [get_ports {okUHU[*]}]
+set_input_delay - add_delay - max - clock [get_clocks {okUH0}]  8.000 [get_ports {okUHU[*]}]
+set_input_delay - add_delay - min - clock [get_clocks {okUH0}]  2.000 [get_ports {okUHU[*]}]
 set_multicycle_path - setup - from [get_ports {okUHU[*]}] 2
 
-set_output_delay - add_delay - max - clock[get_clocks {okUH0}]  2.000 [get_ports {okHU[*]}]
-set_output_delay - add_delay - min - clock[get_clocks {okUH0}] - 0.500 [get_ports {okHU[*]}]
+set_output_delay - add_delay - max - clock [get_clocks {okUH0}]  2.000 [get_ports {okHU[*]}]
+set_output_delay - add_delay - min - clock [get_clocks {okUH0}] - 0.500 [get_ports {okHU[*]}]
 
-set_output_delay - add_delay - max - clock[get_clocks {okUH0}]  2.000 [get_ports {okUHU[*]}]
-set_output_delay - add_delay - min - clock[get_clocks {okUH0}] - 0.500 [get_ports {okUHU[*]}]
+set_output_delay - add_delay - max - clock [get_clocks {okUH0}]  2.000 [get_ports {okUHU[*]}]
+set_output_delay - add_delay - min - clock [get_clocks {okUH0}] - 0.500 [get_ports {okUHU[*]}]
 
 
 ############################################################################
 ## System Clock
 ############################################################################
-set_property IOSTANDARD LVDS_25[get_ports {sys_clkp}]
-set_property PACKAGE_PIN W11[get_ports {sys_clkp}]
+set_property IOSTANDARD LVDS_25 [get_ports {sys_clkp}]
+set_property PACKAGE_PIN W11 [get_ports {sys_clkp}]
 
-set_property IOSTANDARD LVDS_25[get_ports {sys_clkn}]
-set_property PACKAGE_PIN W12[get_ports {sys_clkn}]
+set_property IOSTANDARD LVDS_25 [get_ports {sys_clkn}]
+set_property PACKAGE_PIN W12 [get_ports {sys_clkn}]
 
-set_property DIFF_TERM FALSE[get_ports {sys_clkp}]
+set_property DIFF_TERM FALSE [get_ports {sys_clkp}]
 
 create_clock - name sys_clk - period 5 [get_ports sys_clkp]
-set_clock_groups - asynchronous - group[get_clocks {sys_clk}] - group[get_clocks {mmcm0_clk0 okUH0}]
+set_clock_groups - asynchronous - group [get_clocks {sys_clk}] - group [get_clocks {mmcm0_clk0 okUH0}]
 
 ############################################################################
 ## User Reset
 ############################################################################
-set_property PACKAGE_PIN Y18[get_ports {pushreset}]
-set_property IOSTANDARD LVCMOS18[get_ports {pushreset}]
-set_property SLEW FAST[get_ports {pushreset}]
+set_property PACKAGE_PIN Y18 [get_ports {pushreset}]
+set_property IOSTANDARD LVCMOS18 [get_ports {pushreset}]
+set_property SLEW FAST [get_ports {pushreset}]
 
 '''
 
@@ -869,15 +877,6 @@ if __name__ == '__main__':
 
     # Group like names into vectors
     data_frame = group_vectors(data_frame)
-
-    # Change the IOSTANDARD for LVDS signals to LVDS_25
-    for row_number in range(len(data_frame)):
-        row = data_frame.iloc[row_number]
-        name = row.at['Name'].lower()
-        last_letters = name.split('[')[0][-2:]
-        if (last_letters == '_p') or (last_letters == '_n'):
-            # This is an LVDS signal
-            row.at['IOStandard'] = 'LVDS_25'
 
     # Write to spreadsheet
     print('Creating spreadsheet...')
