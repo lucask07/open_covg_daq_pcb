@@ -66,21 +66,21 @@ set_property PACKAGE_PIN N13 [get_ports {okAA}]
 set_property IOSTANDARD LVCMOS18 [get_ports {okAA}]
 
 
-create_clock - name okUH0 - period 9.920 [get_ports {okUH[0]}]
+create_clock -name okUH0 -period 9.920 [get_ports {okUH[0]}]
 
-set_input_delay - add_delay - max - clock [get_clocks {okUH0}]  8.000 [get_ports {okUH[*]}]
-set_input_delay - add_delay - min - clock [get_clocks {okUH0}] 10.000 [get_ports {okUH[*]}]
-set_multicycle_path - setup - from [get_ports {okUH[*]}] 2
+set_input_delay -add_delay -max -clock [get_clocks {okUH0}]  8.000 [get_ports {okUH[*]}]
+set_input_delay -add_delay -min -clock [get_clocks {okUH0}] 10.000 [get_ports {okUH[*]}]
+set_multicycle_path -setup -from [get_ports {okUH[*]}] 2
 
-set_input_delay - add_delay - max - clock [get_clocks {okUH0}]  8.000 [get_ports {okUHU[*]}]
-set_input_delay - add_delay - min - clock [get_clocks {okUH0}]  2.000 [get_ports {okUHU[*]}]
-set_multicycle_path - setup - from [get_ports {okUHU[*]}] 2
+set_input_delay -add_delay -max -clock [get_clocks {okUH0}]  8.000 [get_ports {okUHU[*]}]
+set_input_delay -add_delay -min -clock [get_clocks {okUH0}]  2.000 [get_ports {okUHU[*]}]
+set_multicycle_path -setup -from [get_ports {okUHU[*]}] 2
 
-set_output_delay - add_delay - max - clock [get_clocks {okUH0}]  2.000 [get_ports {okHU[*]}]
-set_output_delay - add_delay - min - clock [get_clocks {okUH0}] - 0.500 [get_ports {okHU[*]}]
+set_output_delay -add_delay -max -clock [get_clocks {okUH0}]  2.000 [get_ports {okHU[*]}]
+set_output_delay -add_delay -min -clock [get_clocks {okUH0}] -0.500 [get_ports {okHU[*]}]
 
-set_output_delay - add_delay - max - clock [get_clocks {okUH0}]  2.000 [get_ports {okUHU[*]}]
-set_output_delay - add_delay - min - clock [get_clocks {okUH0}] - 0.500 [get_ports {okUHU[*]}]
+set_output_delay -add_delay -max -clock [get_clocks {okUH0}]  2.000 [get_ports {okUHU[*]}]
+set_output_delay -add_delay -min -clock [get_clocks {okUH0}] -0.500 [get_ports {okUHU[*]}]
 
 
 ############################################################################
@@ -94,8 +94,8 @@ set_property PACKAGE_PIN W12 [get_ports {sys_clkn}]
 
 set_property DIFF_TERM FALSE [get_ports {sys_clkp}]
 
-create_clock - name sys_clk - period 5 [get_ports sys_clkp]
-set_clock_groups - asynchronous - group [get_clocks {sys_clk}] - group [get_clocks {mmcm0_clk0 okUH0}]
+create_clock -name sys_clk -period 5 [get_ports sys_clkp]
+set_clock_groups -asynchronous -group [get_clocks {sys_clk}] -group [get_clocks {mmcm0_clk0 okUH0}]
 
 ############################################################################
 ## User Reset
