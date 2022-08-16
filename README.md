@@ -20,22 +20,22 @@ Pin header J11 has x8 bipolar outputs, x10 0-5V unipolar direct DAC output signa
 
 ### Digital Interfaces 
 
-At connector J15:
+**At connector J15:**
 
 - Digital I/O level-shifted to 1.8 V levels (x6). (signals DNO[0-5]) 
 - Digital I/O level-shifted to 5.0 V levels (x6). (signals UPO[0-5])
 - Digital I/O at 3.3 V levels (x4). (signals GPIO[0-3])
 - I2C interface at 1.8 V (1V8\_SCL, 1V8\_SDA)
 
-At connector J10:
+**At connector J10:**
 
 - General LVDS I/O 4 differential pairs at 2.5 V. Can also be used as 8 LVCMOS I/O. Note the routing of these LVDS pairs is only very roughly impedance controlled. Performance at the highest frequencies will need evaluation. 
 
-At SMA connectors J16 and J17: 
+**At SMA connectors J16 and J17: **
 
 - J16 and J17, 3.3V LVCMOS routed to multi-region clock capable pins. Potential use is to synchronize with other systems. 
 
-At QWIIC connector, J18:
+**At QWIIC connector, J18:**
 
 - The [Sparkfun QWIIC connector](https://www.sparkfun.com/qwiic) has 4 pins. 3.3 V power, I2C (SDA and SCL), and Gnd. This is a standardized interface to I2C-based sensor boards.  
 
@@ -107,9 +107,8 @@ The pin names shown in the image below are an example daughtercard interface (CO
 <img src="docs/hdmi.png" width="250">
 
 
-## Testing 
-To begin in July and August of 2021.
-
+## FPGA Setup 
+Because of the LVDS connections to the AD7961 FPGA bank 34 needs to be at 2.5 V. To do so remove ferrite bead (FB8) from the OpalKelly module. See the section "Setting the Expansion Connector I/O Voltages" [here](https://docs.opalkelly.com/xem7310/expansion-connectors/).
 
 ## For Board and FPGA Designers
 
@@ -117,7 +116,7 @@ To begin in July and August of 2021.
 
 Symbols and footprints custom to this design (and the COVG project in general) are housed in the [covg-kicad-lib repository](https://github.com/lucask07/covg-kicad-lib). This library should be a project specific library in your KiCAD *Symbol Library Management* and *Footrpint Library Management*.  
 
-When at all possible footprints are used from the KiCAD libraries. 
+When at all possible, footprints are used from the KiCAD libraries. 
 
 ### Impedance control of LVDS lines 
 
@@ -156,7 +155,14 @@ The [bill of materials files are here](bom/).
 Note that the "chip shortage of 2020/2021" has made component sourcing complicated and we hope this bottle-neck eases in the near future. 
 
 ### Assembly Guidance
-TBC
+The prototype boards were assembled by PCBWAY. The information provided to the assembly house is in the [assembly folder](assembly/).
+
+### Board Issues
+Please see the issues section of the GitHub repository. The most significant considerations are:
+
+1) The fast DACs must be flipped (upside down): pin 1 -> pin 8, pin 8 -> pin 1
+2) The switching power supply does not source enough current so has been removed. 3 voltages are provided externally: 7 V, +16.5 V, -15 V. 
+3) The negative -15 V output regulator demonstrated low-level oscillations so has been removed and is bypassed. 
 
 #### Other board design notes 
 
