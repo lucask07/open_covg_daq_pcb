@@ -28,5 +28,10 @@ fp-info-cache
 .DS_Store
 ~$*
 
+schematic_to_fpga_pins.xlsx
 pins.xlsx
 pins.txt
+
+
+assembly/pcbway_feedback/
+assembly/pcbway_feedback/*

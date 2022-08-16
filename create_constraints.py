@@ -773,7 +773,7 @@ set_property IOSTANDARD DIFF_SSTL15 [get_ports {ddr3_ck_*}]'''
     else:
         constraints_str += '\n' + dram_str_commented + '\n'
 
-    constraints_file = open('xem7310_generated_constraintes.xdc', 'w')
+    constraints_file = open('xem7310_generated_constraints.xdc', 'w')
     constraints_file.write(constraints_str)
     constraints_file.close()
 

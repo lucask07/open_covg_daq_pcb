@@ -241,31 +241,31 @@ set_property PACKAGE_PIN Y3 [get_ports {a_d_p[0]}]
 set_property IOSTANDARD LVDS_25 [get_ports {a_d_p[0]}]
 ## MC1-46
 set_property PACKAGE_PIN AA8 [get_ports {a_en0_hv[0]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {a_en0_hv[0]}]
+set_property IOSTANDARD LVCMOS25 [get_ports {a_en0_hv[0]}]
 ## MC1-47
 set_property PACKAGE_PIN AA3 [get_ports {a_d_n[0]}]
 set_property IOSTANDARD LVDS_25 [get_ports {a_d_n[0]}]
 ## MC1-48
 set_property PACKAGE_PIN AB8 [get_ports {a_en0_hv[1]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {a_en0_hv[1]}]
+set_property IOSTANDARD LVCMOS25 [get_ports {a_en0_hv[1]}]
 ## MC1-49
 set_property PACKAGE_PIN U2 [get_ports {a_clk_p[0]}]
 set_property IOSTANDARD LVDS_25 [get_ports {a_clk_p[0]}]
 ## MC1-50
 set_property PACKAGE_PIN U3 [get_ports {a_en0_hv[2]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {a_en0_hv[2]}]
+set_property IOSTANDARD LVCMOS25 [get_ports {a_en0_hv[2]}]
 ## MC1-51
 set_property PACKAGE_PIN V2 [get_ports {a_clk_n[0]}]
 set_property IOSTANDARD LVDS_25 [get_ports {a_clk_n[0]}]
 ## MC1-52
 set_property PACKAGE_PIN V3 [get_ports {a_en0_hv[3]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {a_en0_hv[3]}]
+set_property IOSTANDARD LVCMOS25 [get_ports {a_en0_hv[3]}]
 ## MC1-53
 set_property PACKAGE_PIN W2 [get_ports {a_cnv_p[1]}]
 set_property IOSTANDARD LVDS_25 [get_ports {a_cnv_p[1]}]
 ## MC1-54
 set_property PACKAGE_PIN W1 [get_ports {a_en_hv[0]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {a_en_hv[0]}]
+set_property IOSTANDARD LVCMOS25 [get_ports {a_en_hv[0]}]
 ## MC1-55
 #set_property PACKAGE_PIN nan [get_ports {}]
 #set_property IOSTANDARD  [get_ports {}]
@@ -277,19 +277,19 @@ set_property PACKAGE_PIN Y2 [get_ports {a_cnv_n[1]}]
 set_property IOSTANDARD LVDS_25 [get_ports {a_cnv_n[1]}]
 ## MC1-58
 set_property PACKAGE_PIN Y1 [get_ports {a_en_hv[1]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {a_en_hv[1]}]
+set_property IOSTANDARD LVCMOS25 [get_ports {a_en_hv[1]}]
 ## MC1-59
 set_property PACKAGE_PIN T1 [get_ports {a_d_p[1]}]
 set_property IOSTANDARD LVDS_25 [get_ports {a_d_p[1]}]
 ## MC1-60
 set_property PACKAGE_PIN AB3 [get_ports {a_en_hv[2]}]
-set_property IOSTANDARD LVCMOS33 [get_ports {a_en_hv[2]}]
+set_property IOSTANDARD LVCMOS25 [get_ports {a_en_hv[2]}]
 ## MC1-61
 set_property PACKAGE_PIN U1 [get_ports {a_d_n[1]}]
 set_property IOSTANDARD LVDS_25 [get_ports {a_d_n[1]}]
 ## MC1-62
 #set_property PACKAGE_PIN AB2 [get_ports {}]
-#set_property IOSTANDARD LVCMOS33 [get_ports {}]
+#set_property IOSTANDARD LVCMOS25 [get_ports {}]
 ## MC1-63
 set_property PACKAGE_PIN AA1 [get_ports {a_clk_p[1]}]
 set_property IOSTANDARD LVDS_25 [get_ports {a_clk_p[1]}]
@@ -573,14 +573,14 @@ set_property IOSTANDARD LVCMOS33 [get_ports {gpio[0]}]
 set_property PACKAGE_PIN Y12 [get_ports {en_ipump[1]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {en_ipump[1]}]
 ## MC2-77
-#set_property PACKAGE_PIN H4 [get_ports {}]
-#set_property IOSTANDARD LVCMOS33 [get_ports {}]
+set_property PACKAGE_PIN H4 [get_ports {sma[0]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {sma[0]}]
 ## MC2-78
 #set_property PACKAGE_PIN nan [get_ports {}]
 #set_property IOSTANDARD  [get_ports {}]
 ## MC2-79
-#set_property PACKAGE_PIN G4 [get_ports {}]
-#set_property IOSTANDARD LVCMOS33 [get_ports {}]
+set_property PACKAGE_PIN G4 [get_ports {sma[1]}]
+set_property IOSTANDARD LVCMOS33 [get_ports {sma[1]}]
 ## MC2-80
 #set_property PACKAGE_PIN nan [get_ports {}]
 #set_property IOSTANDARD  [get_ports {}]
@@ -597,18 +597,18 @@ set_property PACKAGE_PIN B17 [get_ports {led[7]}]
 set_property IOSTANDARD LVCMOS15 [get_ports {led[*]}]
 
 # Flash ####################################################################
-set_property PACKAGE_PIN AA9 [get_ports {spi_dq0}]
-set_property PACKAGE_PIN V10 [get_ports {spi_c}]
-set_property PACKAGE_PIN W10 [get_ports {spi_s}]
-set_property PACKAGE_PIN AB10 [get_ports {spi_dq1}]
-set_property PACKAGE_PIN AA10 [get_ports {spi_w_dq2}]
-set_property PACKAGE_PIN AA11 [get_ports {spi_hold_dq3}]
-set_property IOSTANDARD LVCMOS33 [get_ports {spi_dq0}]
-set_property IOSTANDARD LVCMOS33 [get_ports {spi_c}]
-set_property IOSTANDARD LVCMOS33 [get_ports {spi_s}]
-set_property IOSTANDARD LVCMOS33 [get_ports {spi_dq1}]
-set_property IOSTANDARD LVCMOS33 [get_ports {spi_w_dq2}]
-set_property IOSTANDARD LVCMOS33 [get_ports {spi_hold_dq3}]
+# set_property PACKAGE_PIN AA9 [get_ports {spi_dq0}]
+# set_property PACKAGE_PIN V10 [get_ports {spi_c}]
+# set_property PACKAGE_PIN W10 [get_ports {spi_s}]
+# set_property PACKAGE_PIN AB10 [get_ports {spi_dq1}]
+# set_property PACKAGE_PIN AA10 [get_ports {spi_w_dq2}]
+# set_property PACKAGE_PIN AA11 [get_ports {spi_hold_dq3}]
+# set_property IOSTANDARD LVCMOS33 [get_ports {spi_dq0}]
+# set_property IOSTANDARD LVCMOS33 [get_ports {spi_c}]
+# set_property IOSTANDARD LVCMOS33 [get_ports {spi_s}]
+# set_property IOSTANDARD LVCMOS33 [get_ports {spi_dq1}]
+# set_property IOSTANDARD LVCMOS33 [get_ports {spi_w_dq2}]
+# set_property IOSTANDARD LVCMOS33 [get_ports {spi_hold_dq3}]
 
 # DRAM #####################################################################
 set_property PACKAGE_PIN N18 [get_ports {ddr3_dq[0]}]
