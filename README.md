@@ -54,7 +54,7 @@ The power system is as follows:
 
 All power nets are connected to a screw terminal block connector to allow for monitoring or override of the on-board regulated voltages.  
 
-#### FPGA capabilities 
+### FPGA capabilities 
 The [XEM7310](https://opalkelly.com/products/xem7310/) OpalKelly FPGA module has a Artix7 FPGA (XC7A5T-1) with a USB 3.0 interface to a host computer (transfer rates up to 30 MiB/s). The module has 1-GiByte of DDR3 to enable burst data captures or burst data transfers. 
 
 ## Daughtercard Channels (x4)
@@ -160,11 +160,11 @@ The prototype boards were assembled by PCBWAY. The information provided to the a
 ### Board Issues
 Please see the issues section of the GitHub repository. The most significant considerations are:
 
-1) The fast DACs must be flipped (upside down): pin 1 -> pin 8, pin 8 -> pin 1
+1) The fast DACs must be flipped (upside down): pin 1 -> pin 8, pin 8 -> pin 1, etc.
 2) The switching power supply does not source enough current so has been removed. 3 voltages are provided externally: 7 V, +16.5 V, -15 V. 
 3) The negative -15 V output regulator demonstrated low-level oscillations so has been removed and is bypassed. 
 
-#### Other board design notes 
+### Other board design notes 
 
 **Unconnected level translator pins** [unused inputs](https://e2e.ti.com/support/logic-group/logic/f/logic-forum/788628/faq-what-should-be-done-with-unused-i-o-pins-of-the-level-translator-devices)
 The level translator used can leave unused pins disconnected.
