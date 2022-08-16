@@ -31,7 +31,7 @@ Pin header J11 has x8 bipolar outputs, x10 0-5V unipolar direct DAC output signa
 
 - General LVDS I/O 4 differential pairs at 2.5 V. Can also be used as 8 LVCMOS I/O. Note the routing of these LVDS pairs is only very roughly impedance controlled. Performance at the highest frequencies will need evaluation. 
 
-**At SMA connectors J16 and J17: **
+**At SMA connectors J16 and J17:**
 
 - J16 and J17, 3.3V LVCMOS routed to multi-region clock capable pins. Potential use is to synchronize with other systems. 
 
@@ -174,6 +174,11 @@ The level translator used can leave unused pins disconnected.
 Why do the barrel jacks have 3-pins and what to do with the 3rd pin? [3-pin DC jack](https://electronics.stackexchange.com/questions/90529/what-to-do-with-third-contact-in-dc-barrel-plug-with-only-two-input-contacts)
 
 **HDMI** cable casing is 20 mm so at least 25 mm pitch is needed between connectors. 
+
+## Companion Software and Firmware
+
+* The FPGA code is hosted at [https://github.com/lucask07/covg_fpga](https://github.com/lucask07/covg_fpga)
+* The Python host computer to FPGA code is available at [https://github.com/Ajstros/pyripherals/](https://github.com/Ajstros/pyripherals/)
 
 
 ## Funding 
