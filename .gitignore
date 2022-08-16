@@ -13,6 +13,11 @@ _autosave-*
 *-save.pro
 *-save.kicad_pcb
 fp-info-cache
+# project local settings
+*.kicad_prl 
+
+# v6 auto backups
+covg_daq_v2-backups/
 
 # Netlist files (exported from Eeschema)
 *.net
