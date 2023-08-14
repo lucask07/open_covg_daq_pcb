@@ -1,4 +1,4 @@
 (sym_lib_table
-  (lib (name "covg-kicad")(type "Legacy")(uri "${MYLIBRARY}/covg-kicad-lib/covg-kicad.lib")(options "")(descr ""))
+  (lib (name "covg-kicad")(type "KiCad")(uri "${MYLIBRARY}/covg-kicad-lib/covg-kicad.kicad_sym")(options "")(descr ""))
   (lib (name "covg_daq_v2-rescue")(type "Legacy")(uri "${KIPRJMOD}/covg_daq_v2-rescue.lib")(options "")(descr ""))
 )
