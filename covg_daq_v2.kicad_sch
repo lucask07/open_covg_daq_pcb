@@ -2596,13 +2596,29 @@
     (uuid ffdd8792-d469-4cb0-9543-e9e446d50669)
   )
 
+  (text "CH2" (at 156.21 43.18 0)
+    (effects (font (size 2.2 2.2)) (justify left bottom))
+    (uuid 39dfcc95-5a6d-4987-a05e-ce056d625d10)
+  )
   (text "BP is bipolar out" (at 226.06 39.37 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 68644595-bc91-4112-92d5-cdb5141a363d)
   )
+  (text "CH3" (at 156.21 116.84 0)
+    (effects (font (size 2.2 2.2)) (justify left bottom))
+    (uuid 9a8eb47d-0783-46a7-9f7f-b6332777419f)
+  )
+  (text "CH1" (at 16.51 116.84 0)
+    (effects (font (size 2.2 2.2)) (justify left bottom))
+    (uuid b426c1fa-68bd-4fa8-b4c6-aa50f13a5af6)
+  )
   (text "BP is bipolar out" (at 226.06 66.04 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid d47ae7f6-f3ff-43c1-a28f-7d6bba3c5eb4)
+  )
+  (text "CH0" (at 16.51 43.18 0)
+    (effects (font (size 2.2 2.2)) (justify left bottom))
+    (uuid f9fca37e-302f-4887-a54f-40f5ab90e1a5)
   )
 
   (label "GP_ADC_IN10" (at 140.97 161.29 270)
@@ -7321,7 +7337,7 @@
       (reference "C19") (unit 1) (value "4.7u") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-00006095be10/00000000-0000-0000-0000-0000610c330f"
-      (reference "C20") (unit 1) (value "1u") (footprint "Capacitor_SMD:C_0603_1608Metric")
+      (reference "C20") (unit 1) (value "DNI") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-00006095be10/00000000-0000-0000-0000-000060de60e5"
       (reference "C21") (unit 1) (value "1u") (footprint "Capacitor_SMD:C_0603_1608Metric")
@@ -7894,10 +7910,10 @@
       (reference "C210") (unit 1) (value "5p") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-00006095be10/00000000-0000-0000-0000-000060f31baa"
-      (reference "D1") (unit 1) (value "D_Schottky") (footprint "Diode_SMD:D_Powermite_AK")
+      (reference "D1") (unit 1) (value "DNI") (footprint "Diode_SMD:D_Powermite_AK")
     )
     (path "/00000000-0000-0000-0000-00006095be10/00000000-0000-0000-0000-0000610e9beb"
-      (reference "D2") (unit 1) (value "D_Schottky") (footprint "Diode_SMD:D_Powermite_AK")
+      (reference "D2") (unit 1) (value "DNI") (footprint "Diode_SMD:D_Powermite_AK")
     )
     (path "/00000000-0000-0000-0000-00006273eef4"
       (reference "FB1") (unit 1) (value "Ferrite_Bead") (footprint "Capacitor_SMD:C_1206_3216Metric")
@@ -8032,13 +8048,13 @@
       (reference "J18") (unit 1) (value "QWIIC_CONNECTOR-1MM") (footprint "Connectors:1X04_1MM_RA")
     )
     (path "/00000000-0000-0000-0000-00006095be10/00000000-0000-0000-0000-000060f30942"
-      (reference "L1") (unit 1) (value "4.7u") (footprint "covg-kicad:SRR4018-4R7Y")
+      (reference "L1") (unit 1) (value "DNI") (footprint "covg-kicad:SRR4018-4R7Y")
     )
     (path "/00000000-0000-0000-0000-00006095be10/00000000-0000-0000-0000-000060f31655"
-      (reference "L2") (unit 1) (value "10uH") (footprint "covg-kicad:NRS5020T100MMGJ")
+      (reference "L2") (unit 1) (value "DNI") (footprint "covg-kicad:NRS5020T100MMGJ")
     )
     (path "/00000000-0000-0000-0000-00006095be10/00000000-0000-0000-0000-00006113790e"
-      (reference "L3") (unit 1) (value "15uH") (footprint "covg-kicad:SRR6028-150Y")
+      (reference "L3") (unit 1) (value "DNI") (footprint "covg-kicad:SRR6028-150Y")
     )
     (path "/00000000-0000-0000-0000-00006095a302/00000000-0000-0000-0000-0000da224995"
       (reference "OK1") (unit 1) (value "OPALKELLY_XEM7310") (footprint "covg-kicad:OPALKELLY_XEM7310")
@@ -8161,7 +8177,7 @@
       (reference "R34") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-00006095be10/00000000-0000-0000-0000-000060f42f99"
-      (reference "R35") (unit 1) (value "232k") (footprint "Resistor_SMD:R_0603_1608Metric")
+      (reference "R35") (unit 1) (value "DNI") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-00006095be10/00000000-0000-0000-0000-000060f53569"
       (reference "R36") (unit 1) (value "15k") (footprint "Resistor_SMD:R_0603_1608Metric")
@@ -8182,7 +8198,7 @@
       (reference "R41") (unit 1) (value "4.7k") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-00006095be10/00000000-0000-0000-0000-000060bc667f"
-      (reference "R42") (unit 1) (value "249k") (footprint "Resistor_SMD:R_0603_1608Metric")
+      (reference "R42") (unit 1) (value "DNI") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-00006095be10/00000000-0000-0000-0000-000060bb5c7d"
       (reference "R43") (unit 1) (value "15k") (footprint "Resistor_SMD:R_0603_1608Metric")
@@ -9022,7 +9038,7 @@
       (reference "U12") (unit 1) (value "OPA991S") (footprint "Package_TO_SOT_SMD:SOT-23-6")
     )
     (path "/00000000-0000-0000-0000-00006095be10/00000000-0000-0000-0000-000060edb97a"
-      (reference "U13") (unit 1) (value "LT3471") (footprint "covg-kicad:DFN-10-1EP_3x3mm_P0.5mm_EP1.65x2.38mm")
+      (reference "U13") (unit 1) (value "DNI") (footprint "covg-kicad:DFN-10-1EP_3x3mm_P0.5mm_EP1.65x2.38mm")
     )
     (path "/00000000-0000-0000-0000-00006095be10/00000000-0000-0000-0000-0000614d3f9b"
       (reference "U14") (unit 1) (value "LP38692MP-5.0") (footprint "Package_TO_SOT_SMD:SOT-223-5")
