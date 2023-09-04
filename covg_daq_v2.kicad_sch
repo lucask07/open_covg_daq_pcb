@@ -5734,9 +5734,6 @@
     (path "/00000000-0000-0000-0000-00006095be10/00000000-0000-0000-0000-0000ed2ac5de"
       (reference "#GND051") (unit 1) (value "GND") (footprint "")
     )
-    (path "/00000000-0000-0000-0000-00006095be10/00000000-0000-0000-0000-000061491353"
-      (reference "#GND052") (unit 1) (value "GND") (footprint "")
-    )
     (path "/00000000-0000-0000-0000-00006095be10/00000000-0000-0000-0000-00005b841ea1"
       (reference "#GND053") (unit 1) (value "GND") (footprint "")
     )
@@ -7373,7 +7370,7 @@
       (reference "C31") (unit 1) (value "10u") (footprint "Capacitor_SMD:C_0805_2012Metric")
     )
     (path "/00000000-0000-0000-0000-00006095be10/00000000-0000-0000-0000-0000ce7142c1"
-      (reference "C32") (unit 1) (value "0.33u") (footprint "Capacitor_SMD:C_0603_1608Metric")
+      (reference "C32") (unit 1) (value "1u") (footprint "Capacitor_SMD:C_1206_3216Metric")
     )
     (path "/00000000-0000-0000-0000-00006095be10/00000000-0000-0000-0000-000060de7116"
       (reference "C33") (unit 1) (value "1u") (footprint "Capacitor_SMD:C_0603_1608Metric")
@@ -7382,7 +7379,7 @@
       (reference "C34") (unit 1) (value "0.1u") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-00006095be10/00000000-0000-0000-0000-00002c9b4810"
-      (reference "C35") (unit 1) (value "1u") (footprint "Capacitor_SMD:C_0603_1608Metric")
+      (reference "C35") (unit 1) (value "1u") (footprint "Capacitor_SMD:C_1206_3216Metric")
     )
     (path "/00000000-0000-0000-0000-00006095be10/00000000-0000-0000-0000-000060de75a5"
       (reference "C36") (unit 1) (value "1u") (footprint "Capacitor_SMD:C_0603_1608Metric")
@@ -7908,6 +7905,9 @@
     )
     (path "/00000000-0000-0000-0000-000061b02572/00000000-0000-0000-0000-000060eb6fd5/00000000-0000-0000-0000-000060e41417"
       (reference "C210") (unit 1) (value "5p") (footprint "Capacitor_SMD:C_0603_1608Metric")
+    )
+    (path "/00000000-0000-0000-0000-00006095be10/2047f811-1b0f-4819-8e90-d84a3c19191b"
+      (reference "C211") (unit 1) (value "10u") (footprint "Capacitor_SMD:C_0805_2012Metric")
     )
     (path "/00000000-0000-0000-0000-00006095be10/00000000-0000-0000-0000-000060f31baa"
       (reference "D1") (unit 1) (value "DNI") (footprint "Diode_SMD:D_Powermite_AK")
@@ -9055,8 +9055,8 @@
     (path "/00000000-0000-0000-0000-00006095be10/00000000-0000-0000-0000-00006246edc8"
       (reference "U18") (unit 1) (value "LP38693MP-1.8") (footprint "Package_TO_SOT_SMD:SOT-223-5")
     )
-    (path "/00000000-0000-0000-0000-00006095be10/00000000-0000-0000-0000-0000613dcfc4"
-      (reference "U19") (unit 1) (value "MC79M15_TO252") (footprint "Package_TO_SOT_SMD:TO-252-2")
+    (path "/00000000-0000-0000-0000-00006095be10/4ce2dab9-f3dc-40e4-b445-373a23dc6f61"
+      (reference "U19") (unit 1) (value "LM2990SX-15") (footprint "Package_TO_SOT_SMD:TO-263-3_TabPin2")
     )
     (path "/00000000-0000-0000-0000-00006095be10/00000000-0000-0000-0000-000060bdc92e"
       (reference "U20") (unit 1) (value "LP38693MP-2.5") (footprint "Package_TO_SOT_SMD:SOT-223-5")
