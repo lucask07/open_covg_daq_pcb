@@ -2,7 +2,7 @@
 ### Fast DACs 
 
 - The Fast DACs (AD5453) have the incorrect pinout for the footprint used. A workaround is to flip the chip "upside down" over the long axis; do not also rotate 180 degrees. The pinout matches the MSOP but the footprint is sized for the TSOT. 
-- Fast DAC final stage output filter cap is DNI. Populate at 3300 pF. Series R is 33 Ohms.
+- Fast DAC final stage output filter cap is DNI (C122, C131, C140, etc.). Populate at 3300 pF. Series R is 33 Ohms.
 
 ### HDMI connections 
 
