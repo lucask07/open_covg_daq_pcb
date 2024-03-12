@@ -1,0 +1,696 @@
+Source:,C:\Users\twinj\COVG\KiCAD\Boards\open_covg_daq_pcb\covg_daq_v2.kicad_sch,,,,,,,,,,,,,,,,,,,
+Date:,3/12/2024 13:39,,,,,,,,,,,,,,,,,,,
+Tool:,Eeschema (6.0.11),,,,,,,,,,,,,,,,,,,
+Generator:,C:\Program Files\KiCad\6.0\bin\scripting\plugins/bom_csv_grouped_by_value.py,,,,,,,,,,,,,,,,,,,
+Component Count:,600,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+Individual Components:,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+Item,Qty,Reference(s),Value,LibPart,Footprint,Datasheet,Alternate,Description,Field4,Height,Manf#,Manufacturer_Name,Manufacturer_Part_Number,Mouser Part Number,Mouser Price/Stock,Notes,Power,Tolerance,Voltage,voltage
+,,C1,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C2,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C3,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C4,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C5,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C6,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C7,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C8,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C9,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C10,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C11,5p,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10C050CB81PNC,,,,,,,0.25pF,,50
+,,C12,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C13,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C14,4.7u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,TMK107BBJ475MA-T,,,,,,,20%,,25V
+,,C15,1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10A105KA8NFNC,,,,,,,10%,,25V
+,,C16,33p,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CC0603JRNPO9BN330,,,,,,,5%,,50V
+,,C17,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C18,0.33u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CC0603KRX5R8BB334,Yageo,,,,,,10%,,25V
+,,C19,4.7u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,TMK107BBJ475MA-T,,,,,,,20%,,25V
+,,C20,DNI,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10A105KA8NFNC,,,,,,,10%,,25V
+,,C21,1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10A105KA8NFNC,,,,,,,10%,,25V
+,,C22,0.33u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CC0603KRX5R8BB334,Yageo,,,,,,10%,,25V
+,,C23,33p,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CC0603JRNPO9BN330,,,,,,,5%,,50V
+,,C24,1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10A105KA8NFNC,,,,,,,10%,,25V
+,,C25,4.7u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,TMK107BBJ475MA-T,,,,,,,20%,,25V
+,,C26,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C27,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C28,1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10A105KA8NFNC,,,,,,,10%,,25V
+,,C29,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C30,1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10A105KA8NFNC,,,,,,,10%,,25V
+,,C31,10u,Device:C,Capacitor_SMD:C_0805_2012Metric,~,,,,,TMK212BBJ106MG-T,Taiyo Yuden,,,,,,20%,,25
+,,C32,1u,Device:C,Capacitor_SMD:C_1206_3216Metric,~,,,,,TAJA105K025RNJ,,,,,,,,,25V
+,,C33,1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10A105KA8NFNC,,,,,,,10%,,25V
+,,C34,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C35,1u,Device:C,Capacitor_SMD:C_1206_3216Metric,~,,,,,TAJA105K025RNJ,,,,,,,10%,,25V
+,,C36,1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10A105KA8NFNC,,,,,,,10%,,25V
+,,C37,1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10A105KA8NFNC,,,,,,,10%,,25V
+,,C38,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C39,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C40,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C41,10u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,JMK107ABJ106KAHT,,,,,,,10%,,6.3V
+,,C42,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,,,,,,,10%,25,
+,,C43,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C44,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,25,
+,,C45,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,,,,,,,10%,25,
+,,C46,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C47,100p,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CC0603JRNPO0BN101,,,,,,,5%,,100V
+,,C48,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C49,DNI,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,,,,,,,,5%,,50V
+,,C50,DNI,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,,,,,,,,5%,,50V
+,,C51,DNI,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,,,,,,,,5%,,50V
+,,C52,DNI,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,,,,,,,,5%,,50V
+,,C53,DNI,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,,,,,,,,5%,,50V
+,,C54,DNI,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,,,,,,,,5%,,50V
+,,C55,DNI,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,,,,,,,,5%,,50V
+,,C56,DNI,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,,,,,,,,5%,,50V
+,,C57,DNI,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,,,,,,,,5%,,50V
+,,C58,DNI,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,,,,,,,,5%,,50V
+,,C59,DNI,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,,,,,,,,5%,,50V
+,,C60,DNI,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,,,,,,,,5%,,50V
+,,C61,DNI,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,,,,,,,,5%,,50V
+,,C62,DNI,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,,,,,,,,5%,,50V
+,,C63,DNI,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,,,,,,,,5%,,50V
+,,C64,DNI,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,,,,,,,,5%,,50V
+,,C65,10u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,JMK107ABJ106KAHT,,,,,,,10%,,6.3V
+,,C66,10u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,JMK107ABJ106KAHT,,,,,,,10%,,6.3V
+,,C67,10u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,JMK107ABJ106KAHT,,,,,,,10%,,6.3V
+,,C68,10u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,JMK107ABJ106KAHT,,,,,,,10%,,6.3V
+,,C69,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C70,10u,Device:C,Capacitor_SMD:C_0805_2012Metric,~,,,,,GRM21BR70J106KA73L,,,,,,,10%,,6.3V
+,,C71,10u,Device:C,Capacitor_SMD:C_0805_2012Metric,~,,,,,GRM21BR70J106KA73L,,,,,,,10%,,6.3V
+,,C72,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C73,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C74,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C75,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C76,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C77,10u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,JMK107ABJ106KA-T,,,,,,,10%,,6.3V
+,,C78,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C79,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C80,10u,Device:C,Capacitor_SMD:C_0805_2012Metric,~,,,,,GRM21BR70J106KA73L,,,,,,,10%,,6.3V
+,,C81,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C82,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C83,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C84,10u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,JMK107ABJ106KAHT,,,,,,,10%,,6.3V
+,,C85,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,,,,,,,10%,25,
+,,C86,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C87,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,25,
+,,C88,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,,,,,,,10%,25,
+,,C89,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C90,100p,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CC0603JRNPO0BN101,,,,,,,5%,,100V
+,,C91,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C92,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C93,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C94,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C95,10u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,JMK107ABJ106KAHT,,,,,,,10%,,6.3V
+,,C96,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,,,,,,,10%,25,
+,,C97,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C98,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,25,
+,,C99,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,,,,,,,10%,25,
+,,C100,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C101,100p,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CC0603JRNPO0BN101,,,,,,,5%,,100V
+,,C102,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C103,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C104,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C105,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C106,10u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,JMK107ABJ106KAHT,,,,,,,10%,,6.3V
+,,C107,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,,,,,,,10%,25,
+,,C108,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C109,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,25,
+,,C110,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,,,,,,,10%,25,
+,,C111,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C112,100p,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CC0603JRNPO0BN101,,,,,,,5%,,100V
+,,C113,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C114,DNI,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,,,,,,,,,,
+,,C115,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C116,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C117,DNI,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,,,,,,,,,,
+,,C118,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C119,2p,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CC0603CRNPO9BN2R0,,,,,,,0.25pF,,50V
+,,C120,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C121,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C122,2.4n,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,GRM1885C1H242JA01D,,,,,,,,50,
+,,C123,DNI,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,,,,,,,,,,
+,,C124,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C125,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C126,DNI,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,,,,,,,,,,
+,,C127,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C128,2p,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CC0603CRNPO9BN2R0,,,,,,,0.25pF,,50V
+,,C129,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C130,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C131,2.4n,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,GRM1885C1H242JA01D,,,,,,,,50,
+,,C132,DNI,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,,,,,,,,,,
+,,C133,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C134,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C135,DNI,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,,,,,,,,,,
+,,C136,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C137,2p,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CC0603CRNPO9BN2R0,,,,,,,0.25pF,,50V
+,,C138,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C139,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C140,2.4n,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,GRM1885C1H242JA01D,,,,,,,,50,
+,,C141,DNI,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,,,,,,,,,,
+,,C142,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C143,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C144,DNI,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,,,,,,,,,,
+,,C145,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C146,2p,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CC0603CRNPO9BN2R0,,,,,,,0.25pF,,50V
+,,C147,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C148,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C149,2.4n,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,GRM1885C1H242JA01D,,,,,,,,50,
+,,C150,DNI,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,,,,,,,,,,
+,,C151,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C152,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C153,DNI,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,,,,,,,,,,
+,,C154,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C155,2p,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CC0603CRNPO9BN2R0,,,,,,,0.25pF,,50V
+,,C156,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C157,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C158,2.4n,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,GRM1885C1H242JA01D,,,,,,,,50,
+,,C159,DNI,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,,,,,,,,,,
+,,C160,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C161,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C162,DNI,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,,,,,,,,,,
+,,C163,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C164,2p,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CC0603CRNPO9BN2R0,,,,,,,0.25pF,,50V
+,,C165,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C166,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C167,2.4n,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,GRM1885C1H242JA01D,,,,,,,,50,
+,,C168,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C169,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C170,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C171,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C172,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C173,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C174,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C175,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C176,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C177,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C178,5p,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10C050CB81PNC,,,,,,,0.25pF,,50
+,,C179,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C180,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C181,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C182,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C183,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C184,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C185,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C186,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C187,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C188,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C189,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C190,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C191,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C192,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C193,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C194,0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,,25
+,,C195,5p,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10C050CB81PNC,Panasonic,,,,,,0.25pF,,50
+,,C196,5p,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10C050CB81PNC,Panasonic,,,,,,0.25pF,,50
+,,C197,5p,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10C050CB81PNC,Panasonic,,,,,,0.25pF,,50
+,,C198,5p,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10C050CB81PNC,Panasonic,,,,,,0.25pF,,50
+,,C199,5p,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10C050CB81PNC,Panasonic,,,,,,0.25pF,,50
+,,C200,5p,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10C050CB81PNC,Panasonic,,,,,,0.25pF,,50
+,,C201,5p,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10C050CB81PNC,Panasonic,,,,,,0.25pF,,50
+,,C202,5p,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10C050CB81PNC,Panasonic,,,,,,0.25pF,,50
+,,C203,5p,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10C050CB81PNC,Panasonic,,,,,,0.25pF,,50
+,,C204,5p,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10C050CB81PNC,Panasonic,,,,,,0.25pF,,50
+,,C205,5p,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10C050CB81PNC,Panasonic,,,,,,0.25pF,,50
+,,C206,5p,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10C050CB81PNC,Panasonic,,,,,,0.25pF,,50
+,,C207,5p,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10C050CB81PNC,Panasonic,,,,,,0.25pF,,50
+,,C208,5p,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10C050CB81PNC,Panasonic,,,,,,0.25pF,,50
+,,C209,5p,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10C050CB81PNC,Panasonic,,,,,,0.25pF,,50
+,,C210,5p,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10C050CB81PNC,Panasonic,,,,,,0.25pF,,50
+,,C211,10u,Device:C,Capacitor_SMD:C_0805_2012Metric,~,,,,,TMK212BBJ106MG-T,Taiyo Yuden,,,,,,20%,,25
+,,D1,DNI,Device:D_Schottky,Diode_SMD:D_Powermite_AK,~,,,,,MBRM120LT3G,,,,,,,,,
+,,D2,DNI,Device:D_Schottky,Diode_SMD:D_Powermite_AK,~,,,,,MBRM120LT3G,,,,,,,,,
+,,FB1,Ferrite_Bead,Device:FerriteBead,Capacitor_SMD:C_1206_3216Metric,~,,,,,BLM31PG500SN1L,,,,,,,,,
+,,FB2,Ferrite_Bead,Device:FerriteBead,Capacitor_SMD:C_1206_3216Metric,~,,,,,BLM31PG500SN1L,,,,,,,,,
+,,FB3,Ferrite_Bead,Device:FerriteBead,Capacitor_SMD:C_1206_3216Metric,~,,,,,BLM31PG500SN1L,,,,,,,,,
+,,FB4,Ferrite_Bead,Device:FerriteBead,Capacitor_SMD:C_1206_3216Metric,~,,,,,BLM31PG500SN1L,,,,,,,,,
+,,FB5,Ferrite_Bead,Device:FerriteBead,Capacitor_SMD:C_1206_3216Metric,~,,,,,BLM31PG500SN1L,,,,,,,,,
+,,FB6,Ferrite_Bead,Device:FerriteBead,Capacitor_SMD:C_1206_3216Metric,~,,,,,BLM31PG500SN1L,,,,,,,,,
+,,H1,DNI,Mechanical:MountingHole_Pad,MountingHole:MountingHole_3.2mm_M3_DIN965_Pad,~,,,,,,,,,,,,,,
+,,H2,DNI,Mechanical:MountingHole_Pad,MountingHole:MountingHole_3.2mm_M3_DIN965_Pad,~,,,,,,,,,,,,,,
+,,H3,DNI,Mechanical:MountingHole_Pad,MountingHole:MountingHole_3.2mm_M3_DIN965_Pad,~,,,,,,,,,,,,,,
+,,H4,DNI,Mechanical:MountingHole_Pad,MountingHole:MountingHole_3.2mm_M3_DIN965_Pad,~,,,,,,,,,,,,,,
+,,IC1,ADS8686SIPZAR,covg-kicad:ADS8686SIPZAR,Package_QFP:LQFP-80_14x14mm_P0.65mm,https://www.ti.com/lit/gpn/ADS8686S,,Analog to Digital Converters - ADC 16-channel 16-bit 1-MSPS dual simultaneous-sampling ADC with integrated analog front end (AFE),,1.6,ADS8686SIPZAR,Texas Instruments,ADS8686SIPZAR,595-ADS8686SIPZAR,https://www.mouser.co.uk/ProductDetail/Texas-Instruments/ADS8686SIPZAR/?qs=xZ%2FP%252Ba9zWqahOWZgBjtpsg%3D%3D,,,,,
+,,IC2,OPA1662,covg-kicad:OPA1662,Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm,,,,,,OPA1662AIDGKR,,,,,,,,,
+,,IC3,OPA1662,covg-kicad:OPA1662,Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm,,,,,,OPA1662AIDGKR,,,,,,,,,
+,,IC4,OPA1662,covg-kicad:OPA1662,Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm,,,,,,OPA1662AIDGKR,,,,,,,,,
+,,IC5,OPA1662,covg-kicad:OPA1662,Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm,,,,,,OPA1662AIDGKR,,,,,,,,,
+,,IC6,OPA1662,covg-kicad:OPA1662,Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm,,,,,,OPA1662AIDGKR,,,,,,,,,
+,,IC7,OPA1662,covg-kicad:OPA1662,Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm,,,,,,OPA1662AIDGKR,,,,,,,,,
+,,J1,HDMI_A,Connector:HDMI_A,covg-kicad:CONN_10029449-111RLF_HDMI_A,https://en.wikipedia.org/wiki/HDMI,,,,,10029449-111RLF,,,,,,,,,
+,,J2,HDMI_A,Connector:HDMI_A,covg-kicad:CONN_10029449-111RLF_HDMI_A,https://en.wikipedia.org/wiki/HDMI,,,,,10029449-111RLF,,,,,,,,,
+,,J3,Conn_01x06,Connector_Generic:Conn_01x06,covg-kicad:Molex_6Pin_CONN,~,,,,,22053061,,,,,,,,,
+,,J7,HDMI_A,Connector:HDMI_A,covg-kicad:CONN_10029449-111RLF_HDMI_A,https://en.wikipedia.org/wiki/HDMI,,,,,10029449-111RLF,,,,,,,,,
+,,J8,HDMI_A,Connector:HDMI_A,covg-kicad:CONN_10029449-111RLF_HDMI_A,https://en.wikipedia.org/wiki/HDMI,,,,,10029449-111RLF,,,,,,,,,
+,,J9,Conn_02x06_Odd_Even,Connector_Generic:Conn_02x06_Odd_Even,Connector_PinHeader_2.00mm:PinHeader_2x06_P2.00mm_Horizontal,~,SBH21-NBPN-D06-RA-BK,,,,0878331220,,,,,,,,,
+,,J10,Conn_02x07_Odd_Even,Connector_Generic:Conn_02x07_Odd_Even,Connector_PinHeader_2.00mm:PinHeader_2x07_P2.00mm_Horizontal,~,SBH21-NBPN-D07-RA-BK,,,,0878331419,,,,,,,,,
+,,J11,Conn_02x12_Odd_Even,Connector_Generic:Conn_02x12_Odd_Even,Connector_PinHeader_2.00mm:PinHeader_2x12_P2.00mm_Horizontal,~,SBH21-NBPN-D12-RA-BK,,,,DF11-24DP-2DS(24),,,,,,,,,
+,,J13,Conn_02x05_Odd_Even,Connector_Generic:Conn_02x05_Odd_Even,Connector_PinHeader_2.00mm:PinHeader_2x05_P2.00mm_Vertical_SMD,~,,,,,0877591064,,,,,,,,,
+,,J14,Screw_Terminal_01x12,Connector:Screw_Terminal_01x12,"TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-12-2.54_1x12_P2.54mm_Horizontal",~,,,,,OSTVN12A150,,,,,,,,,
+,,J15,Conn_02x12_Odd_Even,Connector_Generic:Conn_02x12_Odd_Even,Connector_PinHeader_2.00mm:PinHeader_2x12_P2.00mm_Horizontal,~,SBH21-NBPN-D12-RA-BK,,,,DF11-24DP-2DS(24),,,,,,,,,
+,,J16,Conn_Coaxial,Connector:Conn_Coaxial,covg-kicad:BU-SMA-G, ~,,,,,0733910083,,,,,,,,,
+,,J17,Conn_Coaxial,Connector:Conn_Coaxial,covg-kicad:BU-SMA-G, ~,,,,,0733910083,,,,,,,,,
+,,J18,QWIIC_CONNECTOR-1MM,covg-kicad:QWIIC_CONNECTORJS-1MM,Connectors:1X04_1MM_RA,,,,CONN-13694,,PRT-14417,,,,,,,,,
+,,L1,DNI,Device:L,covg-kicad:SRR4018-4R7Y,~,,,,,SRR4018-4R7Y,,,,,,,,,
+,,L2,DNI,Device:L,covg-kicad:NRS5020T100MMGJ,~,,,,,NRS5020T100MMGJ,,,,,,,,,
+,,L3,DNI,Device:L,covg-kicad:SRR6028-150Y,~,,,,,SRR6028-150Y,,,,,,,,,
+,,OK1,OPALKELLY_XEM7310,covg-kicad:OPALKELLY_XEM7310,covg-kicad:OPALKELLY_XEM7310,,,,,,BTE-040-02-F-D-A,,,,,,,,,
+,,Q1,BC856,Transistor_BJT:BC856,Package_TO_SOT_SMD:SOT-23,https://www.onsemi.com/pub/Collateral/BC860-D.pdf,,,,,BC856B-7-F,,,,,,,,,
+,,Q2,BC856,Transistor_BJT:BC856,Package_TO_SOT_SMD:SOT-23,https://www.onsemi.com/pub/Collateral/BC860-D.pdf,,,,,BC856B-7-F,,,,,,,,,
+,,R1,10k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0710kL,,,,,,0.1W,1%,,
+,,R2,10k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0710kL,,,,,,0.1W,1%,,
+,,R3,10k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0710kL,,,,,,0.1W,1%,,
+,,R4,10k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0710kL,,,,,,0.1W,1%,,
+,,R5,30.1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0730k1L,,,,,,0.1W,1%,,
+,,R6,30.1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0730k1L,,,,,,0.1W,1%,,
+,,R7,30.1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0730k1L,,,,,,0.1W,1%,,
+,,R8,30.1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0730k1L,,,,,,0.1W,1%,,
+,,R9,0,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-070RL,,,,,,0.1W,,,
+,,R10,33,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+,,R11,15k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0715kL,,,,,,,,,
+,,R12,15k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0715kL,,,,,,,,,
+,,R13,15k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0715kL,,,,,,,,,
+,,R14,15k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0715kL,,,,,,,,,
+,,R15,10k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0710kL,,,,,,0.1W,1%,,
+,,R16,10k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0710kL,,,,,,0.1W,1%,,
+,,R17,10k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0710kL,,,,,,0.1W,1%,,
+,,R18,10k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0710kL,,,,,,0.1W,1%,,
+,,R19,30.1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0730k1L,,,,,,0.1W,1%,,
+,,R20,30.1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0730k1L,,,,,,0.1W,1%,,
+,,R21,30.1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0730k1L,,,,,,0.1W,1%,,
+,,R22,30.1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0730k1L,,,,,,0.1W,1%,,
+,,R23,15k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0715kL,,,,,,,,,
+,,R24,15k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0715kL,,,,,,,,,
+,,R25,15k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0715kL,,,,,,,,,
+,,R26,15k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0715kL,,,,,,,,,
+,,R27,470k,Device:R_US,Resistor_SMD:R_1206_3216Metric,~,,,,,RG3216P-4703-B-T1,,,,,,,0.1,,
+,,R28,470k,Device:R_US,Resistor_SMD:R_1206_3216Metric,~,,,,,RG3216P-4703-B-T1,,,,,,,0.1,,
+,,R29,0,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-070RL,,,,,,0.1W,,,
+,,R30,0,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-070RL,,,,,,0.1W,,,
+,,R31,470k,Device:R_US,Resistor_SMD:R_1206_3216Metric,~,,,,,RG3216P-4703-B-T1,,,,,,,0.1,,
+,,R32,470k,Device:R_US,Resistor_SMD:R_1206_3216Metric,~,,,,,RG3216P-4703-B-T1,,,,,,,0.1,,
+,,R33,470k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0710KL,,,,,,,0.1,,
+,,R34,10k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0710KL,,,,,,0.1W,1%,,
+,,R35,DNI,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-07232KL,,,,,,,,,
+,,R36,15k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0715kL,,,,,,0.1W,1%,,
+,,R37,4.7k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-074K7L,,,,,,0.1W,,,
+,,R38,100k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-07100KL,,,,,,0.1W,1%,,
+,,R39,100k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-07100KL,,,,,,0.1W,1%,,
+,,R40,100k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-07100KL,,,,,,0.1W,1%,,
+,,R41,4.7k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-074K7L,,,,,,0.1W,,,
+,,R42,DNI,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-07249KL,,,,,,,1%,,
+,,R43,15k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0715KL,,,,,,,1%,,
+,,R44,100k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-07100KL,,,,,,0.1W,1%,,
+,,R45,100k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-07100KL,,,,,,0.1W,1%,,
+,,R46,0,Device:R_Small_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-070RL,,,,,,0.1W,,,
+,,R47,0,Device:R_Small_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-070RL,,,,,,0.1W,,,
+,,R48,0,Device:R_Small_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-070RL,,,,,,0.1W,,,
+,,R49,0,Device:R_Small_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-070RL,,,,,,0.1W,,,
+,,R50,0,Device:R_Small_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-070RL,,,,,,0.1W,,,
+,,R51,3.3k,Device:R_Small_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-073k3L,,,,,,0.1W,1%,,
+,,R52,3.3k,Device:R_Small_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-073k3L,,,,,,0.1W,1%,,
+,,R53,1k,Device:R_Small_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-071kL,,,,,,0.1W,1%,,
+,,R54,3.3k,Device:R_Small_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-073k3L,,,,,,0.1W,1%,,
+,,R55,3.3k,Device:R_Small_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-073k3L,,,,,,0.1W,1%,,
+,,R56,1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-071KL,,,,,,0.1W,1%,,
+,,R57,3.3k,Device:R_Small_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-073k3L,,,,,,0.1W,1%,,
+,,R58,100k,Device:R_Small_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-07100KL,,,,,,0.1W,1%,,
+,,R59,3.3k,Device:R_Small_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-073k3L,,,,,,0.1W,1%,,
+,,R60,100k,Device:R_Small_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-07100KL,,,,,,0.1W,1%,,
+,,R61,3.3k,Device:R_Small_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-073k3L,,,,,,0.1W,1%,,
+,,R62,100k,Device:R_Small_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-07100KL,,,,,,0.1W,1%,,
+,,R63,3.3k,Device:R_Small_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-073k3L,,,,,,0.1W,1%,,
+,,R64,DNI,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,,,,,,,,,,
+,,R65,3.3k,Device:R_Small_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-073k3L,,,,,,0.1W,1%,,
+,,R66,33,Device:R_Small_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+,,R67,33,Device:R_Small_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+,,R68,33,Device:R_Small_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+,,R69,3.3k,Device:R_Small_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-073k3L,,,,,,0.1W,1%,,
+,,R70,33,Device:R_Small_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+,,R71,3.3k,Device:R_Small_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-073k3L,,,,,,0.1W,1%,,
+,,R72,3.3k,Device:R_Small_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-073k3L,,,,,,0.1W,1%,,
+,,R73,DNI,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,,,,,,,,,,
+,,R74,DNI,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,,,,,,,,,,
+,,R75,0,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-070RL,,,,,,0.1W,1%,,
+,,R76,0,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-070RL,,,,,,0.1W,1%,,
+,,R77,3.3k,Device:R_Small_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-073k3L,,,,,,0.1W,1%,,
+,,R78,3.3k,Device:R_Small_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-073k3L,,,,,,0.1W,1%,,
+,,R79,100,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-07100RL,,,,,,0.1W,1%,,
+,,R80,100,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-07100RL,,,,,,0.1W,1%,,
+,,R81,33,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+,,R82,33,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+,,R83,33,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+,,R84,10k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0710kL,,,,,,0.1W,1%,,
+,,R85,10k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0710kL,,,,,,0.1W,1%,,
+,,R86,30.1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0730k1L,,,,,,0.1W,1%,,
+,,R87,30.1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0730k1L,,,,,,0.1W,1%,,
+,,R88,15k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0715kL,,,,,,,,,
+,,R89,15k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0715kL,,,,,,,,,
+,,R90,10k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0710kL,,,,,,0.1W,1%,,
+,,R91,10k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0710kL,,,,,,0.1W,1%,,
+,,R92,1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-071KL,,,,,,0.1W,1%,,
+,,R93,1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-071KL,,,,,,0.1W,1%,,
+,,R94,1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-071KL,,,,,,0.1W,1%,,
+,,R95,1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-071KL,,,,,,0.1W,1%,,
+,,R96,1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-071KL,,,,,,0.1W,1%,,
+,,R97,1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-071KL,,,,,,0.1W,1%,,
+,,R98,1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-071KL,,,,,,0.1W,1%,,
+,,R99,1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-071KL,,,,,,0.1W,1%,,
+,,R100,1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-071KL,,,,,,0.1W,1%,,
+,,R101,1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-071KL,,,,,,0.1W,1%,,
+,,R102,1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-071KL,,,,,,0.1W,1%,,
+,,R103,1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-071KL,,,,,,0.1W,1%,,
+,,R104,1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-071KL,,,,,,0.1W,1%,,
+,,R105,1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-071KL,,,,,,0.1W,1%,,
+,,R106,1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-071KL,,,,,,0.1W,1%,,
+,,R107,30.1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0730k1L,,,,,,0.1W,1%,,
+,,R108,30.1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0730k1L,,,,,,0.1W,1%,,
+,,R109,15k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0715kL,,,,,,,,,
+,,R110,15k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0715kL,,,,,,,,,
+,,R111,10k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0710kL,,,,,,0.1W,1%,,
+,,R112,10k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0710kL,,,,,,0.1W,1%,,
+,,R113,30.1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0730k1L,,,,,,0.1W,1%,,
+,,R114,30.1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0730k1L,,,,,,0.1W,1%,,
+,,R115,1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-071KL,,,,,,0.1W,1%,,
+,,R116,1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-071KL,,,,,,0.1W,1%,,
+,,R117,1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-071KL,,,,,,0.1W,1%,,
+,,R118,1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-071KL,,,,,,0.1W,1%,,
+,,R119,1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-071KL,,,,,,0.1W,1%,,
+,,R120,1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-071KL,,,,,,0.1W,1%,,
+,,R121,1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-071KL,,,,,,0.1W,1%,,
+,,R122,1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-071KL,,,,,,0.1W,1%,,
+,,R123,1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-071KL,,,,,,0.1W,1%,,
+,,R124,1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-071KL,,,,,,0.1W,1%,,
+,,R125,1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-071KL,,,,,,0.1W,1%,,
+,,R126,1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-071KL,,,,,,0.1W,1%,,
+,,R127,1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-071KL,,,,,,0.1W,1%,,
+,,R128,1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-071KL,,,,,,0.1W,1%,,
+,,R129,1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-071KL,,,,,,0.1W,1%,,
+,,R130,1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-071KL,,,,,,0.1W,1%,,
+,,R131,100k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-07100KL,,,,,,0.1W,1%,,
+,,R132,33,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+,,R133,33,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+,,R134,33,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+,,R135,100,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-07100RL,,,,,,0.1W,1%,,
+,,R136,100,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-07100RL,,,,,,0.1W,1%,,
+,,R137,33,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+,,R138,33,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+,,R139,33,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+,,R140,100,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-07100RL,,,,,,0.1W,1%,,
+,,R141,100,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-07100RL,,,,,,0.1W,1%,,
+,,R142,33,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+,,R143,33,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+,,R144,33,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+,,R145,100,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-07100RL,,,,,,0.1W,1%,,
+,,R146,100,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-07100RL,,,,,,0.1W,1%,,
+,,R147,33,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+,,R148,33,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+,,R149,33,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+,,R150,49.9k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0749k9L,,,,,,0.1W,1%,,
+,,R151,243k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-07243KL,,,,,,0.1W,1%,,
+,,R152,33,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+,,R153,121k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-07121KL,,,,,,0.1W,1%,,
+,,R154,37.4k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0737k4L,,,,,,0.1W,1%,,
+,,R155,8.25k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,CRCW06038K25FKEAC,,,,,,0.1W,1%,,
+,,R156,3.24k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,CRCW06033K24FKEAC,,,,,,0.1W,1%,,
+,,R157,33,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+,,R158,33,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+,,R159,33,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+,,R160,0,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-070RL,,,,,,0.1W,,,
+,,R161,20k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0720KL,,,,,,0.1W,1%,,
+,,R162,10k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0710kL,,,,,,0.1W,1%,,
+,,R163,20k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0720KL,,,,,,0.1W,1%,,
+,,R164,2k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-072KL,,,,,,0.1W,1%,,
+,,R165,1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-071KL,,,,,,0.1W,1%,,
+,,R166,33,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+,,R167,49.9k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0749k9L,,,,,,0.1W,1%,,
+,,R168,243k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-07243KL,,,,,,0.1W,1%,,
+,,R169,33,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+,,R170,121k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-07121KL,,,,,,0.1W,1%,,
+,,R171,37.4k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0737k4L,,,,,,0.1W,1%,,
+,,R172,8.25k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,CRCW06038K25FKEAC,,,,,,0.1W,1%,,
+,,R173,3.24k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,CRCW06033K24FKEAC,,,,,,0.1W,1%,,
+,,R174,33,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+,,R175,33,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+,,R176,33,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+,,R177,0,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-070RL,,,,,,0.1W,,,
+,,R178,20k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0720KL,,,,,,0.1W,1%,,
+,,R179,10k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0710kL,,,,,,0.1W,1%,,
+,,R180,20k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0720KL,,,,,,0.1W,1%,,
+,,R181,2k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-072KL,,,,,,0.1W,1%,,
+,,R182,1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-071KL,,,,,,0.1W,1%,,
+,,R183,33,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+,,R184,49.9k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0749k9L,,,,,,0.1W,1%,,
+,,R185,243k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-07243KL,,,,,,0.1W,1%,,
+,,R186,33,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+,,R187,121k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-07121KL,,,,,,0.1W,1%,,
+,,R188,37.4k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0737k4L,,,,,,0.1W,1%,,
+,,R189,8.25k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,CRCW06038K25FKEAC,,,,,,0.1W,1%,,
+,,R190,3.24k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,CRCW06033K24FKEAC,,,,,,0.1W,1%,,
+,,R191,33,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+,,R192,33,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+,,R193,33,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+,,R194,0,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-070RL,,,,,,0.1W,,,
+,,R195,20k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0720KL,,,,,,0.1W,1%,,
+,,R196,10k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0710kL,,,,,,0.1W,1%,,
+,,R197,20k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0720KL,,,,,,0.1W,1%,,
+,,R198,2k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-072KL,,,,,,0.1W,1%,,
+,,R199,1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-071KL,,,,,,0.1W,1%,,
+,,R200,33,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+,,R201,49.9k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0749k9L,,,,,,0.1W,1%,,
+,,R202,243k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-07243KL,,,,,,0.1W,1%,,
+,,R203,33,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+,,R204,121k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-07121KL,,,,,,0.1W,1%,,
+,,R205,37.4k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0737k4L,,,,,,0.1W,1%,,
+,,R206,8.25k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,CRCW06038K25FKEAC,,,,,,0.1W,1%,,
+,,R207,3.24k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,CRCW06033K24FKEAC,,,,,,0.1W,1%,,
+,,R208,33,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+,,R209,33,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+,,R210,33,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+,,R211,0,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-070RL,,,,,,0.1W,,,
+,,R212,20k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0720KL,,,,,,0.1W,1%,,
+,,R213,10k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0710kL,,,,,,0.1W,1%,,
+,,R214,20k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0720KL,,,,,,0.1W,1%,,
+,,R215,2k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-072KL,,,,,,0.1W,1%,,
+,,R216,1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-071KL,,,,,,0.1W,1%,,
+,,R217,33,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+,,R218,49.9k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0749k9L,,,,,,0.1W,1%,,
+,,R219,243k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-07243KL,,,,,,0.1W,1%,,
+,,R220,33,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+,,R221,121k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-07121KL,,,,,,0.1W,1%,,
+,,R222,37.4k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0737k4L,,,,,,0.1W,1%,,
+,,R223,8.25k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,CRCW06038K25FKEAC,,,,,,0.1W,1%,,
+,,R224,3.24k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,CRCW06033K24FKEAC,,,,,,0.1W,1%,,
+,,R225,33,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+,,R226,33,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+,,R227,33,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+,,R228,0,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-070RL,,,,,,0.1W,,,
+,,R229,20k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0720KL,,,,,,0.1W,1%,,
+,,R230,10k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0710kL,,,,,,0.1W,1%,,
+,,R231,20k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0720KL,,,,,,0.1W,1%,,
+,,R232,2k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-072KL,,,,,,0.1W,1%,,
+,,R233,1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-071KL,,,,,,0.1W,1%,,
+,,R234,33,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+,,R235,49.9k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0749k9L,,,,,,0.1W,1%,,
+,,R236,243k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-07243KL,,,,,,0.1W,1%,,
+,,R237,33,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+,,R238,121k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-07121KL,,,,,,0.1W,1%,,
+,,R239,37.4k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0737k4L,,,,,,0.1W,1%,,
+,,R240,8.25k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,CRCW06038K25FKEAC,,,,,,0.1W,1%,,
+,,R241,3.24k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,CRCW06033K24FKEAC,,,,,,0.1W,1%,,
+,,R242,33,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+,,R243,33,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+,,R244,33,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+,,R245,0,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-070RL,,,,,,0.1W,,,
+,,R246,20k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0720KL,,,,,,0.1W,1%,,
+,,R247,10k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0710kL,,,,,,0.1W,1%,,
+,,R248,20k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0720KL,,,,,,0.1W,1%,,
+,,R249,2k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-072KL,,,,,,0.1W,1%,,
+,,R250,1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-071KL,,,,,,0.1W,1%,,
+,,R251,33,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+,,R252,15k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0715kL,,,,,,,,,
+,,R253,15k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0715kL,,,,,,,,,
+,,R254,10k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0710kL,,,,,,0.1W,1%,,
+,,R255,10k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0710kL,,,,,,0.1W,1%,,
+,,R256,30.1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0730k1L,,,,,,0.1W,1%,,
+,,R257,30.1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0730k1L,,,,,,0.1W,1%,,
+,,R258,15k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0715kL,,,,,,,,,
+,,R259,15k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0715kL,,,,,,,,,
+,,R260,0,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-070RL,,,,,,0.1W,,,
+,,R261,33,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+,,R262,DNI,Device:R_Small_US,Resistor_SMD:R_0603_1608Metric,~,,,,,,,,,,,0.1W,,,
+,,R263,DNI,Device:R_Small_US,Resistor_SMD:R_0603_1608Metric,~,,,,,,,,,,,0.1W,,,
+,,R264,DNI,Device:R_Small_US,Resistor_SMD:R_0603_1608Metric,~,,,,,,,,,,,0.1W,,,
+,,R265,DNI,Device:R_Small_US,Resistor_SMD:R_0603_1608Metric,~,,,,,,,,,,,0.1W,,,
+,,R266,0,Device:R_Small_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-070RL,,,,,,0.1W,,,
+,,R267,0,Device:R_Small_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-070RL,,,,,,0.1W,,,
+,,R268,0,Device:R_Small_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-070RL,,,,,,0.1W,,,
+,,R269,0,Device:R_Small_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-070RL,,,,,,0.1W,,,
+,,R270,DNI,Device:R_Small_US,Resistor_SMD:R_0603_1608Metric,~,,,,,,,,,,,0.1W,,,
+,,R271,DNI,Device:R_Small_US,Resistor_SMD:R_0603_1608Metric,~,,,,,,,,,,,0.1W,,,
+,,R272,DNI,Device:R_Small_US,Resistor_SMD:R_0603_1608Metric,~,,,,,,,,,,,0.1W,,,
+,,R273,DNI,Device:R_Small_US,Resistor_SMD:R_0603_1608Metric,~,,,,,,,,,,,0.1W,,,
+,,R278,470k,Device:R_US,Resistor_SMD:R_1206_3216Metric,~,,,,,RG3216P-4703-B-T1,,,,,,,0.1,,
+,,R279,470k,Device:R_US,Resistor_SMD:R_1206_3216Metric,~,,,,,RG3216P-4703-B-T1,,,,,,,0.1,,
+,,R280,0,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-070RL,,,,,,0.1W,,,
+,,R281,0,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-070RL,,,,,,0.1W,,,
+,,R282,470k,Device:R_US,Resistor_SMD:R_1206_3216Metric,~,,,,,RG3216P-4703-B-T1,,,,,,,0.1,,
+,,R283,470k,Device:R_US,Resistor_SMD:R_1206_3216Metric,~,,,,,RG3216P-4703-B-T1,,,,,,,0.1,,
+,,R284,470k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0710KL,,,,,,,0.1,,
+,,R285,10k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0710KL,,,,,,0.1W,1%,,
+,,R286,DNI,Device:R_Small_US,Resistor_SMD:R_0603_1608Metric,~,,,,,,,,,,,0.1W,1%,,
+,,R287,49.9,Device:R_Small_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0749R9L,,,,,,0.1W,1%,,
+,,R288,49.9,Device:R_Small_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0749R9L,,,,,,0.1W,1%,,
+,,R289,DNI,Device:R_Small_US,Resistor_SMD:R_0603_1608Metric,~,,,,,,,,,,,0.1W,1%,,
+,,R999,1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-071KL,,,,,,0.1W,1%,,
+,,TP1,TestPoint,Connector:TestPoint,TestPoint:TestPoint_THTPad_1.5x1.5mm_Drill0.7mm,~,,,,,,,,,,,,,,
+,,TP2,TestPoint,Connector:TestPoint,TestPoint:TestPoint_THTPad_1.5x1.5mm_Drill0.7mm,~,,,,,,,,,,,,,,
+,,TP3,TestPoint,Connector:TestPoint,TestPoint:TestPoint_THTPad_1.5x1.5mm_Drill0.7mm,~,,,,,,,,,,,,,,
+,,TP4,TestPoint,Connector:TestPoint,TestPoint:TestPoint_THTPad_1.5x1.5mm_Drill0.7mm,~,,,,,,,,,,,,,,
+,,TP5,TestPoint,Connector:TestPoint,TestPoint:TestPoint_THTPad_1.5x1.5mm_Drill0.7mm,~,,,,,,,,,,,,,,
+,,TP6,TestPoint,Connector:TestPoint,TestPoint:TestPoint_THTPad_1.5x1.5mm_Drill0.7mm,~,,,,,,,,,,,,,,
+,,TP7,TestPoint,Connector:TestPoint,TestPoint:TestPoint_THTPad_1.5x1.5mm_Drill0.7mm,~,,,,,,,,,,,,,,
+,,U1,OPA2156xD,Amplifier_Operational:OPA2156xD,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,https://www.ti.com/lit/ds/symlink/opa2156.pdf,,,,,OPA2156IDR,,,,,,,,,
+,,U2,OPA2156xD,Amplifier_Operational:OPA2156xD,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,https://www.ti.com/lit/ds/symlink/opa2156.pdf,,,,,OPA2156IDR,,,,,,,,,
+,,U3,OPA2156xD,Amplifier_Operational:OPA2156xD,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,https://www.ti.com/lit/ds/symlink/opa2156.pdf,,,,,OPA2156IDR,,,,,,,,,
+,,U4,OPA2156xD,Amplifier_Operational:OPA2156xD,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,https://www.ti.com/lit/ds/symlink/opa2156.pdf,,,,,OPA2156IDR,,,,,,,,,
+,,U5,DAC80508ZRTER,covg-kicad:DAC80508ZRTER,Package_DFN_QFN:WQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm,,DAC80508MCRTET,,,,DAC80508ZCRTET,,,,,,,,,
+,,U6,OPA2156xD,Amplifier_Operational:OPA2156xD,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,https://www.ti.com/lit/ds/symlink/opa2156.pdf,,,,,OPA2156IDR,,,,,,,,,
+,,U7,OPA2156xD,Amplifier_Operational:OPA2156xD,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,https://www.ti.com/lit/ds/symlink/opa2156.pdf,,,,,OPA2156IDR,,,,,,,,,
+,,U8,OPA2156xD,Amplifier_Operational:OPA2156xD,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,https://www.ti.com/lit/ds/symlink/opa2156.pdf,,,,,OPA2156IDR,,,,,,,,,
+,,U9,OPA2156xD,Amplifier_Operational:OPA2156xD,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,https://www.ti.com/lit/ds/symlink/opa2156.pdf,,,,,OPA2156IDR,,,,,,,,,
+,,U10,TMUX6136PWR,covg-kicad:TMUX6136PWR,Package_SO:TSSOP-16_4.4x5mm_P0.65mm,,,,,,TMUX6136PWR,,,,,,,,,
+,,U11,TMUX6136PWR,covg-kicad:TMUX6136PWR,Package_SO:TSSOP-16_4.4x5mm_P0.65mm,,,,,,TMUX6136PWR,,,,,,,,,
+,,U12,OPA991S,covg-kicad:OPA991S,Package_TO_SOT_SMD:SOT-23-6,https://www.ti.com/lit/ds/symlink/opa991.pdf,,,,,OPA991SIDBVR,,,,,,,,,
+,,U13,DNI,Regulator_Switching:LT3471,covg-kicad:DFN-10-1EP_3x3mm_P0.5mm_EP1.65x2.38mm,https://www.analog.com/media/en/technical-documentation/data-sheets/3471fb.pdf,,,,,LT3471EDD#PBF,,,,,,,,,
+,,U14,LP38692MP-5.0,Regulator_Linear:LP38693MP-5.0,Package_TO_SOT_SMD:SOT-223-5,https://www.ti.com/lit/ds/symlink/lp38693.pdf,,,,,LP38692MPX-5.0/NOPB,,,,,LP38693 is 500 mA version. LP38692 is 1 A version. Footprints are the same.,,,,
+,,U15,LP38693MP-3.3,Regulator_Linear:LP38693MP-3.3,Package_TO_SOT_SMD:SOT-223-5,https://www.ti.com/lit/ds/symlink/lp38693.pdf,,,,,LP38693MP-3.3/NOPB,,,,,,,,,
+,,U16,LM2937xMP,Regulator_Linear:LM2937xMP,Package_TO_SOT_SMD:SOT-223-3_TabPin2,http://www.ti.com/lit/ds/symlink/lm2937.pdf,,,,,LM2937IMPX-15/NOPB,,,,,,,,,
+,,U17,MAX6070BAUT21+T,covg-kicad:MAX6070BAUT21+T,Package_TO_SOT_SMD:SOT-23-6_Handsoldering,,,,,,MAX6070BAUT21+T,,,,,,,,,
+,,U18,LP38693MP-1.8,Regulator_Linear:LP38693MP-1.8,Package_TO_SOT_SMD:SOT-223-5,https://www.ti.com/lit/ds/symlink/lp38693.pdf,,,,,LP38693MP-1.8/NOPB,,,,,,,,,
+,,U19,LM2990SX-15,Regulator_Linear:LM2990SX-15,Package_TO_SOT_SMD:TO-263-3_TabPin2,http://www.ti.com/lit/ds/symlink/lm2990.pdf,,,,,LM2990SX-15,,,,,,,,,
+,,U20,LP38693MP-2.5,Regulator_Linear:LP38693MP-2.5,Package_TO_SOT_SMD:SOT-223-5,https://www.ti.com/lit/ds/symlink/lp38693.pdf,,,,,LP38693MP-2.5/NOPB,,,,,,,,,
+,,U21,24AA025UID,covg-kicad:24AA025UID,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,https://ww1.microchip.com/downloads/en/DeviceDoc/20005202A.pdf,,,,,24AA025UIDT-I/SN,,,,,,,,,
+,,U22,PCA9306,Interface:PCA9306,Package_SO:TSSOP-8_4.4x3mm_P0.65mm,http://www.ti.com/lit/ds/symlink/pca9306.pdf,,IC TRNSLTR BIDIRECTIONAL 8TSSOP,,,PCA9306DTR2G,,,,,,,,,
+,,U23,NLSX3018DTR2G,covg-kicad:NLSX3018DTR2G,Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm,,,,,,NLSX3018DTR2G,,,,,,,,,
+,,U24,TXS0108EPW,Logic_LevelTranslator:TXS0108EPW,Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm,www.ti.com/lit/ds/symlink/txs0108e.pdf,,,,,TXS0108EPWR,,,,,,,,,
+,,U25,TXS0108EPW,Logic_LevelTranslator:TXS0108EPW,Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm,www.ti.com/lit/ds/symlink/txs0108e.pdf,,,,,TXS0108EPWR,,,,,,,,,
+,,U26,TCA9555,Interface_Expansion:TCA9555DBR,Package_SO:SSOP-24_5.3x8.2mm_P0.65mm,http://www.ti.com/lit/ds/symlink/tca9555.pdf,TCA9555DBT,,,,TCA9555DBR,,,,,,,,,
+,,U27,TCA9555,Interface_Expansion:TCA9555DBR,Package_SO:SSOP-24_5.3x8.2mm_P0.65mm,http://www.ti.com/lit/ds/symlink/tca9555.pdf,TCA9555DBT,,,,TCA9555DBR,,,,,,,,,
+,,U28,AD7961BCPZ-RL7,covg-kicad:AD7961BCPZ-RL7,Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.1x3.1mm,,,,,,AD7961BCPZ-RL7,,,,,,,,,
+,,U29,OPA325,covg-kicad:OPA325,Package_TO_SOT_SMD:SOT-23-5,https://www.ti.com/lit/ds/symlink/opa325.pdf?ts=1622090939582,,,,,OPA325IDBVR,,,,,,,,,
+,,U30,AD7961BCPZ-RL7,covg-kicad:AD7961BCPZ-RL7,Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.1x3.1mm,,,,,,AD7961BCPZ-RL7,,,,,,,,,
+,,U31,OPA325,covg-kicad:OPA325,Package_TO_SOT_SMD:SOT-23-5,https://www.ti.com/lit/ds/symlink/opa325.pdf?ts=1622090939582,,,,,OPA325IDBVR,,,,,,,,,
+,,U32,AD7961BCPZ-RL7,covg-kicad:AD7961BCPZ-RL7,Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.1x3.1mm,,,,,,AD7961BCPZ-RL7,,,,,,,,,
+,,U33,OPA325,covg-kicad:OPA325,Package_TO_SOT_SMD:SOT-23-5,https://www.ti.com/lit/ds/symlink/opa325.pdf?ts=1622090939582,,,,,OPA325IDBVR,,,,,,,,,
+,,U34,AD7961BCPZ-RL7,covg-kicad:AD7961BCPZ-RL7,Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.1x3.1mm,,,,,,AD7961BCPZ-RL7,,,,,,,,,
+,,U35,OPA325,covg-kicad:OPA325,Package_TO_SOT_SMD:SOT-23-5,https://www.ti.com/lit/ds/symlink/opa325.pdf?ts=1622090939582,,,,,OPA325IDBVR,,,,,,,,,
+,,U36,TMUX6111PWR,covg-kicad:TMUX6111PWR,Package_SO:TSSOP-16_4.4x5mm_P0.65mm,,,,,,TMUX6111PWR,,,,,,,,,
+,,U37,AD5453,covg-kicad:AD5453{colon}TSOT,Package_TO_SOT_SMD:TSOT-23-8,,,,,,AD5453YUJZ-REEL7,,,,,,,,,
+,,U38,OPA2156xD,Amplifier_Operational:OPA2156xD,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,https://www.ti.com/lit/ds/symlink/opa2156.pdf,,,,,OPA2156IDR,,,,,,,,,
+,,U39,TMUX6111PWR,covg-kicad:TMUX6111PWR,Package_SO:TSSOP-16_4.4x5mm_P0.65mm,,,,,,TMUX6111PWR,,,,,,,,,
+,,U40,AD5453,covg-kicad:AD5453{colon}TSOT,Package_TO_SOT_SMD:TSOT-23-8,,,,,,AD5453YUJZ-REEL7,,,,,,,,,
+,,U41,OPA2156xD,Amplifier_Operational:OPA2156xD,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,https://www.ti.com/lit/ds/symlink/opa2156.pdf,,,,,OPA2156IDR,,,,,,,,,
+,,U42,TMUX6111PWR,covg-kicad:TMUX6111PWR,Package_SO:TSSOP-16_4.4x5mm_P0.65mm,,,,,,TMUX6111PWR,,,,,,,,,
+,,U43,AD5453,covg-kicad:AD5453{colon}TSOT,Package_TO_SOT_SMD:TSOT-23-8,,,,,,AD5453YUJZ-REEL7,,,,,,,,,
+,,U44,OPA2156xD,Amplifier_Operational:OPA2156xD,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,https://www.ti.com/lit/ds/symlink/opa2156.pdf,,,,,OPA2156IDR,,,,,,,,,
+,,U45,TMUX6111PWR,covg-kicad:TMUX6111PWR,Package_SO:TSSOP-16_4.4x5mm_P0.65mm,,,,,,TMUX6111PWR,,,,,,,,,
+,,U46,AD5453,covg-kicad:AD5453{colon}TSOT,Package_TO_SOT_SMD:TSOT-23-8,,,,,,AD5453YUJZ-REEL7,,,,,,,,,
+,,U47,OPA2156xD,Amplifier_Operational:OPA2156xD,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,https://www.ti.com/lit/ds/symlink/opa2156.pdf,,,,,OPA2156IDR,,,,,,,,,
+,,U48,TMUX6111PWR,covg-kicad:TMUX6111PWR,Package_SO:TSSOP-16_4.4x5mm_P0.65mm,,,,,,TMUX6111PWR,,,,,,,,,
+,,U49,AD5453,covg-kicad:AD5453{colon}TSOT,Package_TO_SOT_SMD:TSOT-23-8,,,,,,AD5453YUJZ-REEL7,,,,,,,,,
+,,U50,OPA2156xD,Amplifier_Operational:OPA2156xD,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,https://www.ti.com/lit/ds/symlink/opa2156.pdf,,,,,OPA2156IDR,,,,,,,,,
+,,U51,TMUX6111PWR,covg-kicad:TMUX6111PWR,Package_SO:TSSOP-16_4.4x5mm_P0.65mm,,,,,,TMUX6111PWR,,,,,,,,,
+,,U52,AD5453,covg-kicad:AD5453{colon}TSOT,Package_TO_SOT_SMD:TSOT-23-8,,,,,,AD5453YUJZ-REEL7,,,,,,,,,
+,,U53,OPA2156xD,Amplifier_Operational:OPA2156xD,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,https://www.ti.com/lit/ds/symlink/opa2156.pdf,,,,,OPA2156IDR,,,,,,,,,
+,,U58,DAC80508ZRTER,covg-kicad:DAC80508ZRTER,Package_DFN_QFN:WQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm,,DAC80508MCRTET,,,,DAC80508ZCRTET,,,,,,,,,
+,,U63,TMUX6136PWR,covg-kicad:TMUX6136PWR,Package_SO:TSSOP-16_4.4x5mm_P0.65mm,,,,,,TMUX6136PWR,,,,,,,,,
+,,U64,TMUX6136PWR,covg-kicad:TMUX6136PWR,Package_SO:TSSOP-16_4.4x5mm_P0.65mm,,,,,,TMUX6136PWR,,,,,,,,,
+,,U65,OPA991S,covg-kicad:OPA991S,Package_TO_SOT_SMD:SOT-23-6,https://www.ti.com/lit/ds/symlink/opa991.pdf,,,,,OPA991SIDBVR,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+Collated Components:,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+Item,Qty,Reference(s),Value,LibPart,Footprint,Datasheet,Alternate,Description,Field4,Height,Manf#,Manufacturer_Name,Manufacturer_Part_Number,Mouser Part Number,Mouser Price/Stock,Notes,Power,Tolerance,Voltage,voltage
+1,117,"C1, C2, C3, C4, C5, C6, C7, C8, C9, C10, C12, C13, C17, C26, C27, C29, C34, C38, C39, C40, C42, C43, C44, C45, C46, C48, C69, C72, C73, C74, C75, C76, C78, C79, C81, C82, C83, C85, C86, C87, C88, C89, C91, C92, C93, C94, C96, C97, C98, C99, C100, C102, C103, C104, C105, C107, C108, C109, C110, C111, C113, C115, C116, C118, C120, C121, C124, C125, C127, C129, C130, C133, C134, C136, C138, C139, C142, C143, C145, C147, C148, C151, C152, C154, C156, C157, C160, C161, C163, C165, C166, C168, C169, C170, C171, C172, C173, C174, C175, C176, C177, C179, C180, C181, C182, C183, C184, C185, C186, C187, C188, C189, C190, C191, C192, C193, C194",0.1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10B104KA8NFNC,Samsung,,,,,,10%,25,25
+2,18,"C11, C178, C195, C196, C197, C198, C199, C200, C201, C202, C203, C204, C205, C206, C207, C208, C209, C210",5p,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10C050CB81PNC,Panasonic,,,,,,0.25pF,,50
+3,3,"C14, C19, C25",4.7u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,TMK107BBJ475MA-T,,,,,,,20%,,25V
+4,8,"C15, C21, C24, C28, C30, C33, C36, C37",1u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10A105KA8NFNC,,,,,,,10%,,25V
+5,2,"C16, C23",33p,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CC0603JRNPO9BN330,,,,,,,5%,,50V
+6,2,"C18, C22",0.33u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CC0603KRX5R8BB334,Yageo,,,,,,10%,,25V
+7,29,"C20, C49, C50, C51, C52, C53, C54, C55, C56, C57, C58, C59, C60, C61, C62, C63, C64, C114, C117, C123, C126, C132, C135, C141, C144, C150, C153, C159, C162",DNI,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CL10A105KA8NFNC,,,,,,,10%,,25V
+8,5,"C31, C70, C71, C80, C211",10u,Device:C,Capacitor_SMD:C_0805_2012Metric,~,,,,,TMK212BBJ106MG-T,Taiyo Yuden,,,,,,20%,,25
+9,2,"C32, C35",1u,Device:C,Capacitor_SMD:C_1206_3216Metric,~,,,,,TAJA105K025RNJ,,,,,,,10%,,25V
+10,9,"C41, C65, C66, C67, C68, C77, C84, C95, C106",10u,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,JMK107ABJ106KAHT,,,,,,,10%,,6.3V
+11,4,"C47, C90, C101, C112",100p,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CC0603JRNPO0BN101,,,,,,,5%,,100V
+12,6,"C119, C128, C137, C146, C155, C164",2p,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,CC0603CRNPO9BN2R0,,,,,,,0.25pF,,50V
+13,6,"C122, C131, C140, C149, C158, C167",2.4n,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,,,GRM1885C1H242JA01D,,,,,,,,50,
+14,2,"D1, D2",DNI,Device:D_Schottky,Diode_SMD:D_Powermite_AK,~,,,,,MBRM120LT3G,,,,,,,,,
+15,6,"FB1, FB2, FB3, FB4, FB5, FB6",Ferrite_Bead,Device:FerriteBead,Capacitor_SMD:C_1206_3216Metric,~,,,,,BLM31PG500SN1L,,,,,,,,,
+16,4,"H1, H2, H3, H4",DNI,Mechanical:MountingHole_Pad,MountingHole:MountingHole_3.2mm_M3_DIN965_Pad,~,,,,,,,,,,,,,,
+17,1,IC1,ADS8686SIPZAR,covg-kicad:ADS8686SIPZAR,Package_QFP:LQFP-80_14x14mm_P0.65mm,https://www.ti.com/lit/gpn/ADS8686S,,Analog to Digital Converters - ADC 16-channel 16-bit 1-MSPS dual simultaneous-sampling ADC with integrated analog front end (AFE),,1.6,ADS8686SIPZAR,Texas Instruments,ADS8686SIPZAR,595-ADS8686SIPZAR,https://www.mouser.co.uk/ProductDetail/Texas-Instruments/ADS8686SIPZAR/?qs=xZ%2FP%252Ba9zWqahOWZgBjtpsg%3D%3D,,,,,
+18,6,"IC2, IC3, IC4, IC5, IC6, IC7",OPA1662,covg-kicad:OPA1662,Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm,,,,,,OPA1662AIDGKR,,,,,,,,,
+19,4,"J1, J2, J7, J8",HDMI_A,Connector:HDMI_A,covg-kicad:CONN_10029449-111RLF_HDMI_A,https://en.wikipedia.org/wiki/HDMI,,,,,10029449-111RLF,,,,,,,,,
+20,1,J3,Conn_01x06,Connector_Generic:Conn_01x06,covg-kicad:Molex_6Pin_CONN,~,,,,,22053061,,,,,,,,,
+21,1,J9,Conn_02x06_Odd_Even,Connector_Generic:Conn_02x06_Odd_Even,Connector_PinHeader_2.00mm:PinHeader_2x06_P2.00mm_Horizontal,~,SBH21-NBPN-D06-RA-BK,,,,0878331220,,,,,,,,,
+22,1,J10,Conn_02x07_Odd_Even,Connector_Generic:Conn_02x07_Odd_Even,Connector_PinHeader_2.00mm:PinHeader_2x07_P2.00mm_Horizontal,~,SBH21-NBPN-D07-RA-BK,,,,0878331419,,,,,,,,,
+23,2,"J11, J15",Conn_02x12_Odd_Even,Connector_Generic:Conn_02x12_Odd_Even,Connector_PinHeader_2.00mm:PinHeader_2x12_P2.00mm_Horizontal,~,SBH21-NBPN-D12-RA-BK,,,,DF11-24DP-2DS(24),,,,,,,,,
+24,1,J13,Conn_02x05_Odd_Even,Connector_Generic:Conn_02x05_Odd_Even,Connector_PinHeader_2.00mm:PinHeader_2x05_P2.00mm_Vertical_SMD,~,,,,,0877591064,,,,,,,,,
+25,1,J14,Screw_Terminal_01x12,Connector:Screw_Terminal_01x12,"TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-12-2.54_1x12_P2.54mm_Horizontal",~,,,,,OSTVN12A150,,,,,,,,,
+26,2,"J16, J17",Conn_Coaxial,Connector:Conn_Coaxial,covg-kicad:BU-SMA-G, ~,,,,,0733910083,,,,,,,,,
+27,1,J18,QWIIC_CONNECTOR-1MM,covg-kicad:QWIIC_CONNECTORJS-1MM,Connectors:1X04_1MM_RA,,,,CONN-13694,,PRT-14417,,,,,,,,,
+28,1,L1,DNI,Device:L,covg-kicad:SRR4018-4R7Y,~,,,,,SRR4018-4R7Y,,,,,,,,,
+29,1,L2,DNI,Device:L,covg-kicad:NRS5020T100MMGJ,~,,,,,NRS5020T100MMGJ,,,,,,,,,
+30,1,L3,DNI,Device:L,covg-kicad:SRR6028-150Y,~,,,,,SRR6028-150Y,,,,,,,,,
+31,1,OK1,OPALKELLY_XEM7310,covg-kicad:OPALKELLY_XEM7310,covg-kicad:OPALKELLY_XEM7310,,,,,,BTE-040-02-F-D-A,,,,,,,,,
+32,2,"Q1, Q2",BC856,Transistor_BJT:BC856,Package_TO_SOT_SMD:SOT-23,https://www.onsemi.com/pub/Collateral/BC860-D.pdf,,,,,BC856B-7-F,,,,,,,,,
+33,24,"R1, R2, R3, R4, R15, R16, R17, R18, R34, R84, R85, R90, R91, R111, R112, R162, R179, R196, R213, R230, R247, R254, R255, R285",10k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0710kL,,,,,,0.1W,1%,,
+34,16,"R5, R6, R7, R8, R19, R20, R21, R22, R86, R87, R107, R108, R113, R114, R256, R257",30.1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0730k1L,,,,,,0.1W,1%,,
+35,14,"R9, R29, R30, R75, R76, R160, R177, R194, R211, R228, R245, R260, R280, R281",0,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-070RL,,,,,,0.1W,1%,,
+36,47,"R10, R81, R82, R83, R132, R133, R134, R137, R138, R139, R142, R143, R144, R147, R148, R149, R152, R157, R158, R159, R166, R169, R174, R175, R176, R183, R186, R191, R192, R193, R200, R203, R208, R209, R210, R217, R220, R225, R226, R227, R234, R237, R242, R243, R244, R251, R261",33,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+37,18,"R11, R12, R13, R14, R23, R24, R25, R26, R36, R43, R88, R89, R109, R110, R252, R253, R258, R259",15k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0715kL,,,,,,0.1W,1%,,
+38,8,"R27, R28, R31, R32, R278, R279, R282, R283",470k,Device:R_US,Resistor_SMD:R_1206_3216Metric,~,,,,,RG3216P-4703-B-T1,,,,,,,0.1,,
+39,2,"R33, R284",470k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0710KL,,,,,,,0.1,,
+40,5,"R35, R42, R64, R73, R74",DNI,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-07232KL,,,,,,,1%,,
+41,2,"R37, R41",4.7k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-074K7L,,,,,,0.1W,,,
+42,6,"R38, R39, R40, R44, R45, R131",100k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-07100KL,,,,,,0.1W,1%,,
+43,9,"R46, R47, R48, R49, R50, R266, R267, R268, R269",0,Device:R_Small_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-070RL,,,,,,0.1W,,,
+44,14,"R51, R52, R54, R55, R57, R59, R61, R63, R65, R69, R71, R72, R77, R78",3.3k,Device:R_Small_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-073k3L,,,,,,0.1W,1%,,
+45,1,R53,1k,Device:R_Small_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-071kL,,,,,,0.1W,1%,,
+46,39,"R56, R92, R93, R94, R95, R96, R97, R98, R99, R100, R101, R102, R103, R104, R105, R106, R115, R116, R117, R118, R119, R120, R121, R122, R123, R124, R125, R126, R127, R128, R129, R130, R165, R182, R199, R216, R233, R250, R999",1k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-071KL,,,,,,0.1W,1%,,
+47,3,"R58, R60, R62",100k,Device:R_Small_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-07100KL,,,,,,0.1W,1%,,
+48,4,"R66, R67, R68, R70",33,Device:R_Small_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0733RL,,,,,,0.1W,1%,,
+49,8,"R79, R80, R135, R136, R140, R141, R145, R146",100,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-07100RL,,,,,,0.1W,1%,,
+50,6,"R150, R167, R184, R201, R218, R235",49.9k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0749k9L,,,,,,0.1W,1%,,
+51,6,"R151, R168, R185, R202, R219, R236",243k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-07243KL,,,,,,0.1W,1%,,
+52,6,"R153, R170, R187, R204, R221, R238",121k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-07121KL,,,,,,0.1W,1%,,
+53,6,"R154, R171, R188, R205, R222, R239",37.4k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0737k4L,,,,,,0.1W,1%,,
+54,6,"R155, R172, R189, R206, R223, R240",8.25k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,CRCW06038K25FKEAC,,,,,,0.1W,1%,,
+55,6,"R156, R173, R190, R207, R224, R241",3.24k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,CRCW06033K24FKEAC,,,,,,0.1W,1%,,
+56,12,"R161, R163, R178, R180, R195, R197, R212, R214, R229, R231, R246, R248",20k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0720KL,,,,,,0.1W,1%,,
+57,6,"R164, R181, R198, R215, R232, R249",2k,Device:R_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-072KL,,,,,,0.1W,1%,,
+58,10,"R262, R263, R264, R265, R270, R271, R272, R273, R286, R289",DNI,Device:R_Small_US,Resistor_SMD:R_0603_1608Metric,~,,,,,,,,,,,0.1W,1%,,
+59,2,"R287, R288",49.9,Device:R_Small_US,Resistor_SMD:R_0603_1608Metric,~,,,,,RC0603FR-0749R9L,,,,,,0.1W,1%,,
+60,7,"TP1, TP2, TP3, TP4, TP5, TP6, TP7",TestPoint,Connector:TestPoint,TestPoint:TestPoint_THTPad_1.5x1.5mm_Drill0.7mm,~,,,,,,,,,,,,,,
+61,14,"U1, U2, U3, U4, U6, U7, U8, U9, U38, U41, U44, U47, U50, U53",OPA2156xD,Amplifier_Operational:OPA2156xD,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,https://www.ti.com/lit/ds/symlink/opa2156.pdf,,,,,OPA2156IDR,,,,,,,,,
+62,2,"U5, U58",DAC80508ZRTER,covg-kicad:DAC80508ZRTER,Package_DFN_QFN:WQFN-16-1EP_3x3mm_P0.5mm_EP1.6x1.6mm,,DAC80508MCRTET,,,,DAC80508ZCRTET,,,,,,,,,
+63,4,"U10, U11, U63, U64",TMUX6136PWR,covg-kicad:TMUX6136PWR,Package_SO:TSSOP-16_4.4x5mm_P0.65mm,,,,,,TMUX6136PWR,,,,,,,,,
+64,2,"U12, U65",OPA991S,covg-kicad:OPA991S,Package_TO_SOT_SMD:SOT-23-6,https://www.ti.com/lit/ds/symlink/opa991.pdf,,,,,OPA991SIDBVR,,,,,,,,,
+65,1,U13,DNI,Regulator_Switching:LT3471,covg-kicad:DFN-10-1EP_3x3mm_P0.5mm_EP1.65x2.38mm,https://www.analog.com/media/en/technical-documentation/data-sheets/3471fb.pdf,,,,,LT3471EDD#PBF,,,,,,,,,
+66,1,U14,LP38692MP-5.0,Regulator_Linear:LP38693MP-5.0,Package_TO_SOT_SMD:SOT-223-5,https://www.ti.com/lit/ds/symlink/lp38693.pdf,,,,,LP38692MPX-5.0/NOPB,,,,,LP38693 is 500 mA version. LP38692 is 1 A version. Footprints are the same.,,,,
+67,1,U15,LP38693MP-3.3,Regulator_Linear:LP38693MP-3.3,Package_TO_SOT_SMD:SOT-223-5,https://www.ti.com/lit/ds/symlink/lp38693.pdf,,,,,LP38693MP-3.3/NOPB,,,,,,,,,
+68,1,U16,LM2937xMP,Regulator_Linear:LM2937xMP,Package_TO_SOT_SMD:SOT-223-3_TabPin2,http://www.ti.com/lit/ds/symlink/lm2937.pdf,,,,,LM2937IMPX-15/NOPB,,,,,,,,,
+69,1,U17,MAX6070BAUT21+T,covg-kicad:MAX6070BAUT21+T,Package_TO_SOT_SMD:SOT-23-6_Handsoldering,,,,,,MAX6070BAUT21+T,,,,,,,,,
+70,1,U18,LP38693MP-1.8,Regulator_Linear:LP38693MP-1.8,Package_TO_SOT_SMD:SOT-223-5,https://www.ti.com/lit/ds/symlink/lp38693.pdf,,,,,LP38693MP-1.8/NOPB,,,,,,,,,
+71,1,U19,LM2990SX-15,Regulator_Linear:LM2990SX-15,Package_TO_SOT_SMD:TO-263-3_TabPin2,http://www.ti.com/lit/ds/symlink/lm2990.pdf,,,,,LM2990SX-15,,,,,,,,,
+72,1,U20,LP38693MP-2.5,Regulator_Linear:LP38693MP-2.5,Package_TO_SOT_SMD:SOT-223-5,https://www.ti.com/lit/ds/symlink/lp38693.pdf,,,,,LP38693MP-2.5/NOPB,,,,,,,,,
+73,1,U21,24AA025UID,covg-kicad:24AA025UID,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,https://ww1.microchip.com/downloads/en/DeviceDoc/20005202A.pdf,,,,,24AA025UIDT-I/SN,,,,,,,,,
+74,1,U22,PCA9306,Interface:PCA9306,Package_SO:TSSOP-8_4.4x3mm_P0.65mm,http://www.ti.com/lit/ds/symlink/pca9306.pdf,,IC TRNSLTR BIDIRECTIONAL 8TSSOP,,,PCA9306DTR2G,,,,,,,,,
+75,1,U23,NLSX3018DTR2G,covg-kicad:NLSX3018DTR2G,Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm,,,,,,NLSX3018DTR2G,,,,,,,,,
+76,2,"U24, U25",TXS0108EPW,Logic_LevelTranslator:TXS0108EPW,Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm,www.ti.com/lit/ds/symlink/txs0108e.pdf,,,,,TXS0108EPWR,,,,,,,,,
+77,2,"U26, U27",TCA9555,Interface_Expansion:TCA9555DBR,Package_SO:SSOP-24_5.3x8.2mm_P0.65mm,http://www.ti.com/lit/ds/symlink/tca9555.pdf,TCA9555DBT,,,,TCA9555DBR,,,,,,,,,
+78,4,"U28, U30, U32, U34",AD7961BCPZ-RL7,covg-kicad:AD7961BCPZ-RL7,Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.1x3.1mm,,,,,,AD7961BCPZ-RL7,,,,,,,,,
+79,4,"U29, U31, U33, U35",OPA325,covg-kicad:OPA325,Package_TO_SOT_SMD:SOT-23-5,https://www.ti.com/lit/ds/symlink/opa325.pdf?ts=1622090939582,,,,,OPA325IDBVR,,,,,,,,,
+80,6,"U36, U39, U42, U45, U48, U51",TMUX6111PWR,covg-kicad:TMUX6111PWR,Package_SO:TSSOP-16_4.4x5mm_P0.65mm,,,,,,TMUX6111PWR,,,,,,,,,
+81,6,"U37, U40, U43, U46, U49, U52",AD5453,covg-kicad:AD5453{colon}TSOT,Package_TO_SOT_SMD:TSOT-23-8,,,,,,AD5453YUJZ-REEL7,,,,,,,,,
