@@ -5623,6 +5623,9 @@
     (path "/00000000-0000-0000-0000-00006095a302/00000000-0000-0000-0000-000061382484"
       (reference "#GND08") (unit 1) (value "GND") (footprint "")
     )
+    (path "/00000000-0000-0000-0000-00006095be10/1c0de6f1-73ab-4487-976c-283b9f660c20"
+      (reference "#GND09") (unit 1) (value "GND") (footprint "")
+    )
     (path "/00000000-0000-0000-0000-00006095bd4c/00000000-0000-0000-0000-000060a174fd"
       (reference "#GND011") (unit 1) (value "GND") (footprint "")
     )
@@ -5649,9 +5652,6 @@
     )
     (path "/00000000-0000-0000-0000-00006095be10/00000000-0000-0000-0000-000060c7f4ed"
       (reference "#GND023") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/00000000-0000-0000-0000-00006095be10/00000000-0000-0000-0000-0000edf8d432"
-      (reference "#GND024") (unit 1) (value "GND") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00006095be10/00000000-0000-0000-0000-000060f42bf7"
       (reference "#GND025") (unit 1) (value "GND") (footprint "")
@@ -6567,6 +6567,12 @@
     )
     (path "/00000000-0000-0000-0000-00006095bd4c/00000000-0000-0000-0000-000060a13ff9"
       (reference "#PWR042") (unit 1) (value "+5V") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00006095be10/f761d149-a452-44de-988e-2cbf8b25d6e5"
+      (reference "#PWR043") (unit 1) (value "+15V") (footprint "")
+    )
+    (path "/00000000-0000-0000-0000-00006095be10/6039ae76-ded6-430a-9ba1-98a144f0e87d"
+      (reference "#PWR044") (unit 1) (value "-15V") (footprint "")
     )
     (path "/00000000-0000-0000-0000-00006095bd4c/00000000-0000-0000-0000-000060f0c6cc/00000000-0000-0000-0000-000060f31cdd"
       (reference "#PWR045") (unit 1) (value "+15V") (footprint "")
@@ -7933,9 +7939,6 @@
     (path "/00000000-0000-0000-0000-000060e9a3f1"
       (reference "FB6") (unit 1) (value "Ferrite_Bead") (footprint "Capacitor_SMD:C_1206_3216Metric")
     )
-    (path "/00000000-0000-0000-0000-00006095be10/00000000-0000-0000-0000-000062ac939a"
-      (reference "FB7") (unit 1) (value "Ferrite_Bead") (footprint "Capacitor_SMD:C_1206_3216Metric")
-    )
     (path "/00000000-0000-0000-0000-000060b0ac43"
       (reference "H1") (unit 1) (value "DNI") (footprint "MountingHole:MountingHole_3.2mm_M3_DIN965_Pad")
     )
@@ -8011,6 +8014,9 @@
     (path "/00000000-0000-0000-0000-000061d74fd2"
       (reference "J2") (unit 1) (value "HDMI_A") (footprint "covg-kicad:CONN_10029449-111RLF_HDMI_A")
     )
+    (path "/00000000-0000-0000-0000-00006095be10/0eb57313-3c78-4317-9f7a-ffabe847155e"
+      (reference "J3") (unit 1) (value "Conn_01x06") (footprint "covg-kicad:Molex_6Pin_CONN")
+    )
     (path "/00000000-0000-0000-0000-000060bf7732"
       (reference "J7") (unit 1) (value "HDMI_A") (footprint "covg-kicad:CONN_10029449-111RLF_HDMI_A")
     )
@@ -8025,9 +8031,6 @@
     )
     (path "/00000000-0000-0000-0000-000061e7164d"
       (reference "J11") (unit 1) (value "Conn_02x12_Odd_Even") (footprint "Connector_PinHeader_2.00mm:PinHeader_2x12_P2.00mm_Horizontal")
-    )
-    (path "/00000000-0000-0000-0000-00006095be10/00000000-0000-0000-0000-000060dcc1a2"
-      (reference "J12") (unit 1) (value "Barrel_Jack_Switch") (footprint "covg-kicad:CUI_PJ-002BH")
     )
     (path "/00000000-0000-0000-0000-00006095be10/00000000-0000-0000-0000-0000624134d6"
       (reference "J13") (unit 1) (value "Conn_02x05_Odd_Even") (footprint "Connector_PinHeader_2.00mm:PinHeader_2x05_P2.00mm_Vertical_SMD")
@@ -9056,7 +9059,7 @@
       (reference "U18") (unit 1) (value "LP38693MP-1.8") (footprint "Package_TO_SOT_SMD:SOT-223-5")
     )
     (path "/00000000-0000-0000-0000-00006095be10/4ce2dab9-f3dc-40e4-b445-373a23dc6f61"
-      (reference "U19") (unit 1) (value "LM2990SX-15") (footprint "Package_TO_SOT_SMD:TO-263-3_TabPin2")
+      (reference "U19") (unit 1) (value "MC7915BD2TR4G") (footprint "Package_TO_SOT_SMD:TO-263-3_TabPin2")
     )
     (path "/00000000-0000-0000-0000-00006095be10/00000000-0000-0000-0000-000060bdc92e"
       (reference "U20") (unit 1) (value "LP38693MP-2.5") (footprint "Package_TO_SOT_SMD:SOT-223-5")
