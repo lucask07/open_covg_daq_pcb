@@ -193,3 +193,9 @@ See the Git repo for License details.
 
 <p align="center">
 <img src="docs/covg_daq_v2_3d_render_otherside.png" width="600">
+
+## Board Fabrication and Assembly
+Boards were fabricated and assembled by PCBWAY (https://www.pcbway.com/). 
+<p align="center">
+<img src="docs/pcbway_logo.png" width="600">
+PCBWAY successfully completed turnkey assembly (found and ordered parts) and carefully reviewed the design and assembly files. 
