@@ -93,7 +93,7 @@ The generic HDMI-A cable pinout is defined as follows with 15 (non-shield) pins 
 | 11  | Clock shield | gnd          |                                                                            |
 | 12  | Clock-       | VCM          | reference voltage from the AD796x buffered on the DAQ board, nominal 2.5 V                                                                          |
 | 13  | CEC          | -15V         |   linear regulator, (estimate is 75 mA max per channel with all 4 channels connected)                                                                          |
-| 14  | Reserved     | selectable auxiliary         | Resistor jumper sets analog in, analog out, or digital I/O (@ 3.3 V levels). Default stuffing option is to connect to the general purpose ADC (ADS8686).   |
+| 14  | Reserved     | selectable auxillary         | Resistor jumper sets analog in, analog out, or digital I/O (@ 3.3 V levels). Default stuffing option is to connect to the general purpose ADC (ADS8686).   |
 | 15  | SCL          | SCL          |  I2C clock. Pull-up resistor on DAQ board, 3.3 V levels.                                                        |
 | 16  | SDA          | SDA          |  I2C data. Pull-up resistor on DAQ board, 3.3 V levels.                                                            |
 | 17  | Gnd          | Gnd          |                                                                            |
@@ -193,3 +193,10 @@ See the Git repo for License details.
 
 <p align="center">
 <img src="docs/covg_daq_v2_3d_render_otherside.png" width="600">
+
+## Board Fabrication and Assembly
+Boards were fabricated and assembled by PCBWAY (https://www.pcbway.com/). 
+<p align="center">
+<img src="docs/pcbway_logo.png" width="400">
+</p>
+PCBWAY successfully completed turnkey assembly (found and ordered parts) and carefully reviewed the design and assembly files. 
