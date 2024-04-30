@@ -199,5 +199,4 @@ Boards were fabricated and assembled by PCBWAY (https://www.pcbway.com/).
 <p align="center">
 <img src="docs/pcbway_logo.png" width="400">
 </p>
-	<br>
 PCBWAY successfully completed turnkey assembly (found and ordered parts) and carefully reviewed the design and assembly files. 
